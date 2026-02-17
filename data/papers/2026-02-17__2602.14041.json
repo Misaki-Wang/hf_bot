@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14041",
+  "title": "BitDance: Scaling Autoregressive Generative Models with Binary Tokens",
+  "authors": [
+    "Yuang Ai",
+    "Jiaming Han",
+    "Shaobin Zhuang",
+    "Weijia Mao",
+    "Xuefeng Hu",
+    "Ziyan Yang",
+    "Zhenheng Yang",
+    "Huaibo Huang",
+    "Xiangyu Yue",
+    "Hao Chen"
+  ],
+  "abstract": "BitDance is a scalable autoregressive image generator that uses binary visual tokens and diffusion-based methods to achieve efficient high-resolution image generation with improved speed and performance. We present BitDance, a scalable autoregressive (AR) image generator that predicts binary visual tokens instead of codebook indices. With high-entropy binary latents , BitDance lets each token represent up to 2^{256} states, yielding a compact yet highly expressive discrete representation. Sampling from such a huge token space is difficult with standard classification. To resolve this, BitDance uses a binary diffusion head : instead of predicting an index with softmax, it employs continuous-space diffusion to generate the binary tokens. Furthermore, we propose next-patch diffusion , a new decoding method that predicts multiple tokens in parallel with high accuracy, greatly speeding up inference. On ImageNet 256x256, BitDance achieves an FID of 1.24, the best among AR models. With next-patch diffusion , BitDance beats state-of-the-art parallel AR models that use 1.4B parameters, while using 5.4x fewer parameters (260M) and achieving 8.7x speedup. For text-to-image generation , BitDance trains on large-scale multimodal tokens and generates high-resolution, photorealistic images efficiently, showing strong performance and favorable scaling. When generating 1024x1024 images, BitDance achieves a speedup of over 30x compared to prior AR models. We release code and models to facilitate further research on AR foundation models. Code and models are available at: https://github.com/shallowdream204/BitDance.",
+  "summary_en": "BitDance is a scalable autoregressive image generator that uses binary visual tokens and diffusion-based methods to achieve efficient high-resolution image generation with improved speed and performance.",
+  "summary_zh": "BitDance是一种可扩展的自回归图像生成器，利用二进制视觉令牌和基于扩散的方法，实现高效的高分辨率图像生成，并在速度和性能方面均有提升。",
+  "hf_url": "https://huggingface.co/papers/2602.14041",
+  "arxiv_url": "https://arxiv.org/abs/2602.14041",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14041",
+  "github_url": "https://github.com/shallowdream204/BitDance",
+  "upvotes": 10,
+  "fetched_at": "2026-02-17T15:57:52.051908+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.13195",
+  "title": "Conversational Image Segmentation: Grounding Abstract Concepts with Scalable Supervision",
+  "authors": [
+    "Aadarsh Sahoo",
+    "Georgia Gkioxari"
+  ],
+  "abstract": "Conversational image segmentation addresses functional and physical reasoning tasks by introducing a new benchmark and model that combines segmentation priors with language understanding. Conversational image segmentation grounds abstract, intent-driven concepts into pixel-accurate masks. Prior work on referring image grounding focuses on categorical and spatial queries (e.g., \"left-most apple\") and overlooks functional and physical reasoning (e.g., \"where can I safely store the knife?\"). We address this gap and introduce Conversational Image Segmentation (CIS) and ConverSeg, a benchmark spanning entities, spatial relations, intent, affordances, functions, safety, and physical reasoning. We also present ConverSeg-Net, which fuses strong segmentation priors with language understanding , and an AI-powered data engine that generates prompt-mask pairs without human supervision. We show that current language-guided segmentation models are inadequate for CIS, while ConverSeg-Net trained on our data engine achieves significant gains on ConverSeg and maintains strong performance on existing language-guided segmentation benchmarks. Project webpage: https://glab-caltech.github.io/converseg/",
+  "summary_en": "Conversational image segmentation addresses functional and physical reasoning tasks by introducing a new benchmark and model that combines segmentation priors with language understanding.",
+  "summary_zh": "对话式图像分割通过引入结合分割先验与语言理解的新基准和模型，解决功能性和物理性推理任务。",
+  "hf_url": "https://huggingface.co/papers/2602.13195",
+  "arxiv_url": "https://arxiv.org/abs/2602.13195",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13195",
+  "github_url": "https://github.com/AadSah/ConverSeg",
+  "upvotes": 4,
+  "fetched_at": "2026-02-17T15:57:46.229181+00:00"
+}

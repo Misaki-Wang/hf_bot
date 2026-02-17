@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14492",
+  "title": "Query as Anchor: Scenario-Adaptive User Representation via Large Language Model",
+  "authors": [
+    "Jiahao Yuan",
+    "Yike Xu",
+    "Jinyong Wen",
+    "Baokun Wang",
+    "Ziyi Gao",
+    "Xiaotong Lin",
+    "Yun Liu",
+    "Xing Fu",
+    "Yu Cheng",
+    "Yongchao Liu",
+    "Weiqiang Wang",
+    "Zhongle Xie"
+  ],
+  "abstract": "A novel framework called Query-as-Anchor is introduced that transforms user modeling from static encoding to dynamic, query-aware synthesis using large language models with specialized architectures and training methods. Industrial-scale user representation learning requires balancing robust universality with acute task-sensitivity. However, existing paradigms primarily yield static, task-agnostic embeddings that struggle to reconcile the divergent requirements of downstream scenarios within unified vector spaces. Furthermore, heterogeneous multi-source data introduces inherent noise and modality conflicts, degrading representation. We propose Query-as-Anchor, a framework shifting user modeling from static encoding to dynamic, query-aware synthesis. To empower Large Language Models (LLMs) with deep user understanding, we first construct UserU , an industrial-scale pre-training dataset that aligns multi-modal behavioral sequences with user understanding semantics, and our Q-Anchor Embedding architecture integrates hierarchical coarse-to-fine encoders into dual-tower LLMs via joint contrastive-autoregressive optimization for query-aware user representation. To bridge the gap between general pre-training and specialized business logic, we further introduce Cluster-based Soft Prompt Tuning to enforce discriminative latent structures, effectively aligning model attention with scenario-specific modalities. For deployment, anchoring queries at sequence termini enables KV-cache-accelerated inference with negligible incremental latency. Evaluations on 10 Alipay industrial benchmarks show consistent SOTA performance, strong scalability, and efficient deployment. Large-scale online A/B testing in Alipay's production system across two real-world scenarios further validates its practical effectiveness. Our code is prepared for public release and will be available at: https://github.com/JhCircle/Q-Anchor.",
+  "summary_en": "A novel framework called Query-as-Anchor is introduced that transforms user modeling from static encoding to dynamic, query-aware synthesis using large language models with specialized architectures and training methods.",
+  "summary_zh": "本文提出了一种名为 Query-as-Anchor 的新框架，利用具有专门架构和训练方法的大语言模型，将用户建模从静态编码转变为动态、查询感知的合成。",
+  "hf_url": "https://huggingface.co/papers/2602.14492",
+  "arxiv_url": "https://arxiv.org/abs/2602.14492",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14492",
+  "github_url": "https://github.com/JhCircle/Q-Anchor",
+  "upvotes": 14,
+  "fetched_at": "2026-02-17T15:57:58.685056+00:00"
+}

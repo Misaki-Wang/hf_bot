@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14367",
+  "title": "InnoEval: On Research Idea Evaluation as a Knowledge-Grounded, Multi-Perspective Reasoning Problem",
+  "authors": [
+    "Shuofei Qiao",
+    "Yunxiang Wei",
+    "Xuehai Wang",
+    "Bin Wu",
+    "Boyang Xue",
+    "Ningyu Zhang",
+    "Hossein A. Rahmani",
+    "Yanshan Wang",
+    "Qiang Zhang",
+    "Keyan Ding",
+    "Jeff Z. Pan",
+    "Huajun Chen",
+    "Emine Yilmaz"
+  ],
+  "abstract": "InnoEval is a deep innovation evaluation framework that emulates human-level idea assessment through knowledge-grounded, multi-perspective reasoning with heterogeneous deep knowledge search and multi-dimensional decoupled evaluation. The rapid evolution of Large Language Models has catalyzed a surge in scientific idea production, yet this leap has not been accompanied by a matching advance in idea evaluation . The fundamental nature of scientific evaluation needs knowledgeable grounding, collective deliberation, and multi-criteria decision-making. However, existing idea evaluation methods often suffer from narrow knowledge horizons, flattened evaluation dimensions, and the inherent bias in LLM-as-a-Judge. To address these, we regard idea evaluation as a knowledge-grounded, multi-perspective reasoning problem and introduce InnoEval, a deep innovation evaluation framework designed to emulate human-level idea assessment. We apply a heterogeneous deep knowledge search engine that retrieves and grounds dynamic evidence from diverse online sources. We further achieve review consensus with an innovation review board containing reviewers with distinct academic backgrounds, enabling a multi-dimensional decoupled evaluation across multiple metrics. We construct comprehensive datasets derived from authoritative peer-reviewed submissions to benchmark InnoEval. Experiments demonstrate that InnoEval can consistently outperform baselines in point-wise, pair-wise, and group-wise evaluation tasks, exhibiting judgment patterns and consensus highly aligned with human experts.",
+  "summary_en": "InnoEval is a deep innovation evaluation framework that emulates human-level idea assessment through knowledge-grounded, multi-perspective reasoning with heterogeneous deep knowledge search and multi-dimensional decoupled evaluation.",
+  "summary_zh": "InnoEval 是一种深度创新评估框架，通过基于知识的多视角推理、异构深度知识检索与多维解耦评估，模拟人类水平的创意评估。",
+  "hf_url": "https://huggingface.co/papers/2602.14367",
+  "arxiv_url": "https://arxiv.org/abs/2602.14367",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14367",
+  "github_url": "https://github.com/zjunlp/InnoEval",
+  "upvotes": 12,
+  "fetched_at": "2026-02-17T15:57:57.913951+00:00"
+}

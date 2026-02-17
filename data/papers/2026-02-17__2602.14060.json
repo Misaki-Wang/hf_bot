@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14060",
+  "title": "LM-Lexicon: Improving Definition Modeling via Harmonizing Semantic Experts",
+  "authors": [
+    "Yang Liu",
+    "Jiaye Yang",
+    "Weikang Li",
+    "Jiahui Liang",
+    "Yang Li",
+    "Lingyong Yan"
+  ],
+  "abstract": "LM-Lexicon improves definition modeling through data clustering, semantic expert learning, and sparse mixture-of-experts architecture, achieving higher BLEU scores and better expert specialization. We introduce LM-Lexicon, an innovative definition modeling approach that incorporates data clustering , semantic expert learning , and model merging using a sparse mixture-of-experts architecture . By decomposing the definition modeling task into specialized semantic domains , where small language models are trained as domain experts , LM-Lexicon achieves substantial improvements (+7% BLEU score compared with the prior state-of-the-art model) over existing methods on five widely used benchmarks. Empirically, we demonstrate that 1) the clustering strategy enables fine-grained expert specialization with nearly 10% improvement in definition quality; 2) the semantic-aware domain-level routing mechanism achieves higher expert efficacy (+1%) than conventional token-level routing; and 3) further performance gains can be obtained through test-time compute and semantic expert scaling. Our work advances definition modeling while providing insights into the development of efficient language models for semantic-intensive applications.",
+  "summary_en": "LM-Lexicon improves definition modeling through data clustering, semantic expert learning, and sparse mixture-of-experts architecture, achieving higher BLEU scores and better expert specialization.",
+  "summary_zh": "LM-Lexicon通过数据聚类、语义专家学习和稀疏混合专家架构改进定义建模，实现了更高的BLEU分数和更好的专家特化。",
+  "hf_url": "https://huggingface.co/papers/2602.14060",
+  "arxiv_url": "https://arxiv.org/abs/2602.14060",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14060",
+  "github_url": "https://github.com/jacklanda/LMLexicon",
+  "upvotes": 2,
+  "fetched_at": "2026-02-17T15:57:52.665140+00:00"
+}

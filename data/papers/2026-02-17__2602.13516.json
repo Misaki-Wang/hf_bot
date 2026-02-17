@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.13516",
+  "title": "SPILLage: Agentic Oversharing on the Web",
+  "authors": [
+    "Jaechul Roh",
+    "Eugene Bagdasarian",
+    "Hamed Haddadi",
+    "Ali Shahin Shamsabadi"
+  ],
+  "abstract": "Web agents inadvertently disclose user information through both content and behavioral traces, with behavioral oversharing being more prevalent than content oversharing, and this issue persists despite mitigation efforts. LLM-powered agents are beginning to automate user's tasks across the open web, often with access to user resources such as emails and calendars. Unlike standard LLMs answering questions in a controlled ChatBot setting, web agents act \"in the wild\", interacting with third parties and leaving behind an action trace. Therefore, we ask the question: how do web agents handle user resources when accomplishing tasks on their behalf across live websites? In this paper, we formalize Natural Agentic Oversharing -- the unintentional disclosure of task-irrelevant user information through an agent trace of actions on the web. We introduce SPILLage , a framework that characterizes oversharing along two dimensions: channel (content vs. behavior) and directness (explicit vs. implicit). This taxonomy reveals a critical blind spot: while prior work focuses on text leakage, web agents also overshare behaviorally through clicks, scrolls, and navigation patterns that can be monitored. We benchmark 180 tasks on live e-commerce sites with ground-truth annotations separating task-relevant from task-irrelevant attributes. Across 1,080 runs spanning two agentic frameworks and three backbone LLMs, we demonstrate that oversharing is pervasive with behavioral oversharing dominates content oversharing by 5x. This effect persists -- and can even worsen -- under prompt-level mitigation . However, removing task-irrelevant information before execution improves task success by up to 17.9%, demonstrating that reducing oversharing improves task success . Our findings underscore that protecting privacy in web agents is a fundamental challenge, requiring a broader view of \"output\" that accounts for what agents do on the web, not just what they type. Our datasets and code are available at https://github.com/jrohsc/ SPILLage .",
+  "summary_en": "Web agents inadvertently disclose user information through both content and behavioral traces, with behavioral oversharing being more prevalent than content oversharing, and this issue persists despite mitigation efforts.",
+  "summary_zh": "网页智能体通过内容痕迹和行为痕迹无意中泄露用户信息，其中行为过度分享比内容过度分享更为普遍，且尽管采取了缓解措施，该问题依然存在。",
+  "hf_url": "https://huggingface.co/papers/2602.13516",
+  "arxiv_url": "https://arxiv.org/abs/2602.13516",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13516",
+  "github_url": "https://github.com/jrohsc/SPILLage",
+  "upvotes": 0,
+  "fetched_at": "2026-02-17T15:57:48.870947+00:00"
+}

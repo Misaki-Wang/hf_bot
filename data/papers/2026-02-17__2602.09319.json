@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.09319",
+  "title": "Benchmarking Knowledge-Extraction Attack and Defense on Retrieval-Augmented Generation",
+  "authors": [
+    "Zhisheng Qi",
+    "Utkarsh Sahu",
+    "Li Ma",
+    "Haoyu Han",
+    "Ryan Rossi",
+    "Franck Dernoncourt",
+    "Mahantesh Halappanavar",
+    "Nesreen Ahmed",
+    "Yushun Dong",
+    "Yue Zhao",
+    "Yu Zhang",
+    "Yu Wang"
+  ],
+  "abstract": "A systematic benchmark for evaluating knowledge-extraction attacks on Retrieval-Augmented Generation systems is introduced, covering diverse attack and defense strategies across multiple retrieval and generation models with standardized evaluation protocols. Retrieval-Augmented Generation (RAG) has become a cornerstone of knowledge-intensive applications, including enterprise chatbots, healthcare assistants, and agentic memory management. However, recent studies show that knowledge-extraction attacks can recover sensitive knowledge-base content through maliciously crafted queries, raising serious concerns about intellectual property theft and privacy leakage. While prior work has explored individual attack and defense techniques, the research landscape remains fragmented, spanning heterogeneous retrieval embeddings, diverse generation models , and evaluations based on non-standardized metrics and inconsistent datasets. To address this gap, we introduce the first systematic benchmark for knowledge-extraction attacks on RAG systems. Our benchmark covers a broad spectrum of attack and defense strategies , representative retrieval embedding models , and both open- and closed-source generators, all evaluated under a unified experimental framework with standardized protocols across multiple datasets. By consolidating the experimental landscape and enabling reproducible, comparable evaluation, this benchmark provides actionable insights and a practical foundation for developing privacy-preserving RAG systems in the face of emerging knowledge extraction threats. Our code is available here.",
+  "summary_en": "A systematic benchmark for evaluating knowledge-extraction attacks on Retrieval-Augmented Generation systems is introduced, covering diverse attack and defense strategies across multiple retrieval and generation models with standardized evaluation protocols.",
+  "summary_zh": "介绍了一种用于评估针对检索增强生成（Retrieval-Augmented Generation）系统的知识提取攻击（knowledge-extraction attacks）的系统性基准测试，涵盖多种攻击与防御策略，跨越多种检索与生成模型，并采用标准化评估协议。",
+  "hf_url": "https://huggingface.co/papers/2602.09319",
+  "arxiv_url": "https://arxiv.org/abs/2602.09319",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09319",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-17T15:57:39.635562+00:00"
+}

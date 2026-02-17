@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.13949",
+  "title": "Experiential Reinforcement Learning",
+  "authors": [
+    "Taiwei Shi",
+    "Sihao Chen",
+    "Bowen Jiang",
+    "Linxin Song",
+    "Longqi Yang",
+    "Jieyu Zhao"
+  ],
+  "abstract": "Experiential Reinforcement Learning introduces an explicit experience-reflection-consolidation loop that improves learning efficiency and performance in sparse-reward environments by enabling structured behavioral revision without additional inference costs. Reinforcement learning has become the central approach for language models (LMs) to learn from environmental reward or feedback. In practice, the environmental feedback is usually sparse and delayed. Learning from such signals is challenging, as LMs must implicitly infer how observed failures should translate into behavioral changes for future iterations. We introduce Experiential Reinforcement Learning (ERL), a training paradigm that embeds an explicit experience-reflection-consolidation loop into the reinforcement learning process. Given a task, the model generates an initial attempt, receives environmental feedback , and produces a reflection that guides a refined second attempt, whose success is reinforced and internalized into the base policy. This process converts feedback into structured behavioral revision , improving exploration and stabilizing optimization while preserving gains at deployment without additional inference cost. Across sparse-reward control environments and agentic reasoning benchmarks, ERL consistently improves learning efficiency and final performance over strong reinforcement learning baselines, achieving gains of up to +81% in complex multi-step environments and up to +11% in tool-using reasoning tasks. These results suggest that integrating explicit self-reflection into policy training provides a practical mechanism for transforming feedback into durable behavioral improvement.",
+  "summary_en": "Experiential Reinforcement Learning introduces an explicit experience-reflection-consolidation loop that improves learning efficiency and performance in sparse-reward environments by enabling structured behavioral revision without additional inference costs.",
+  "summary_zh": "Experiential Reinforcement Learning 引入了一种显式的 experience-reflection-consolidation 循环，通过在不增加额外推理成本的情况下实现结构化行为修正，提升了稀疏奖励环境中的学习效率与性能。",
+  "hf_url": "https://huggingface.co/papers/2602.13949",
+  "arxiv_url": "https://arxiv.org/abs/2602.13949",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13949",
+  "github_url": "",
+  "upvotes": 14,
+  "fetched_at": "2026-02-17T15:57:50.538181+00:00"
+}

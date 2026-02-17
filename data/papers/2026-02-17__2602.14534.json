@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14534",
+  "title": "MoRL: Reinforced Reasoning for Unified Motion Understanding and Generation",
+  "authors": [
+    "Hongpeng Wang",
+    "Zeyu Zhang",
+    "Wenhao Li",
+    "Hao Tang"
+  ],
+  "abstract": "A unified multimodal motion model trained with supervised fine-tuning and reinforcement learning with verifiable rewards improves human motion understanding and generation through semantic alignment, reasoning coherence, and physical plausibility. Human motion understanding and generation are crucial for vision and robotics but remain limited in reasoning capability and test-time planning. We propose MoRL, a unified multimodal motion model trained with supervised fine-tuning and reinforcement learning with verifiable rewards . Our task-specific reward design combines semantic alignment and reasoning coherence for understanding with physical plausibility and text-motion consistency for generation, improving both logical reasoning and perceptual realism. To further enhance inference, we introduce Chain-of-Motion (CoM), a test-time reasoning method that enables step-by-step planning and reflection. We also construct two large-scale CoT datasets , MoUnd-CoT-140K and MoGen-CoT-140K, to align motion sequences with reasoning traces and action descriptions. Experiments on HumanML3D and KIT-ML show that MoRL achieves significant gains over state-of-the-art baselines. Code: https://github.com/AIGeeksGroup/MoRL. Website: https://aigeeksgroup.github.io/MoRL.",
+  "summary_en": "A unified multimodal motion model trained with supervised fine-tuning and reinforcement learning with verifiable rewards improves human motion understanding and generation through semantic alignment, reasoning coherence, and physical plausibility.",
+  "summary_zh": "通过监督微调和可验证奖励的强化学习训练的统一多模态运动模型，通过语义对齐、推理连贯性和物理合理性，提升了人体运动理解与生成能力。",
+  "hf_url": "https://huggingface.co/papers/2602.14534",
+  "arxiv_url": "https://arxiv.org/abs/2602.14534",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14534",
+  "github_url": "https://github.com/AIGeeksGroup/MoRL",
+  "upvotes": 2,
+  "fetched_at": "2026-02-17T15:57:59.624552+00:00"
+}

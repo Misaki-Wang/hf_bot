@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14696",
+  "title": "A Critical Look at Targeted Instruction Selection: Disentangling What Matters (and What Doesn't)",
+  "authors": [
+    "Nihal V. Nayak",
+    "Paula Rodriguez-Diaz",
+    "Neha Hulkund",
+    "Sara Beery",
+    "David Alvarez-Melis"
+  ],
+  "abstract": "Targeted instruction selection for LLM fine-tuning can be improved by systematically analyzing data representation and selection algorithms, with gradient-based representations and greedy round-robin selection performing best at low budgets. Instruction fine-tuning of large language models (LLMs) often involves selecting a subset of instruction training data from a large candidate pool, using a small query set from the target task. Despite growing interest, the literature on targeted instruction selection remains fragmented and opaque: methods vary widely in selection budgets, often omit zero-shot baselines, and frequently entangle the contributions of key components. As a result, practitioners lack actionable guidance on selecting instructions for their target tasks. In this work, we aim to bring clarity to this landscape by disentangling and systematically analyzing the two core ingredients: data representation and selection algorithms . Our framework enables controlled comparisons across models, tasks, and budgets. We find that only gradient-based data representation s choose subsets whose similarity to the query consistently predicts performance across datasets and models. While no single method dominates, gradient-based representations paired with a greedy round-robin selection algorithm tend to perform best on average at low budgets, but these benefits diminish at larger budgets. Finally, we unify several existing selection algorithms as forms of approximate distance minimization between the selected subset and the query set, and support this view with new generalization bounds . More broadly, our findings provide critical insights and a foundation for more principled data selection in LLM fine-tuning. The code is available at https://github.com/dcml-lab/targeted-instruction-selection.",
+  "summary_en": "Targeted instruction selection for LLM fine-tuning can be improved by systematically analyzing data representation and selection algorithms, with gradient-based representations and greedy round-robin selection performing best at low budgets.",
+  "summary_zh": "针对LLM微调的指令选择可通过系统分析数据表示与选择算法加以改进，其中基于梯度的表示与贪心轮询选择在低预算下表现最佳。",
+  "hf_url": "https://huggingface.co/papers/2602.14696",
+  "arxiv_url": "https://arxiv.org/abs/2602.14696",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14696",
+  "github_url": "https://github.com/dcml-lab/targeted-instruction-selection",
+  "upvotes": 0,
+  "fetched_at": "2026-02-17T15:58:01.965017+00:00"
+}

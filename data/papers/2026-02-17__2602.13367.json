@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.13367",
+  "title": "Nanbeige4.1-3B: A Small General Model that Reasons, Aligns, and Acts",
+  "authors": [
+    "Chen Yang",
+    "Guangyue Peng",
+    "Jiaying Zhu",
+    "Ran Le",
+    "Ruixiang Feng",
+    "Tao Zhang",
+    "Xiyun Xu",
+    "Yang Song",
+    "Yiming Jia",
+    "Yuntao Wen",
+    "Yunzhi Xu",
+    "Zekai Wang",
+    "Zhenwei An",
+    "Zhicong Sun",
+    "Zongchao Chen"
+  ],
+  "abstract": "Nanbeige4.1-3B is a 3B-parameter unified language model that demonstrates superior performance in agentic behavior, code generation, and reasoning compared to larger models through advanced reward modeling and training techniques. We present Nanbeige4.1-3B, a unified generalist language model that simultaneously achieves strong agentic behavior , code generation , and general reasoning with only 3B parameters. To the best of our knowledge, it is the first open-source small language model (SLM) to achieve such versatility in a single model. To improve reasoning and preference alignment, we combine point-wise and pair-wise reward modeling , ensuring high-quality, human-aligned responses . For code generation , we design complexity-aware rewards in Reinforcement Learning , optimizing both correctness and efficiency. In deep search , we perform complex data synthesis and incorporate turn-level supervision during training. This enables stable long-horizon tool interactions, allowing Nanbeige4.1-3B to reliably execute up to 600 tool-call turns for complex problem-solving. Extensive experimental results show that Nanbeige4.1-3B significantly outperforms prior models of similar scale, such as Nanbeige4-3B-2511 and Qwen3-4B, even achieving superior performance compared to much larger models, such as Qwen3-30B-A3B. Our results demonstrate that small models can achieve both broad competence and strong specialization simultaneously, redefining the potential of 3B parameter models.",
+  "summary_en": "Nanbeige4.1-3B is a 3B-parameter unified language model that demonstrates superior performance in agentic behavior, code generation, and reasoning compared to larger models through advanced reward modeling and training techniques.",
+  "summary_zh": "Nanbeige4.1-3B是一个3B参数的统一语言模型，通过先进的奖励建模和训练技术，在agentic行为、代码生成和推理方面展现出相较于更大模型更优的性能。",
+  "hf_url": "https://huggingface.co/papers/2602.13367",
+  "arxiv_url": "https://arxiv.org/abs/2602.13367",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13367",
+  "github_url": "",
+  "upvotes": 6,
+  "fetched_at": "2026-02-17T15:57:47.965838+00:00"
+}

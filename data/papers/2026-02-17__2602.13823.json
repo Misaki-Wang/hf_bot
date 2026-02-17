@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.13823",
+  "title": "Embed-RL: Reinforcement Learning for Reasoning-Driven Multimodal Embeddings",
+  "authors": [
+    "Haonan Jiang",
+    "Yuji Wang",
+    "Yongjie Zhu",
+    "Xin Lu",
+    "Wenyu Qin",
+    "Meng Wang",
+    "Pengfei Wan",
+    "Yansong Tang"
+  ],
+  "abstract": "A reasoning-driven universal multimodal embedding framework integrates embedder-guided reinforcement learning with traceability chain-of-thought to enhance cross-modal semantic consistency and retrieval performance. Leveraging Multimodal Large Language Models (MLLMs) has become pivotal for advancing Universal Multimodal Embeddings (UME) in addressing diverse cross-modal tasks . Recent studies demonstrate that incorporating generative Chain-of-Thought (CoT) reasoning can substantially enhance task-specific representations compared to discriminative methods. However, the generated reasoning CoTs of existing generative embedding methods are limited to the textual analysis of queries and are irrelevant to the retrieval of the targets. To address these limitations, we propose a reasoning-driven UME framework that integrates Embedder-Guided Reinforcement Learning (EG-RL) to optimize the Reasoner to produce evidential Traceability CoT (T-CoT). Our key contributions are threefold: (1) We design an EG-RL framework where the Embedder provides explicit supervision to the Reasoner , ensuring the generated CoT traces are aligned with embedding tasks. (2) We introduce T-CoT, which extracts critical multimodal cues to focus on retrieval-relevant elements and provides multimodal inputs for the Embedder. (3) With limited computational resources, our framework outperforms the pioneering embedding model on both MMEB-V2 and UVRB benchmarks. The integration of multimodal evidence in structured reasoning, paired with retrieval-oriented alignment , effectively strengthens cross-modal semantic consistency and boosts the fine-grained matching capability of the model as well as the generalization across complex scenarios. Our work demonstrates that targeted reasoning optimization can significantly improve multimodal embedding quality, providing a practical and efficient solution for reasoning-driven UME development.",
+  "summary_en": "A reasoning-driven universal multimodal embedding framework integrates embedder-guided reinforcement learning with traceability chain-of-thought to enhance cross-modal semantic consistency and retrieval performance.",
+  "summary_zh": "一种推理驱动的通用多模态 embedding 框架整合了 embedder-guided 强化学习与可追溯 chain-of-thought，以增强跨模态语义一致性和检索性能。",
+  "hf_url": "https://huggingface.co/papers/2602.13823",
+  "arxiv_url": "https://arxiv.org/abs/2602.13823",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13823",
+  "github_url": "https://github.com/ZoengHN/Embed-RL",
+  "upvotes": 5,
+  "fetched_at": "2026-02-17T15:57:49.818770+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14721",
+  "title": "WebWorld: A Large-Scale World Model for Web Agent Training",
+  "authors": [
+    "Zikai Xiao",
+    "Jianhong Tu",
+    "Chuhang Zou",
+    "Yuxin Zuo",
+    "Zhi Li",
+    "Peng Wang",
+    "Bowen Yu",
+    "Fei Huang",
+    "Junyang Lin",
+    "Zuozhu Liu"
+  ],
+  "abstract": "Web agents require massive trajectories to generalize, yet real-world training is constrained by network latency, rate limits, and safety risks. We introduce WebWorld series, the first open- web simulator trained at scale. While existing simulators are restricted to closed environments with thousands of trajectories, WebWorld leverages a scalable data pipeline to train on 1M+ open-web interactions, supporting reasoning, multi-format data, and long-horizon simulations of 30+ steps. For intrinsic evaluation , we introduce WebWorld-Bench with dual metrics spanning nine dimensions, where WebWorld achieves simulation performance comparable to Gemini-3-Pro. For extrinsic evaluation , Qwen3-14B trained on WebWorld-synthesized trajectories improves by +9.2\\% on WebArena, reaching performance comparable to GPT-4o. WebWorld enables effective inference-time search , outperforming GPT-5 as a world model . Beyond web simulation, WebWorld exhibits cross-domain generalization to code, GUI, and game environments, providing a replicable recipe for world model construction.",
+  "summary_en": "Web agents require massive trajectories to generalize, yet real-world training is constrained by network latency, rate limits, and safety risks. We introduce WebWorld series, the first open- web simulator trained at scale. While existing simulators are restricted to closed environments with thousands of trajectories, WebWorld leverages a scalable data pipeline to train on 1M+ open-web interactions, supporting reasoning, multi-format data, and long-horizon simulations of 30+ steps. For intrinsic evaluation , we introduce WebWorld-Bench with dual metrics spanning nine dimensions, where WebWorld achieves simulation performance comparable to Gemini-3-Pro. For extrinsic evaluation , Qwen3-14B trained on WebWorld-synthesized trajectories improves by +9.2\\% on WebArena, reaching performance comparable to GPT-4o. WebWorld enables effective inference-time search , outperforming GPT-5 as a world model . Beyond web simulation, WebWorld exhibits cross-domain generalization to code, GUI, and game environments, providing a replicable recipe for world model construction.",
+  "summary_zh": "网页智能体需要大量轨迹来实现泛化，但真实世界训练受限于网络延迟、速率限制和安全风险。我们推出 WebWorld 系列，首个大规模训练的开放网页模拟器。现有模拟器局限于包含数千条轨迹的封闭环境，而 WebWorld 利用可扩展的数据流水线，基于 100 万+ 开放网页交互进行训练，支持推理、多格式数据以及 30+ 步的长程模拟。对于内在评估，我们引入 WebWorld-Bench，其双重指标涵盖九个维度，WebWorld 在该基准上达到与 Gemini-3-Pro 可比的模拟性能。对于外部评估，在 WebWorld 合成轨迹上训练的 Qwen3-14B 在 WebArena 上提升 +9.2%，性能达到与 GPT-4o 相当的水平。WebWorld 实现有效的推理时搜索，作为世界模型其性能优于 GPT-5。除网页模拟外，WebWorld 还展现出对代码、GUI 和游戏环境的跨域泛化能力，为世界模型构建提供可复现的方案。",
+  "hf_url": "https://huggingface.co/papers/2602.14721",
+  "arxiv_url": "https://arxiv.org/abs/2602.14721",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14721",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-17T15:58:04.330698+00:00"
+}

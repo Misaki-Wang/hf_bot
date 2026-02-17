@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.11968",
+  "title": "DHPLT: large-scale multilingual diachronic corpora and word representations for semantic change modelling",
+  "authors": [
+    "Mariia Fedorova",
+    "Andrey Kutuzov",
+    "Khonzoda Umarova"
+  ],
+  "abstract": "In this resource paper, we present DHPLT, an open collection of diachronic corpora in 41 diverse languages. DHPLT is based on the web-crawled HPLT datasets; we use web crawl timestamps as the approximate signal of document creation time. The collection covers three time periods: 2011-2015, 2020-2021 and 2024-present (1 million documents per time period for each language). We additionally provide pre-computed word type and token embeddings and lexical substitutions for our chosen target words, while at the same time leaving it open for the other researchers to come up with their own target words using the same datasets. DHPLT aims at filling in the current lack of multilingual diachronic corpora for semantic change modelling (beyond a dozen of high-resource languages). It opens the way for a variety of new experimental setups in this field. All the resources described in this paper are available at https://data.hplt-project.org/three/diachronic/, sorted by language.",
+  "summary_en": "DHPLT is an open collection of diachronic corpora covering 41 diverse languages across three time periods (2011-2015, 2020-2021, and 2024-present), derived from HPLT web-crawled data using timestamps as temporal signals with one million documents per period per language. The resource provides pre-computed word type and token embeddings and lexical substitutions for target words while allowing researchers to define custom targets, aiming to fill the gap in multilingual diachronic corpora for semantic change modelling beyond high-resource languages. All datasets are available at https://data.hplt-project.org/three/diachronic/.",
+  "summary_zh": "DHPLT是一个涵盖41种不同语言、跨越三个时期（2011-2015、2020-2021和2024至今）的开放历时语料库集合，基于时间戳作为时间信号从HPLT网络爬取数据中提取，每种语言每个时期包含一百万篇文档。该资源提供预计算的word type和token embeddings以及目标词的词汇替换，同时允许研究者定义自定义目标，旨在填补针对高资源语言之外的语言、用于语义变化建模的多语言历时语料库的空白。所有数据集均可在 https://data.hplt-project.org/three/diachronic/ 获取。",
+  "hf_url": "https://huggingface.co/papers/2602.11968",
+  "arxiv_url": "https://arxiv.org/abs/2602.11968",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11968",
+  "github_url": "https://github.com/ltgoslo/scdisc_hplt",
+  "upvotes": 1,
+  "fetched_at": "2026-02-17T15:57:41.607451+00:00"
+}

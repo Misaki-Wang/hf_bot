@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14147",
+  "title": "LaViDa-R1: Advancing Reasoning for Unified Multimodal Diffusion Language Models",
+  "authors": [
+    "Shufan Li",
+    "Yuchen Zhu",
+    "Jiuxiang Gu",
+    "Kangning Liu",
+    "Zhe Lin",
+    "Yongxin Chen",
+    "Molei Tao",
+    "Aditya Grover",
+    "Jason Kuen"
+  ],
+  "abstract": "LaViDa-R1 is a multimodal reasoning diffusion language model that unifies supervised fine-tuning and multi-task reinforcement learning with novel training techniques for enhanced performance across visual reasoning and generation tasks. Diffusion language models (dLLMs) recently emerged as a promising alternative to auto-regressive LLMs. The latest works further extended it to multimodal understanding and generation tasks. In this work, we propose LaViDa-R1, a multimodal, general-purpose reasoning dLLM. Unlike existing works that build reasoning dLLMs through task-specific reinforcement learning, LaViDa-R1 incorporates diverse multimodal understanding and generation tasks in a unified manner. In particular, LaViDa-R1 is built with a novel unified post-training framework that seamlessly integrates supervised finetuning (SFT) and multi-task reinforcement learning (RL). It employs several novel training techniques, including answer-forcing , tree search , and complementary likelihood estimation , to enhance effectiveness and scalability. Extensive experiments demonstrate LaViDa-R1's strong performance on a wide range of multimodal tasks, including visual math reasoning , reason-intensive grounding , and image editing .",
+  "summary_en": "LaViDa-R1 is a multimodal reasoning diffusion language model that unifies supervised fine-tuning and multi-task reinforcement learning with novel training techniques for enhanced performance across visual reasoning and generation tasks.",
+  "summary_zh": "LaViDa-R1 是一种多模态推理扩散语言模型，它通过新颖的训练技术统一了监督微调与多任务强化学习，从而在视觉推理和生成任务中实现了性能提升。",
+  "hf_url": "https://huggingface.co/papers/2602.14147",
+  "arxiv_url": "https://arxiv.org/abs/2602.14147",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14147",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-17T15:57:53.734573+00:00"
+}

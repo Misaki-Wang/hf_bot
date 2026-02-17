@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.07673",
+  "title": "Blind to the Human Touch: Overlap Bias in LLM-Based Summary Evaluation",
+  "authors": [
+    "Jiangnan Fang",
+    "Cheng-Tse Liu",
+    "Hanieh Deilamsalehy",
+    "Nesreen K. Ahmed",
+    "Puneet Mathur",
+    "Nedim Lipka",
+    "Franck Dernoncourt",
+    "Ryan A. Rossi"
+  ],
+  "abstract": "LLM judges exhibit bias toward summaries similar to their own generation, with performance deteriorating as summary overlap with human references decreases across multiple model sizes and architectures.",
+  "summary_en": "LLM judges exhibit bias toward summaries similar to their own generation, with performance deteriorating as summary overlap with human references decreases across multiple model sizes and architectures.",
+  "summary_zh": "LLM评判器偏向与其自身生成相似的摘要，且随着摘要与人类参考的重叠度降低，其性能会下降，这一现象在多种模型规模和架构中均存在。",
+  "hf_url": "https://huggingface.co/papers/2602.07673",
+  "arxiv_url": "https://arxiv.org/abs/2602.07673",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07673",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-17T15:57:35.290034+00:00"
+}

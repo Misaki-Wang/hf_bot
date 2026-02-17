@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14699",
+  "title": "Qute: Towards Quantum-Native Database",
+  "authors": [
+    "Muzhi Chen",
+    "Xuanhe Zhou",
+    "Wei Zhou",
+    "Bangrui Xu",
+    "Surui Tang",
+    "Guoliang Li",
+    "Bingsheng He",
+    "Yeye He",
+    "Yitong Song",
+    "Fan Wu"
+  ],
+  "abstract": "This paper envisions a quantum database (Qute) that treats quantum computation as a first-class execution option. Unlike prior simulation-based methods that either run quantum algorithms on classical machines or adapt existing databases for quantum simulation, Qute instead (i) compiles an extended form of SQL into gate-efficient quantum circuits, (ii) employs a hybrid optimizer to dynamically select between quantum and classical execution plans, (iii) introduces selective quantum indexing, and (iv) designs fidelity-preserving storage to mitigate current qubit constraints. We also present a three-stage evolution roadmap toward quantum-native database. Finally, by deploying Qute on a real quantum processor (origin_wukong), we show that it outperforms a classical baseline at scale, and we release an open-source prototype at https://github.com/weAIDB/Qute.",
+  "summary_en": "This paper presents Qute, a quantum database that treats quantum computation as a first-class execution option. Qute compiles extended SQL into gate-efficient quantum circuits and employs a hybrid optimizer, selective quantum indexing, and fidelity-preserving storage to mitigate qubit constraints. Deployed on the origin_wukong quantum processor, Qute outperforms classical baselines at scale, and the authors release an open-source prototype.",
+  "summary_zh": "本文提出Qute，一种将量子计算视为一级执行选项的量子数据库。Qute将扩展SQL编译为门高效的量子线路，并采用混合优化器、选择性量子索引和保真度保持存储来缓解量子比特约束。部署于origin_wukong量子处理器后，Qute在大规模下性能优于经典基线，且作者发布了开源原型。",
+  "hf_url": "https://huggingface.co/papers/2602.14699",
+  "arxiv_url": "https://arxiv.org/abs/2602.14699",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14699",
+  "github_url": "https://github.com/weAIDB/Qute",
+  "upvotes": 13,
+  "fetched_at": "2026-02-17T15:58:02.921371+00:00"
+}

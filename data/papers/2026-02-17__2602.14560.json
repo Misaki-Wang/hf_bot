@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14560",
+  "title": "Preliminary sonification of ENSO using traditional Javanese gamelan scales",
+  "authors": [
+    "Sandy H. S. Herho",
+    "Rusmawan Suwarman",
+    "Nurjanna J. Trilaksono",
+    "Iwan P. Anwar",
+    "Faiz R. Fajary"
+  ],
+  "abstract": "Parameter-mapping sonification of ENSO data preserves dynamical signatures through acoustic phase space analysis, revealing distinct coupling regimes in traditional musical scales. Sonification -- the mapping of data to non-speech audio -- offers an underexplored channel for representing complex dynamical systems . We treat El Niño-Southern Oscillation ( ENSO ), a canonical example of low-dimensional climate chaos, as a test case for culturally-situated sonification evaluated through complex systems diagnostics. Using parameter-mapping sonification of the Niño 3.4 sea surface temperature anomaly index (1870--2024), we encode ENSO variability into two traditional Javanese gamelan pentatonic systems ( pelog and slendro ) across four composition strategies, then analyze the resulting audio as trajectories in a two-dimensional acoustic phase space . Recurrence-based diagnostics , convex hull geometry , and coupling analysis reveal that the sonification pipeline preserves key dynamical signatures: alternating modes produce the highest trajectory recurrence rates, echoing ENSO 's quasi-periodicity; layered polyphonic modes explore the broadest phase space regions; and the two scale families induce qualitatively distinct coupling regimes between spectral brightness and energy -- predominantly anti-phase in pelog but near-independent in slendro . Phase space trajectory analysis provides a rigorous geometric framework for comparing sonification designs within a complex systems context. Perceptual validation remains necessary; we contribute the dynamical systems methodology for evaluating such mappings.",
+  "summary_en": "Parameter-mapping sonification of ENSO data preserves dynamical signatures through acoustic phase space analysis, revealing distinct coupling regimes in traditional musical scales.",
+  "summary_zh": "ENSO数据的参数映射声化通过声学相空间分析保留了动力学特征，在传统音阶中揭示了不同的耦合机制。",
+  "hf_url": "https://huggingface.co/papers/2602.14560",
+  "arxiv_url": "https://arxiv.org/abs/2602.14560",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14560",
+  "github_url": "https://github.com/sandyherho/suppl-enso-javanese-sonification",
+  "upvotes": 0,
+  "fetched_at": "2026-02-17T15:58:00.286351+00:00"
+}

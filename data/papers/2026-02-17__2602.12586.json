@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.12586",
+  "title": "Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering in Diffusion Language Models",
+  "authors": [
+    "Joshua Ong Jun Leang",
+    "Yu Zhao",
+    "Mihaela Cătălina Stoian",
+    "Wenda Li",
+    "Shay B. Cohen",
+    "Eleonora Giunchiglia"
+  ],
+  "abstract": "McDiffuSE enhances Masked Diffusion Models by optimizing slot infilling order through Monte Carlo Tree Search, improving reasoning task performance through strategic exploration of generation sequences. While plan-and-infill decoding in Masked Diffusion Models (MDMs) shows promise for mathematical and code reasoning, performance remains highly sensitive to slot infilling order, often yielding substantial output variance. We introduce McDiffuSE, a framework that formulates slot selection as decision making and optimises infilling orders through Monte Carlo Tree Search (MCTS). McDiffuSE uses look-ahead simulations to evaluate partial completions before commitment, systematically exploring the combinatorial space of generation orders . Experiments show an average improvement of 3.2% over autoregressive baselines and 8.0% over baseline plan-and-infill, with notable gains of 19.5% on MBPP and 4.9% on MATH500. Our analysis reveals that while McDiffuSE predominantly follows sequential ordering, incorporating non-sequential generation is essential for maximising performance. We observe that larger exploration constants, rather than increased simulations, are necessary to overcome model confidence biases and discover effective orderings. These findings establish MCTS-based planning as an effective approach for enhancing generation quality in MDMs.",
+  "summary_en": "McDiffuSE enhances Masked Diffusion Models by optimizing slot infilling order through Monte Carlo Tree Search, improving reasoning task performance through strategic exploration of generation sequences.",
+  "summary_zh": "McDiffuSE通过Monte Carlo Tree Search优化slot infilling order以增强Masked Diffusion Models，并通过strategic exploration of generation sequences提升reasoning task performance。",
+  "hf_url": "https://huggingface.co/papers/2602.12586",
+  "arxiv_url": "https://arxiv.org/abs/2602.12586",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12586",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-17T15:57:43.762632+00:00"
+}

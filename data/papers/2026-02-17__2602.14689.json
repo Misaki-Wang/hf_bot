@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14689",
+  "title": "Exposing the Systematic Vulnerability of Open-Weight Models to Prefill Attacks",
+  "authors": [
+    "Lukas Struppek",
+    "Adam Gleave",
+    "Kellin Pelrine"
+  ],
+  "abstract": "Prefill attacks represent a significant and underexplored vulnerability in open-weight language models, affecting major contemporary models despite some resistance from large reasoning models. As the capabilities of large language models continue to advance, so does their potential for misuse. While closed-source models typically rely on external defenses , open-weight models must primarily depend on internal safeguards to mitigate harmful behavior. Prior red-teaming research has largely focused on input-based jailbreaking and parameter-level manipulations. However, open-weight models also natively support prefilling , which allows an attacker to predefine initial response tokens before generation begins. Despite its potential, this attack vector has received little systematic attention. We present the largest empirical study to date of prefill attacks, evaluating over 20 existing and novel strategies across multiple model families and state-of-the-art open-weight models . Our results show that prefill attacks are consistently effective against all major contemporary open-weight models , revealing a critical and previously underexplored vulnerability with significant implications for deployment. While certain large reasoning models exhibit some robustness against generic prefilling , they remain vulnerable to tailored, model-specific strategies . Our findings underscore the urgent need for model developers to prioritize defenses against prefill attacks in open-weight LLMs.",
+  "summary_en": "Prefill attacks represent a significant and underexplored vulnerability in open-weight language models, affecting major contemporary models despite some resistance from large reasoning models.",
+  "summary_zh": "Prefill attacks 代表了开放权重语言模型中一种重大且未被充分探索的漏洞，影响着主流当代模型，尽管大型推理模型对此表现出一定的抵抗性。",
+  "hf_url": "https://huggingface.co/papers/2602.14689",
+  "arxiv_url": "https://arxiv.org/abs/2602.14689",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14689",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-17T15:58:01.257492+00:00"
+}

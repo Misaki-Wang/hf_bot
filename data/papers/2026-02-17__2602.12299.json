@@ -1,0 +1,17 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.12299",
+  "title": "Acoustivision Pro: An Open-Source Interactive Platform for Room Impulse Response Analysis and Acoustic Characterization",
+  "authors": [
+    "Mandip Goswami"
+  ],
+  "abstract": "Room acoustics analysis plays a central role in architectural design, audio engineering, speech intelligibility assessment, and hearing research. Despite the availability of standardized metrics such as reverberation time, clarity, and speech transmission index, accessible tools that combine rigorous signal processing with intuitive visualization remain scarce. This paper presents AcoustiVision Pro, an open-source web-based platform for comprehensive room impulse response (RIR) analysis. The system computes twelve distinct acoustic parameters from uploaded or dataset-sourced RIRs, provides interactive 3D visualizations of early reflections, generates frequency-dependent decay characteristics through waterfall plots, and checks compliance against international standards including ANSI S12.60 and ISO 3382. We introduce the accompanying RIRMega and RIRMega Speech datasets hosted on Hugging Face, containing thousands of simulated room impulse responses with full metadata. The platform supports real-time auralization through FFT-based convolution, exports detailed PDF reports suitable for engineering documentation, and provides CSV data export for further analysis. We describe the mathematical foundations underlying each acoustic metric, detail the system architecture, and present preliminary case studies demonstrating the platform's utility across diverse application domains including classroom acoustics, healthcare facility design, and recording studio evaluation.",
+  "summary_en": "This paper presents AcoustiVision Pro, an open-source web-based platform for room impulse response (RIR) analysis that computes twelve acoustic parameters, provides interactive 3D visualizations of early reflections, generates frequency-dependent waterfall plots, and checks compliance against ANSI S12.60 and ISO 3382 standards. The system supports real-time auralization through FFT-based convolution, exports PDF reports and CSV data, and is accompanied by the RIRMega and RIRMega Speech datasets hosted on Hugging Face containing thousands of simulated RIRs with full metadata. We describe the mathematical foundations underlying each metric, detail the system architecture, and present case studies demonstrating the platform's utility in classroom acoustics, healthcare facility design, and recording studio evaluation.",
+  "summary_zh": "本文介绍了 AcoustiVision Pro，这是一个开源的基于 Web 的房间脉冲响应 (RIR) 分析平台，可计算十二项声学参数，提供早期反射的交互式 3D 可视化，生成频域 waterfall plots，并检查是否符合 ANSI S12.60 和 ISO 3382 标准。该系统支持通过基于 FFT 的卷积实现实时 auralization，可导出 PDF 报告和 CSV 数据，并附带托管于 Hugging Face 的 RIRMega 和 RIRMega Speech 数据集，包含数千条带有完整元数据的模拟 RIR。我们描述了各项指标背后的数学基础，详细介绍了系统架构，并展示了案例研究，证明了该平台在教室声学、医疗设施设计和录音棚评估中的实用性。",
+  "hf_url": "https://huggingface.co/papers/2602.12299",
+  "arxiv_url": "https://arxiv.org/abs/2602.12299",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12299",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-17T15:57:42.450227+00:00"
+}

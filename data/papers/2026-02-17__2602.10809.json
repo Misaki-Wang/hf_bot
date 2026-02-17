@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.10809",
+  "title": "DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories",
+  "authors": [
+    "Chenlong Deng",
+    "Mengjie Deng",
+    "Junjie Wu",
+    "Dun Zeng",
+    "Teng Wang",
+    "Qingsong Xie",
+    "Jiadeng Huang",
+    "Shengjie Ma",
+    "Changwang Zhang",
+    "Zhaoxiang Wang",
+    "Jun Wang",
+    "Yutao Zhu",
+    "Zhicheng Dou"
+  ],
+  "abstract": "DeepImageSearch presents an agentic approach to image retrieval that addresses limitations of traditional semantic matching by enabling multi-step reasoning over visual histories through a modular agent framework with dual-memory system. Existing multimodal retrieval systems excel at semantic matching but implicitly assume that query-image relevance can be measured in isolation. This paradigm overlooks the rich dependencies inherent in realistic visual streams , where information is distributed across temporal sequences rather than confined to single snapshots. To bridge this gap, we introduce DeepImageSearch, a novel agentic paradigm that reformulates image retrieval as an autonomous exploration task. Models must plan and perform multi-step reasoning over raw visual histories to locate targets based on implicit contextual cues . We construct DISBench , a challenging benchmark built on interconnected visual data. To address the scalability challenge of creating context-dependent queries, we propose a human-model collaborative pipeline that employs vision-language models to mine latent spatiotemporal associations , effectively offloading intensive context discovery before human verification. Furthermore, we build a robust baseline using a modular agent framework equipped with fine-grained tools and a dual-memory system for long-horizon navigation . Extensive experiments demonstrate that DISBench poses significant challenges to state-of-the-art models, highlighting the necessity of incorporating agentic reasoning into next-generation retrieval systems.",
+  "summary_en": "DeepImageSearch presents an agentic approach to image retrieval that addresses limitations of traditional semantic matching by enabling multi-step reasoning over visual histories through a modular agent framework with dual-memory system.",
+  "summary_zh": "DeepImageSearch 提出了一种用于图像检索的智能体方法，该方法通过配备双记忆系统的模块化智能体框架，实现对视觉历史的多步推理，从而解决传统语义匹配的局限性。",
+  "hf_url": "https://huggingface.co/papers/2602.10809",
+  "arxiv_url": "https://arxiv.org/abs/2602.10809",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10809",
+  "github_url": "https://github.com/RUC-NLPIR/DeepImageSearch",
+  "upvotes": 24,
+  "fetched_at": "2026-02-17T15:57:40.909289+00:00"
+}
