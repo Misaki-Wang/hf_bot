@@ -24,6 +24,7 @@ HF_DATE_URL_TMPL = "https://huggingface.co/papers/date/{date}"
 ARXIV_ABS_URL_TMPL = "https://arxiv.org/abs/{arxiv_id}"
 
 ARXIV_ID_RE = re.compile(r"\b(\d{4}\.\d{4,5}(?:v\d+)?)\b", re.IGNORECASE)
+PLACEHOLDER_RE = re.compile(r"^\$[0-9a-zA-Z]+$")
 
 
 @dataclass
@@ -512,6 +513,51 @@ def build_arxiv_pdf_url(arxiv_url: str) -> str:
     return f"https://arxiv.org/pdf/{arxiv_id}"
 
 
+def output_path_for_paper(output_dir: Path, date: str, paper_id: str) -> Path:
+    safe_id = re.sub(r"[^A-Za-z0-9._-]", "_", paper_id)
+    return output_dir / f"{date}__{safe_id}.json"
+
+
+def has_meaningful_text(value: object, min_len: int = 48) -> bool:
+    text = clean_text(str(value or ""))
+    if not text:
+        return False
+    if PLACEHOLDER_RE.match(text):
+        return False
+    return len(text) >= min_len
+
+
+def is_complete_existing_json(path: Path, *, date: str, paper_id: str, hf_url: str) -> bool:
+    if not path.exists():
+        return False
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return False
+    if not isinstance(raw, dict):
+        return False
+
+    if clean_text(str(raw.get("date", ""))) != date:
+        return False
+    if clean_text(str(raw.get("paper_id", ""))) != paper_id:
+        return False
+    if clean_text(str(raw.get("hf_url", ""))) != hf_url:
+        return False
+    if not clean_text(str(raw.get("title", ""))):
+        return False
+    if not isinstance(raw.get("authors"), list) or not raw.get("authors"):
+        return False
+    if not clean_text(str(raw.get("fetched_at", ""))):
+        return False
+
+    # Mark complete when Chinese summary exists, or when source summary/abstract are both unavailable.
+    if has_meaningful_text(raw.get("summary_zh"), min_len=16):
+        return True
+    if not has_meaningful_text(raw.get("summary_en")) and not has_meaningful_text(raw.get("abstract")):
+        return True
+    return False
+
+
 def parse_paper(session: requests.Session, date: str, hf_url: str) -> PaperRecord:
     html = fetch_html(session, hf_url)
     soup = BeautifulSoup(html, "lxml")
@@ -554,15 +600,20 @@ def validate_date(date_text: str) -> str:
 
 
 def write_paper_json(output_dir: Path, record: PaperRecord) -> Path:
-    safe_id = re.sub(r"[^A-Za-z0-9._-]", "_", record.paper_id)
-    target = output_dir / f"{record.date}__{safe_id}.json"
+    target = output_path_for_paper(output_dir, record.date, record.paper_id)
     target.parent.mkdir(parents=True, exist_ok=True)
     with target.open("w", encoding="utf-8") as fh:
         json.dump(record.to_dict(), fh, ensure_ascii=False, indent=2)
     return target
 
 
-def run(date: str, output_dir: Path, min_sleep: float, max_sleep: float) -> None:
+def run(
+    date: str,
+    output_dir: Path,
+    min_sleep: float,
+    max_sleep: float,
+    skip_existing_complete: bool,
+) -> None:
     date_url = HF_DATE_URL_TMPL.format(date=date)
     session = make_session()
 
@@ -576,9 +627,22 @@ def run(date: str, output_dir: Path, min_sleep: float, max_sleep: float) -> None
 
     logging.info("Found %d papers for %s", len(paper_urls), date)
     success_count = 0
+    skipped_existing = 0
 
     for idx, hf_url in enumerate(paper_urls, start=1):
         logging.info("[%d/%d] Processing %s", idx, len(paper_urls), hf_url)
+        paper_id = urlparse(hf_url).path.rstrip("/").split("/")[-1]
+        output_path = output_path_for_paper(output_dir, date, paper_id)
+        if skip_existing_complete and is_complete_existing_json(
+            output_path,
+            date=date,
+            paper_id=paper_id,
+            hf_url=hf_url,
+        ):
+            logging.info("Skip existing complete JSON: %s", output_path)
+            skipped_existing += 1
+            continue
+
         try:
             paper = parse_paper(session, date=date, hf_url=hf_url)
             path = write_paper_json(output_dir, paper)
@@ -591,7 +655,12 @@ def run(date: str, output_dir: Path, min_sleep: float, max_sleep: float) -> None
             sleep_s = random.uniform(min_sleep, max_sleep)
             time.sleep(sleep_s)
 
-    logging.info("Done. success=%d total=%d", success_count, len(paper_urls))
+    logging.info(
+        "Done. success=%d skipped_existing=%d total=%d",
+        success_count,
+        skipped_existing,
+        len(paper_urls),
+    )
 
 
 def main() -> None:
@@ -605,6 +674,11 @@ def main() -> None:
     )
     parser.add_argument("--min-sleep", type=float, default=0.5, help="Minimum sleep between papers")
     parser.add_argument("--max-sleep", type=float, default=1.5, help="Maximum sleep between papers")
+    parser.add_argument(
+        "--skip-existing-complete",
+        action="store_true",
+        help="Skip fetching paper when existing JSON is already complete",
+    )
     parser.add_argument("--log-level", default="INFO", help="Logging level")
     args = parser.parse_args()
 
@@ -621,6 +695,7 @@ def main() -> None:
         output_dir=args.output_dir,
         min_sleep=args.min_sleep,
         max_sleep=args.max_sleep,
+        skip_existing_complete=args.skip_existing_complete,
     )
 
 

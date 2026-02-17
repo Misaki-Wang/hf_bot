@@ -10,6 +10,7 @@ import os
 import re
 import time
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 from typing import Protocol
 
@@ -220,11 +221,23 @@ def dump_json(path: Path, data: dict) -> None:
         json.dump(data, fh, ensure_ascii=False, indent=2)
 
 
-def run(data_dir: Path, provider: str, force: bool, model: str) -> None:
+def validate_date(value: str) -> str:
+    try:
+        datetime.strptime(value, "%Y-%m-%d")
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError(f"Invalid date: {value}") from exc
+    return value
+
+
+def run(data_dir: Path, provider: str, force: bool, model: str, date: str) -> None:
     translator = choose_translator(provider, model_override=model)
-    paper_files = sorted(data_dir.glob("*.json"))
+    pattern = f"{date}__*.json" if date else "*.json"
+    paper_files = sorted(data_dir.glob(pattern))
     if not paper_files:
-        logging.warning("No paper JSON files found in %s", data_dir)
+        if date:
+            logging.warning("No paper JSON files found in %s for date=%s", data_dir, date)
+        else:
+            logging.warning("No paper JSON files found in %s", data_dir)
         return
 
     translated = 0
@@ -287,6 +300,7 @@ def main() -> None:
         help="Override model name (e.g., moonshotai/kimi-k2.5). Works for openrouter/auto.",
     )
     parser.add_argument("--force", action="store_true", help="Re-translate even when summary_zh exists")
+    parser.add_argument("--date", type=validate_date, default="", help="Only process files for date YYYY-MM-DD")
     parser.add_argument("--log-level", default="INFO", help="Logging level")
     args = parser.parse_args()
 
@@ -295,7 +309,7 @@ def main() -> None:
         format="%(asctime)s | %(levelname)s | %(message)s",
     )
 
-    run(data_dir=args.data_dir, provider=args.provider, force=args.force, model=args.model)
+    run(data_dir=args.data_dir, provider=args.provider, force=args.force, model=args.model, date=args.date)
 
 
 if __name__ == "__main__":

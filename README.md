@@ -86,6 +86,12 @@ python3 scripts/fetch_daily.py --date 2026-02-16
 
 输出示例：`data/papers/2026-02-16__2602.10388.json`
 
+增量抓取（已存在完整 JSON 则跳过）：
+
+```bash
+python3 scripts/fetch_daily.py --date 2026-02-16 --skip-existing-complete
+```
+
 ### 3) 生成中文摘要
 
 `translate.py` 现在支持：当论文缺少 `summary_en` 时，自动基于 `abstract` 先生成英文摘要，再翻译为 `summary_zh`（若 `abstract` 不可用则跳过）。
@@ -108,6 +114,12 @@ python3 scripts/translate.py --provider auto
 
 ```bash
 python3 scripts/translate.py --provider openrouter
+```
+
+只翻译指定日期（推荐给自动任务）：
+
+```bash
+python3 scripts/translate.py --provider auto --date 2026-02-16
 ```
 
 切换其他 OpenRouter 模型（无需改代码）：

@@ -85,7 +85,7 @@ jobs:
           PY
 
       - name: Fetch papers
-        run: python scripts/fetch_daily.py --date "${{ steps.resolve_date.outputs.date }}"
+        run: python scripts/fetch_daily.py --date "${{ steps.resolve_date.outputs.date }}" --skip-existing-complete
 
       - name: Translate summaries
         env:
@@ -94,7 +94,7 @@ jobs:
           OPENROUTER_APP_NAME: hf-papers-archive
           OPENROUTER_APP_URL: https://github.com/${{ github.repository }}
           TRANSLATOR: ${{ github.event.inputs.translator || 'auto' }}
-        run: python scripts/translate.py --provider "$TRANSLATOR"
+        run: python scripts/translate.py --provider "$TRANSLATOR" --date "${{ steps.resolve_date.outputs.date }}"
 
       - name: Build JSON indexes
         env:
