@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.11609",
+  "title": "scPilot: Large Language Model Reasoning Toward Automated Single-Cell Analysis and Discovery",
+  "authors": [
+    "Yiming Gao",
+    "Zhen Wang",
+    "Jefferson Chen",
+    "Mark Antkowiak",
+    "Mengzhou Hu",
+    "JungHo Kong",
+    "Dexter Pratt",
+    "Jieyuan Liu",
+    "Enze Ma",
+    "Zhiting Hu",
+    "Eric P. Xing"
+  ],
+  "abstract": "scPilot presents a framework for omics-native reasoning where large language models directly analyze single-cell RNA-seq data through step-by-step reasoning processes, improving accuracy and interpretability in cell-type annotation and developmental trajectory reconstruction. We present scPilot, the first systematic framework to practice omics-native reasoning : a large language model (LLM) converses in natural language while directly inspecting single-cell RNA-seq data and on-demand bioinformatics tools. scPilot converts core single-cell analyses, i.e., cell-type annotation , developmental-trajectory reconstruction , and transcription-factor targeting , into step-by-step reasoning problems that the model must solve, justify, and, when needed, revise with new evidence. To measure progress, we release scBench, a suite of 9 expertly curated datasets and graders that faithfully evaluate the omics-native reasoning capability of scPilot w.r.t various LLMs. Experiments with o1 show that iterative omics-native reasoning lifts average accuracy by 11% for cell-type annotation and Gemini-2.5-Pro cuts trajectory graph-edit distance by 30% versus one-shot prompting, while generating transparent reasoning traces explain marker gene ambiguity and regulatory logic . By grounding LLMs in raw omics data, scPilot enables auditable, interpretable, and diagnostically informative single-cell analyses. Code, data, and package are available at https://github.com/maitrix-org/scPilot",
+  "summary_en": "scPilot presents a framework for omics-native reasoning where large language models directly analyze single-cell RNA-seq data through step-by-step reasoning processes, improving accuracy and interpretability in cell-type annotation and developmental trajectory reconstruction.",
+  "summary_zh": "scPilot 提出了一个用于 omics-native reasoning 的框架，其中大型语言模型通过逐步推理过程直接分析 single-cell RNA-seq 数据，从而提高细胞类型注释和发育轨迹重建的准确性和可解释性。",
+  "hf_url": "https://huggingface.co/papers/2602.11609",
+  "arxiv_url": "https://arxiv.org/abs/2602.11609",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11609",
+  "github_url": "https://github.com/maitrix-org/scPilot",
+  "upvotes": 1,
+  "fetched_at": "2026-02-17T08:52:45.901752+00:00"
+}

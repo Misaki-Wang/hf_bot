@@ -1,0 +1,24 @@
+{
+  "name": "hf-papers-archive-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "sync-data": "node scripts/sync-data.mjs",
+    "build": "npm run sync-data && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "lunr": "^2.3.9",
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/lunr": "^2.3.7",
+    "@types/node": "^22.13.4",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "typescript": "^5.7.3"
+  }
+}

@@ -2,23 +2,23 @@
 
 自动抓取 Hugging Face `papers/date/<YYYY-MM-DD>` 页面，归档每篇论文信息（含 AI-generated summary 的中英版本），并生成可部署到 GitHub Pages 的静态站点。
 
+当前版本：`v0.1`
+
 ## 功能
 
 - 按日期抓取：`https://huggingface.co/papers/date/YYYY-MM-DD`
 - 单篇字段归档（JSON）：
   - `title`
   - `authors`
-  - `institutions`
-  - `institution_source` (`hf` / `arxiv` / `none`)
+  - `abstract`（从 HF 论文页抽取）
   - `summary_en`
   - `summary_zh`
   - `hf_url`
   - `arxiv_url`
+  - `arxiv_pdf_url`（由 arXiv abs 链接自动转换）
+  - `github_url`（若 HF 页面提供）
+  - `upvotes`（HF 页面点赞数）
   - `fetched_at`
-- 机构提取策略：
-  - 优先 Hugging Face 页面
-  - fallback 到 arXiv (`/html/<id>` 和 `/abs/<id>`) 的机构线索
-  - 不可得则留空并标注 `institution_source=none`
 - 翻译可插拔：
   - 默认 `dummy`（无密钥也能跑完整流程）
   - 可选 `openrouter`（设置 `OPENROUTER_API_KEY` 后启用）
@@ -28,10 +28,13 @@
   - `data/search_index.json`
   - `data/dates/<date>.json`
 - 静态站点（Next.js 导出）：
+  - 顶部「今日论文总览」AI 摘要（可折叠，默认展开）
   - 日期分组列表
   - 详情页
   - 全文搜索（lunr）
   - 中英 summary 切换
+  - Abstract 折叠/展开
+  - 默认按 upvotes 降序展示
 
 ## 项目结构
 
@@ -85,6 +88,8 @@ python3 scripts/fetch_daily.py --date 2026-02-16
 
 ### 3) 生成中文摘要
 
+`translate.py` 现在支持：当论文缺少 `summary_en` 时，自动基于 `abstract` 先生成英文摘要，再翻译为 `summary_zh`（若 `abstract` 不可用则跳过）。
+
 默认（无密钥）：
 
 ```bash
@@ -117,6 +122,8 @@ python3 scripts/translate.py --provider openrouter --model anthropic/claude-3.5-
 python3 scripts/build_index.py
 ```
 
+若配置 `OPENROUTER_API_KEY`，会在构建索引时额外生成“今日论文总览”AI 摘要（写入 `data/index.json`）。
+
 ### 5) 构建静态站点
 
 ```bash
@@ -144,13 +151,29 @@ python3 scripts/fetch_daily.py --date 2026-02-16 \
   "paper_id": "2602.10388",
   "title": "Paper Title",
   "authors": ["Author A", "Author B"],
-  "institutions": ["University X", "UGA"],
-  "institution_source": "arxiv",
+  "abstract": "Paper abstract text ...",
   "summary_en": "HF AI-generated summary ...",
   "summary_zh": "中文翻译...",
   "hf_url": "https://huggingface.co/papers/2602.10388",
   "arxiv_url": "https://arxiv.org/abs/2602.10388",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10388",
+  "github_url": "https://github.com/org/repo",
+  "upvotes": 202,
   "fetched_at": "2026-02-17T01:23:45.678901+00:00"
+}
+```
+
+索引中的「今日论文总览」字段（`data/index.json`）示例：
+
+```json
+{
+  "daily_summary": {
+    "date": "2026-02-16",
+    "content": "今日论文整体聚焦于...",
+    "source": "openrouter",
+    "model": "moonshotai/kimi-k2.5",
+    "generated_at": "2026-02-17T08:47:39.574870+00:00"
+  }
 }
 ```
 
@@ -160,14 +183,14 @@ python3 scripts/fetch_daily.py --date 2026-02-16 \
 
 触发方式：
 
-- 定时：每天 UTC 01:20
+- 定时：每天 GMT+8 23:00（即 UTC 15:00）
 - 手动：`workflow_dispatch`
 
 流程：
 
 1. Checkout
 2. 安装 Python 依赖
-3. 计算目标日期（可选 UTC / JST）
+3. 计算目标日期（可选 CST / UTC / JST）
 4. `fetch_daily.py`
 5. `translate.py`
 6. `build_index.py`
@@ -180,7 +203,7 @@ python3 scripts/fetch_daily.py --date 2026-02-16 \
 在 GitHub Actions 页面运行 `Daily HF Papers Archive`：
 
 - `date`: `2026-02-16`
-- `timezone`: `UTC`
+- `timezone`: `CST`
 - `translator`: `dummy`（或 `openrouter`）
 
 ### Pages 配置
@@ -192,6 +215,27 @@ python3 scripts/fetch_daily.py --date 2026-02-16 \
 
 - 抓取器带随机限速（默认 0.5~1.5s）和最多 3 次重试。
 - 页面结构可能变化，脚本采用 DOM 容错解析，字段可能为空但流程不应崩溃。
+- `summary_en` 仅在页面存在 AI-generated summary 时写入；否则会留空，避免写入无效文案。
 - 若要真实翻译，请在仓库 Secrets 中配置：
   - `OPENROUTER_API_KEY`
   - 可选 `OPENROUTER_MODEL`（默认 `moonshotai/kimi-k2.5`）
+  - 可选 `OPENROUTER_SUMMARY_MODEL`（控制“今日论文总览”模型，默认跟随 `OPENROUTER_MODEL`）
+
+## v0.1 上传与部署清单
+
+1. 创建 GitHub 仓库（空仓库，不要初始化 README）。
+2. 本地设置远端并推送：
+   ```bash
+   git add .
+   git commit -m "release: v0.1"
+   git branch -M main
+   git remote add origin <your_repo_url>
+   git push -u origin main
+   ```
+3. 在 GitHub 仓库 `Settings -> Secrets and variables -> Actions` 添加：
+   - `OPENROUTER_API_KEY`（必需，若你要真实翻译/AI 总览）
+   - `OPENROUTER_MODEL`（可选）
+   - `OPENROUTER_SUMMARY_MODEL`（可选）
+4. 在 `Settings -> Actions -> General -> Workflow permissions` 里选择 `Read and write permissions`（用于自动提交 `data/` 更新）。
+5. 在 GitHub 仓库 `Settings -> Pages` 里将 Source 设为 `GitHub Actions`。
+6. 在 Actions 页面手动运行一次 `Daily HF Papers Archive`（`workflow_dispatch`）做首轮部署验证。

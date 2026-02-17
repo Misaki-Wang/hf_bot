@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+site/node_modules/
+site/.next/
+site/out/
+site/.vercel/
+site/public/data/
+.env

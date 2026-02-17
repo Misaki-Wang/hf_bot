@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.07298",
+  "title": "Principled Synthetic Data Enables the First Scaling Laws for LLMs in Recommendation",
+  "authors": [
+    "Benyu Zhang",
+    "Qiang Zhang",
+    "Jianpeng Cheng",
+    "Hong-You Chen",
+    "Qifei Wang",
+    "Wei Sun",
+    "Shen Li",
+    "Jia Li",
+    "Jiahao Wu",
+    "Xiangjun Fan",
+    "Hong Yan"
+  ],
+  "abstract": "A novel layered framework generates high-quality synthetic data for large language models in recommender systems, demonstrating superior performance and predictable scaling laws compared to traditional methods. Large Language Models (LLMs) represent a promising frontier for recommender systems , yet their development has been impeded by the absence of predictable scaling laws, which are crucial for guiding research and optimizing resource allocation. We hypothesize that this may be attributed to the inherent noise, bias, and incompleteness of raw user interaction data in prior continual pre-training (CPT) efforts. This paper introduces a novel, layered framework for generating high-quality synthetic data that circumvents such issues by creating a curated, pedagogical curriculum for the LLM. We provide powerful, direct evidence for the utility of our curriculum by showing that standard sequential models trained on our principled synthetic data significantly outperform (+130% on recall@100 for SasRec) models trained on real data in downstream ranking tasks, demonstrating its superiority for learning generalizable user preference patterns. Building on this, we empirically demonstrate, for the first time, robust power-law scaling for an LLM that is continually pre-trained on our high-quality, recommendation-specific data. Our experiments reveal consistent and predictable perplexity reduction across multiple synthetic data modalities. These findings establish a foundational methodology for reliable scaling LLM capabilities in the recommendation domain, thereby shifting the research focus from mitigating data deficiencies to leveraging high-quality, structured information.",
+  "summary_en": "A novel layered framework generates high-quality synthetic data for large language models in recommender systems, demonstrating superior performance and predictable scaling laws compared to traditional methods.",
+  "summary_zh": "一种新颖的分层框架能够为推荐系统中的大语言模型生成高质量合成数据，与传统方法相比具有更优的性能和可预测的缩放定律。",
+  "hf_url": "https://huggingface.co/papers/2602.07298",
+  "arxiv_url": "https://arxiv.org/abs/2602.07298",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07298",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-17T08:52:37.232386+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.13139",
+  "title": "OpenLID-v3: Improving the Precision of Closely Related Language Identification -- An Experience Report",
+  "authors": [
+    "Mariia Fedorova",
+    "Nikolay Arefyev",
+    "Maja Buljan",
+    "Jindřich Helcl",
+    "Stephan Oepen",
+    "Egil Rønningstad",
+    "Yves Scherrer"
+  ],
+  "abstract": "OpenLID-v3 improves language identification accuracy for closely related languages and low-resource variants through enhanced training data, cluster merging, and noise detection mechanisms. Language identification (LID) is an essential step in building high-quality multilingual datasets from web data . Existing LID tools (such as OpenLID or GlotLID ) often struggle to identify closely related languages and to distinguish valid natural language from noise, which contaminates language-specific subsets, especially for low-resource languages . In this work we extend the OpenLID classifier by adding more training data, merging problematic language variant clusters , and introducing a special label for marking noise. We call this extended system OpenLID -v3 and evaluate it against GlotLID on multiple benchmarks. During development, we focus on three groups of closely related languages (Bosnian, Croatian, and Serbian; Romance varieties of Northern Italy and Southern France; and Scandinavian languages) and contribute new evaluation datasets where existing ones are inadequate. We find that ensemble approaches improve precision but also substantially reduce coverage for low-resource languages . OpenLID -v3 is available on https://huggingface.co/HPLT/ OpenLID -v3.",
+  "summary_en": "OpenLID-v3 improves language identification accuracy for closely related languages and low-resource variants through enhanced training data, cluster merging, and noise detection mechanisms.",
+  "summary_zh": "OpenLID-v3 通过增强的训练数据、聚类合并及噪声检测机制，提升了对近缘语言及低资源变体的语言识别准确率。",
+  "hf_url": "https://huggingface.co/papers/2602.13139",
+  "arxiv_url": "https://arxiv.org/abs/2602.13139",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13139",
+  "github_url": "https://github.com/hplt-project/openlid",
+  "upvotes": 0,
+  "fetched_at": "2026-02-17T08:53:16.283694+00:00"
+}

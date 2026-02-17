@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.12221",
+  "title": "Best of Both Worlds: Multimodal Reasoning and Generation via Unified Discrete Flow Matching",
+  "authors": [
+    "Onkar Susladkar",
+    "Tushar Prakash",
+    "Gayatri Deshmukh",
+    "Kiet A. Nguyen",
+    "Jiaxun Zhang",
+    "Adheesh Juvekar",
+    "Tianshu Bao",
+    "Lin Chai",
+    "Sparsh Mittal",
+    "Inderjit S Dhillon",
+    "Ismini Lourentzou"
+  ],
+  "abstract": "UniDFlow is a unified discrete flow-matching framework that decouples understanding and generation through low-rank adapters and uses reference-based alignment to improve multimodal tasks without retraining. We propose UniDFlow, a unified discrete flow-matching framework for multimodal understanding , generation , and editing . It decouples understanding and generation via task-specific low-rank adapters , avoiding objective interference and representation entanglement, while a novel reference-based multimodal preference alignment optimizes relative outcomes under identical conditioning, improving faithfulness and controllability without large-scale retraining. UniDFlpw achieves SOTA performance across eight benchmarks and exhibits strong zero-shot generalization to tasks including inpainting , in-context image generation , reference-based editing , and compositional generation , despite no explicit task-specific training.",
+  "summary_en": "UniDFlow is a unified discrete flow-matching framework that decouples understanding and generation through low-rank adapters and uses reference-based alignment to improve multimodal tasks without retraining.",
+  "summary_zh": "UniDFlow是一个统一的离散流匹配框架，通过low-rank adapters解耦理解与生成，并利用reference-based alignment改进多模态任务，无需重新训练。",
+  "hf_url": "https://huggingface.co/papers/2602.12221",
+  "arxiv_url": "https://arxiv.org/abs/2602.12221",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12221",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-17T08:52:55.775250+00:00"
+}

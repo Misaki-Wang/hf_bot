@@ -1,0 +1,148 @@
+name: Daily HF Papers Archive
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date to fetch (YYYY-MM-DD), leave empty for current date in timezone'
+        required: false
+        type: string
+      timezone:
+        description: 'Date timezone when date input is empty'
+        required: false
+        type: choice
+        default: CST
+        options:
+          - CST
+          - UTC
+          - JST
+      translator:
+        description: 'Translation provider'
+        required: false
+        type: choice
+        default: auto
+        options:
+          - auto
+          - dummy
+          - openrouter
+  schedule:
+    # 23:00 GMT+8 = 15:00 UTC (daily)
+    - cron: '0 15 * * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: hf-papers-archive-pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Resolve target date
+        id: resolve_date
+        env:
+          INPUT_DATE: ${{ github.event.inputs.date }}
+          INPUT_TIMEZONE: ${{ github.event.inputs.timezone || 'CST' }}
+        run: |
+          python - <<'PY'
+          from datetime import datetime, timezone
+          from zoneinfo import ZoneInfo
+          import os
+
+          date_input = (os.getenv("INPUT_DATE") or "").strip()
+          tz_input = (os.getenv("INPUT_TIMEZONE") or "CST").strip().upper()
+
+          if date_input:
+            target_date = date_input
+          else:
+            if tz_input == "UTC":
+              tz = timezone.utc
+            elif tz_input == "JST":
+              tz = ZoneInfo("Asia/Tokyo")
+            else:
+              tz = ZoneInfo("Asia/Shanghai")
+            target_date = datetime.now(tz).strftime("%Y-%m-%d")
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+            fh.write(f"date={target_date}\n")
+          print(f"Target date: {target_date}")
+          PY
+
+      - name: Fetch papers
+        run: python scripts/fetch_daily.py --date "${{ steps.resolve_date.outputs.date }}"
+
+      - name: Translate summaries
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
+          OPENROUTER_APP_NAME: hf-papers-archive
+          OPENROUTER_APP_URL: https://github.com/${{ github.repository }}
+          TRANSLATOR: ${{ github.event.inputs.translator || 'auto' }}
+        run: python scripts/translate.py --provider "$TRANSLATOR"
+
+      - name: Build JSON indexes
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
+          OPENROUTER_SUMMARY_MODEL: ${{ secrets.OPENROUTER_SUMMARY_MODEL }}
+          OPENROUTER_APP_NAME: hf-papers-archive
+          OPENROUTER_APP_URL: https://github.com/${{ github.repository }}
+        run: python scripts/build_index.py
+
+      - name: Detect data changes
+        id: data_changes
+        run: |
+          if git diff --quiet -- data; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit data updates
+        if: steps.data_changes.outputs.changed == 'true'
+        env:
+          TARGET_DATE: ${{ steps.resolve_date.outputs.date }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "chore(data): update HF papers for ${TARGET_DATE}"
+          git push
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install site dependencies
+        run: npm install --prefix site
+
+      - name: Build static site
+        run: npm run build --prefix site
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/out
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

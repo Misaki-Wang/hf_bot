@@ -1,0 +1,30 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.04163",
+  "title": "BPDQ: Bit-Plane Decomposition Quantization on a Variable Grid for Large Language Models",
+  "authors": [
+    "Junyu Chen",
+    "Jungang Li",
+    "Jing Xiong",
+    "Wenjie Wang",
+    "Qingyao Yang",
+    "He Xiao",
+    "Zhen Li",
+    "Taiqiang Wu",
+    "Mengzhao Chen",
+    "Zhen Peng",
+    "Chaofan Tao",
+    "Long Shi",
+    "Hongxia Yang",
+    "Ngai Wong"
+  ],
+  "abstract": "Bit-Plane Decomposition Quantization (BPDQ) improves low-bit quantization by using variable quantization grids derived from bit-planes and scalar coefficients, achieving better accuracy than traditional methods in resource-constrained LLM inference. Large language model (LLM) inference is often bounded by memory footprint and memory bandwidth in resource-constrained deployments, making quantization a fundamental technique for efficient serving. While post-training quantization (PTQ) maintains high fidelity at 4-bit, it deteriorates at 2-3 bits. Fundamentally, existing methods enforce a shape-invariant quantization grid (e.g., the fixed uniform intervals of UINT2) for each group, severely restricting the feasible set for error minimization. To address this, we propose Bit-Plane Decomposition Quantization (BPDQ), which constructs a variable quantization grid via bit-planes and scalar coefficients , and iteratively refines them using approximate second-order information while progressively compensating quantization error s to minimize output discrepancy. In the 2-bit regime, BPDQ enables serving Qwen2.5-72B on a single RTX 3090 with 83.85% GSM8K accuracy (vs. 90.83% at 16-bit). Moreover, we provide theoretical analysis showing that the variable grid expands the feasible set, and that the quantization process consistently aligns with the optimization objective in Hessian-induced geometry . Code: github.com/KingdalfGoodman/BPDQ.",
+  "summary_en": "Bit-Plane Decomposition Quantization (BPDQ) improves low-bit quantization by using variable quantization grids derived from bit-planes and scalar coefficients, achieving better accuracy than traditional methods in resource-constrained LLM inference.",
+  "summary_zh": "Bit-Plane Decomposition Quantization (BPDQ) 利用源自位平面和标量系数的可变量化网格改进低比特量化，在资源受限的LLM推理中实现了优于传统方法的精度。",
+  "hf_url": "https://huggingface.co/papers/2602.04163",
+  "arxiv_url": "https://arxiv.org/abs/2602.04163",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04163",
+  "github_url": "",
+  "upvotes": 6,
+  "fetched_at": "2026-02-17T08:52:34.419222+00:00"
+}

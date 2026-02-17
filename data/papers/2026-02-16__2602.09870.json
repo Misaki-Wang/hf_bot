@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.09870",
+  "title": "Steer2Edit: From Activation Steering to Component-Level Editing",
+  "authors": [
+    "Chung-En Sun",
+    "Ge Yan",
+    "Zimo Wang",
+    "Tsui-Wei Weng"
+  ],
+  "abstract": "Steering methods influence Large Language Model behavior by identifying semantic directions in hidden representations, but are typically realized through inference-time activation interventions that apply a fixed, global modification to the model's internal states. While effective, such interventions often induce unfavorable attribute-utility trade-offs under strong control, as they ignore the fact that many behaviors are governed by a small and heterogeneous subset of model components. We propose Steer2Edit, a theoretically grounded, training-free framework that transforms steering vectors from inference-time control signals into diagnostic signals for component-level rank-1 weight editing. Instead of uniformly injecting a steering direction during generation, Steer2Edit selectively redistributes behavioral influence across individual attention heads and MLP neurons, yielding interpretable edits that preserve the standard forward pass and remain compatible with optimized parallel inference. Across safety alignment, hallucination mitigation, and reasoning efficiency, Steer2Edit consistently achieves more favorable attribute-utility trade-offs: at matched downstream performance, it improves safety by up to 17.2%, increases truthfulness by 9.8%, and reduces reasoning length by 12.2% on average. Overall, Steer2Edit provides a principled bridge between representation steering and weight editing by translating steering signals into interpretable, training-free parameter updates.",
+  "summary_en": "Steer2Edit is a training-free framework that transforms inference-time steering vectors into selective rank-1 weight edits of individual attention heads and MLP neurons, avoiding the attribute-utility trade-offs caused by fixed global activation interventions. By redistributing behavioral influence across specific components rather than uniformly modifying internal states during generation, Steer2Edit achieves up to 17.2% safety improvement, 9.8% increased truthfulness, and 12.2% reduced reasoning length while preserving downstream performance and compatibility with optimized inference. This approach provides a principled bridge between representation steering and weight editing by translating steering signals into interpretable parameter updates.",
+  "summary_zh": "Steer2Edit 是一种无需训练的框架，它将推理时的 steering vectors 转化为针对单个 attention heads 和 MLP neurons 的选择性 rank-1 weight edits，从而避免了固定全局 activation interventions 所导致的属性-效用权衡。通过将行为影响重新分配到特定组件，而非在生成过程中均匀修改内部状态，Steer2Edit 在保持 downstream performance 和与 optimized inference 兼容性的同时，实现了高达 17.2% 的安全性提升、9.8% 的真实性提升以及 12.2% 的推理长度缩减。该方法通过将 steering signals 转化为可解释的 parameter updates，在 representation steering 与 weight editing 之间建立了原则性的桥梁。",
+  "hf_url": "https://huggingface.co/papers/2602.09870",
+  "arxiv_url": "https://arxiv.org/abs/2602.09870",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09870",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-17T08:52:41.895447+00:00"
+}

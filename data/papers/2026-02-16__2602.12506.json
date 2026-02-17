@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.12506",
+  "title": "On Robustness and Chain-of-Thought Consistency of RL-Finetuned VLMs",
+  "authors": [
+    "Rosie Zhao",
+    "Anshul Shah",
+    "Xiaoyu Zhu",
+    "Xinke Deng",
+    "Zhongyu Jiang",
+    "Yang Yang",
+    "Joerg Liebelt",
+    "Arnab Mondal"
+  ],
+  "abstract": "Reinforcement learning (RL) fine-tuning has become a key technique for enhancing large language models (LLMs) on reasoning-intensive tasks, motivating its extension to vision language models (VLMs). While RL-tuned VLMs improve on visual reasoning benchmarks, they remain vulnerable to weak visual grounding, hallucinations, and over-reliance on textual cues. We show that simple, controlled textual perturbations--misleading captions or incorrect chain-of-thought (CoT) traces--cause substantial drops in robustness and confidence, and that these effects are more pronounced when CoT consistency is taken into account across open-source multimodal reasoning models. Entropy-based metrics further show that these perturbations reshape model uncertainty and probability mass on the correct option, exposing model-specific trends in miscalibration. To better understand these vulnerabilities, we further analyze RL fine-tuning dynamics and uncover an accuracy-faithfulness trade-off: fine-tuning raises benchmark accuracy, but can simultaneously erode the reliability of the accompanying CoT and its robustness to contextual shifts. Although adversarial augmentation improves robustness, it does not by itself prevent faithfulness drift. Incorporating a faithfulness-aware reward can restore alignment between answers and reasoning, but when paired with augmentation, training risks collapsing onto shortcut strategies and robustness remains elusive. Together, these findings highlight the limitations of accuracy-only evaluations and motivate training and assessment protocols that jointly emphasize correctness, robustness, and the faithfulness of visually grounded reasoning.",
+  "summary_en": "Reinforcement learning (RL) fine-tuning improves vision language models (VLMs) on visual reasoning benchmarks but introduces vulnerabilities to textual perturbations such as misleading captions or incorrect chain-of-thought (CoT) traces, which entropy-based metrics show reshape model uncertainty and reduce robustness. The authors identify an accuracy-faithfulness trade-off wherein RL fine-tuning increases benchmark accuracy while eroding CoT reliability and robustness to contextual shifts. While adversarial augmentation improves robustness and faithfulness-aware rewards restore alignment between answers and reasoning, their combination risks training collapse onto shortcut strategies. These findings highlight the limitations of accuracy-only evaluations and motivate assessment protocols that jointly emphasize correctness, robustness, and the faithfulness of visually grounded reasoning.",
+  "summary_zh": "强化学习 (RL) 微调可提升视觉语言模型 (VLMs) 在视觉推理基准上的表现，但会引入对文本扰动的脆弱性，例如误导性标题或错误的思维链 (CoT) 轨迹；基于熵的指标显示，这类扰动会重塑模型不确定性并降低鲁棒性。作者识别出一种准确性与忠实度之间的权衡 (accuracy-faithfulness trade-off)：RL 微调在提高基准准确率的同时，会削弱 CoT 的可靠性以及对上下文变化的鲁棒性。尽管对抗增强 (adversarial augmentation) 能提升鲁棒性，且忠实度感知奖励 (faithfulness-aware rewards) 能恢复答案与推理的一致性，但两者结合可能导致训练崩溃 (training collapse)，使模型陷入捷径策略 (shortcut strategies)。这些发现凸显了仅关注准确率的评估局限，并推动了同时强调正确性、鲁棒性及视觉基础推理 (visually grounded reasoning) 忠实度的评估协议。",
+  "hf_url": "https://huggingface.co/papers/2602.12506",
+  "arxiv_url": "https://arxiv.org/abs/2602.12506",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12506",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-17T08:53:00.561543+00:00"
+}

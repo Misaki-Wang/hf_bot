@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.11769",
+  "title": "Light4D: Training-Free Extreme Viewpoint 4D Video Relighting",
+  "authors": [
+    "Zhenghuang Wu",
+    "Kang Chen",
+    "Zeyu Zhang",
+    "Hao Tang"
+  ],
+  "abstract": "Light4D enables consistent 4D video synthesis under target illumination through disentangled flow guidance and temporal consistent attention mechanisms. Recent advances in diffusion-based generative models have established a new paradigm for image and video relighting. However, extending these capabilities to 4D relighting remains challenging, due primarily to the scarcity of paired 4D relighting training data and the difficulty of maintaining temporal consistency across extreme viewpoints. In this work, we propose Light4D, a novel training-free framework designed to synthesize consistent 4D videos under target illumination, even under extreme viewpoint changes. First, we introduce Disentangled Flow Guidance , a time-aware strategy that effectively injects lighting control into the latent space while preserving geometric integrity . Second, to reinforce temporal consistency , we develop Temporal Consistent Attention within the IC-Light architecture and further incorporate deterministic regularization to eliminate appearance flickering. Extensive experiments demonstrate that our method achieves competitive performance in temporal consistency and lighting fidelity, robustly handling camera rotations from -90 to 90. Code: https://github.com/AIGeeksGroup/Light4D. Website: https://aigeeksgroup.github.io/Light4D.",
+  "summary_en": "Light4D enables consistent 4D video synthesis under target illumination through disentangled flow guidance and temporal consistent attention mechanisms.",
+  "summary_zh": "Light4D通过解耦的光流引导和时序一致性注意力机制，实现了目标光照下的一致4D视频合成。",
+  "hf_url": "https://huggingface.co/papers/2602.11769",
+  "arxiv_url": "https://arxiv.org/abs/2602.11769",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11769",
+  "github_url": "https://github.com/AIGeeksGroup/Light4D",
+  "upvotes": 2,
+  "fetched_at": "2026-02-17T08:52:50.604613+00:00"
+}

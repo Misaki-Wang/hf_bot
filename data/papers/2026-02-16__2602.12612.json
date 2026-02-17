@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.12612",
+  "title": "Self-EvolveRec: Self-Evolving Recommender Systems with LLM-based Directional Feedback",
+  "authors": [
+    "Sein Kim",
+    "Sangwu Park",
+    "Hongseok Kang",
+    "Wonjoong Kim",
+    "Jimin Seo",
+    "Yeonjun In",
+    "Kanghoon Yoon",
+    "Chanyoung Park"
+  ],
+  "abstract": "Traditional methods for automating recommender system design, such as Neural Architecture Search (NAS), are often constrained by a fixed search space defined by human priors, limiting innovation to pre-defined operators. While recent LLM-driven code evolution frameworks shift fixed search space target to open-ended program spaces, they primarily rely on scalar metrics (e.g., NDCG, Hit Ratio) that fail to provide qualitative insights into model failures or directional guidance for improvement. To address this, we propose Self-EvolveRec, a novel framework that establishes a directional feedback loop by integrating a User Simulator for qualitative critiques and a Model Diagnosis Tool for quantitative internal verification. Furthermore, we introduce a Diagnosis Tool - Model Co-Evolution strategy to ensure that evaluation criteria dynamically adapt as the recommendation architecture evolves. Extensive experiments demonstrate that Self-EvolveRec significantly outperforms state-of-the-art NAS and LLM-driven code evolution baselines in both recommendation performance and user satisfaction. Our code is available at https://github.com/Sein-Kim/self_evolverec.",
+  "summary_en": "Traditional Neural Architecture Search (NAS) methods are constrained by fixed search spaces, while recent LLM-driven code evolution frameworks rely on scalar metrics that lack qualitative insights. We propose Self-EvolveRec, which establishes a directional feedback loop using a User Simulator for qualitative critiques and a Model Diagnosis Tool for quantitative verification, along with a Diagnosis Tool - Model Co-Evolution strategy to dynamically adapt evaluation criteria as architectures evolve. Experiments show Self-EvolveRec significantly outperforms state-of-the-art NAS and LLM-driven baselines in recommendation performance and user satisfaction.",
+  "summary_zh": "传统的神经架构搜索（NAS）方法受限于固定的搜索空间，而近期基于LLM的代码演化框架依赖缺乏定性洞察的标量指标。我们提出Self-EvolveRec，利用User Simulator进行定性评估，利用Model Diagnosis Tool进行定量验证，建立定向反馈循环，并采用Diagnosis Tool - Model Co-Evolution策略随架构演化动态调整评估标准。实验表明，Self-EvolveRec在推荐性能和用户满意度方面显著优于当前最优的NAS和基于LLM的基线方法。",
+  "hf_url": "https://huggingface.co/papers/2602.12612",
+  "arxiv_url": "https://arxiv.org/abs/2602.12612",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12612",
+  "github_url": "https://github.com/Sein-Kim/self_evolverec",
+  "upvotes": 2,
+  "fetched_at": "2026-02-17T08:53:01.701981+00:00"
+}

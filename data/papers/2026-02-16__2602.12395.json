@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.12395",
+  "title": "What does RL improve for Visual Reasoning? A Frankenstein-Style Analysis",
+  "authors": [
+    "Xirui Li",
+    "Ming Li",
+    "Tianyi Zhou"
+  ],
+  "abstract": "Reinforcement learning (RL) with verifiable rewards has become a standard post-training stage for boosting visual reasoning in vision-language models, yet it remains unclear what capabilities RL actually improves compared with supervised fine-tuning as cold-start initialization (IN). End-to-end benchmark gains conflate multiple factors, making it difficult to attribute improvements to specific skills. To bridge the gap, we propose a Frankenstein-style analysis framework including: (i) functional localization via causal probing; (ii) update characterization via parameter comparison; and (iii) transferability test via model merging. Instead, RL induces a consistent inference-time shift primarily in mid-to-late layers, and these mid-to-late refinements are both transferable (via merging) and necessary (via freezing) for RL gains. Overall, our results suggest that RL's reliable contribution in visual reasoning is not a uniform enhancement of visual perception, but a systematic refinement of mid-to-late transformer computation that improves vision-to-reasoning alignment and reasoning performance, highlighting the limitations of benchmark-only evaluation for understanding multimodal reasoning improvements.",
+  "summary_en": "The authors propose a Frankenstein-style analysis framework combining causal probing, parameter comparison, and model merging to disentangle what capabilities reinforcement learning (RL) with verifiable rewards improves in vision-language models beyond supervised fine-tuning. Their results demonstrate that RL induces a consistent inference-time shift primarily in mid-to-late layers, with these refinements proving both transferable via model merging and necessary via layer freezing for RL gains. These findings indicate that RL's contribution to visual reasoning is not a uniform enhancement of visual perception, but rather a systematic refinement of mid-to-late transformer computation that improves vision-to-reasoning alignment and reasoning performance.",
+  "summary_zh": "作者提出了一种Frankenstein-style分析框架，结合causal probing、parameter comparison与model merging，以厘清相较于supervised fine-tuning，reinforcement learning (RL) with verifiable rewards在vision-language models中提升了哪些能力。结果表明，RL主要在mid-to-late layers诱导了一致的inference-time shift，且证明这些refinement既可通过model merging迁移，又需通过layer freezing方能实现RL gains。这些发现表明，RL对visual reasoning的贡献并非visual perception的uniform enhancement，而是对mid-to-late transformer computation的systematic refinement，从而提升vision-to-reasoning alignment与reasoning performance。",
+  "hf_url": "https://huggingface.co/papers/2602.12395",
+  "arxiv_url": "https://arxiv.org/abs/2602.12395",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12395",
+  "github_url": "https://github.com/tianyi-lab/Frankenstein",
+  "upvotes": 13,
+  "fetched_at": "2026-02-17T08:52:57.355724+00:00"
+}

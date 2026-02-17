@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-16",
+  "paper_id": "2602.12829",
+  "title": "FLAC: Maximum Entropy RL via Kinetic Energy Regularized Bridge Matching",
+  "authors": [
+    "Lei Lv",
+    "Yunfei Li",
+    "Yu Luo",
+    "Fuchun Sun",
+    "Xiao Ma"
+  ],
+  "abstract": "Field Least-Energy Actor-Critic (FLAC) addresses challenges in maximum entropy reinforcement learning with iterative generative policies by using kinetic energy as a proxy for policy stochasticity regulation through a generalized Schrödinger bridge formulation. Iterative generative policies, such as diffusion models and flow matching , offer superior expressivity for continuous control but complicate Maximum Entropy Reinforcement Learning because their action log-densities are not directly accessible. To address this, we propose Field Least-Energy Actor-Critic (FLAC), a likelihood-free framework that regulates policy stochasticity by penalizing the kinetic energy of the velocity field . Our key insight is to formulate policy optimization as a Generalized Schrödinger Bridge (GSB) problem relative to a high-entropy reference process (e.g., uniform). Under this view, the maximum-entropy principle emerges naturally as staying close to a high-entropy reference while optimizing return, without requiring explicit action densities. In this framework, kinetic energy serves as a physically grounded proxy for divergence from the reference: minimizing path-space energy bounds the deviation of the induced terminal action distribution. Building on this view, we derive an energy-regularized policy iteration scheme and a practical off-policy algorithm that automatically tunes the kinetic energy via a Lagrangian dual mechanism . Empirically, FLAC achieves superior or comparable performance on high-dimensional benchmarks relative to strong baselines, while avoiding explicit density estimation.",
+  "summary_en": "Field Least-Energy Actor-Critic (FLAC) addresses challenges in maximum entropy reinforcement learning with iterative generative policies by using kinetic energy as a proxy for policy stochasticity regulation through a generalized Schrödinger bridge formulation.",
+  "summary_zh": "Field Least-Energy Actor-Critic (FLAC) 通过广义Schrödinger bridge公式，利用动能作为策略随机性调节的代理，解决了最大熵强化学习中迭代生成策略所面临的挑战。",
+  "hf_url": "https://huggingface.co/papers/2602.12829",
+  "arxiv_url": "https://arxiv.org/abs/2602.12829",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12829",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-17T08:53:10.739560+00:00"
+}
