@@ -12,11 +12,11 @@
   ],
   "abstract": "Diffusion large language models (dLLMs) for CUDA kernel generation achieve superior performance through a specialized dataset and reinforcement learning framework. Diffusion large language models (dLLMs) have emerged as a compelling alternative to autoregressive (AR) LLMs, owing to their capacity for parallel token generation . This paradigm is particularly well-suited for code generation, where holistic structural planning and non-sequential refinement are critical. Despite this potential, tailoring dLLMs for CUDA kernel generation remains challenging, obstructed not only by the high specialization but also by the severe lack of high-quality training data. To address these challenges, we construct CuKe, an augmented supervised fine-tuning dataset optimized for high-performance CUDA kernels. On top of it, we propose a bi-phase curated reinforcement learning (BiC-RL) framework consisting of a CUDA kernel infilling stage and an end-to-end CUDA kernel generation stage. Leveraging this training framework, we introduce DICE, a series of diffusion large language models designed for CUDA kernel generation , spanning three parameter scales, 1.7B, 4B, and 8B. Extensive experiments on KernelBench demonstrate that DICE significantly outperforms both autoregressive and diffusion LLMs of comparable scale, establishing a new state-of-the-art for CUDA kernel generation .",
   "summary_en": "Diffusion large language models (dLLMs) for CUDA kernel generation achieve superior performance through a specialized dataset and reinforcement learning framework.",
-  "summary_zh": "面向 CUDA 内核生成的扩散大语言模型 (dLLMs) 通过专门的数据集和强化学习框架实现了更优的性能。",
+  "summary_zh": "用于 CUDA 内核生成的扩散大语言模型 (dLLMs) 通过专门的数据集和强化学习框架实现了更优性能。",
   "hf_url": "https://huggingface.co/papers/2602.11715",
   "arxiv_url": "https://arxiv.org/abs/2602.11715",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11715",
   "github_url": "https://github.com/deadlykitten4/DICE",
   "upvotes": 5,
-  "fetched_at": "2026-02-17T08:52:47.569751+00:00"
+  "fetched_at": "2026-02-17T09:52:07.720244+00:00"
 }

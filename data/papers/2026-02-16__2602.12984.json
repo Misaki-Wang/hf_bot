@@ -26,11 +26,11 @@
   ],
   "abstract": "SciAgentGym and SciAgentBench enable evaluation of scientific tool-use capabilities, while SciForge improves agent performance through dependency graph modeling of tool interactions.",
   "summary_en": "SciAgentGym and SciAgentBench enable evaluation of scientific tool-use capabilities, while SciForge improves agent performance through dependency graph modeling of tool interactions.",
-  "summary_zh": "SciAgentGym 和 SciAgentBench 支持对科学工具使用能力的评估，而 SciForge 则通过工具交互的依赖图建模来提升智能体性能。",
+  "summary_zh": "SciAgentGym 和 SciAgentBench 支持科学工具使用能力的评估，而 SciForge 则通过依赖图建模工具交互来提升智能体性能。",
   "hf_url": "https://huggingface.co/papers/2602.12984",
   "arxiv_url": "https://arxiv.org/abs/2602.12984",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12984",
   "github_url": "https://github.com/CMarsRover/SciAgentGYM",
   "upvotes": 4,
-  "fetched_at": "2026-02-17T08:53:12.250735+00:00"
+  "fetched_at": "2026-02-17T09:52:25.767440+00:00"
 }

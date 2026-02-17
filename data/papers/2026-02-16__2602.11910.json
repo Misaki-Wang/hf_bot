@@ -10,11 +10,11 @@
   ],
   "abstract": "Research reveals that specific attention layers in audio diffusion models control distinct musical concepts, enabling precise manipulation of audio features through activation steering. Audio diffusion models can synthesize high-fidelity music from text, yet their internal mechanisms for representing high-level concepts remain poorly understood. In this work, we use activation patching to demonstrate that distinct semantic musical concepts , such as the presence of specific instruments, vocals, or genre characteristics, are controlled by a small, shared subset of attention layers in state-of-the-art audio diffusion architectures. Next, we demonstrate that applying Contrastive Activation Addition and Sparse Autoencoders in these layers enables more precise control over the generated audio, indicating a direct benefit of the specialization phenomenon. By steering activations of the identified layers, we can alter specific musical elements with high precision, such as modulating tempo or changing a track's mood.",
   "summary_en": "Research reveals that specific attention layers in audio diffusion models control distinct musical concepts, enabling precise manipulation of audio features through activation steering.",
-  "summary_zh": "研究揭示，音频扩散模型中的特定注意力层控制不同的音乐概念，从而通过 activation steering 实现对音频特征的精确操控。",
+  "summary_zh": "研究表明，音频扩散模型中的特定注意力层控制着不同的音乐概念，从而能够通过激活引导精确操控音频特征。",
   "hf_url": "https://huggingface.co/papers/2602.11910",
   "arxiv_url": "https://arxiv.org/abs/2602.11910",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11910",
   "github_url": "https://github.com/luk-st/steer-audio",
   "upvotes": 2,
-  "fetched_at": "2026-02-17T08:52:54.723127+00:00"
+  "fetched_at": "2026-02-17T09:52:13.145126+00:00"
 }

@@ -12,11 +12,11 @@
   ],
   "abstract": "GeoAgent achieves superior geolocation reasoning performance through a specialized dataset and reward mechanisms that ensure geographic accuracy and reasoning consistency. This paper presents GeoAgent, a model capable of reasoning closely with humans and deriving fine-grained address conclusions. Previous RL-based methods have achieved breakthroughs in performance and interpretability but still remain concerns because of their reliance on AI-generated chain-of-thought (CoT) data and training strategies, which conflict with geographic characteristics . To address these issues, we first introduce GeoSeek, a new geolocation dataset comprising CoT data annotated by geographic experts and professional players. We further thoroughly explore the inherent characteristics of geographic tasks and propose a geo-similarity reward and a consistency reward assessed by a consistency agent to assist training. This encourages the model to converge towards correct answers from a geographic perspective while ensuring the integrity and consistency of its reasoning process . Experimental results show that GeoAgent outperforms existing methods and a series of general VLLMs across multiple grains, while generating reasoning that closely aligns with humans.",
   "summary_en": "GeoAgent achieves superior geolocation reasoning performance through a specialized dataset and reward mechanisms that ensure geographic accuracy and reasoning consistency.",
-  "summary_zh": "GeoAgent 通过可确保地理准确性和推理一致性的专门数据集与奖励机制，实现了卓越的地理定位推理性能。",
+  "summary_zh": "GeoAgent 通过专门的数据集和奖励机制实现卓越的地理定位推理性能，确保地理准确性和推理一致性。",
   "hf_url": "https://huggingface.co/papers/2602.12617",
   "arxiv_url": "https://arxiv.org/abs/2602.12617",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12617",
   "github_url": "https://github.com/HVision-NKU/GeoAgent",
   "upvotes": 19,
-  "fetched_at": "2026-02-17T08:53:04.164869+00:00"
+  "fetched_at": "2026-02-17T09:52:19.372799+00:00"
 }

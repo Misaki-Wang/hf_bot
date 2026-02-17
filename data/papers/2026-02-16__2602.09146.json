@@ -11,11 +11,11 @@
   ],
   "abstract": "Temporal statistics in semantic feature space provide a scalable approach for motion-centric video understanding, outperforming existing RGB, flow, and text-supervised methods.",
   "summary_en": "Temporal statistics in semantic feature space provide a scalable approach for motion-centric video understanding, outperforming existing RGB, flow, and text-supervised methods.",
-  "summary_zh": "语义特征空间中的时序统计为以运动为中心的视频理解提供了一种可扩展的方法，性能优于现有的RGB、flow和文本监督方法。",
+  "summary_zh": "语义特征空间中的时序统计为以运动为中心的视频理解提供了一种可扩展的方法，其性能优于现有的RGB、flow和文本监督方法。",
   "hf_url": "https://huggingface.co/papers/2602.09146",
   "arxiv_url": "https://arxiv.org/abs/2602.09146",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09146",
   "github_url": "",
-  "upvotes": 18,
-  "fetched_at": "2026-02-17T08:52:40.878130+00:00"
+  "upvotes": 19,
+  "fetched_at": "2026-02-17T09:52:01.205751+00:00"
 }

@@ -14,11 +14,11 @@
   ],
   "abstract": "A large-scale dataset and model for fine-grained audiovisual understanding are introduced, demonstrating improved caption quality and reduced hallucinations through structured annotations and supervised fine-tuning. Universal video understanding requires modeling fine-grained visual and audio information over time in diverse real-world scenarios. However, the performance of existing models is primarily constrained by video-instruction data that represents complex audiovisual content as single, incomplete descriptions, lacking fine-grained organization and reliable annotation. To address this, we introduce: (i) ASID-1M, an open-source collection of one million structured, fine-grained audiovisual instruction annotations with single- and multi-attribute supervision; (ii) ASID-Verify, a scalable data curation pipeline for annotation, with automatic verification and refinement that enforces semantic and temporal consistency between descriptions and the corresponding audiovisual content; and (iii) ASID-Captioner, a video understanding model trained via Supervised Fine-Tuning (SFT) on the ASID-1M. Experiments across seven benchmarks covering audiovisual captioning , attribute-wise captioning , caption-based QA , and caption-based temporal grounding show that ASID-Captioner improves fine-grained caption quality while reducing hallucinations and improving instruction following. It achieves state-of-the-art performance among open-source models and is competitive with Gemini-3-Pro.",
   "summary_en": "A large-scale dataset and model for fine-grained audiovisual understanding are introduced, demonstrating improved caption quality and reduced hallucinations through structured annotations and supervised fine-tuning.",
-  "summary_zh": "本文提出了一个用于细粒度视听理解的大规模数据集与模型，通过结构化标注与监督微调，显著提升了描述质量并减少了幻觉。",
+  "summary_zh": "本文介绍了一个面向细粒度视听理解的大规模数据集与模型，通过结构化标注和监督微调，在提升描述质量的同时减少了幻觉现象。",
   "hf_url": "https://huggingface.co/papers/2602.13013",
   "arxiv_url": "https://arxiv.org/abs/2602.13013",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13013",
   "github_url": "https://github.com/ASID-Caption/ASID-Caption",
   "upvotes": 7,
-  "fetched_at": "2026-02-17T08:53:13.779897+00:00"
+  "fetched_at": "2026-02-17T09:52:27.207390+00:00"
 }

@@ -11,12 +11,12 @@
     "Eija Honkavaara"
   ],
   "abstract": "Mapping individual tree crowns is essential for tasks such as maintaining urban tree inventories and monitoring forest health, which help us understand and care for our environment. However, automatically separating the crowns from each other in aerial imagery is challenging due to factors such as the texture and partial tree crown overlaps. In this study, we present a method to train deep learning models that segment and separate individual trees from RGB and multispectral images, using pseudo-labels derived from aerial laser scanning (ALS) data. Our study shows that the ALS-derived pseudo-labels can be enhanced using a zero-shot instance segmentation model, Segment Anything Model 2 (SAM 2). Our method offers a way to obtain domain-specific training annotations for optical image-based models without any manual annotation cost, leading to segmentation models which outperform any available models which have been targeted for general domain deployment on the same task.",
-  "summary_en": "Mapping individual tree crowns from aerial imagery is challenging due to texture variations and overlapping crowns, yet essential for environmental monitoring. This study presents a method to train deep learning models for segmenting individual trees from RGB and multispectral images using pseudo-labels derived from aerial laser scanning (ALS) data, enhanced by the zero-shot instance segmentation model Segment Anything Model 2 (SAM 2). This approach generates domain-specific training annotations without manual labeling costs, producing segmentation models that outperform general-domain alternatives on this task.",
-  "summary_zh": "从航空影像中识别单木树冠因纹理变化和树冠重叠而具有挑战性，但对环境监测至关重要。本研究提出了一种方法，利用从航空激光雷达（ALS）数据生成并经零样本实例分割模型 Segment Anything Model 2（SAM 2）增强的伪标签，训练深度学习模型以从 RGB 和多光谱图像中分割单木。该方法无需人工标注成本即可生成领域特定的训练标注，所得分割模型在此任务上的性能优于通用领域替代方案。",
+  "summary_en": "Individual tree crown mapping supports urban inventories and forest health monitoring but is challenging to automate from aerial imagery due to texture variations and crown overlaps. This study presents a method to train deep learning segmentation models on RGB and multispectral images using pseudo-labels derived from aerial laser scanning (ALS) data, which are enhanced by the zero-shot Segment Anything Model 2 (SAM 2). The approach eliminates manual annotation costs while producing domain-specific models that outperform general-domain alternatives on this task.",
+  "summary_zh": "单木树冠制图支持城市清查和森林健康监测，但由于纹理变化和树冠重叠，难以从航空影像中实现自动化。本研究提出了一种利用源自机载激光雷达（ALS）数据的伪标签在RGB和多光谱影像上训练深度学习分割模型的方法，这些伪标签由零样本Segment Anything Model 2（SAM 2）增强。该方法消除了人工标注成本，同时生成了在该任务上优于通用领域替代方案的领域特定模型。",
   "hf_url": "https://huggingface.co/papers/2602.13022",
   "arxiv_url": "https://arxiv.org/abs/2602.13022",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13022",
   "github_url": "",
   "upvotes": 1,
-  "fetched_at": "2026-02-17T08:53:15.204632+00:00"
+  "fetched_at": "2026-02-17T09:52:28.645454+00:00"
 }

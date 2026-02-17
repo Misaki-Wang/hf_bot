@@ -28,11 +28,11 @@
   ],
   "abstract": "A vision-language-action model for robotics combines large-scale pretraining with specialized training techniques to enable real-time execution and high-performance manipulation tasks.",
   "summary_en": "A vision-language-action model for robotics combines large-scale pretraining with specialized training techniques to enable real-time execution and high-performance manipulation tasks.",
-  "summary_zh": "面向机器人领域的视觉-语言-动作模型结合大规模预训练与专门的训练技术，实现实时执行和高性能操作任务。",
+  "summary_zh": "面向机器人学的视觉-语言-动作模型结合大规模预训练与专门训练技术，实现实时执行和高性能操作任务。",
   "hf_url": "https://huggingface.co/papers/2602.12684",
   "arxiv_url": "https://arxiv.org/abs/2602.12684",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12684",
   "github_url": "https://github.com/XiaomiRobotics/Xiaomi-Robotics-0",
   "upvotes": 3,
-  "fetched_at": "2026-02-17T08:53:06.787066+00:00"
+  "fetched_at": "2026-02-17T09:52:21.667396+00:00"
 }
