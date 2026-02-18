@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-18T14:14:35.770087+00:00",
-  "count": 79,
+  "generated_at": "2026-02-18T15:20:05.966298+00:00",
+  "count": 80,
   "dates": [
     "2026-02-18",
     "2026-02-17",
@@ -480,6 +480,27 @@
       "github_url": "",
       "upvotes": 1,
       "fetched_at": "2026-02-18T14:10:32.947339+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.12235",
+      "title": "Detecting Overflow in Compressed Token Representations for Retrieval-Augmented Generation",
+      "authors": [
+        "Julia Belikova",
+        "Danila Rozhevskii",
+        "Dennis Svirin",
+        "Konstantin Polev",
+        "Alexander Panchenko"
+      ],
+      "abstract": "Soft compression architectures for long-context LLMs use query-aware probing classifiers to detect token overflow and mitigate compression-induced errors. Efficient long-context processing remains a crucial challenge for contemporary large language models (LLMs), especially in resource-constrained environments. Soft compression architectures promise to extend effective context length by replacing long token sequences with smaller sets of learned compressed tokens . Yet, the limits of compressibility -- and when compression begins to erase task-relevant content -- remain underexplored. In this paper, we define token overflow as a regime in which compressed representations no longer contain sufficient information to answer a given query, and propose a methodology to characterize and detect it. In the xRAG soft-compression setting, we find that query-agnostic saturation statistics reliably separate compressed from uncompressed token representations, providing a practical tool for identifying compressed tokens but showing limited overflow detection capability. Lightweight probing classifiers over both query and context xRAG representations detect overflow with 0.72 AUC-ROC on average on HotpotQA , SQuADv2 , and TriviaQA datasets, demonstrating that incorporating query information improves detection performance. These results advance from query-independent diagnostics to query-aware detectors, enabling low-cost pre-LLM gating to mitigate compression-induced errors.",
+      "summary_en": "Soft compression architectures for long-context LLMs use query-aware probing classifiers to detect token overflow and mitigate compression-induced errors.",
+      "summary_zh": "面向长上下文LLM的软压缩架构使用查询感知探测分类器检测token溢出并缓解压缩引起的错误。",
+      "hf_url": "https://huggingface.co/papers/2602.12235",
+      "arxiv_url": "https://arxiv.org/abs/2602.12235",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12235",
+      "github_url": "",
+      "upvotes": 1,
+      "fetched_at": "2026-02-18T15:19:42.403592+00:00"
     },
     {
       "date": "2026-02-18",
