@@ -280,6 +280,68 @@ def generate_daily_summary(date: str, papers: list[dict[str, Any]]) -> dict[str,
         }
 
 
+def build_fallback_daily_summary(date: str, papers: list[dict[str, Any]]) -> dict[str, Any]:
+    return {
+        "date": date,
+        "content": build_daily_summary_fallback(date, papers),
+        "source": "fallback",
+        "model": "",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def normalize_existing_daily_summary(date: str, raw: Any) -> dict[str, Any] | None:
+    if not isinstance(raw, dict):
+        return None
+    content = str(raw.get("content", "")).strip()
+    if not content:
+        return None
+    return {
+        "date": date,
+        "content": content,
+        "source": str(raw.get("source", "fallback")).strip() or "fallback",
+        "model": str(raw.get("model", "")).strip(),
+        "generated_at": str(raw.get("generated_at", "")).strip() or datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def load_existing_daily_summaries(index_path: Path) -> dict[str, dict[str, Any]]:
+    if not index_path.exists():
+        return {}
+
+    try:
+        with index_path.open("r", encoding="utf-8") as fh:
+            existing = json.load(fh)
+    except Exception as exc:  # noqa: BLE001
+        logging.warning("Failed to read existing index for daily summaries: %s", exc)
+        return {}
+
+    if not isinstance(existing, dict):
+        return {}
+
+    out: dict[str, dict[str, Any]] = {}
+
+    raw_map = existing.get("daily_summaries")
+    if isinstance(raw_map, dict):
+        for raw_date, raw_summary in raw_map.items():
+            date = str(raw_date).strip()
+            if not date:
+                continue
+            normalized = normalize_existing_daily_summary(date, raw_summary)
+            if normalized:
+                out[date] = normalized
+
+    raw_single = existing.get("daily_summary")
+    if isinstance(raw_single, dict):
+        single_date = str(raw_single.get("date", "")).strip()
+        if single_date and single_date not in out:
+            normalized = normalize_existing_daily_summary(single_date, raw_single)
+            if normalized:
+                out[single_date] = normalized
+
+    return out
+
+
 def run(papers_dir: Path, out_dir: Path) -> None:
     paper_files = sorted(papers_dir.glob("*.json"))
     papers: list[dict[str, Any]] = []
@@ -305,16 +367,36 @@ def run(papers_dir: Path, out_dir: Path) -> None:
         dates_map[str(paper["date"])].append(paper)
 
     date_keys = sorted(dates_map.keys(), reverse=True)
+    existing_summaries = load_existing_daily_summaries(out_dir / "index.json")
     daily_summary: dict[str, Any] | None = None
+    daily_summaries: dict[str, dict[str, Any]] = {}
+    reused_count = 0
+    generated_count = 0
+    fallback_count = 0
     if date_keys:
         latest_date = date_keys[0]
-        daily_summary = generate_daily_summary(latest_date, dates_map[latest_date])
+        for date in date_keys:
+            existing_summary = existing_summaries.get(date)
+            if existing_summary:
+                daily_summaries[date] = existing_summary
+                reused_count += 1
+                continue
+
+            if date == latest_date:
+                daily_summaries[date] = generate_daily_summary(date, dates_map[date])
+                generated_count += 1
+            else:
+                daily_summaries[date] = build_fallback_daily_summary(date, dates_map[date])
+                fallback_count += 1
+
+        daily_summary = daily_summaries.get(latest_date)
 
     index = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "count": len(papers),
         "dates": date_keys,
         "daily_summary": daily_summary,
+        "daily_summaries": daily_summaries,
         "papers": papers,
     }
     write_json(out_dir / "index.json", index)
@@ -346,7 +428,14 @@ def run(papers_dir: Path, out_dir: Path) -> None:
             },
         )
 
-    logging.info("Built index files: papers=%d dates=%d", len(papers), len(date_keys))
+    logging.info(
+        "Built index files: papers=%d dates=%d summaries(reused=%d generated=%d fallback=%d)",
+        len(papers),
+        len(date_keys),
+        reused_count,
+        generated_count,
+        fallback_count,
+    )
 
 
 def main() -> None:

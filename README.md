@@ -29,6 +29,7 @@
   - `data/dates/<date>.json`
 - 静态站点（Next.js 导出）：
   - 顶部「今日论文总览」AI 摘要（可折叠，默认展开）
+  - 进入首页默认展示最近一次抓取日期；Overview 随日期切换同步更新
   - 日期分组列表
   - 详情页
   - 全文搜索（lunr）
@@ -85,6 +86,13 @@ python3 scripts/fetch_daily.py --date 2026-02-16
 ```
 
 输出示例：`data/papers/2026-02-16__2602.10388.json`
+
+注意：默认周六/周日会自动跳过抓取（返回成功但不执行爬取）。
+如需手动补抓周末日期，可加：
+
+```bash
+python3 scripts/fetch_daily.py --date 2026-02-16 --allow-weekend
+```
 
 增量抓取（已存在完整 JSON 则跳过）：
 
@@ -195,7 +203,7 @@ python3 scripts/fetch_daily.py --date 2026-02-16 \
 
 触发方式：
 
-- 定时：每天 GMT+8 23:00（即 UTC 15:00）
+- 定时：每周一到周五 GMT+8 23:00（即 UTC 15:00）
 - 手动：`workflow_dispatch`
 
 流程：

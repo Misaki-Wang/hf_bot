@@ -26,8 +26,8 @@ on:
           - dummy
           - openrouter
   schedule:
-    # 23:00 GMT+8 = 15:00 UTC (daily)
-    - cron: '0 15 * * *'
+    # 23:00 GMT+8 = 15:00 UTC (Mon-Fri only, skip Sat/Sun)
+    - cron: '0 15 * * 1-5'
 
 permissions:
   contents: write

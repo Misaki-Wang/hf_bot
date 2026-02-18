@@ -27,6 +27,7 @@ export interface IndexPayload {
   count: number;
   dates: string[];
   daily_summary?: DailySummary | null;
+  daily_summaries?: Record<string, DailySummary>;
   papers: PaperRecord[];
 }
 

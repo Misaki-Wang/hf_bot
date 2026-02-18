@@ -13,8 +13,8 @@ export default function SummarySwitch({ summaryEn, summaryZh }: SummarySwitchPro
   const content = lang === 'zh' ? summaryZh || '暂无中文摘要' : summaryEn || 'No English summary';
 
   return (
-    <section>
-      <div style={{ display: 'flex', gap: '0.48rem', marginBottom: '0.6rem' }}>
+    <section className="summary-switch">
+      <div className="summary-switch-tabs">
         <button className={`button ${lang === 'zh' ? 'active' : ''}`} onClick={() => setLang('zh')}>
           中文摘要
         </button>
@@ -22,7 +22,7 @@ export default function SummarySwitch({ summaryEn, summaryZh }: SummarySwitchPro
           English
         </button>
       </div>
-      <p className="paper-summary">{content}</p>
+      <p className="paper-summary summary-switch-content">{content}</p>
     </section>
   );
 }

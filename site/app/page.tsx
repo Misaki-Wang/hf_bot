@@ -11,6 +11,7 @@ export default async function HomePage() {
       searchDocs={searchDocs}
       generatedAt={index.generated_at}
       dailySummary={index.daily_summary}
+      dailySummaries={index.daily_summaries || {}}
     />
   );
 }

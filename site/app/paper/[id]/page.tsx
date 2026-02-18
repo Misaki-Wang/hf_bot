@@ -24,28 +24,30 @@ export default async function PaperPage({ params }: PaperPageProps) {
   }
 
   return (
-    <main className="grid" style={{ gap: '1rem' }}>
-      <Link href="/">← 返回列表</Link>
+    <main className="grid paper-page">
+      <Link href="/" className="paper-back-link">
+        <span aria-hidden="true">←</span> 返回列表
+      </Link>
       <article className="card paper-detail reveal">
-        <h2 className="paper-title" style={{ marginBottom: 0 }}>
-          {paper.title || paper.paper_id}
-        </h2>
-        <div className="meta-row">
-          <p className="meta" style={{ margin: 0 }}>
-            Date: {paper.date} | Fetched: {paper.fetched_at}
-          </p>
+        <div className="paper-detail-header">
+          <h2 className="paper-title paper-detail-title">{paper.title || paper.paper_id}</h2>
+          <div className="paper-detail-meta">
+            <span className="paper-meta-chip">Date: {paper.date}</span>
+            <span className="paper-meta-chip">Fetched: {paper.fetched_at}</span>
+          </div>
         </div>
-        <p style={{ margin: 0 }}>
-          <strong>Authors:</strong> {paper.authors.length ? paper.authors.join(', ') : 'N/A'}
-        </p>
+        <section className="paper-section">
+          <h3 className="paper-section-title">Authors</h3>
+          <p className="paper-authors">{paper.authors.length ? paper.authors.join(', ') : 'N/A'}</p>
+        </section>
 
-        <div className="link-row">
-          <strong>Links:</strong>
-          <div className="link-upvote-row">
+        <section className="paper-section">
+          <h3 className="paper-section-title">Links</h3>
+          <div className="link-upvote-row link-upvote-row--detail">
             <PaperLinks paper={paper} />
             <UpvoteBadge count={paper.upvotes || 0} dense />
           </div>
-        </div>
+        </section>
 
         <AbstractCollapse abstract={paper.abstract} />
         <SummarySwitch summaryEn={paper.summary_en} summaryZh={paper.summary_zh} />

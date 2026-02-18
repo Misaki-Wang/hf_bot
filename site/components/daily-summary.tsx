@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
 import type { DailySummary } from '../lib/types';
+import CollapsiblePanel from './collapsible-panel';
 
 interface DailySummaryPanelProps {
   summary: DailySummary | null | undefined;
@@ -49,7 +49,6 @@ function parseSummaryBlocks(content: string): SummaryBlock[] {
 }
 
 export default function DailySummaryPanel({ summary }: DailySummaryPanelProps) {
-  const [open, setOpen] = useState(true);
   const content = (summary?.content || '').trim();
   const blocks = parseSummaryBlocks(content);
 
@@ -58,53 +57,45 @@ export default function DailySummaryPanel({ summary }: DailySummaryPanelProps) {
   }
 
   return (
-    <section className="card daily-summary-card reveal">
-      <button
-        type="button"
-        className="daily-summary-toggle"
-        aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
-      >
-        <span className="daily-summary-title">Overview</span>
-        <span className={`daily-summary-arrow ${open ? 'open' : ''}`} aria-hidden="true">
-          <svg viewBox="0 0 20 20" width="14" height="14">
-            <path d="M5.5 7.5L10 12l4.5-4.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-          </svg>
-        </span>
-      </button>
-      {open ? (
-        <div className="daily-summary-content">
-          {blocks.map((block, idx) => (
-            <section key={`${block.heading}-${idx}`} className="daily-summary-section">
-              {block.heading ? <h4 className="daily-summary-section-title">{block.heading}</h4> : null}
-              {block.kind === 'ul' ? (
-                <ul className="daily-summary-list">
-                  {block.items.map((item, itemIdx) => (
-                    <li key={itemIdx}>{item}</li>
-                  ))}
-                </ul>
-              ) : null}
-              {block.kind === 'ol' ? (
-                <ol className="daily-summary-list daily-summary-list-ordered">
-                  {block.items.map((item, itemIdx) => (
-                    <li key={itemIdx}>{item}</li>
-                  ))}
-                </ol>
-              ) : null}
-              {block.kind === 'text' ? (
-                <div className="daily-summary-text-group">
-                  {block.items.map((item, itemIdx) => (
-                    <p key={itemIdx}>{item}</p>
-                  ))}
-                </div>
-              ) : null}
-            </section>
-          ))}
-        </div>
-      ) : null}
-      <p className="meta daily-summary-meta">
-        Date: {summary?.date || '-'} | Source: {summary?.model || summary?.source || '-'}
-      </p>
-    </section>
+    <CollapsiblePanel
+      title={<span className="panel-title panel-title--overview">Overview</span>}
+      defaultOpen
+      containerClassName="card daily-summary-card"
+      toggleClassName="panel-toggle"
+      arrowClassName="panel-arrow"
+      contentClassName="panel-content daily-summary-content"
+      footer={
+        <p className="meta daily-summary-meta">
+          Date: {summary?.date || '-'} | Source: {summary?.model || summary?.source || '-'}
+        </p>
+      }
+    >
+      {blocks.map((block, idx) => (
+        <section key={`${block.heading}-${idx}`} className="daily-summary-section">
+          {block.heading ? <h4 className="daily-summary-section-title">{block.heading}</h4> : null}
+          {block.kind === 'ul' ? (
+            <ul className="daily-summary-list">
+              {block.items.map((item, itemIdx) => (
+                <li key={itemIdx}>{item}</li>
+              ))}
+            </ul>
+          ) : null}
+          {block.kind === 'ol' ? (
+            <ol className="daily-summary-list daily-summary-list-ordered">
+              {block.items.map((item, itemIdx) => (
+                <li key={itemIdx}>{item}</li>
+              ))}
+            </ol>
+          ) : null}
+          {block.kind === 'text' ? (
+            <div className="daily-summary-text-group">
+              {block.items.map((item, itemIdx) => (
+                <p key={itemIdx}>{item}</p>
+              ))}
+            </div>
+          ) : null}
+        </section>
+      ))}
+    </CollapsiblePanel>
   );
 }

@@ -599,6 +599,11 @@ def validate_date(date_text: str) -> str:
     return date_text
 
 
+def is_weekend_date(date_text: str) -> bool:
+    dt = datetime.strptime(date_text, "%Y-%m-%d")
+    return dt.weekday() >= 5
+
+
 def write_paper_json(output_dir: Path, record: PaperRecord) -> Path:
     target = output_path_for_paper(output_dir, record.date, record.paper_id)
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -613,7 +618,12 @@ def run(
     min_sleep: float,
     max_sleep: float,
     skip_existing_complete: bool,
+    allow_weekend: bool,
 ) -> None:
+    if is_weekend_date(date) and not allow_weekend:
+        logging.info("Skip fetch for %s: weekend (Sat/Sun)", date)
+        return
+
     date_url = HF_DATE_URL_TMPL.format(date=date)
     session = make_session()
 
@@ -679,6 +689,11 @@ def main() -> None:
         action="store_true",
         help="Skip fetching paper when existing JSON is already complete",
     )
+    parser.add_argument(
+        "--allow-weekend",
+        action="store_true",
+        help="Allow fetch on weekend dates (default is skip Saturday/Sunday)",
+    )
     parser.add_argument("--log-level", default="INFO", help="Logging level")
     args = parser.parse_args()
 
@@ -696,6 +711,7 @@ def main() -> None:
         min_sleep=args.min_sleep,
         max_sleep=args.max_sleep,
         skip_existing_complete=args.skip_existing_complete,
+        allow_weekend=args.allow_weekend,
     )
 
 

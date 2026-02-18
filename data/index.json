@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-17T16:26:38.659491+00:00",
+  "generated_at": "2026-02-18T11:42:01.116501+00:00",
   "count": 60,
   "dates": [
     "2026-02-17",
@@ -11,6 +11,22 @@
     "source": "openrouter",
     "model": "moonshotai/kimi-k2.5",
     "generated_at": "2026-02-17T16:24:46.833682+00:00"
+  },
+  "daily_summaries": {
+    "2026-02-17": {
+      "date": "2026-02-17",
+      "content": "Overview\n- Date: 2026-02-17\n- Total Papers: 28\n- Total Upvotes: 156\n- Papers with GitHub: 17\n- Papers with AI Summary: 28\n\nKey Takeaways\n1. 多模态Agent与视觉检索系统成为研究热点，强调上下文感知与长程推理能力。\n2. 强化学习范式持续演进，从经验反思到推理驱动的表征学习，提升稀疏奖励场景下的学习效率。\n3. 模型效率与架构创新并重，二进制Token表示（Binary Tokens）和小规模高性能模型（3B参数）受到关注。\n4. 跨领域应用拓展显著，涵盖量子数据库（Quantum-Native Database）、科研数据评估与自动化搜索框架。\n\nNotable Papers\n- [2602.10809] DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories (👍24): 提出模块化Agent框架，通过多步推理解决传统语义匹配在视觉历史检索中的局限性。\n- [2602.14492] Query as Anchor: Scenario-Adaptive User Representation via Large Language Model (👍14): 将用户建模从静态编码转变为基于LLM的动态查询感知合成，实现场景自适应表示。\n- [2602.13949] Experiential Reinforcement Learning (👍14): 引入显式经验-反思-巩固循环机制，显著提升稀疏奖励环境下的学习效率和性能。\n- [2602.14699] Qute: Towards Quantum-Native Database (👍13): 首个将量子计算作为一等执行选项的数据库系统，支持扩展SQL到门级量子电路的高效编译与混合优化。\n- [2602.14234] REDSearcher: A Scalable and Cost-Efficient Framework for Long-Horizon Search Agents (👍13): 通过任务合成、工具增强查询和模拟环境优化，构建可扩展的长程搜索Agent框架。",
+      "source": "openrouter",
+      "model": "moonshotai/kimi-k2.5",
+      "generated_at": "2026-02-17T16:24:46.833682+00:00"
+    },
+    "2026-02-16": {
+      "date": "2026-02-16",
+      "content": "Overview\n- Date: 2026-02-16\n- Total Papers: 32\n- Total Upvotes: 639\n- Papers with GitHub: 20\n- Papers with AI Summary: 32\n\nKey Takeaways\n1. 多模态大模型（MLLM）持续向垂直领域深化，医疗诊断与细粒度视觉感知成为重点突破方向。\n2. 强化学习（RL）与视觉-语言-动作（VLA）模型结合紧密，在机器人操控和视觉推理中探索能力边界。\n3. 数据效率研究受关注，特征空间数据合成与编解码器对齐的稀疏性方法提升训练与推理效率。\n4. 鲁棒性评估基准建设加速，针对语音检索和地理定位等场景的系统化测试框架相继提出。\n\nNotable Papers\n- [2602.10388] Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs (👍203): 提出Feature Activation Coverage指标，在LLM可解释特征空间合成多样化数据，无需增加数据量即可提升下游任务性能。\n- [2602.12783] SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise (👍134): 构建包含37,317个独特查询的跨语言鲁棒性基准，系统评估语音查询检索在声学噪声下的性能表现。\n- [2602.12705] MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs (👍56): 通过实体感知持续预训练、RLHF和工具增强智能体训练，构建面向可靠医疗诊断的视觉语言基础模型。\n- [2602.11858] Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception (👍52): 提出Region-to-Image Distillation方法，使MLLM在推理时内部执行迭代缩放，无需重复工具调用即可实现细粒度视觉感知。\n- [2602.08683] OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence (👍40): 基于视频压缩的信息论原理，利用Codec对齐的稀疏性驱动编码，在效率与准确性上超越传统视觉编码方法。",
+      "source": "openrouter",
+      "model": "moonshotai/kimi-k2.5",
+      "generated_at": "2026-02-18T11:40:58.973200+00:00"
+    }
   },
   "papers": [
     {

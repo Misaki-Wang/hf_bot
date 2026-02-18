@@ -15,6 +15,7 @@ interface HomeClientProps {
   searchDocs: SearchDoc[];
   generatedAt: string;
   dailySummary?: DailySummary | null;
+  dailySummaries?: Record<string, DailySummary>;
 }
 
 function normalize(input: string): string {
@@ -47,19 +48,21 @@ function formatLastUpdated(value: string): string {
   }).format(dt);
 }
 
-export default function HomeClient({ papers, dates, searchDocs, generatedAt, dailySummary }: HomeClientProps) {
+export default function HomeClient({ papers, dates, searchDocs, generatedAt, dailySummary, dailySummaries }: HomeClientProps) {
   const [query, setQuery] = useState('');
-  const [dateFilter, setDateFilter] = useState('all');
+  const [dateFilter, setDateFilter] = useState(dates[0] ?? '');
   const [authorFilter, setAuthorFilter] = useState('');
   const [lang, setLang] = useState<'en' | 'zh'>('zh');
-  const selectedDate = dateFilter === 'all' ? (dates[0] ?? '') : dateFilter;
+  const selectedDate = dateFilter || (dates[0] ?? '');
   const selectedDateIndex = selectedDate ? dates.indexOf(selectedDate) : -1;
+  const minDate = dates.length ? dates[dates.length - 1] : undefined;
+  const maxDate = dates[0] ?? undefined;
 
   const canGoPrevDay = selectedDateIndex >= 0 && selectedDateIndex < dates.length - 1;
   const canGoNextDay = selectedDateIndex > 0;
 
   function goPrevDay() {
-    if (dateFilter === 'all') {
+    if (!dateFilter) {
       if (dates.length) {
         setDateFilter(dates[0]);
       }
@@ -72,7 +75,7 @@ export default function HomeClient({ papers, dates, searchDocs, generatedAt, dai
   }
 
   function goNextDay() {
-    if (dateFilter === 'all') {
+    if (!dateFilter) {
       if (dates.length) {
         setDateFilter(dates[0]);
       }
@@ -120,7 +123,7 @@ export default function HomeClient({ papers, dates, searchDocs, generatedAt, dai
     }
 
     const matched = papers.filter((paper) => {
-      if (dateFilter !== 'all' && paper.date !== dateFilter) {
+      if (dateFilter && paper.date !== dateFilter) {
         return false;
       }
 
@@ -173,6 +176,18 @@ export default function HomeClient({ papers, dates, searchDocs, generatedAt, dai
     return dates.filter((date) => grouped.has(date));
   }, [dates, grouped]);
   const lastUpdated = useMemo(() => formatLastUpdated(generatedAt), [generatedAt]);
+  const activeDailySummary = useMemo(() => {
+    if (!selectedDate) {
+      return dailySummary || null;
+    }
+    if (dailySummaries && dailySummaries[selectedDate]) {
+      return dailySummaries[selectedDate];
+    }
+    if (dailySummary && dailySummary.date === selectedDate) {
+      return dailySummary;
+    }
+    return null;
+  }, [dailySummaries, dailySummary, selectedDate]);
 
   const dateNavControls = (
     <>
@@ -182,20 +197,20 @@ export default function HomeClient({ papers, dates, searchDocs, generatedAt, dai
         title="前一天"
         aria-label="前一天"
         onClick={goPrevDay}
-        disabled={dateFilter !== 'all' && !canGoPrevDay}
+        disabled={!!dateFilter && !canGoPrevDay}
       >
         <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true">
           <path d="M12.5 5.5L8 10l4.5 4.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
         </svg>
       </button>
-      <span className="date-nav-current">{dateFilter === 'all' ? '全部（按日期分组）' : selectedDate}</span>
+      <span className="date-nav-current">{dateFilter || '全部（按日期分组）'}</span>
       <button
         type="button"
         className="date-nav-btn"
         title="后一天"
         aria-label="后一天"
         onClick={goNextDay}
-        disabled={dateFilter !== 'all' && !canGoNextDay}
+        disabled={!!dateFilter && !canGoNextDay}
       >
         <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true">
           <path d="M7.5 5.5L12 10l-4.5 4.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
@@ -205,43 +220,94 @@ export default function HomeClient({ papers, dates, searchDocs, generatedAt, dai
   );
 
   return (
-    <main className="grid" style={{ gap: '1.2rem' }}>
+    <main className="grid home-main">
       <section className="card reveal">
         <div className="controls-grid">
-          <label>
-            <div className="meta">关键词</div>
-            <input
-              className="input"
-              placeholder="title / author / summary"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-            />
+          <label className="filter-field">
+            <div className="meta filter-label">关键词</div>
+            <div className="calendar-input-wrap">
+              <span className="calendar-input-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14">
+                  <path
+                    d="m15.8 15.8 4 4M10.6 16.4a5.8 5.8 0 1 1 0-11.6 5.8 5.8 0 0 1 0 11.6Z"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <input
+                className="input input-with-icon"
+                placeholder="title / author / summary"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+              />
+            </div>
           </label>
-          <label>
-            <div className="meta">日期</div>
-            <select className="select" value={dateFilter} onChange={(e) => setDateFilter(e.target.value)}>
-              <option value="all">全部</option>
-              {dates.map((date) => (
-                <option key={date} value={date}>
-                  {date}
-                </option>
-              ))}
-            </select>
+          <label className="filter-field">
+            <div className="meta filter-label">日期</div>
+            <div className="calendar-picker-row">
+              <div className="calendar-input-wrap">
+                <span className="calendar-input-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14">
+                    <path
+                      d="M7.5 3.8v2.1M16.5 3.8v2.1M4.6 8h14.8M6.5 5.9h11c1.1 0 2 .9 2 2v10.2c0 1.1-.9 2-2 2h-11c-1.1 0-2-.9-2-2V7.9c0-1.1.9-2 2-2Z"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+                <input
+                  type="date"
+                  className="input input-calendar"
+                  value={dateFilter}
+                  min={minDate}
+                  max={maxDate}
+                  onChange={(e) => setDateFilter(e.target.value)}
+                />
+              </div>
+              <button
+                type="button"
+                className={`button button-calendar-reset ${dateFilter ? '' : 'active'}`}
+                onClick={() => setDateFilter('')}
+              >
+                全部
+              </button>
+            </div>
           </label>
-          <label>
-            <div className="meta">作者筛选</div>
-            <input
-              className="input"
-              placeholder="作者名包含..."
-              value={authorFilter}
-              onChange={(e) => setAuthorFilter(e.target.value)}
-            />
+          <label className="filter-field">
+            <div className="meta filter-label">作者筛选</div>
+            <div className="calendar-input-wrap">
+              <span className="calendar-input-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14">
+                  <path
+                    d="M12 12.2a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Zm-6.2 6.3a6.2 6.2 0 0 1 12.4 0"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <input
+                className="input input-with-icon"
+                placeholder="作者名包含..."
+                value={authorFilter}
+                onChange={(e) => setAuthorFilter(e.target.value)}
+              />
+            </div>
           </label>
-          <div>
-            <div className="meta" style={{ marginBottom: '0.28rem' }}>
+          <div className="filter-field filter-lang">
+            <div className="meta filter-label">
               摘要语言
             </div>
-            <div style={{ display: 'flex', gap: '0.44rem' }}>
+            <div className="summary-lang-tabs">
               <button className={`button ${lang === 'zh' ? 'active' : ''}`} onClick={() => setLang('zh')}>
                 中文
               </button>
@@ -257,10 +323,10 @@ export default function HomeClient({ papers, dates, searchDocs, generatedAt, dai
         </div>
       </section>
 
-      <DailySummaryPanel summary={dailySummary} />
+      <DailySummaryPanel summary={activeDailySummary} />
 
       {visibleDates.map((date, groupIndex) => (
-        <section key={date} className="grid" style={{ gap: '0.72rem' }}>
+        <section key={date} className="grid date-group">
           <h2 className="date-heading">{date}</h2>
           {grouped.get(date)!.map((paper, idx) => (
             <article
@@ -271,7 +337,7 @@ export default function HomeClient({ papers, dates, searchDocs, generatedAt, dai
               <h3 className="paper-title">
                 <Link href={`/paper/${encodeURIComponent(paper.paper_id)}`}>{paper.title || paper.paper_id}</Link>
               </h3>
-              <p className="meta" style={{ margin: '0 0 0.48rem 0' }}>
+              <p className="meta paper-authors-line">
                 {paper.authors.length ? `Authors: ${paper.authors.join(', ')}` : 'Authors: N/A'}
               </p>
               <div className="link-upvote-row">

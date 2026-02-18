@@ -4,39 +4,6 @@ interface PaperLinksProps {
   paper: Pick<PaperRecord, 'hf_url' | 'arxiv_url' | 'arxiv_pdf_url' | 'github_url'>;
 }
 
-function HfIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
-      <path
-        d="M7.2 5.3c1.3 0 2.4 1.1 2.4 2.4S8.5 10 7.2 10 4.8 8.9 4.8 7.7s1.1-2.4 2.4-2.4Zm9.6 0c1.3 0 2.4 1.1 2.4 2.4S18.1 10 16.8 10s-2.4-1.1-2.4-2.4 1.1-2.3 2.4-2.3ZM12 10.9c2 0 3.6 1.6 3.6 3.6S14 18.1 12 18.1s-3.6-1.6-3.6-3.6S10 10.9 12 10.9Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
-function ArxivIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
-      <path
-        d="M6 18.5 10.7 6h2.6L18 18.5h-2.3l-1.1-2.9H9.4l-1.1 2.9H6Zm4.1-4.9h3.8L12 8.9l-1.9 4.7Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
-function PdfIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
-      <path
-        d="M7.2 4.5h6.9L18.5 9v10.5H7.2V4.5Zm6.1 1.8v3.1h3.1M9.2 14.1h1.6c1.2 0 1.9-.7 1.9-1.8 0-1.1-.7-1.8-1.9-1.8H9.2v3.6Zm.9-2.8h.6c.6 0 1 .3 1 .9s-.4.9-1 .9h-.6v-1.8Zm3.6 2.8h.9v-1.3h1.8v-.9h-1.8v-.9h2v-.9h-2.9v4Zm-4.5 4h1v-2.6h1.2c1.2 0 2-.7 2-1.8 0-1.1-.8-1.8-2-1.8H9.2v6.2Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
 function GithubIcon() {
   return (
     <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
@@ -52,7 +19,7 @@ export default function PaperLinks({ paper }: PaperLinksProps) {
   return (
     <div className="link-icon-row" aria-label="Paper links">
       <a className="link-icon link-icon--hf" href={paper.hf_url} target="_blank" rel="noreferrer" title="Hugging Face">
-        <HfIcon />
+        <img src="/icons/huggingface.svg" width="15" height="15" alt="" aria-hidden="true" className="brand-icon-svg" />
         <span>HF</span>
       </a>
 
@@ -64,7 +31,7 @@ export default function PaperLinks({ paper }: PaperLinksProps) {
           rel="noreferrer"
           title="arXiv abstract"
         >
-          <ArxivIcon />
+          <img src="/icons/arxiv.svg" width="15" height="15" alt="" aria-hidden="true" className="brand-icon-svg" />
           <span>arXiv</span>
         </a>
       ) : null}
@@ -77,7 +44,7 @@ export default function PaperLinks({ paper }: PaperLinksProps) {
           rel="noreferrer"
           title="arXiv PDF"
         >
-          <PdfIcon />
+          <img src="/icons/pdf.svg" width="15" height="15" alt="" aria-hidden="true" className="brand-icon-svg" />
           <span>PDF</span>
         </a>
       ) : null}

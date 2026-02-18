@@ -9,6 +9,7 @@ const EMPTY_INDEX: IndexPayload = {
   count: 0,
   dates: [],
   daily_summary: null,
+  daily_summaries: {},
   papers: []
 };
 
