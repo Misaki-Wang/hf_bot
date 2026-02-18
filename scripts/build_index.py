@@ -16,6 +16,9 @@ import re
 import requests
 
 ARXIV_ID_RE = re.compile(r"\b(\d{4}\.\d{4,5}(?:v\d+)?)\b", re.IGNORECASE)
+DAILY_OVERVIEW_SYSTEM_PROMPT = (
+    "你是严谨的 AI 研究日报编辑。你必须严格遵循输出格式，禁止编造信息。"
+)
 
 
 def load_paper(path: Path) -> dict[str, Any] | None:
@@ -151,21 +154,22 @@ def build_daily_summary_prompt(date: str, papers: list[dict[str, Any]]) -> str:
         papers,
         key=lambda x: (int(x.get("upvotes", 0)), str(x.get("paper_id", ""))),
         reverse=True,
-    )[:14]
+    )[:10]
     lines: list[str] = []
     for item in ranked:
         paper_id = str(item.get("paper_id", ""))
         title = trim_text(str(item.get("title", "")), 140)
         upvotes = int(item.get("upvotes", 0))
-        summary_en = trim_text(str(item.get("summary_en", "")), 220)
-        abstract = trim_text(str(item.get("abstract", "")), 220)
+        summary_en = trim_text(str(item.get("summary_en", "")), 160)
+        abstract = trim_text(str(item.get("abstract", "")), 160)
         gist = summary_en or abstract
         lines.append(f"- [{paper_id}] {title} | upvotes={upvotes} | gist={gist}")
 
     context = "\n".join(lines)
     return (
-        "请基于给定论文列表生成中文“Overview”，并严格按下面模板输出（纯文本，保留换行）。\n"
-        "模板（字段名不要改）：\n"
+        "任务：基于给定论文列表生成用于网页展示的中文日度总览。\n"
+        "输出要求：必须是纯文本，严格按模板，禁止额外段落。\n\n"
+        "模板（字段名和顺序不可修改）：\n"
         "Overview\n"
         "- Date: <YYYY-MM-DD>\n"
         "- Total Papers: <number>\n"
@@ -184,11 +188,12 @@ def build_daily_summary_prompt(date: str, papers: list[dict[str, Any]]) -> str:
         "- [paper_id] <title> (👍<upvotes>): <一句话亮点>\n"
         "- [paper_id] <title> (👍<upvotes>): <一句话亮点>\n\n"
         "约束：\n"
-        "1) 只使用提供的论文条目，不要编造论文、数字或结论。\n"
-        "2) 保留关键英文术语、模型名、缩写（如 RLHF、VLM、Diffusion）。\n"
-        "3) 语言简洁客观，不夸张营销。\n"
-        "4) Notable Papers 恰好输出 5 条，优先选择 upvotes 高、信息量高的论文。\n"
-        "5) 每条一句话，便于快速扫描。\n\n"
+        "1) 仅使用给定条目与统计信息，不得编造论文、数字或结论。\n"
+        "2) Key Takeaways 必须恰好 4 条；Notable Papers 必须恰好 5 条。\n"
+        "3) 优先覆盖 upvotes 高、信息密度高、主题代表性强的论文。\n"
+        "4) 保留关键英文术语、模型名、数据集名和缩写（如 RLHF、VLM、Diffusion）。\n"
+        "5) 语言客观、简洁，避免营销化表达。\n"
+        "6) 若某信息缺失，请明确写“信息不足”，不要猜测。\n\n"
         f"统计信息（可直接使用）:\n"
         f"- Date: {date}\n"
         f"- Total Papers: {total}\n"
@@ -216,11 +221,11 @@ def generate_daily_summary_openrouter(date: str, papers: list[dict[str, Any]]) -
         "messages": [
             {
                 "role": "system",
-                "content": "你是严谨的 AI 研究分析助手，擅长把论文列表总结成可读的日度简报。",
+                "content": DAILY_OVERVIEW_SYSTEM_PROMPT,
             },
             {"role": "user", "content": build_daily_summary_prompt(date, papers)},
         ],
-        "temperature": 0.2,
+        "temperature": 0.1,
         "stream": False,
     }
 

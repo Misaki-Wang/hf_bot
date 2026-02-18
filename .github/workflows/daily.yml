@@ -25,6 +25,11 @@ on:
           - auto
           - dummy
           - openrouter
+      translate_workers:
+        description: 'Translation concurrency (2-6 recommended)'
+        required: false
+        type: string
+        default: '6'
   schedule:
     # 23:00 GMT+8 = 15:00 UTC (Mon-Fri only, skip Sat/Sun)
     - cron: '0 15 * * 1-5'
@@ -97,7 +102,8 @@ jobs:
           OPENROUTER_APP_NAME: hf-papers-archive
           OPENROUTER_APP_URL: https://github.com/${{ github.repository }}
           TRANSLATOR: ${{ github.event.inputs.translator || 'auto' }}
-        run: python scripts/translate.py --provider "$TRANSLATOR" --date "${{ steps.resolve_date.outputs.date }}"
+          TRANSLATE_WORKERS: ${{ github.event.inputs.translate_workers || '6' }}
+        run: python scripts/translate.py --provider "$TRANSLATOR" --date "${{ steps.resolve_date.outputs.date }}" --workers "$TRANSLATE_WORKERS"
 
       - name: Build JSON indexes
         env:

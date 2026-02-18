@@ -118,6 +118,14 @@ export OPENROUTER_MODEL=moonshotai/kimi-k2.5
 python3 scripts/translate.py --provider auto
 ```
 
+并发加速（推荐 OpenRouter）：
+
+```bash
+python3 scripts/translate.py --provider auto --workers 6
+```
+
+说明：`--workers` 越大越快，但更容易触发 API 限流；推荐 `2~6`。默认并发为 `6`，也可用环境变量 `TRANSLATE_WORKERS` 覆盖。
+
 显式指定 OpenRouter：
 
 ```bash
@@ -225,6 +233,7 @@ python3 scripts/fetch_daily.py --date 2026-02-16 \
 - `date`: `2026-02-16`
 - `timezone`: `CST`
 - `translator`: `dummy`（或 `openrouter`）
+- `translate_workers`: `6`（OpenRouter 建议 2~6）
 
 ### Pages 配置
 
