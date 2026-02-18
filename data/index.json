@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-18T15:20:05.966298+00:00",
-  "count": 80,
+  "generated_at": "2026-02-18T15:48:16.852840+00:00",
+  "count": 81,
   "dates": [
     "2026-02-18",
     "2026-02-17",
@@ -480,6 +480,27 @@
       "github_url": "",
       "upvotes": 1,
       "fetched_at": "2026-02-18T14:10:32.947339+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.14364",
+      "title": "A Trajectory-Based Safety Audit of Clawdbot (OpenClaw)",
+      "authors": [
+        "Tianyu Chen",
+        "Dongrui Liu",
+        "Xia Hu",
+        "Jingyi Yu",
+        "Wenjie Wang"
+      ],
+      "abstract": "Clawdbot, a self-hosted AI agent with diverse tool capabilities, exhibits varying safety performance across different risk dimensions, particularly struggling with ambiguous or adversarial inputs despite consistent reliability in specified tasks. Clawdbot is a self-hosted, tool-using personal AI agent with a broad action space spanning local execution and web-mediated workflows, which raises heightened safety and security concerns under ambiguity and adversarial steering. We present a trajectory-centric evaluation of Clawdbot across six risk dimensions. Our test suite samples and lightly adapts scenarios from prior agent-safety benchmarks (including ATBench and LPS-Bench ) and supplements them with hand-designed cases tailored to Clawdbot's tool surface. We log complete interaction trajectories (messages, actions, tool-call arguments/outputs) and assess safety using both an automated trajectory judge ( AgentDoG-Qwen3-4B ) and human review. Across 34 canonical cases, we find a non-uniform safety profile: performance is generally consistent on reliability-focused tasks, while most failures arise under underspecified intent, open-ended goals, or benign-seeming jailbreak prompts, where minor misinterpretations can escalate into higher-impact tool actions. We supplemented the overall results with representative case studies and summarized the commonalities of these cases, analyzing the security vulnerabilities and typical failure modes that Clawdbot is prone to trigger in practice.",
+      "summary_en": "Clawdbot, a self-hosted AI agent with diverse tool capabilities, exhibits varying safety performance across different risk dimensions, particularly struggling with ambiguous or adversarial inputs despite consistent reliability in specified tasks.",
+      "summary_zh": "Clawdbot是一个具备多样化工具能力的自托管AI智能体，在不同风险维度上呈现出差异化的安全性能，尽管在特定任务中保持稳定可靠，但在处理模糊或对抗性输入时表现不佳。",
+      "hf_url": "https://huggingface.co/papers/2602.14364",
+      "arxiv_url": "https://arxiv.org/abs/2602.14364",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14364",
+      "github_url": "https://github.com/tychenn/clawdbot_report",
+      "upvotes": 1,
+      "fetched_at": "2026-02-18T15:48:04.320976+00:00"
     },
     {
       "date": "2026-02-18",
