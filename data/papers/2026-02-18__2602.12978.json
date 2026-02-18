@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-18",
+  "paper_id": "2602.12978",
+  "title": "Learning Native Continuation for Action Chunking Flow Policies",
+  "authors": [
+    "Yufeng Liu",
+    "Hang Yu",
+    "Juntu Zhao",
+    "Bocheng Li",
+    "Di Zhang",
+    "Mingzhu Li",
+    "Wenxuan Wu",
+    "Yingdong Hu",
+    "Junyuan Xie",
+    "Junliang Guo",
+    "Dequan Wang",
+    "Yang Gao"
+  ],
+  "abstract": "Legato improves action-chunked Vision Language Action models by using training-time continuation methods that ensure smooth trajectories and reduce multimodal switching during real-time execution. Action chunking enables Vision Language Action (VLA) models to run in real time, but naive chunked execution often exhibits discontinuities at chunk boundaries. Real-Time Chunking (RTC) alleviates this issue but is external to the policy, leading to spurious multimodal switching and trajectories that are not intrinsically smooth. We propose Legato, a training-time continuation method for action-chunked flow-based VLA policies. Specifically, Legato initializes denoising from a schedule-shaped mixture of known actions and noise, exposing the model to partial action information. Moreover, Legato reshapes the learned flow dynamics to ensure that the denoising process remains consistent between training and inference under per-step guidance. Legato further uses randomized schedule condition during training to support varying inference delays and achieve controllable smoothness. Empirically, Legato produces smoother trajectories and reduces spurious multimodal switching during execution, leading to less hesitation and shorter task completion time . Extensive real-world experiments show that Legato consistently outperforms RTC across five manipulation tasks, achieving approximately 10% improvements in both trajectory smoothness and task completion time .",
+  "summary_en": "Legato improves action-chunked Vision Language Action models by using training-time continuation methods that ensure smooth trajectories and reduce multimodal switching during real-time execution.",
+  "summary_zh": "Legato 通过训练时延续方法改进动作分块的视觉语言动作模型，确保轨迹平滑并减少实时执行中的多模态切换。",
+  "hf_url": "https://huggingface.co/papers/2602.12978",
+  "arxiv_url": "https://arxiv.org/abs/2602.12978",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12978",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-18T14:10:22.813129+00:00"
+}

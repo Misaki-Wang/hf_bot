@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-18",
+  "paper_id": "2602.15327",
+  "title": "Prescriptive Scaling Reveals the Evolution of Language Model Capabilities",
+  "authors": [
+    "Hanlin Zhang",
+    "Jikai Jin",
+    "Vasilis Syrgkanis",
+    "Sham Kakade"
+  ],
+  "abstract": "Large-scale observational analysis estimates capability boundaries and performance predictions for foundation models using quantile regression and evaluates temporal stability across tasks. For deploying foundation models, practitioners increasingly need prescriptive scaling laws : given a pre training compute budget , what downstream accuracy is attainable with contemporary post training practice, and how stable is that mapping as the field evolves? Using large scale observational evaluations with 5k observational and 2k newly sampled data on model performance , we estimate capability boundaries , high conditional quantiles of benchmark scores as a function of log pre training FLOPs, via smoothed quantile regression with a monotone, saturating sigmoid parameterization . We validate the temporal reliability by fitting on earlier model generations and evaluating on later releases. Across various tasks, the estimated boundaries are mostly stable, with the exception of math reasoning that exhibits a consistently advancing boundary over time. We then extend our approach to analyze task dependent saturation and to probe contamination related shifts on math reasoning tasks. Finally, we introduce an efficient algorithm that recovers near full data frontiers using roughly 20% of evaluation budget. Together, our work releases the Proteus 2k, the latest model performance evaluation dataset, and introduces a practical methodology for translating compute budget s into reliable performance expectations and for monitoring when capability boundaries shift across time.",
+  "summary_en": "Large-scale observational analysis estimates capability boundaries and performance predictions for foundation models using quantile regression and evaluates temporal stability across tasks.",
+  "summary_zh": "大规模观察性分析使用分位数回归估计基础模型的能力边界和性能预测，并评估跨任务的时间稳定性。",
+  "hf_url": "https://huggingface.co/papers/2602.15327",
+  "arxiv_url": "https://arxiv.org/abs/2602.15327",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15327",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-18T14:10:32.947339+00:00"
+}

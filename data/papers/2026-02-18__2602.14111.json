@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-18",
+  "paper_id": "2602.14111",
+  "title": "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?",
+  "authors": [
+    "Anton Korznikov",
+    "Andrey Galichin",
+    "Alexey Dontsov",
+    "Oleg Rogov",
+    "Ivan Oseledets",
+    "Elena Tutubalina"
+  ],
+  "abstract": "Sparse Autoencoders fail to reliably decompose neural network internals despite strong reconstruction performance, as demonstrated through synthetic and real activation evaluations. Sparse Autoencoders (SAEs) have emerged as a promising tool for interpreting neural networks by decomposing their activations into sparse sets of human-interpretable features. Recent work has introduced multiple SAE variants and successfully scaled them to frontier models. Despite much excitement, a growing number of negative results in downstream tasks casts doubt on whether SAEs recover meaningful features. To directly investigate this, we perform two complementary evaluations. On a synthetic setup with known ground-truth features, we demonstrate that SAEs recover only 9% of true features despite achieving 71% explained variance , showing that they fail at their core task even when reconstruction is strong. To evaluate SAEs on real activations , we introduce three baselines that constrain SAE feature directions or their activation patterns to random values. Through extensive experiments across multiple SAE architectures, we show that our baselines match fully-trained SAEs in interpretability (0.87 vs 0.90), sparse probing (0.69 vs 0.72), and causal editing (0.73 vs 0.72). Together, these results suggest that SAEs in their current state do not reliably decompose models' internal mechanisms.",
+  "summary_en": "Sparse Autoencoders fail to reliably decompose neural network internals despite strong reconstruction performance, as demonstrated through synthetic and real activation evaluations.",
+  "summary_zh": "稀疏自编码器尽管具有较强的重建性能，却无法可靠地分解神经网络内部结构，这一点在合成与真实激活评估中得到了证实。",
+  "hf_url": "https://huggingface.co/papers/2602.14111",
+  "arxiv_url": "https://arxiv.org/abs/2602.14111",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14111",
+  "github_url": "",
+  "upvotes": 22,
+  "fetched_at": "2026-02-18T14:10:23.623049+00:00"
+}

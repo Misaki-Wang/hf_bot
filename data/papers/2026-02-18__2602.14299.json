@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-18",
+  "paper_id": "2602.14299",
+  "title": "Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook",
+  "authors": [
+    "Ming Li",
+    "Xirui Li",
+    "Tianyi Zhou"
+  ],
+  "abstract": "Large language model agents in networked environments exhibit dynamic stability without true social convergence, maintaining individual diversity while lacking collective influence structures. As large language model agents increasingly populate networked environments , a fundamental question arises: do artificial intelligence (AI) agent societies undergo convergence dynamics similar to human social systems? Lately, Moltbook approximates a plausible future scenario in which autonomous agents participate in an open-ended, continuously evolving online society. We present the first large-scale systemic diagnosis of this AI agent society. Beyond static observation, we introduce a quantitative diagnostic framework for dynamic evolution in AI agent societies , measuring semantic stabilization , lexical turnover , individual inertia , influence persistence , and collective consensus . Our analysis reveals a system in dynamic balance in Moltbook: while global semantic averages stabilize rapidly, individual agents retain high diversity and persistent lexical turnover , defying homogenization. However, agents exhibit strong individual inertia and minimal adaptive response to interaction partners, preventing mutual influence and consensus. Consequently, influence remains transient with no persistent supernodes, and the society fails to develop stable collective influence anchors due to the absence of shared social memory. These findings demonstrate that scale and interaction density alone are insufficient to induce socialization, providing actionable design and analysis principles for upcoming next-generation AI agent societies .",
+  "summary_en": "Large language model agents in networked environments exhibit dynamic stability without true social convergence, maintaining individual diversity while lacking collective influence structures.",
+  "summary_zh": "网络环境中的大语言模型智能体表现出动态稳定性，但未实现真正的社会收敛，在保持个体多样性的同时缺乏集体影响结构。",
+  "hf_url": "https://huggingface.co/papers/2602.14299",
+  "arxiv_url": "https://arxiv.org/abs/2602.14299",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14299",
+  "github_url": "https://github.com/MingLiiii/Moltbook_Socialization",
+  "upvotes": 17,
+  "fetched_at": "2026-02-18T14:10:24.916655+00:00"
+}

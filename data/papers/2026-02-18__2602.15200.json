@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-18",
+  "paper_id": "2602.15200",
+  "title": "COMPOT: Calibration-Optimized Matrix Procrustes Orthogonalization for Transformers Compression",
+  "authors": [
+    "Denis Makhov",
+    "Dmitriy Shopkhoev",
+    "Magauiya Zhussip",
+    "Ammar Ali",
+    "Baher Mohammad",
+    "Stamatios Lefkimmiatis"
+  ],
+  "abstract": "COMPOT is a training-free compression framework for Transformer models that uses sparse dictionary learning with orthogonal dictionaries and closed-form updates to achieve better quality-compression trade-offs than traditional low-rank methods. Post-training compression of Transformer models commonly relies on truncated singular value decomposition (SVD). However, enforcing a single shared subspace can degrade accuracy even at moderate compression. Sparse dictionary learning provides a more flexible union-of-subspaces representation, but existing approaches often suffer from iterative dictionary and coefficient updates. We propose COMPOT (Calibration-Optimized Matrix Procrustes Orthogonalization for Transformers), a training-free compression framework that uses a small calibration dataset to estimate a sparse weight factorization . COMPOT employs orthogonal dictionaries that enable closed-form Procrustes updates for the dictionary and analytical single-step sparse coding for the coefficients, eliminating iterative optimization. To handle heterogeneous layer sensitivity under a global compression budget, COMPOT further introduces a one-shot dynamic allocation strategy that adaptively redistributes layer-wise compression rates. Extensive experiments across diverse architectures and tasks show that COMPOT consistently delivers a superior quality-compression trade-off over strong low-rank and sparse baselines, while remaining fully compatible with post-training quantization for extreme compression. Code is available https://github.com/mts-ai/COMPOT{here}.",
+  "summary_en": "COMPOT is a training-free compression framework for Transformer models that uses sparse dictionary learning with orthogonal dictionaries and closed-form updates to achieve better quality-compression trade-offs than traditional low-rank methods.",
+  "summary_zh": "COMPOT是一种面向Transformer模型的免训练压缩框架，利用基于正交字典与闭式更新的稀疏字典学习，实现了优于传统低秩方法的质量-压缩权衡。",
+  "hf_url": "https://huggingface.co/papers/2602.15200",
+  "arxiv_url": "https://arxiv.org/abs/2602.15200",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15200",
+  "github_url": "",
+  "upvotes": 5,
+  "fetched_at": "2026-02-18T14:10:28.955015+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-18",
+  "paper_id": "2602.09653",
+  "title": "ClinAlign: Scaling Healthcare Alignment from Clinician Preference",
+  "authors": [
+    "Shiwei Lyu",
+    "Xidong Wang",
+    "Lei Liu",
+    "Hao Zhu",
+    "Chaohe Zhang",
+    "Jian Wang",
+    "Jinjie Gu",
+    "Benyou Wang",
+    "Yue Shen"
+  ],
+  "abstract": "A two-stage framework addresses alignment of large language models with clinician preferences through physician-verified examples and distilled clinical principles for improved medical reasoning. Although large language models (LLMs) demonstrate expert-level medical knowledge, aligning their open-ended outputs with fine-grained clinician preferences remains challenging. Existing methods often rely on coarse objectives or unreliable automated judges that are weakly grounded in professional guidelines. We propose a two-stage framework to address this gap. First, we introduce HealthRubrics , a dataset of 7,034 physician-verified preference examples in which clinicians refine LLM-drafted rubrics to meet rigorous medical standards. Second, we distill these rubrics into HealthPrinciples : 119 broadly reusable, clinically grounded principles organized by clinical dimensions, enabling scalable supervision beyond manual annotation. We use HealthPrinciples for (1) offline alignment by synthesizing rubrics for unlabeled queries and (2) an inference-time tool for guided self-revision . A 30B parameter model that activates only 3B parameters at inference trained with our framework achieves 33.4% on HealthBench-Hard , outperforming much larger models including Deepseek-R1 and o3, establishing a resource-efficient baseline for clinical alignment.",
+  "summary_en": "A two-stage framework addresses alignment of large language models with clinician preferences through physician-verified examples and distilled clinical principles for improved medical reasoning.",
+  "summary_zh": "一种两阶段框架通过医生验证的示例和蒸馏的临床原则，实现大语言模型与临床医生偏好的对齐，以改进医学推理。",
+  "hf_url": "https://huggingface.co/papers/2602.09653",
+  "arxiv_url": "https://arxiv.org/abs/2602.09653",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09653",
+  "github_url": "https://github.com/AQ-MedAI/ClinAlign",
+  "upvotes": 2,
+  "fetched_at": "2026-02-18T14:10:17.323608+00:00"
+}
