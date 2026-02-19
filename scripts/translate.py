@@ -31,30 +31,70 @@ class Translator(Protocol):
 PLACEHOLDER_RE = re.compile(r"^\$[0-9a-zA-Z]+$")
 DEFAULT_TRANSLATE_WORKERS = 6
 MAX_TRANSLATE_WORKERS = 12
-SUMMARY_SYSTEM_PROMPT = (
-    "You are a senior AI research editor. Write faithful, concise English summaries from paper abstracts."
-)
-SUMMARY_USER_PROMPT_TMPL = (
-    "Summarize the abstract into 2-4 English sentences.\n"
-    "Requirements:\n"
-    "- Cover: problem, method, and key findings or claimed benefits.\n"
-    "- Keep technical terms, model/dataset names, metrics, numbers, and abbreviations unchanged.\n"
-    "- No markdown, no bullet points, no hype, no speculation.\n"
-    "- If results are not explicitly stated, do not invent them.\n\n"
-    "Abstract:\n{abstract}"
-)
-TRANSLATE_SYSTEM_PROMPT = (
-    "You are a professional translator for AI research (English -> Simplified Chinese)."
-)
-TRANSLATE_USER_PROMPT_TMPL = (
-    "Translate the following English summary to Simplified Chinese.\n"
-    "Requirements:\n"
-    "- Preserve technical terms, model names, dataset names, metrics, numbers, and abbreviations when appropriate.\n"
-    "- Keep meaning complete and precise; do not add or omit facts.\n"
-    "- Keep style concise and neutral.\n"
-    "- Output Chinese text only (no explanations, no markdown).\n\n"
-    "English summary:\n{summary}"
-)
+PROMPT_LANG_CHOICES = ("auto", "zh", "en")
+
+SUMMARY_PROMPTS = {
+    "zh": {
+        "system": "你是一名严谨的 AI 论文编辑。请基于论文摘要产出忠实、精炼的英文总结。",
+        "user": (
+            "请将下面的 abstract 总结为 2-4 句英文。\n"
+            "要求：\n"
+            "- 覆盖问题、方法、关键结果或论文声称的收益。\n"
+            "- 保留术语、模型名、数据集名、指标、数字和缩写。\n"
+            "- 不要使用 markdown、不要分点、不要夸张、不要猜测。\n"
+            "- 若原文未明确给出结果，不要编造。\n"
+            "- 只输出英文总结正文。\n\n"
+            "Abstract:\n{abstract}"
+        ),
+    },
+    "en": {
+        "system": "You are a rigorous AI paper editor. Create a faithful and concise English summary from the abstract.",
+        "user": (
+            "Summarize the following abstract in 2-4 English sentences.\n"
+            "Requirements:\n"
+            "- Cover the problem, method, and key result/claimed benefit.\n"
+            "- Keep technical terms, model names, datasets, metrics, numbers, and acronyms.\n"
+            "- No markdown, no bullet points, no hype, no guessing.\n"
+            "- If a result is not explicitly stated, do not invent one.\n"
+            "- Output only the English summary text.\n\n"
+            "Abstract:\n{abstract}"
+        ),
+    },
+}
+
+TRANSLATE_PROMPTS = {
+    "zh": {
+        "system": "你是一名专业的 AI 论文翻译，负责将英文内容翻译为简体中文。",
+        "user": (
+            "请将下面的英文 summary 翻译成简体中文。\n"
+            "要求：\n"
+            "- 尽量保留术语、模型名、数据集名、指标、数字和缩写。\n"
+            "- 语义完整准确，不增删事实。\n"
+            "- 语气简洁中性，避免口语化和营销表达。\n"
+            "- 只输出中文译文，不要解释，不要 markdown。\n\n"
+            "English summary:\n{summary}"
+        ),
+    },
+    "en": {
+        "system": "You are an expert AI paper translator. Translate English content into Simplified Chinese.",
+        "user": (
+            "Translate the following English summary into Simplified Chinese.\n"
+            "Requirements:\n"
+            "- Preserve technical terms, model names, datasets, metrics, numbers, and acronyms when possible.\n"
+            "- Keep facts fully accurate; do not add or remove claims.\n"
+            "- Use concise, neutral style.\n"
+            "- Output only the Chinese translation text. No explanation, no markdown.\n\n"
+            "English summary:\n{summary}"
+        ),
+    },
+}
+
+
+def normalize_prompt_lang(value: str | None) -> str:
+    cleaned = (value or "auto").strip().lower()
+    if cleaned in PROMPT_LANG_CHOICES:
+        return cleaned
+    return "auto"
 
 
 def normalize_text(value: str) -> str:
@@ -105,6 +145,7 @@ class DummyTranslator:
 class OpenRouterTranslator:
     api_key: str
     model: str = "moonshotai/kimi-k2.5"
+    prompt_lang: str = "auto"
     timeout: float = 30.0
     max_attempts: int = 4
     max_connections: int = 12
@@ -194,19 +235,29 @@ class OpenRouterTranslator:
                     continue
         raise RuntimeError(f"OpenRouter request failed after retries: {last_error}")
 
+    def _resolve_task_prompt_lang(self, task: str) -> str:
+        lang = normalize_prompt_lang(self.prompt_lang)
+        if lang in ("zh", "en"):
+            return lang
+        if task == "summarize":
+            return "en"
+        return "zh"
+
     def summarize_abstract(self, text: str) -> str:
         content = normalize_text(text)
         if not content:
             return ""
+        prompt_lang = self._resolve_task_prompt_lang("summarize")
+        prompt = SUMMARY_PROMPTS[prompt_lang]
         return self._chat(
             messages=[
                 {
                     "role": "system",
-                    "content": SUMMARY_SYSTEM_PROMPT,
+                    "content": prompt["system"],
                 },
                 {
                     "role": "user",
-                    "content": SUMMARY_USER_PROMPT_TMPL.format(abstract=content),
+                    "content": prompt["user"].format(abstract=content),
                 },
             ],
             temperature=0.15,
@@ -216,15 +267,17 @@ class OpenRouterTranslator:
         content = normalize_text(text)
         if not content:
             return ""
+        prompt_lang = self._resolve_task_prompt_lang("translate")
+        prompt = TRANSLATE_PROMPTS[prompt_lang]
         return self._chat(
             messages=[
                 {
                     "role": "system",
-                    "content": TRANSLATE_SYSTEM_PROMPT,
+                    "content": prompt["system"],
                 },
                 {
                     "role": "user",
-                    "content": TRANSLATE_USER_PROMPT_TMPL.format(summary=content),
+                    "content": prompt["user"].format(summary=content),
                 },
             ],
             temperature=0.05,
@@ -235,10 +288,12 @@ def choose_translator(
     provider: str,
     model_override: str = "",
     concurrency_hint: int = DEFAULT_TRANSLATE_WORKERS,
+    prompt_lang: str = "auto",
 ) -> Translator:
     provider = provider.lower()
     selected_model = model_override.strip()
     pool_size = max(8, min(32, concurrency_hint * 2))
+    selected_prompt_lang = normalize_prompt_lang(prompt_lang)
     if provider == "openrouter":
         api_key = os.getenv("OPENROUTER_API_KEY", "").strip()
         if not api_key:
@@ -253,6 +308,7 @@ def choose_translator(
         return OpenRouterTranslator(
             api_key=api_key,
             model=model,
+            prompt_lang=selected_prompt_lang,
             app_name=app_name,
             app_url=app_url,
             max_connections=pool_size,
@@ -271,6 +327,7 @@ def choose_translator(
             return OpenRouterTranslator(
                 api_key=api_key,
                 model=model,
+                prompt_lang=selected_prompt_lang,
                 app_name=app_name,
                 app_url=app_url,
                 max_connections=pool_size,
@@ -376,16 +433,32 @@ def process_paper_file(path: Path, translator: Translator, force: bool) -> Proce
     return stats
 
 
-def run(data_dir: Path, provider: str, force: bool, model: str, date: str | None, workers: int) -> None:
+def run(
+    data_dir: Path,
+    provider: str,
+    force: bool,
+    model: str,
+    prompt_lang: str,
+    date: str | None,
+    workers: int,
+) -> None:
     requested_workers = max(1, min(workers, MAX_TRANSLATE_WORKERS))
     if requested_workers != workers:
         logging.warning("Requested workers=%d adjusted to safe limit=%d", workers, requested_workers)
 
+    selected_prompt_lang = normalize_prompt_lang(prompt_lang)
     translator = choose_translator(
         provider,
         model_override=model,
         concurrency_hint=requested_workers,
+        prompt_lang=selected_prompt_lang,
     )
+    if isinstance(translator, OpenRouterTranslator):
+        if selected_prompt_lang == "auto":
+            logging.info("Prompt language mode=auto (summarize: en, translate: zh)")
+        else:
+            logging.info("Prompt language mode=%s (forced)", selected_prompt_lang)
+
     paper_files = collect_paper_files(data_dir, date)
     if not paper_files:
         if date:
@@ -432,6 +505,9 @@ def main() -> None:
         os.getenv("TRANSLATE_WORKERS", str(DEFAULT_TRANSLATE_WORKERS)).strip()
         or str(DEFAULT_TRANSLATE_WORKERS)
     )
+    default_prompt_lang = normalize_prompt_lang(
+        os.getenv("TRANSLATE_PROMPT_LANG", os.getenv("OPENROUTER_PROMPT_LANG", "auto"))
+    )
     try:
         default_workers = max(1, int(default_workers_raw))
     except ValueError:
@@ -449,6 +525,15 @@ def main() -> None:
         "--model",
         default="",
         help="Override model name (e.g., moonshotai/kimi-k2.5). Works for openrouter/auto.",
+    )
+    parser.add_argument(
+        "--prompt-lang",
+        default=default_prompt_lang,
+        choices=PROMPT_LANG_CHOICES,
+        help=(
+            "Prompt language mode: auto/zh/en. "
+            "auto = summarize prompt in English + translate prompt in Chinese."
+        ),
     )
     parser.add_argument("--force", action="store_true", help="Re-translate even when summary_zh exists")
     parser.add_argument("--date", type=validate_date, default=None, help="Only process files for date YYYY-MM-DD")
@@ -477,6 +562,7 @@ def main() -> None:
         provider=args.provider,
         force=args.force,
         model=args.model,
+        prompt_lang=args.prompt_lang,
         date=args.date,
         workers=args.workers,
     )
