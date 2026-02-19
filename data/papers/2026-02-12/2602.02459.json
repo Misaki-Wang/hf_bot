@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.02459",
+  "title": "TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments",
+  "authors": [
+    "Zhiyu Huang",
+    "Yun Zhang",
+    "Johnson Liu",
+    "Rui Song",
+    "Chen Tang",
+    "Jiaqi Ma"
+  ],
+  "abstract": "Vision-language-action models for robotics are enhanced with a latency-aware framework that compensates for delayed semantic reasoning during real-time action generation through delayed semantic-control interfaces and latency-consistent training. Robots in dynamic, human-centric environments must follow language instructions while maintaining real-time reactive control . Vision-language-action (VLA) models offer a promising framework, but they assume temporally aligned reasoning and control, despite semantic inference being inherently delayed relative to real-time action. We introduce Think-in-Control (TIC)-VLA, a latency-aware framework that explicitly models delayed semantic reasoning during action generation. TIC-VLA defines a delayed semantic-control interface that conditions action generation on delayed vision-language semantic states and explicit latency metadata, in addition to current observations, enabling policies to compensate for asynchronous reasoning. We further propose a latency-consistent training pipeline that injects reasoning inference delays during imitation learning and online reinforcement learning , aligning training with asynchronous deployment. To support realistic evaluation, we present DynaNav, a physics-accurate, photo-realistic simulation suite for language-guided navigation in dynamic environments. Extensive experiments in simulation and on a real robot show that TIC-VLA consistently outperforms prior VLA models while maintaining robust real-time control under multi-second reasoning latency. Project website: https://ucla-mobility.github.io/TIC-VLA/",
+  "summary_en": "Vision-language-action models for robotics are enhanced with a latency-aware framework that compensates for delayed semantic reasoning during real-time action generation through delayed semantic-control interfaces and latency-consistent training.",
+  "summary_zh": "机器人视觉-语言-动作模型通过延迟感知框架得到增强，该框架通过延迟语义控制接口和延迟一致性训练，在实时动作生成过程中对延迟的语义推理进行补偿。",
+  "hf_url": "https://huggingface.co/papers/2602.02459",
+  "arxiv_url": "https://arxiv.org/abs/2602.02459",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02459",
+  "github_url": "https://github.com/ucla-mobility/TIC-VLA",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:30:38.261690+00:00"
+}

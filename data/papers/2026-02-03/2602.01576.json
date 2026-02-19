@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01576",
+  "title": "Generative Visual Code Mobile World Models",
+  "authors": [
+    "Woosung Koh",
+    "Sungjun Han",
+    "Segyu Lee",
+    "Se-Young Yun",
+    "Jamin Shin"
+  ],
+  "abstract": "Visual world models for mobile GUI agents are improved through renderable code generation using vision-language models, achieving better performance with reduced model size compared to existing approaches. Mobile Graphical User Interface (GUI) World Models (WMs) offer a promising path for improving mobile GUI agent performance at train- and inference-time. However, current approaches face a critical trade-off: text-based WMs sacrifice visual fidelity , while the inability of visual WMs in precise text rendering led to their reliance on slow, complex pipelines dependent on numerous external models. We propose a novel paradigm: visual world modeling via renderable code generation , where a single Vision-Language Model (VLM) predicts the next GUI state as executable web code that renders to pixels, rather than generating pixels directly. This combines the strengths of both approaches: VLMs retain their linguistic priors for precise text rendering while their pre-training on structured web code enables high-fidelity visual generation. We introduce gWorld (8B, 32B), the first open-weight visual mobile GUI WMs built on this paradigm, along with a data generation framework ( gWorld ) that automatically synthesizes code-based training data . In extensive evaluation across 4 in- and 2 out-of-distribution benchmarks, gWorld sets a new pareto frontier in accuracy versus model size, outperforming 8 frontier open-weight models over 50.25x larger. Further analyses show that (1) scaling training data via gWorld yields meaningful gains, (2) each component of our pipeline improves data quality, and (3) stronger world modeling improves downstream mobile GUI policy performance.",
+  "summary_en": "Visual world models for mobile GUI agents are improved through renderable code generation using vision-language models, achieving better performance with reduced model size compared to existing approaches.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nVisual world models for mobile GUI agents are improved through renderable code generation using vision-language models, achieving better performance with reduced model size compared to existing approaches.",
+  "hf_url": "https://huggingface.co/papers/2602.01576",
+  "arxiv_url": "https://arxiv.org/abs/2602.01576",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01576",
+  "github_url": "https://github.com/trillion-labs/gWorld",
+  "upvotes": 41,
+  "fetched_at": "2026-02-19T05:36:59.609126+00:00"
+}

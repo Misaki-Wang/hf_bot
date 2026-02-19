@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.07022",
+  "title": "Condition Errors Refinement in Autoregressive Image Generation with Diffusion Loss",
+  "authors": [
+    "Yucheng Zhou",
+    "Hao Li",
+    "Jianbing Shen"
+  ],
+  "abstract": "Autoregressive models with diffusion loss outperform traditional diffusion models by effectively mitigating condition errors through patch denoising optimization and condition refinement using Optimal Transport theory. Recent studies have explored autoregressive models for image generation, with promising results, and have combined diffusion models with autoregressive frameworks to optimize image generation via diffusion loss es. In this study, we present a theoretical analysis of diffusion and autoregressive models with diffusion loss , highlighting the latter's advantages. We present a theoretical comparison of conditional diffusion and autoregressive diffusion with diffusion loss , demonstrating that patch denoising optimization in autoregressive models effectively mitigates condition error s and leads to a stable condition distribution . Our analysis also reveals that autoregressive condition generation refines the condition, causing the condition error influence to decay exponentially. In addition, we introduce a novel condition refinement approach based on Optimal Transport (OT) theory to address ``condition inconsistency''. We theoretically demonstrate that formulating condition refinement as a Wasserstein Gradient Flow ensures convergence toward the ideal condition distribution , effectively mitigating condition inconsistency. Experiments demonstrate the superiority of our method over diffusion and autoregressive models with diffusion loss methods.",
+  "summary_en": "Autoregressive models with diffusion loss outperform traditional diffusion models by effectively mitigating condition errors through patch denoising optimization and condition refinement using Optimal Transport theory.",
+  "summary_zh": "采用扩散损失的自回归模型通过块去噪优化以及基于最优传输理论的条件细化，有效缓解条件误差，性能优于传统扩散模型。",
+  "hf_url": "https://huggingface.co/papers/2602.07022",
+  "arxiv_url": "https://arxiv.org/abs/2602.07022",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07022",
+  "github_url": "",
+  "upvotes": 19,
+  "fetched_at": "2026-02-19T06:20:52.223477+00:00"
+}

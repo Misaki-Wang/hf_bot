@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.13097",
+  "title": "RM -RF: Reward Model for Run-Free Unit Test Evaluation",
+  "authors": [
+    "Elena Bruches",
+    "Daniil Grebenkin",
+    "Mikhail Klementev",
+    "Vadim Alperovich",
+    "Roman Derunets",
+    "Dari Baturova",
+    "Georgy Mkrtchyan",
+    "Oleg Sedukhin",
+    "Ivan Bondarenko",
+    "Nikolay Bushkov",
+    "Stanislav Moiseev"
+  ],
+  "abstract": "RM-RF is a lightweight reward model that predicts execution outcomes from source code alone, offering faster and more cost-effective evaluation than traditional compile-and-run methods. We present RM-RF, a lightweight reward model for run-free evaluation of automatically generated unit tests . Instead of repeatedly compiling and executing candidate tests, RM-RF predicts - from source and test code alone - three execution-derived signals : (1) whether the augmented test suite compiles and runs successfully, (2) whether the generated test cases increase code coverage , and (3) whether the generated test cases improve the mutation kill rate . To train and evaluate RM-RF we assemble a multilingual dataset (Java, Python, Go) of focal files , test files , and candidate test additions labeled by an execution-based pipeline , and we release an associated dataset and methodology for comparative evaluation. We tested multiple model families and tuning regimes ( zero-shot , full fine-tuning , and PEFT via LoRA ), achieving an average F1 of 0.69 across the three targets. Compared to conventional compile-and-run instruments, RM-RF provides substantially lower latency and infrastructure cost while delivering competitive predictive fidelity, enabling fast, scalable feedback for large-scale test generation and RL-based code optimization.",
+  "summary_en": "RM-RF is a lightweight reward model that predicts execution outcomes from source code alone, offering faster and more cost-effective evaluation than traditional compile-and-run methods.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nRM-RF is a lightweight reward model that predicts execution outcomes from source code alone, offering faster and more cost-effective evaluation than traditional compile-and-run methods.",
+  "hf_url": "https://huggingface.co/papers/2601.13097",
+  "arxiv_url": "https://arxiv.org/abs/2601.13097",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.13097",
+  "github_url": "https://github.com/trndcenter/RM-RF-unit-tests",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T05:34:16.382009+00:00"
+}

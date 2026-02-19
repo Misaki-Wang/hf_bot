@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.09276",
+  "title": "Effective Reasoning Chains Reduce Intrinsic Dimensionality",
+  "authors": [
+    "Archiki Prasad",
+    "Mandar Joshi",
+    "Kenton Lee",
+    "Mohit Bansal",
+    "Peter Shaw"
+  ],
+  "abstract": "Effective chain-of-thought reasoning strategies reduce intrinsic dimensionality, leading to better generalization by requiring fewer model parameters to achieve given accuracy thresholds. Chain-of-thought (CoT) reasoning and its variants have substantially improved the performance of language models on complex reasoning tasks, yet the precise mechanisms by which different strategies facilitate generalization remain poorly understood. While current explanations often point to increased test-time computation or structural guidance, establishing a consistent, quantifiable link between these factors and generalization remains challenging. In this work, we identify intrinsic dimensionality as a quantitative measure for characterizing the effectiveness of reasoning chains. Intrinsic dimensionality quantifies the minimum number of model dimensions needed to reach a given accuracy threshold on a given task. By keeping the model architecture fixed and varying the task formulation through different reasoning strategies , we demonstrate that effective reasoning strategies consistently reduce the intrinsic dimensionality of the task. Validating this on GSM8K with Gemma-3 1B and 4B, we observe a strong inverse correlation between the intrinsic dimensionality of a reasoning strategy and its generalization performance on both in-distribution and out-of-distribution data. Our findings suggest that effective reasoning chains facilitate learning by better compressing the task using fewer parameters, offering a new quantitative metric for analyzing reasoning processes.",
+  "summary_en": "Effective chain-of-thought reasoning strategies reduce intrinsic dimensionality, leading to better generalization by requiring fewer model parameters to achieve given accuracy thresholds.",
+  "summary_zh": "有效的思维链推理策略可降低内在维度，从而在达到给定准确率阈值时只需更少的模型参数，实现更好的泛化。",
+  "hf_url": "https://huggingface.co/papers/2602.09276",
+  "arxiv_url": "https://arxiv.org/abs/2602.09276",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09276",
+  "github_url": "",
+  "upvotes": 11,
+  "fetched_at": "2026-02-19T06:21:46.907823+00:00"
+}

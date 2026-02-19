@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01970",
+  "title": "Small Generalizable Prompt Predictive Models Can Steer Efficient RL Post-Training of Large Reasoning Models",
+  "authors": [
+    "Yun Qu",
+    "Qi Wang",
+    "Yixiu Mao",
+    "Heming Zou",
+    "Yuhang Jiang",
+    "Weijie Liu",
+    "Clive Bai",
+    "Kai Yang",
+    "Yangkun Chen",
+    "Saiyong Yang",
+    "Xiangyang Ji"
+  ],
+  "abstract": "Generalizable Predictive Prompt Selection (GPS) uses Bayesian inference with a lightweight generative model to efficiently select informative prompts for reinforcement learning-enhanced language models, improving training efficiency and performance. Reinforcement learning enhances the reasoning capabilities of large language models but often involves high computational costs due to rollout-intensive optimization . Online prompt selection presents a plausible solution by prioritizing informative prompts to improve training efficiency . However, current methods either depend on costly, exact evaluations or construct prompt-specific predictive models lacking generalization across prompts. This study introduces Generalizable Predictive Prompt Selection (GPS), which performs Bayesian inference towards prompt difficulty using a lightweight generative model trained on the shared optimization history. Intermediate-difficulty prioritization and history-anchored diversity are incorporated into the batch acquisition principle to select informative prompt batches. The small predictive model also generalizes at test-time for efficient computational allocation. Experiments across varied reasoning benchmarks indicate GPS's substantial improvements in training efficiency , final performance, and test-time efficiency over superior baseline methods.",
+  "summary_en": "Generalizable Predictive Prompt Selection (GPS) uses Bayesian inference with a lightweight generative model to efficiently select informative prompts for reinforcement learning-enhanced language models, improving training efficiency and performance.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nGeneralizable Predictive Prompt Selection (GPS) uses Bayesian inference with a lightweight generative model to efficiently select informative prompts for reinforcement learning-enhanced language models, improving training efficiency and performance.",
+  "hf_url": "https://huggingface.co/papers/2602.01970",
+  "arxiv_url": "https://arxiv.org/abs/2602.01970",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01970",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:37:21.870713+00:00"
+}

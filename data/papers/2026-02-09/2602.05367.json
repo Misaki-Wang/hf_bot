@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.05367",
+  "title": "RaBiT: Residual-Aware Binarization Training for Accurate and Efficient LLMs",
+  "authors": [
+    "Youngcheon You",
+    "Banseok Lee",
+    "Minseop Choi",
+    "Seonyoung Kim",
+    "Hyochan Chong",
+    "Changdong Kim",
+    "Youngmin Kim",
+    "Dongkyu Kim"
+  ],
+  "abstract": "Residual binarization framework RaBiT addresses feature co-adaptation in quantized LLMs through hierarchical path derivation and robust initialization, achieving superior accuracy-efficiency trade-offs. Efficient deployment of large language models (LLMs) requires extreme quantization, forcing a critical trade-off between low-bit efficiency and performance. Residual binarization enables hardware-friendly, matmul-free inference by stacking binary (pm1) layers, but is plagued by pathological feature co-adaptation. We identify a key failure mode, which we term inter-path adaptation : during quantization-aware training ( QAT ), parallel residual binary paths learn redundant features, degrading the error-compensation structure and limiting the expressive capacity of the model. While prior work relies on heuristic workarounds (e.g., path freezing) that constrain the solution space, we propose RaBiT , a novel quantization framework that resolves co-adaptation by algorithmically enforcing a residual hierarchy . Its core mechanism sequentially derives each binary path from a single shared full-precision weight, which ensures that every path corrects the error of the preceding one. This process is stabilized by a robust initialization that prioritizes functional preservation over mere weight approximation. RaBiT redefines the 2-bit accuracy-efficiency frontier: it achieves state-of-the-art performance, rivals even hardware-intensive Vector Quantization ( VQ ) methods, and delivers a 4.49times inference speed-up over full-precision models on an RTX 4090 .",
+  "summary_en": "Residual binarization framework RaBiT addresses feature co-adaptation in quantized LLMs through hierarchical path derivation and robust initialization, achieving superior accuracy-efficiency trade-offs.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nResidual binarization framework RaBiT addresses feature co-adaptation in quantized LLMs through hierarchical path derivation and robust initialization, achieving superior accuracy-efficiency trade-offs.",
+  "hf_url": "https://huggingface.co/papers/2602.05367",
+  "arxiv_url": "https://arxiv.org/abs/2602.05367",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05367",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T05:44:01.187355+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.22642",
+  "title": "Pushing the Boundaries of Natural Reasoning: Interleaved Bonus from Formal-Logic Verification",
+  "authors": [
+    "Chuxue Cao",
+    "Jinluan Yang",
+    "Haoran Li",
+    "Kunhao Pan",
+    "Zijian Zhao",
+    "Zhengyu Chen",
+    "Yuchen Tian",
+    "Lijun Wu",
+    "Conghui He",
+    "Sirui Han",
+    "Yike Guo"
+  ],
+  "abstract": "A formal logic verification-guided framework dynamically interleaves symbolic verification with natural language generation to improve reasoning accuracy and reduce errors in large language models. Large Language Models (LLMs) show remarkable capabilities, yet their stochastic next-token prediction creates logical inconsistencies and reward hacking that formal symbolic systems avoid. To bridge this gap, we introduce a formal logic verification -guided framework that dynamically interleaves formal symbolic verification with the natural language generation process, providing real-time feedback to detect and rectify errors as they occur. Distinguished from previous neuro-symbolic methods limited by passive post-hoc validation, our approach actively penalizes intermediate fallacies during the reasoning chain . We operationalize this framework via a novel two-stage training pipeline that synergizes formal logic verification -guided supervised fine-tuning and policy optimization . Extensive evaluation on six benchmarks spanning mathematical, logical, and general reasoning demonstrates that our 7B and 14B models outperform state-of-the-art baselines by average margins of 10.4% and 14.2%, respectively. These results validate that formal verification can serve as a scalable mechanism to significantly push the performance boundaries of advanced LLM reasoning.",
+  "summary_en": "A formal logic verification-guided framework dynamically interleaves symbolic verification with natural language generation to improve reasoning accuracy and reduce errors in large language models.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA formal logic verification-guided framework dynamically interleaves symbolic verification with natural language generation to improve reasoning accuracy and reduce errors in large language models.",
+  "hf_url": "https://huggingface.co/papers/2601.22642",
+  "arxiv_url": "https://arxiv.org/abs/2601.22642",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22642",
+  "github_url": "",
+  "upvotes": 9,
+  "fetched_at": "2026-02-19T05:35:05.516758+00:00"
+}

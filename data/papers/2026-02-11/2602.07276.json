@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.07276",
+  "title": "Steer2Adapt: Dynamically Composing Steering Vectors Elicits Efficient Adaptation of LLMs",
+  "authors": [
+    "Pengrui Han",
+    "Xueqiang Xu",
+    "Keyang Xuan",
+    "Peiyang Song",
+    "Siru Ouyang",
+    "Runchu Tian",
+    "Yuqing Jiang",
+    "Cheng Qian",
+    "Pengcheng Jiang",
+    "Jiashuo Sun",
+    "Junxia Cui",
+    "Ming Zhong",
+    "Ge Liu",
+    "Jiawei Han",
+    "Jiaxuan You"
+  ],
+  "abstract": "STEER2ADAPT is a lightweight framework that adapts large language models by composing steering vectors from reusable semantic prior subspaces, enabling efficient and flexible task adaptation through linear combinations of basis vectors.",
+  "summary_en": "STEER2ADAPT is a lightweight framework that adapts large language models by composing steering vectors from reusable semantic prior subspaces, enabling efficient and flexible task adaptation through linear combinations of basis vectors.",
+  "summary_zh": "STEER2ADAPT是一种轻量级框架，通过从可复用的语义先验子空间中组合引导向量来适配大型语言模型，借助基向量的线性组合实现高效且灵活的任务适配。",
+  "hf_url": "https://huggingface.co/papers/2602.07276",
+  "arxiv_url": "https://arxiv.org/abs/2602.07276",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07276",
+  "github_url": "",
+  "upvotes": 10,
+  "fetched_at": "2026-02-19T06:20:59.095957+00:00"
+}

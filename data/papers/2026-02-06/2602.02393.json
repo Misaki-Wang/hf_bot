@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.02393",
+  "title": "Infinite-World: Scaling Interactive World Models to 1000-Frame Horizons via Pose-Free Hierarchical Memory",
+  "authors": [
+    "Ruiqi Wu",
+    "Xuanhua He",
+    "Meng Cheng",
+    "Tianyu Yang",
+    "Yong Zhang",
+    "Zhuoliang Kang",
+    "Xunliang Cai",
+    "Xiaoming Wei",
+    "Chunle Guo",
+    "Chongyi Li",
+    "Ming-Ming Cheng"
+  ],
+  "abstract": "Infinite-World is a robust interactive world model that maintains coherent visual memory over 1000+ frames through hierarchical pose-free memory compression, uncertainty-aware action labeling, and revisit-dense fine-tuning strategies. We propose Infinite-World, a robust interactive world model capable of maintaining coherent visual memory over 1000+ frames in complex real-world environments. While existing world model s can be efficiently optimized on synthetic data with perfect ground-truth, they lack an effective training paradigm for real-world videos due to noisy pose estimations and the scarcity of viewpoint revisits. To bridge this gap, we first introduce a Hierarchical Pose-free Memory Compressor (HPMC) that recursively distills historical latents into a fixed-budget representation. By jointly optimizing the compressor with the generative backbone , HPMC enables the model to autonomously anchor generations in the distant past with bounded computational cost, eliminating the need for explicit geometric priors. Second, we propose an Uncertainty-aware Action Labeling module that discretizes continuous motion into a tri-state logic . This strategy maximizes the utilization of raw video data while shielding the deterministic action space from being corrupted by noisy trajectories, ensuring robust action-response learning. Furthermore, guided by insights from a pilot toy study, we employ a Revisit-Dense Finetuning Strategy using a compact, 30-minute dataset to efficiently activate the model's long-range loop-closure capabilities . Extensive experiments, including objective metrics and user studies, demonstrate that Infinite-World achieves superior performance in visual quality, action controllability, and spatial consistency.",
+  "summary_en": "Infinite-World is a robust interactive world model that maintains coherent visual memory over 1000+ frames through hierarchical pose-free memory compression, uncertainty-aware action labeling, and revisit-dense fine-tuning strategies.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nInfinite-World is a robust interactive world model that maintains coherent visual memory over 1000+ frames through hierarchical pose-free memory compression, uncertainty-aware action labeling, and revisit-dense fine-tuning strategies.",
+  "hf_url": "https://huggingface.co/papers/2602.02393",
+  "arxiv_url": "https://arxiv.org/abs/2602.02393",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02393",
+  "github_url": "https://github.com/MeiGen-AI/Infinite-World",
+  "upvotes": 16,
+  "fetched_at": "2026-02-19T05:42:40.305059+00:00"
+}

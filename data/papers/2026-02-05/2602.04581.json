@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.04581",
+  "title": "Trust The Typical",
+  "authors": [
+    "Debargha Ganguly",
+    "Sreehari Sankar",
+    "Biyao Zhang",
+    "Vikash Singh",
+    "Kanan Gupta",
+    "Harshini Kavuru",
+    "Alan Luo",
+    "Weicong Chen",
+    "Warren Morningstar",
+    "Raghu Machiraju",
+    "Vipin Chaudhary"
+  ],
+  "abstract": "A novel framework for LLM safety that treats safety as an out-of-distribution detection problem, achieving state-of-the-art performance without harmful example training through semantic space analysis and efficient GPU implementation. Current approaches to LLM safety fundamentally rely on a brittle cat-and-mouse game of identifying and blocking known threats via guardrails . We argue for a fresh approach: robust safety comes not from enumerating what is harmful, but from deeply understanding what is safe. We introduce Trust The Typical (T3), a framework that operationalizes this principle by treating safety as an out-of-distribution (OOD) detection problem. T3 learns the distribution of acceptable prompts in a semantic space and flags any significant deviation as a potential threat. Unlike prior methods, it requires no training on harmful examples, yet achieves state-of-the-art performance across 18 benchmarks spanning toxicity, hate speech, jailbreaking, multilingual harms , and over-refusal , reducing false positive rates by up to 40x relative to specialized safety models. A single model trained only on safe English text transfers effectively to diverse domains and over 14 languages without retraining. Finally, we demonstrate production readiness by integrating a GPU-optimized version into vLLM , enabling continuous guardrailing during token generation with less than 6% overhead even under dense evaluation intervals on large-scale workloads.",
+  "summary_en": "A novel framework for LLM safety that treats safety as an out-of-distribution detection problem, achieving state-of-the-art performance without harmful example training through semantic space analysis and efficient GPU implementation.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA novel framework for LLM safety that treats safety as an out-of-distribution detection problem, achieving state-of-the-art performance without harmful example training through semantic space analysis and efficient GPU implementation.",
+  "hf_url": "https://huggingface.co/papers/2602.04581",
+  "arxiv_url": "https://arxiv.org/abs/2602.04581",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04581",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:27:45.017131+00:00"
+}

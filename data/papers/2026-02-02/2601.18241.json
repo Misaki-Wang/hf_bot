@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.18241",
+  "title": "TAM-Eval: Evaluating LLMs for Automated Unit Test Maintenance",
+  "authors": [
+    "Elena Bruches",
+    "Vadim Alperovich",
+    "Dari Baturova",
+    "Roman Derunets",
+    "Daniil Grebenkin",
+    "Georgy Mkrtchyan",
+    "Oleg Sedukhin",
+    "Mikhail Klementev",
+    "Ivan Bondarenko",
+    "Nikolay Bushkov",
+    "Stanislav Moiseev"
+  ],
+  "abstract": "TAM-Eval is a framework and benchmark for evaluating large language models on comprehensive test suite maintenance tasks including creation, repair, and updating across multiple programming languages. While Large Language Models (LLMs) have shown promise in software engineering, their application to unit testing remains largely confined to isolated test generation or oracle prediction , neglecting the broader challenge of test suite maintenance . We introduce TAM-Eval (Test Automated Maintenance Evaluation), a framework and benchmark designed to evaluate model performance across three core test maintenance scenarios: creation, repair, and updating of test suites. Unlike prior work limited to function-level tasks, TAM-Eval operates at the test file level, while maintaining access to full repository context during isolated evaluation, better reflecting real-world maintenance workflows. Our benchmark comprises 1,539 automatically extracted and validated scenarios from Python, Java, and Go projects. TAM-Eval supports system-agnostic evaluation of both raw LLMs and agentic workflows , using a reference-free protocol based on test suite pass rate , code coverage , and mutation testing . Empirical results indicate that state-of-the-art LLMs have limited capabilities in realistic test maintenance processes and yield only marginal improvements in test effectiveness. We release TAM-Eval as an open-source framework to support future research in automated software testing. Our data and code are publicly available at https://github.com/trndcenter/TAM-Eval.",
+  "summary_en": "TAM-Eval is a framework and benchmark for evaluating large language models on comprehensive test suite maintenance tasks including creation, repair, and updating across multiple programming languages.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nTAM-Eval is a framework and benchmark for evaluating large language models on comprehensive test suite maintenance tasks including creation, repair, and updating across multiple programming languages.",
+  "hf_url": "https://huggingface.co/papers/2601.18241",
+  "arxiv_url": "https://arxiv.org/abs/2601.18241",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.18241",
+  "github_url": "https://github.com/trndcenter/TAM-Eval",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T05:34:22.510354+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.01519",
+  "title": "You Need an Encoder for Native Position-Independent Caching",
+  "authors": [
+    "Shiju Zhao",
+    "Junhao Hu",
+    "Jiaqi Zheng",
+    "Guihai Chen"
+  ],
+  "abstract": "Native position-independent caching enhances LLM inference efficiency by reintroducing encoders and developing a caching system that reduces latency while maintaining accuracy. The Key-Value (KV) cache of Large Language Models (LLMs) is prefix-based, making it highly inefficient for processing contexts retrieved in arbitrary order. Position-Independent Caching (PIC) has been proposed to enable KV reuse without positional constraints; however, existing approaches often incur substantial accuracy degradation, limiting their practical adoption. To address this issue, we propose native PIC by reintroducing the encoder to prevalent decoder-only LLMs and explicitly training it to support PIC. We further develop COMB, a PIC-aware caching system that integrates seamlessly with existing inference frameworks. Experimental results show that COMB reduces Time-to-First-Token (TTFT) by 51-94% and increases throughput by 3times with comparable accuracy. Furthermore, the quality improvement when using DeepSeek-V2-Lite-Chat demonstrates the applicability of COMB to other types of decoder-only LLMs . Our code is available at https://github.com/shijuzhao/Comb.",
+  "summary_en": "Native position-independent caching enhances LLM inference efficiency by reintroducing encoders and developing a caching system that reduces latency while maintaining accuracy.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nNative position-independent caching enhances LLM inference efficiency by reintroducing encoders and developing a caching system that reduces latency while maintaining accuracy.",
+  "hf_url": "https://huggingface.co/papers/2602.01519",
+  "arxiv_url": "https://arxiv.org/abs/2602.01519",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01519",
+  "github_url": "https://github.com/shijuzhao/Comb",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T05:38:52.007805+00:00"
+}

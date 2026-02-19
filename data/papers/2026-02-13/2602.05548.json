@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.05548",
+  "title": "Unveiling Implicit Advantage Symmetry: Why GRPO Struggles with Exploration and Difficulty Adaptation",
+  "authors": [
+    "Zhiqi Yu",
+    "Zhangquan Chen",
+    "Mengting Liu",
+    "Heye Zhang",
+    "Liangqiong Qu"
+  ],
+  "abstract": "Asymmetric Group Relative Advantage Estimation addresses exploration and difficulty adaptation challenges in reinforcement learning with large language models by dynamically modulating exploration incentives and sample difficulty focus.",
+  "summary_en": "Asymmetric Group Relative Advantage Estimation addresses exploration and difficulty adaptation challenges in reinforcement learning with large language models by dynamically modulating exploration incentives and sample difficulty focus.",
+  "summary_zh": "非对称组相对优势估计通过动态调节探索激励和样本难度聚焦，解决大语言模型强化学习中的探索与难度适应挑战。",
+  "hf_url": "https://huggingface.co/papers/2602.05548",
+  "arxiv_url": "https://arxiv.org/abs/2602.05548",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05548",
+  "github_url": "https://github.com/HKU-HealthAI/A-GRAE",
+  "upvotes": 11,
+  "fetched_at": "2026-02-19T06:37:39.686735+00:00"
+}

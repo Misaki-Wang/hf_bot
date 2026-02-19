@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2601.18415",
+  "title": "Pisets: A Robust Speech Recognition System for Lectures and Interviews",
+  "authors": [
+    "Ivan Bondarenko",
+    "Daniil Grebenkin",
+    "Oleg Sedukhin",
+    "Mikhail Klementev",
+    "Roman Derunets",
+    "Lyudmila Budneva"
+  ],
+  "abstract": "A three-component speech-to-text system combines Wav2Vec2, AST, and Whisper models with curriculum learning and uncertainty modeling to improve transcription accuracy and reduce hallucinations in Russian speech recognition. This work presents a speech-to-text system \"Pisets\" for scientists and journalists which is based on a three-component architecture aimed at improving speech recognition accuracy while minimizing errors and hallucinations associated with the Whisper model. The architecture comprises primary recognition using Wav2Vec2 , false positive filtering via the Audio Spectrogram Transformer (AST), and final speech recognition through Whisper . The implementation of curriculum learning methods and the utilization of diverse Russian-language speech corpora significantly enhanced the system's effectiveness. Additionally, advanced uncertainty modeling techniques were introduced, contributing to further improvements in transcription quality . The proposed approaches ensure robust transcribing of long audio data across various acoustic conditions compared to Whisper X and the usual Whisper model. The source code of \"Pisets\" system is publicly available at GitHub: https://github.com/bond005/pisets.",
+  "summary_en": "A three-component speech-to-text system combines Wav2Vec2, AST, and Whisper models with curriculum learning and uncertainty modeling to improve transcription accuracy and reduce hallucinations in Russian speech recognition.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA three-component speech-to-text system combines Wav2Vec2, AST, and Whisper models with curriculum learning and uncertainty modeling to improve transcription accuracy and reduce hallucinations in Russian speech recognition.",
+  "hf_url": "https://huggingface.co/papers/2601.18415",
+  "arxiv_url": "https://arxiv.org/abs/2601.18415",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.18415",
+  "github_url": "https://github.com/bond005/pisets",
+  "upvotes": 33,
+  "fetched_at": "2026-02-19T05:43:39.785703+00:00"
+}

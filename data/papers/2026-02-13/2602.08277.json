@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.08277",
+  "title": "PISCO: Precise Video Instance Insertion with Sparse Control",
+  "authors": [
+    "Xiangbo Gao",
+    "Renjie Li",
+    "Xinghao Chen",
+    "Yuheng Wu",
+    "Suofei Feng",
+    "Qing Yin",
+    "Zhengzhong Tu"
+  ],
+  "abstract": "Video diffusion model PISCO enables precise instance insertion with sparse keyframe control through variable-information guidance and distribution-preserving temporal masking. The landscape of AI video generation is undergoing a pivotal shift: moving beyond general generation - which relies on exhaustive prompt-engineering and \"cherry-picking\" - towards fine-grained, controllable generation and high-fidelity post-processing. In professional AI-assisted filmmaking, it is crucial to perform precise, targeted modifications. A cornerstone of this transition is video instance insertion , which requires inserting a specific instance into existing footage while maintaining scene integrity. Unlike traditional video editing , this task demands several requirements: precise spatial-temporal placement , physically consistent scene interaction, and the faithful preservation of original dynamics - all achieved under minimal user effort. In this paper, we propose PISCO, a video diffusion model for precise video instance insertion with arbitrary sparse keyframe control . PISCO allows users to specify a single keyframe, start-and-end keyframes, or sparse keyframes at arbitrary timestamps, and automatically propagates object appearance, motion, and interaction. To address the severe distribution shift induced by sparse conditioning in pretrained video diffusion model s, we introduce Variable-Information Guidance for robust conditioning and Distribution-Preserving Temporal Masking to stabilize temporal generation , together with geometry-aware conditioning for realistic scene adaptation. We further construct PISCO-Bench, a benchmark with verified instance annotations and paired clean background videos, and evaluate performance using both reference-based and reference-free perceptual metrics. Experiments demonstrate that PISCO consistently outperforms strong inpainting and video editing baselines under sparse control, and exhibits clear, monotonic performance improvements as additional control signals are provided. Project page: xiangbogaobarry.github.io/PISCO.",
+  "summary_en": "Video diffusion model PISCO enables precise instance insertion with sparse keyframe control through variable-information guidance and distribution-preserving temporal masking.",
+  "summary_zh": "视频扩散模型PISCO通过可变信息引导和分布保持的时间掩码，实现了基于稀疏关键帧控制的精确实例插入。",
+  "hf_url": "https://huggingface.co/papers/2602.08277",
+  "arxiv_url": "https://arxiv.org/abs/2602.08277",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08277",
+  "github_url": "https://github.com/taco-group/PISCO",
+  "upvotes": 11,
+  "fetched_at": "2026-02-19T06:37:48.778539+00:00"
+}

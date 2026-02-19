@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.16493",
+  "title": "MMA: Multimodal Memory Agent",
+  "authors": [
+    "Yihao Lu",
+    "Wanru Cheng",
+    "Zeyu Zhang",
+    "Hao Tang"
+  ],
+  "abstract": "Multimodal Memory Agent (MMA) improves long-horizon agent performance by dynamically scoring memory reliability and handling visual biases in retrieval-augmented systems. Long-horizon multimodal agents depend on external memory ; however, similarity-based retrieval often surfaces stale, low-credibility, or conflicting items, which can trigger overconfident errors. We propose Multimodal Memory Agent (MMA), which assigns each retrieved memory item a dynamic reliability score by combining source credibility , temporal decay , and conflict-aware network consensus , and uses this signal to reweight evidence and abstain when support is insufficient. We also introduce MMA-Bench , a programmatically generated benchmark for belief dynamics with controlled speaker reliability and structured text-vision contradictions. Using this framework, we uncover the \" Visual Placebo Effect \", revealing how RAG-based agents inherit latent visual biases from foundation models. On FEVER, MMA matches baseline accuracy while reducing variance by 35.2% and improving selective utility; on LoCoMo, a safety-oriented configuration improves actionable accuracy and reduces wrong answers; on MMA-Bench , MMA reaches 41.18% Type-B accuracy in Vision mode, while the baseline collapses to 0.0% under the same protocol. Code: https://github.com/AIGeeksGroup/MMA.",
+  "summary_en": "Multimodal Memory Agent (MMA) improves long-horizon agent performance by dynamically scoring memory reliability and handling visual biases in retrieval-augmented systems.",
+  "summary_zh": "多模态记忆智能体（MMA）通过动态评分记忆可靠性并处理检索增强系统中的视觉偏差，提升了长程智能体的性能。",
+  "hf_url": "https://huggingface.co/papers/2602.16493",
+  "arxiv_url": "https://arxiv.org/abs/2602.16493",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16493",
+  "github_url": "https://github.com/AIGeeksGroup/MMA",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:47:35.146522+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.03442",
+  "title": "A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical Retrieval Interfaces",
+  "authors": [
+    "Mingxuan Du",
+    "Benfeng Xu",
+    "Chiwei Zhu",
+    "Shaohan Wang",
+    "Pengyu Wang",
+    "Xiaorui Wang",
+    "Zhendong Mao"
+  ],
+  "abstract": "Agentic RAG framework enables models to dynamically adapt retrieval decisions across multiple granularities, outperforming traditional approaches while scaling efficiently with model improvements. Frontier language models have demonstrated strong reasoning and long-horizon tool-use capabilities. However, existing RAG systems fail to leverage these capabilities. They still rely on two paradigms: (1) designing an algorithm that retrieves passages in a single shot and concatenates them into the model's input, or (2) predefining a workflow and prompting the model to execute it step-by-step. Neither paradigm allows the model to participate in retrieval decisions, preventing efficient scaling with model improvements. In this paper, we introduce A-RAG, an Agentic RAG framework that exposes hierarchical retrieval interfaces directly to the model. A-RAG provides three retrieval tools: keyword search , semantic search , and chunk read , enabling the agent to adaptively search and retrieve information across multiple granularities. Experiments on multiple open-domain QA benchmarks show that A-RAG consistently outperforms existing approaches with comparable or lower retrieved tokens, demonstrating that A-RAG effectively leverages model capabilities and dynamically adapts to different RAG tasks. We further systematically study how A-RAG scales with model size and test-time compute . We will release our code and evaluation suite to facilitate future research. Code and evaluation suite are available at https://github.com/Ayanami0730/arag.",
+  "summary_en": "Agentic RAG framework enables models to dynamically adapt retrieval decisions across multiple granularities, outperforming traditional approaches while scaling efficiently with model improvements.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nAgentic RAG framework enables models to dynamically adapt retrieval decisions across multiple granularities, outperforming traditional approaches while scaling efficiently with model improvements.",
+  "hf_url": "https://huggingface.co/papers/2602.03442",
+  "arxiv_url": "https://arxiv.org/abs/2602.03442",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03442",
+  "github_url": "https://github.com/Ayanami0730/arag",
+  "upvotes": 19,
+  "fetched_at": "2026-02-19T05:27:30.427321+00:00"
+}

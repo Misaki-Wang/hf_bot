@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01479",
+  "title": "Ebisu: Benchmarking Large Language Models in Japanese Finance",
+  "authors": [
+    "Xueqing Peng",
+    "Ruoyu Xiang",
+    "Fan Zhang",
+    "Mingzi Song",
+    "Mingyang Jiang",
+    "Yan Wang",
+    "Lingfei Qian",
+    "Taiki Hara",
+    "Yuqing Guo",
+    "Jimin Huang",
+    "Junichi Tsujii",
+    "Sophia Ananiadou"
+  ],
+  "abstract": "A Japanese financial language understanding benchmark named Ebisu is introduced, featuring two expert-annotated tasks that evaluate implicit commitment recognition and hierarchical financial terminology extraction, revealing persistent challenges for current language models despite their advanced capabilities. Japanese finance combines agglutinative, head-final linguistic structure , mixed writing systems, and high-context communication norms that rely on indirect expression and implicit commitment , posing a substantial challenge for LLMs. We introduce Ebisu, a benchmark for native Japanese financial language understanding, comprising two linguistically and culturally grounded, expert-annotated tasks: JF-ICR, which evaluates implicit commitment and refusal recognition in investor-facing Q&A , and JF-TE, which assesses hierarchical extraction and ranking of nested financial terminology from professional disclosures . We evaluate a diverse set of open-source and proprietary LLMs spanning general-purpose, Japanese-adapted, and financial models. Results show that even state-of-the-art systems struggle on both tasks. While increased model scale yields limited improvements, language- and domain-specific adaptation does not reliably improve performance, leaving substantial gaps unresolved. Ebisu provides a focused benchmark for advancing linguistically and culturally grounded financial NLP. All datasets and evaluation scripts are publicly released.",
+  "summary_en": "A Japanese financial language understanding benchmark named Ebisu is introduced, featuring two expert-annotated tasks that evaluate implicit commitment recognition and hierarchical financial terminology extraction, revealing persistent challenges for current language models despite their advanced capabilities.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA Japanese financial language understanding benchmark named Ebisu is introduced, featuring two expert-annotated tasks that evaluate implicit commitment recognition and hierarchical financial terminology extraction, revealing persistent challenges for current language models despite their advanced capabilities.",
+  "hf_url": "https://huggingface.co/papers/2602.01479",
+  "arxiv_url": "https://arxiv.org/abs/2602.01479",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01479",
+  "github_url": "",
+  "upvotes": 17,
+  "fetched_at": "2026-02-19T05:36:50.350950+00:00"
+}

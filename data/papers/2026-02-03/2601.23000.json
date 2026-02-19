@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2601.23000",
+  "title": "Mano: Restriking Manifold Optimization for LLM Training",
+  "authors": [
+    "Yufei Gu",
+    "Zeke Xie"
+  ],
+  "abstract": "A novel optimizer called Mano is proposed that combines manifold optimization with momentum projection onto tangent spaces, achieving superior performance over AdamW and Muon while reducing memory and computational requirements. While large language models ( LLMs ) have emerged as a significant advancement in artificial intelligence, the hardware and computational costs for training LLMs are also significantly burdensome. Among the state-of-the-art optimizer s, AdamW relies on diagonal curvature estimates and ignores structural properties, while Muon applies global spectral normalization at the expense of losing curvature information. In this study, we restriked manifold optimization methods for training LLMs , which may address both optimizer s' limitations, while conventional manifold optimization methods have been largely overlooked due to the poor performance in large-scale model optimization. By innovatively projecting the momentum onto the tangent space of model parameters and constraining it on a rotational Oblique manifold , we propose a novel, powerful, and efficient optimizer **Mano** that is the first to bridge the performance gap between manifold optimization and modern optimizer s. Extensive experiments on the LLaMA and Qwen3 models demonstrate that Mano consistently and significantly outperforms AdamW and Muon even with less memory consumption and computational complexity , respectively, suggesting an expanded Pareto frontier in terms of space and time efficiency.",
+  "summary_en": "A novel optimizer called Mano is proposed that combines manifold optimization with momentum projection onto tangent spaces, achieving superior performance over AdamW and Muon while reducing memory and computational requirements.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA novel optimizer called Mano is proposed that combines manifold optimization with momentum projection onto tangent spaces, achieving superior performance over AdamW and Muon while reducing memory and computational requirements.",
+  "hf_url": "https://huggingface.co/papers/2601.23000",
+  "arxiv_url": "https://arxiv.org/abs/2601.23000",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.23000",
+  "github_url": "https://github.com/xie-lab-ml/Mano-Restriking-Manifold-Optimization-for-LLM-Training",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:36:18.427272+00:00"
+}

@@ -513,9 +513,26 @@ def build_arxiv_pdf_url(arxiv_url: str) -> str:
     return f"https://arxiv.org/pdf/{arxiv_id}"
 
 
+def sanitize_paper_id(paper_id: str) -> str:
+    return re.sub(r"[^A-Za-z0-9._-]", "_", paper_id)
+
+
 def output_path_for_paper(output_dir: Path, date: str, paper_id: str) -> Path:
-    safe_id = re.sub(r"[^A-Za-z0-9._-]", "_", paper_id)
+    safe_id = sanitize_paper_id(paper_id)
+    return output_dir / date / f"{safe_id}.json"
+
+
+def legacy_output_path_for_paper(output_dir: Path, date: str, paper_id: str) -> Path:
+    safe_id = sanitize_paper_id(paper_id)
     return output_dir / f"{date}__{safe_id}.json"
+
+
+def existing_output_candidates(output_dir: Path, date: str, paper_id: str) -> list[Path]:
+    candidates = [output_path_for_paper(output_dir, date, paper_id)]
+    legacy = legacy_output_path_for_paper(output_dir, date, paper_id)
+    if legacy not in candidates:
+        candidates.append(legacy)
+    return candidates
 
 
 def has_meaningful_text(value: object, min_len: int = 48) -> bool:
@@ -556,6 +573,46 @@ def is_complete_existing_json(path: Path, *, date: str, paper_id: str, hf_url: s
     if not has_meaningful_text(raw.get("summary_en")) and not has_meaningful_text(raw.get("abstract")):
         return True
     return False
+
+
+def is_complete_existing_json_any_date(path: Path, *, paper_id: str, hf_url: str) -> bool:
+    if not path.exists():
+        return False
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return False
+    if not isinstance(raw, dict):
+        return False
+
+    if clean_text(str(raw.get("paper_id", ""))) != paper_id:
+        return False
+    if clean_text(str(raw.get("hf_url", ""))) != hf_url:
+        return False
+    if not clean_text(str(raw.get("title", ""))):
+        return False
+    if not isinstance(raw.get("authors"), list) or not raw.get("authors"):
+        return False
+    if not clean_text(str(raw.get("fetched_at", ""))):
+        return False
+
+    if has_meaningful_text(raw.get("summary_zh"), min_len=16):
+        return True
+    if not has_meaningful_text(raw.get("summary_en")) and not has_meaningful_text(raw.get("abstract")):
+        return True
+    return False
+
+
+def find_complete_existing_json_any_date(output_dir: Path, paper_id: str, hf_url: str) -> Path | None:
+    safe_id = sanitize_paper_id(paper_id)
+    candidates = sorted(output_dir.glob(f"*/{safe_id}.json"))
+    legacy_candidates = sorted(output_dir.glob(f"*__{safe_id}.json"))
+    candidates.extend(path for path in legacy_candidates if path not in candidates)
+
+    for candidate in candidates:
+        if is_complete_existing_json_any_date(candidate, paper_id=paper_id, hf_url=hf_url):
+            return candidate
+    return None
 
 
 def parse_paper(session: requests.Session, date: str, hf_url: str) -> PaperRecord:
@@ -642,16 +699,27 @@ def run(
     for idx, hf_url in enumerate(paper_urls, start=1):
         logging.info("[%d/%d] Processing %s", idx, len(paper_urls), hf_url)
         paper_id = urlparse(hf_url).path.rstrip("/").split("/")[-1]
-        output_path = output_path_for_paper(output_dir, date, paper_id)
-        if skip_existing_complete and is_complete_existing_json(
-            output_path,
-            date=date,
-            paper_id=paper_id,
-            hf_url=hf_url,
-        ):
-            logging.info("Skip existing complete JSON: %s", output_path)
-            skipped_existing += 1
-            continue
+        if skip_existing_complete:
+            matched_existing: Path | None = None
+            for candidate in existing_output_candidates(output_dir, date, paper_id):
+                if is_complete_existing_json(
+                    candidate,
+                    date=date,
+                    paper_id=paper_id,
+                    hf_url=hf_url,
+                ):
+                    matched_existing = candidate
+                    break
+            if matched_existing is None:
+                matched_existing = find_complete_existing_json_any_date(
+                    output_dir,
+                    paper_id=paper_id,
+                    hf_url=hf_url,
+                )
+            if matched_existing is not None:
+                logging.info("Skip existing complete JSON: %s", matched_existing)
+                skipped_existing += 1
+                continue
 
         try:
             paper = parse_paper(session, date=date, hf_url=hf_url)

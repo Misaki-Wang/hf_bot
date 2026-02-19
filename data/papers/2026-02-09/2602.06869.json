@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06869",
+  "title": "Uncovering Cross-Objective Interference in Multi-Objective Alignment",
+  "authors": [
+    "Yining Lu",
+    "Meng Jiang"
+  ],
+  "abstract": "Multi-objective alignment in LLMs suffers from cross-objective interference where improving performance on some objectives degrades others, with a covariance-based analysis and a proposed method to maintain positive correlations between rewards and training signals. We study a persistent failure mode in multi-objective alignment for large language models (LLMs): training improves performance on only a subset of objectives while causing others to degrade. We formalize this phenomenon as cross-objective interference and conduct the first systematic study across classic scalarization algorithms , showing that interference is pervasive and exhibits strong model dependence. To explain this phenomenon, we derive a local covariance law showing that an objective improves at first order when its reward exhibits positive covariance with the scalarized score. We extend this analysis to clipped surrogate objectives used in modern alignment, demonstrating that the covariance law remains valid under mild conditions despite clipping. Building on this analysis, we propose Covariance Targeted Weight Adaptation (CTWA), a plug-and-play method that maintains positive covariance between objective rewards and the training signal to effectively mitigate cross-objective interference . Finally, we complement these local improvement conditions with a global convergence analysis under the Polyak--Łojasiewicz condition , establishing when non-convex scalarized optimization achieves global convergence and how cross-objective interference depends on specific model geometric properties.",
+  "summary_en": "Multi-objective alignment in LLMs suffers from cross-objective interference where improving performance on some objectives degrades others, with a covariance-based analysis and a proposed method to maintain positive correlations between rewards and training signals.",
+  "summary_zh": "大语言模型的多目标对齐存在跨目标干扰，即提升某些目标性能会降低其他目标；该研究采用协方差分析，并提出一种保持奖励与训练信号正相关性的方法。",
+  "hf_url": "https://huggingface.co/papers/2602.06869",
+  "arxiv_url": "https://arxiv.org/abs/2602.06869",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06869",
+  "github_url": "https://github.com/yining610/ctwa",
+  "upvotes": 6,
+  "fetched_at": "2026-02-19T05:58:23.230832+00:00"
+}

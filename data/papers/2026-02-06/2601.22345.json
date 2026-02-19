@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2601.22345",
+  "title": "Failing to Explore: Language Models on Interactive Tasks",
+  "authors": [
+    "Mahdi JafariRaviz",
+    "Keivan Rezaei",
+    "Arshia Soltani Moakhar",
+    "Zahra Sodagar",
+    "Yize Cheng",
+    "Soheil Feizi"
+  ],
+  "abstract": "Language models exhibit limited exploration capabilities in interactive environments, with performance improvements achieved through budget allocation strategies and historical summarization techniques. We evaluate language models on their ability to explore interactive environments under a limited interaction budget. We introduce three parametric tasks with controllable exploration difficulty , spanning continuous and discrete environments. Across state-of-the-art models, we find systematic under-exploration and suboptimal solutions, with performance often significantly worse than simple explore--exploit heuristic baselines and scaling weakly as the budget increases. Finally, we study two lightweight interventions: splitting a fixed budget into parallel executions , which surprisingly improves performance despite a no-gain theoretical result for our tasks, and periodically summarizing the interaction history , which preserves key discoveries and further improves exploration.",
+  "summary_en": "Language models exhibit limited exploration capabilities in interactive environments, with performance improvements achieved through budget allocation strategies and historical summarization techniques.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLanguage models exhibit limited exploration capabilities in interactive environments, with performance improvements achieved through budget allocation strategies and historical summarization techniques.",
+  "hf_url": "https://huggingface.co/papers/2601.22345",
+  "arxiv_url": "https://arxiv.org/abs/2601.22345",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22345",
+  "github_url": "https://github.com/mahdi-jfri/explore-exploit-bench",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:42:31.725997+00:00"
+}

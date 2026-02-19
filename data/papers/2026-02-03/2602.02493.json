@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02493",
+  "title": "PixelGen: Pixel Diffusion Beats Latent Diffusion with Perceptual Loss",
+  "authors": [
+    "Zehong Ma",
+    "Ruihan Xu",
+    "Shiliang Zhang"
+  ],
+  "abstract": "PixelGen is a pixel-space diffusion framework that uses perceptual supervision through LPIPS and DINO-based losses to generate high-quality images without requiring VAEs or latent representations. Pixel diffusion generates images directly in pixel space in an end-to-end manner, avoiding the artifacts and bottlenecks introduced by VAE s in two-stage latent diffusion. However, it is challenging to optimize high-dimensional pixel manifolds that contain many perceptually irrelevant signals, leaving existing pixel diffusion methods lagging behind latent diffusion model s. We propose PixelGen, a simple pixel diffusion framework with perceptual supervision . Instead of modeling the full image manifold, PixelGen introduces two complementary perceptual losses to guide diffusion model towards learning a more meaningful perceptual manifold. An LPIPS loss facilitates learning better local patterns, while a DINO-based perceptual loss strengthens global semantics. With perceptual supervision , PixelGen surpasses strong latent diffusion baselines. It achieves an FID of 5.11 on ImageNet-256 without classifier-free guidance using only 80 training epochs, and demonstrates favorable scaling performance on large-scale text-to- image generation with a GenEval score of 0.79. PixelGen requires no VAE s, no latent representations , and no auxiliary stages, providing a simpler yet more powerful generative paradigm. Codes are publicly available at https://github.com/Zehong-Ma/PixelGen.",
+  "summary_en": "PixelGen is a pixel-space diffusion framework that uses perceptual supervision through LPIPS and DINO-based losses to generate high-quality images without requiring VAEs or latent representations.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nPixelGen is a pixel-space diffusion framework that uses perceptual supervision through LPIPS and DINO-based losses to generate high-quality images without requiring VAEs or latent representations.",
+  "hf_url": "https://huggingface.co/papers/2602.02493",
+  "arxiv_url": "https://arxiv.org/abs/2602.02493",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02493",
+  "github_url": "https://github.com/Zehong-Ma/PixelGen",
+  "upvotes": 42,
+  "fetched_at": "2026-02-19T05:38:11.506490+00:00"
+}

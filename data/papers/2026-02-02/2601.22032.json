@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.22032",
+  "title": "Drive-JEPA: Video JEPA Meets Multimodal Trajectory Distillation for End-to-End Driving",
+  "authors": [
+    "Linhan Wang",
+    "Zichong Yang",
+    "Chen Bai",
+    "Guoxiang Zhang",
+    "Xiaotong Liu",
+    "Xiaoyin Zheng",
+    "Xiao-Xiao Long",
+    "Chang-Tien Lu",
+    "Cheng Lu"
+  ],
+  "abstract": "Drive-JEPA combines V-JEPA video pretraining with multimodal trajectory distillation to achieve state-of-the-art performance in end-to-end autonomous driving. End-to-end autonomous driving increasingly leverages self-supervised video pretraining to learn transferable planning representations. However, pretraining video world models for scene understanding has so far brought only limited improvements. This limitation is compounded by the inherent ambiguity of driving: each scene typically provides only a single human trajectory, making it difficult to learn multimodal behaviors . In this work, we propose Drive-JEPA, a framework that integrates Video Joint-Embedding Predictive Architecture ( V-JEPA ) with multimodal trajectory distillation for end-to-end driving. First, we adapt V-JEPA for end-to-end driving, pretraining a ViT encoder on large-scale driving videos to produce predictive representations aligned with trajectory planning. Second, we introduce a proposal-centric planner that distills diverse simulator-generated trajectories alongside human trajectories, with a momentum-aware selection mechanism to promote stable and safe behavior. When evaluated on NAVSIM , the V-JEPA representation combined with a simple transformer-based decoder outperforms prior methods by 3 PDMS in the perception-free setting. The complete Drive-JEPA framework achieves 93.3 PDMS on v1 and 87.8 EPDMS on v2, setting a new state-of-the-art.",
+  "summary_en": "Drive-JEPA combines V-JEPA video pretraining with multimodal trajectory distillation to achieve state-of-the-art performance in end-to-end autonomous driving.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nDrive-JEPA combines V-JEPA video pretraining with multimodal trajectory distillation to achieve state-of-the-art performance in end-to-end autonomous driving.",
+  "hf_url": "https://huggingface.co/papers/2601.22032",
+  "arxiv_url": "https://arxiv.org/abs/2601.22032",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22032",
+  "github_url": "https://github.com/linhanwang/Drive-JEPA",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:34:53.395277+00:00"
+}

@@ -299,6 +299,15 @@ def validate_date(value: str) -> str:
     return value
 
 
+def collect_paper_files(data_dir: Path, date: str | None) -> list[Path]:
+    if date:
+        by_dir = sorted((data_dir / date).glob("*.json"))
+        legacy = sorted(data_dir.glob(f"{date}__*.json"))
+        merged = by_dir + [path for path in legacy if path not in by_dir]
+        return merged
+    return sorted(data_dir.rglob("*.json"))
+
+
 @dataclass
 class ProcessStats:
     translated: int = 0
@@ -367,7 +376,7 @@ def process_paper_file(path: Path, translator: Translator, force: bool) -> Proce
     return stats
 
 
-def run(data_dir: Path, provider: str, force: bool, model: str, date: str, workers: int) -> None:
+def run(data_dir: Path, provider: str, force: bool, model: str, date: str | None, workers: int) -> None:
     requested_workers = max(1, min(workers, MAX_TRANSLATE_WORKERS))
     if requested_workers != workers:
         logging.warning("Requested workers=%d adjusted to safe limit=%d", workers, requested_workers)
@@ -377,8 +386,7 @@ def run(data_dir: Path, provider: str, force: bool, model: str, date: str, worke
         model_override=model,
         concurrency_hint=requested_workers,
     )
-    pattern = f"{date}__*.json" if date else "*.json"
-    paper_files = sorted(data_dir.glob(pattern))
+    paper_files = collect_paper_files(data_dir, date)
     if not paper_files:
         if date:
             logging.warning("No paper JSON files found in %s for date=%s", data_dir, date)
@@ -443,7 +451,7 @@ def main() -> None:
         help="Override model name (e.g., moonshotai/kimi-k2.5). Works for openrouter/auto.",
     )
     parser.add_argument("--force", action="store_true", help="Re-translate even when summary_zh exists")
-    parser.add_argument("--date", type=validate_date, default="", help="Only process files for date YYYY-MM-DD")
+    parser.add_argument("--date", type=validate_date, default=None, help="Only process files for date YYYY-MM-DD")
     parser.add_argument(
         "--workers",
         type=int,

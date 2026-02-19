@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2601.21759",
+  "title": "Influence Guided Sampling for Domain Adaptation of Text Retrievers",
+  "authors": [
+    "Meet Doshi",
+    "Vishwajeet Kumar",
+    "Yulong Li",
+    "Jaydeep Sen"
+  ],
+  "abstract": "An reinforcement learning-based sampling framework adaptively reweights training datasets to improve embedding model performance while reducing GPU costs. General-purpose open-domain dense retrieval systems are usually trained with a large, eclectic mix of corpora and search tasks. How should these diverse corpora and tasks be sampled for training? Conventional approaches sample them uniformly, proportional to their instance population sizes, or depend on human-level expert supervision. It is well known that the training data sampling strategy can greatly impact model performance. However, how to find the optimal strategy has not been adequately studied in the context of embedding models . We propose Inf-DDS, a novel reinforcement learning driven sampling framework that adaptively reweighs training datasets guided by influence-based reward signals and is much more lightweight with respect to GPU consumption. Our technique iteratively refines the sampling policy, prioritizing datasets that maximize model performance on a target development set. We evaluate the efficacy of our sampling strategy on a wide range of text retrieval tasks, demonstrating strong improvements in retrieval performance and better adaptation compared to existing gradient-based sampling methods, while also being 1.5x to 4x cheaper in GPU compute. Our sampling strategy achieves a 5.03 absolute NDCG@10 improvement while training a multilingual bge-m3 model and an absolute NDCG@10 improvement of 0.94 while training all-MiniLM-L6-v2 , even when starting from expert-assigned weights on a large pool of training datasets.",
+  "summary_en": "An reinforcement learning-based sampling framework adaptively reweights training datasets to improve embedding model performance while reducing GPU costs.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nAn reinforcement learning-based sampling framework adaptively reweights training datasets to improve embedding model performance while reducing GPU costs.",
+  "hf_url": "https://huggingface.co/papers/2601.21759",
+  "arxiv_url": "https://arxiv.org/abs/2601.21759",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21759",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:36:02.489694+00:00"
+}

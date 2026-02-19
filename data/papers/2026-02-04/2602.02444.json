@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.02444",
+  "title": "RANKVIDEO: Reasoning Reranking for Text-to-Video Retrieval",
+  "authors": [
+    "Tyler Skow",
+    "Alexander Martin",
+    "Benjamin Van Durme",
+    "Rama Chellappa",
+    "Reno Kriz"
+  ],
+  "abstract": "RANKVIDEO is a reasoning-based video retrieval system that improves upon traditional two-stage frameworks through explicit query-video pair analysis and a multi-objective training approach. Reranking is a critical component of modern retrieval systems, which typically pair an efficient first-stage retriever with a more expressive model to refine results. While large reasoning models have driven rapid progress in text-centric reranking , reasoning-based reranking for video retrieval remains underexplored. To address this gap, we introduce RANKVIDEO, a reasoning-based reranker for video retrieval that explicitly reasons over query-video pairs using video content to assess relevance. RANKVIDEO is trained using a two-stage curriculum consisting of perception-grounded supervised fine-tuning followed by reranking training that combines pointwise , pairwise , and teacher confidence distillation objectives, and is supported by a data synthesis pipeline for constructing reasoning-intensive query-video pairs. Experiments on the large-scale MultiVENT 2.0 benchmark demonstrate that RANKVIDEO consistently improves retrieval performance within a two-stage framework, yielding an average improvement of 31% on nDCG@10 and outperforming text-only and vision-language reranking alternatives, while more efficient.",
+  "summary_en": "RANKVIDEO is a reasoning-based video retrieval system that improves upon traditional two-stage frameworks through explicit query-video pair analysis and a multi-objective training approach.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nRANKVIDEO is a reasoning-based video retrieval system that improves upon traditional two-stage frameworks through explicit query-video pair analysis and a multi-objective training approach.",
+  "hf_url": "https://huggingface.co/papers/2602.02444",
+  "arxiv_url": "https://arxiv.org/abs/2602.02444",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02444",
+  "github_url": "https://github.com/tskow99/RANKVIDEO-Reasoning-Reranker",
+  "upvotes": 18,
+  "fetched_at": "2026-02-19T05:39:09.242447+00:00"
+}

@@ -8,15 +8,17 @@ import json
 import logging
 import os
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, time as dt_time, timedelta, timezone
 from pathlib import Path
 from typing import Any
 import re
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 import requests
 
 ARXIV_ID_RE = re.compile(r"\b(\d{4}\.\d{4,5}(?:v\d+)?)\b", re.IGNORECASE)
 DATE_PREFIX_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})__")
+DATE_DIR_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 DAILY_OVERVIEW_SYSTEM_PROMPT = (
     "你是严谨的 AI 研究日报编辑。你必须严格遵循输出格式，禁止编造信息。"
 )
@@ -56,6 +58,196 @@ def normalize_str_list(value: Any) -> list[str]:
     return out
 
 
+def parse_int_env(name: str, default: int, minimum: int, maximum: int) -> int:
+    raw = str(os.getenv(name, "")).strip()
+    if not raw:
+        return default
+    try:
+        value = int(raw)
+    except ValueError:
+        logging.warning("Invalid %s=%r, fallback to %d", name, raw, default)
+        return default
+    if value < minimum or value > maximum:
+        logging.warning(
+            "Out-of-range %s=%d, expected [%d, %d], fallback to %d",
+            name,
+            value,
+            minimum,
+            maximum,
+            default,
+        )
+        return default
+    return value
+
+
+def resolve_visibility_now(tz: ZoneInfo) -> datetime:
+    override_raw = str(os.getenv("ARCHIVE_NOW", "")).strip()
+    if override_raw:
+        try:
+            value = override_raw.replace("Z", "+00:00")
+            dt = datetime.fromisoformat(value)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=tz)
+            return dt.astimezone(tz)
+        except ValueError:
+            logging.warning("Invalid ARCHIVE_NOW=%r, fallback to current time", override_raw)
+    return datetime.now(tz)
+
+
+def is_meaningful_text(value: Any, min_len: int = 1) -> bool:
+    text = str(value or "").strip()
+    return len(text) >= min_len
+
+
+def score_paper_record(record: dict[str, Any]) -> int:
+    score = 0
+    if is_meaningful_text(record.get("summary_zh"), 16):
+        score += 120
+    if is_meaningful_text(record.get("summary_en"), 40):
+        score += 90
+    if is_meaningful_text(record.get("abstract"), 80):
+        score += 60
+    if is_meaningful_text(record.get("github_url"), 8):
+        score += 20
+    score += min(max(int(record.get("upvotes", 0)), 0), 200)
+    if is_meaningful_text(record.get("fetched_at"), 10):
+        score += 5
+    return score
+
+
+def pick_best_text(records: list[dict[str, Any]], key: str, min_len: int = 1) -> str:
+    candidates: list[str] = []
+    for record in records:
+        value = str(record.get(key, "")).strip()
+        if len(value) >= min_len:
+            candidates.append(value)
+    if not candidates:
+        return ""
+    candidates.sort(key=lambda x: (len(x), x), reverse=True)
+    return candidates[0]
+
+
+def merge_duplicate_group(paper_id: str, records: list[dict[str, Any]]) -> dict[str, Any]:
+    sorted_records = sorted(
+        records,
+        key=lambda x: (
+            score_paper_record(x),
+            str(x.get("fetched_at", "")),
+        ),
+        reverse=True,
+    )
+    base = dict(sorted_records[0])
+    all_dates = [str(item.get("date", "")).strip() for item in records if str(item.get("date", "")).strip()]
+    canonical_date = min(all_dates) if all_dates else str(base.get("date", "")).strip()
+
+    merged_authors: list[str] = []
+    seen_authors: set[str] = set()
+    for record in sorted_records:
+        for author in normalize_str_list(record.get("authors")):
+            key = author.casefold()
+            if key in seen_authors:
+                continue
+            seen_authors.add(key)
+            merged_authors.append(author)
+
+    merged = {
+        "date": canonical_date,
+        "paper_id": paper_id,
+        "title": pick_best_text(sorted_records, "title", min_len=3),
+        "authors": merged_authors,
+        "abstract": pick_best_text(sorted_records, "abstract", min_len=20),
+        "summary_en": pick_best_text(sorted_records, "summary_en", min_len=20),
+        "summary_zh": pick_best_text(sorted_records, "summary_zh", min_len=8),
+        "hf_url": pick_best_text(sorted_records, "hf_url", min_len=10),
+        "arxiv_url": pick_best_text(sorted_records, "arxiv_url", min_len=8),
+        "arxiv_pdf_url": pick_best_text(sorted_records, "arxiv_pdf_url", min_len=8),
+        "github_url": pick_best_text(sorted_records, "github_url", min_len=8),
+        "upvotes": max(int(item.get("upvotes", 0)) for item in sorted_records),
+        "fetched_at": pick_best_text(sorted_records, "fetched_at", min_len=8),
+    }
+    if not merged["arxiv_pdf_url"] and merged["arxiv_url"]:
+        merged["arxiv_pdf_url"] = build_arxiv_pdf_url(merged["arxiv_url"])
+
+    for key in (
+        "title",
+        "hf_url",
+        "arxiv_url",
+        "arxiv_pdf_url",
+        "fetched_at",
+    ):
+        if not str(merged[key]).strip():
+            merged[key] = str(base.get(key, "")).strip()
+    if not merged["authors"]:
+        merged["authors"] = normalize_str_list(base.get("authors"))
+
+    return merged
+
+
+def dedupe_papers(papers: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], int]:
+    groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for paper in papers:
+        key = str(paper.get("paper_id", "")).strip()
+        if not key:
+            key = f"__noid__::{paper.get('hf_url', '')}"
+        groups[key].append(paper)
+
+    deduped: list[dict[str, Any]] = []
+    duplicate_groups = 0
+    for key, grouped_records in groups.items():
+        if len(grouped_records) == 1:
+            deduped.append(grouped_records[0])
+            continue
+        duplicate_groups += 1
+        deduped.append(merge_duplicate_group(key, grouped_records))
+    return deduped, duplicate_groups
+
+
+def resolve_visibility_policy() -> tuple[ZoneInfo, int, int, int, datetime]:
+    tz_name = str(os.getenv("ARCHIVE_TIMEZONE", "Asia/Shanghai")).strip() or "Asia/Shanghai"
+    try:
+        tz = ZoneInfo(tz_name)
+    except ZoneInfoNotFoundError:
+        logging.warning("Unknown ARCHIVE_TIMEZONE=%r, fallback to UTC", tz_name)
+        tz = ZoneInfo("UTC")
+        tz_name = "UTC"
+
+    release_hour = parse_int_env("ARCHIVE_RELEASE_HOUR", default=8, minimum=0, maximum=23)
+    release_minute = parse_int_env("ARCHIVE_RELEASE_MINUTE", default=0, minimum=0, maximum=59)
+    release_delay_days = parse_int_env("ARCHIVE_RELEASE_DELAY_DAYS", default=1, minimum=0, maximum=7)
+    now_local = resolve_visibility_now(tz)
+    logging.info(
+        "Visibility policy: timezone=%s release=%02d:%02d delay_days=%d now=%s",
+        tz_name,
+        release_hour,
+        release_minute,
+        release_delay_days,
+        now_local.isoformat(),
+    )
+    return tz, release_hour, release_minute, release_delay_days, now_local
+
+
+def is_date_visible(
+    date_text: str,
+    *,
+    timezone_local: ZoneInfo,
+    release_hour: int,
+    release_minute: int,
+    release_delay_days: int,
+    now_local: datetime,
+) -> bool:
+    try:
+        day = datetime.strptime(date_text, "%Y-%m-%d").date()
+    except ValueError:
+        return True
+    release_day = day + timedelta(days=release_delay_days)
+    release_dt = datetime.combine(
+        release_day,
+        dt_time(hour=release_hour, minute=release_minute),
+        tzinfo=timezone_local,
+    )
+    return now_local >= release_dt
+
+
 def build_arxiv_pdf_url(arxiv_url: str) -> str:
     matched = ARXIV_ID_RE.search(arxiv_url or "")
     if not matched:
@@ -64,9 +256,12 @@ def build_arxiv_pdf_url(arxiv_url: str) -> str:
     return f"https://arxiv.org/pdf/{arxiv_id}"
 
 
-def extract_date_from_filename(path: Path | None) -> str:
+def extract_date_from_path(path: Path | None) -> str:
     if path is None:
         return ""
+    parent_name = path.parent.name.strip()
+    if DATE_DIR_RE.fullmatch(parent_name):
+        return parent_name
     match = DATE_PREFIX_RE.match(path.stem)
     if not match:
         return ""
@@ -75,7 +270,7 @@ def extract_date_from_filename(path: Path | None) -> str:
 
 def normalize_paper_record(raw: dict[str, Any], source_path: Path | None = None) -> dict[str, Any]:
     raw_date = str(raw.get("date", "")).strip()
-    filename_date = extract_date_from_filename(source_path)
+    filename_date = extract_date_from_path(source_path)
     record_date = filename_date or raw_date
     if filename_date and raw_date and filename_date != raw_date:
         logging.warning(
@@ -377,7 +572,7 @@ def load_existing_daily_summaries(index_path: Path) -> dict[str, dict[str, Any]]
 
 
 def run(papers_dir: Path, out_dir: Path) -> None:
-    paper_files = sorted(papers_dir.glob("*.json"))
+    paper_files = sorted(papers_dir.rglob("*.json"))
     papers: list[dict[str, Any]] = []
 
     for file in paper_files:
@@ -387,7 +582,23 @@ def run(papers_dir: Path, out_dir: Path) -> None:
 
         papers.append(normalize_paper_record(paper, source_path=file))
 
-    papers.sort(
+    deduped_papers, duplicate_groups = dedupe_papers(papers)
+    tz, release_hour, release_minute, release_delay_days, now_local = resolve_visibility_policy()
+    visible_papers = [
+        paper
+        for paper in deduped_papers
+        if is_date_visible(
+            str(paper.get("date", "")),
+            timezone_local=tz,
+            release_hour=release_hour,
+            release_minute=release_minute,
+            release_delay_days=release_delay_days,
+            now_local=now_local,
+        )
+    ]
+    hidden_count = len(deduped_papers) - len(visible_papers)
+
+    visible_papers.sort(
         key=lambda x: (
             str(x.get("date", "")),
             int(x.get("upvotes", 0)),
@@ -397,7 +608,7 @@ def run(papers_dir: Path, out_dir: Path) -> None:
     )
 
     dates_map: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for paper in papers:
+    for paper in visible_papers:
         dates_map[str(paper["date"])].append(paper)
 
     date_keys = sorted(dates_map.keys(), reverse=True)
@@ -427,16 +638,16 @@ def run(papers_dir: Path, out_dir: Path) -> None:
 
     index = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "count": len(papers),
+        "count": len(visible_papers),
         "dates": date_keys,
         "daily_summary": daily_summary,
         "daily_summaries": daily_summaries,
-        "papers": papers,
+        "papers": visible_papers,
     }
     write_json(out_dir / "index.json", index)
 
     search_docs = []
-    for paper in papers:
+    for paper in visible_papers:
         search_docs.append(
             {
                 "id": str(paper.get("paper_id", "")),
@@ -452,6 +663,13 @@ def run(papers_dir: Path, out_dir: Path) -> None:
     write_json(out_dir / "search_index.json", search_docs)
 
     dates_dir = out_dir / "dates"
+    dates_dir.mkdir(parents=True, exist_ok=True)
+    valid_date_filenames = {f"{date}.json" for date in date_keys}
+    for stale_file in dates_dir.glob("*.json"):
+        if stale_file.name in valid_date_filenames:
+            continue
+        stale_file.unlink()
+
     for date in date_keys:
         write_json(
             dates_dir / f"{date}.json",
@@ -463,9 +681,11 @@ def run(papers_dir: Path, out_dir: Path) -> None:
         )
 
     logging.info(
-        "Built index files: papers=%d dates=%d summaries(reused=%d generated=%d fallback=%d)",
-        len(papers),
+        "Built index files: papers=%d dates=%d hidden=%d duplicate_groups=%d summaries(reused=%d generated=%d fallback=%d)",
+        len(visible_papers),
         len(date_keys),
+        hidden_count,
+        duplicate_groups,
         reused_count,
         generated_count,
         fallback_count,

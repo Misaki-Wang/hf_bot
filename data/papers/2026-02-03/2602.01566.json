@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01566",
+  "title": "FS-Researcher: Test-Time Scaling for Long-Horizon Research Tasks with File-System-Based Agents",
+  "authors": [
+    "Chiwei Zhu",
+    "Benfeng Xu",
+    "Mingxuan Du",
+    "Shaohan Wang",
+    "Xiaorui Wang",
+    "Zhendong Mao",
+    "Yongdong Zhang"
+  ],
+  "abstract": "A file-system-based dual-agent framework enables large language model agents to perform extended research tasks beyond context window limitations by using persistent storage as external memory.",
+  "summary_en": "A file-system-based dual-agent framework enables large language model agents to perform extended research tasks beyond context window limitations by using persistent storage as external memory.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA file-system-based dual-agent framework enables large language model agents to perform extended research tasks beyond context window limitations by using persistent storage as external memory.",
+  "hf_url": "https://huggingface.co/papers/2602.01566",
+  "arxiv_url": "https://arxiv.org/abs/2602.01566",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01566",
+  "github_url": "",
+  "upvotes": 48,
+  "fetched_at": "2026-02-19T05:36:57.934456+00:00"
+}

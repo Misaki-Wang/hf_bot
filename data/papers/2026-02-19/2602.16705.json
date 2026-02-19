@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.16705",
+  "title": "Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation",
+  "authors": [
+    "Runpei Dong",
+    "Ziyan Li",
+    "Xialin He",
+    "Saurabh Gupta"
+  ],
+  "abstract": "HERO enables humanoid robots to perform object manipulation in diverse real-world environments by combining accurate end-effector control with open-vocabulary vision models for generalizable scene understanding. Visual loco-manipulation of arbitrary objects in the wild with humanoid robots requires accurate end-effector (EE) control and a generalizable understanding of the scene via visual inputs (e.g., RGB-D images). Existing approaches are based on real-world imitation learning and exhibit limited generalization due to the difficulty in collecting large-scale training datasets. This paper presents a new paradigm, HERO, for object loco-manipulation with humanoid robots that combines the strong generalization and open-vocabulary understanding of large vision models with strong control performance from simulated training. We achieve this by designing an accurate residual-aware EE tracking policy. This EE tracking policy combines classical robotics with machine learning. It uses a) inverse kinematics to convert residual end-effector targets into reference trajectories, b) a learned neural forward model for accurate forward kinematics, c) goal adjustment , and d) replanning . Together, these innovations help us cut down the end-effector tracking error by 3.2x. We use this accurate end-effector tracker to build a modular system for loco-manipulation , where we use open-vocabulary large vision models for strong visual generalization . Our system is able to operate in diverse real-world environments, from offices to coffee shops, where the robot is able to reliably manipulate various everyday objects (e.g., mugs, apples, toys) on surfaces ranging from 43cm to 92cm in height. Systematic modular and end-to-end tests in simulation and the real world demonstrate the effectiveness of our proposed design. We believe the advances in this paper can open up new ways of training humanoid robots to interact with daily objects.",
+  "summary_en": "HERO enables humanoid robots to perform object manipulation in diverse real-world environments by combining accurate end-effector control with open-vocabulary vision models for generalizable scene understanding.",
+  "summary_zh": "HERO结合精确的末端执行器控制与开放词汇视觉模型，实现可泛化的场景理解，使人形机器人能够在多样化的真实世界环境中执行物体操作。",
+  "hf_url": "https://huggingface.co/papers/2602.16705",
+  "arxiv_url": "https://arxiv.org/abs/2602.16705",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16705",
+  "github_url": "",
+  "upvotes": 20,
+  "fetched_at": "2026-02-19T06:47:41.667558+00:00"
+}

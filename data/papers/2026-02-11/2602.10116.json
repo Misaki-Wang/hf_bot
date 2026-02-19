@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.10116",
+  "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+  "authors": [
+    "Hongchi Xia",
+    "Xuan Li",
+    "Zhaoshuo Li",
+    "Qianli Ma",
+    "Jiashu Xu",
+    "Ming-Yu Liu",
+    "Yin Cui",
+    "Tsung-Yi Lin",
+    "Wei-Chiu Ma",
+    "Shenlong Wang",
+    "Shuran Song",
+    "Fangyin Wei"
+  ],
+  "abstract": "SAGE is an agentic framework that automatically generates simulation-ready 3D environments for embodied AI by combining layout and object composition generators with evaluative critics for semantic plausibility and physical stability. Real-world data collection for embodied agents remains costly and unsafe, calling for scalable, realistic, and simulator-ready 3D environments. However, existing scene-generation systems often rely on rule-based or task-specific pipelines, yielding artifacts and physically invalid scenes. We present SAGE, an agentic framework that, given a user-specified embodied task (e.g., \"pick up a bowl and place it on the table\"), understands the intent and automatically generates simulation-ready environments at scale. The agent couples multiple generators for layout and object composition with critics that evaluate semantic plausibility , visual realism , and physical stability . Through iterative reasoning and adaptive tool selection , it self-refines the scenes until meeting user intent and physical validity. The resulting environments are realistic, diverse, and directly deployable in modern simulators for policy training . Policies trained purely on this data exhibit clear scaling trends and generalize to unseen objects and layouts, demonstrating the promise of simulation-driven scaling for embodied AI . Code, demos, and the SAGE-10k dataset can be found on the project page here: https://nvlabs.github.io/sage.",
+  "summary_en": "SAGE is an agentic framework that automatically generates simulation-ready 3D environments for embodied AI by combining layout and object composition generators with evaluative critics for semantic plausibility and physical stability.",
+  "summary_zh": "SAGE是一种智能体框架，通过结合布局与物体组合生成器以及用于语义合理性和物理稳定性的评估评判器，为具身智能自动生成可直接用于仿真的3D环境。",
+  "hf_url": "https://huggingface.co/papers/2602.10116",
+  "arxiv_url": "https://arxiv.org/abs/2602.10116",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10116",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T06:22:22.475854+00:00"
+}

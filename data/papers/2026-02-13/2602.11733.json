@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.11733",
+  "title": "Adapting Vision-Language Models for E-commerce Understanding at Scale",
+  "authors": [
+    "Matteo Nulli",
+    "Vladimir Orshulevich",
+    "Tala Bazazo",
+    "Christian Herold",
+    "Michael Kozielski",
+    "Marcin Mazur",
+    "Szymon Tuzel",
+    "Cees G. M. Snoek",
+    "Seyyed Hadi Hashemi",
+    "Omar Javed",
+    "Yannick Versley",
+    "Shahram Khadivi"
+  ],
+  "abstract": "General-purpose Vision-Language Models can be effectively adapted for e-commerce applications through targeted techniques that enhance product understanding while maintaining broad multimodal capabilities. E-commerce product understanding demands by nature, strong multimodal comprehension from text, images, and structured attributes. General-purpose Vision-Language Models (VLMs) enable generalizable multimodal latent modelling , yet there is no documented, well-known strategy for adapting them to the attribute-centric , multi-image , and noisy nature of e-commerce data , without sacrificing general performance. In this work, we show through a large-scale experimental study, how targeted adaptation of general VLMs can substantially improve e-commerce performance while preserving broad multimodal capabilities. Furthermore, we propose a novel extensive evaluation suite covering deep product understanding , strict instruction following , and dynamic attribute extraction .",
+  "summary_en": "General-purpose Vision-Language Models can be effectively adapted for e-commerce applications through targeted techniques that enhance product understanding while maintaining broad multimodal capabilities.",
+  "summary_zh": "通用视觉-语言模型可通过针对性技术有效适配电子商务应用，在增强商品理解的同时保持广泛的多模态能力。",
+  "hf_url": "https://huggingface.co/papers/2602.11733",
+  "arxiv_url": "https://arxiv.org/abs/2602.11733",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11733",
+  "github_url": "",
+  "upvotes": 12,
+  "fetched_at": "2026-02-19T06:38:32.529715+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01842",
+  "title": "Prism: Efficient Test-Time Scaling via Hierarchical Search and Self-Verification for Discrete Diffusion Language Models",
+  "authors": [
+    "Jinbin Bai",
+    "Yixuan Li",
+    "Yuchen Zhu",
+    "Yi Xin",
+    "Qingyu Shi",
+    "Aosong Feng",
+    "Xiaohong Liu",
+    "Molei Tao",
+    "Jianru Xue",
+    "Xiangtai Li",
+    "Ming-Hsuan Yang"
+  ],
+  "abstract": "A new test-time scaling framework called Prism is introduced for discrete diffusion language models that improves reasoning performance through hierarchical trajectory search, local branching with partial remasking, and self-verified feedback mechanisms. Inference-time compute has re-emerged as a practical way to improve LLM reasoning. Most test-time scaling (TTS) algorithms rely on autoregressive decoding , which is ill-suited to discrete diffusion language models (dLLMs) due to their parallel decoding over the entire sequence. As a result, developing effective and efficient TTS methods to unlock dLLMs' full generative potential remains an underexplored challenge. To address this, we propose Prism (Pruning, Remasking, and Integrated Self-verification Method), an efficient TTS framework for dLLMs that (i) performs Hierarchical Trajectory Search (HTS) which dynamically prunes and reallocates compute in an early-to-mid denoising window , (ii) introduces Local branching with partial remasking to explore diverse implementations while preserving high-confidence tokens, and (iii) replaces external verifiers with Self-Verified Feedback (SVF) obtained via self-evaluation prompts on intermediate completions. Across four mathematical reasoning and code generation benchmarks on three dLLMs, including LLaDA 8B Instruct, Dream 7B Instruct, and LLaDA 2.0-mini, our Prism achieves a favorable performance-efficiency trade-off, matching best-of-N performance with substantially fewer function evaluations (NFE). The code is released at https://github.com/viiika/Prism.",
+  "summary_en": "A new test-time scaling framework called Prism is introduced for discrete diffusion language models that improves reasoning performance through hierarchical trajectory search, local branching with partial remasking, and self-verified feedback mechanisms.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA new test-time scaling framework called Prism is introduced for discrete diffusion language models that improves reasoning performance through hierarchical trajectory search, local branching with partial remasking, and self-verified feedback mechanisms.",
+  "hf_url": "https://huggingface.co/papers/2602.01842",
+  "arxiv_url": "https://arxiv.org/abs/2602.01842",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01842",
+  "github_url": "https://github.com/viiika/Prism",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:37:16.135176+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.01785",
+  "title": "CodeOCR: On the Effectiveness of Vision Language Models in Code Understanding",
+  "authors": [
+    "Yuling Shi",
+    "Chaoxiang Xie",
+    "Zhensu Sun",
+    "Yeheng Chen",
+    "Chenxu Zhang",
+    "Longfei Yun",
+    "Chengcheng Wan",
+    "Hongyu Zhang",
+    "David Lo",
+    "Xiaodong Gu"
+  ],
+  "abstract": "Multimodal large language models can effectively understand source code when represented as compressed images, achieving significant token reduction while maintaining or improving performance on code comprehension tasks.",
+  "summary_en": "Multimodal large language models can effectively understand source code when represented as compressed images, achieving significant token reduction while maintaining or improving performance on code comprehension tasks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMultimodal large language models can effectively understand source code when represented as compressed images, achieving significant token reduction while maintaining or improving performance on code comprehension tasks.",
+  "hf_url": "https://huggingface.co/papers/2602.01785",
+  "arxiv_url": "https://arxiv.org/abs/2602.01785",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01785",
+  "github_url": "",
+  "upvotes": 93,
+  "fetched_at": "2026-02-19T05:38:57.629302+00:00"
+}

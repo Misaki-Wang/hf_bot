@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.15259",
+  "title": "Knowing Isn't Understanding: Re-grounding Generative Proactivity with Epistemic and Behavioral Insight",
+  "authors": [
+    "Kirandeep Kaur",
+    "Xingda Lyu",
+    "Chirag Shah"
+  ],
+  "abstract": "Generative AI agents equate understanding with resolving explicit queries, an assumption that confines interaction to what users can articulate. This assumption breaks down when users themselves lack awareness of what is missing, risky, or worth considering. In such conditions, proactivity is not merely an efficiency enhancement, but an epistemic necessity. We refer to this condition as epistemic incompleteness: where progress depends on engaging with unknown unknowns for effective partnership. Existing approaches to proactivity remain narrowly anticipatory, extrapolating from past behavior and presuming that goals are already well defined, thereby failing to support users meaningfully. However, surfacing possibilities beyond a user's current awareness is not inherently beneficial. Unconstrained proactive interventions can misdirect attention, overwhelm users, or introduce harm. Proactive agents, therefore, require behavioral grounding: principled constraints on when, how, and to what extent an agent should intervene. We advance the position that generative proactivity must be grounded both epistemically and behaviorally. Drawing on the philosophy of ignorance and research on proactive behavior, we argue that these theories offer critical guidance for designing agents that can engage responsibly and foster meaningful partnerships.",
+  "summary_en": "Generative AI agents conventionally equate understanding with resolving explicit queries, an assumption that fails under epistemic incompleteness where users lack awareness of unknown unknowns required for progress. The authors argue that effective proactivity requires dual grounding: epistemically to surface possibilities beyond current user awareness, and behaviorally through principled constraints on when and how to intervene, drawing on philosophy of ignorance and proactive behavior research. Existing anticipatory approaches fail by assuming well-defined goals, while unconstrained proactivity risks misdirection or harm, but epistemically and behaviorally grounded agents can engage responsibly to foster meaningful partnerships.",
+  "summary_zh": "生成式AI智能体传统上将理解等同于解决显式查询，这一假设在认知不完备性情境下失效——用户缺乏对进步所需的\"未知的未知\"的意识。作者认为，有效的主动性需要双重基础：在认识论层面，揭示超出当前用户意识的可能性；在行为层面，通过原则性约束规范干预的时机与方式，其理论依据来自无知哲学与主动行为研究。现有的预测性方法因假设目标明确定义而失效，而无约束的主动性则存在误导或伤害的风险；唯有在认识论和行为层面均具备基础的智能体，才能负责任地参与互动，促成有意义的伙伴关系。",
+  "hf_url": "https://huggingface.co/papers/2602.15259",
+  "arxiv_url": "https://arxiv.org/abs/2602.15259",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15259",
+  "github_url": "",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T06:45:37.877481+00:00"
+}

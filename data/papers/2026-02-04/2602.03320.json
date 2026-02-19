@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03320",
+  "title": "MedSAM-Agent: Empowering Interactive Medical Image Segmentation with Multi-turn Agentic Reinforcement Learning",
+  "authors": [
+    "Shengyuan Liu",
+    "Liuxin Bao",
+    "Qi Yang",
+    "Wanting Geng",
+    "Boyun Zheng",
+    "Chenxin Li",
+    "Wenting Chen",
+    "Houwen Peng",
+    "Yixuan Yuan"
+  ],
+  "abstract": "MedSAM-Agent reformulates medical image segmentation as a multi-step decision-making process using hybrid prompting and a two-stage training pipeline with process rewards to improve autonomous reasoning and optimization.",
+  "summary_en": "MedSAM-Agent reformulates medical image segmentation as a multi-step decision-making process using hybrid prompting and a two-stage training pipeline with process rewards to improve autonomous reasoning and optimization.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMedSAM-Agent reformulates medical image segmentation as a multi-step decision-making process using hybrid prompting and a two-stage training pipeline with process rewards to improve autonomous reasoning and optimization.",
+  "hf_url": "https://huggingface.co/papers/2602.03320",
+  "arxiv_url": "https://arxiv.org/abs/2602.03320",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03320",
+  "github_url": "https://github.com/CUHK-AIM-Group/MedSAM-Agent",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:26:59.545994+00:00"
+}

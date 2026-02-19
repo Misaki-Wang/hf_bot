@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.09268",
+  "title": "Rethinking Global Text Conditioning in Diffusion Transformers",
+  "authors": [
+    "Nikita Starodubcev",
+    "Daniil Pakhomov",
+    "Zongze Wu",
+    "Ilya Drobyshevskiy",
+    "Yuchen Liu",
+    "Zhonghao Wang",
+    "Yuqian Zhou",
+    "Zhe Lin",
+    "Dmitry Baranchuk"
+  ],
+  "abstract": "Modulation-based text conditioning in diffusion transformers provides performance benefits when used as guidance for controllable generation rather than just as attention mechanisms. Diffusion transformers typically incorporate textual information via attention layers and a modulation mechanism using a pooled text embedding . Nevertheless, recent approaches discard modulation-based text conditioning and rely exclusively on attention. In this paper, we address whether modulation-based text conditioning is necessary and whether it can provide any performance advantage. Our analysis shows that, in its conventional usage, the pooled embedding contributes little to overall performance, suggesting that attention alone is generally sufficient for faithfully propagating prompt information. However, we reveal that the pooled embedding can provide significant gains when used from a different perspective-serving as guidance and enabling controllable shifts toward more desirable properties. This approach is training-free, simple to implement, incurs negligible runtime overhead, and can be applied to various diffusion models, bringing improvements across diverse tasks, including text-to-image/video generation and image editing .",
+  "summary_en": "Modulation-based text conditioning in diffusion transformers provides performance benefits when used as guidance for controllable generation rather than just as attention mechanisms.",
+  "summary_zh": "扩散Transformer中，基于调制的文本条件化在作为可控生成引导而非仅作为注意力机制使用时具有性能优势。",
+  "hf_url": "https://huggingface.co/papers/2602.09268",
+  "arxiv_url": "https://arxiv.org/abs/2602.09268",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09268",
+  "github_url": "https://github.com/quickjkee/modulation-guidance",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T06:21:44.885507+00:00"
+}

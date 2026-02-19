@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2601.23174",
+  "title": "Beyond Fixed Frames: Dynamic Character-Aligned Speech Tokenization",
+  "authors": [
+    "Luca Della Libera",
+    "Cem Subakan",
+    "Mirco Ravanelli"
+  ],
+  "abstract": "DyCAST is a dynamic speech tokenizer that uses soft character-level alignment and duration modeling to enable variable-frame-rate tokenization, improving speech resynthesis quality with fewer tokens than traditional fixed-frame-rate codecs. Neural audio codecs are at the core of modern conversational speech technologies , converting continuous speech into sequences of discrete tokens that can be processed by LLMs . However, existing codecs typically operate at fixed frame rates , allocating tokens uniformly in time and producing unnecessarily long sequences. In this work, we introduce DyCAST, a Dynamic Character-Aligned Speech Tokenizer that enables variable-frame-rate tokenization through soft character-level alignment and explicit duration modeling . DyCAST learns to associate tokens with character-level linguistic units during training and supports alignment-free inference with direct control over token durations at decoding time. To improve speech resynthesis quality at low frame rates, we further introduce a retrieval-augmented decoding mechanism that enhances reconstruction fidelity without increasing bitrate. Experiments show that DyCAST achieves competitive speech resynthesis quality and downstream performance while using significantly fewer tokens than fixed-frame-rate codecs. Code and checkpoints will be released publicly at https://github.com/lucadellalib/dycast.",
+  "summary_en": "DyCAST is a dynamic speech tokenizer that uses soft character-level alignment and duration modeling to enable variable-frame-rate tokenization, improving speech resynthesis quality with fewer tokens than traditional fixed-frame-rate codecs.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nDyCAST is a dynamic speech tokenizer that uses soft character-level alignment and duration modeling to enable variable-frame-rate tokenization, improving speech resynthesis quality with fewer tokens than traditional fixed-frame-rate codecs.",
+  "hf_url": "https://huggingface.co/papers/2601.23174",
+  "arxiv_url": "https://arxiv.org/abs/2601.23174",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.23174",
+  "github_url": "https://github.com/lucadellalib/dycast",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:42:33.074137+00:00"
+}

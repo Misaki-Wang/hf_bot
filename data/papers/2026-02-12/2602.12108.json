@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.12108",
+  "title": "The Pensieve Paradigm: Stateful Language Models Mastering Their Own Context",
+  "authors": [
+    "Xiaoyuan Liu",
+    "Tian Liang",
+    "Dongyang Ma",
+    "Deyu Zhou",
+    "Haitao Mi",
+    "Pinjia He",
+    "Yan Wang"
+  ],
+  "abstract": "StateLM enables language models to actively manage their own memory and context through internal reasoning loops and memory tools, significantly improving performance on long-document tasks and chat memory challenges.",
+  "summary_en": "StateLM enables language models to actively manage their own memory and context through internal reasoning loops and memory tools, significantly improving performance on long-document tasks and chat memory challenges.",
+  "summary_zh": "StateLM使语言模型能够通过内部推理循环和记忆工具主动管理自身记忆与上下文，显著提升在长文档任务和对话记忆挑战上的性能。",
+  "hf_url": "https://huggingface.co/papers/2602.12108",
+  "arxiv_url": "https://arxiv.org/abs/2602.12108",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12108",
+  "github_url": "https://github.com/xyliu-cs/StateLM",
+  "upvotes": 13,
+  "fetched_at": "2026-02-19T06:32:21.993855+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10560",
+  "title": "When to Memorize and When to Stop: Gated Recurrent Memory for Long-Context Reasoning",
+  "authors": [
+    "Leheng Sheng",
+    "Yongtao Zhang",
+    "Wenchang Ma",
+    "Yaorui Shi",
+    "Ting Huang",
+    "Xiang Wang",
+    "An Zhang",
+    "Ke Shen",
+    "Tat-Seng Chua"
+  ],
+  "abstract": "GRU-Mem addresses long-context reasoning challenges in LLMs by incorporating text-controlled gates and reinforcement learning rewards to stabilize memory updates and improve computational efficiency.",
+  "summary_en": "GRU-Mem addresses long-context reasoning challenges in LLMs by incorporating text-controlled gates and reinforcement learning rewards to stabilize memory updates and improve computational efficiency.",
+  "summary_zh": "GRU-Mem通过引入文本控制门控和强化学习奖励，解决大语言模型的长上下文推理挑战，稳定记忆更新并提升计算效率。",
+  "hf_url": "https://huggingface.co/papers/2602.10560",
+  "arxiv_url": "https://arxiv.org/abs/2602.10560",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10560",
+  "github_url": "",
+  "upvotes": 28,
+  "fetched_at": "2026-02-19T06:31:38.637503+00:00"
+}

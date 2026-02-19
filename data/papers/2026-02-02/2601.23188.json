@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.23188",
+  "title": "Deep Search with Hierarchical Meta-Cognitive Monitoring Inspired by Cognitive Neuroscience",
+  "authors": [
+    "Zhongxiang Sun",
+    "Qipeng Wang",
+    "Weijie Yu",
+    "Jingxuan Yang",
+    "Haolang Lu",
+    "Jun Xu"
+  ],
+  "abstract": "Deep search agents with hierarchical metacognitive monitoring enhance reasoning and retrieval performance through fast consistency checks and experience-driven corrective interventions. Deep search agents powered by large language models have demonstrated strong capabilities in multi-step retrieval , reasoning , and long-horizon task execution . However, their practical failures often stem from the lack of mechanisms to monitor and regulate reasoning and retrieval states as tasks evolve under uncertainty. Insights from cognitive neuroscience suggest that human metacognition is hierarchically organized, integrating fast anomaly detection with selectively triggered, experience-driven reflection . In this work, we propose Deep Search with Meta-Cognitive Monitoring (DS-MCM), a deep search framework augmented with an explicit hierarchical metacognitive monitoring mechanism. DS-MCM integrates a Fast Consistency Monitor , which performs lightweight checks on the alignment between external evidence and internal reasoning confidence, and a Slow Experience-Driven Monitor , which is selectively activated to guide corrective intervention based on experience memory from historical agent trajectories . By embedding monitoring directly into the reasoning -retrieval loop, DS-MCM determines both when intervention is warranted and how corrective actions should be informed by prior experience. Experiments across multiple deep search benchmarks and backbone models demonstrate that DS-MCM consistently improves performance and robustness.",
+  "summary_en": "Deep search agents with hierarchical metacognitive monitoring enhance reasoning and retrieval performance through fast consistency checks and experience-driven corrective interventions.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nDeep search agents with hierarchical metacognitive monitoring enhance reasoning and retrieval performance through fast consistency checks and experience-driven corrective interventions.",
+  "hf_url": "https://huggingface.co/papers/2601.23188",
+  "arxiv_url": "https://arxiv.org/abs/2601.23188",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.23188",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T05:35:30.259784+00:00"
+}

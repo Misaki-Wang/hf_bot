@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07775",
+  "title": "Rolling Sink: Bridging Limited-Horizon Training and Open-Ended Testing in Autoregressive Video Diffusion",
+  "authors": [
+    "Haodong Li",
+    "Shaoteng Liu",
+    "Zhe Lin",
+    "Manmohan Chandraker"
+  ],
+  "abstract": "Autoregressive video diffusion models suffer from train-test gaps when generating long videos, but a training-free approach called Rolling Sink addresses this by maintaining AR cache and enabling ultra-long video synthesis. Recently, autoregressive (AR) video diffusion models has achieved remarkable performance. However, due to their limited training durations, a train-test gap emerges when testing at longer horizons, leading to rapid visual degradations. Following Self Forcing , which studies the train-test gap within the training duration, this work studies the train-test gap beyond the training duration, i.e., the gap between the limited horizons during training and open-ended horizons during testing. Since open-ended testing can extend beyond any finite training window, and long-video training is computationally expensive, we pursue a training-free solution to bridge this gap. To explore a training-free solution, we conduct a systematic analysis of AR cache maintenance . These insights lead to Rolling Sink . Built on Self Forcing (trained on only 5s clips), Rolling Sink effectively scales the AR video synthesis to ultra-long durations (e.g., 5-30 minutes at 16 FPS) at test time, with consistent subjects, stable colors, coherent structures, and smooth motions. As demonstrated by extensive experiments, Rolling Sink achieves superior long-horizon visual fidelity and temporal consistency compared to SOTA baselines. Project page: https://rolling-sink.github.io/",
+  "summary_en": "Autoregressive video diffusion models suffer from train-test gaps when generating long videos, but a training-free approach called Rolling Sink addresses this by maintaining AR cache and enabling ultra-long video synthesis.",
+  "summary_zh": "自回归视频扩散模型在生成长视频时存在训练-测试差距，但一种名为Rolling Sink的免训练方法通过维护AR缓存并支持超长视频合成解决了该问题。",
+  "hf_url": "https://huggingface.co/papers/2602.07775",
+  "arxiv_url": "https://arxiv.org/abs/2602.07775",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07775",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T06:02:52.242091+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.02285",
+  "title": "Statistical Learning Theory in Lean 4: Empirical Processes from Scratch",
+  "authors": [
+    "Yuanhe Zhang",
+    "Jason D. Lee",
+    "Fanghui Liu"
+  ],
+  "abstract": "A comprehensive formalization of statistical learning theory in Lean 4 addresses gaps in mathematical libraries and demonstrates human-AI collaboration for verified machine learning theory foundations. We present the first comprehensive Lean 4 formalization of statistical learning theory (SLT) grounded in empirical process theory . Our end-to-end formal infrastructure implement the missing contents in latest Lean 4 Mathlib library , including a complete development of Gaussian Lipschitz concentration , the first formalization of Dudley's entropy integral theorem for sub-Gaussian processes , and an application to least-squares (sparse) regression with a sharp rate. The project was carried out using a human-AI collaborative workflow , in which humans design proof strategies and AI agents execute tactical proof construction , leading to the human-verified Lean 4 toolbox for SLT. Beyond implementation, the formalization process exposes and resolves implicit assumptions and missing details in standard SLT textbooks, enforcing a granular, line-by-line understanding of the theory. This work establishes a reusable formal foundation and opens the door for future developments in machine learning theory. The code is available at https://github.com/YuanheZ/lean-stat-learning-theory",
+  "summary_en": "A comprehensive formalization of statistical learning theory in Lean 4 addresses gaps in mathematical libraries and demonstrates human-AI collaboration for verified machine learning theory foundations.",
+  "summary_zh": "在 Lean 4 中对统计学习理论的全面形式化填补了数学库的空白，并展示了人机协作在构建经过验证的机器学习理论基础方面的应用。",
+  "hf_url": "https://huggingface.co/papers/2602.02285",
+  "arxiv_url": "https://arxiv.org/abs/2602.02285",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02285",
+  "github_url": "https://github.com/YuanheZ/lean-stat-learning-theory",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T06:01:49.429850+00:00"
+}

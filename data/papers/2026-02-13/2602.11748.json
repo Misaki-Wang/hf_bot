@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.11748",
+  "title": "Think Longer to Explore Deeper: Learn to Explore In-Context via Length-Incentivized Reinforcement Learning",
+  "authors": [
+    "Futing Wang",
+    "Jianhao Yan",
+    "Yun Luo",
+    "Ganqu Cui",
+    "Zhi Wang",
+    "Xiaoye Qu",
+    "Yue Zhang",
+    "Yu Cheng",
+    "Tao Lin"
+  ],
+  "abstract": "Models require in-context exploration capabilities to scale effectively at test time, but autoregressive generation faces exponential decay in sampling long sequences, which is addressed by a length-incentivized exploration method that improves performance on both in-domain and out-of-domain tasks. Achieving effective test-time scaling requires models to engage in In-Context Exploration -- the intrinsic ability to generate, verify, and refine multiple reasoning hypotheses within a single continuous context. Grounded in State Coverage theory , our analysis identifies a critical bottleneck to enabling this capability: while broader state coverage requires longer reasoning trajectories, the probability of sampling such sequences decays exponentially during autoregressive generation , a phenomenon we term the `` Shallow Exploration Trap ''. To bridge this gap, we propose Length-Incentivized Exploration (\\method). This simple yet effective recipe explicitly encourages models to explore more via a length-based reward coupled with a redundancy penalty , thereby maximizing state coverage in two-step manner. Comprehensive experiments across different models (Qwen3, Llama) demonstrate that \\method effectively incentivize in-context exploration . As a result, our method achieves an average improvement of 4.4\\% on in-domain tasks and a 2.7\\% gain on out-of-domain benchmarks.",
+  "summary_en": "Models require in-context exploration capabilities to scale effectively at test time, but autoregressive generation faces exponential decay in sampling long sequences, which is addressed by a length-incentivized exploration method that improves performance on both in-domain and out-of-domain tasks.",
+  "summary_zh": "模型需要上下文探索能力以在测试时有效扩展，但自回归生成在采样长序列时面临指数级衰减，长度激励探索方法解决了该问题，并在领域内与领域外任务上均提升了性能。",
+  "hf_url": "https://huggingface.co/papers/2602.11748",
+  "arxiv_url": "https://arxiv.org/abs/2602.11748",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11748",
+  "github_url": "https://github.com/LINs-lab/LIE",
+  "upvotes": 30,
+  "fetched_at": "2026-02-19T06:38:34.559836+00:00"
+}

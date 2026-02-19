@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.10458",
+  "title": "Found-RL: foundation model-enhanced reinforcement learning for autonomous driving",
+  "authors": [
+    "Yansong Qu",
+    "Zihao Sheng",
+    "Zilin Huang",
+    "Jiancong Chen",
+    "Yuhao Luo",
+    "Tianyi Wang",
+    "Yiheng Feng",
+    "Samuel Labi",
+    "Sikai Chen"
+  ],
+  "abstract": "Found-RL integrates vision-language models with reinforcement learning for autonomous driving, addressing sample efficiency and latency issues through asynchronous inference and specialized supervision mechanisms.",
+  "summary_en": "Found-RL integrates vision-language models with reinforcement learning for autonomous driving, addressing sample efficiency and latency issues through asynchronous inference and specialized supervision mechanisms.",
+  "summary_zh": "Found-RL将视觉语言模型与强化学习相结合用于自动驾驶，通过异步推理和专门的监督机制解决样本效率与延迟问题。",
+  "hf_url": "https://huggingface.co/papers/2602.10458",
+  "arxiv_url": "https://arxiv.org/abs/2602.10458",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10458",
+  "github_url": "https://github.com/ys-qu/found-rl",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T06:45:22.148671+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.08503",
+  "title": "Learning Self-Correction in Vision-Language Models via Rollout Augmentation",
+  "authors": [
+    "Yi Ding",
+    "Ziliang Qiu",
+    "Bolian Li",
+    "Ruqi Zhang"
+  ],
+  "abstract": "Octopus, an RL rollout augmentation framework, enables efficient self-correction learning in vision-language models through synthetic example generation and response masking strategies. Self-correction is essential for solving complex reasoning problems in vision-language models (VLMs). However, existing reinforcement learning (RL) methods struggle to learn it, as effective self-correction behaviors emerge only rarely, making learning signals extremely sparse. To address this challenge, we propose correction-specific rollouts (Octopus), an RL rollout augmentation framework that synthesizes dense self-correction examples by recombining existing rollouts. This augmentation simultaneously improves sample efficiency due to rollout reuse and stabilizes RL optimization through balanced supervision. Furthermore, we introduce a response-masking strategy that decouples self-correction from direct reasoning, avoiding signal conflicts and enabling both behaviors to be learned effectively. Building on this, we introduce Octopus-8B, a reasoning VLM with controllable self-correction capability. Across 7 benchmarks, it achieves SoTA performance among open-source VLMs, outperforming the best RLVR baseline by 1.0 score while requiring only 0.72times training time per step.",
+  "summary_en": "Octopus, an RL rollout augmentation framework, enables efficient self-correction learning in vision-language models through synthetic example generation and response masking strategies.",
+  "summary_zh": "Octopus 是一种 RL rollout 增强框架，通过合成样本生成与响应掩码策略，实现了视觉-语言模型的高效自校正学习。",
+  "hf_url": "https://huggingface.co/papers/2602.08503",
+  "arxiv_url": "https://arxiv.org/abs/2602.08503",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08503",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:21:25.252998+00:00"
+}

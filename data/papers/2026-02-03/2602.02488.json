@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02488",
+  "title": "RLAnything: Forge Environment, Policy, and Reward Model in Completely Dynamic RL System",
+  "authors": [
+    "Yinjie Wang",
+    "Tianbao Xie",
+    "Ke Shen",
+    "Mengdi Wang",
+    "Ling Yang"
+  ],
+  "abstract": "RLAnything enhances reinforcement learning for LLMs and agents through dynamic model optimization and closed-loop feedback mechanisms that improve policy and reward model training. We propose RLAnything, a reinforcement learning framework that dynamically forges environment, policy, and reward models through closed-loop optimization , amplifying learning signals and strengthening the overall RL system for any LLM or agentic scenarios. Specifically, the policy is trained with integrated feedback from step-wise and outcome signals , while the reward model is jointly optimized via consistency feedback , which in turn further improves policy training. Moreover, our theory-motivated automatic environment adaptation improves training for both the reward and policy models by leveraging critic feedback from each, enabling learning from experience. Empirically, each added component consistently improves the overall system, and RLAnything yields substantial gains across various representative LLM and agentic tasks, boosting Qwen3-VL-8B-Thinking by 9.1% on OSWorld and Qwen2.5-7B-Instruct by 18.7% and 11.9% on AlfWorld and LiveBench , respectively. We also that optimized reward-model signals outperform outcomes that rely on human labels. Code: https://github.com/Gen-Verse/Open-AgentRL",
+  "summary_en": "RLAnything enhances reinforcement learning for LLMs and agents through dynamic model optimization and closed-loop feedback mechanisms that improve policy and reward model training.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nRLAnything enhances reinforcement learning for LLMs and agents through dynamic model optimization and closed-loop feedback mechanisms that improve policy and reward model training.",
+  "hf_url": "https://huggingface.co/papers/2602.02488",
+  "arxiv_url": "https://arxiv.org/abs/2602.02488",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02488",
+  "github_url": "https://github.com/Gen-Verse/Open-AgentRL",
+  "upvotes": 32,
+  "fetched_at": "2026-02-19T05:38:09.586429+00:00"
+}

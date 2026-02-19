@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.08934",
+  "title": "StealthRL: Reinforcement Learning Paraphrase Attacks for Multi-Detector Evasion of AI-Text Detectors",
+  "authors": [
+    "Suraj Ranganath",
+    "Atharv Ramesh"
+  ],
+  "abstract": "StealthRL uses reinforcement learning with LoRA adapters to create adversarial paraphrases that evade multiple AI text detectors while preserving meaning, demonstrating significant robustness gaps in current detection systems. AI-text detectors face a critical robustness challenge: adversarial paraphrasing attacks that preserve semantics while evading detection. We introduce StealthRL, a reinforcement learning framework that stress-tests detector robustness under realistic adversarial conditions. StealthRL trains a paraphrase policy against a multi-detector ensemble using Group Relative Policy Optimization (GRPO) with LoRA adapters on Qwen3-4B , optimizing a composite reward that balances detector evasion with semantic preservation . We evaluate six attack settings (M0-M5) against three detector families (RoBERTa, FastDetectGPT, and Binoculars) at the security-relevant 1% false positive rate operating point. StealthRL achieves near-zero detection (0.001 mean TPR@1%FPR), reduces mean AUROC from 0.74 to 0.27, and attains a 99.9% attack success rate . Critically, attacks transfer to a held-out detector family not seen during training, revealing shared architectural vulnerabilities rather than detector-specific brittleness. We additionally conduct LLM-based quality evaluation via Likert scoring , analyze detector score distributions to explain why evasion succeeds, and provide per-detector AUROC with bootstrap confidence intervals . Our results expose significant robustness gaps in current AI-text detection and establish StealthRL as a principled adversarial evaluation protocol. Code and evaluation pipeline are publicly available at https://github.com/suraj-ranganath/StealthRL.",
+  "summary_en": "StealthRL uses reinforcement learning with LoRA adapters to create adversarial paraphrases that evade multiple AI text detectors while preserving meaning, demonstrating significant robustness gaps in current detection systems.",
+  "summary_zh": "StealthRL利用强化学习与LoRA适配器生成可规避多个AI文本检测器的对抗性释义，同时保留语义，显示出现有检测系统存在显著的鲁棒性缺陷。",
+  "hf_url": "https://huggingface.co/papers/2602.08934",
+  "arxiv_url": "https://arxiv.org/abs/2602.08934",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08934",
+  "github_url": "https://github.com/suraj-ranganath/StealthRL",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T06:31:11.850793+00:00"
+}

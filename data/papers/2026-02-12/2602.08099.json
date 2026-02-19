@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.08099",
+  "title": "VidVec: Unlocking Video MLLM Embeddings for Video-Text Retrieval",
+  "authors": [
+    "Issar Tzachor",
+    "Dvir Samuel",
+    "Rami Ben-Ari"
+  ],
+  "abstract": "Generative multimodal large language models are adapted for video-text embedding and retrieval through intermediate-layer analysis and text-based alignment without visual supervision. Recent studies have adapted generative Multimodal Large Language Models (MLLMs) into embedding extractors for vision tasks, typically through fine-tuning to produce universal representations. However, their performance on video remains inferior to Video Foundation Models (VFMs). In this paper, we focus on leveraging MLLMs for video-text embedding and retrieval. We first conduct a systematic layer-wise analysis, showing that intermediate (pre-trained) MLLM layers already encode substantial task-relevant information. Leveraging this insight, we demonstrate that combining intermediate-layer embeddings with a calibrated MLLM head yields strong zero-shot retrieval performance without any training. Building on these findings, we introduce a lightweight text-based alignment strategy which maps dense video captions to short summaries and enables task-related video-text embedding learning without visual supervision. Remarkably, without any fine-tuning beyond text, our method outperforms current methods, often by a substantial margin, achieving state-of-the-art results across common video retrieval benchmarks .",
+  "summary_en": "Generative multimodal large language models are adapted for video-text embedding and retrieval through intermediate-layer analysis and text-based alignment without visual supervision.",
+  "summary_zh": "生成式多模态大语言模型通过中间层分析与无视觉监督的文本对齐，适配于视频-文本嵌入与检索。",
+  "hf_url": "https://huggingface.co/papers/2602.08099",
+  "arxiv_url": "https://arxiv.org/abs/2602.08099",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08099",
+  "github_url": "",
+  "upvotes": 120,
+  "fetched_at": "2026-02-19T06:31:01.647301+00:00"
+}

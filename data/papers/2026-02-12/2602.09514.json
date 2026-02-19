@@ -1,0 +1,32 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.09514",
+  "title": "EcoGym: Evaluating LLMs for Long-Horizon Plan-and-Execute in Interactive Economies",
+  "authors": [
+    "Xavier Hu",
+    "Jinxiang Xia",
+    "Shengze Xu",
+    "Kangqi Song",
+    "Yishuo Yuan",
+    "Guibin Zhang",
+    "JinCheng Ren",
+    "Boyu Feng",
+    "Li Lu",
+    "Tieyong Zeng",
+    "Jiaheng Liu",
+    "Minghao Liu",
+    "He Zhu",
+    "Yuchen Eleanor Jiang",
+    "Wei Wang",
+    "Wangchunshu Zhou"
+  ],
+  "abstract": "EcoGym presents a generalizable benchmark for evaluating long-horizon planning capabilities of LLM-based agents in interactive economic environments with persistent dynamics and multi-scenario evaluation. Long-horizon planning is widely recognized as a core capability of autonomous LLM-based agents ; however, current evaluation frameworks suffer from being largely episodic, domain-specific, or insufficiently grounded in persistent economic dynamics . We introduce EcoGym, a generalizable benchmark for continuous plan-and-execute decision making in interactive economies . EcoGym comprises three diverse environments: Vending, Freelance, and Operation, implemented in a unified decision-making process with standardized interfaces, and budgeted actions over an effectively unbounded horizon (1000+ steps if 365 day-loops for evaluation). The evaluation of EcoGym is based on business-relevant outcomes (e.g., net worth, income, and DAU), targeting long-term strategic coherence and robustness under partial observability and stochasticity . Experiments across eleven leading LLMs expose a systematic tension: no single model dominates across all three scenarios. Critically, we find that models exhibit significant suboptimality in either high-level strategies or efficient actions executions. EcoGym is released as an open, extensible testbed for transparent long-horizon agent evaluation and for studying controllability-utility trade-offs in realistic economic settings.",
+  "summary_en": "EcoGym presents a generalizable benchmark for evaluating long-horizon planning capabilities of LLM-based agents in interactive economic environments with persistent dynamics and multi-scenario evaluation.",
+  "summary_zh": "EcoGym提出了一个可泛化的基准，用于评估基于LLM的智能体在具有持续动态和多场景评估的交互式经济环境中的长程规划能力。",
+  "hf_url": "https://huggingface.co/papers/2602.09514",
+  "arxiv_url": "https://arxiv.org/abs/2602.09514",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09514",
+  "github_url": "https://github.com/OPPO-PersonalAI/EcoGym",
+  "upvotes": 9,
+  "fetched_at": "2026-02-19T06:31:19.034610+00:00"
+}

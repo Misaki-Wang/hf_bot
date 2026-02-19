@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.08321",
+  "title": "Improving Data and Reward Design for Scientific Reasoning in Large Language Models",
+  "authors": [
+    "Zijie Chen",
+    "Zhenghao Lin",
+    "Xiao Liu",
+    "Zhenzhong Lan",
+    "Yeyun Gong",
+    "Peng Cheng"
+  ],
+  "abstract": "A large-scale scientific question dataset and post-training pipeline are developed to improve open-ended science question answering through enhanced data processing and reinforcement learning with rubric-guided evaluation. Solving open-ended science questions remains challenging for large language models , particula rl y due to inherently unreliable supervision and evaluation. The bottleneck lies in the data construction and reward design for scientific post-training. We develop a large-scale, systematic data processing pipeline that transforms heterogeneous open-source science data into Dr. SCI dataset , which comprises of 1M questions across eight STEM subjects, with explicit verifiable/open-ended splits, scalable difficulty annotation, and fine-grained rubrics that operationalize evaluation for open-ended answers. Building on this dataset, we propose the Dr. SCI post-training pipeline, which redesigns the standard SFT -> RL workflow through three components: (i) Exploration-Expanding SFT , which broadens the model's reasoning pattern coverage prior to RL ; (ii) Dynamic Difficulty Curriculum , which adapts training data to the model's evolving scientific capability; and (iii) SciRubric-Guided RL , which enables stable reinforcement learning on open-ended scientific questions via rubric-based evaluation with explicit answer correctness. Qwen3-4B-Base trained using Dr. SCI pipeline achieves 63.2 on GPQA-diamond and 32.4 on GPQA-general , consistently improves over strong post-trained baselines such as o1-mini and GPT-4o, demonstrating substantial gains in scientific reasoning , especially in open-ended settings.",
+  "summary_en": "A large-scale scientific question dataset and post-training pipeline are developed to improve open-ended science question answering through enhanced data processing and reinforcement learning with rubric-guided evaluation.",
+  "summary_zh": "开发了大规模科学问答数据集与后训练流程，通过增强的数据处理及基于评分标准评估的强化学习，改进开放式科学问答。",
+  "hf_url": "https://huggingface.co/papers/2602.08321",
+  "arxiv_url": "https://arxiv.org/abs/2602.08321",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08321",
+  "github_url": "",
+  "upvotes": 40,
+  "fetched_at": "2026-02-19T06:03:18.766224+00:00"
+}

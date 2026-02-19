@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.01753",
+  "title": "ObjEmbed: Towards Universal Multimodal Object Embeddings",
+  "authors": [
+    "Shenghao Fu",
+    "Yukun Su",
+    "Fengyun Rao",
+    "Jing Lyu",
+    "Xiaohua Xie",
+    "Wei-Shi Zheng"
+  ],
+  "abstract": "ObjEmbed is a novel multimodal language-model embedding approach that decomposes images into regional embeddings for improved object-level visual understanding and retrieval tasks.",
+  "summary_en": "ObjEmbed is a novel multimodal language-model embedding approach that decomposes images into regional embeddings for improved object-level visual understanding and retrieval tasks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nObjEmbed is a novel multimodal language-model embedding approach that decomposes images into regional embeddings for improved object-level visual understanding and retrieval tasks.",
+  "hf_url": "https://huggingface.co/papers/2602.01753",
+  "arxiv_url": "https://arxiv.org/abs/2602.01753",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01753",
+  "github_url": "https://github.com/WeChatCV/ObjEmbed",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:38:55.894561+00:00"
+}

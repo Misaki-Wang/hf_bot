@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.02905",
+  "title": "FIRE-Bench: Evaluating Agents on the Rediscovery of Scientific Insights",
+  "authors": [
+    "Zhen Wang",
+    "Fan Bai",
+    "Zhongyan Luo",
+    "Jinyan Su",
+    "Kaiser Sun",
+    "Xinle Yu",
+    "Jieyuan Liu",
+    "Kun Zhou",
+    "Claire Cardie",
+    "Mark Dredze",
+    "Eric P. Xing",
+    "Zhiting Hu"
+  ],
+  "abstract": "Researchers developed FIRE-Bench, a comprehensive evaluation framework that challenges autonomous agents to rediscover established scientific findings through complete research cycles involving hypothesis generation, experimentation, coding, and evidence-based conclusion drawing.",
+  "summary_en": "Researchers developed FIRE-Bench, a comprehensive evaluation framework that challenges autonomous agents to rediscover established scientific findings through complete research cycles involving hypothesis generation, experimentation, coding, and evidence-based conclusion drawing.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nResearchers developed FIRE-Bench, a comprehensive evaluation framework that challenges autonomous agents to rediscover established scientific findings through complete research cycles involving hypothesis generation, experimentation, coding, and evidence-based conclusion drawing.",
+  "hf_url": "https://huggingface.co/papers/2602.02905",
+  "arxiv_url": "https://arxiv.org/abs/2602.02905",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02905",
+  "github_url": "",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:26:52.581598+00:00"
+}

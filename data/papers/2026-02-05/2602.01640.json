@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.01640",
+  "title": "A2Eval: Agentic and Automated Evaluation for Embodied Brain",
+  "authors": [
+    "Shuai Zhang",
+    "Jiayu Hu",
+    "Zijie Chen",
+    "Zeyuan Ding",
+    "Yi Zhang",
+    "Yingji Zhang",
+    "Ziyi Zhou",
+    "Junwei Liao",
+    "Shengjie Zhou",
+    "Yong Dai",
+    "Zhenzhong Lan",
+    "Xiaozhu Ju"
+  ],
+  "abstract": "Agentic automatic evaluation framework automates embodied vision-language model assessment through collaborative agents that reduce evaluation costs and improve ranking accuracy. Current embodied VLM evaluation relies on static, expert-defined, manually annotated benchmarks that exhibit severe redundancy and coverage imbalance. This labor intensive paradigm drains computational and annotation resources, inflates costs, and distorts model rankings, ultimately stifling iterative development. To address this, we propose Agentic Automatic Evaluation (A2Eval), the first agentic framework that automates benchmark curation and evaluation through two collaborative agents. The Data Agent autonomously induces capability dimensions and assembles a balanced, compact evaluation suite , while the Eval Agent synthesizes and validates executable evaluation pipelines, enabling fully autonomous, high-fidelity assessment. Evaluated across 10 benchmarks and 13 models, A2Eval compresses evaluation suite s by 85%, reduces overall computational costs by 77%, and delivers a 4.6x speedup while preserving evaluation quality. Crucially, A2Eval corrects systematic ranking bias es, improves human alignment to Spearman's rho =0.85, and maintains high ranking fidelity ( Kendall's tau =0.81), establishing a new standard for high-fidelity, low-cost embodied assessment. Our code and data will be public soon.",
+  "summary_en": "Agentic automatic evaluation framework automates embodied vision-language model assessment through collaborative agents that reduce evaluation costs and improve ranking accuracy.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nAgentic automatic evaluation framework automates embodied vision-language model assessment through collaborative agents that reduce evaluation costs and improve ranking accuracy.",
+  "hf_url": "https://huggingface.co/papers/2602.01640",
+  "arxiv_url": "https://arxiv.org/abs/2602.01640",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01640",
+  "github_url": "",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T05:27:17.901089+00:00"
+}

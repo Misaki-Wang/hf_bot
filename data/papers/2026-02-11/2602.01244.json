@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.01244",
+  "title": "Large-Scale Terminal Agentic Trajectory Generation from Dockerized Environments",
+  "authors": [
+    "Siwei Wu",
+    "Yizhi Li",
+    "Yuyang Song",
+    "Wei Zhang",
+    "Yang Wang",
+    "Riza Batista-Navarro",
+    "Xian Yang",
+    "Mingjie Tang",
+    "Bryan Dai",
+    "Jian Yang",
+    "Chenghua Lin"
+  ],
+  "abstract": "A scalable pipeline called TerminalTraj addresses challenges in creating high-quality terminal trajectories for training agentic models by filtering repositories, generating Docker-aligned task instances, and synthesizing executable agent trajectories across multiple domains. Training agentic models for terminal-based tasks critically depends on high-quality terminal trajectories that capture realistic long-horizon interactions across diverse domains. However, constructing such data at scale remains challenging due to two key requirements: \\emph{ Executability }, since each instance requires a suitable and often distinct Docker environment; and \\emph{ Verifiability }, because heterogeneous task outputs preclude unified, standardized verification. To address these challenges, we propose TerminalTraj, a scalable pipeline that (i) filters high-quality repositories to construct Dockerized execution environments, (ii) generates Docker-aligned task instances , and (iii) synthesizes agent trajectories with executable validation code. Using TerminalTraj, we curate 32K Docker images and generate 50,733 verified terminal trajectories across eight domains. Models trained on this data with the Qwen2.5-Coder backbone achieve consistent performance improvements on TerminalBench (TB), with gains of up to 20\\% on TB~1.0 and 10\\% on TB~2.0 over their respective backbones. Notably, TerminalTraj-32B achieves strong performance among models with fewer than 100B parameters, reaching 35.30\\% on TB~1.0 and 22.00\\% on TB~2.0, and demonstrates improved test-time scaling behavior. All code and data are available at https://github.com/Wusiwei0410/TerminalTraj.",
+  "summary_en": "A scalable pipeline called TerminalTraj addresses challenges in creating high-quality terminal trajectories for training agentic models by filtering repositories, generating Docker-aligned task instances, and synthesizing executable agent trajectories across multiple domains.",
+  "summary_zh": "名为 TerminalTraj 的可扩展流程通过筛选代码仓库、生成 Docker 对齐的任务实例并在多领域合成可执行智能体轨迹，解决了为训练智能体模型创建高质量终端轨迹的挑战。",
+  "hf_url": "https://huggingface.co/papers/2602.01244",
+  "arxiv_url": "https://arxiv.org/abs/2602.01244",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01244",
+  "github_url": "https://github.com/multimodal-art-projection/TerminalTraj",
+  "upvotes": 15,
+  "fetched_at": "2026-02-19T06:20:23.586349+00:00"
+}

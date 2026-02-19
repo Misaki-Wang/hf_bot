@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07948",
+  "title": "dewi-kadita: A Python Library for Idealized Fish Schooling Simulation with Entropy-Based Diagnostics",
+  "authors": [
+    "Sandy H. S. Herho",
+    "Iwan P. Anwar",
+    "Faruq Khadami",
+    "Alfita P. Handayani",
+    "Karina A. Sujatmiko",
+    "Kamaluddin Kasim",
+    "Rusmawan Suwarman",
+    "Dasapta E. Irawan"
+  ],
+  "abstract": "Collective motion in fish schools exemplifies emergent self-organization in active matter systems, yet computational tools for simulating and analyzing these dynamics remain fragmented across research groups. We present dewi-kadita, an open-source Python library implementing the three-dimensional Couzin zone-based model with comprehensive entropy diagnostics tailored for marine collective behavior research. The library introduces seven information-theoretic metrics -- school cohesion entropy, polarization entropy, depth stratification entropy, angular momentum entropy, nearest-neighbor entropy, velocity correlation entropy, and school shape entropy -- that characterize distinct organizational features inaccessible to classical order parameters. These metrics combine into an Oceanic Schooling Index (OSI) providing a single scalar measure of collective disorder. Validation across four canonical configurations (swarm, torus, dynamic parallel, highly parallel) confirms correct reproduction of known phase behaviors: the swarm maintains disorder with polarization P < 0.1 and OSI approx 0.71, while the highly parallel state achieves P = 0.998 with OSI = 0.24 and velocity correlation entropy vanishing to zero. The entropy framework successfully discriminates the torus and dynamic parallel configurations that exhibit comparable order parameter magnitudes through different organizational mechanisms. Numba just-in-time (JIT) compilation accelerates pairwise interaction calculations by 10--100times, enabling simulations of 150--250 agents over 1000--2000 time steps within five minutes on standard workstation hardware. NetCDF4 output ensures interoperability with oceanographic analysis tools. The library addresses the need for standardized, reproducible infrastructure in collective behavior modeling analogous to established molecular dynamics codes.",
+  "summary_en": "Computational tools for simulating collective motion in fish schools remain fragmented across research groups. We present dewi-kadita, an open-source Python library implementing the three-dimensional Couzin zone-based model with seven information-theoretic metrics -- school cohesion entropy, polarization entropy, depth stratification entropy, angular momentum entropy, nearest-neighbor entropy, velocity correlation entropy, and school shape entropy -- that combine into an Oceanic Schooling Index (OSI). Validation across four canonical configurations (swarm, torus, dynamic parallel, highly parallel) confirms correct reproduction of known phase behaviors, with the swarm maintaining disorder (polarization P < 0.1 and OSI approx 0.71) and the highly parallel state achieving P = 0.998 with OSI = 0.24, while the entropy framework successfully discriminates the torus and dynamic parallel configurations that exhibit comparable order parameter magnitudes. Numba just-in-time (JIT) compilation accelerates pairwise interaction calculations by 10--100times, enabling simulations of 150--250 agents over 1000--2000 time steps within five minutes on standard workstation hardware, and NetCDF4 output ensures interoperability with oceanographic analysis tools.",
+  "summary_zh": "用于模拟鱼群集体运动的计算工具目前仍分散于各研究组。我们推出dewi-kadita，这是一个开源Python库，实现了三维Couzin区域模型，并包含七个信息论指标——群体凝聚熵、极化熵、深度分层熵、角动量熵、最近邻熵、速度相关熵和群体形状熵——这些指标组合成海洋集群指数(OSI)。在四种典型构型（群集、环面、动态平行、高度平行）上的验证确认了已知相行为的正确复现，其中群集态保持无序（极化度P < 0.1且OSI约0.71），高度平行态达到P = 0.998且OSI = 0.24，同时熵框架成功区分了环面和动态平行构型，二者具有可比的序参量幅度。Numba即时(JIT)编译将成对相互作用计算加速10-100倍，使得在标准工作站硬件上可在五分钟内完成150-250个个体跨越1000-2000个时间步的模拟，且NetCDF4输出确保了与海洋学分析工具的互操作性。",
+  "hf_url": "https://huggingface.co/papers/2602.07948",
+  "arxiv_url": "https://arxiv.org/abs/2602.07948",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07948",
+  "github_url": "https://github.com/sandyherho/dewi-kadita",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T06:03:03.789141+00:00"
+}

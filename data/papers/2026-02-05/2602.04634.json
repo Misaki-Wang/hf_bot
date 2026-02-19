@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.04634",
+  "title": "WideSeek-R1: Exploring Width Scaling for Broad Information Seeking via Multi-Agent Reinforcement Learning",
+  "authors": [
+    "Zelai Xu",
+    "Zhexuan Xu",
+    "Ruize Zhang",
+    "Chunyang Zhu",
+    "Shi Yu",
+    "Weilin Liu",
+    "Quanlu Zhang",
+    "Wenbo Ding",
+    "Chao Yu",
+    "Yu Wang"
+  ],
+  "abstract": "Multi-agent systems using reinforcement learning enable parallel information seeking with scalable orchestration, achieving performance comparable to larger single agents. Recent advancements in Large Language Models (LLMs) have largely focused on depth scaling, where a single agent solves long-horizon problems with multi-turn reasoning and tool use. However, as tasks grow broader, the key bottleneck shifts from individual competence to organizational capability. In this work, we explore a complementary dimension of width scaling with multi-agent systems to address broad information seeking . Existing multi-agent systems often rely on hand-crafted workflows and turn-taking interactions that fail to parallelize work effectively. To bridge this gap, we propose WideSeek-R1, a lead-agent-subagent framework trained via multi-agent reinforcement learning (MARL) to synergize scalable orchestration and parallel execution . By utilizing a shared LLM with isolated contexts and specialized tools, WideSeek-R1 jointly optimizes the lead agent and parallel subagents on a curated dataset of 20k broad information-seeking tasks. Extensive experiments show that WideSeek-R1-4B achieves an item F1 score of 40.0% on the WideSearch benchmark , which is comparable to the performance of single-agent DeepSeek-R1-671B. Furthermore, WideSeek-R1-4B exhibits consistent performance gains as the number of parallel subagents increases, highlighting the effectiveness of width scaling.",
+  "summary_en": "Multi-agent systems using reinforcement learning enable parallel information seeking with scalable orchestration, achieving performance comparable to larger single agents.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMulti-agent systems using reinforcement learning enable parallel information seeking with scalable orchestration, achieving performance comparable to larger single agents.",
+  "hf_url": "https://huggingface.co/papers/2602.04634",
+  "arxiv_url": "https://arxiv.org/abs/2602.04634",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04634",
+  "github_url": "https://github.com/RLinf/RLinf",
+  "upvotes": 93,
+  "fetched_at": "2026-02-19T05:27:46.485552+00:00"
+}

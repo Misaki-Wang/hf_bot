@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10367",
+  "title": "LiveMedBench: A Contamination-Free Medical Benchmark for LLMs with Automated Rubric Evaluation",
+  "authors": [
+    "Zhiling Yan",
+    "Dingjie Song",
+    "Zhe Fang",
+    "Yisheng Ji",
+    "Xiang Li",
+    "Quanzheng Li",
+    "Lichao Sun"
+  ],
+  "abstract": "LiveMedBench addresses limitations in medical LLM evaluation by providing a continuously updated, contamination-free benchmark with rubric-based evaluation that better aligns with expert clinical reasoning. The deployment of Large Language Models (LLMs) in high-stakes clinical settings demands rigorous and reliable evaluation. However, existing medical benchmarks remain static, suffering from two critical limitations: (1) data contamination , where test sets inadvertently leak into training corpora, leading to inflated performance estimates; and (2) temporal misalignment , failing to capture the rapid evolution of medical knowledge. Furthermore, current evaluation metrics for open-ended clinical reasoning often rely on either shallow lexical overlap (e.g., ROUGE) or subjective LLM-as-a-Judge scoring, both inadequate for verifying clinical correctness. To bridge these gaps, we introduce LiveMedBench, a continuously updated, contamination-free, and rubric-based benchmark that weekly harvests real-world clinical cases from online medical communities, ensuring strict temporal separation from model training data. We propose a Multi-Agent Clinical Curation Framework that filters raw data noise and validates clinical integrity against evidence-based medical principles. For evaluation, we develop an Automated Rubric-based Evaluation Framework that decomposes physician responses into granular, case-specific criteria, achieving substantially stronger alignment with expert physicians than LLM-as-a-Judge. To date, LiveMedBench comprises 2,756 real-world cases spanning 38 medical specialties and multiple languages, paired with 16,702 unique evaluation criteria. Extensive evaluation of 38 LLMs reveals that even the best-performing model achieves only 39.2%, and 84% of models exhibit performance degradation on post-cutoff cases, confirming pervasive data contamination risks. Error analysis further identifies contextual application-not factual knowledge-as the dominant bottleneck, with 35-48% of failures stemming from the inability to tailor medical knowledge to patient-specific constraints.",
+  "summary_en": "LiveMedBench addresses limitations in medical LLM evaluation by providing a continuously updated, contamination-free benchmark with rubric-based evaluation that better aligns with expert clinical reasoning.",
+  "summary_zh": "LiveMedBench 通过提供持续更新、无污染的基准测试以及基于评分标准且契合专家临床推理的评估，解决医疗LLM评估的局限性。",
+  "hf_url": "https://huggingface.co/papers/2602.10367",
+  "arxiv_url": "https://arxiv.org/abs/2602.10367",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10367",
+  "github_url": "https://github.com/ZhilingYan/LiveMedBench",
+  "upvotes": 13,
+  "fetched_at": "2026-02-19T06:31:36.722748+00:00"
+}

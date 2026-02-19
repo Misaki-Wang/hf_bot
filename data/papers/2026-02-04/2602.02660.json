@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.02660",
+  "title": "MARS: Modular Agent with Reflective Search for Automated AI Research",
+  "authors": [
+    "Jiefeng Chen",
+    "Bhavana Dalvi Mishra",
+    "Jaehyun Nam",
+    "Rui Meng",
+    "Tomas Pfister",
+    "Jinsung Yoon"
+  ],
+  "abstract": "MARS is a modular AI research automation framework that uses budget-aware planning, modular construction, and reflective memory to achieve state-of-the-art performance in autonomous machine learning research. Automating AI research differs from general software engineering due to computationally expensive evaluation (e.g., model training) and opaque performance attribution. Current LLM-based agents struggle here, often generating monolithic scripts that ignore execution costs and causal factors. We introduce MARS (Modular Agent with Reflective Search), a framework optimized for autonomous AI research. MARS relies on three pillars: (1) Budget-Aware Planning via cost-constrained Monte Carlo Tree Search ( MCTS ) to explicitly balance performance with execution expense; (2) Modular Construction , employing a \"Design-Decompose-Implement\" pipeline to manage complex research repositories; and (3) Comparative Reflective Memory , which addresses credit assignment by analyzing solution differences to distill high-signal insights. MARS achieves state-of-the-art performance among open-source frameworks on MLE-Bench under comparable settings, maintaining competitiveness with the global leaderboard's top methods. Furthermore, the system exhibits qualitative \"Aha!\" moments, where 63% of all utilized lessons originate from cross-branch transfer , demonstrating that the agent effectively generalizes insights across search paths.",
+  "summary_en": "MARS is a modular AI research automation framework that uses budget-aware planning, modular construction, and reflective memory to achieve state-of-the-art performance in autonomous machine learning research.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMARS is a modular AI research automation framework that uses budget-aware planning, modular construction, and reflective memory to achieve state-of-the-art performance in autonomous machine learning research.",
+  "hf_url": "https://huggingface.co/papers/2602.02660",
+  "arxiv_url": "https://arxiv.org/abs/2602.02660",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02660",
+  "github_url": "https://github.com/jfc43/MARS",
+  "upvotes": 63,
+  "fetched_at": "2026-02-19T05:39:19.105884+00:00"
+}

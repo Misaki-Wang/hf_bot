@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02287",
+  "title": "Cross-Lingual Stability of LLM Judges Under Controlled Generation: Evidence from Finno-Ugric Languages",
+  "authors": [
+    "Isaac Chung",
+    "Linda Freienthal"
+  ],
+  "abstract": "Controlled cross-lingual evaluation reveals instability in LLM assessment methods when targeting morphologically rich languages, indicating unreliable zero-shot judge transfer for discourse-level tasks. Cross-lingual evaluation of large language models (LLMs) typically conflates two sources of variance: genuine model performance differences and measurement instability. We investigate evaluation reliability by holding generation conditions constant while varying target language. Using synthetic customer-support dialogues generated with identical parameters across Estonian, Finnish, and Hungarian, we test whether automatic metrics and LLM-as-a-judge scoring produce stable model rankings across these morphologically rich, related Finno-Ugric languages. With a small set of Estonian native speaker annotations as a reference point, we find systematic ranking instabilities: surface-level metrics (lexical diversity, surface and semantic similarity) maintain cross-language stability, but pragmatic judgments (coherence, instruction-following) exhibit rank inversions and near-zero correlations. Because generation is controlled, these inconsistencies reflect how judge scoring behaves differently across languages rather than true model differences. This controlled design provides a diagnostic probe: evaluation methods that fail to maintain stability under identical generation conditions signal transfer failure before deployment. Our findings suggest that zero-shot judge transfer is unreliable for discourse-level assessment in morphologically rich languages , motivating language-specific calibration against targeted human baselines. We release our controlled generation protocol, synthetic data , and evaluation framework to enable replication across language families at https://github.com/isaac-chung/cross-lingual-stability-judges.",
+  "summary_en": "Controlled cross-lingual evaluation reveals instability in LLM assessment methods when targeting morphologically rich languages, indicating unreliable zero-shot judge transfer for discourse-level tasks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nControlled cross-lingual evaluation reveals instability in LLM assessment methods when targeting morphologically rich languages, indicating unreliable zero-shot judge transfer for discourse-level tasks.",
+  "hf_url": "https://huggingface.co/papers/2602.02287",
+  "arxiv_url": "https://arxiv.org/abs/2602.02287",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02287",
+  "github_url": "https://github.com/isaac-chung/cross-lingual-stability-judges",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:37:49.562313+00:00"
+}

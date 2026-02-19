@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.04220",
+  "title": "Adaptive 1D Video Diffusion Autoencoder",
+  "authors": [
+    "Yao Teng",
+    "Minxuan Lin",
+    "Xian Liu",
+    "Shuai Wang",
+    "Xiao Yang",
+    "Xihui Liu"
+  ],
+  "abstract": "A transformer-based video autoencoder with adaptive 1D encoding and diffusion-based decoding addresses limitations of fixed-rate compression and deterministic reconstruction in video compression. Recent video generation models largely rely on video autoencoders that compress pixel-space videos into latent representations . However, existing video autoencoders suffer from three major limitations: (1) fixed-rate compression that wastes tokens on simple videos, (2) inflexible CNN architectures that prevent variable-length latent modeling, and (3) deterministic decoders that struggle to recover appropriate details from compressed latents. To address these issues, we propose One-Dimensional Diffusion Video Autoencoder (One-DVA), a transformer-based framework for adaptive 1D encoding and diffusion-based decoding. The encoder employs query-based vision transformers to extract spatiotemporal features and produce latent representations , while a variable-length dropout mechanism dynamically adjusts the latent length. The decoder is a pixel-space diffusion transformer that reconstructs videos with the latents as input conditions. With a two-stage training strategy, One-DVA achieves performance comparable to 3D-CNN VAEs on reconstruction metrics at identical compression ratios . More importantly, it supports adaptive compression and thus can achieve higher compression ratios . To better support downstream latent generation, we further regularize the One-DVA latent distribution for generative modeling and fine-tune its decoder to mitigate artifacts caused by the generation process.",
+  "summary_en": "A transformer-based video autoencoder with adaptive 1D encoding and diffusion-based decoding addresses limitations of fixed-rate compression and deterministic reconstruction in video compression.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA transformer-based video autoencoder with adaptive 1D encoding and diffusion-based decoding addresses limitations of fixed-rate compression and deterministic reconstruction in video compression.",
+  "hf_url": "https://huggingface.co/papers/2602.04220",
+  "arxiv_url": "https://arxiv.org/abs/2602.04220",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04220",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T05:42:47.911253+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01395",
+  "title": "Rethinking Selective Knowledge Distillation",
+  "authors": [
+    "Almog Tavor",
+    "Itay Ebenspanger",
+    "Neil Cnaan",
+    "Mor Geva"
+  ],
+  "abstract": "Selective knowledge distillation in autoregressive language models using student-entropy-guided position selection improves accuracy and efficiency while reducing memory and storage requirements. Growing efforts to improve knowledge distillation (KD) in large language models (LLMs) replace dense teacher supervision with selective distillation , which uses a subset of token positions, vocabulary classes, or training samples for supervision. However, it remains unclear which importance signals, selection policies, and their interplay are most effective. In this work, we revisit where and how to distill in autoregressive LLMs. We disentangle selective KD along the position, class, and sample axes and systematically compare importance signals and selection policies. Then, guided by this analysis, we identify underexplored opportunities and introduce student-entropy-guided position selection (SE-KD). Across a suite of benchmarks, SE-KD often improves accuracy, downstream task adherence, and memory efficiency over dense distillation . Extending this approach across the class and sample axes (SE-KD 3X) yields complementary efficiency gains that make offline teacher caching feasible. In practice, this reduces wall time by 70% and peak memory by 18%, while cutting storage usage by 80% over prior methods without sacrificing performance.",
+  "summary_en": "Selective knowledge distillation in autoregressive language models using student-entropy-guided position selection improves accuracy and efficiency while reducing memory and storage requirements.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSelective knowledge distillation in autoregressive language models using student-entropy-guided position selection improves accuracy and efficiency while reducing memory and storage requirements.",
+  "hf_url": "https://huggingface.co/papers/2602.01395",
+  "arxiv_url": "https://arxiv.org/abs/2602.01395",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01395",
+  "github_url": "https://github.com/almogtavor/SE-KD3x",
+  "upvotes": 23,
+  "fetched_at": "2026-02-19T05:36:46.441147+00:00"
+}

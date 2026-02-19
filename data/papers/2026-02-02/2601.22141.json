@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.22141",
+  "title": "Routing the Lottery: Adaptive Subnetworks for Heterogeneous Data",
+  "authors": [
+    "Grzegorz Stefanski",
+    "Alberto Presta",
+    "Michal Byra"
+  ],
+  "abstract": "Routing the Lottery framework discovers multiple specialized subnetworks tailored to different data conditions, outperforming traditional pruning methods while using fewer parameters and identifying subnetwork collapse issues. In pruning, the Lottery Ticket Hypothesis posits that large networks contain sparse subnetworks, or winning tickets , that can be trained in isolation to match the performance of their dense counterparts. However, most existing approaches assume a single universal winning ticket shared across all inputs, ignoring the inherent heterogeneity of real-world data. In this work, we propose Routing the Lottery (RTL), an adaptive pruning framework that discovers multiple specialized subnetworks, called adaptive tickets , each tailored to a class, semantic cluster, or environmental condition. Across diverse datasets and tasks, RTL consistently outperforms single- and multi-model baselines in balanced accuracy and recall, while using up to 10 times fewer parameters than independent models and exhibiting semantically aligned. Furthermore, we identify subnetwork collapse , a performance drop under aggressive pruning, and introduce a subnetwork similarity score that enables label-free diagnosis of oversparsification. Overall, our results recast pruning as a mechanism for aligning model structure with data heterogeneity, paving the way toward more modular and context-aware deep learning.",
+  "summary_en": "Routing the Lottery framework discovers multiple specialized subnetworks tailored to different data conditions, outperforming traditional pruning methods while using fewer parameters and identifying subnetwork collapse issues.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nRouting the Lottery framework discovers multiple specialized subnetworks tailored to different data conditions, outperforming traditional pruning methods while using fewer parameters and identifying subnetwork collapse issues.",
+  "hf_url": "https://huggingface.co/papers/2601.22141",
+  "arxiv_url": "https://arxiv.org/abs/2601.22141",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22141",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:34:57.546616+00:00"
+}

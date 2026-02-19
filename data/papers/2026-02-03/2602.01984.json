@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01984",
+  "title": "Enhancing Multi-Image Understanding through Delimiter Token Scaling",
+  "authors": [
+    "Minyoung Lee",
+    "Yeji Park",
+    "Dongjun Hwang",
+    "Yejin Kim",
+    "Seong Joon Oh",
+    "Junsuk Choe"
+  ],
+  "abstract": "Scaling hidden states of delimiter tokens in vision-language models reduces cross-image information leakage and improves multi-image reasoning performance. Large Vision-Language Models (LVLMs) achieve strong performance on single-image tasks, but their performance declines when multiple images are provided as input. One major reason is the cross-image information leakage , where the model struggles to distinguish information across different images. Existing LVLMs already employ delimiter tokens to mark the start and end of each image, yet our analysis reveals that these tokens fail to effectively block cross-image information leakage . To enhance their effectiveness, we propose a method that scales the hidden states of delimiter tokens . This enhances the model's ability to preserve image-specific information by reinforcing intra-image interaction and limiting undesired cross-image interactions . Consequently, the model is better able to distinguish between images and reason over them more accurately. Experiments show performance gains on multi-image benchmarks such as Mantis , MuirBench , MIRB , and QBench2 . We further evaluate our method on text-only tasks that require clear distinction. The method improves performance on multi-document and multi-table understanding benchmarks, including TQABench , MultiNews , and WCEP-10 . Notably, our method requires no additional training or inference cost.",
+  "summary_en": "Scaling hidden states of delimiter tokens in vision-language models reduces cross-image information leakage and improves multi-image reasoning performance.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nScaling hidden states of delimiter tokens in vision-language models reduces cross-image information leakage and improves multi-image reasoning performance.",
+  "hf_url": "https://huggingface.co/papers/2602.01984",
+  "arxiv_url": "https://arxiv.org/abs/2602.01984",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01984",
+  "github_url": "https://github.com/MYMY-young/DelimScaling",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:37:25.927516+00:00"
+}

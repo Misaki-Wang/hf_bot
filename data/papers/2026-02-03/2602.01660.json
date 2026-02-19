@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01660",
+  "title": "CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation",
+  "authors": [
+    "Zhongyuan Peng",
+    "Caijun Xu",
+    "Changyi Xiao",
+    "Shibo Hong",
+    "Eli Zhang",
+    "Stephen Huang",
+    "Yixin Cao"
+  ],
+  "abstract": "A novel framework called CoDiQ enables controllable difficulty generation for competition-level questions through test-time scaling, resulting in a corpus that significantly improves large reasoning model performance. Large Reasoning Models (LRMs) benefit substantially from training on challenging competition-level questions . However, existing automated question synthesis methods lack precise difficulty control, incur high computational costs, and struggle to generate competition-level questions at scale. In this paper, we propose CoDiQ (Controllable Difficult Question Generation ), a novel framework enabling fine-grained difficulty control via test-time scaling while ensuring question solvability. Specifically, first, we identify a test-time scaling tendency (extended reasoning token budget boosts difficulty but reduces solvability) and the intrinsic properties defining the upper bound of a model's ability to generate valid, high-difficulty questions. Then, we develop CoDiQ-Generator from Qwen3-8B, which improves the upper bound of difficult question generation , making it particularly well-suited for challenging question construction. Building on the CoDiQ framework, we build CoDiQ-Corpus (44K competition-grade question sequences). Human evaluations show these questions are significantly more challenging than LiveCodeBench/AIME with over 82% solvability. Training LRMs on CoDiQ-Corpus substantially improves reasoning performance , verifying that scaling controlled-difficulty training questions enhances reasoning capabilities. We open-source CoDiQ-Corpus , CoDiQ-Generator , and implementations to support related research.",
+  "summary_en": "A novel framework called CoDiQ enables controllable difficulty generation for competition-level questions through test-time scaling, resulting in a corpus that significantly improves large reasoning model performance.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA novel framework called CoDiQ enables controllable difficulty generation for competition-level questions through test-time scaling, resulting in a corpus that significantly improves large reasoning model performance.",
+  "hf_url": "https://huggingface.co/papers/2602.01660",
+  "arxiv_url": "https://arxiv.org/abs/2602.01660",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01660",
+  "github_url": "https://github.com/ALEX-nlp/CoDiQ",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T05:37:07.065405+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.08234",
+  "title": "SkillRL: Evolving Agents via Recursive Skill-Augmented Reinforcement Learning",
+  "authors": [
+    "Peng Xia",
+    "Jianwen Chen",
+    "Hanyang Wang",
+    "Jiaqi Liu",
+    "Kaide Zeng",
+    "Yu Wang",
+    "Siwei Han",
+    "Yiyang Zhou",
+    "Xujiang Zhao",
+    "Haifeng Chen",
+    "Zeyu Zheng",
+    "Cihang Xie",
+    "Huaxiu Yao"
+  ],
+  "abstract": "SkillRL enables LLM agents to improve through hierarchical skill discovery and recursive policy evolution, achieving superior performance on complex tasks while reducing computational overhead. Large Language Model (LLM) agents have shown stunning results in complex tasks, yet they often operate in isolation, failing to learn from past experiences. Existing memory-based methods primarily store raw trajectories, which are often redundant and noise-heavy. This prevents agents from extracting high-level, reusable behavioral patterns that are essential for generalization. In this paper, we propose SkillRL, a framework that bridges the gap between raw experience and policy improvement through automatic skill discovery and recursive evolution . Our approach introduces an experience-based distillation mechanism to build a hierarchical skill library SkillBank , an adaptive retrieval strategy for general and task-specific heuristics, and a recursive evolution mechanism that allows the skill library to co-evolve with the agent's policy during reinforcement learning . These innovations significantly reduce the token footprint while enhancing reasoning utility. Experimental results on ALFWorld, WebShop and seven search-augmented tasks demonstrate that SkillRL achieves state-of-the-art performance, outperforming strong baselines over 15.3% and maintaining robustness as task complexity increases. Code is available at this https://github.com/aiming-lab/SkillRL.",
+  "summary_en": "SkillRL enables LLM agents to improve through hierarchical skill discovery and recursive policy evolution, achieving superior performance on complex tasks while reducing computational overhead.",
+  "summary_zh": "SkillRL使LLM智能体通过层次化技能发现与递归策略演化实现改进，在复杂任务上取得更优性能的同时降低计算开销。",
+  "hf_url": "https://huggingface.co/papers/2602.08234",
+  "arxiv_url": "https://arxiv.org/abs/2602.08234",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08234",
+  "github_url": "https://github.com/aiming-lab/SkillRL",
+  "upvotes": 65,
+  "fetched_at": "2026-02-19T06:21:16.803051+00:00"
+}

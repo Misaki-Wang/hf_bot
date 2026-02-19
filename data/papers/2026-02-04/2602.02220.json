@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.02220",
+  "title": "LangMap: A Hierarchical Benchmark for Open-Vocabulary Goal Navigation",
+  "authors": [
+    "Bo Miao",
+    "Weijia Liu",
+    "Jun Luo",
+    "Lachlan Shinnick",
+    "Jian Liu",
+    "Thomas Hamilton-Smith",
+    "Yuhe Yang",
+    "Zijie Wu",
+    "Vanja Videnovic",
+    "Feras Dayoub",
+    "Anton van den Hengel"
+  ],
+  "abstract": "HieraNav presents a multi-granularity, open-vocabulary navigation task with LangMap benchmark that enables agents to follow natural language instructions across different semantic levels in 3D environments. The relationships between objects and language are fundamental to meaningful communication between humans and AI, and to practically useful embodied intelligence. We introduce HieraNav, a multi-granularity , open-vocabulary goal navigation task where agents interpret natural language instructions to reach targets at four semantic levels : scene , room , region , and instance . To this end, we present Language as a Map (LangMap), a large-scale benchmark built on real-world 3D indoor scans with comprehensive human-verified annotations and tasks spanning these levels. LangMap provides region labels, discriminative region descriptions, discriminative instance descriptions covering 414 object categories, and over 18K navigation tasks. Each target features both concise and detailed descriptions, enabling evaluation across different instruction styles. LangMap achieves superior annotation quality, outperforming GOAT-Bench by 23.8% in discriminative accuracy using four times fewer words. Comprehensive evaluations of zero-shot and supervised models on LangMap reveal that richer context and memory improve success, while long-tailed, small, context-dependent, and distant goals, as well as multi-goal completion, remain challenging. HieraNav and LangMap establish a rigorous testbed for advancing language-driven embodied navigation . Project: https://bo-miao.github.io/LangMap",
+  "summary_en": "HieraNav presents a multi-granularity, open-vocabulary navigation task with LangMap benchmark that enables agents to follow natural language instructions across different semantic levels in 3D environments.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nHieraNav presents a multi-granularity, open-vocabulary navigation task with LangMap benchmark that enables agents to follow natural language instructions across different semantic levels in 3D environments.",
+  "hf_url": "https://huggingface.co/papers/2602.02220",
+  "arxiv_url": "https://arxiv.org/abs/2602.02220",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02220",
+  "github_url": "https://github.com/bo-miao/LangMap",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:39:01.391649+00:00"
+}

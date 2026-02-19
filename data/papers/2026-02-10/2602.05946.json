@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.05946",
+  "title": "f-GRPO and Beyond: Divergence-Based Reinforcement Learning Algorithms for General LLM Alignment",
+  "authors": [
+    "Rajdeep Haldar",
+    "Lantao Mei",
+    "Guang Lin",
+    "Yue Xing",
+    "Qifan Song"
+  ],
+  "abstract": "Preference alignment objectives are extended to general alignment settings using f-divergence variational representations, introducing novel on-policy and hybrid policy optimization methods for LLM alignment with theoretical and empirical validation. Recent research shows that Preference Alignment (PA) objectives act as divergence estimators between aligned (chosen) and unaligned (rejected) response distributions. In this work, we extend this divergence-based perspective to general alignment settings, such as reinforcement learning with verifiable rewards ( RLVR ), where only environmental rewards are available. Within this unified framework, we propose f-Group Relative Policy Optimization (f-GRPO), a class of on-policy reinforcement learning , and f-Hybrid Alignment Loss (f-HAL), a hybrid on/off policy objectives, for general LLM alignment based on variational representation of f-divergence s. We provide theoretical guarantees that these classes of objectives improve the average reward after alignment. Empirically, we validate our framework on both RLVR ( Math Reasoning ) and PA tasks ( Safety Alignment ), demonstrating superior performance and flexibility compared to current methods.",
+  "summary_en": "Preference alignment objectives are extended to general alignment settings using f-divergence variational representations, introducing novel on-policy and hybrid policy optimization methods for LLM alignment with theoretical and empirical validation.",
+  "summary_zh": "利用 f-散度变分表示，将偏好对齐目标扩展至通用对齐设置，引入面向 LLM 对齐的新型同策略与混合策略优化方法，并经过理论与实证验证。",
+  "hf_url": "https://huggingface.co/papers/2602.05946",
+  "arxiv_url": "https://arxiv.org/abs/2602.05946",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05946",
+  "github_url": "",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T06:02:00.595569+00:00"
+}

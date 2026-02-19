@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.07900",
+  "title": "Rethinking the Value of Agent-Generated Tests for LLM-Based Software Engineering Agents",
+  "authors": [
+    "Zhi Chen",
+    "Zhensu Sun",
+    "Yuling Shi",
+    "Chao Peng",
+    "Xiaodong Gu",
+    "David Lo",
+    "Lingxiao Jiang"
+  ],
+  "abstract": "Empirical analysis of LLM code agents reveals that test writing provides limited improvement in issue resolution and is often replaced by observation-based debugging methods. Large Language Model (LLM) code agents increasingly resolve repository-level issues by iteratively editing code, invoking tools, and validating candidate patches. In these workflows, agents often write tests on the fly, a paradigm adopted by many high-ranking agents on the SWE-bench leaderboard. However, we observe that GPT-5.2, which writes almost no new tests, can even achieve performance comparable to top-ranking agents. This raises the critical question: whether such tests meaningfully improve issue resolution or merely mimic human testing practices while consuming a substantial interaction budget. To reveal the impact of agent-written tests, we present an empirical study that analyzes agent trajectories across six state-of-the-art LLMs on SWE-bench Verified. Our results show that while test writing is commonly adopted, but resolved and unresolved tasks within the same model exhibit similar test-writing frequencies Furthermore, these tests typically serve as observational feedback channels, where agents prefer value-revealing print statements significantly more than formal assertion-based checks . Based on these insights, we perform a controlled experiment by revising the prompts of four agents to either increase or reduce test writing . The results suggest that changes in the volume of agent-written tests do not significantly change final outcomes. Taken together, our study reveals that current test-writing practices may provide marginal utility in autonomous software engineering tasks.",
+  "summary_en": "Empirical analysis of LLM code agents reveals that test writing provides limited improvement in issue resolution and is often replaced by observation-based debugging methods.",
+  "summary_zh": "对LLM代码智能体的实证分析表明，测试编写对问题解决的提升有限，且常被基于观察的调试方法所取代。",
+  "hf_url": "https://huggingface.co/papers/2602.07900",
+  "arxiv_url": "https://arxiv.org/abs/2602.07900",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07900",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T06:30:52.316520+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.02619",
+  "title": "daVinci-Agency: Unlocking Long-Horizon Agency Data-Efficiently",
+  "authors": [
+    "Mohan Jiang",
+    "Dayuan Fu",
+    "Junhao Shi",
+    "Ji Zeng",
+    "Weiye Si",
+    "Keyu Li",
+    "Xuefeng Li",
+    "Yang Xiao",
+    "Wenjie Li",
+    "Dequan Wang",
+    "Pengfei Liu"
+  ],
+  "abstract": "Large language models face challenges in long-horizon agentic workflows due to lack of authentic long-dependency training data, which is addressed by leveraging pull request sequences for structured supervision through progressive decomposition, consistency enforcement, and refinement from bug-fix histories. While Large Language Models (LLMs) excel at short-term tasks, scaling them to long-horizon agentic workflows remains challenging. The core bottleneck lies in the scarcity of training data that captures authentic long-dependency structures and cross-stage evolutionary dynamics --existing synthesis methods either confine to single-feature scenarios constrained by model distribution, or incur prohibitive human annotation costs, failing to provide scalable, high-quality supervision. We address this by reconceptualizing data synthesis through the lens of real-world software evolution. Our key insight: Pull Request (PR) sequences naturally embody the supervision signals for long-horizon learning. They decompose complex objectives into verifiable submission units, maintain functional coherence across iterations, and encode authentic refinement patterns through bug-fix histories . Building on this, we propose daVinci-Agency , which systematically mines structured supervision from chain-of-PRs through three interlocking mechanisms: (1) progressive task decomposition via continuous commits , (2) long-term consistency enforcement through unified functional objectives , and (3) verifiable refinement from authentic bug-fix trajectories. Unlike synthetic trajectories that treat each step independently, daVinci-Agency 's PR-grounded structure inherently preserves the causal dependencies and iterative refinements essential for teaching persistent goal-directed behavior and enables natural alignment with project-level, full-cycle task modeling. The resulting trajectories are substantial--averaging 85k tokens and 116 tool calls--yet remarkably data-efficient: fine-tuning GLM-4.6 on 239 daVinci-Agency samples yields broad improvements across benchmarks, notably achieving a 47% relative gain on Toolathlon . Beyond benchmark performance, our analysis confirms...",
+  "summary_en": "Large language models face challenges in long-horizon agentic workflows due to lack of authentic long-dependency training data, which is addressed by leveraging pull request sequences for structured supervision through progressive decomposition, consistency enforcement, and refinement from bug-fix histories.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLarge language models face challenges in long-horizon agentic workflows due to lack of authentic long-dependency training data, which is addressed by leveraging pull request sequences for structured supervision through progressive decomposition, consistency enforcement, and refinement from bug-fix histories.",
+  "hf_url": "https://huggingface.co/papers/2602.02619",
+  "arxiv_url": "https://arxiv.org/abs/2602.02619",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02619",
+  "github_url": "https://github.com/GAIR-NLP/daVinci-Agency",
+  "upvotes": 50,
+  "fetched_at": "2026-02-19T05:39:15.443899+00:00"
+}

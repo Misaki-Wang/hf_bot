@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.11124",
+  "title": "PhyCritic: Multimodal Critic Models for Physical AI",
+  "authors": [
+    "Tianyi Xiong",
+    "Shihao Wang",
+    "Guilin Liu",
+    "Yi Dong",
+    "Ming Li",
+    "Heng Huang",
+    "Jan Kautz",
+    "Zhiding Yu"
+  ],
+  "abstract": "PhyCritic is a multimodal critic model designed for physical AI tasks through a two-stage RLVR pipeline that enhances perception and reasoning capabilities. With the rapid development of large multimodal models , reliable judge and critic models have become essential for open-ended evaluation and preference alignment, providing pairwise preferences, numerical scores, and explanatory justifications for assessing model-generated responses. However, existing critics are primarily trained in general visual domains such as captioning or image question answering, leaving physical AI tasks involving perception , causal reasoning , and planning largely underexplored. We introduce PhyCritic, a multimodal critic model optimized for physical AI through a two-stage RLVR pipeline : a physical skill warmup stage that enhances physically oriented perception and reasoning , followed by self-referential critic finetuning , where the critic generates its own prediction as an internal reference before judging candidate responses, improving judgment stability and physical correctness. Across both physical and general-purpose multimodal judge benchmarks, PhyCritic achieves strong performance gains over open-source baselines and, when applied as a policy model , further improves perception and reasoning in physically grounded tasks.",
+  "summary_en": "PhyCritic is a multimodal critic model designed for physical AI tasks through a two-stage RLVR pipeline that enhances perception and reasoning capabilities.",
+  "summary_zh": "PhyCritic是一款面向物理AI任务的多模态critic模型，通过两阶段RLVR流程增强感知与推理能力。",
+  "hf_url": "https://huggingface.co/papers/2602.11124",
+  "arxiv_url": "https://arxiv.org/abs/2602.11124",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11124",
+  "github_url": "",
+  "upvotes": 50,
+  "fetched_at": "2026-02-19T06:32:10.685816+00:00"
+}

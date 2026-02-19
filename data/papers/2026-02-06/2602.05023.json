@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.05023",
+  "title": "Do Vision-Language Models Respect Contextual Integrity in Location Disclosure?",
+  "authors": [
+    "Ruixin Yang",
+    "Ethan Mendes",
+    "Arthur Wang",
+    "James Hays",
+    "Sauvik Das",
+    "Wei Xu",
+    "Alan Ritter"
+  ],
+  "abstract": "Vision-language models can precisely geolocate images but often fail to align with human privacy expectations, over-disclosing location details in sensitive contexts and being vulnerable to prompt-based attacks. Vision-language models (VLMs) have demonstrated strong performance in image geolocation , a capability further sharpened by frontier multimodal large reasoning models (MLRMs). This poses a significant privacy risk, as these widely accessible models can be exploited to infer sensitive locations from casually shared photos, often at street-level precision, potentially surpassing the level of detail the sharer consented or intended to disclose. While recent work has proposed applying a blanket restriction on geolocation disclosure to combat this risk, these measures fail to distinguish valid geolocation uses from malicious behavior. Instead, VLMs should maintain contextual integrity by reasoning about elements within an image to determine the appropriate level of information disclosure, balancing privacy and utility. To evaluate how well models respect contextual integrity , we introduce VLM-GEOPRIVACY , a benchmark that challenges VLMs to interpret latent social norms and contextual cues in real-world images and determine the appropriate level of location disclosure. Our evaluation of 14 leading VLMs shows that, despite their ability to precisely geolocate images, the models are poorly aligned with human privacy expectations. They often over-disclose in sensitive contexts and are vulnerable to prompt-based attacks . Our results call for new design principles in multimodal systems to incorporate context-conditioned privacy reasoning.",
+  "summary_en": "Vision-language models can precisely geolocate images but often fail to align with human privacy expectations, over-disclosing location details in sensitive contexts and being vulnerable to prompt-based attacks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nVision-language models can precisely geolocate images but often fail to align with human privacy expectations, over-disclosing location details in sensitive contexts and being vulnerable to prompt-based attacks.",
+  "hf_url": "https://huggingface.co/papers/2602.05023",
+  "arxiv_url": "https://arxiv.org/abs/2602.05023",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05023",
+  "github_url": "https://github.com/99starman/VLM-GeoPrivacyBench",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:42:56.800147+00:00"
+}

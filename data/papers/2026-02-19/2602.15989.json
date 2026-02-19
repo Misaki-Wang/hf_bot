@@ -1,0 +1,30 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.15989",
+  "title": "SAM 3D Body: Robust Full-Body Human Mesh Recovery",
+  "authors": [
+    "Xitong Yang",
+    "Devansh Kukreja",
+    "Don Pinkus",
+    "Anushka Sagar",
+    "Taosha Fan",
+    "Jinhyung Park",
+    "Soyong Shin",
+    "Jinkun Cao",
+    "Jiawei Liu",
+    "Nicolas Ugrinovic",
+    "Matt Feiszli",
+    "Jitendra Malik",
+    "Piotr Dollar",
+    "Kris Kitani"
+  ],
+  "abstract": "A promptable 3D human mesh recovery model using a novel parametric representation and encoder-decoder architecture achieves state-of-the-art performance with strong generalization across diverse conditions. We introduce SAM 3D Body (3DB), a promptable model for single-image full-body 3D human mesh recovery (HMR) that demonstrates state-of-the-art performance, with strong generalization and consistent accuracy in diverse in-the-wild conditions. 3DB estimates the human pose of the body, feet, and hands. It is the first model to use a new parametric mesh representation , Momentum Human Rig (MHR), which decouples skeletal structure and surface shape. 3DB employs an encoder-decoder architecture and supports auxiliary prompts , including 2D keypoints and masks , enabling user-guided inference similar to the SAM family of models. We derive high-quality annotations from a multi-stage annotation pipeline that uses various combinations of manual keypoint annotation, differentiable optimization , multi-view geometry , and dense keypoint detection . Our data engine efficiently selects and processes data to ensure data diversity, collecting unusual poses and rare imaging conditions. We present a new evaluation dataset organized by pose and appearance categories, enabling nuanced analysis of model behavior. Our experiments demonstrate superior generalization and substantial improvements over prior methods in both qualitative user preference studies and traditional quantitative analysis . Both 3DB and MHR are open-source.",
+  "summary_en": "A promptable 3D human mesh recovery model using a novel parametric representation and encoder-decoder architecture achieves state-of-the-art performance with strong generalization across diverse conditions.",
+  "summary_zh": "一种可提示的3D人体网格恢复模型采用新型参数化表示与编码器-解码器架构，在多样化条件下达到state-of-the-art性能并具有强泛化能力。",
+  "hf_url": "https://huggingface.co/papers/2602.15989",
+  "arxiv_url": "https://arxiv.org/abs/2602.15989",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15989",
+  "github_url": "https://github.com/facebookresearch/sam-3d-body",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:47:31.401695+00:00"
+}

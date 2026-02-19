@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.04789",
+  "title": "Light Forcing: Accelerating Autoregressive Video Diffusion via Sparse Attention",
+  "authors": [
+    "Chengtao Lv",
+    "Yumeng Shi",
+    "Yushi Huang",
+    "Ruihao Gong",
+    "Shen Ren",
+    "Wenya Wang"
+  ],
+  "abstract": "Light Forcing introduces a novel sparse attention mechanism for autoregressive video generation that improves efficiency while maintaining quality through chunk-aware growth and hierarchical sparse attention strategies. Advanced autoregressive (AR) video generation models have improved visual fidelity and interactivity, but the quadratic complexity of attention remains a primary bottleneck for efficient deployment. While existing sparse attention solutions have shown promise on bidirectional models, we identify that applying these solutions to AR models leads to considerable performance degradation for two reasons: isolated consideration of chunk generation and insufficient utilization of past informative context. Motivated by these observations, we propose Light Forcing, the first sparse attention solution tailored for AR video generation models. It incorporates a Chunk-Aware Growth mechanism to quantitatively estimate the contribution of each chunk, which determines their sparsity allocation. This progressive sparsity increase strategy enables the current chunk to inherit prior knowledge in earlier chunks during generation. Additionally, we introduce a Hierarchical Sparse Attention to capture informative historical and local context in a coarse-to-fine manner. Such two-level mask selection strategy (\\ie, frame and block level) can adaptively handle diverse attention patterns. Extensive experiments demonstrate that our method outperforms existing sparse attention in quality (\\eg, 84.5 on VBench) and efficiency (\\eg, 1.2{sim}1.3times end-to-end speedup). Combined with FP8 quantization and LightVAE , Light Forcing further achieves a 2.3times speedup and 19.7\\,FPS on an RTX~5090 GPU. Code will be released at https://github.com/chengtao-lv/LightForcing{https://github.com/chengtao-lv/LightForcing}.",
+  "summary_en": "Light Forcing introduces a novel sparse attention mechanism for autoregressive video generation that improves efficiency while maintaining quality through chunk-aware growth and hierarchical sparse attention strategies.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLight Forcing introduces a novel sparse attention mechanism for autoregressive video generation that improves efficiency while maintaining quality through chunk-aware growth and hierarchical sparse attention strategies.",
+  "hf_url": "https://huggingface.co/papers/2602.04789",
+  "arxiv_url": "https://arxiv.org/abs/2602.04789",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04789",
+  "github_url": "https://github.com/chengtao-lv/LightForcing",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:42:50.834715+00:00"
+}

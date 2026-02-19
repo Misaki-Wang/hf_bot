@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.11731",
+  "title": "Thinking with Drafting: Optical Decompression via Logical Reconstruction",
+  "authors": [
+    "Jingxuan Wei",
+    "Honghao He",
+    "Caijun Jia",
+    "Siyuan Li",
+    "Zheng Sun",
+    "Yuhang Xu",
+    "Yuanyuan Lin",
+    "Linzhuang Sun",
+    "Yuchen Wu",
+    "Bihui Yu",
+    "Xiangxiang Zhang",
+    "Cheng Tan"
+  ],
+  "abstract": "Visual reasoning is enhanced by reconstructing logical structures from compressed visual tokens through a DSL-based approach that generates deterministic visual proofs for verification. Existing multimodal large language models have achieved high-fidelity visual perception and exploratory visual generation . However, a precision paradox persists in complex reasoning tasks: optical perception systems transcribe symbols without capturing logical topology , while pixel-based generative models produce visual artifacts lacking mathematical exactness. To bridge this gap, we propose that reasoning over visual inputs be reconceptualized as optical decompression -the process of reconstructing latent logical structures from compressed visual tokens . Guided by the axiom that Parsing is Reasoning, we introduce Thinking with Drafting (TwD), which utilizes a minimalist Domain-Specific Language (DSL) as a grounding intermediate representation. Unlike standard approaches that hallucinate answers directly, TwD forces the model to draft its mental model into executable code, rendering deterministic visual proofs for self-verification. To validate this, we present VisAlg, a visual algebra benchmark . Experiments demonstrate that TwD serve as a superior cognitive scaffold. Our work establishes a closed-loop system where visual generation acts not as a creative output but as a logical verifier, offering a generalizable path for visual reasoning .",
+  "summary_en": "Visual reasoning is enhanced by reconstructing logical structures from compressed visual tokens through a DSL-based approach that generates deterministic visual proofs for verification.",
+  "summary_zh": "通过基于DSL的方法从压缩视觉token重建逻辑结构，并生成确定性视觉证明以验证，从而增强视觉推理。",
+  "hf_url": "https://huggingface.co/papers/2602.11731",
+  "arxiv_url": "https://arxiv.org/abs/2602.11731",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11731",
+  "github_url": "",
+  "upvotes": 32,
+  "fetched_at": "2026-02-19T06:38:30.542922+00:00"
+}

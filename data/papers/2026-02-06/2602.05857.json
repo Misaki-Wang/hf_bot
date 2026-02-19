@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.05857",
+  "title": "BABE: Biology Arena BEnchmark",
+  "authors": [
+    "Junting Zhou",
+    "Jin Chen",
+    "Linfeng Hao",
+    "Denghui Cao",
+    "Zheyu Wang",
+    "Qiguang Chen",
+    "Chaoyou Fu",
+    "Jiaze Chen",
+    "Yuchen Wu",
+    "Ge Zhang",
+    "Mingxuan Wang",
+    "Wenhao Huang",
+    "Tong Yang"
+  ],
+  "abstract": "BABE is a biology-focused benchmark designed to evaluate AI systems' ability to perform experimental reasoning and causal inference similar to practicing scientists.",
+  "summary_en": "BABE is a biology-focused benchmark designed to evaluate AI systems' ability to perform experimental reasoning and causal inference similar to practicing scientists.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nBABE is a biology-focused benchmark designed to evaluate AI systems' ability to perform experimental reasoning and causal inference similar to practicing scientists.",
+  "hf_url": "https://huggingface.co/papers/2602.05857",
+  "arxiv_url": "https://arxiv.org/abs/2602.05857",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05857",
+  "github_url": "",
+  "upvotes": 10,
+  "fetched_at": "2026-02-19T05:43:16.426015+00:00"
+}

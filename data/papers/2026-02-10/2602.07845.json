@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07845",
+  "title": "Recurrent-Depth VLA: Implicit Test-Time Compute Scaling of Vision-Language-Action Models via Latent Iterative Reasoning",
+  "authors": [
+    "Yalcin Tur",
+    "Jalal Naghiyev",
+    "Haoquan Fang",
+    "Wei-Chuan Tsai",
+    "Jiafei Duan",
+    "Dieter Fox",
+    "Ranjay Krishna"
+  ],
+  "abstract": "RD-VLA introduces a recurrent architecture for vision-language-action models that adapts computational depth through latent iterative refinement, achieving constant memory usage and improved task success rates. Current Vision-Language-Action (VLA) models rely on fixed computational depth, expending the same amount of compute on simple adjustments and complex multi-step manipulation. While Chain-of-Thought (CoT) prompting enables variable computation, it scales memory linearly and is ill-suited for continuous action spaces. We introduce Recurrent-Depth VLA (RD-VLA), an architecture that achieves computational adaptivity via latent iterative refinement rather than explicit token generation. RD-VLA employs a recurrent, weight-tied action head that supports arbitrary inference depth with a constant memory footprint. The model is trained using truncated backpropagation through time (TBPTT) to efficiently supervise the refinement process. At inference, RD-VLA dynamically allocates compute using an adaptive stopping criterion based on latent convergence . Experiments on challenging manipulation tasks show that recurrent depth is critical: tasks that fail entirely (0 percent success) with single-iteration inference exceed 90 percent success with four iterations, while simpler tasks saturate rapidly. RD-VLA provides a scalable path to test-time compute in robotics, replacing token-based reasoning with latent reasoning to achieve constant memory usage and up to 80x inference speedup over prior reasoning-based VLA models. Project page: https://rd-vla.github.io/",
+  "summary_en": "RD-VLA introduces a recurrent architecture for vision-language-action models that adapts computational depth through latent iterative refinement, achieving constant memory usage and improved task success rates.",
+  "summary_zh": "RD-VLA 为视觉-语言-动作模型引入了一种循环架构，通过潜在迭代细化自适应调整计算深度，实现了恒定内存占用并提升了任务成功率。",
+  "hf_url": "https://huggingface.co/papers/2602.07845",
+  "arxiv_url": "https://arxiv.org/abs/2602.07845",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07845",
+  "github_url": "https://github.com/rd-vla/rd-vla",
+  "upvotes": 68,
+  "fetched_at": "2026-02-19T06:03:00.977675+00:00"
+}

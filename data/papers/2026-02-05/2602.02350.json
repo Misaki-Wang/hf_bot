@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.02350",
+  "title": "Context Learning for Multi-Agent Discussion",
+  "authors": [
+    "Xingyuan Hua",
+    "Sheng Yue",
+    "Xinyi Li",
+    "Yizhe Zhao",
+    "Jinrui Zhang",
+    "Ju Ren"
+  ],
+  "abstract": "",
+  "summary_en": "This is an automated message from the Librarian Bot . I found the following papers similar to this paper.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nThis is an automated message from the Librarian Bot . I found the following papers similar to this paper.",
+  "hf_url": "https://huggingface.co/papers/2602.02350",
+  "arxiv_url": "https://arxiv.org/abs/2602.02350",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02350",
+  "github_url": "https://github.com/HansenHua/M2CL-ICLR26",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T05:27:22.396051+00:00"
+}

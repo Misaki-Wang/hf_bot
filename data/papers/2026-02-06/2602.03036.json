@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.03036",
+  "title": "LatentMem: Customizing Latent Memory for Multi-Agent Systems",
+  "authors": [
+    "Muxin Fu",
+    "Guibin Zhang",
+    "Xiangyuan Xue",
+    "Yafu Li",
+    "Zefeng He",
+    "Siyuan Huang",
+    "Xiaoye Qu",
+    "Yu Cheng",
+    "Yang Yang"
+  ],
+  "abstract": "LatentMem is a learnable multi-agent memory framework that customizes agent-specific memories through latent representations, improving performance in multi-agent systems without modifying underlying frameworks. Large language model (LLM)-powered multi-agent systems (MAS) demonstrate remarkable collective intelligence, wherein multi-agent memory serves as a pivotal mechanism for continual adaptation. However, existing multi-agent memory designs remain constrained by two fundamental bottlenecks: (i) memory homogenization arising from the absence of role-aware customization, and (ii) information overload induced by excessively fine-grained memory entries. To address these limitations, we propose LatentMem, a learnable multi-agent memory framework designed to customize agent-specific memories in a token-efficient manner. Specifically, LatentMem comprises an experience bank that stores raw interaction trajectories in a lightweight form, and a memory composer that synthesizes compact latent memories conditioned on retrieved experience and agent-specific contexts . Further, we introduce Latent Memory Policy Optimization (LMPO), which propagates task-level optimization signals through latent memories to the composer, encouraging it to produce compact and high-utility representations. Extensive experiments across diverse benchmarks and mainstream MAS frameworks show that LatentMem achieves a performance gain of up to 19.36% over vanilla settings and consistently outperforms existing memory architectures, without requiring any modifications to the underlying frameworks.",
+  "summary_en": "LatentMem is a learnable multi-agent memory framework that customizes agent-specific memories through latent representations, improving performance in multi-agent systems without modifying underlying frameworks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLatentMem is a learnable multi-agent memory framework that customizes agent-specific memories through latent representations, improving performance in multi-agent systems without modifying underlying frameworks.",
+  "hf_url": "https://huggingface.co/papers/2602.03036",
+  "arxiv_url": "https://arxiv.org/abs/2602.03036",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03036",
+  "github_url": "https://github.com/KANABOON1/LatentMem",
+  "upvotes": 14,
+  "fetched_at": "2026-02-19T05:42:43.156527+00:00"
+}

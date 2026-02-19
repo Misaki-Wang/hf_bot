@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06176",
+  "title": "Large Language Model Reasoning Failures",
+  "authors": [
+    "Peiyang Song",
+    "Pengrui Han",
+    "Noah Goodman"
+  ],
+  "abstract": "Large language models exhibit significant reasoning failures that can be categorized into embodied and non-embodied types, with fundamental, application-specific, and robustness-related subtypes, requiring systematic analysis and mitigation strategies. Large Language Models (LLMs) have exhibited remarkable reasoning capabilities , achieving impressive results across a wide range of tasks. Despite these advances, significant reasoning failures persist, occurring even in seemingly simple scenarios. To systematically understand and address these shortcomings, we present the first comprehensive survey dedicated to reasoning failures in LLMs. We introduce a novel categorization framework that distinguishes reasoning into embodied and non-embodied types, with the latter further subdivided into informal (intuitive) and formal (logical) reasoning. In parallel, we classify reasoning failures along a complementary axis into three types: fundamental failures intrinsic to LLM architectures that broadly affect downstream tasks; application-specific limitations that manifest in particular domains; and robustness issues characterized by inconsistent performance across minor variations. For each reasoning failure, we provide a clear definition, analyze existing studies, explore root causes, and present mitigation strategies. By unifying fragmented research efforts, our survey provides a structured perspective on systemic weaknesses in LLM reasoning, offering valuable insights and guiding future research towards building stronger, more reliable, and robust reasoning capabilities . We additionally release a comprehensive collection of research works on LLM reasoning failures , as a GitHub repository at https://github.com/Peiyang-Song/Awesome-LLM-Reasoning-Failures, to provide an easy entry point to this area.",
+  "summary_en": "Large language models exhibit significant reasoning failures that can be categorized into embodied and non-embodied types, with fundamental, application-specific, and robustness-related subtypes, requiring systematic analysis and mitigation strategies.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLarge language models exhibit significant reasoning failures that can be categorized into embodied and non-embodied types, with fundamental, application-specific, and robustness-related subtypes, requiring systematic analysis and mitigation strategies.",
+  "hf_url": "https://huggingface.co/papers/2602.06176",
+  "arxiv_url": "https://arxiv.org/abs/2602.06176",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06176",
+  "github_url": "https://github.com/Peiyang-Song/Awesome-LLM-Reasoning-Failures",
+  "upvotes": 11,
+  "fetched_at": "2026-02-19T05:44:15.943778+00:00"
+}

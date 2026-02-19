@@ -1,0 +1,30 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.00359",
+  "title": "Position: Agentic Evolution is the Path to Evolving LLMs",
+  "authors": [
+    "Minhua Lin",
+    "Hanqing Lu",
+    "Zhan Shi",
+    "Bing He",
+    "Rui Mao",
+    "Zhiwei Zhang",
+    "Zongyu Wu",
+    "Xianfeng Tang",
+    "Hui Liu",
+    "Zhenwei Dai",
+    "Xiang Zhang",
+    "Suhang Wang",
+    "Benoit Dumoulin",
+    "Jian Pei"
+  ],
+  "abstract": "Large language models face limitations in adapting to changing real-world environments, necessitating a new approach called agentic evolution that treats deployment-time improvement as a goal-directed optimization process. As Large Language Models (LLMs) move from curated training sets into open-ended real-world environments, a fundamental limitation emerges: static training cannot keep pace with continual deployment environment change. Scaling training-time and inference-time compute improves static capability but does not close this train-deploy gap. We argue that addressing this limitation requires a new scaling axis-evolution. Existing deployment-time adaptation methods, whether parametric fine-tuning or heuristic memory accumulation , lack the strategic agency needed to diagnose failures and produce durable improvements. Our position is that agentic evolution represents the inevitable future of LLM adaptation, elevating evolution itself from a fixed pipeline to an autonomous evolver agent. We instantiate this vision in a general framework, A-Evolve , which treats deployment-time improvement as a deliberate, goal-directed optimization process over persistent system state. We further propose the evolution-scaling hypothesis : the capacity for adaptation scales with the compute allocated to evolution, positioning agentic evolution as a scalable path toward sustained, open-ended adaptation in the real world.",
+  "summary_en": "Large language models face limitations in adapting to changing real-world environments, necessitating a new approach called agentic evolution that treats deployment-time improvement as a goal-directed optimization process.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLarge language models face limitations in adapting to changing real-world environments, necessitating a new approach called agentic evolution that treats deployment-time improvement as a goal-directed optimization process.",
+  "hf_url": "https://huggingface.co/papers/2602.00359",
+  "arxiv_url": "https://arxiv.org/abs/2602.00359",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.00359",
+  "github_url": "https://github.com/ventr1c/agentic-evoluiton",
+  "upvotes": 6,
+  "fetched_at": "2026-02-19T05:38:36.503606+00:00"
+}

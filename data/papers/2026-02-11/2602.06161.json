@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.06161",
+  "title": "Stop the Flip-Flop: Context-Preserving Verification for Fast Revocable Diffusion Decoding",
+  "authors": [
+    "Yanzheng Xiang",
+    "Lan Wei",
+    "Yizhen Yao",
+    "Qinglin Zhu",
+    "Hanqi Yan",
+    "Chen Jin",
+    "Philip Alexander Teare",
+    "Dandan Zhang",
+    "Lin Gui",
+    "Amrutha Saseendran",
+    "Yulan He"
+  ],
+  "abstract": "COVER enables efficient parallel decoding for diffusion language models by implementing cache override verification that reduces unnecessary revisions and maintains output quality through stable drafting and attention view construction. Parallel diffusion decoding can accelerate diffusion language model inference by unmasking multiple tokens per step, but aggressive parallelism often harms quality. Revocable decoding mitigates this by rechecking earlier tokens, yet we observe that existing verification schemes frequently trigger flip-flop oscillations , where tokens are remasked and later restored unchanged. This behaviour slows inference in two ways: remasking verified positions weakens the conditioning context for parallel drafting, and repeated remask cycles consume the revision budget with little net progress. We propose COVER (Cache Override Verification for Efficient Revision), which performs leave-one-out verification and stable drafting within a single forward pass. COVER constructs two attention views via KV cache override : selected seeds are masked for verification, while their cached key value states are injected for all other queries to preserve contextual information, with a closed form diagonal correction preventing self leakage at the seed positions. COVER further prioritises seeds using a stability aware score that balances uncertainty, downstream influence, and cache drift , and it adapts the number of verified seeds per step. Across benchmarks, COVER markedly reduces unnecessary revisions and yields faster decoding while preserving output quality.",
+  "summary_en": "COVER enables efficient parallel decoding for diffusion language models by implementing cache override verification that reduces unnecessary revisions and maintains output quality through stable drafting and attention view construction.",
+  "summary_zh": "COVER 通过实现缓存覆盖验证，使扩散语言模型能够进行高效并行解码，减少不必要的修正，并通过稳定的起草与注意力视图构建保持输出质量。",
+  "hf_url": "https://huggingface.co/papers/2602.06161",
+  "arxiv_url": "https://arxiv.org/abs/2602.06161",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06161",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:20:47.889711+00:00"
+}

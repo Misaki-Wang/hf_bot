@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.07918",
+  "title": "CausalArmor: Efficient Indirect Prompt Injection Guardrails via Causal Attribution",
+  "authors": [
+    "Minbeom Kim",
+    "Mihir Parmar",
+    "Phillip Wallis",
+    "Lesly Miculicich",
+    "Kyomin Jung",
+    "Krishnamurthy Dj Dvijotham",
+    "Long T. Le",
+    "Tomas Pfister"
+  ],
+  "abstract": "CausalArmor is a selective defense framework for AI agents that uses causal ablation to detect and mitigate Indirect Prompt Injection attacks by identifying dominant untrusted segments and applying targeted sanitization. AI agents equipped with tool-calling capabilities are susceptible to Indirect Prompt Injection (IPI) attacks. In this attack scenario, malicious commands hidden within untrusted content trick the agent into performing unauthorized actions. Existing defenses can reduce attack success but often suffer from the over-defense dilemma: they deploy expensive, always-on sanitization regardless of actual threat, thereby degrading utility and latency even in benign scenarios. We revisit IPI through a causal ablation perspective: a successful injection manifests as a dominance shift where the user request no longer provides decisive support for the agent's privileged action, while a particular untrusted segment, such as a retrieved document or tool output, provides disproportionate attributable influence. Based on this signature, we propose CausalArmor, a selective defense framework that (i) computes lightweight, leave-one-out ablation -based attribution s at privileged decision points , and (ii) triggers targeted sanitization only when an untrusted segment dominates the user intent. Additionally, CausalArmor employs retroactive Chain-of-Thought masking to prevent the agent from acting on ``poisoned'' reasoning traces. We present a theoretical analysis showing that sanitization based on attribution margins conditionally yields an exponentially small upper bound on the probability of selecting malicious actions. Experiments on AgentDojo and DoomArena demonstrate that CausalArmor matches the security of aggressive defenses while improving explainability and preserving utility and latency of AI agents.",
+  "summary_en": "CausalArmor is a selective defense framework for AI agents that uses causal ablation to detect and mitigate Indirect Prompt Injection attacks by identifying dominant untrusted segments and applying targeted sanitization.",
+  "summary_zh": "CausalArmor是一种面向AI智能体的选择性防御框架，利用因果消融技术检测和缓解间接提示注入攻击，通过识别主导性不可信片段并实施定向净化。",
+  "hf_url": "https://huggingface.co/papers/2602.07918",
+  "arxiv_url": "https://arxiv.org/abs/2602.07918",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07918",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:21:12.327747+00:00"
+}

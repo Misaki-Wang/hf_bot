@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01590",
+  "title": "Wiki Live Challenge: Challenging Deep Research Agents with Expert-Level Wikipedia Articles",
+  "authors": [
+    "Shaohan Wang",
+    "Benfeng Xu",
+    "Licheng Zhang",
+    "Mingxuan Du",
+    "Chiwei Zhu",
+    "Xiaorui Wang",
+    "Zhendong Mao",
+    "Yongdong Zhang"
+  ],
+  "abstract": "Deep Research Agents demonstrate capabilities in autonomous information retrieval but show significant gaps when evaluated against expert-level Wikipedia articles using a new live benchmark and comprehensive evaluation framework.",
+  "summary_en": "Deep Research Agents demonstrate capabilities in autonomous information retrieval but show significant gaps when evaluated against expert-level Wikipedia articles using a new live benchmark and comprehensive evaluation framework.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nDeep Research Agents demonstrate capabilities in autonomous information retrieval but show significant gaps when evaluated against expert-level Wikipedia articles using a new live benchmark and comprehensive evaluation framework.",
+  "hf_url": "https://huggingface.co/papers/2602.01590",
+  "arxiv_url": "https://arxiv.org/abs/2602.01590",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01590",
+  "github_url": "https://github.com/WangShao2000/Wiki_Live_Challenge",
+  "upvotes": 33,
+  "fetched_at": "2026-02-19T05:37:01.181665+00:00"
+}

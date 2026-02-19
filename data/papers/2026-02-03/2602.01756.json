@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01756",
+  "title": "Mind-Brush: Integrating Agentic Cognitive Search and Reasoning into Image Generation",
+  "authors": [
+    "Jun He",
+    "Junyan Ye",
+    "Zilong Huang",
+    "Dongzhi Jiang",
+    "Chenjue Zhang",
+    "Leqi Zhu",
+    "Renrui Zhang",
+    "Xiang Zhang",
+    "Weijia Li"
+  ],
+  "abstract": "Mind-Brush presents a unified agentic framework for text-to-image generation that dynamically retrieves multimodal evidence and employs reasoning tools to improve understanding of implicit user intentions and complex knowledge reasoning.",
+  "summary_en": "Mind-Brush presents a unified agentic framework for text-to-image generation that dynamically retrieves multimodal evidence and employs reasoning tools to improve understanding of implicit user intentions and complex knowledge reasoning.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMind-Brush presents a unified agentic framework for text-to-image generation that dynamically retrieves multimodal evidence and employs reasoning tools to improve understanding of implicit user intentions and complex knowledge reasoning.",
+  "hf_url": "https://huggingface.co/papers/2602.01756",
+  "arxiv_url": "https://arxiv.org/abs/2602.01756",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01756",
+  "github_url": "https://github.com/PicoTrex/Mind-Brush",
+  "upvotes": 22,
+  "fetched_at": "2026-02-19T05:37:10.900845+00:00"
+}

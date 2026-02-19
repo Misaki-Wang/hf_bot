@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07120",
+  "title": "Anchored Decoding: Provably Reducing Copyright Risk for Any Language Model",
+  "authors": [
+    "Jacqueline He",
+    "Jonathan Hayase",
+    "Wen-tau Yih",
+    "Sewoong Oh",
+    "Luke Zettlemoyer",
+    "Pang Wei Koh"
+  ],
+  "abstract": "Anchor decoding suppresses verbatim copying in language models while maintaining fluency and factual accuracy through constrained generation that balances risk and utility. Modern language models (LMs) tend to memorize portions of their training data and emit verbatim spans. When the underlying sources are sensitive or copyright-protected, such reproduction raises issues of consent and compensation for creators and compliance risks for developers. We propose Anchored Decoding , a plug-and-play inference-time method for suppressing verbatim copying : it enables decoding from any risky LM trained on mixed-license data by keeping generation in bounded proximity to a permissively trained safe LM . Anchored Decoding adaptively allocates a user-chosen information budget over the generation trajectory and enforces per-step constraints that yield a sequence-level guarantee, enabling a tunable risk-utility trade-off. To make Anchored Decoding practically useful, we introduce a new permissively trained safe model ( TinyComma 1.8B ), as well as Anchored_{Byte} Decoding, a byte-level variant of our method that enables cross-vocabulary fusion via the ByteSampler framework (Hayase et al., 2025). We evaluate our methods across six model pairs on long-form evaluations of copyright risk and utility. Anchored and Anchored_{Byte} Decoding define a new Pareto frontier , preserving near-original fluency and factuality while eliminating up to 75% of the measurable copying gap (averaged over six copying metrics) between the risky baseline and a safe reference, at a modest inference overhead.",
+  "summary_en": "Anchor decoding suppresses verbatim copying in language models while maintaining fluency and factual accuracy through constrained generation that balances risk and utility.",
+  "summary_zh": "锚点解码通过平衡风险与效用的约束生成，在抑制语言模型逐字复制的同时保持流畅性和事实准确性。",
+  "hf_url": "https://huggingface.co/papers/2602.07120",
+  "arxiv_url": "https://arxiv.org/abs/2602.07120",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07120",
+  "github_url": "https://github.com/jacqueline-he/anchored-decoding",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:02:41.146969+00:00"
+}

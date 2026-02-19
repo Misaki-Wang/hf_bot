@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.00192",
+  "title": "AI-Generated Image Detectors Overrely on Global Artifacts: Evidence from Inpainting Exchange",
+  "authors": [
+    "Elif Nebioglu",
+    "Emirhan Bilgiç",
+    "Adrian Popescu"
+  ],
+  "abstract": "VAE-based inpainting creates spectral shifts that fool detection systems, which can be mitigated through Inpainting Exchange to improve content-aware detection performance. Modern deep learning-based inpainting enables realistic local image manipulation, raising critical challenges for reliable detection. However, we observe that current detectors primarily rely on global artifacts that appear as inpainting side effects, rather than on locally synthesized content. We show that this behavior occurs because VAE-based reconstruction induces a subtle but pervasive spectral shift across the entire image, including unedited regions. To isolate this effect, we introduce Inpainting Exchange (INP-X), an operation that restores original pixels outside the edited region while preserving all synthesized content. We create a 90K test dataset including real, inpainted, and exchanged images to evaluate this phenomenon. Under this intervention, pretrained state-of-the-art detectors, including commercial ones, exhibit a dramatic drop in accuracy (e.g., from 91\\% to 55\\%), frequently approaching chance level. We provide a theoretical analysis linking this behavior to high-frequency attenuation caused by VAE information bottlenecks . Our findings highlight the need for content-aware detection . Indeed, training on our dataset yields better generalization and localization than standard inpainting . Our dataset and code are publicly available at https://github.com/emirhanbilgic/INP-X.",
+  "summary_en": "VAE-based inpainting creates spectral shifts that fool detection systems, which can be mitigated through Inpainting Exchange to improve content-aware detection performance.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nVAE-based inpainting creates spectral shifts that fool detection systems, which can be mitigated through Inpainting Exchange to improve content-aware detection performance.",
+  "hf_url": "https://huggingface.co/papers/2602.00192",
+  "arxiv_url": "https://arxiv.org/abs/2602.00192",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.00192",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:36:24.323074+00:00"
+}

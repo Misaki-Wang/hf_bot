@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.07839",
+  "title": "TodoEvolve: Learning to Architect Agent Planning Systems",
+  "authors": [
+    "Jiaxi Liu",
+    "Yanzuo Jiang",
+    "Guibin Zhang",
+    "Zihan Zhang",
+    "Heng Chang",
+    "Zhenfei Yin",
+    "Qibing Ren",
+    "Junchi Yan"
+  ],
+  "abstract": "TodoEvolve enables autonomous synthesis and revision of task-specific planning architectures through a modular design space and multi-objective reinforcement learning optimization. Planning has become a central capability for contemporary agent systems in navigating complex, long-horizon tasks, yet existing approaches predominantly rely on fixed, hand-crafted planning structures that lack the flexibility to adapt to the structural diversity of open-ended problems. To address this limitation, we introduce TodoEvolve, a meta-planning paradigm that autonomously synthesizes and dynamically revises task-specific planning architectures. Specifically, we first construct PlanFactory , a modular design space that standardizes diverse planning paradigms within a unified codebase encompassing topology, initialization, adaptation, and navigation, thereby providing a common interface for heterogeneous planning patterns. Leveraging PlanFactory , we collect high-quality planning trajectories and train Todo-14B via Impedance-Guided Preference Optimization ( IGPO ), a multi-objective reinforcement learning objective that encourages the generation of planning systems that are performant, stable, and token-efficient across arbitrary tasks and agent backbones. Empirical evaluations on five agentic benchmarks demonstrate that TodoEvolve consistently surpasses carefully engineered planning modules while maintaining economical API costs and runtime overhead.",
+  "summary_en": "TodoEvolve enables autonomous synthesis and revision of task-specific planning architectures through a modular design space and multi-objective reinforcement learning optimization.",
+  "summary_zh": "TodoEvolve通过模块化设计空间与多目标强化学习优化，实现任务特定规划架构的自主合成与修订。",
+  "hf_url": "https://huggingface.co/papers/2602.07839",
+  "arxiv_url": "https://arxiv.org/abs/2602.07839",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07839",
+  "github_url": "https://github.com/EcthelionLiu/TodoEvolve",
+  "upvotes": 6,
+  "fetched_at": "2026-02-19T06:21:09.846009+00:00"
+}

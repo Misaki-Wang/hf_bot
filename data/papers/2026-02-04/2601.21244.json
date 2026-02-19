@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2601.21244",
+  "title": "Less Noise, More Voice: Reinforcement Learning for Reasoning via Instruction Purification",
+  "authors": [
+    "Yiju Guo",
+    "Tianyi Hu",
+    "Zexu Sun",
+    "Yankai Lin"
+  ],
+  "abstract": "LENS framework improves reinforcement learning with verifiable rewards by identifying and removing interference tokens to enhance exploration efficiency and training stability. Reinforcement Learning with Verifiable Rewards (RLVR) has advanced LLM reasoning, but remains constrained by inefficient exploration under limited rollout budget s, leading to low sampling success and unstable training in complex tasks. We find that many exploration failures arise not from problem difficulty, but from a small number of prompt tokens that introduce interference. Building on this insight, we propose the Less Noise Sampling Framework ( LENS ), which first prompts by identifying and removing interference tokens . then transfers successful rollouts from the purification process to supervise policy optimization on the original noisy prompts, enabling the model to learn to ignore interference in the real-world, noisy prompting settings. Experimental results show that LENS significantly outperforms GRPO , delivering higher performance and faster convergence, with a 3.88% average gain and over 1.6times speedup. Our work highlights the critical role of pruning interference tokens in improving rollout efficiency, offering a new perspective for RLVR research.",
+  "summary_en": "LENS framework improves reinforcement learning with verifiable rewards by identifying and removing interference tokens to enhance exploration efficiency and training stability.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLENS framework improves reinforcement learning with verifiable rewards by identifying and removing interference tokens to enhance exploration efficiency and training stability.",
+  "hf_url": "https://huggingface.co/papers/2601.21244",
+  "arxiv_url": "https://arxiv.org/abs/2601.21244",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21244",
+  "github_url": "",
+  "upvotes": 12,
+  "fetched_at": "2026-02-19T05:38:34.854530+00:00"
+}

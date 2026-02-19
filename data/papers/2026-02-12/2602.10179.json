@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10179",
+  "title": "When the Prompt Becomes Visual: Vision-Centric Jailbreak Attacks for Large Image Editing Models",
+  "authors": [
+    "Jiacheng Hou",
+    "Yining Sun",
+    "Ruochong Jin",
+    "Haochen Han",
+    "Fangming Liu",
+    "Wai Kin Victor Chan",
+    "Alex Jinpeng Wang"
+  ],
+  "abstract": "Visual-to-visual jailbreak attacks compromise image editing models through malicious visual inputs, necessitating new safety benchmarks and defense mechanisms. Recent advances in large image editing models have shifted the paradigm from text-driven instructions to vision-prompt editing, where user intent is inferred directly from visual inputs such as marks, arrows, and visual-text prompts. While this paradigm greatly expands usability, it also introduces a critical and underexplored safety risk: the attack surface itself becomes visual. In this work, we propose Vision-Centric Jailbreak Attack (VJA), the first visual-to-visual jailbreak attack that conveys malicious instructions purely through visual inputs. To systematically study this emerging threat, we introduce IESBench , a safety-oriented benchmark for image editing models . Extensive experiments on IESBench demonstrate that VJA effectively compromises state-of-the-art commercial models, achieving attack success rate s of up to 80.9% on Nano Banana Pro and 70.1% on GPT-Image-1.5. To mitigate this vulnerability, we propose a training-free defense based on introspective multimodal reasoning , which substantially improves the safety of poorly aligned models to a level comparable with commercial systems, without auxiliary guard models and with negligible computational overhead. Our findings expose new vulnerabilities, provide both a benchmark and practical defense to advance safe and trustworthy modern image editing systems. Warning: This paper contains offensive images created by large image editing models .",
+  "summary_en": "Visual-to-visual jailbreak attacks compromise image editing models through malicious visual inputs, necessitating new safety benchmarks and defense mechanisms.",
+  "summary_zh": "视觉到视觉越狱攻击通过恶意视觉输入破坏图像编辑模型，亟需新的安全基准与防御机制。",
+  "hf_url": "https://huggingface.co/papers/2602.10179",
+  "arxiv_url": "https://arxiv.org/abs/2602.10179",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10179",
+  "github_url": "",
+  "upvotes": 6,
+  "fetched_at": "2026-02-19T06:31:27.515195+00:00"
+}

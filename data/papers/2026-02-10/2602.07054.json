@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07054",
+  "title": "AVERE: Improving Audiovisual Emotion Reasoning with Preference Optimization",
+  "authors": [
+    "Ashutosh Chaubey",
+    "Jiacheng Pang",
+    "Maksim Siniukov",
+    "Mohammad Soleymani"
+  ],
+  "abstract": "A benchmark and optimization technique are presented to improve multimodal large language models' emotion understanding by addressing spurious associations and hallucinations in audiovisual cues. Emotion understanding is essential for building socially intelligent agents. Although recent multimodal large language models have shown strong performance on this task, two key challenges remain - spurious associations between emotions and irrelevant audiovisual cues, and hallucinations of audiovisual cues driven by text priors in the language model backbone. To quantify and understand these issues, we introduce EmoReAlM, a benchmark designed to evaluate MLLMs for cue-emotion associations , hallucinations and modality agreement . We then propose AVEm-DPO , a preference optimization technique that aligns model responses with both audiovisual inputs and emotion-centric queries . Specifically, we construct preferences over responses exhibiting spurious associations or hallucinations , and audiovisual input pairs guided by textual prompts. We also include a regularization term that penalizes reliance on text priors , thereby mitigating modality-specific cue hallucinations . Experimental results on DFEW, RAVDESS and EMER demonstrate that our method significantly improves the performance of the reference baseline models with 6-19% of relative performance gains in zero-shot settings. By providing both a rigorous benchmark and a robust optimization framework, this work enables principled evaluation and improvement of MLLMs for emotion understanding and social AI. Code, models and benchmark will be released at https://avere-iclr.github.io.",
+  "summary_en": "A benchmark and optimization technique are presented to improve multimodal large language models' emotion understanding by addressing spurious associations and hallucinations in audiovisual cues.",
+  "summary_zh": "提出了一种基准测试与优化技术，通过解决视听线索中的虚假关联和幻觉问题，提升多模态大语言模型的情感理解能力。",
+  "hf_url": "https://huggingface.co/papers/2602.07054",
+  "arxiv_url": "https://arxiv.org/abs/2602.07054",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07054",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:02:27.816090+00:00"
+}

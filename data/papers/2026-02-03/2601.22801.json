@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2601.22801",
+  "title": "Clipping-Free Policy Optimization for Large Language Models",
+  "authors": [
+    "Ömer Veysel Çağatan",
+    "Barış Akgün",
+    "Gözde Gül Şahin",
+    "Xuandong Zhao"
+  ],
+  "abstract": "Clipping-Free Policy Optimization replaces heuristic clipping with convex quadratic penalty to stabilize reinforcement learning training for large language models without performance loss. Reinforcement learning has become central to post-training large language models, yet dominant algorithms rely on clipping mechanisms that introduce optimization issues at scale, including zero-gradient regions, reward hacking , and training instability . We propose Clipping-Free Policy Optimization (CFPO), which replaces heuristic clipping with a convex quadratic penalty derived from Total Variation divergence constraints, yielding an everywhere-differentiable objective that enforces stable policy updates without hard boundaries. We evaluate CFPO across both reasoning and alignment settings. In reasoning, CFPO matches clipping-based methods on downstream benchmarks while extending the stable training regime. In alignment, CFPO mitigates verbosity exploitation and reduces capability degradation, while achieving competitive instruction-following performance. CFPO requires only a one-line code change and no additional hyperparameters. Our results suggest that CFPO is a promising drop-in alternative to clipping-based methods for LLM post-training.",
+  "summary_en": "Clipping-Free Policy Optimization replaces heuristic clipping with convex quadratic penalty to stabilize reinforcement learning training for large language models without performance loss.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nClipping-Free Policy Optimization replaces heuristic clipping with convex quadratic penalty to stabilize reinforcement learning training for large language models without performance loss.",
+  "hf_url": "https://huggingface.co/papers/2601.22801",
+  "arxiv_url": "https://arxiv.org/abs/2601.22801",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22801",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:36:16.755891+00:00"
+}

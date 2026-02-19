@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10231",
+  "title": "Blockwise Advantage Estimation for Multi-Objective RL with Verifiable Rewards",
+  "authors": [
+    "Kirill Pavlenko",
+    "Alexander Golubev",
+    "Simon Karasik",
+    "Boris Yangel"
+  ],
+  "abstract": "Blockwise Advantage Estimation addresses reward interference in structured generations by assigning separate advantages to different text blocks, using outcome-conditioned baselines to avoid expensive nested rollouts. Group Relative Policy Optimization (GRPO) assigns a single scalar advantage to all tokens in a completion. For structured generations with explicit segments and objectives, this couples unrelated reward signals across segments, leading to objective interference and misattributed credit. We propose Blockwise Advantage Estimation , a family of GRPO-compatible methods that assigns each objective its own advantage and applies it only to the tokens in the corresponding text block, reducing reliance on hand-designed scalar rewards and scaling naturally to additional objectives. A key challenge is estimating advantages for later blocks whose rewards are conditioned on sampled prefixes; standard unbiased approaches require expensive nested rollouts from intermediate states. Concretely, we introduce an Outcome-Conditioned Baseline that approximates intermediate state values using only within-group statistics by stratifying samples according to a prefix-derived intermediate outcome. On math tasks with uncertainty estimation, our method mitigates reward interference , is competitive with a state-of-the-art reward-designed approach, and preserves test-time gains from confidence-weighted ensembling . More broadly, it provides a modular recipe for optimizing sequential objectives in structured generations without additional rollouts.",
+  "summary_en": "Blockwise Advantage Estimation addresses reward interference in structured generations by assigning separate advantages to different text blocks, using outcome-conditioned baselines to avoid expensive nested rollouts.",
+  "summary_zh": "块级优势估计通过为不同文本块分配独立优势，并使用结果条件基线来避免昂贵的嵌套rollout，从而解决结构化生成中的奖励干扰问题。",
+  "hf_url": "https://huggingface.co/papers/2602.10231",
+  "arxiv_url": "https://arxiv.org/abs/2602.10231",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10231",
+  "github_url": "",
+  "upvotes": 12,
+  "fetched_at": "2026-02-19T06:31:34.375100+00:00"
+}

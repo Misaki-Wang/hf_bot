@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2601.21123",
+  "title": "CUA-Skill: Develop Skills for Computer Using Agent",
+  "authors": [
+    "Tianyi Chen",
+    "Yinheng Li",
+    "Michael Solodko",
+    "Sen Wang",
+    "Nan Jiang",
+    "Tingyuan Cui",
+    "Junheng Hao",
+    "Jongwoo Ko",
+    "Sara Abdali",
+    "Suzhen Zheng",
+    "Leon Xu",
+    "Hao Fan",
+    "Pashmina Cameron",
+    "Justin Wagle",
+    "Kazuhito Koishida"
+  ],
+  "abstract": "CUA-Skill introduces a large-scale library of engineered computer-use skills that enhance agent performance and efficiency on Windows-based tasks. Computer-Using Agents (CUAs) aim to autonomously operate computer systems to complete real-world tasks. However, existing agentic systems remain difficult to scale and lag behind human performance. A key limitation is the absence of reusable and structured skill abstractions that capture how humans interact with graphical user interfaces and how to leverage these skills. We introduce CUA-Skill, a computer-using agentic skill base that encodes human computer-use knowledge as skills coupled with parameterized execution and composition graphs . CUA-Skill is a large-scale library of carefully engineered skills spanning common Windows applications, serving as a practical infrastructure and tool substrate for scalable, reliable agent development. Built upon this skill base , we construct CUA-Skill Agent, an end-to-end computer-using agent that supports dynamic skill retrieval , argument instantiation , and memory-aware failure recovery . Our results demonstrate that CUA-Skill substantially improves execution success rates and robustness on challenging end-to-end agent benchmarks, establishing a strong foundation for future computer-using agent development. On WindowsAgentArena , CUA-Skill Agent achieves state-of-the-art 57.5% (best of three) successful rate while being significantly more efficient than prior and concurrent approaches. The project page is available at https://microsoft.github.io/cua_skill/.",
+  "summary_en": "CUA-Skill introduces a large-scale library of engineered computer-use skills that enhance agent performance and efficiency on Windows-based tasks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nCUA-Skill introduces a large-scale library of engineered computer-use skills that enhance agent performance and efficiency on Windows-based tasks.",
+  "hf_url": "https://huggingface.co/papers/2601.21123",
+  "arxiv_url": "https://arxiv.org/abs/2601.21123",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21123",
+  "github_url": "https://github.com/microsoft/cua_skill",
+  "upvotes": 13,
+  "fetched_at": "2026-02-19T05:36:00.778763+00:00"
+}

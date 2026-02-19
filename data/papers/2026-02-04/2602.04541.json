@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.04541",
+  "title": "LycheeDecode: Accelerating Long-Context LLM Inference via Hybrid-Head Sparse Decoding",
+  "authors": [
+    "Gang Lin",
+    "Dongfang Li",
+    "Zhuoen Chen",
+    "Yukun Shi",
+    "Xuhui Chen",
+    "Baotian Hu",
+    "Min Zhang"
+  ],
+  "abstract": "LycheeDecode improves long-context LLM decoding efficiency through a fine-grained hybrid-head attention mechanism that dynamically identifies crucial tokens while maintaining attention head diversity.",
+  "summary_en": "LycheeDecode improves long-context LLM decoding efficiency through a fine-grained hybrid-head attention mechanism that dynamically identifies crucial tokens while maintaining attention head diversity.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLycheeDecode improves long-context LLM decoding efficiency through a fine-grained hybrid-head attention mechanism that dynamically identifies crucial tokens while maintaining attention head diversity.",
+  "hf_url": "https://huggingface.co/papers/2602.04541",
+  "arxiv_url": "https://arxiv.org/abs/2602.04541",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04541",
+  "github_url": "",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T05:27:11.938409+00:00"
+}

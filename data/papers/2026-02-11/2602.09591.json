@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.09591",
+  "title": "On the Optimal Reasoning Length for RL-Trained Language Models",
+  "authors": [
+    "Daisuke Nohara",
+    "Taishi Nakamura",
+    "Rio Yokota"
+  ],
+  "abstract": "Length control methods in reinforcement learning-trained language models affect reasoning performance and computational efficiency, with optimal output lengths balancing these factors. Reinforcement learning substantially improves reasoning in large language models, but it also tends to lengthen chain of thought outputs and increase computational cost during both training and inference. Though length control methods have been proposed, it remains unclear what the optimal output length is for balancing efficiency and performance . In this work, we compare several length control methods on two models, Qwen3-1.7B Base and DeepSeek-R1-Distill-Qwen-1.5B. Our results indicate that length penalties may hinder reasoning acquisition , while properly tuned length control can improve efficiency for models with strong prior reasoning. By extending prior work to RL trained policies, we identify two failure modes, 1) long outputs increase dispersion, and 2) short outputs lead to under-thinking.",
+  "summary_en": "Length control methods in reinforcement learning-trained language models affect reasoning performance and computational efficiency, with optimal output lengths balancing these factors.",
+  "summary_zh": "强化学习训练的语言模型中的长度控制方法会影响推理性能和计算效率，最优输出长度能够平衡这些因素。",
+  "hf_url": "https://huggingface.co/papers/2602.09591",
+  "arxiv_url": "https://arxiv.org/abs/2602.09591",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09591",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:21:53.570598+00:00"
+}

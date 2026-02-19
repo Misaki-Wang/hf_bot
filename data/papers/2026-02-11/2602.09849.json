@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.09849",
+  "title": "BagelVLA: Enhancing Long-Horizon Manipulation via Interleaved Vision-Language-Action Generation",
+  "authors": [
+    "Yucheng Hu",
+    "Jianke Zhang",
+    "Yuanfei Luo",
+    "Yanjiang Guo",
+    "Xiaoyu Chen",
+    "Xinshu Sun",
+    "Kun Feng",
+    "Qingzhou Lu",
+    "Sheng Chen",
+    "Yangang Zhang",
+    "Wei Li",
+    "Jianyu Chen"
+  ],
+  "abstract": "BagelVLA is a unified Vision-Language-Action model that integrates linguistic planning, visual forecasting, and action generation through residual flow guidance for improved manipulation tasks. Equipping embodied agents with the ability to reason about tasks, foresee physical outcomes, and generate precise actions is essential for general-purpose manipulation. While recent Vision-Language-Action (VLA) models have leveraged pre-trained foundation models, they typically focus on either linguistic planning or visual forecasting in isolation. These methods rarely integrate both capabilities simultaneously to guide action generation , leading to suboptimal performance in complex, long-horizon manipulation tasks. To bridge this gap, we propose BagelVLA, a unified model that integrates linguistic planning , visual forecasting , and action generation within a single framework. Initialized from a pretrained unified understanding and generative model, BagelVLA is trained to interleave textual reasoning and visual prediction directly into the action execution loop. To efficiently couple these modalities, we introduce Residual Flow Guidance (RFG), which initializes from current observation and leverages single-step denoising to extract predictive visual features, guiding action generation with minimal latency. Extensive experiments demonstrate that BagelVLA outperforms existing baselines by a significant margin on multiple simulated and real-world benchmarks, particularly in tasks requiring multi-stage reasoning .",
+  "summary_en": "BagelVLA is a unified Vision-Language-Action model that integrates linguistic planning, visual forecasting, and action generation through residual flow guidance for improved manipulation tasks.",
+  "summary_zh": "BagelVLA是一种统一的Vision-Language-Action模型，通过残差流引导整合语言规划、视觉预测和动作生成，以改进操作任务。",
+  "hf_url": "https://huggingface.co/papers/2602.09849",
+  "arxiv_url": "https://arxiv.org/abs/2602.09849",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09849",
+  "github_url": "",
+  "upvotes": 16,
+  "fetched_at": "2026-02-19T06:22:00.781887+00:00"
+}

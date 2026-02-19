@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.05085",
+  "title": "Locas: Your Models are Principled Initializers of Locally-Supported Parametric Memories",
+  "authors": [
+    "Sidi Lu",
+    "Zhenwen Liang",
+    "Dongyang Ma",
+    "Yan Wang",
+    "Haitao Mi",
+    "Dong Yu"
+  ],
+  "abstract": "Locas, a locally-supported parametric memory mechanism, enables flexible integration with transformer models for continual learning while minimizing catastrophic forgetting through principled initialization techniques. In this paper, we aim to bridge test-time-training with a new type of parametric memory that can be flexibly offloaded from or merged into model parameters. We present Locas, a Locally-Supported parametric memory that shares the design of FFN blocks in modern transformer s, allowing it to be flexibly permanentized into the model parameters while supporting efficient continual learning . We discuss two major variants of Locas: one with a conventional two-layer MLP design that has a clearer theoretical guarantee; the other one shares the same GLU-FFN structure with SOTA LLMs, and can be easily attached to existing models for both parameter-efficient and computation-efficient continual learning . Crucially, we show that proper initialization of such low-rank sideway-FFN-style memories -- performed in a principled way by reusing model parameters, activations and/or gradients -- is essential for fast convergence, improved generalization, and catastrophic forgetting prevention. We validate the proposed memory mechanism on the PG-19 whole-book language modeling and LoCoMo long-context dialogue question answering tasks. With only 0.02\\% additional parameters in the lowest case, Locas-GLU is capable of storing the information from past context while maintaining a much smaller context window. In addition, we also test the model's general capability loss after memorizing the whole book with Locas, through comparative MMLU evaluation . Results show the promising ability of Locas to permanentize past context into parametric knowledge with minimized catastrophic forgetting of the model's existing internal knowledge.",
+  "summary_en": "Locas, a locally-supported parametric memory mechanism, enables flexible integration with transformer models for continual learning while minimizing catastrophic forgetting through principled initialization techniques.",
+  "summary_zh": "Locas是一种局部支持的参数化记忆机制，可与Transformer模型灵活集成以进行持续学习，同时通过原则性初始化技术最小化灾难性遗忘。",
+  "hf_url": "https://huggingface.co/papers/2602.05085",
+  "arxiv_url": "https://arxiv.org/abs/2602.05085",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05085",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T06:20:38.575779+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.04605",
+  "title": "RexBERT: Context Specialized Bidirectional Encoders for E-commerce",
+  "authors": [
+    "Rahul Bajaj",
+    "Anuj Garg"
+  ],
+  "abstract": "RexBERT, a family of BERT-style encoders designed for e-commerce semantics, achieves superior performance on domain-specific tasks through specialized pretraining and high-quality in-domain data. Encoder-only transformers remain indispensable in retrieval, classification, and ranking systems where latency, stability, and cost are paramount. Most general purpose encoders, however, are trained on generic corpora with limited coverage of specialized domains. We introduce RexBERT, a family of BERT-style encoders designed specifically for e-commerce semantics . We make three contributions. First, we release Ecom-niverse , a 350 billion token corpus curated from diverse retail and shopping sources. We describe a modular pipeline that isolates and extracts e-commerce content from FineFineWeb and other open web resources, and characterize the resulting domain distribution. Second, we present a reproducible pretraining recipe building on ModernBERT 's architectural advances. The recipe consists of three phases: general pre-training, context extension , and annealed domain specialization . Third, we train RexBERT models ranging from 17M to 400M parameters and evaluate them on token classification , semantic similarity , and general natural language understanding tasks using e-commerce datasets. Despite having 2-3x fewer parameters, RexBERT outperforms larger general-purpose encoders and matches or surpasses modern long-context models on domain-specific benchmarks. Our results demonstrate that high quality in-domain data combined with a principled training approach provides a stronger foundation for e-commerce applications than indiscriminate scaling alone.",
+  "summary_en": "RexBERT, a family of BERT-style encoders designed for e-commerce semantics, achieves superior performance on domain-specific tasks through specialized pretraining and high-quality in-domain data.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nRexBERT, a family of BERT-style encoders designed for e-commerce semantics, achieves superior performance on domain-specific tasks through specialized pretraining and high-quality in-domain data.",
+  "hf_url": "https://huggingface.co/papers/2602.04605",
+  "arxiv_url": "https://arxiv.org/abs/2602.04605",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04605",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:27:45.769155+00:00"
+}

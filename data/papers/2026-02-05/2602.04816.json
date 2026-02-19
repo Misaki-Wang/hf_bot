@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.04816",
+  "title": "Horizon-LM: A RAM-Centric Architecture for LLM Training",
+  "authors": [
+    "Zhengqing Yuan",
+    "Lichao Sun",
+    "Yanfang",
+    "Ye"
+  ],
+  "abstract": "Horizon-LM enables large-model training on single GPUs by redefining CPU-GPU roles and eliminating persistent GPU memory usage through explicit recomputation and pipelined execution. The rapid growth of large language models (LLMs) has outpaced the evolution of single-GPU hardware, making model scale increasingly constrained by memory capacity rather than computation. While modern training systems extend GPU memory through distributed parallelism and offloading across CPU and storage tiers, they fundamentally retain a GPU-centric execution paradigm in which GPUs host persistent model replicas and full autograd graphs . As a result, scaling large models remains tightly coupled to multi-GPU clusters, complex distributed runtimes, and unpredictable host memory consumption, creating substantial barriers for node-scale post-training workloads such as instruction tuning, alignment, and domain adaptation. We present Horizon-LM, a memory-centric training system that redefines the roles of CPU and GPU for large-model optimization. Horizon-LM treats host memory as the authoritative parameter store and uses GPUs solely as transient compute engines through a CPU-master , GPU-template execution model. By eliminating persistent GPU-resident modules and autograd graphs , employing explicit recomputation with manual gradient propagation , and introducing a pipelined double-buffered execution engine, Horizon-LM decouples model scale from GPU count and bounds memory usage to the theoretical parameter footprint. On a single H200 GPU with 1.5\\,TB host RAM, Horizon-LM reliably trains models up to 120B parameters. On a standard single A100 machine, Horizon-LM achieves up to 12.2times higher training throughput than DeepSpeed ZeRO-3 with CPU offloading while preserving numerical correctness. Across platforms and scales, Horizon-LM sustains high device utilization and predictable memory growth, demonstrating that host memory, not GPU memory, defines the true feasibility boundary for node-scale large-model training.",
+  "summary_en": "Horizon-LM enables large-model training on single GPUs by redefining CPU-GPU roles and eliminating persistent GPU memory usage through explicit recomputation and pipelined execution.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nHorizon-LM enables large-model training on single GPUs by redefining CPU-GPU roles and eliminating persistent GPU memory usage through explicit recomputation and pipelined execution.",
+  "hf_url": "https://huggingface.co/papers/2602.04816",
+  "arxiv_url": "https://arxiv.org/abs/2602.04816",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04816",
+  "github_url": "https://github.com/DLYuanGod/Horizon-LM",
+  "upvotes": 17,
+  "fetched_at": "2026-02-19T05:42:15.312300+00:00"
+}

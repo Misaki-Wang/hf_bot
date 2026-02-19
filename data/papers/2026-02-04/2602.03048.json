@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03048",
+  "title": "CoBA-RL: Capability-Oriented Budget Allocation for Reinforcement Learning in LLMs",
+  "authors": [
+    "Zhiyuan Yao",
+    "Yi-Kai Zhang",
+    "Yuxin Chen",
+    "Yueqing Sun",
+    "Zishan Xu",
+    "Yu Yang",
+    "Tianhao Hu",
+    "Qi Gu",
+    "Hui Su",
+    "Xunliang Cai"
+  ],
+  "abstract": "CoBA-RL adapts rollout budget allocation for LLM training by evaluating sample training value and optimizing resource distribution through a capability-oriented value function and greedy strategy.",
+  "summary_en": "CoBA-RL adapts rollout budget allocation for LLM training by evaluating sample training value and optimizing resource distribution through a capability-oriented value function and greedy strategy.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nCoBA-RL adapts rollout budget allocation for LLM training by evaluating sample training value and optimizing resource distribution through a capability-oriented value function and greedy strategy.",
+  "hf_url": "https://huggingface.co/papers/2602.03048",
+  "arxiv_url": "https://arxiv.org/abs/2602.03048",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03048",
+  "github_url": "https://github.com/Within-yao/CoBA-RL",
+  "upvotes": 33,
+  "fetched_at": "2026-02-19T05:26:53.986537+00:00"
+}

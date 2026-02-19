@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.07755",
+  "title": "Learning to Continually Learn via Meta-learning Agentic Memory Designs",
+  "authors": [
+    "Yiming Xiong",
+    "Shengran Hu",
+    "Jeff Clune"
+  ],
+  "abstract": "ALMA is a framework that uses meta-learning to automatically discover memory designs for agentic systems, enabling continual learning without human engineering across diverse domains. The statelessness of foundation models bottlenecks agentic systems ' ability to continually learn, a core capability for long-horizon reasoning and adaptation. To address this limitation, agentic systems commonly incorporate memory modules to retain and reuse past experience, aiming for continual learning during test time. However, most existing memory designs are human-crafted and fixed, which limits their ability to adapt to the diversity and non-stationarity of real-world tasks. In this paper, we introduce ALMA (Automated meta-Learning of Memory designs for Agentic systems ), a framework that meta-learns memory designs to replace hand-engineered memory designs, therefore minimizing human effort and enabling agentic systems to be continual learners across diverse domains. Our approach employs a Meta Agent that searches over memory designs expressed as executable code in an open-ended manner, theoretically allowing the discovery of arbitrary memory designs, including database schemas as well as their retrieval and update mechanisms . Extensive experiments across four sequential decision-making domains demonstrate that the learned memory designs enable more effective and efficient learning from experience than state-of-the-art human-crafted memory designs on all benchmarks. When developed and deployed safely, ALMA represents a step toward self-improving AI systems that learn to be adaptive, continual learners.",
+  "summary_en": "ALMA is a framework that uses meta-learning to automatically discover memory designs for agentic systems, enabling continual learning without human engineering across diverse domains.",
+  "summary_zh": "ALMA是一个利用元学习自动发现智能体系统记忆设计的框架，能够在不同领域实现无需人工工程的持续学习。",
+  "hf_url": "https://huggingface.co/papers/2602.07755",
+  "arxiv_url": "https://arxiv.org/abs/2602.07755",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07755",
+  "github_url": "https://github.com/zksha/alma",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T06:21:07.803056+00:00"
+}

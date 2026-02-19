@@ -1,0 +1,30 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03183",
+  "title": "Privasis: Synthesizing the Largest \"Public\" Private Dataset from Scratch",
+  "authors": [
+    "Hyunwoo Kim",
+    "Niloofar Mireshghallah",
+    "Michael Duan",
+    "Rui Xin",
+    "Shuyue Stella Li",
+    "Jaehun Jung",
+    "David Acuna",
+    "Qi Pang",
+    "Hanshen Xiao",
+    "G. Edward Suh",
+    "Sewoong Oh",
+    "Yulia Tsvetkov",
+    "Pang Wei Koh",
+    "Yejin Choi"
+  ],
+  "abstract": "A large-scale synthetic dataset called Privasis is introduced to address privacy concerns in AI research, enabling more effective text sanitization with compact models that outperform existing large language models. Research involving privacy-sensitive data has always been constrained by data scarcity, standing in sharp contrast to other areas that have benefited from data scaling. This challenge is becoming increasingly urgent as modern AI agents--such as OpenClaw and Gemini Agent--are granted persistent access to highly sensitive personal information. To tackle this longstanding bottleneck and the rising risks, we present Privasis (i.e., privacy oasis), the first million-scale fully synthetic dataset entirely built from scratch--an expansive reservoir of texts with rich and diverse private information--designed to broaden and accelerate research in areas where processing sensitive social data is inevitable. Compared to existing datasets, Privasis, comprising 1.4 million records, offers orders-of-magnitude larger scale with quality, and far greater diversity across various document types, including medical history, legal documents, financial records, calendars, and text messages with a total of 55.1 million annotated attributes such as ethnicity, date of birth, workplace, etc. We leverage Privasis to construct a parallel corpus for text sanitization with our pipeline that decomposes texts and applies targeted sanitization. Our compact sanitization models (<=4B) trained on this dataset outperform state-of-the-art large language models , such as GPT-5 and Qwen-3 235B. We plan to release data, models, and code to accelerate future research on privacy-sensitive domains and agents.",
+  "summary_en": "A large-scale synthetic dataset called Privasis is introduced to address privacy concerns in AI research, enabling more effective text sanitization with compact models that outperform existing large language models.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA large-scale synthetic dataset called Privasis is introduced to address privacy concerns in AI research, enabling more effective text sanitization with compact models that outperform existing large language models.",
+  "hf_url": "https://huggingface.co/papers/2602.03183",
+  "arxiv_url": "https://arxiv.org/abs/2602.03183",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03183",
+  "github_url": "https://github.com/skywalker023/privasis",
+  "upvotes": 11,
+  "fetched_at": "2026-02-19T05:26:56.463611+00:00"
+}

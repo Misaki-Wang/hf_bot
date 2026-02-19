@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.01849",
+  "title": "Self-Rewarding Sequential Monte Carlo for Masked Diffusion Language Models",
+  "authors": [
+    "Ziwei Luo",
+    "Ziqi Jin",
+    "Lei Wang",
+    "Lidong Bing",
+    "Thomas B. Schön"
+  ],
+  "abstract": "Self-rewarding sequential Monte Carlo enables effective sampling of masked diffusion language models by using parallel diffusion processes and trajectory-level confidence signals to improve generation quality. This work presents self-rewarding sequential Monte Carlo (SMC), an inference-time scaling algorithm enabling effective sampling of masked diffusion language models (MDLMs). Our algorithm stems from the observation that most existing MDLMs rely on a confidence-based sampling strategy, where only tokens with the highest prediction confidence are preserved at each step. This restricts the generation to a noise-sensitive, greedy decoding paradigm, resulting in an inevitable collapse in the diversity of possible paths. We address this problem by launching multiple interacting diffusion processes in parallel, referred to as particles, for trajectory exploration. Importantly, we introduce the trajectory-level confidence as a self-rewarding signal for assigning particle importance weights. During sampling, particles are iteratively weighted and resampled to systematically steer generation towards globally confident, high-quality samples. Our self-rewarding SMC is verified on various masked diffusion language models and benchmarks, achieving significant improvement without extra training or reward guidance, while effectively converting parallel inference capacity into improved sampling quality. Our code is available at https://github.com/Algolzw/self-rewarding-smc.",
+  "summary_en": "Self-rewarding sequential Monte Carlo enables effective sampling of masked diffusion language models by using parallel diffusion processes and trajectory-level confidence signals to improve generation quality.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSelf-rewarding sequential Monte Carlo enables effective sampling of masked diffusion language models by using parallel diffusion processes and trajectory-level confidence signals to improve generation quality.",
+  "hf_url": "https://huggingface.co/papers/2602.01849",
+  "arxiv_url": "https://arxiv.org/abs/2602.01849",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01849",
+  "github_url": "https://github.com/Algolzw/self-rewarding-smc",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:27:18.680734+00:00"
+}

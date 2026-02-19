@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.08392",
+  "title": "BiManiBench: A Hierarchical Benchmark for Evaluating Bimanual Coordination of Multimodal Large Language Models",
+  "authors": [
+    "Xin Wu",
+    "Zhixuan Liang",
+    "Yue Ma",
+    "Mengkang Hu",
+    "Zhiyuan Qin",
+    "Xiu Li"
+  ],
+  "abstract": "BiManiBench evaluates multimodal large language models on bimanual robotic tasks, revealing limitations in spatial grounding and control despite strong high-level reasoning capabilities.",
+  "summary_en": "BiManiBench evaluates multimodal large language models on bimanual robotic tasks, revealing limitations in spatial grounding and control despite strong high-level reasoning capabilities.",
+  "summary_zh": "BiManiBench 在双臂机器人任务上评估多模态大语言模型，揭示其在空间定位和控制方面存在局限性，尽管这些模型具备较强的高层推理能力。",
+  "hf_url": "https://huggingface.co/papers/2602.08392",
+  "arxiv_url": "https://arxiv.org/abs/2602.08392",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08392",
+  "github_url": "https://github.com/bimanibench/BiManiBench",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:47:19.949818+00:00"
+}

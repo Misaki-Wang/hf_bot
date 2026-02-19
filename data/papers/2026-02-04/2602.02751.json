@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.02751",
+  "title": "Scaling Small Agents Through Strategy Auctions",
+  "authors": [
+    "Lisa Alazraki",
+    "William F. Shen",
+    "Yoram Bachrach",
+    "Akhil Mathur"
+  ],
+  "abstract": "Small language models struggle with complex tasks but can be effectively coordinated through a marketplace-inspired framework that reduces costs and improves performance through strategic bidding and self-improvement mechanisms. Small language models are increasingly viewed as a promising, cost-effective approach to agentic AI , with proponents claiming they are sufficiently capable for agentic workflows. However, while smaller agents can closely match larger ones on simple tasks, it remains unclear how their performance scales with task complexity , when large models become necessary, and how to better leverage small agents for long-horizon workloads. In this work, we empirically show that small agents' performance fails to scale with task complexity on deep search and coding tasks , and we introduce Strategy Auctions for Workload Efficiency (SALE), an agent framework inspired by freelancer marketplaces . In SALE, agents bid with short strategic plans , which are scored by a systematic cost-value mechanism and refined via a shared auction memory , enabling per-task routing and continual self-improvement without training a separate router or running all models to completion. Across deep search and coding tasks of varying complexity, SALE reduces reliance on the largest agent by 53%, lowers overall cost by 35%, and consistently improves upon the largest agent's pass@1 with only a negligible overhead beyond executing the final trace. In contrast, established routers that rely on task descriptions either underperform the largest agent or fail to reduce cost -- often both -- underscoring their poor fit for agentic workflows. These results suggest that while small agents may be insufficient for complex workloads, they can be effectively \"scaled up\" through coordinated task allocation and test-time self-improvement. More broadly, they motivate a systems-level view of agentic AI in which performance gains come less from ever-larger individual models and more from market-inspired coordination mechanisms that organize heterogeneous agents into efficient, adaptive ecosystems.",
+  "summary_en": "Small language models struggle with complex tasks but can be effectively coordinated through a marketplace-inspired framework that reduces costs and improves performance through strategic bidding and self-improvement mechanisms.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSmall language models struggle with complex tasks but can be effectively coordinated through a marketplace-inspired framework that reduces costs and improves performance through strategic bidding and self-improvement mechanisms.",
+  "hf_url": "https://huggingface.co/papers/2602.02751",
+  "arxiv_url": "https://arxiv.org/abs/2602.02751",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02751",
+  "github_url": "",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:26:51.862446+00:00"
+}

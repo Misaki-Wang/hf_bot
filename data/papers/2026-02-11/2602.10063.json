@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.10063",
+  "title": "Chain of Mindset: Reasoning with Adaptive Cognitive Modes",
+  "authors": [
+    "Tianyi Jiang",
+    "Arctanx An",
+    "Hengyi Feng",
+    "Naixin Zhai",
+    "Haodong Li",
+    "Xiaomin Yu",
+    "Jiahui Liu",
+    "Hanwen Du",
+    "Shuo Zhang",
+    "Zhi Yang",
+    "Jie Huang",
+    "Yuhua Li",
+    "Yongxin Ni",
+    "Huacan Wang",
+    "Ronghao Chen"
+  ],
+  "abstract": "A novel training-free framework called Chain of Mindset enables step-level adaptive mindset orchestration for large language models by integrating spatial, convergent, divergent, and algorithmic reasoning approaches. Human problem-solving is never the repetition of a single mindset, by which we mean a distinct mode of cognitive processing. When tackling a specific task, we do not rely on a single mindset; instead, we integrate multiple mindsets within the single solution process. However, existing LLM reasoning methods fall into a com mon trap: they apply the same fixed mindset across all steps, overlooking that different stages of solving the same problem require fundamentally different mindsets. This single-minded assumption prevents models from reaching the next level of intelligence. To address this limitation, we propose Chain of Mindset ( CoM ), a training-free agentic framework that enables step-level adaptive mindset orchestration . CoM de com poses reasoning into four functionally heterogeneous mindsets: Spatial, Convergent, Divergent, and Algorithmic. A Meta-Agent dynamically selects the optimal mindset based on the evolving reasoning state, while a bidirectional Context Gate filters cross-module information flow to maintain effectiveness and efficiency. Experiments across six challenging benchmarks spanning mathematics, code generation, scientific QA, and spatial reasoning demonstrate that CoM achieves state-of-the-art performance, outperforming the strongest baseline by 4.96\\% and 4.72\\% in overall accuracy on Qwen3-VL-32B-Instruct and Gemini-2.0-Flash, while balancing reasoning efficiency . Our code is publicly available at https://github. com /QuantaAlpha/chain-of-mindset{https://github. com /QuantaAlpha/chain-of-mindset}.",
+  "summary_en": "A novel training-free framework called Chain of Mindset enables step-level adaptive mindset orchestration for large language models by integrating spatial, convergent, divergent, and algorithmic reasoning approaches.",
+  "summary_zh": "一种名为 Chain of Mindset 的新型免训练框架通过整合空间、收敛、发散和算法推理方法，实现了面向大语言模型的步骤级别自适应思维编排。",
+  "hf_url": "https://huggingface.co/papers/2602.10063",
+  "arxiv_url": "https://arxiv.org/abs/2602.10063",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10063",
+  "github_url": "https://github.com/QuantaAlpha/chain-of-mindset",
+  "upvotes": 70,
+  "fetched_at": "2026-02-19T06:22:07.821598+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.21525",
+  "title": "LMK > CLS: Landmark Pooling for Dense Embeddings",
+  "authors": [
+    "Meet Doshi",
+    "Aashka Trivedi",
+    "Vishwajeet Kumar",
+    "Parul Awasthy",
+    "Yulong Li",
+    "Jaydeep Sen",
+    "Radu Florian",
+    "Sachindra Joshi"
+  ],
+  "abstract": "Landmark pooling improves long-context representation learning by partitioning sequences into chunks and using landmark tokens to preserve both global and local information more effectively than traditional pooling methods. Representation learning is central to many downstream tasks such as search, clustering, classification, and reranking. State-of-the-art sequence encoders typically collapse a variable-length token sequence to a single vector using a pooling operator , most commonly a special [CLS] token or mean pooling over token embeddings. In this paper, we identify systematic weaknesses of these pooling strategies: [CLS] tends to concentrate information toward the initial positions of the sequence and can under-represent distributed evidence, while mean pooling can dilute salient local signals, sometimes leading to worse short-context performance . To address these issues, we introduce Landmark (LMK) pooling, which partitions a sequence into chunks, inserts landmark tokens between chunks, and forms the final representation by mean-pooling the landmark token embeddings. This simple mechanism improves long-context extrapolation without sacrificing local salient features, at the cost of introducing a small number of special tokens. We empirically demonstrate that LMK pooling matches existing methods on short-context retrieval tasks and yields substantial improvements on long-context tasks, making it a practical and scalable alternative to existing pooling methods.",
+  "summary_en": "Landmark pooling improves long-context representation learning by partitioning sequences into chunks and using landmark tokens to preserve both global and local information more effectively than traditional pooling methods.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLandmark pooling improves long-context representation learning by partitioning sequences into chunks and using landmark tokens to preserve both global and local information more effectively than traditional pooling methods.",
+  "hf_url": "https://huggingface.co/papers/2601.21525",
+  "arxiv_url": "https://arxiv.org/abs/2601.21525",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21525",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T05:34:36.410844+00:00"
+}

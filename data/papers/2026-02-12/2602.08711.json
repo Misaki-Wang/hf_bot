@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.08711",
+  "title": "TimeChat-Captioner: Scripting Multi-Scene Videos with Time-Aware and Structural Audio-Visual Captions",
+  "authors": [
+    "Linli Yao",
+    "Yuancheng Wei",
+    "Yaojie Zhang",
+    "Lei Li",
+    "Xinlong Chen",
+    "Feifan Song",
+    "Ziyue Wang",
+    "Kun Ouyang",
+    "Yuanxin Liu",
+    "Lingpeng Kong",
+    "Qi Liu",
+    "Pengfei Wan",
+    "Kun Gai",
+    "Yuanxing Zhang",
+    "Xu Sun"
+  ],
+  "abstract": "Omni Dense Captioning introduces a six-dimensional structural schema for generating time-aware audio-visual narratives with explicit timestamps, along with a unified evaluation metric and strong baseline model.",
+  "summary_en": "Omni Dense Captioning introduces a six-dimensional structural schema for generating time-aware audio-visual narratives with explicit timestamps, along with a unified evaluation metric and strong baseline model.",
+  "summary_zh": "Omni Dense Captioning 提出了一种六维结构框架，用于生成带显式时间戳的时序感知视听叙事，并提供了统一的评估指标与强基线模型。",
+  "hf_url": "https://huggingface.co/papers/2602.08711",
+  "arxiv_url": "https://arxiv.org/abs/2602.08711",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08711",
+  "github_url": "https://github.com/yaolinli/TimeChat-Captioner",
+  "upvotes": 26,
+  "fetched_at": "2026-02-19T06:31:07.729957+00:00"
+}

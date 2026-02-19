@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.23182",
+  "title": "FourierSampler: Unlocking Non-Autoregressive Potential in Diffusion Language Models via Frequency-Guided Generation",
+  "authors": [
+    "Siyang He",
+    "Qiqi Wang",
+    "Xiaoran Liu",
+    "Hongnan Ma",
+    "Yiwei Shi",
+    "Yuerong Song",
+    "Ying Zhu",
+    "Tianyi Liang",
+    "Zengfeng Huang",
+    "Ziwei He",
+    "Xipeng Qiu"
+  ],
+  "abstract": "Frequency-domain analysis of diffusion language models reveals that low-frequency components encode global structure while high-frequency components capture local details, enabling improved generation through FourierSampler's dynamic frequency-domain sliding window mechanism.",
+  "summary_en": "Frequency-domain analysis of diffusion language models reveals that low-frequency components encode global structure while high-frequency components capture local details, enabling improved generation through FourierSampler's dynamic frequency-domain sliding window mechanism.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nFrequency-domain analysis of diffusion language models reveals that low-frequency components encode global structure while high-frequency components capture local details, enabling improved generation through FourierSampler's dynamic frequency-domain sliding window mechanism.",
+  "hf_url": "https://huggingface.co/papers/2601.23182",
+  "arxiv_url": "https://arxiv.org/abs/2601.23182",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.23182",
+  "github_url": "https://github.com/ShirleYoung/FourierSampler",
+  "upvotes": 20,
+  "fetched_at": "2026-02-19T05:35:26.676966+00:00"
+}

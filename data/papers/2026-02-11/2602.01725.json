@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.01725",
+  "title": "SafePred: A Predictive Guardrail for Computer-Using Agents via World Models",
+  "authors": [
+    "Yurun Chen",
+    "Zeyi Liao",
+    "Ping Yin",
+    "Taotao Xie",
+    "Keting Yin",
+    "Shengyu Zhang"
+  ],
+  "abstract": "SafePred is a predictive guardrail framework for computer-using agents that uses risk prediction and decision optimization to prevent both immediate and delayed high-risk consequences in complex environments. With the widespread deployment of Computer-using Agents (CUAs) in complex real-world environments, prevalent long-term risks often lead to severe and irreversible consequences. Most existing guardrails for CUAs adopt a reactive approach, constraining agent behavior only within the current observation space. While these guardrails can prevent immediate short-term risks (e.g., clicking on a phishing link), they cannot proactively avoid long-term risks: seemingly reasonable actions can lead to high-risk consequences that emerge with a delay (e.g., cleaning logs leads to future audits being untraceable), which reactive guardrails cannot identify within the current observation space. To address these limitations, we propose a predictive guardrail approach , with the core idea of aligning predicted future risks with current decisions. Based on this approach, we present SafePred, a predictive guardrail framework for CUAs that establishes a risk-to-decision loop to ensure safe agent behavior. SafePred supports two key abilities: (1) Short- and long-term risk prediction : by using safety policies as the basis for risk prediction , SafePred leverages the prediction capability of the world model to generate semantic representations of both short-term and long-term risks, thereby identifying and pruning actions that lead to high-risk states; (2) Decision optimization : translating predicted risks into actionable safe decision guidances through step-level interventions and task-level re-planning . Extensive experiments show that SafePred significantly reduces high-risk behaviors, achieving over 97.6% safety performance and improving task utility by up to 21.4% compared with reactive baselines.",
+  "summary_en": "SafePred is a predictive guardrail framework for computer-using agents that uses risk prediction and decision optimization to prevent both immediate and delayed high-risk consequences in complex environments.",
+  "summary_zh": "SafePred是一种面向计算机使用智能体的预测性护栏框架，利用风险预测和决策优化来防止复杂环境中的即时和延迟高风险后果。",
+  "hf_url": "https://huggingface.co/papers/2602.01725",
+  "arxiv_url": "https://arxiv.org/abs/2602.01725",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01725",
+  "github_url": "https://github.com/YurunChen/SafePred",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:20:25.691666+00:00"
+}

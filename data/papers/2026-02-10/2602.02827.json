@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.02827",
+  "title": "Col-Bandit: Zero-Shot Query-Time Pruning for Late-Interaction Retrieval",
+  "authors": [
+    "Roi Pony",
+    "Adi Raz",
+    "Oshri Naparstek",
+    "Idan Friedman",
+    "Udi Barzelay"
+  ],
+  "abstract": "Col-Bandit reduces computational costs in multi-vector late-interaction retrieval by adaptively pruning token-level interactions during query processing while maintaining ranking accuracy. Multi-vector late-interaction retrievers such as ColBERT achieve state-of-the-art retrieval quality, but their query-time cost is dominated by exhaustively computing token-level MaxSim interactions for every candidate document. While approximating late interaction with single-vector representations reduces cost, it often incurs substantial accuracy loss. We introduce Col-Bandit, a query-time pruning algorithm that reduces this computational burden by casting reranking as a finite-population Top-K identification problem. Col-Bandit maintains uncertainty-aware bounds over partially observed document scores and adaptively reveals only the (document, query token) MaxSim entries needed to determine the top results under statistical decision bounds with a tunable relaxation. Unlike coarse-grained approaches that prune entire documents or tokens offline, Col-Bandit sparsifies the interaction matrix on the fly. It operates as a zero-shot, drop-in layer over standard multi-vector systems, requiring no index modifications, offline preprocessing, or model retraining. Experiments on textual (BEIR) and multimodal (REAL-MM-RAG) benchmarks show that Col-Bandit preserves ranking fidelity while reducing MaxSim FLOPs by up to 5times, indicating that dense late-interaction scoring contains substantial redundancy that can be identified and pruned efficiently at query time.",
+  "summary_en": "Col-Bandit reduces computational costs in multi-vector late-interaction retrieval by adaptively pruning token-level interactions during query processing while maintaining ranking accuracy.",
+  "summary_zh": "Col-Bandit通过在查询处理过程中自适应地剪枝词元级交互，在多向量后期交互检索中降低计算成本，同时保持排序准确性。",
+  "hf_url": "https://huggingface.co/papers/2602.02827",
+  "arxiv_url": "https://arxiv.org/abs/2602.02827",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02827",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:01:51.857309+00:00"
+}

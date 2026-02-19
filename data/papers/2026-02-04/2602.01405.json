@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.01405",
+  "title": "Feedback by Design: Understanding and Overcoming User Feedback Barriers in Conversational Agents",
+  "authors": [
+    "Nikhil Sharma",
+    "Zheng Zhang",
+    "Daniel Lee",
+    "Namita Krishnan",
+    "Guang-Jie Ren",
+    "Ziang Xiao",
+    "Yunyao Li"
+  ],
+  "abstract": "High-quality feedback is essential for effective human-AI interaction. It bridges knowledge gaps, corrects digressions, and shapes system behavior; both during interaction and throughout model development. Yet despite its importance, human feedback to AI is often infrequent and low quality. This gap motivates a critical examination of human feedback during interactions with AIs. To understand and overcome the challenges preventing users from giving high-quality feedback, we conducted two studies examining feedback dynamics between humans and conversational agents (CAs). Our formative study, through the lens of Grice's maxims, identified four Feedback Barriers -- Common Ground, Verifiability, Communication, and Informativeness -- that prevent high-quality feedback by users. Building on these findings, we derive three design desiderata and show that systems incorporating scaffolds aligned with these desiderata enabled users to provide higher-quality feedback. Finally, we detail a call for action to the broader AI community for advances in Large Language Models capabilities to overcome Feedback Barriers.",
+  "summary_en": "High-quality feedback is essential for effective human-AI interaction. It bridges knowledge gaps, corrects digressions, and shapes system behavior; both during interaction and throughout model development. Yet despite its importance, human feedback to AI is often infrequent and low quality.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nHigh-quality feedback is essential for effective human-AI interaction. It bridges knowledge gaps, corrects digressions, and shapes system behavior; both during interaction and throughout model development. Yet despite its importance, human feedback to AI is often infrequent and low quality.",
+  "hf_url": "https://huggingface.co/papers/2602.01405",
+  "arxiv_url": "https://arxiv.org/abs/2602.01405",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01405",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:38:50.434421+00:00"
+}

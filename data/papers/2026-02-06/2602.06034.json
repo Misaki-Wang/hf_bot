@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.06034",
+  "title": "V-Retrver: Evidence-Driven Agentic Reasoning for Universal Multimodal Retrieval",
+  "authors": [
+    "Dongyang Chen",
+    "Chaoyang Wang",
+    "Dezhao SU",
+    "Xi Xiao",
+    "Zeyu Zhang",
+    "Jing Xiong",
+    "Qing Li",
+    "Yuzhang Shang",
+    "Shichao Ka"
+  ],
+  "abstract": "V-Retrver introduces an evidence-driven retrieval framework that enables multimodal large language models to actively verify visual evidence through an agentic reasoning process, improving retrieval accuracy and reasoning reliability. Multimodal Large Language Models (MLLMs) have recently been applied to universal multimodal retrieval , where Chain-of-Thought (CoT) reasoning improves candidate reranking. However, existing approaches remain largely language-driven, relying on static visual encodings and lacking the ability to actively verify fine-grained visual evidence, which often leads to speculative reasoning in visually ambiguous cases. We propose V-Retrver, an evidence-driven retrieval framework that reformulates multimodal retrieval as an agentic reasoning process grounded in visual inspection . V-Retrver enables an MLLM to selectively acquire visual evidence during reasoning via external visual tools, performing a multimodal interleaved reasoning process that alternates between hypothesis generation and targeted visual verification.To train such an evidence-gathering retrieval agent, we adopt a curriculum-based learning strategy combining supervised reasoning activation , rejection-based refinement , and reinforcement learning with an evidence-aligned objective . Experiments across multiple multimodal retrieval benchmarks demonstrate consistent improvements in retrieval accuracy (with 23.0% improvements on average), perception-driven reasoning reliability, and generalization.",
+  "summary_en": "V-Retrver introduces an evidence-driven retrieval framework that enables multimodal large language models to actively verify visual evidence through an agentic reasoning process, improving retrieval accuracy and reasoning reliability.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nV-Retrver introduces an evidence-driven retrieval framework that enables multimodal large language models to actively verify visual evidence through an agentic reasoning process, improving retrieval accuracy and reasoning reliability.",
+  "hf_url": "https://huggingface.co/papers/2602.06034",
+  "arxiv_url": "https://arxiv.org/abs/2602.06034",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06034",
+  "github_url": "https://github.com/chendy25/V-Retrver",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T05:43:28.657573+00:00"
+}

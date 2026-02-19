@@ -1,0 +1,32 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.02958",
+  "title": "Quant VideoGen: Auto-Regressive Long Video Generation via 2-Bit KV-Cache Quantization",
+  "authors": [
+    "Haocheng Xi",
+    "Shuo Yang",
+    "Yilong Zhao",
+    "Muyang Li",
+    "Han Cai",
+    "Xingyang Li",
+    "Yujun Lin",
+    "Zhuoyang Zhang",
+    "Jintao Zhang",
+    "Xiuyu Li",
+    "Zhiying Xu",
+    "Jun Wu",
+    "Chenfeng Xu",
+    "Ion Stoica",
+    "Song Han",
+    "Kurt Keutzer"
+  ],
+  "abstract": "Quant VideoGen addresses KV cache memory limitations in autoregressive video diffusion models through semantic-aware smoothing and progressive residual quantization, achieving significant memory reduction with minimal latency impact. Despite rapid progress in autoregressive video diffusion , an emerging system algorithm bottleneck limits both deployability and generation capability: KV cache memory. In autoregressive video generation models, the KV cache grows with generation history and quickly dominates GPU memory, often exceeding 30 GB, preventing deployment on widely available hardware. More critically, constrained KV cache budgets restrict the effective working memory, directly degrading long horizon consistency in identity, layout, and motion. To address this challenge, we present Quant VideoGen (QVG), a training free KV cache quantization framework for autoregressive video diffusion models. QVG leverages video spatiotemporal redundancy through Semantic Aware Smoothing , producing low magnitude, quantization friendly residuals. It further introduces Progressive Residual Quantization , a coarse to fine multi stage scheme that reduces quantization error while enabling a smooth quality memory trade off. Across LongCat Video, HY WorldPlay, and Self Forcing benchmarks, QVG establishes a new Pareto frontier between quality and memory efficiency , reducing KV cache memory by up to 7.0 times with less than 4% end to end latency overhead while consistently outperforming existing baselines in generation quality.",
+  "summary_en": "Quant VideoGen addresses KV cache memory limitations in autoregressive video diffusion models through semantic-aware smoothing and progressive residual quantization, achieving significant memory reduction with minimal latency impact.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nQuant VideoGen addresses KV cache memory limitations in autoregressive video diffusion models through semantic-aware smoothing and progressive residual quantization, achieving significant memory reduction with minimal latency impact.",
+  "hf_url": "https://huggingface.co/papers/2602.02958",
+  "arxiv_url": "https://arxiv.org/abs/2602.02958",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02958",
+  "github_url": "",
+  "upvotes": 33,
+  "fetched_at": "2026-02-19T05:27:26.266354+00:00"
+}

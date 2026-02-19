@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.04547",
+  "title": "OmniRad: A Radiological Foundation Model for Multi-Task Medical Image Analysis",
+  "authors": [
+    "Luca Zedda",
+    "Andrea Loddo",
+    "Cecilia Di Ruberto"
+  ],
+  "abstract": "OmniRad is a self-supervised radiological foundation model pretrained on 1.2 million medical images that demonstrates improved performance in classification and segmentation tasks through representation reuse and cross-task transferability. Radiological analysis increasingly benefits from pretrained visual representations that can support heterogeneous downstream tasks across imaging modalities. In this work, we introduce OmniRad, a self-supervised radiological foundation model pretrained on 1.2 million medical images, designed with radiology-inspired principles emphasizing representation reuse and cross-task transferability . We evaluate the pretrained encoder under multiple downstream adaptation regimes, including lightweight task-specific adapters with a frozen backbone as well as full end-to-end fine-tuning for classification, allowing us to assess both representation quality and task-specific performance. OmniRad is evaluated on a broad suite of public benchmarks spanning classification and segmentation across multiple modalities. On the MedMNISTv2 collection, OmniRad improves classification F1 by up to 2.05% over competing foundation models. For dense prediction, OmniRad attains mean Dice score improvements across six MedSegBench datasets when using frozen representations. Qualitative analyses and latent-space visualization s suggest improved feature clustering and modality-related separation.",
+  "summary_en": "OmniRad is a self-supervised radiological foundation model pretrained on 1.2 million medical images that demonstrates improved performance in classification and segmentation tasks through representation reuse and cross-task transferability.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nOmniRad is a self-supervised radiological foundation model pretrained on 1.2 million medical images that demonstrates improved performance in classification and segmentation tasks through representation reuse and cross-task transferability.",
+  "hf_url": "https://huggingface.co/papers/2602.04547",
+  "arxiv_url": "https://arxiv.org/abs/2602.04547",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04547",
+  "github_url": "https://github.com/unica-visual-intelligence-lab/OmniRad",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:27:43.461583+00:00"
+}

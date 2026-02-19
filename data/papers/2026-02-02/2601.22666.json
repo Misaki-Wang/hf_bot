@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.22666",
+  "title": "ExpAlign: Expectation-Guided Vision-Language Alignment for Open-Vocabulary Grounding",
+  "authors": [
+    "Junyi Hu",
+    "Tian Bai",
+    "Fengyi Wu",
+    "Wenyan Li",
+    "Zhenming Peng",
+    "Yi Zhang"
+  ],
+  "abstract": "ExpAlign presents a vision-language alignment framework using multiple instance learning and attention-based pooling to improve open-vocabulary detection and zero-shot instance segmentation without additional annotations. Open-vocabulary grounding requires accurate vision-language alignment under weak supervision, yet existing methods either rely on global sentence embeddings that lack fine-grained expressiveness or introduce token-level alignment with explicit supervision or heavy cross-attention designs. We propose ExpAlign, a theoretically grounded vision-language alignment framework built on a principled multiple instance learning formulation. ExpAlign introduces an Expectation Alignment Head that performs attention-based soft MIL pooling over token-region similarities , enabling implicit token and instance selection without additional annotations. To further stabilize alignment learning, we develop an energy-based multi-scale consistency regularization scheme, including a Top-K multi-positive contrastive objective and a Geometry-Aware Consistency Objective derived from a Lagrangian-constrained free-energy minimization . Extensive experiments show that ExpAlign consistently improves open-vocabulary detection and zero-shot instance segmentation , particularly on long-tail categories. Most notably, it achieves 36.2 AP_r on the LVIS minival split , outperforming other state-of-the-art methods at comparable model scale, while remaining lightweight and inference-efficient.",
+  "summary_en": "ExpAlign presents a vision-language alignment framework using multiple instance learning and attention-based pooling to improve open-vocabulary detection and zero-shot instance segmentation without additional annotations.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nExpAlign presents a vision-language alignment framework using multiple instance learning and attention-based pooling to improve open-vocabulary detection and zero-shot instance segmentation without additional annotations.",
+  "hf_url": "https://huggingface.co/papers/2601.22666",
+  "arxiv_url": "https://arxiv.org/abs/2601.22666",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22666",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:35:09.468707+00:00"
+}

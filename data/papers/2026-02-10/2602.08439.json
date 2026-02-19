@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.08439",
+  "title": "Demo-ICL: In-Context Learning for Procedural Video Knowledge Acquisition",
+  "authors": [
+    "Yuhao Dong",
+    "Shulin Tian",
+    "Shuai Liu",
+    "Shuangrui Ding",
+    "Yuhang Zang",
+    "Xiaoyi Dong",
+    "Yuhang Cao",
+    "Jiaqi Wang",
+    "Ziwei Liu"
+  ],
+  "abstract": "Researchers introduce a new video understanding task and benchmark that evaluates models' ability to learn from few-shot demonstrations, along with a specialized MLLM architecture trained using a two-stage approach combining video supervision and preference optimization. Despite the growing video understanding capabilities of recent Multimodal Large Language Models (MLLMs), existing video benchmarks primarily assess understanding based on models' static, internal knowledge, rather than their ability to learn and adapt from dynamic, novel contexts from few examples. To bridge this gap, we present Demo-driven Video In-Context Learning , a novel task focused on learning from in-context demonstrations to answer questions about the target videos. Alongside this, we propose Demo-ICL-Bench , a challenging benchmark designed to evaluate demo-driven video in-context learning capabilities. Demo-ICL-Bench is constructed from 1200 instructional YouTube videos with associated questions, from which two types of demonstrations are derived: (i) summarizing video subtitles for text demonstration; and (ii) corresponding instructional videos as video demonstrations. To effectively tackle this new challenge, we develop Demo-ICL, an MLLM with a two-stage training strategy: video-supervised fine-tuning and information-assisted direct preference optimization , jointly enhancing the model's ability to learn from in-context examples. Extensive experiments with state-of-the-art MLLMs confirm the difficulty of Demo-ICL-Bench , demonstrate the effectiveness of Demo-ICL, and thereby unveil future research directions.",
+  "summary_en": "Researchers introduce a new video understanding task and benchmark that evaluates models' ability to learn from few-shot demonstrations, along with a specialized MLLM architecture trained using a two-stage approach combining video supervision and preference optimization.",
+  "summary_zh": "研究人员提出了一项用于评估模型从少样本示例中学习能力的视频理解任务与基准，以及一种采用视频监督与偏好优化两阶段训练方法的专用MLLM架构。",
+  "hf_url": "https://huggingface.co/papers/2602.08439",
+  "arxiv_url": "https://arxiv.org/abs/2602.08439",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08439",
+  "github_url": "https://github.com/dongyh20/Demo-ICL",
+  "upvotes": 28,
+  "fetched_at": "2026-02-19T06:03:20.893592+00:00"
+}

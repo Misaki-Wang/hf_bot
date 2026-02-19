@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10229",
+  "title": "Latent Thoughts Tuning: Bridging Context and Reasoning with Fused Information in Latent Tokens",
+  "authors": [
+    "Weihao Liu",
+    "Dehai Min",
+    "Lu Cheng"
+  ],
+  "abstract": "Latent Thoughts Tuning introduces a novel framework for reasoning in continuous latent space by combining contextual hidden states with predictive semantic guidance, enabling robust inference through a progressive curriculum learning approach. While explicit Chain-of-Thought (CoT) equips Large Language Models (LLMs) with strong reasoning capabilities, it requires models to verbalize every intermediate step in text tokens, constraining the model thoughts to the discrete vocabulary space. Recently, reasoning in continuous latent space has emerged as a promising alternative, enabling more robust inference and flexible computation beyond discrete token constraints. However, current latent paradigms often suffer from feature collapse and instability, stemming from distribution mismatches when recurrently using hidden states as the input embeddings, or alignment issues when relying on assistant models. To address this, we propose Latent Thoughts Tuning (LT-Tuning), a framework that redefines how latent thoughts are constructed and deployed. Instead of relying solely on raw hidden states , our method introduces a Context-Prediction-Fusion mechanism that jointly leveraging contextual hidden states and predictive semantic guidance from the vocabulary embedding space . Combined with a progressive three-stage curriculum learning pipeline, LT-Tuning also enables dynamically switching between latent and explicit thinking modes. Experiments demonstrate that our method outperforms existing latent reasoning baselines, effectively mitigating feature collapse and achieving robust reasoning accuracy .",
+  "summary_en": "Latent Thoughts Tuning introduces a novel framework for reasoning in continuous latent space by combining contextual hidden states with predictive semantic guidance, enabling robust inference through a progressive curriculum learning approach.",
+  "summary_zh": "潜在思维微调提出了一种在连续潜在空间中进行推理的新颖框架，通过结合上下文隐藏状态与预测性语义引导，并利用渐进式课程学习方法实现鲁棒推断。",
+  "hf_url": "https://huggingface.co/papers/2602.10229",
+  "arxiv_url": "https://arxiv.org/abs/2602.10229",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10229",
+  "github_url": "https://github.com/NeosKnight233/Latent-Thoughts-Tuning",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T06:31:32.481759+00:00"
+}

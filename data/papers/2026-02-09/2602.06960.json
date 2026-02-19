@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06960",
+  "title": "InftyThink+: Effective and Efficient Infinite-Horizon Reasoning via Reinforcement Learning",
+  "authors": [
+    "Yuchen Yan",
+    "Liang Jiang",
+    "Jin Jiang",
+    "Shuaicheng Li",
+    "Zujie Wen",
+    "Zhiqiang Zhang",
+    "Jun Zhou",
+    "Jian Shao",
+    "Yueting Zhuang",
+    "Yongliang Shen"
+  ],
+  "abstract": "InftyThink+ uses reinforcement learning to optimize iterative reasoning processes, improving accuracy and efficiency in large language models. Large reasoning models achieve strong performance by scaling inference-time chain-of-thought , but this paradigm suffers from quadratic cost, context length limits, and degraded reasoning due to lost-in-the-middle effects. Iterative reasoning mitigates these issues by periodically summarizing intermediate thoughts, yet existing methods rely on supervised learning or fixed heuristics and fail to optimize when to summarize, what to preserve, and how to resume reasoning. We propose InftyThink+, an end-to-end reinforcement learning framework that optimizes the entire iterative reasoning trajectory, building on model-controlled iteration boundaries and explicit summarization . InftyThink+ adopts a two-stage training scheme with supervised cold-start followed by trajectory-level reinforcement learning , enabling the model to learn strategic summarization and continuation decisions. Experiments on DeepSeek-R1-Distill-Qwen-1.5B show that InftyThink+ improves accuracy by 21% on AIME24 and outperforms conventional long chain-of-thought reinforcement learning by a clear margin, while also generalizing better to out-of-distribution benchmarks. Moreover, InftyThink+ significantly reduces inference latency and accelerates reinforcement learning training, demonstrating improved reasoning efficiency alongside stronger performance.",
+  "summary_en": "InftyThink+ uses reinforcement learning to optimize iterative reasoning processes, improving accuracy and efficiency in large language models.",
+  "summary_zh": "InftyThink+采用强化学习优化迭代推理过程，提升大语言模型的准确性和效率。",
+  "hf_url": "https://huggingface.co/papers/2602.06960",
+  "arxiv_url": "https://arxiv.org/abs/2602.06960",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06960",
+  "github_url": "https://github.com/ZJU-REAL/InftyThink-Plus",
+  "upvotes": 12,
+  "fetched_at": "2026-02-19T05:58:29.908523+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03817",
+  "title": "Adaptive Evidence Weighting for Audio-Spatiotemporal Fusion",
+  "authors": [
+    "Oscar Ovanger",
+    "Levi Harris",
+    "Timothy H. Keitt"
+  ],
+  "abstract": "A fusion framework called FINCH combines audio and spatiotemporal predictors for bioacoustic classification by adaptively weighting evidence based on reliability estimates, outperforming fixed-weight methods and audio-only approaches. Many machine learning systems have access to multiple sources of evidence for the same prediction target, yet these sources often differ in reliability and informativeness across inputs. In bioacoustic classification, species identity may be inferred both from the acoustic signal and from spatiotemporal context such as location and season; while Bayesian inference motivates multiplicative evidence combination, in practice we typically only have access to discriminative predictors rather than calibrated generative models. We introduce Fusion under INdependent Conditional Hypotheses (FINCH), an adaptive log-linear evidence fusion framework that integrates a pre-trained audio classifier with a structured spatiotemporal predictor . FINCH learns a per-sample gating function that estimates the reliability of contextual information from uncertainty and informativeness statistics . The resulting fusion family contains the audio-only classifier as a special case and explicitly bounds the influence of contextual evidence, yielding a risk-contained hypothesis class with an interpretable audio-only fallback . Across benchmarks, FINCH consistently outperforms fixed-weight fusion and audio-only baselines, improving robustness and error trade-offs even when contextual information is weak in isolation. We achieve state-of-the-art performance on CBI and competitive or improved performance on several subsets of BirdSet using a lightweight, interpretable, evidence-based approach. Code is available: \\href{https://anonymous.4open.science/r/birdnoise-85CD/README.md{anonymous-repository}}",
+  "summary_en": "A fusion framework called FINCH combines audio and spatiotemporal predictors for bioacoustic classification by adaptively weighting evidence based on reliability estimates, outperforming fixed-weight methods and audio-only approaches.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA fusion framework called FINCH combines audio and spatiotemporal predictors for bioacoustic classification by adaptively weighting evidence based on reliability estimates, outperforming fixed-weight methods and audio-only approaches.",
+  "hf_url": "https://huggingface.co/papers/2602.03817",
+  "arxiv_url": "https://arxiv.org/abs/2602.03817",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03817",
+  "github_url": "https://github.com/leharris3/birdnoise",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T05:27:09.671362+00:00"
+}

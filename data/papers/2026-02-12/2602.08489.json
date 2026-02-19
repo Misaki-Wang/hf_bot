@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.08489",
+  "title": "Beyond Correctness: Learning Robust Reasoning via Transfer",
+  "authors": [
+    "Hyunseok Lee",
+    "Soheil Abbasloo",
+    "Jihoon Tack",
+    "Jinwoo Shin"
+  ],
+  "abstract": "Reinforcement Learning with Transferable Reward (RLTR) enhances LLM reasoning robustness by ensuring reasoning stability and generalizability through transfer rewards that test cross-model guidance capabilities. Reinforcement Learning with Verifiable Rewards (RLVR) has recently strengthened LLM reasoning , but its focus on final answer correctness leaves a critical gap: it does not ensure the robustness of the reasoning process itself. We adopt a simple philosophical view, robust reasoning should remain useful beyond the mind that produced it, and treat reasoning as a form of meaning transfer that must survive truncation, reinterpretation, and continuation. Building on this principle, we introduce Reinforcement Learning with Transferable Reward (RLTR), which operationalizes robustness via transfer reward that tests whether a partial reasoning prefix from one model can guide a separate model to the correct answer. This encourages LLMs to produce reasoning that is stable, interpretable, and genuinely generalizable. Our approach improves sampling consistency while improving final answer accuracy , and it reaches comparable performance in substantially fewer training steps. For example, on MATH500 , RLTR achieves a +3.6%p gain in Maj@64 compared to RLVR and matches RLVR's average accuracy with roughly 2.5x fewer training steps, providing both more reliable reasoning and significantly more sample efficient.",
+  "summary_en": "Reinforcement Learning with Transferable Reward (RLTR) enhances LLM reasoning robustness by ensuring reasoning stability and generalizability through transfer rewards that test cross-model guidance capabilities.",
+  "summary_zh": "可迁移奖励强化学习（RLTR）通过可迁移奖励测试跨模型引导能力，确保推理稳定性与泛化性，从而增强 LLM 推理鲁棒性。",
+  "hf_url": "https://huggingface.co/papers/2602.08489",
+  "arxiv_url": "https://arxiv.org/abs/2602.08489",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08489",
+  "github_url": "",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T06:31:05.855540+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03411",
+  "title": "SWE-Master: Unleashing the Potential of Software Engineering Agents via Post-Training",
+  "authors": [
+    "Huatong Song",
+    "Lisheng Huang",
+    "Shuang Sun",
+    "Jinhao Jiang",
+    "Ran Le",
+    "Daixuan Cheng",
+    "Guoxin Chen",
+    "Yiwen Hu",
+    "Zongchao Chen",
+    "Wayne Xin Zhao",
+    "Yang Song",
+    "Tao Zhang",
+    "Ji-Rong Wen"
+  ],
+  "abstract": "SWE-Master presents a reproducible framework for developing software engineering agents through systematic optimization across multiple stages of agent development, achieving superior performance on software task resolution benchmarks.",
+  "summary_en": "SWE-Master presents a reproducible framework for developing software engineering agents through systematic optimization across multiple stages of agent development, achieving superior performance on software task resolution benchmarks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSWE-Master presents a reproducible framework for developing software engineering agents through systematic optimization across multiple stages of agent development, achieving superior performance on software task resolution benchmarks.",
+  "hf_url": "https://huggingface.co/papers/2602.03411",
+  "arxiv_url": "https://arxiv.org/abs/2602.03411",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03411",
+  "github_url": "",
+  "upvotes": 37,
+  "fetched_at": "2026-02-19T05:27:00.189793+00:00"
+}

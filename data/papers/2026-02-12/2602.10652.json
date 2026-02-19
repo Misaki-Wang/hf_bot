@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10652",
+  "title": "UMEM: Unified Memory Extraction and Management Framework for Generalizable Memory",
+  "authors": [
+    "Yongshi Ye",
+    "Hui Jiang",
+    "Feihu Jiang",
+    "Tian Lan",
+    "Yichao Du",
+    "Biao Fu",
+    "Xiaodong Shi",
+    "Qianghuai Jia",
+    "Longyue Wang",
+    "Weihua Luo"
+  ],
+  "abstract": "A unified framework for memory extraction and management in LLM-based agents that improves generalization through semantic neighborhood modeling and marginal utility rewards. Self-evolving memory serves as the trainable parameters for Large Language Models (LLMs)-based agents, where extraction (distilling insights from experience) and management (updating the memory bank) must be tightly coordinated. Existing methods predominately optimize memory management while treating memory extraction as a static process, resulting in poor generalization, where agents accumulate instance-specific noise rather than robust memories. To address this, we propose Unified Memory Extraction and Management (UMEM), a self-evolving agent framework that jointly optimizes a Large Language Model to simultaneous extract and manage memories. To mitigate overfitting to specific instances, we introduce Semantic Neighborhood Modeling and optimize the model with a neighborhood-level marginal utility reward via GRPO . This approach ensures memory generalizability by evaluating memory utility across clusters of semantically related queries. Extensive experiments across five benchmarks demonstrate that UMEM significantly outperforms highly competitive baselines, achieving up to a 10.67% improvement in multi-turn interactive tasks . Futhermore, UMEM maintains a monotonic growth curve during continuous evolution. Codes and models will be publicly released.",
+  "summary_en": "A unified framework for memory extraction and management in LLM-based agents that improves generalization through semantic neighborhood modeling and marginal utility rewards.",
+  "summary_zh": "一种面向LLM智能体的记忆提取与管理统一框架，通过语义邻域建模和边际效用奖励提升泛化能力。",
+  "hf_url": "https://huggingface.co/papers/2602.10652",
+  "arxiv_url": "https://arxiv.org/abs/2602.10652",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10652",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:31:48.118574+00:00"
+}

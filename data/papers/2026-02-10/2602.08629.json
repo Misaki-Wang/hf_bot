@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.08629",
+  "title": "CauScale: Neural Causal Discovery at Scale",
+  "authors": [
+    "Bo Peng",
+    "Sirui Chen",
+    "Jiaguo Tian",
+    "Yu Qiao",
+    "Chaochao Lu"
+  ],
+  "abstract": "CauScale is a neural architecture that enables efficient causal discovery on large graphs through compressed embeddings and tied attention weights, achieving high accuracy and significant speedups over previous methods. Causal discovery is essential for advancing data-driven fields such as scientific AI and data analysis, yet existing approaches face significant time- and space-efficiency bottlenecks when scaling to large graphs. To address this challenge, we present CauScale, a neural architecture designed for efficient causal discovery that scales inference to graphs with up to 1000 nodes. CauScale improves time efficiency via a reduction unit that compresses data embeddings and improves space efficiency by adopting tied attention weights to avoid maintaining axis-specific attention map s. To keep high causal discovery accuracy, CauScale adopts a two-stream design : a data stream extracts relational evidence from high-dimensional observations, while a graph stream integrates statistical graph priors and preserves key structural signals . CauScale successfully scales to 500-node graphs during training, where prior work fails due to space limitations. Across testing data with varying graph scales and causal mechanisms, CauScale achieves 99.6% mAP on in-distribution data and 84.4% on out-of-distribution data, while delivering 4-13,000 times inference speedups over prior methods. Our project page is at https://github.com/OpenCausaLab/CauScale.",
+  "summary_en": "CauScale is a neural architecture that enables efficient causal discovery on large graphs through compressed embeddings and tied attention weights, achieving high accuracy and significant speedups over previous methods.",
+  "summary_zh": "CauScale是一种神经架构，通过压缩嵌入和共享注意力权重，能够在大规模图上高效进行因果发现，实现了高准确率并显著快于先前方法。",
+  "hf_url": "https://huggingface.co/papers/2602.08629",
+  "arxiv_url": "https://arxiv.org/abs/2602.08629",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08629",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:03:25.391962+00:00"
+}

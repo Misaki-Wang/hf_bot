@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.08741",
+  "title": "Large Language Lobotomy: Jailbreaking Mixture-of-Experts via Expert Silencing",
+  "authors": [
+    "Jona te Lintelo",
+    "Lichao Wu",
+    "Stjepan Picek"
+  ],
+  "abstract": "Attack method exploits expert routing dynamics in Mixture-of-Experts language models to compromise safety alignment while maintaining language utility. The rapid adoption of Mixture-of-Experts (MoE) architectures marks a major shift in the deployment of Large Language Models (LLMs). MoE LLMs improve scaling efficiency by activating only a small subset of parameters per token, but their routing structure introduces new safety attack surfaces. We find that safety-critical behaviors in MoE LLMs (e.g., refusal) are concentrated in a small set of experts rather than being uniformly distributed. Building on this, we propose Large Language Lobotomy (L^3), a training-free, architecture-agnostic attack that compromises safety alignment by exploiting expert routing dynamics. L^3 learns routing patterns that correlate with refusal, attributes safety behavior to specific experts, and adaptively silences the most safety-relevant experts until harmful outputs are produced. We evaluate L^3 on eight state-of-the-art open-source MoE LLMs and show that our adaptive expert silencing increases average attack success from 7.3% to 70.4%, reaching up to 86.3%, outperforming prior training-free MoE jailbreak methods . Moreover, bypassing guardrails typically requires silencing fewer than 20% of layer-wise experts while largely preserving general language utility. These results reveal a fundamental tension between efficiency-driven MoE design and robust safety alignment and motivate distributing safety mechanisms more robustly in future MoE LLMs with architecture- and routing-aware methods.",
+  "summary_en": "Attack method exploits expert routing dynamics in Mixture-of-Experts language models to compromise safety alignment while maintaining language utility.",
+  "summary_zh": "攻击方法利用混合专家语言模型的专家路由动态，在保持语言实用性的同时破坏安全对齐。",
+  "hf_url": "https://huggingface.co/papers/2602.08741",
+  "arxiv_url": "https://arxiv.org/abs/2602.08741",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08741",
+  "github_url": "https://github.com/jonatelintelo/LargeLanguageLobotomy",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:31:09.778443+00:00"
+}

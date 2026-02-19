@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.03510",
+  "title": "Semantic Routing: Exploring Multi-Layer LLM Feature Weighting for Diffusion Transformers",
+  "authors": [
+    "Bozhou Li",
+    "Yushuo Guan",
+    "Haolin Li",
+    "Bohan Zeng",
+    "Yiyan Ji",
+    "Yue Ding",
+    "Pengfei Wan",
+    "Kun Gai",
+    "Yuanxing Zhang",
+    "Wentao Zhang"
+  ],
+  "abstract": "Text conditioning in DiT-based models is enhanced through a unified normalized convex fusion framework that optimizes multi-layer LLM hidden states via depth-wise semantic routing, improving text-image alignment and compositional generation. Recent DiT-based text-to-image models increasingly adopt LLMs as text encoders , yet text conditioning remains largely static and often utilizes only a single LLM layer, despite pronounced semantic hierarchy across LLM layers and non-stationary denoising dynamics over both diffusion time and network depth. To better match the dynamic process of DiT generation and thereby enhance the diffusion model's generative capability , we introduce a unified normalized convex fusion framework equipped with lightweight gates to systematically organize multi-layer LLM hidden states via time-wise, depth-wise, and joint fusion . Experiments establish Depth-wise Semantic Routing as the superior conditioning strategy, consistently improving text-image alignment and compositional generation (e.g., +9.97 on the GenAI-Bench Counting task). Conversely, we find that purely time-wise fusion can paradoxically degrade visual generation fidelity. We attribute this to a train-inference trajectory mismatch : under classifier-free guidance , nominal timesteps fail to track the effective SNR , causing semantically mistimed feature injection during inference. Overall, our results position depth-wise routing as a strong and effective baseline and highlight the critical need for trajectory-aware signals to enable robust time-dependent conditioning.",
+  "summary_en": "Text conditioning in DiT-based models is enhanced through a unified normalized convex fusion framework that optimizes multi-layer LLM hidden states via depth-wise semantic routing, improving text-image alignment and compositional generation.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nText conditioning in DiT-based models is enhanced through a unified normalized convex fusion framework that optimizes multi-layer LLM hidden states via depth-wise semantic routing, improving text-image alignment and compositional generation.",
+  "hf_url": "https://huggingface.co/papers/2602.03510",
+  "arxiv_url": "https://arxiv.org/abs/2602.03510",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03510",
+  "github_url": "",
+  "upvotes": 27,
+  "fetched_at": "2026-02-19T05:27:31.013762+00:00"
+}

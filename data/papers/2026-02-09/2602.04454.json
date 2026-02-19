@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.04454",
+  "title": "Seg-ReSearch: Segmentation with Interleaved Reasoning and External Search",
+  "authors": [
+    "Tianming Liang",
+    "Qirui Du",
+    "Jian-Fang Hu",
+    "Haichao Jiang",
+    "Zicheng Lin",
+    "Wei-Shi Zheng"
+  ],
+  "abstract": "Seg-ReSearch introduces a novel segmentation approach that combines interleaved reasoning with external search to overcome limitations of frozen MLLM knowledge, using hierarchical reward design for training and demonstrating superior performance on video object segmentation benchmarks. Segmentation based on language has been a popular topic in computer vision. While recent advances in multimodal large language models (MLLMs) have endowed segmentation systems with reasoning capabilities, these efforts remain confined by the frozen internal knowledge of MLLMs, which limits their potential for real-world scenarios that involve up-to-date information or domain-specific concepts. In this work, we propose Seg-ReSearch, a novel segmentation paradigm that overcomes the knowledge bottleneck of existing approaches. By enabling interleaved reasoning and external search , Seg-ReSearch empowers segmentation systems to handle dynamic, open-world queries that extend beyond the frozen knowledge of MLLMs. To effectively train this capability, we introduce a hierarchical reward design that harmonizes initial guidance with progressive incentives, mitigating the dilemma between sparse outcome signals and rigid step-wise supervision. For evaluation, we construct OK-VOS, a challenging benchmark that explicitly requires outside knowledge for video object segmentation . Experiments on OK-VOS and two existing reasoning segmentation benchmarks demonstrate that our Seg-ReSearch improves state-of-the-art approaches by a substantial margin. Code and data will be released at https://github.com/iSEE-Laboratory/Seg-ReSearch.",
+  "summary_en": "Seg-ReSearch introduces a novel segmentation approach that combines interleaved reasoning with external search to overcome limitations of frozen MLLM knowledge, using hierarchical reward design for training and demonstrating superior performance on video object segmentation benchmarks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSeg-ReSearch introduces a novel segmentation approach that combines interleaved reasoning with external search to overcome limitations of frozen MLLM knowledge, using hierarchical reward design for training and demonstrating superior performance on video object segmentation benchmarks.",
+  "hf_url": "https://huggingface.co/papers/2602.04454",
+  "arxiv_url": "https://arxiv.org/abs/2602.04454",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04454",
+  "github_url": "https://github.com/iSEE-Laboratory/Seg-ReSearch",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:43:52.748358+00:00"
+}

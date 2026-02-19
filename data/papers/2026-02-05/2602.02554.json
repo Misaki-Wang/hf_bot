@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.02554",
+  "title": "BatCoder: Self-Supervised Bidirectional Code-Documentation Learning via Back-Translation",
+  "authors": [
+    "Jingwen Xu",
+    "Yiyang Lu",
+    "Zisu Huang",
+    "Changze Lv",
+    "Xiaohua Wang",
+    "Shizheng Li",
+    "Zhibo Xu",
+    "Zhengkang Guo",
+    "Zhengyuan Wang",
+    "Muzhao Tian",
+    "Xuanjing Huang",
+    "Xiaoqing Zheng"
+  ],
+  "abstract": "BatCoder is a self-supervised reinforcement learning framework that jointly optimizes code and documentation generation through back-translation, achieving superior performance on code-related benchmarks. Training LLMs for code-related tasks typically depends on high-quality code-documentation pairs, which are costly to curate and often scarce for niche programming languages. We introduce BatCoder, a self-supervised reinforcement learning framework designed to jointly optimize code generation and documentation production . BatCoder employs a back-translation strategy: a documentation is first generated from code, and then the generated documentation is used to reconstruct the original code. The semantic similarity between the original and reconstructed code serves as an implicit reward , enabling reinforcement learning to improve the model's performance both in generating code from documentation and vice versa. This approach allows models to be trained using only code, substantially increasing the available training examples. Evaluated on HumanEval and MBPP with a 7B model, BatCoder achieved 83.5% and 81.0% pass@1 , outperforming strong open-source baselines. Moreover, the framework demonstrates consistent scaling with respect to both training corpus size and model capacity .",
+  "summary_en": "BatCoder is a self-supervised reinforcement learning framework that jointly optimizes code and documentation generation through back-translation, achieving superior performance on code-related benchmarks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nBatCoder is a self-supervised reinforcement learning framework that jointly optimizes code and documentation generation through back-translation, achieving superior performance on code-related benchmarks.",
+  "hf_url": "https://huggingface.co/papers/2602.02554",
+  "arxiv_url": "https://arxiv.org/abs/2602.02554",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02554",
+  "github_url": "",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T05:27:24.826432+00:00"
+}

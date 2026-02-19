@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.02196",
+  "title": "TIDE: Trajectory-based Diagnostic Evaluation of Test-Time Improvement in LLM Agents",
+  "authors": [
+    "Hang Yan",
+    "Xinyu Che",
+    "Fangzhi Xu",
+    "Qiushi Sun",
+    "Zichen Ding",
+    "Kanzhi Cheng",
+    "Jian Zhang",
+    "Tao Qin",
+    "Jun Liu",
+    "Qika Lin"
+  ],
+  "abstract": "Test-Time Improvement (TTI) in autonomous LLM agents involves iterative environmental interaction that enhances performance, but current evaluation methods inadequately capture task optimization efficiency and memory utilization. Recent advances in autonomous LLM agents demonstrate their ability to improve performance through iterative interaction with the environment. We define this paradigm as Test-Time Improvement (TTI). However, the mechanisms under how and why TTI succeed or fail remain poorly understood, and existing evaluation metrics fail to capture their task optimization efficiency , behavior adaptation after erroneous actions, and the specific utility of working memory for task completion. To address these gaps, we propose Test-time Improvement Diagnostic Evaluation (TIDE), an agent-agnostic and environment-agnostic framework that decomposes TTI into three comprehensive and interconnected dimensions. The framework measures (1) the overall temporal dynamics of task completion and (2) identifies whether performance is primarily constrained by recursive looping behaviors or (3) by burdensome accumulated memory. Through extensive experiments across diverse agents and environments, TIDE highlights that improving agent performance requires more than scaling internal reasoning, calling for explicitly optimizing the interaction dynamics between the agent and the environment.",
+  "summary_en": "Test-Time Improvement (TTI) in autonomous LLM agents involves iterative environmental interaction that enhances performance, but current evaluation methods inadequately capture task optimization efficiency and memory utilization.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nTest-Time Improvement (TTI) in autonomous LLM agents involves iterative environmental interaction that enhances performance, but current evaluation methods inadequately capture task optimization efficiency and memory utilization.",
+  "hf_url": "https://huggingface.co/papers/2602.02196",
+  "arxiv_url": "https://arxiv.org/abs/2602.02196",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02196",
+  "github_url": "",
+  "upvotes": 33,
+  "fetched_at": "2026-02-19T05:27:20.819060+00:00"
+}

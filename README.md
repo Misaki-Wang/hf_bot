@@ -1,43 +1,64 @@
 # HF Papers Archive
 
-自动抓取 Hugging Face `papers/date/<YYYY-MM-DD>` 页面，归档每篇论文信息（含 AI-generated summary 的中英版本），并生成可部署到 GitHub Pages 的静态站点。
+A fully automated archive for Hugging Face Daily Papers.
 
-当前版本：`v0.1`
+It crawls papers from `https://huggingface.co/papers/date/YYYY-MM-DD`, stores normalized JSON records, generates bilingual summaries (EN + ZH), builds search indexes, and publishes a static Next.js website on GitHub Pages.
 
-## 功能
+## Current Status
 
-- 按日期抓取：`https://huggingface.co/papers/date/YYYY-MM-DD`
-- 单篇字段归档（JSON）：
+- Tagged releases: `v0.1`, `v0.3.1`, `v0.3.2`
+- Main branch includes additional hardening after `v0.3.2` (dedupe + release-time visibility gating)
+
+## Core Features
+
+- Daily crawler (Python 3.11, `requests` + `beautifulsoup4` + `lxml`)
+- Per-paper archival JSON under date folders
+- Fields per paper:
   - `title`
   - `authors`
-  - `abstract`（从 HF 论文页抽取）
+  - `abstract`
   - `summary_en`
   - `summary_zh`
   - `hf_url`
   - `arxiv_url`
-  - `arxiv_pdf_url`（由 arXiv abs 链接自动转换）
-  - `github_url`（若 HF 页面提供）
-  - `upvotes`（HF 页面点赞数）
+  - `arxiv_pdf_url`
+  - `github_url`
+  - `upvotes`
   - `fetched_at`
-- 翻译可插拔：
-  - 默认 `dummy`（无密钥也能跑完整流程）
-  - 可选 `openrouter`（设置 `OPENROUTER_API_KEY` 后启用）
-  - OpenRouter 默认模型：`moonshotai/kimi-k2.5`（可通过环境变量覆盖）
-- 索引生成：
+- Translation pipeline:
+  - `dummy` translator (works without API keys)
+  - `openrouter` translator (default model: `moonshotai/kimi-k2.5`)
+  - Auto-synthesize `summary_en` from `abstract` when `summary_en` is missing
+- Search and index generation:
   - `data/index.json`
   - `data/search_index.json`
   - `data/dates/<date>.json`
-- 静态站点（Next.js 导出）：
-  - 顶部「今日论文总览」AI 摘要（可折叠，默认展开）
-  - 进入首页默认展示最近一次抓取日期；Overview 随日期切换同步更新
-  - 日期分组列表
-  - 详情页
-  - 全文搜索（lunr）
-  - 中英 summary 切换
-  - Abstract 折叠/展开
-  - 默认按 upvotes 降序展示
+- Static website (Next.js export) with:
+  - date-based browsing
+  - full-text search (title/authors/abstract/summaries)
+  - bilingual summary toggle
+  - per-paper detail pages
+  - daily Overview panel
+- Automation via GitHub Actions + GitHub Pages
 
-## 项目结构
+## Important Runtime Rules
+
+- Weekend skip: crawler skips Saturday/Sunday by default (can be overridden)
+- Rate-limit friendly crawling:
+  - randomized sleep between papers
+  - retries with backoff
+  - skip already complete records
+- Cross-date dedupe in index build:
+  - one visible record per `paper_id`
+  - keeps earliest date as canonical display date
+  - merges richer fields from duplicates
+- Release-time visibility gate (default):
+  - timezone: `Asia/Shanghai` (GMT+8)
+  - release time: `08:00`
+  - delay days: `1`
+  - effect: papers for `YYYY-MM-DD` are not exposed in site indexes until `YYYY-MM-(DD+1) 08:00`
+
+## Repository Layout
 
 ```text
 hf-papers-archive/
@@ -45,6 +66,8 @@ hf-papers-archive/
     fetch_daily.py
     translate.py
     build_index.py
+    backfill_range.py
+    migrate_paper_layout.py
   data/
     papers/
     dates/
@@ -55,7 +78,6 @@ hf-papers-archive/
     components/
     lib/
     scripts/sync-data.mjs
-    next.config.mjs
     package.json
   .github/workflows/
     daily.yml
@@ -63,208 +85,171 @@ hf-papers-archive/
   README.md
 ```
 
-## 本地运行
+## Quick Start (Local)
 
-### 1) 安装依赖
+### 1) Install dependencies
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
+npm install --prefix site
 ```
 
+### 2) Fetch one day
+
 ```bash
-cd site
-npm install
-cd ..
+python3 scripts/fetch_daily.py --date 2026-02-18 --skip-existing-complete
 ```
 
-### 2) 抓取某一天
+Optional (weekend override):
 
 ```bash
-python3 scripts/fetch_daily.py --date 2026-02-16
+python3 scripts/fetch_daily.py --date 2026-02-15 --allow-weekend
 ```
 
-输出示例：`data/papers/2026-02-16__2602.10388.json`
+### 3) Translate summaries
 
-注意：默认周六/周日会自动跳过抓取（返回成功但不执行爬取）。
-如需手动补抓周末日期，可加：
-
-```bash
-python3 scripts/fetch_daily.py --date 2026-02-16 --allow-weekend
-```
-
-增量抓取（已存在完整 JSON 则跳过）：
+Auto mode (uses OpenRouter only if key is present):
 
 ```bash
-python3 scripts/fetch_daily.py --date 2026-02-16 --skip-existing-complete
-```
-
-### 3) 生成中文摘要
-
-`translate.py` 现在支持：当论文缺少 `summary_en` 时，自动基于 `abstract` 先生成英文摘要，再翻译为 `summary_zh`（若 `abstract` 不可用则跳过）。
-
-默认（无密钥）：
-
-```bash
-python3 scripts/translate.py --provider dummy
-```
-
-自动模式（有 `OPENROUTER_API_KEY` 则调用 OpenRouter，无则回退 dummy）：
-
-```bash
-export OPENROUTER_API_KEY=your_key
+export OPENROUTER_API_KEY=<your_key>
 export OPENROUTER_MODEL=moonshotai/kimi-k2.5
-python3 scripts/translate.py --provider auto
+python3 scripts/translate.py --provider auto --date 2026-02-18 --workers 6
 ```
 
-并发加速（推荐 OpenRouter）：
-
-```bash
-python3 scripts/translate.py --provider auto --workers 6
-```
-
-说明：`--workers` 越大越快，但更容易触发 API 限流；推荐 `2~6`。默认并发为 `6`，也可用环境变量 `TRANSLATE_WORKERS` 覆盖。
-
-显式指定 OpenRouter：
-
-```bash
-python3 scripts/translate.py --provider openrouter
-```
-
-只翻译指定日期（推荐给自动任务）：
-
-```bash
-python3 scripts/translate.py --provider auto --date 2026-02-16
-```
-
-切换其他 OpenRouter 模型（无需改代码）：
-
-```bash
-python3 scripts/translate.py --provider openrouter --model anthropic/claude-3.5-sonnet
-```
-
-### 4) 构建索引
+### 4) Build index
 
 ```bash
 python3 scripts/build_index.py
 ```
 
-若配置 `OPENROUTER_API_KEY`，会在构建索引时额外生成“今日论文总览”AI 摘要（写入 `data/index.json`）。
+Optional visibility overrides:
 
-### 5) 构建静态站点
+```bash
+export ARCHIVE_TIMEZONE=Asia/Shanghai
+export ARCHIVE_RELEASE_HOUR=8
+export ARCHIVE_RELEASE_MINUTE=0
+export ARCHIVE_RELEASE_DELAY_DAYS=1
+python3 scripts/build_index.py
+```
+
+### 5) Build static site
 
 ```bash
 npm run build --prefix site
 ```
 
-构建产物目录：`site/out/`
+Output directory: `site/out`
 
-### 一键执行（本地）
+### 6) Run site locally
+
+Dev mode:
 
 ```bash
-python3 scripts/fetch_daily.py --date 2026-02-16 \
-  && python3 scripts/translate.py --provider auto \
-  && python3 scripts/build_index.py \
-  && npm run build --prefix site
+npm run dev --prefix site
 ```
 
-## 数据格式
+Static preview example:
 
-单篇 JSON（`data/papers/YYYY-MM-DD__<paper_id>.json`）示例：
+```bash
+cd site/out && python3 -m http.server 4173
+```
+
+## Date-Range Backfill
+
+Run full day-by-day pipeline (`fetch -> translate -> build index`):
+
+```bash
+python3 scripts/backfill_range.py \
+  --start 2026-02-01 \
+  --end 2026-02-19 \
+  --provider auto \
+  --workers 6 \
+  --skip-existing-complete
+```
+
+## Data Schema
+
+Example: `data/papers/2026-02-18/2602.14111.json`
 
 ```json
 {
-  "date": "2026-02-16",
-  "paper_id": "2602.10388",
+  "date": "2026-02-18",
+  "paper_id": "2602.14111",
   "title": "Paper Title",
   "authors": ["Author A", "Author B"],
-  "abstract": "Paper abstract text ...",
-  "summary_en": "HF AI-generated summary ...",
-  "summary_zh": "中文翻译...",
-  "hf_url": "https://huggingface.co/papers/2602.10388",
-  "arxiv_url": "https://arxiv.org/abs/2602.10388",
-  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10388",
+  "abstract": "...",
+  "summary_en": "...",
+  "summary_zh": "...",
+  "hf_url": "https://huggingface.co/papers/2602.14111",
+  "arxiv_url": "https://arxiv.org/abs/2602.14111",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14111",
   "github_url": "https://github.com/org/repo",
-  "upvotes": 202,
-  "fetched_at": "2026-02-17T01:23:45.678901+00:00"
+  "upvotes": 42,
+  "fetched_at": "2026-02-19T00:12:34.123456+00:00"
 }
 ```
 
-索引中的「今日论文总览」字段（`data/index.json`）示例：
+## GitHub Actions Deployment
 
-```json
-{
-  "daily_summary": {
-    "date": "2026-02-16",
-    "content": "今日论文整体聚焦于...",
-    "source": "openrouter",
-    "model": "moonshotai/kimi-k2.5",
-    "generated_at": "2026-02-17T08:47:39.574870+00:00"
-  }
-}
-```
+Workflow: `.github/workflows/daily.yml`
 
-## GitHub Actions（每日自动更新）
+### Trigger modes
 
-工作流：`.github/workflows/daily.yml`
+- `schedule`: daily at `00:00 UTC` (which is `08:00 GMT+8`)
+- `workflow_dispatch`: manual run
 
-触发方式：
+### Workflow behavior
 
-- 定时：每天 GMT+8 08:00（即 UTC 00:00），默认抓取前一天日期
-- 手动：`workflow_dispatch`
+1. Resolve target date (default: previous day in selected timezone)
+2. Run single-day pipeline with skip-existing optimization
+3. Rebuild indexes
+4. Commit `data/` only if changed
+5. Build Next.js static site
+6. Deploy to GitHub Pages
 
-流程：
+### Required repository settings
 
-1. Checkout
-2. 安装 Python 依赖
-3. 计算目标日期（可选 CST / UTC / JST；当未填写 `date` 时默认取“前一天”）
-4. `fetch_daily.py`
-5. `translate.py`
-6. `build_index.py`
-7. 若 `data/` 有变化则自动 commit & push
-8. 构建 Next.js 静态站点
-9. 部署到 GitHub Pages
+- `Settings -> Pages -> Source`: `GitHub Actions`
+- `Settings -> Actions -> General -> Workflow permissions`: `Read and write permissions`
 
-### 手动运行示例
+### Secrets
 
-在 GitHub Actions 页面运行 `Daily HF Papers Archive`：
+- `OPENROUTER_API_KEY` (required for real translation and AI Overview)
+- `OPENROUTER_MODEL` (optional)
+- `OPENROUTER_SUMMARY_MODEL` (optional)
 
-- `date`: `2026-02-16`
-- `timezone`: `CST`
-- `translator`: `dummy`（或 `openrouter`）
-- `translate_workers`: `6`（OpenRouter 建议 2~6）
+## Release Notes
 
-### Pages 配置
+### v0.1
 
-- 仓库 Settings -> Pages -> Build and deployment -> Source 选择 `GitHub Actions`
-- 默认会自动推断 project pages basePath；必要时可设置 `NEXT_BASE_PATH`
+- Initial end-to-end MVP
+- Daily fetch, JSON archive, index build, static site, Pages workflow
 
-## 注意事项
+### v0.3.1
 
-- 抓取器带随机限速（默认 0.5~1.5s）和最多 3 次重试。
-- 页面结构可能变化，脚本采用 DOM 容错解析，字段可能为空但流程不应崩溃。
-- `summary_en` 仅在页面存在 AI-generated summary 时写入；否则会留空，避免写入无效文案。
-- 若要真实翻译，请在仓库 Secrets 中配置：
-  - `OPENROUTER_API_KEY`
-  - 可选 `OPENROUTER_MODEL`（默认 `moonshotai/kimi-k2.5`）
-  - 可选 `OPENROUTER_SUMMARY_MODEL`（控制“今日论文总览”模型，默认跟随 `OPENROUTER_MODEL`）
+- OpenRouter-based translation flow stabilized
+- Translation concurrency introduced (`--workers`, default 6)
+- Prompt quality improvements for translation and overview generation
 
-## v0.1 上传与部署清单
+### v0.3.2
 
-1. 创建 GitHub 仓库（空仓库，不要初始化 README）。
-2. 本地设置远端并推送：
-   ```bash
-   git add .
-   git commit -m "release: v0.1"
-   git branch -M main
-   git remote add origin <your_repo_url>
-   git push -u origin main
-   ```
-3. 在 GitHub 仓库 `Settings -> Secrets and variables -> Actions` 添加：
-   - `OPENROUTER_API_KEY`（必需，若你要真实翻译/AI 总览）
-   - `OPENROUTER_MODEL`（可选）
-   - `OPENROUTER_SUMMARY_MODEL`（可选）
-4. 在 `Settings -> Actions -> General -> Workflow permissions` 里选择 `Read and write permissions`（用于自动提交 `data/` 更新）。
-5. 在 GitHub 仓库 `Settings -> Pages` 里将 Source 设为 `GitHub Actions`。
-6. 在 Actions 页面手动运行一次 `Daily HF Papers Archive`（`workflow_dispatch`）做首轮部署验证。
+- UI/visual refinements and icon updates
+- Home/detail page usability improvements
+- Deployment flow polished for GitHub Pages
+
+### Post-v0.3.2 (main branch updates)
+
+- Date alignment fixes for display and daily scheduling
+- Per-day folder layout adopted for paper JSON files
+- Backfill and migration utilities added
+- Deduplication across dates in index build
+- Release-time visibility gate to prevent early exposure of next-date content
+- Additional skip-existing logic to reduce redundant crawling/translation and lower rate-limit risk
+
+## Notes
+
+- If source page structure changes, parser fallbacks try to keep the pipeline resilient.
+- Missing fields are allowed; the pipeline should not crash because of partial extraction.
+- For production automation, keep translation worker count conservative (`2-6`) to reduce API throttling risk.

@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.11103",
+  "title": "GameDevBench: Evaluating Agentic Capabilities Through Game Development",
+  "authors": [
+    "Wayne Chi",
+    "Yixiong Fang",
+    "Arnav Yayavaram",
+    "Siddharth Yayavaram",
+    "Seth Karten",
+    "Qiuhong Anna Wei",
+    "Runkun Chen",
+    "Alexander Wang",
+    "Valerie Chen",
+    "Ameet Talwalkar",
+    "Chris Donahue"
+  ],
+  "abstract": "GameDevBench is introduced as the first benchmark for evaluating agents on game development tasks that combine software development complexity with deep multimodal understanding requirements. Despite rapid progress on coding agents , progress on their multimodal counterparts has lagged behind. A key challenge is the scarcity of evaluation testbed s that combine the complexity of software development with the need for deep multimodal understanding . Game development provides such a testbed as agents must navigate large, dense codebases while manipulating intrinsically multimodal assets such as shaders, sprites, and animations within a visual game scene. We present GameDevBench , the first benchmark for evaluating agents on game development tasks. GameDevBench consists of 132 tasks derived from web and video tutorials . Tasks require significant multimodal understanding and are complex -- the average solution requires over three times the amount of lines of code and file changes compared to prior software development benchmarks. Agents still struggle with game development , with the best agent solving only 54.5% of tasks. We find a strong correlation between perceived task difficulty and multimodal complexity , with success rates dropping from 46.9% on gameplay-oriented tasks to 31.6% on 2D graphics tasks. To improve multimodal capability, we introduce two simple image and video-based feedback mechanisms for agents. Despite their simplicity, these methods consistently improve performance, with the largest change being an increase in Claude Sonnet 4.5's performance from 33.3% to 47.7%. We release GameDevBench publicly to support further research into agentic game development .",
+  "summary_en": "GameDevBench is introduced as the first benchmark for evaluating agents on game development tasks that combine software development complexity with deep multimodal understanding requirements.",
+  "summary_zh": "GameDevBench是首个用于评估智能体游戏开发任务的基准，该类任务结合了软件开发复杂性与深度多模态理解需求。",
+  "hf_url": "https://huggingface.co/papers/2602.11103",
+  "arxiv_url": "https://arxiv.org/abs/2602.11103",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11103",
+  "github_url": "",
+  "upvotes": 14,
+  "fetched_at": "2026-02-19T06:32:08.772416+00:00"
+}

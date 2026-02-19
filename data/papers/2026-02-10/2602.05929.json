@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.05929",
+  "title": "KV-CoRE: Benchmarking Data-Dependent Low-Rank Compressibility of KV-Caches in LLMs",
+  "authors": [
+    "Jian Chen",
+    "Zhuoran Wang",
+    "Jiayu Qin",
+    "Ming Li",
+    "Meng Wang",
+    "Changyou Chen",
+    "Yin Chen",
+    "Qizhen Weng",
+    "Yirui Liu"
+  ],
+  "abstract": "KV-CoRE method evaluates kv-cache compressibility through SVD-based low-rank approximation, revealing patterns linking compressibility to model architecture and training data across multiple languages and domains. Large language models rely on kv-cache s to avoid redundant computation during autoregressive decoding , but as context length grows, reading and writing the cache can quickly saturate GPU memory bandwidth . Recent work has explored KV-cache compression , yet most approaches neglect the data-dependent nature of kv-cache s and their variation across layers. We introduce KV-CoRE KV-cache Compressibility by Rank Evaluation), an SVD-based method for quantifying the data-dependent low-rank compressibility of kv-cache s. KV-CoRE computes the optimal low-rank approximation under the Frobenius norm and, being gradient-free and incremental, enables efficient dataset-level, layer-wise evaluation . Using this method, we analyze multiple models and datasets spanning five English domains and sixteen languages, uncovering systematic patterns that link compressibility to model architecture, training data, and language coverage. As part of this analysis, we employ the Normalized Effective Rank as a metric of compressibility and show that it correlates strongly with performance degradation under compression. Our study establishes a principled evaluation framework and the first large-scale benchmark of kv-cache compressibility in LLMs, offering insights for dynamic, data-aware compression and data-centric model development.",
+  "summary_en": "KV-CoRE method evaluates kv-cache compressibility through SVD-based low-rank approximation, revealing patterns linking compressibility to model architecture and training data across multiple languages and domains.",
+  "summary_zh": "KV-CoRE方法通过基于SVD的低秩近似评估KV缓存可压缩性，揭示其与模型架构及训练数据之间的关联规律，涵盖多种语言和领域。",
+  "hf_url": "https://huggingface.co/papers/2602.05929",
+  "arxiv_url": "https://arxiv.org/abs/2602.05929",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05929",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:01:58.158978+00:00"
+}

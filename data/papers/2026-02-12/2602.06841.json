@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.06841",
+  "title": "From Features to Actions: Explainability in Traditional and Agentic AI Systems",
+  "authors": [
+    "Sindhuja Chaduvula",
+    "Jessee Ho",
+    "Kina Kim",
+    "Aravind Narayanan",
+    "Mahshid Alinoori",
+    "Muskan Garg",
+    "Dhanesh Ramachandram",
+    "Shaina Raza"
+  ],
+  "abstract": "Static and agentic explainability approaches differ in their ability to interpret model behavior, with attribution methods effective for individual predictions but inadequate for diagnosing failures in multi-step decision processes, where trace-based diagnostics prove more reliable. Over the last decade, explainable AI has primarily focused on interpreting individual model predictions, producing post-hoc explanations that relate inputs to outputs under a fixed decision structure. Recent advances in large language models (LLMs) have enabled agentic AI systems whose behaviour unfolds over multi-step trajectories. In these settings, success and failure are determined by sequences of decisions rather than a single output. While useful, it remains unclear how explanation approaches designed for static predictions translate to agentic settings where behaviour emerges over time. In this work, we bridge the gap between static and agentic explainability by comparing attribution-based explanations with trace-based diagnostics across both settings. To make this distinction explicit, we empirically compare attribution-based explanations used in static classification tasks with trace-based diagnostics used in agentic benchmarks ( TAU-bench Airline and AssistantBench ). Our results show that while attribution methods achieve stable feature rankings in static settings (Spearman ρ= 0.86), they cannot be applied reliably to diagnose execution-level failures in agentic trajectories . In contrast, trace-grounded rubric evaluation for agentic settings consistently localizes behaviour breakdowns and reveals that state tracking inconsistency is 2.7times more prevalent in failed runs and reduces success probability by 49\\%. These findings motivate a shift towards trajectory-level explainability for agentic systems when evaluating and diagnosing autonomous AI behaviour. Resources: https://github.com/VectorInstitute/unified-xai-evaluation-framework https://vectorinstitute.github.io/unified-xai-evaluation-framework",
+  "summary_en": "Static and agentic explainability approaches differ in their ability to interpret model behavior, with attribution methods effective for individual predictions but inadequate for diagnosing failures in multi-step decision processes, where trace-based diagnostics prove more reliable.",
+  "summary_zh": "静态与智能体可解释性方法在解释模型行为的能力上存在差异：归因方法对单个预测有效，但不足以诊断多步决策过程中的失败，而基于轨迹的诊断方法则更为可靠。",
+  "hf_url": "https://huggingface.co/papers/2602.06841",
+  "arxiv_url": "https://arxiv.org/abs/2602.06841",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06841",
+  "github_url": "https://github.com/VectorInstitute/unified-xai-evaluation-framework",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T06:30:46.941644+00:00"
+}

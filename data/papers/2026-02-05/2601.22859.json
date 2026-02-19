@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2601.22859",
+  "title": "MEnvAgent: Scalable Polyglot Environment Construction for Verifiable Software Engineering",
+  "authors": [
+    "Chuanzhe Guo",
+    "Jingjing Wu",
+    "Sijun He",
+    "Yang Chen",
+    "Zhaoqi Kuang",
+    "Shilong Fan",
+    "Bingjin Chen",
+    "Siqi Bao",
+    "Jing Liu",
+    "Hua Wu",
+    "Qingfu Zhu",
+    "Wanxiang Che",
+    "Haifeng Wang"
+  ],
+  "abstract": "MEnvAgent is a multi-language framework that automates environment construction for software engineering tasks using a planning-execution-verification architecture and environment reuse mechanism, achieving improved performance on a new benchmark and creating the largest open-source polyglot dataset of verifiable Docker environments. The evolution of Large Language Model (LLM) agents for software engineering (SWE) is constrained by the scarcity of verifiable datasets , a bottleneck stemming from the complexity of constructing executable environments across diverse languages. To address this, we introduce MEnvAgent, a Multi-language framework for automated Environment construction that facilitates scalable generation of verifiable task instances. MEnvAgent employs a multi-agent Planning-Execution-Verification architecture to autonomously resolve construction failures and integrates a novel Environment Reuse Mechanism that reduces computational overhead by incrementally patching historical environments. Evaluations on MEnvBench , a new benchmark comprising 1,000 tasks across 10 languages, demonstrate that MEnvAgent outperforms baselines, improving Fail-to-Pass (F2P) rates by 8.6% while reducing time costs by 43%. Additionally, we demonstrate the utility of MEnvAgent by constructing MEnvData-SWE , the largest open-source polyglot dataset of realistic verifiable Docker environments to date, alongside solution trajectories that enable consistent performance gains on SWE tasks across a wide range of models. Our code, benchmark, and dataset are available at https://github.com/ernie-research/MEnvAgent.",
+  "summary_en": "MEnvAgent is a multi-language framework that automates environment construction for software engineering tasks using a planning-execution-verification architecture and environment reuse mechanism, achieving improved performance on a new benchmark and creating the largest open-source polyglot dataset of verifiable Docker environments.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMEnvAgent is a multi-language framework that automates environment construction for software engineering tasks using a planning-execution-verification architecture and environment reuse mechanism, achieving improved performance on a new benchmark and creating the largest open-source polyglot dataset of verifiable Docker environments.",
+  "hf_url": "https://huggingface.co/papers/2601.22859",
+  "arxiv_url": "https://arxiv.org/abs/2601.22859",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22859",
+  "github_url": "https://github.com/ernie-research/MEnvAgent",
+  "upvotes": 17,
+  "fetched_at": "2026-02-19T05:27:15.874235+00:00"
+}

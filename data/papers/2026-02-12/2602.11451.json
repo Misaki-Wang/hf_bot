@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.11451",
+  "title": "LoopFormer: Elastic-Depth Looped Transformers for Latent Reasoning via Shortcut Modulation",
+  "authors": [
+    "Ahmadreza Jeddi",
+    "Marco Ciccone",
+    "Babak Taati"
+  ],
+  "abstract": "LoopFormer is a looped Transformer architecture that enables adaptive computational depth through variable-length trajectory training and shortcut-consistency regularization, allowing flexible reasoning under different compute constraints. Looped Transformers have emerged as an efficient and powerful class of models for reasoning in the language domain. Recent studies show that these models achieve strong performance on algorithmic and reasoning tasks, suggesting that looped architectures possess an inductive bias toward latent reasoning . However, prior approaches fix the number of loop iterations during training and inference, leaving open the question of whether these models can flexibly adapt their computational depth under variable compute budgets . We introduce LoopFormer , a looped Transformer trained on variable-length trajectories to enable budget-conditioned reasoning . Our core contribution is a shortcut-consistency training scheme that aligns trajectories of different lengths, ensuring that shorter loops yield informative representations while longer loops continue to refine them. LoopFormer conditions each loop on the current time and step size, enabling representations to evolve consistently across trajectories of varying length rather than drifting or stagnating. Empirically, LoopFormer demonstrates robust performance on language modeling and reasoning benchmarks even under aggressive compute constraints, while scaling gracefully with additional budget. These results show that looped Transformers are inherently suited for adaptive language modeling , opening a path toward controllable and budget-aware large language models.",
+  "summary_en": "LoopFormer is a looped Transformer architecture that enables adaptive computational depth through variable-length trajectory training and shortcut-consistency regularization, allowing flexible reasoning under different compute constraints.",
+  "summary_zh": "LoopFormer是一种循环Transformer架构，通过变长度轨迹训练和捷径一致性正则化实现自适应计算深度，从而在不同计算约束下实现灵活推理。",
+  "hf_url": "https://huggingface.co/papers/2602.11451",
+  "arxiv_url": "https://arxiv.org/abs/2602.11451",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11451",
+  "github_url": "https://github.com/armenjeddi/loopformer",
+  "upvotes": 15,
+  "fetched_at": "2026-02-19T06:32:19.435513+00:00"
+}

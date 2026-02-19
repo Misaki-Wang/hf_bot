@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.08818",
+  "title": "FlexMoRE: A Flexible Mixture of Rank-heterogeneous Experts for Efficient Federatedly-trained Large Language Models",
+  "authors": [
+    "Annemette Brok Pirchert",
+    "Jacob Nielsen",
+    "Mogens Henrik From",
+    "Lukas Galke Poech",
+    "Peter Schneider-Kamp"
+  ],
+  "abstract": "FlexMoRE demonstrates that low-rank adapters can replace full-sized experts in mixture-of-experts architectures, achieving better performance with significantly fewer parameters. Recent advances in mixture-of-experts architectures have shown that individual experts models can be trained federatedly, i.e., in isolation from other experts by using a common base model to facilitate coordination. However, we hypothesize that full-sized experts may not be necessary for all domains and that instead low-rank adapters may be sufficient. Here, we introduce FlexMoRE, a Flexible Mixture of Rank-heterogenous Experts , which may be either full-sized experts or adapters of a suitable rank. We systematically investigate the trade-off between expert rank and downstream task performance by evaluating 6 experts with ranks 2^0 to 2^{14} resulting in experiments covering 150 mixtures (96 with 2 experts, 54 with 7 experts) that are evaluated across 120 tasks. For our experiments, we build on FlexOlmo and turn its pre-trained experts into low-rank versions. Our regression analysis from expert rank to downstream task performance reveals that the best-performing rank is substantially higher for reasoning-heavy benchmarks than for knowledge-heavy benchmarks. These findings on rank sensitivity come with direct implications for memory efficiency: Using optimal ranks, FlexMoRE yields improved downstream task performance (average score 47.18) compared to the baseline FlexOlmo-style mixture of full-sized experts (average score 45.46) at less than one third the parameters (10.75B for FlexMoRE vs. 33.27B for FlexOlmo). All code will be made available.",
+  "summary_en": "FlexMoRE demonstrates that low-rank adapters can replace full-sized experts in mixture-of-experts architectures, achieving better performance with significantly fewer parameters.",
+  "summary_zh": "FlexMoRE 表明，低秩适配器可以替代混合专家架构中的全尺寸专家，以显著更少的参数实现更优性能。",
+  "hf_url": "https://huggingface.co/papers/2602.08818",
+  "arxiv_url": "https://arxiv.org/abs/2602.08818",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08818",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:03:36.202095+00:00"
+}

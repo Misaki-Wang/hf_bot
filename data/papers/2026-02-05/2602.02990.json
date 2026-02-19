@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.02990",
+  "title": "Learning to Repair Lean Proofs from Compiler Feedback",
+  "authors": [
+    "Evan Wang",
+    "Simon Chess",
+    "Daniel Lee",
+    "Siyuan Ge",
+    "Ajit Mallavarapu",
+    "Vasily Ilin"
+  ],
+  "abstract": "Neural theorem provers can be improved through supervised learning on proof repair data that includes compiler feedback and diagnostic explanations, enabling better failure interpretation and correction. As neural theorem provers become increasingly agentic, the ability to interpret and act on compiler feedback is critical. However, existing Lean datasets consist almost exclusively of correct proofs, offering little supervision for understanding and repairing failures. We study Lean proof repair as a supervised learning problem: given an erroneous proof and compiler feedback , predict both a corrected proof and a natural-language diagnosis grounded in the same feedback. We introduce APRIL (Automated Proof Repair in Lean ), a dataset of 260,000 supervised tuples pairing systematically generated proof failures with compiler diagnostics and aligned repair and explanation targets. Training language models on APRIL substantially improves repair accuracy and feedback-conditioned reasoning; in our single-shot repair evaluation setting, a finetuned 4B-parameter model outperforms the strongest open-source baseline. We view diagnostic-conditioned supervision as a complementary training signal for feedback-using provers. Our dataset is available at https://huggingface.co/datasets/uw-math-ai/APRIL{this link}.",
+  "summary_en": "Neural theorem provers can be improved through supervised learning on proof repair data that includes compiler feedback and diagnostic explanations, enabling better failure interpretation and correction.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nNeural theorem provers can be improved through supervised learning on proof repair data that includes compiler feedback and diagnostic explanations, enabling better failure interpretation and correction.",
+  "hf_url": "https://huggingface.co/papers/2602.02990",
+  "arxiv_url": "https://arxiv.org/abs/2602.02990",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02990",
+  "github_url": "",
+  "upvotes": 27,
+  "fetched_at": "2026-02-19T05:27:27.151741+00:00"
+}

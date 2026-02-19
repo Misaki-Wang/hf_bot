@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14265",
+  "title": "STATe-of-Thoughts: Structured Action Templates for Tree-of-Thoughts",
+  "authors": [
+    "Zachary Bamberger",
+    "Till R. Saenger",
+    "Gilad Morad",
+    "Ofra Amir",
+    "Brandon M. Stewart",
+    "Amir Feder"
+  ],
+  "abstract": "STATe presents an interpretable inference-time compute method that uses discrete textual interventions to generate diverse, high-quality, and explainable text by searching over reasoning patterns rather than relying on stochastic sampling.",
+  "summary_en": "STATe presents an interpretable inference-time compute method that uses discrete textual interventions to generate diverse, high-quality, and explainable text by searching over reasoning patterns rather than relying on stochastic sampling.",
+  "summary_zh": "STATe 提出了一种可解释的推理时计算方法，利用离散文本干预，通过对推理模式的搜索而非随机采样，生成多样化、高质量且可解释的文本。",
+  "hf_url": "https://huggingface.co/papers/2602.14265",
+  "arxiv_url": "https://arxiv.org/abs/2602.14265",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14265",
+  "github_url": "https://github.com/zbambergerNLP/state-of-thoughts",
+  "upvotes": 18,
+  "fetched_at": "2026-02-19T06:45:31.617066+00:00"
+}

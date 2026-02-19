@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01296",
+  "title": "Interacted Planes Reveal 3D Line Mapping",
+  "authors": [
+    "Zeran Ke",
+    "Bin Tan",
+    "Gui-Song Xia",
+    "Yujun Shen",
+    "Nan Xue"
+  ],
+  "abstract": "LiP-Map presents a line-plane joint optimization framework that explicitly models learnable line and planar primitives for accurate 3D line mapping in man-made environments. 3D line mapping from multi-view RGB images provides a compact and structured visual representation of scenes. We study the problem from a physical and topological perspective: a 3D line most naturally emerges as the edge of a finite 3D planar patch . We present LiP-Map, a line-plane joint optimization framework that explicitly models learnable line and planar primitives. This coupling enables accurate and detailed 3D line mapping while maintaining strong efficiency (typically completing a reconstruction in 3 to 5 minutes per scene). LiP-Map pioneers the integration of planar topology into 3D line mapping , not by imposing pairwise coplanarity constraints but by explicitly constructing interactions between plane and line primitives, thus offering a principled route toward structured reconstruction in man-made environments. On more than 100 scenes from ScanNetV2, ScanNet++, Hypersim, 7Scenes, and Tanks\\&Temple, LiP-Map improves both accuracy and completeness over state-of-the-art methods. Beyond line mapping quality, LiP-Map significantly advances line-assisted visual localization , establishing strong performance on 7Scenes. Our code is released at https://github.com/calmke/LiPMAP for reproducible research.",
+  "summary_en": "LiP-Map presents a line-plane joint optimization framework that explicitly models learnable line and planar primitives for accurate 3D line mapping in man-made environments.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLiP-Map presents a line-plane joint optimization framework that explicitly models learnable line and planar primitives for accurate 3D line mapping in man-made environments.",
+  "hf_url": "https://huggingface.co/papers/2602.01296",
+  "arxiv_url": "https://arxiv.org/abs/2602.01296",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01296",
+  "github_url": "https://github.com/calmke/LiPMAP",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T05:36:39.324302+00:00"
+}

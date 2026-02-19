@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.21468",
+  "title": "MemOCR: Layout-Aware Visual Memory for Efficient Long-Horizon Reasoning",
+  "authors": [
+    "Yaorui Shi",
+    "Shugui Liu",
+    "Yu Yang",
+    "Wenyu Mao",
+    "Yuxin Chen",
+    "Qi GU",
+    "Hui Su",
+    "Xunliang Cai",
+    "Xiang Wang",
+    "An Zhang"
+  ],
+  "abstract": "MemOCR is a multimodal memory agent that enhances long-horizon reasoning by adaptively compressing interaction histories into visual layouts, enabling efficient context utilization under tight budget constraints. Long-horizon agentic reasoning necessitates effectively compressing growing interaction histories into a limited context window . Most existing memory systems serialize history as text, where token-level cost is uniform and scales linearly with length, often spending scarce budget on low-value details. To this end, we introduce MemOCR, a multimodal memory agent that improves long-horizon reasoning under tight context budgets by allocating memory space with adaptive information density through visual layout . Concretely, MemOCR maintains a structured rich-text memory (e.g., headings, highlights) and renders it into an image that the agent consults for memory access, visually prioritizing crucial evidence while aggressively compressing auxiliary details. To ensure robustness across varying memory budgets, we train MemOCR with reinforcement learning under budget-aware objectives that expose the agent to diverse compression levels. Across long-context multi-hop and single-hop question-answering benchmarks, MemOCR outperforms strong text-based baselines and achieves more effective context utilization under extreme budgets.",
+  "summary_en": "MemOCR is a multimodal memory agent that enhances long-horizon reasoning by adaptively compressing interaction histories into visual layouts, enabling efficient context utilization under tight budget constraints.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMemOCR is a multimodal memory agent that enhances long-horizon reasoning by adaptively compressing interaction histories into visual layouts, enabling efficient context utilization under tight budget constraints.",
+  "hf_url": "https://huggingface.co/papers/2601.21468",
+  "arxiv_url": "https://arxiv.org/abs/2601.21468",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21468",
+  "github_url": "https://github.com/syr-cn/MemOCR",
+  "upvotes": 22,
+  "fetched_at": "2026-02-19T05:34:34.109410+00:00"
+}

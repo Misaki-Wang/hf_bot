@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02343",
+  "title": "Why Steering Works: Toward a Unified View of Language Model Parameter Dynamics",
+  "authors": [
+    "Ziwen Xu",
+    "Chenyan Wu",
+    "Hengyu Sun",
+    "Haiwen Hong",
+    "Mengru Wang",
+    "Yunzhi Yao",
+    "Longtao Huang",
+    "Hui Xue",
+    "Shumin Deng",
+    "Zhixuan Chu",
+    "Huajun Chen",
+    "Ningyu Zhang"
+  ],
+  "abstract": "Large language model control methods are unified under a dynamic weight update framework, revealing a preference-utility trade-off and enabling improved steering through SPLIT approach. Methods for controlling large language models (LLMs), including local weight fine-tuning , LoRA-based adaptation , and activation-based interventions , are often studied in isolation, obscuring their connections and making comparison difficult. In this work, we present a unified view that frames these interventions as dynamic weight updates induced by a control signal , placing them within a single conceptual framework. Building on this view, we propose a unified preference-utility analysis that separates control effects into preference, defined as the tendency toward a target concept, and utility, defined as coherent and task-valid generation, and measures both on a shared log-odds scale using polarity-paired contrastive examples . Across methods, we observe a consistent trade-off between preference and utility: stronger control increases preference while predictably reducing utility. We further explain this behavior through an activation manifold perspective, in which control shifts representations along target-concept directions to enhance preference, while utility declines primarily when interventions push representations off the model's valid-generation manifold . Finally, we introduce a new steering approach SPLIT guided by this analysis that improves preference while better preserving utility. Code is available at https://github.com/zjunlp/EasyEdit/blob/main/examples/ SPLIT .md.",
+  "summary_en": "Large language model control methods are unified under a dynamic weight update framework, revealing a preference-utility trade-off and enabling improved steering through SPLIT approach.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLarge language model control methods are unified under a dynamic weight update framework, revealing a preference-utility trade-off and enabling improved steering through SPLIT approach.",
+  "hf_url": "https://huggingface.co/papers/2602.02343",
+  "arxiv_url": "https://arxiv.org/abs/2602.02343",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02343",
+  "github_url": "",
+  "upvotes": 13,
+  "fetched_at": "2026-02-19T05:37:53.607267+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07055",
+  "title": "Theory of Space: Can Foundation Models Construct Spatial Beliefs through Active Exploration?",
+  "authors": [
+    "Pingyue Zhang",
+    "Zihan Huang",
+    "Yue Wang",
+    "Jieyu Zhang",
+    "Letian Xue",
+    "Zihan Wang",
+    "Qineng Wang",
+    "Keshigeyan Chandrasegaran",
+    "Ruohan Zhang",
+    "Yejin Choi",
+    "Ranjay Krishna",
+    "Jiajun Wu",
+    "Li Fei-Fei",
+    "Manling Li"
+  ],
+  "abstract": "Current multimodal foundation models show limitations in maintaining coherent spatial beliefs during active exploration, exhibiting gaps between active and passive performance, inefficient exploration strategies, and difficulties in updating outdated spatial knowledge. Spatial embodied intelligence requires agents to act to acquire information under partial observability. While multimodal foundation models excel at passive perception, their capacity for active, self-directed exploration remains understudied. We propose Theory of Space, defined as an agent's ability to actively acquire information through self-directed, active exploration and to construct, revise, and exploit a spatial belief from sequential, partial observations. We evaluate this through a benchmark where the goal is curiosity-driven exploration to build an accurate cognitive map. A key innovation is spatial belief probing , which prompts models to reveal their internal spatial representations at each step. Our evaluation of state-of-the-art models reveals several critical bottlenecks. First, we identify an Active-Passive Gap , where performance drops significantly when agents must autonomously gather information. Second, we find high inefficiency, as models explore unsystematically compared to program-based proxies. Through belief probing, we diagnose that while perception is an initial bottleneck, global beliefs suffer from instability that causes spatial knowledge to degrade over time. Finally, using a false belief paradigm, we uncover Belief Inertia , where agents fail to update obsolete priors with new evidence. This issue is present in text-based agents but is particularly severe in vision-based models . Our findings suggest that current foundation models struggle to maintain coherent, revisable spatial belief s during active exploration .",
+  "summary_en": "Current multimodal foundation models show limitations in maintaining coherent spatial beliefs during active exploration, exhibiting gaps between active and passive performance, inefficient exploration strategies, and difficulties in updating outdated spatial knowledge.",
+  "summary_zh": "当前多模态基础模型在主动探索过程中维持连贯空间信念方面存在局限性，表现出主动与被动性能差距、探索策略低效以及更新过时空间知识困难等问题。",
+  "hf_url": "https://huggingface.co/papers/2602.07055",
+  "arxiv_url": "https://arxiv.org/abs/2602.07055",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07055",
+  "github_url": "https://github.com/mll-lab-nu/Theory-of-Space",
+  "upvotes": 22,
+  "fetched_at": "2026-02-19T06:02:29.766955+00:00"
+}

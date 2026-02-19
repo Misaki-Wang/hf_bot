@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.10575",
+  "title": "MetaphorStar: Image Metaphor Understanding and Reasoning with End-to-End Visual Reinforcement Learning",
+  "authors": [
+    "Chenhao Zhang",
+    "Yazhe Niu",
+    "Hongsheng Li"
+  ],
+  "abstract": "MetaphorStar, an end-to-end visual reinforcement learning framework, significantly enhances metaphor comprehension in images through a specialized dataset, RL method, and benchmark, achieving state-of-the-art performance on multiple visual reasoning tasks. Metaphorical comprehension in images remains a critical challenge for Nowadays AI systems. While Multimodal Large Language Models (MLLMs) excel at basic Visual Question Answering (VQA), they consistently struggle to grasp the nuanced cultural, emotional, and contextual implications embedded in visual content. This difficulty stems from the task's demand for sophisticated multi-hop reasoning, cultural context, and Theory of Mind (ToM) capabilities, which current models lack. To fill this gap, we propose MetaphorStar, the first end-to-end visual reinforcement learning (RL) framework for image implication tasks . Our framework includes three core components: the fine-grained dataset TFQ-Data, the visual RL method TFQ-GRPO, and the well-structured benchmark TFQ-Bench. Our fully open-source MetaphorStar family, trained using TFQ-GRPO on TFQ-Data, significantly improves performance by an average of 82.6% on the image implication benchmark s. Compared with 20+ mainstream MLLMs, MetaphorStar-32B achieves state-of-the-art (SOTA) on Multiple-Choice Question and Open-Style Question, significantly outperforms the top closed-source model Gemini-3.0-pro on True-False Question. Crucially, our experiments reveal that learning image implication tasks improves the general understanding ability, especially the complex visual reasoning ability. We further provide a systematic analysis of model parameter scaling , training data scaling , and the impact of different model architectures and training strategies , demonstrating the broad applicability of our method. We open-sourced all model weights, datasets, and method code at https://metaphorstar.github.io.",
+  "summary_en": "MetaphorStar, an end-to-end visual reinforcement learning framework, significantly enhances metaphor comprehension in images through a specialized dataset, RL method, and benchmark, achieving state-of-the-art performance on multiple visual reasoning tasks.",
+  "summary_zh": "MetaphorStar是一种端到端视觉强化学习框架，通过专门的数据集、RL方法和基准，显著提升了图像隐喻理解能力，在多个视觉推理任务上取得最先进的性能。",
+  "hf_url": "https://huggingface.co/papers/2602.10575",
+  "arxiv_url": "https://arxiv.org/abs/2602.10575",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10575",
+  "github_url": "https://github.com/MING-ZCH/MetaphorStar",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T06:38:02.120312+00:00"
+}

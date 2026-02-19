@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06883",
+  "title": "Vision Transformer Finetuning Benefits from Non-Smooth Components",
+  "authors": [
+    "Ambroise Odonnat",
+    "Laetitia Chapel",
+    "Romain Tavenard",
+    "Ievgen Redko"
+  ],
+  "abstract": "Vision transformer components exhibit varying plasticity levels that correlate with finetuning performance, challenging the assumption that smoothness is always beneficial. The smoothness of the transformer architecture has been extensively studied in the context of generalization , training stability , and adversarial robustness . However, its role in transfer learning remains poorly understood. In this paper, we analyze the ability of vision transformer components to adapt their outputs to changes in inputs, or, in other words, their plasticity . Defined as an average rate of change, it captures the sensitivity to input perturbation; in particular, a high plasticity implies low smoothness . We demonstrate through theoretical analysis and comprehensive experiments that this perspective provides principled guidance in choosing the components to prioritize during adaptation. A key takeaway for practitioners is that the high plasticity of the attention modules and feedforward layers consistently leads to better finetuning performance . Our findings depart from the prevailing assumption that smoothness is desirable, offering a novel perspective on the functional properties of transformers. The code is available at https://github.com/ambroiseodt/vit- plasticity .",
+  "summary_en": "Vision transformer components exhibit varying plasticity levels that correlate with finetuning performance, challenging the assumption that smoothness is always beneficial.",
+  "summary_zh": "Vision Transformer组件表现出与微调性能相关的不同可塑性水平，挑战了平滑性总是有益的这一假设。",
+  "hf_url": "https://huggingface.co/papers/2602.06883",
+  "arxiv_url": "https://arxiv.org/abs/2602.06883",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06883",
+  "github_url": "https://github.com/ambroiseodt/vit-plasticity",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T05:58:25.427610+00:00"
+}

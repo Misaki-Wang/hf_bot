@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2601.18207",
+  "title": "PaperSearchQA: Learning to Search and Reason over Scientific Papers with RLVR",
+  "authors": [
+    "James Burgess",
+    "Jan N. Hansen",
+    "Duo Peng",
+    "Yuhui Zhang",
+    "Alejandro Lozano",
+    "Min Woo Sun",
+    "Emma Lundberg",
+    "Serena Yeung-Levy"
+  ],
+  "abstract": "Search agents trained on scientific paper corpora demonstrate advanced reasoning capabilities for technical question-answering tasks, outperforming traditional retrieval methods through reinforcement learning with verifiable rewards.",
+  "summary_en": "Search agents trained on scientific paper corpora demonstrate advanced reasoning capabilities for technical question-answering tasks, outperforming traditional retrieval methods through reinforcement learning with verifiable rewards.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSearch agents trained on scientific paper corpora demonstrate advanced reasoning capabilities for technical question-answering tasks, outperforming traditional retrieval methods through reinforcement learning with verifiable rewards.",
+  "hf_url": "https://huggingface.co/papers/2601.18207",
+  "arxiv_url": "https://arxiv.org/abs/2601.18207",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.18207",
+  "github_url": "https://github.com/jmhb0/PaperSearchQA",
+  "upvotes": 19,
+  "fetched_at": "2026-02-19T05:27:13.534884+00:00"
+}

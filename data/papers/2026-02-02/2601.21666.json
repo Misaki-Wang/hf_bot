@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.21666",
+  "title": "SONIC-O1: A Real-World Benchmark for Evaluating Multimodal Large Language Models on Audio-Video Understanding",
+  "authors": [
+    "Ahmed Y. Radwan",
+    "Christos Emmanouilidis",
+    "Hina Tabassum",
+    "Deval Pandya",
+    "Shaina Raza"
+  ],
+  "abstract": "A comprehensive benchmark for evaluating multimodal large language models on sequential audio-video data across real-world conversational domains with human-verified annotations and demographic metadata. Multimodal Large Language Models (MLLMs) are a major focus of recent AI research. However, most prior work focuses on static image understanding, while their ability to process sequential audio-video data remains underexplored. This gap highlights the need for a high-quality benchmark to systematically evaluate MLLM performance in a real-world setting. We introduce SONIC-O1, a comprehensive, fully human-verified benchmark spanning 13 real-world conversational domains with 4,958 annotations and demographic metadata. SONIC-O1 evaluates MLLMs on key tasks, including open-ended summarization, multiple-choice question (MCQ) answering, and temporal localization with supporting rationales (reasoning). Experiments on closed- and open-source models reveal limitations. While the performance gap in MCQ accuracy between two model families is relatively small, we observe a substantial 22.6% performance difference in temporal localization between the best performing closed-source and open-source models. Performance further degrades across demographic groups, indicating persistent disparities in model behavior. Overall, SONIC-O1 provides an open evaluation suite for temporally grounded and socially robust multimodal understanding . We release SONIC-O1 for reproducibility and research: Project page: https://vectorinstitute.github.io/sonic-o1/ Dataset: https://huggingface.co/datasets/vector-institute/sonic-o1 Github: https://github.com/vectorinstitute/sonic-o1 Leaderboard: https://huggingface.co/spaces/vector-institute/sonic-o1-leaderboard",
+  "summary_en": "A comprehensive benchmark for evaluating multimodal large language models on sequential audio-video data across real-world conversational domains with human-verified annotations and demographic metadata.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA comprehensive benchmark for evaluating multimodal large language models on sequential audio-video data across real-world conversational domains with human-verified annotations and demographic metadata.",
+  "hf_url": "https://huggingface.co/papers/2601.21666",
+  "arxiv_url": "https://arxiv.org/abs/2601.21666",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21666",
+  "github_url": "https://github.com/VectorInstitute/sonic-o1",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:34:42.747217+00:00"
+}

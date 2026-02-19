@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2601.19103",
+  "title": "Glance and Focus Reinforcement for Pan-cancer Screening",
+  "authors": [
+    "Linshan Wu",
+    "Jiaxin Zhuang",
+    "Hao Chen"
+  ],
+  "abstract": "A reinforcement learning framework with glance and focus models improves pan-cancer screening in CT scans by addressing foreground-background imbalance and reducing false positives through group relative learning. Pan-cancer screening in large-scale CT scans remains challenging for existing AI methods, primarily due to the difficulty of localizing diverse types of tiny lesions in large CT volumes. The extreme foreground-background imbalance significantly hinders models from focusing on diseased regions, while redundant focus on healthy regions not only decreases the efficiency but also increases false positives . Inspired by radiologists' glance and focus diagnostic strategy, we introduce GF-Screen, a Glance and Focus reinforcement learning framework for pan-cancer screening . GF-Screen employs a Glance model to localize the diseased regions and a Focus model to precisely segment the lesions, where segmentation results of the Focus model are leveraged to reward the Glance model via Reinforcement Learning (RL). Specifically, the Glance model crops a group of sub-volumes from the entire CT volume and learns to select the sub-volumes with lesions for the Focus model to segment. Given that the selecting operation is non-differentiable for segmentation training, we propose to employ the segmentation results to reward the Glance model . To optimize the Glance model , we introduce a novel group relative learning paradigm, which employs group relative comparison to prioritize high-advantage predictions and discard low-advantage predictions within sub-volume groups, not only improving efficiency but also reducing false positives . In this way, for the first time, we effectively extend cutting-edge RL techniques to tackle the specific challenges in pan-cancer screening . Extensive experiments on 16 internal and 7 external datasets across 9 lesion types demonstrated the effectiveness of GF-Screen. Notably, GF-Screen leads the public validation leaderboard of MICCAI FLARE25 pan-cancer challenge, surpassing the FLARE24 champion solution by a large margin (+25.6% DSC and +28.2% NSD).",
+  "summary_en": "A reinforcement learning framework with glance and focus models improves pan-cancer screening in CT scans by addressing foreground-background imbalance and reducing false positives through group relative learning.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA reinforcement learning framework with glance and focus models improves pan-cancer screening in CT scans by addressing foreground-background imbalance and reducing false positives through group relative learning.",
+  "hf_url": "https://huggingface.co/papers/2601.19103",
+  "arxiv_url": "https://arxiv.org/abs/2601.19103",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.19103",
+  "github_url": "https://github.com/Luffy03/GF-Screen",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T05:38:33.100382+00:00"
+}

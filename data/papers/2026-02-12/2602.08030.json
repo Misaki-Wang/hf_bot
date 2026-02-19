@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.08030",
+  "title": "Free(): Learning to Forget in Malloc-Only Reasoning Models",
+  "authors": [
+    "Yilun Zheng",
+    "Dongyang Ma",
+    "Tian Liang",
+    "Jiahao Xu",
+    "Xinting Huang",
+    "Lihui Chen",
+    "Haitao Mi",
+    "Yan Wang"
+  ],
+  "abstract": "Free()LM addresses reasoning model limitations by introducing a self-forgetting mechanism through a Free-Module plug-and-play LoRA adapter, improving performance across scales and long-horizon tasks. Reasoning models enhance problem-solving by scaling test-time compute , yet they face a critical paradox: excessive thinking tokens often degrade performance rather than improve it. We attribute this to a fundamental architectural flaw: standard LLMs operate as \"malloc-only\" engines, continuously accumulating valid and redundant steps alike without a mechanism to prune obsolete information. To break this cycle, we propose Free()LM, a model that introduces an intrinsic self-forgetting capability via the Free-Module , a plug-and-play LoRA adapter . By iteratively switching between reasoning and cleaning mode s, Free()LM dynamically identifies and prunes useless context chunks, maintaining a compact and noise-free state. Extensive experiments show that Free()LM provides consistent improvements across all model scales (8B to 685B). It achieves a 3.3% average improvement over top-tier reasoning baselines, even establishing a new SOTA on IMOanswerBench using DeepSeek V3.2-Speciale . Most notably, in long-horizon tasks where the standard Qwen3-235B-A22B model suffers a total collapse (0% accuracy), Free()LM restores performance to 50%. Our findings suggest that sustainable intelligence requires the freedom to forget as much as the power to think.",
+  "summary_en": "Free()LM addresses reasoning model limitations by introducing a self-forgetting mechanism through a Free-Module plug-and-play LoRA adapter, improving performance across scales and long-horizon tasks.",
+  "summary_zh": "Free()LM 通过 Free-Module 即插即用 LoRA 适配器引入自遗忘机制，解决推理模型的局限性，提升跨规模及长程任务的性能。",
+  "hf_url": "https://huggingface.co/papers/2602.08030",
+  "arxiv_url": "https://arxiv.org/abs/2602.08030",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08030",
+  "github_url": "https://github.com/TemporaryLoRA/FreeLM",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T06:30:56.864706+00:00"
+}

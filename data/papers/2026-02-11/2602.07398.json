@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.07398",
+  "title": "AgentSys: Secure and Dynamic LLM Agents Through Explicit Hierarchical Memory Management",
+  "authors": [
+    "Ruoyao Wen",
+    "Hao Li",
+    "Chaowei Xiao",
+    "Ning Zhang"
+  ],
+  "abstract": "AgentSys defends against indirect prompt injection in LLM agents through hierarchical memory isolation and controlled data flow, significantly reducing attack success rates while maintaining performance. Indirect prompt injection threatens LLM agents by embedding malicious instructions in external content, enabling unauthorized actions and data theft. LLM agents maintain working memory through their context window , which stores interaction history for decision-making. Conventional agents indiscriminately accumulate all tool outputs and reasoning traces in this memory, creating two critical vulnerabilities: (1) injected instructions persist throughout the workflow, granting attackers multiple opportunities to manipulate behavior, and (2) verbose, non-essential content degrades decision-making capabilities. Existing defenses treat bloated memory as given and focus on remaining resilient, rather than reducing unnecessary accumulation to prevent the attack. We present AgentSys, a framework that defends against indirect prompt injection through explicit memory management. Inspired by process memory isolation in operating systems, AgentSys organizes agents hierarchically: a main agent spawns worker agents for tool calls , each running in an isolated context and able to spawn nested workers for subtasks. External data and subtask traces never enter the main agent's memory; only schema-validated return values can cross boundaries through deterministic JSON parsing . Ablations show isolation alone cuts attack success to 2.19%, and adding a validator/sanitizer further improves defense with event-triggered checks whose overhead scales with operations rather than context length. On AgentDojo and ASB, AgentSys achieves 0.78% and 4.25% attack success while slightly improving benign utility over undefended baselines. It remains robust to adaptive attackers and across multiple foundation models, showing that explicit memory management enables secure, dynamic LLM agent architectures. Our code is available at: https://github.com/ruoyaow/agentsys-memory.",
+  "summary_en": "AgentSys defends against indirect prompt injection in LLM agents through hierarchical memory isolation and controlled data flow, significantly reducing attack success rates while maintaining performance.",
+  "summary_zh": "AgentSys通过分层内存隔离和受控数据流防御LLM智能体中的间接提示注入，显著降低攻击成功率的同时保持性能。",
+  "hf_url": "https://huggingface.co/papers/2602.07398",
+  "arxiv_url": "https://arxiv.org/abs/2602.07398",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07398",
+  "github_url": "https://github.com/ruoyaow/agentsys-memory",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:21:01.099791+00:00"
+}

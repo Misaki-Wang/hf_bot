@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.08519",
+  "title": "Bridging Academia and Industry: A Comprehensive Benchmark for Attributed Graph Clustering",
+  "authors": [
+    "Yunhui Liu",
+    "Pengyu Qiu",
+    "Yu Xing",
+    "Yongchao Liu",
+    "Peng Du",
+    "Chuntao Hong",
+    "Jiajun Zheng",
+    "Tao Zheng",
+    "Tieke He"
+  ],
+  "abstract": "PyAGC presents a production-ready benchmark and library for attributed graph clustering that addresses limitations of current research through scalable, memory-efficient implementations and comprehensive evaluation protocols. Attributed Graph Clustering (AGC) is a fundamental unsupervised task that integrates structural topology and node attributes to uncover latent patterns in graph-structured data . Despite its significance in industrial applications such as fraud detection and user segmentation , a significant chasm persists between academic research and real-world deployment. Current evaluation protocols suffer from the small-scale, high- homophily citation datasets, non-scalable full-batch training paradigms, and a reliance on supervised metrics that fail to reflect performance in label-scarce environments. To bridge these gaps, we present PyAGC, a comprehensive, production-ready benchmark and library designed to stress-test AGC methods across diverse scales and structural properties. We unify existing methodologies into a modular Encode-Cluster-Optimize framework and, for the first time, provide memory-efficient, mini-batch implementations for a wide array of state-of-the-art AGC algorithms. Our benchmark curates 12 diverse datasets, ranging from 2.7K to 111M nodes, specifically incorporating industrial graphs with complex tabular features and low homophily . Furthermore, we advocate for a holistic evaluation protocol that mandates unsupervised structural metrics and efficiency profiling alongside traditional supervised metrics. Battle-tested in high-stakes industrial workflows at Ant Group, this benchmark offers the community a robust, reproducible, and scalable platform to advance AGC research towards realistic deployment. The code and resources are publicly available via GitHub (https://github.com/Cloudy1225/PyAGC), PyPI (https://pypi.org/project/pyagc), and Documentation (https://pyagc.readthedocs.io).",
+  "summary_en": "PyAGC presents a production-ready benchmark and library for attributed graph clustering that addresses limitations of current research through scalable, memory-efficient implementations and comprehensive evaluation protocols.",
+  "summary_zh": "PyAGC 提出了一个面向属性图聚类的生产就绪基准与库，通过可扩展、内存高效的实现和全面的评估协议，解决了当前研究的局限性。",
+  "hf_url": "https://huggingface.co/papers/2602.08519",
+  "arxiv_url": "https://arxiv.org/abs/2602.08519",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08519",
+  "github_url": "https://github.com/Cloudy1225/PyAGC",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:21:27.360331+00:00"
+}

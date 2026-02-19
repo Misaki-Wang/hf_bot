@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.04805",
+  "title": "Skin Tokens: A Learned Compact Representation for Unified Autoregressive Rigging",
+  "authors": [
+    "Jia-peng Zhang",
+    "Cheng-Feng Pu",
+    "Meng-Hao Guo",
+    "Yan-Pei Cao",
+    "Shi-Min Hu"
+  ],
+  "abstract": "Generative 3D models face challenges in animation rigging, which this work addresses by introducing SkinTokens—a learned discrete representation for skinning weights—and TokenRig, a unified autoregressive framework that models skeletons and skin deformations together, improving rigging accuracy through reinforcement learning. The rapid proliferation of generative 3D models has created a critical bottleneck in animation pipelines: rigging. Existing automated methods are fundamentally limited by their approach to skinning, treating it as an ill-posed, high-dimensional regression task that is inefficient to optimize and is typically decoupled from skeleton generation. We posit this is a representation problem and introduce SkinTokens: a learned, compact, and discrete representation for skinning weights . By leveraging an FSQ-CVAE to capture the intrinsic sparsity of skinning, we reframe the task from continuous regression to a more tractable token sequence prediction problem. This representation enables TokenRig, a unified autoregressive framework that models the entire rig as a single sequence of skeletal parameters and SkinTokens, learning the complicated dependencies between skeletons and skin deformations. The unified model is then amenable to a reinforcement learning stage, where tailored geometric and semantic rewards improve generalization to complex, out-of-distribution assets. Quantitatively, the SkinTokens representation leads to a 98%-133% percents improvement in skinning accuracy over state-of-the-art methods, while the full TokenRig framework, refined with RL, enhances bone prediction by 17%-22%. Our work presents a unified, generative approach to rigging that yields higher fidelity and robustness, offering a scalable solution to a long-standing challenge in 3D content creation.",
+  "summary_en": "Generative 3D models face challenges in animation rigging, which this work addresses by introducing SkinTokens—a learned discrete representation for skinning weights—and TokenRig, a unified autoregressive framework that models skeletons and skin deformations together, improving rigging accuracy through reinforcement learning.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nGenerative 3D models face challenges in animation rigging, which this work addresses by introducing SkinTokens—a learned discrete representation for skinning weights—and TokenRig, a unified autoregressive framework that models skeletons and skin deformations together, improving rigging accuracy through reinforcement learning.",
+  "hf_url": "https://huggingface.co/papers/2602.04805",
+  "arxiv_url": "https://arxiv.org/abs/2602.04805",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04805",
+  "github_url": "",
+  "upvotes": 6,
+  "fetched_at": "2026-02-19T05:42:13.869434+00:00"
+}

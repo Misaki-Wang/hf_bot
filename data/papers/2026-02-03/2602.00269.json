@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.00269",
+  "title": "VoxServe: Streaming-Centric Serving System for Speech Language Models",
+  "authors": [
+    "Keisuke Kamahori",
+    "Wei-Tzu Lee",
+    "Atindra Jha",
+    "Rohan Kadekodi",
+    "Stephanie Wang",
+    "Arvind Krishnamurthy",
+    "Baris Kasikci"
+  ],
+  "abstract": "VoxServe is a unified serving system for Speech Language Models that enhances streaming performance through model-execution abstraction, streaming-aware scheduling, and asynchronous inference pipelines. Deploying modern Speech Language Models (SpeechLMs) in streaming settings requires systems that provide low latency , high throughput , and strong guarantees of streamability . Existing systems fall short of supporting diverse models flexibly and efficiently. We present VoxServe, a unified serving system for SpeechLMs that optimizes streaming performance. VoxServe introduces a model-execution abstraction that decouples model architecture from system-level optimizations, thereby enabling support for diverse SpeechLM architectures within a single framework. Building on this abstraction, VoxServe implements streaming-aware scheduling and an asynchronous inference pipeline to improve end-to-end efficiency. Evaluations across multiple modern SpeechLMs show that VoxServe achieves 10-20x higher throughput than existing implementations at comparable latency while maintaining high streaming viability. The code of VoxServe is available at https://github.com/vox-serve/vox-serve.",
+  "summary_en": "VoxServe is a unified serving system for Speech Language Models that enhances streaming performance through model-execution abstraction, streaming-aware scheduling, and asynchronous inference pipelines.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nVoxServe is a unified serving system for Speech Language Models that enhances streaming performance through model-execution abstraction, streaming-aware scheduling, and asynchronous inference pipelines.",
+  "hf_url": "https://huggingface.co/papers/2602.00269",
+  "arxiv_url": "https://arxiv.org/abs/2602.00269",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.00269",
+  "github_url": "https://github.com/vox-serve/vox-serve",
+  "upvotes": 6,
+  "fetched_at": "2026-02-19T05:36:26.308271+00:00"
+}

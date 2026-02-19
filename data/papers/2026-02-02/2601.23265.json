@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.23265",
+  "title": "PaperBanana: Automating Academic Illustration for AI Scientists",
+  "authors": [
+    "Dawei Zhu",
+    "Rui Meng",
+    "Yale Song",
+    "Xiyu Wei",
+    "Sujian Li",
+    "Tomas Pfister",
+    "Jinsung Yoon"
+  ],
+  "abstract": "_paperbanana is an agentic framework that automates the creation of publication-ready academic illustrations using advanced vision-language models and image generation techniques. Despite rapid advances in autonomous AI scientists powered by language models, generating publication-ready illustrations remains a labor-intensive bottleneck in the research workflow. To lift this burden, we introduce PaperBanana, an agentic framework for automated generation of publication-ready academic illustrations. Powered by state-of-the-art VLMs and image generation models , PaperBanana orchestrates specialized agents to retrieve references, plan content and style, render images, and iteratively refine via self-critique . To rigorously evaluate our framework, we introduce PaperBananaBench , comprising 292 test cases for methodology diagrams curated from NeurIPS 2025 publications, covering diverse research domains and illustration styles. Comprehensive experiments demonstrate that PaperBanana consistently outperforms leading baselines in faithfulness, conciseness, readability, and aesthetics. We further show that our method effectively extends to the generation of high-quality statistical plots . Collectively, PaperBanana paves the way for the automated generation of publication-ready illustrations .",
+  "summary_en": "_paperbanana is an agentic framework that automates the creation of publication-ready academic illustrations using advanced vision-language models and image generation techniques.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\n_paperbanana is an agentic framework that automates the creation of publication-ready academic illustrations using advanced vision-language models and image generation techniques.",
+  "hf_url": "https://huggingface.co/papers/2601.23265",
+  "arxiv_url": "https://arxiv.org/abs/2601.23265",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.23265",
+  "github_url": "https://github.com/dwzhu-pku/PaperBanana",
+  "upvotes": 188,
+  "fetched_at": "2026-02-19T05:35:33.531327+00:00"
+}

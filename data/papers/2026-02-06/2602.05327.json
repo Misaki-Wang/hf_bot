@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.05327",
+  "title": "ProAct: Agentic Lookahead in Interactive Environments",
+  "authors": [
+    "Yangbin Yu",
+    "Mingyu Yang",
+    "Junyou Li",
+    "Yiming Gao",
+    "Feiyu Liu",
+    "Yijun Yang",
+    "Zichuan Lin",
+    "Jiafei Lyu",
+    "Yicheng Liu",
+    "Zhicong Lu",
+    "Deheng Ye",
+    "Jie Jiang"
+  ],
+  "abstract": "ProAct enhances LLM agents' long-horizon planning by combining supervised fine-tuning with search-derived trajectories and a Monte-Carlo critic for improved policy optimization.",
+  "summary_en": "ProAct enhances LLM agents' long-horizon planning by combining supervised fine-tuning with search-derived trajectories and a Monte-Carlo critic for improved policy optimization.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nProAct enhances LLM agents' long-horizon planning by combining supervised fine-tuning with search-derived trajectories and a Monte-Carlo critic for improved policy optimization.",
+  "hf_url": "https://huggingface.co/papers/2602.05327",
+  "arxiv_url": "https://arxiv.org/abs/2602.05327",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05327",
+  "github_url": "https://github.com/GreatX3/ProAct",
+  "upvotes": 25,
+  "fetched_at": "2026-02-19T05:43:06.660969+00:00"
+}

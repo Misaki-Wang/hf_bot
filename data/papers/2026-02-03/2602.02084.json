@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02084",
+  "title": "Closing the Loop: Universal Repository Representation with RPG-Encoder",
+  "authors": [
+    "Jane Luo",
+    "Chengyu Yin",
+    "Xin Zhang",
+    "Qingtao Li",
+    "Steven Liu",
+    "Yiming Huang",
+    "Jie Wu",
+    "Hao Liu",
+    "Yangyu Huang",
+    "Yu Kang",
+    "Fangkai Yang",
+    "Ying Xin",
+    "Scarlett Li"
+  ],
+  "abstract": "RPG-Encoder framework transforms repository comprehension and generation into a unified cycle by encoding code into high-fidelity Repository Planning Graph representations that improve understanding and reconstruction accuracy. Current repository agents encounter a reasoning disconnect due to fragmented representations, as existing methods rely on isolated API documentation or dependency graphs that lack semantic depth. We consider repository comprehension and generation to be inverse processes within a unified cycle: generation expands intent into implementation, while comprehension compresses implementation back into intent. To address this, we propose RPG-Encoder , a framework that generalizes the Repository Planning Graph (RPG) from a static generative blueprint into a unified, high-fidelity representation. RPG-Encoder closes the reasoning loop through three mechanisms: (1) Encoding raw code into the RPG that combines lifted semantic features with code dependencies ; (2) Evolving the topology incrementally to decouple maintenance costs from repository scale, reducing overhead by 95.7%; and (3) Operating as a unified interface for structure-aware navigation . In evaluations, RPG-Encoder establishes state-of-the-art repository understanding on SWE-bench Verified with 93.7% Acc@5 and exceeds the best baseline by over 10% on SWE-bench Live Lite. These results highlight our superior fine-grained localization accuracy in complex codebases. Furthermore, it achieves 98.5% reconstruction coverage on RepoCraft, confirming RPG's high-fidelity capacity to mirror the original codebase and closing the loop between intent and implementation.",
+  "summary_en": "RPG-Encoder framework transforms repository comprehension and generation into a unified cycle by encoding code into high-fidelity Repository Planning Graph representations that improve understanding and reconstruction accuracy.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nRPG-Encoder framework transforms repository comprehension and generation into a unified cycle by encoding code into high-fidelity Repository Planning Graph representations that improve understanding and reconstruction accuracy.",
+  "hf_url": "https://huggingface.co/papers/2602.02084",
+  "arxiv_url": "https://arxiv.org/abs/2602.02084",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02084",
+  "github_url": "https://github.com/microsoft/RPG-ZeroRepo",
+  "upvotes": 82,
+  "fetched_at": "2026-02-19T05:37:33.706738+00:00"
+}

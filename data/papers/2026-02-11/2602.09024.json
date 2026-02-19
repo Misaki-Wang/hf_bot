@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.09024",
+  "title": "Autoregressive Image Generation with Masked Bit Modeling",
+  "authors": [
+    "Qihang Yu",
+    "Qihao Liu",
+    "Ju He",
+    "Xinyang Zhang",
+    "Yang Liu",
+    "Liang-Chieh Chen",
+    "Xi Chen"
+  ],
+  "abstract": "Discrete tokenizers can match or exceed continuous methods when properly scaled, and a new masked Bit AutoRegressive modeling approach achieves state-of-the-art results with reduced computational costs. This paper challenges the dominance of continuous pipelines in visual generation. We systematically investigate the performance gap between discrete and continuous methods. Contrary to the belief that discrete tokenizers are intrinsically inferior, we demonstrate that the disparity arises primarily from the total number of bits allocated in the latent space (i.e., the compression ratio). We show that scaling up the codebook size effectively bridges this gap, allowing discrete tokenizers to match or surpass their continuous counterparts. However, existing discrete generation methods struggle to capitalize on this insight, suffering from performance degradation or prohibitive training costs with scaled codebook. To address this, we propose masked Bit AutoRegressive modeling (BAR), a scalable framework that supports arbitrary codebook size s. By equipping an autoregressive transformer with a masked bit modeling head, BAR predicts discrete tokens through progressively generating their constituent bits. BAR achieves a new state-of-the-art gFID of 0.99 on ImageNet-256 , outperforming leading methods across both continuous and discrete paradigms, while significantly reducing sampling costs and converging faster than prior continuous approaches. Project page is available at https://bar-gen.github.io/",
+  "summary_en": "Discrete tokenizers can match or exceed continuous methods when properly scaled, and a new masked Bit AutoRegressive modeling approach achieves state-of-the-art results with reduced computational costs.",
+  "summary_zh": "离散tokenizer在适当扩展时可匹敌甚至超越连续方法，且一种新的掩码Bit自回归建模方法以更低的计算成本达到了最优结果。",
+  "hf_url": "https://huggingface.co/papers/2602.09024",
+  "arxiv_url": "https://arxiv.org/abs/2602.09024",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09024",
+  "github_url": "https://github.com/amazon-far/BAR",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T06:21:36.512548+00:00"
+}

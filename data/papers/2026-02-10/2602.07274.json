@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07274",
+  "title": "TermiGen: High-Fidelity Environment and Robust Trajectory Synthesis for Terminal Agents",
+  "authors": [
+    "Kaijie Zhu",
+    "Yuzhou Nie",
+    "Yijiang Li",
+    "Yiming Huang",
+    "Jialian Wu",
+    "Jiang Liu",
+    "Ximeng Sun",
+    "Zhenfei Yin",
+    "Lun Wang",
+    "Zicheng Liu",
+    "Emad Barsoum",
+    "William Yang Wang",
+    "Wenbo Guo"
+  ],
+  "abstract": "TermiGen introduces a pipeline for generating verifiable terminal environments and resilient trajectories to improve open-weight LLMs' ability to execute complex tasks and recover from runtime errors. Executing complex terminal tasks remains a significant challenge for open-weight LLMs, constrained by two fundamental limitations. First, high-fidelity, executable training environments are scarce: environments synthesized from real-world repositories are not diverse and scalable, while trajectories synthesized by LLMs suffer from hallucinations. Second, standard instruction tuning uses expert trajectories that rarely exhibit simple mistakes common to smaller models. This creates a distributional mismatch , leaving student models ill-equipped to recover from their own runtime failures. To bridge these gaps, we introduce TermiGen, an end-to-end pipeline for synthesizing verifiable environments and resilient expert trajectories . Termi-Gen first generates functionally valid tasks and Docker containers via an iterative multi-agent refinement loop . Subsequently, we employ a Generator-Critic protocol that actively injects errors during trajectory collection, synthesizing data rich in error-correction cycles . Fine-tuned on this TermiGen-generated dataset, our TermiGen-Qwen2.5-Coder-32B achieves a 31.3% pass rate on TerminalBench . This establishes a new open-weights state-of-the-art, outperforming existing baselines and notably surpassing capable proprietary models such as o4-mini. Dataset is avaiable at https://github.com/ucsb-mlsec/terminal-bench-env.",
+  "summary_en": "TermiGen introduces a pipeline for generating verifiable terminal environments and resilient trajectories to improve open-weight LLMs' ability to execute complex tasks and recover from runtime errors.",
+  "summary_zh": "TermiGen提出了一种生成可验证终端环境与弹性轨迹的流程，旨在提升开放权重LLM执行复杂任务及从运行时错误中恢复的能力。",
+  "hf_url": "https://huggingface.co/papers/2602.07274",
+  "arxiv_url": "https://arxiv.org/abs/2602.07274",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07274",
+  "github_url": "https://github.com/ucsb-mlsec/terminal-bench-env",
+  "upvotes": 197,
+  "fetched_at": "2026-02-19T06:02:47.360137+00:00"
+}

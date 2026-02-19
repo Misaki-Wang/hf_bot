@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.07885",
+  "title": "MemFly: On-the-Fly Memory Optimization via Information Bottleneck",
+  "authors": [
+    "Zhenyuan Zhang",
+    "Xianzhang Jia",
+    "Zhiqin Yang",
+    "Zhenbo Song",
+    "Wei Xue",
+    "Sirui Han",
+    "Yike Guo"
+  ],
+  "abstract": "MemFly addresses the challenge of long-term memory in language models by using information bottleneck principles to create an adaptive memory structure with hybrid retrieval mechanisms for improved task performance. Long-term memory enables large language model agents to tackle complex tasks through historical interactions. However, existing frameworks encounter a fundamental dilemma between compressing redundant information efficiently and maintaining precise retrieval for downstream tasks. To bridge this gap, we propose MemFly, a framework grounded in information bottleneck principles that facilitates on-the-fly memory evolution for LLMs. Our approach minimizes compression entropy while maximizing relevance entropy via a gradient-free optimizer, constructing a stratified memory structure for efficient storage. To fully leverage MemFly, we develop a hybrid retrieval mechanism that seamlessly integrates semantic, symbolic, and topological pathways, incorporating iterative refinement to handle complex multi-hop queries. Comprehensive experiments demonstrate that MemFly substantially outperforms state-of-the-art baselines in memory coherence , response fidelity , and accuracy.",
+  "summary_en": "MemFly addresses the challenge of long-term memory in language models by using information bottleneck principles to create an adaptive memory structure with hybrid retrieval mechanisms for improved task performance.",
+  "summary_zh": "MemFly利用信息瓶颈原理构建具有混合检索机制的自适应记忆结构，解决语言模型的长期记忆挑战并提升任务性能。",
+  "hf_url": "https://huggingface.co/papers/2602.07885",
+  "arxiv_url": "https://arxiv.org/abs/2602.07885",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07885",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T06:37:44.480214+00:00"
+}

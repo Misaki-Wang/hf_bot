@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.11144",
+  "title": "GENIUS: Generative Fluid Intelligence Evaluation Suite",
+  "authors": [
+    "Ruichuan An",
+    "Sihan Yang",
+    "Ziyu Guo",
+    "Wei Dai",
+    "Zijun Shen",
+    "Haodong Li",
+    "Renrui Zhang",
+    "Xinyu Wei",
+    "Guopeng Li",
+    "Wenshan Wu",
+    "Wentao Zhang"
+  ],
+  "abstract": "GENIUS evaluates multimodal models' generative fluid intelligence through pattern induction, constraint execution, and contextual adaptation tasks, revealing deficiencies in context comprehension rather than generative capability. Unified Multimodal Models (UMMs) have shown remarkable progress in visual generation. Yet, existing benchmarks predominantly assess Crystallized Intelligence, which relies on recalling accumulated knowledge and learned schemas. This focus overlooks Generative Fluid Intelligence (GFI): the capacity to induce patterns, reason through constraints, and adapt to novel scenarios on the fly. To rigorously assess this capability, we introduce GENIUS (GEN Fluid Intelligence EvalUation Suite). We formalize GFI as a synthesis of three primitives. These include Inducing Implicit Patterns (e.g., inferring personalized visual preferences), Executing Ad-hoc Constraints (e.g., visualizing abstract metaphors), and Adapting to Contextual Knowledge (e.g., simulating counter-intuitive physics). Collectively, these primitives challenge models to solve problems grounded entirely in the immediate context. Our systematic evaluation of 12 representative models reveals significant performance deficits in these tasks. Crucially, our diagnostic analysis disentangles these failure modes. It demonstrates that deficits stem from limited context comprehension rather than insufficient intrinsic generative capability. To bridge this gap, we propose a training-free attention intervention strategy . Ultimately, GENIUS establishes a rigorous standard for GFI, guiding the field beyond knowledge utilization toward dynamic, general-purpose reasoning. Our dataset and code will be released at: https://github.com/arctanxarc/GENIUS{https://github.com/arctanxarc/GENIUS}.",
+  "summary_en": "GENIUS evaluates multimodal models' generative fluid intelligence through pattern induction, constraint execution, and contextual adaptation tasks, revealing deficiencies in context comprehension rather than generative capability.",
+  "summary_zh": "GENIUS通过模式归纳、约束执行和上下文适应任务评估多模态模型的生成流体智能，揭示了其在上下文理解而非生成能力方面的不足。",
+  "hf_url": "https://huggingface.co/papers/2602.11144",
+  "arxiv_url": "https://arxiv.org/abs/2602.11144",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11144",
+  "github_url": "",
+  "upvotes": 53,
+  "fetched_at": "2026-02-19T06:32:15.000282+00:00"
+}

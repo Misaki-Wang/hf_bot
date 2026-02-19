@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01418",
+  "title": "Where to Attend: A Principled Vision-Centric Position Encoding with Parabolas",
+  "authors": [
+    "Christoffer Koo Øhrstrøm",
+    "Rafael I. Cabral Muchacho",
+    "Yifei Dong",
+    "Filippos Moumtzidellis",
+    "Ronja Güldenring",
+    "Florian T. Pokorny",
+    "Lazaros Nalpantidis"
+  ],
+  "abstract": "Parabolic Position Encoding (PaPE) is a novel position encoding method for vision modalities that improves upon existing approaches by incorporating translation invariance, rotation invariance, distance decay, directionality, and context awareness principles. We propose Parabolic Position Encoding (PaPE), a parabola-based position encoding for vision modalities in attention-based architectures . Given a set of vision tokens -such as images, point clouds, videos, or event camera streams-our objective is to encode their positions while accounting for the characteristics of vision modalities . Prior works have largely extended position encoding s from 1D-sequences in language to nD-structures in vision, but only with partial account of vision characteristics. We address this gap by designing PaPE from principles distilled from prior work: translation invariance , rotation invariance (PaPE-RI), distance decay , directionality , and context awareness . We evaluate PaPE on 8 datasets that span 4 modalities. We find that either PaPE or PaPE-RI achieves the top performance on 7 out of 8 datasets. Extrapolation experiments on ImageNet-1K show that PaPE extrapolates remarkably well, improving in absolute terms by up to 10.5% over the next-best position encoding . Code is available at https://github.com/DTU-PAS/parabolic-position-encoding.",
+  "summary_en": "Parabolic Position Encoding (PaPE) is a novel position encoding method for vision modalities that improves upon existing approaches by incorporating translation invariance, rotation invariance, distance decay, directionality, and context awareness principles.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nParabolic Position Encoding (PaPE) is a novel position encoding method for vision modalities that improves upon existing approaches by incorporating translation invariance, rotation invariance, distance decay, directionality, and context awareness principles.",
+  "hf_url": "https://huggingface.co/papers/2602.01418",
+  "arxiv_url": "https://arxiv.org/abs/2602.01418",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01418",
+  "github_url": "https://github.com/DTU-PAS/parabolic-position-encoding",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T05:36:48.384472+00:00"
+}

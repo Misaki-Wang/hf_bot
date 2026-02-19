@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.11541",
+  "title": "Budget-Constrained Agentic Large Language Models: Intention-Based Planning for Costly Tool Use",
+  "authors": [
+    "Hanbing Liu",
+    "Chunhao Tian",
+    "Nan An",
+    "Ziyuan Wang",
+    "Pinyan Lu",
+    "Changyuan Yu",
+    "Qi Qi"
+  ],
+  "abstract": "Budget-constrained tool-augmented agents use a hierarchical world model and intent-aware planning to optimize multi-step task completion under monetary constraints. We study budget-constrained tool-augmented agents , where a large language model must solve multi-step tasks by invoking external tools under a strict monetary budget. We formalize this setting as sequential decision making in context space with priced and stochastic tool executions , making direct planning intractable due to massive state-action spaces, high variance of outcomes and prohibitive exploration cost. To address these challenges, we propose INTENT, an inference-time planning framework that leverages an intention-aware hierarchical world model to anticipate future tool usage, risk-calibrated cost , and guide decisions online. Across cost-augmented StableToolBench, INTENT strictly enforces hard budget feasibility while substantially improving task success over baselines, and remains robust under dynamic market shifts such as tool price changes and varying budgets.",
+  "summary_en": "Budget-constrained tool-augmented agents use a hierarchical world model and intent-aware planning to optimize multi-step task completion under monetary constraints.",
+  "summary_zh": "预算受限的工具增强型智能体利用分层世界模型和意图感知规划，在资金约束下优化多步任务完成。",
+  "hf_url": "https://huggingface.co/papers/2602.11541",
+  "arxiv_url": "https://arxiv.org/abs/2602.11541",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11541",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:38:18.375183+00:00"
+}

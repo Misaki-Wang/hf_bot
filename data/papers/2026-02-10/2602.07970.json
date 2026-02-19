@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07970",
+  "title": "Learning-guided Kansa collocation for forward and inverse PDEs beyond linearity",
+  "authors": [
+    "Zheyuan Hu",
+    "Weitao Chen",
+    "Cengiz Öztireli",
+    "Chenliang Zhou",
+    "Fangcheng Zhong"
+  ],
+  "abstract": "Research explores PDE solvers including neural frameworks for scientific simulations, examining forward solutions, inverse problems, and equation discovery across multi-variable and non-linear systems. Partial Differential Equations are precise in modelling the physical, biological and graphical phenomena. However, the numerical methods suffer from the curse of dimensionality, high computation costs and domain-specific discretization. We aim to explore pros and cons of different PDE solvers , and apply them to specific scientific simulation problems, including forwarding solution, inverse problems and equations discovery. In particular, we extend the recent CNF (NeurIPS 2023) framework solver to multi-dependent-variable and non-linear settings , together with down-stream applications. The outcomes include implementation of selected methods, self-tuning techniques, evaluation on benchmark problems and a comprehensive survey of neural PDE solvers and scientific simulation applications.",
+  "summary_en": "Research explores PDE solvers including neural frameworks for scientific simulations, examining forward solutions, inverse problems, and equation discovery across multi-variable and non-linear systems.",
+  "summary_zh": "研究探索了偏微分方程求解器（包括面向科学模拟的神经网络框架），考察了多变量与非线性系统中的正问题、逆问题及方程发现。",
+  "hf_url": "https://huggingface.co/papers/2602.07970",
+  "arxiv_url": "https://arxiv.org/abs/2602.07970",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07970",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:03:07.891150+00:00"
+}

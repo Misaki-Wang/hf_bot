@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07026",
+  "title": "Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models",
+  "authors": [
+    "Xiaomin Yu",
+    "Yi Xin",
+    "Wenjie Zhang",
+    "Chonghan Liu",
+    "Hanzhen Zhao",
+    "Xiaoxing Hu",
+    "Xinlei Yu",
+    "Ziyue Qiao",
+    "Hao Tang",
+    "Xue Yang",
+    "Xiaobin Hu",
+    "Chengwei Qin",
+    "Hui Xiong",
+    "Yu Qiao",
+    "Shuicheng Yan"
+  ],
+  "abstract": "Researchers address the modality gap in multimodal learning by proposing a fixed-frame theory and a training-free alignment method that enables efficient scaling of multimodal models using unpaired data. Despite the success of multimodal contrastive learning in aligning visual and linguistic representations, a persistent geometric anomaly , the Modality Gap , remains: embeddings of distinct modalities expressing identical semantics occupy systematically offset regions. Prior approaches to bridge this gap are largely limited by oversimplified isotropic assumptions , hindering their application in large-scale scenarios. In this paper, we address these limitations by precisely characterizing the geometric shape of the modality gap and leveraging it for efficient model scaling. First, we propose the Fixed-frame Modality Gap Theory , which decomposes the modality gap within a frozen reference frame into stable biases and anisotropic residuals. Guided by this precise modeling, we introduce ReAlign , a training-free modality alignment strategy. Utilizing statistics from massive unpaired data , ReAlign aligns text representation into the image representation distribution via a three-step process comprising Anchor, Trace, and Centroid Alignment , thereby explicitly rectifying geometric misalignment. Building on ReAlign , we propose ReVision , a scalable training paradigm for Multimodal Large Language Models (MLLMs). ReVision integrates ReAlign into the pretraining stage , enabling the model to learn the distribution of visual representations from unpaired text before visual instruction tuning , without the need for large-scale, high-quality image-text pairs. Our framework demonstrates that statistically aligned unpaired data can effectively substitute for expensive image-text pairs, offering a robust path for the efficient scaling of MLLMs.",
+  "summary_en": "Researchers address the modality gap in multimodal learning by proposing a fixed-frame theory and a training-free alignment method that enables efficient scaling of multimodal models using unpaired data.",
+  "summary_zh": "研究人员提出了固定帧理论和免训练对齐方法，以解决多模态学习中的模态差距，实现了利用非配对数据高效扩展多模态模型。",
+  "hf_url": "https://huggingface.co/papers/2602.07026",
+  "arxiv_url": "https://arxiv.org/abs/2602.07026",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07026",
+  "github_url": "https://github.com/Yu-xm/ReVision",
+  "upvotes": 133,
+  "fetched_at": "2026-02-19T06:02:23.335532+00:00"
+}

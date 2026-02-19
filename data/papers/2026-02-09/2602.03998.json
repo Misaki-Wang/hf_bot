@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.03998",
+  "title": "AtlasPatch: An Efficient and Scalable Tool for Whole Slide Image Preprocessing in Computational Pathology",
+  "authors": [
+    "Ahmed Alagha",
+    "Christopher Leclerc",
+    "Yousef Kotp",
+    "Omar Metwally",
+    "Calvin Moras",
+    "Peter Rentopoulos",
+    "Ghodsiyeh Rostami",
+    "Bich Ngoc Nguyen",
+    "Jumanah Baig",
+    "Abdelhakim Khellaf",
+    "Vincent Quoc-Huy Trinh",
+    "Rabeb Mizouni",
+    "Hadi Otrok",
+    "Jamal Bentahar",
+    "Mahdi S. Hosseini"
+  ],
+  "abstract": "AtlasPatch is an efficient and scalable whole-slide image preprocessing framework that uses fine-tuned Segment-Anything model for accurate tissue detection and high-throughput patch extraction with reduced computational overhead. Whole-slide image (WSI) preprocessing, typically comprising tissue detection followed by patch extraction , is foundational to AI-driven computational pathology workflows. This remains a major computational bottleneck as existing tools either rely on inaccurate heuristic thresholding for tissue detection , or adopt AI-based approaches trained on limited-diversity data that operate at the patch level, incurring substantial computational complexity. We present AtlasPatch, an efficient and scalable slide preprocessing framework for accurate tissue detection and high-throughput patch extraction with minimal computational overhead. AtlasPatch's tissue detection module is trained on a heterogeneous and semi-manually annotated dataset of ~30,000 WSI thumbnails, using efficient fine-tuning of the Segment-Anything model . The tool extrapolates tissue masks from thumbnails to full-resolution slides to extract patch coordinates at user-specified magnifications, with options to stream patches directly into common image encoders for embedding or store patch images, all efficiently parallelized across CPUs and GPUs. We assess AtlasPatch across segmentation precision, computational complexity, and downstream multiple-instance learning , matching state-of-the-art performance while operating at a fraction of their computational cost. AtlasPatch is open-source and available at https://github.com/AtlasAnalyticsLab/AtlasPatch.",
+  "summary_en": "AtlasPatch is an efficient and scalable whole-slide image preprocessing framework that uses fine-tuned Segment-Anything model for accurate tissue detection and high-throughput patch extraction with reduced computational overhead.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nAtlasPatch is an efficient and scalable whole-slide image preprocessing framework that uses fine-tuned Segment-Anything model for accurate tissue detection and high-throughput patch extraction with reduced computational overhead.",
+  "hf_url": "https://huggingface.co/papers/2602.03998",
+  "arxiv_url": "https://arxiv.org/abs/2602.03998",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03998",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:43:51.410332+00:00"
+}

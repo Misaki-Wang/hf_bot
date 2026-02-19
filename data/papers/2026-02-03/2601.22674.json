@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2601.22674",
+  "title": "VisionTrim: Unified Vision Token Compression for Training-Free MLLM Acceleration",
+  "authors": [
+    "Hanxun Yu",
+    "Wentong Li",
+    "Xuan Qu",
+    "Song Wang",
+    "Junbo Chen",
+    "Jianke Zhu"
+  ],
+  "abstract": "VisionTrim is a training-free framework that accelerates multimodal large language models by selecting dominant visual tokens and merging them with text-guided complementation, improving efficiency without performance loss. Multimodal large language models (MLLMs) suffer from high computational costs due to excessive visual tokens , particularly in high-resolution and video-based scenarios. Existing token reduction methods typically focus on isolated pipeline components and often neglect textual alignment, leading to performance degradation. In this paper, we propose VisionTrim, a unified framework for training-free MLLM acceleration, integrating two effective plug-and-play modules: 1) the Dominant Vision Token Selection (DVTS) module, which preserves essential visual tokens via a global-local view, and 2) the Text-Guided Vision Complement (TGVC) module, which facilitates context-aware token merging guided by textual cues. Extensive experiments across diverse image and video multimodal benchmarks demonstrate the performance superiority of our VisionTrim, advancing practical MLLM deployment in real-world applications. The code is available at: https://github.com/hanxunyu/VisionTrim.",
+  "summary_en": "VisionTrim is a training-free framework that accelerates multimodal large language models by selecting dominant visual tokens and merging them with text-guided complementation, improving efficiency without performance loss.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nVisionTrim is a training-free framework that accelerates multimodal large language models by selecting dominant visual tokens and merging them with text-guided complementation, improving efficiency without performance loss.",
+  "hf_url": "https://huggingface.co/papers/2601.22674",
+  "arxiv_url": "https://arxiv.org/abs/2601.22674",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22674",
+  "github_url": "https://github.com/hanxunyu/VisionTrim",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:36:14.905394+00:00"
+}

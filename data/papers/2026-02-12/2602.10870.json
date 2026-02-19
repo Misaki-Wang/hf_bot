@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10870",
+  "title": "FedPS: Federated data Preprocessing via aggregated Statistics",
+  "authors": [
+    "Xuefeng Xu",
+    "Graham Cormode"
+  ],
+  "abstract": "FedPS is a federated data preprocessing framework that uses aggregated statistics and data-sketching techniques to enable efficient and privacy-preserving data preparation for collaborative machine learning across distributed datasets. Federated Learning (FL) enables multiple parties to collaboratively train machine learning models without sharing raw data. However, before training, data must be preprocessed to address missing values, inconsistent formats, and heterogeneous feature scales. This preprocessing stage is critical for model performance but is largely overlooked in FL research. In practical FL systems, privacy constraints prohibit centralizing raw data, while communication efficiency introduces further challenges for distributed preprocessing. We introduce FedPS, a unified framework for federated data preprocessing based on aggregated statistics . FedPS leverages data-sketching techniques to efficiently summarize local datasets while preserving essential statistical information. Building on these summaries, we design federated algorithms for feature scaling , encoding , discretization , and missing-value imputation , and extend preprocessing-related models such as k-Means , k-Nearest Neighbors , and Bayesian Linear Regression to both horizontal and vertical FL settings. FedPS provides flexible, communication-efficient, and consistent preprocessing pipelines for practical FL deployments.",
+  "summary_en": "FedPS is a federated data preprocessing framework that uses aggregated statistics and data-sketching techniques to enable efficient and privacy-preserving data preparation for collaborative machine learning across distributed datasets.",
+  "summary_zh": "FedPS是一种联邦数据预处理框架，利用聚合统计和数据草图技术，为跨分布式数据集的协作式机器学习提供高效且保护隐私的数据准备。",
+  "hf_url": "https://huggingface.co/papers/2602.10870",
+  "arxiv_url": "https://arxiv.org/abs/2602.10870",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10870",
+  "github_url": "https://github.com/xuefeng-xu/fedps",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:31:57.456392+00:00"
+}

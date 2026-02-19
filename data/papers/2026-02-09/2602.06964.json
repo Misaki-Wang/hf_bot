@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06964",
+  "title": "Learning a Generative Meta-Model of LLM Activations",
+  "authors": [
+    "Grace Luo",
+    "Jiahai Feng",
+    "Trevor Darrell",
+    "Alec Radford",
+    "Jacob Steinhardt"
+  ],
+  "abstract": "Training diffusion models on neural network activations creates meta-models that learn internal state distributions and improve intervention fidelity without restrictive structural assumptions. Existing approaches for analyzing neural network activations, such as PCA and sparse autoencoders, rely on strong structural assumptions. Generative models offer an alternative: they can uncover structure without such assumptions and act as priors that improve intervention fidelity . We explore this direction by training diffusion models on one billion residual stream activations , creating \" meta-models \" that learn the distribution of a network's internal states. We find that diffusion loss decreases smoothly with compute and reliably predicts downstream utility. In particular, applying the meta-model's learned prior to steering interventions improves fluency, with larger gains as loss decreases. Moreover, the meta-model's neurons increasingly isolate concepts into individual units, with sparse probing scores that scale as loss decreases. These results suggest generative meta-models offer a scalable path toward interpretability without restrictive structural assumptions. Project page: https://generative-latent-prior.github.io.",
+  "summary_en": "Training diffusion models on neural network activations creates meta-models that learn internal state distributions and improve intervention fidelity without restrictive structural assumptions.",
+  "summary_zh": "在神经网络激活上训练扩散模型可构建学习内部状态分布的元模型，无需限制性结构假设即可提升干预保真度。",
+  "hf_url": "https://huggingface.co/papers/2602.06964",
+  "arxiv_url": "https://arxiv.org/abs/2602.06964",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06964",
+  "github_url": "https://github.com/g-luo/generative_latent_prior",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:58:32.272125+00:00"
+}

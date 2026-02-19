@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.21358",
+  "title": "Latent Chain-of-Thought as Planning: Decoupling Reasoning from Verbalization",
+  "authors": [
+    "Jiecong Wang",
+    "Hao Peng",
+    "Chunyang Liu"
+  ],
+  "abstract": "PLaT introduces a latent reasoning framework that decouples reasoning from verbalization, enabling dynamic termination and improved scalability over traditional approaches. Chain-of-Thought (CoT) empowers Large Language Models (LLMs) to tackle complex problems, but remains constrained by the computational cost and reasoning path collapse when grounded in discrete token spaces . Recent latent reasoning approaches attempt to optimize efficiency by performing reasoning within continuous hidden states . However, these methods typically operate as opaque end-to-end mappings from explicit reasoning steps to latent states, and often require a pre-defined number of latent steps during inference. In this work, we introduce PLaT (Planning with Latent Thoughts), a framework that reformulates latent reasoning as planning by fundamentally decouple reasoning from verbalization. We model reasoning as a deterministic trajectory of latent planning states , while a separate Decoder grounds these thoughts into text when necessary. This decoupling allows the model to dynamically determine when to terminate reasoning rather than relying on fixed hyperparameters. Empirical results on mathematical benchmarks reveal a distinct trade-off: while PLaT achieves lower greedy accuracy than baselines, it demonstrates superior scalability in terms of reasoning diversity. This indicates that PLaT learns a robust, broader solution space, offering a transparent and scalable foundation for inference-time search .",
+  "summary_en": "PLaT introduces a latent reasoning framework that decouples reasoning from verbalization, enabling dynamic termination and improved scalability over traditional approaches.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nPLaT introduces a latent reasoning framework that decouples reasoning from verbalization, enabling dynamic termination and improved scalability over traditional approaches.",
+  "hf_url": "https://huggingface.co/papers/2601.21358",
+  "arxiv_url": "https://arxiv.org/abs/2601.21358",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21358",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T05:34:30.074646+00:00"
+}

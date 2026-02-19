@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.14941",
+  "title": "AnchorWeave: World-Consistent Video Generation with Retrieved Local Spatial Memories",
+  "authors": [
+    "Zun Wang",
+    "Han Lin",
+    "Jaehong Yoon",
+    "Jaemin Cho",
+    "Yue Zhang",
+    "Mohit Bansal"
+  ],
+  "abstract": "AnchorWeave addresses long-term video generation consistency by replacing global 3D scene reconstruction with multiple local geometric memories and a multi-anchor weaving controller to reconcile cross-view inconsistencies. Maintaining spatial world consistency over long horizons remains a central challenge for camera-controllable video generation . Existing memory-based approaches often condition generation on globally reconstructed 3D scenes by rendering anchor videos from the reconstructed geometry in the history. However, reconstructing a global 3D scene from multiple views inevitably introduces cross-view misalignment , as pose and depth estimation errors cause the same surfaces to be reconstructed at slightly different 3D locations across views. When fused, these inconsistencies accumulate into noisy geometry that contaminates the conditioning signals and degrades generation quality. We introduce AnchorWeave, a memory-augmented video generation framework that replaces a single misaligned global memory with multiple clean local geometric memories and learns to reconcile their cross-view inconsistencies. To this end, AnchorWeave performs coverage-driven local memory retrieval aligned with the target trajectory and integrates the selected local memories through a multi-anchor weaving controller during generation. Extensive experiments demonstrate that AnchorWeave significantly improves long-term scene consistency while maintaining strong visual quality, with ablation and analysis studies further validating the effectiveness of local geometric conditioning, multi-anchor control, and coverage-driven retrieval .",
+  "summary_en": "AnchorWeave addresses long-term video generation consistency by replacing global 3D scene reconstruction with multiple local geometric memories and a multi-anchor weaving controller to reconcile cross-view inconsistencies.",
+  "summary_zh": "AnchorWeave 通过以多个局部几何记忆替代全局三维场景重建，并借助多锚点编织控制器调和跨视图不一致性，解决长期视频生成的一致性问题。",
+  "hf_url": "https://huggingface.co/papers/2602.14941",
+  "arxiv_url": "https://arxiv.org/abs/2602.14941",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14941",
+  "github_url": "https://github.com/wz0919/AnchorWeave",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:45:33.753963+00:00"
+}

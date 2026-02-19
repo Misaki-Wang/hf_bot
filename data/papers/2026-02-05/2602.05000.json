@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.05000",
+  "title": "EntRGi: Entropy Aware Reward Guidance for Diffusion Language Models",
+  "authors": [
+    "Atula Tejaswi",
+    "Litu Rout",
+    "Constantine Caramanis",
+    "Sanjay Shakkottai",
+    "Sujay Sanghavi"
+  ],
+  "abstract": "Discrete diffusion language models use entropy-aware reward guidance to improve test-time adaptation by dynamically regulating gradient feedback from reward models.",
+  "summary_en": "Discrete diffusion language models use entropy-aware reward guidance to improve test-time adaptation by dynamically regulating gradient feedback from reward models.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nDiscrete diffusion language models use entropy-aware reward guidance to improve test-time adaptation by dynamically regulating gradient feedback from reward models.",
+  "hf_url": "https://huggingface.co/papers/2602.05000",
+  "arxiv_url": "https://arxiv.org/abs/2602.05000",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05000",
+  "github_url": "https://github.com/atutej/entrgi",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:42:19.395334+00:00"
+}

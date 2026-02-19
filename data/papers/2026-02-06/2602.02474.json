@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.02474",
+  "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
+  "authors": [
+    "Haozhen Zhang",
+    "Quanyu Long",
+    "Jianzhu Bao",
+    "Tao Feng",
+    "Weizhi Zhang",
+    "Haodong Yue",
+    "Wenya Wang"
+  ],
+  "abstract": "MemSkill introduces a learnable and evolvable memory system for LLM agents that dynamically selects and refines memory operations through controller-executor-designer components. Most Large Language Model (LLM) agent memory systems rely on a small set of static, hand-designed operations for extracting memory. These fixed procedures hard-code human priors about what to store and how to revise memory, making them rigid under diverse interaction patterns and inefficient on long histories. To this end, we present MemSkill, which reframes these operations as learnable and evolvable memory skills, structured and reusable routines for extracting, consolidating, and pruning information from interaction traces . Inspired by the design philosophy of agent skills , MemSkill employs a controller that learns to select a small set of relevant skills, paired with an LLM-based executor that produces skill-guided memories. Beyond learning skill selection , MemSkill introduces a designer that periodically reviews hard cases where selected skills yield incorrect or incomplete memories, and evolves the skill set by proposing refinements and new skills. Together, MemSkill forms a closed-loop procedure that improves both the skill-selection policy and the skill set itself. Experiments on LoCoMo, LongMemEval, HotpotQA, and ALFWorld demonstrate that MemSkill improves task performance over strong baselines and generalizes well across settings. Further analyses shed light on how skills evolve, offering insights toward more adaptive, self-evolving memory management for LLM agents.",
+  "summary_en": "MemSkill introduces a learnable and evolvable memory system for LLM agents that dynamically selects and refines memory operations through controller-executor-designer components.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMemSkill introduces a learnable and evolvable memory system for LLM agents that dynamically selects and refines memory operations through controller-executor-designer components.",
+  "hf_url": "https://huggingface.co/papers/2602.02474",
+  "arxiv_url": "https://arxiv.org/abs/2602.02474",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02474",
+  "github_url": "https://github.com/ViktorAxelsen/MemSkill",
+  "upvotes": 55,
+  "fetched_at": "2026-02-19T05:42:41.753491+00:00"
+}

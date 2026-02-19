@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.03359",
+  "title": "MeKi: Memory-based Expert Knowledge Injection for Efficient LLM Scaling",
+  "authors": [
+    "Ning Ding",
+    "Fangcheng Liu",
+    "Kyungrae Kim",
+    "Linji Hao",
+    "Kyeng-Hun Lee",
+    "Hyeonmok Ko",
+    "Yehui Tang"
+  ],
+  "abstract": "MeKi enables efficient large language model deployment on edge devices by injecting pre-stored semantic knowledge through token-level memory experts and re-parameterization techniques. Scaling Large Language Models (LLMs) typically relies on increasing the number of parameters or test-time computations to boost performance. However, these strategies are impractical for edge device deployment due to limited RAM and NPU resources. Despite hardware constraints, deploying performant LLM on edge devices such as smartphone remains crucial for user experience. To address this, we propose MeKi (Memory-based Expert Knowledge Injection), a novel system that scales LLM capacity via storage space rather than FLOPs. MeKi equips each Transformer layer with token-level memory experts that injects pre-stored semantic knowledge into the generation process. To bridge the gap between training capacity and inference efficiency, we employ a re-parameterization strategy to fold parameter matrices used during training into a compact static lookup table . By offloading the knowledge to ROM , MeKi decouples model capacity f rom computational cost, introducing zero inference latency overhead. Extensive experiments demonstrate that MeKi significantly outperforms dense LLM baselines with identical inference speed, validating the effectiveness of memory-based scaling paradigm for on-device LLMs. Project homepage is at https://github.com/ningding-o/MeKi.",
+  "summary_en": "MeKi enables efficient large language model deployment on edge devices by injecting pre-stored semantic knowledge through token-level memory experts and re-parameterization techniques.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMeKi enables efficient large language model deployment on edge devices by injecting pre-stored semantic knowledge through token-level memory experts and re-parameterization techniques.",
+  "hf_url": "https://huggingface.co/papers/2602.03359",
+  "arxiv_url": "https://arxiv.org/abs/2602.03359",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03359",
+  "github_url": "",
+  "upvotes": 9,
+  "fetched_at": "2026-02-19T05:27:29.680824+00:00"
+}

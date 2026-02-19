@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.04942",
+  "title": "Privileged Information Distillation for Language Models",
+  "authors": [
+    "Emiliano Penaloza",
+    "Dheeraj Vattikonda",
+    "Nicolas Gontier",
+    "Alexandre Lacoste",
+    "Laurent Charlin",
+    "Massimo Caccia"
+  ],
+  "abstract": "Training methods that utilize privileged information for language model distillation in multi-turn environments outperform standard supervised fine-tuning followed by reinforcement learning approaches. Training-time privileged information (PI) can enable language models to succeed on tasks they would otherwise fail, making it a powerful tool for reinforcement learning in hard, long-horizon settings. However, transferring capabilities learned with PI to policies that must act without it at inference time remains a fundamental challenge. We study this problem in the context of distilling frontier models for multi-turn agentic environments, where closed-source systems typically hide their internal reasoning and expose only action trajectories. This breaks standard distillation pipelines, since successful behavior is observable but the reasoning process is not. For this, we introduce π-Distill, a joint teacher-student objective that trains a PI-conditioned teacher and an unconditioned student simultaneously using the same model. Additionally, we also introduce On-Policy Self-Distillation (OPSD), an alternative approach that trains using Reinforcement Learning (RL) with a reverse KL-penalty between the student and the PI-conditioned teacher. We show that both of these algorithms effectively distill frontier agents using action-only PI. Specifically we find that π-Distill and in some cases OPSD, outperform industry standard practices (Supervised finetuning followed by RL) that assume access to full Chain-of-Thought supervision across multiple agentic benchmarks, models, and forms of PI. We complement our results with extensive analysis that characterizes the factors enabling effective learning with PI, focusing primarily on π-Distill and characterizing when OPSD is competitive.",
+  "summary_en": "Training methods that utilize privileged information for language model distillation in multi-turn environments outperform standard supervised fine-tuning followed by reinforcement learning approaches.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nTraining methods that utilize privileged information for language model distillation in multi-turn environments outperform standard supervised fine-tuning followed by reinforcement learning approaches.",
+  "hf_url": "https://huggingface.co/papers/2602.04942",
+  "arxiv_url": "https://arxiv.org/abs/2602.04942",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04942",
+  "github_url": "",
+  "upvotes": 25,
+  "fetched_at": "2026-02-19T05:42:53.735142+00:00"
+}

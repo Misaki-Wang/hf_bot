@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.05435",
+  "title": "Stable Velocity: A Variance Perspective on Flow Matching",
+  "authors": [
+    "Donglin Yang",
+    "Yongxing Zhang",
+    "Xin Yu",
+    "Liang Hou",
+    "Xin Tao",
+    "Pengfei Wan",
+    "Xiaojuan Qi",
+    "Renjie Liao"
+  ],
+  "abstract": "Stable Velocity framework addresses high-variance training in flow matching by identifying low-variance regimes and proposing variance-reduction techniques for improved training efficiency and sampling speed. While flow matching is elegant, its reliance on single-sample conditional velocities leads to high-variance training targets that destabilize optimization and slow convergence. By explicitly characterizing this variance, we identify 1) a high-variance regime near the prior, where optimization is challenging, and 2) a low-variance regime near the data distribution, where conditional and marginal velocities nearly coincide. Leveraging this insight, we propose Stable Velocity, a unified framework that improves both training and sampling. For training, we introduce Stable Velocity Matching (StableVM), an unbiased variance-reduction objective, along with Variance-Aware Representation Alignment (VA-REPA), which adaptively strengthen auxiliary supervision in the low-variance regime. For inference, we show that dynamics in the low-variance regime admit closed-form simplifications, enabling Stable Velocity Sampling (StableVS), a finetuning-free acceleration. Extensive experiments on ImageNet 256times256 and large pretrained text-to-image and text-to-video models, including SD3.5, Flux, Qwen-Image, and Wan2.2, demonstrate consistent improvements in training efficiency and more than 2times faster sampling within the low-variance regime without degrading sample quality. Our code is available at https://github.com/linYDTHU/StableVelocity.",
+  "summary_en": "Stable Velocity framework addresses high-variance training in flow matching by identifying low-variance regimes and proposing variance-reduction techniques for improved training efficiency and sampling speed.",
+  "summary_zh": "Stable Velocity 框架通过识别低方差区域并提出方差缩减技术，解决流匹配中的高方差训练问题，从而提升训练效率和采样速度。",
+  "hf_url": "https://huggingface.co/papers/2602.05435",
+  "arxiv_url": "https://arxiv.org/abs/2602.05435",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05435",
+  "github_url": "https://github.com/linYDTHU/StableVelocity",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:20:43.254130+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10699",
+  "title": "Spend Search Where It Pays: Value-Guided Structured Sampling and Optimization for Generative Recommendation",
+  "authors": [
+    "Jie Jiang",
+    "Yangru Huang",
+    "Zeyu Wang",
+    "Changping Wang",
+    "Yuling Xiong",
+    "Jun Zhang",
+    "Huan Yu"
+  ],
+  "abstract": "V-STAR addresses limitations in generative recommendation by combining value-guided decoding and tree-structured advantage reinforcement to improve exploration and reward signal quality. Generative recommendation via autoregressive models has unified retrieval and ranking into a single conditional generation framework. However, fine-tuning these models with Reinforcement Learning (RL) often suffers from a fundamental probability-reward mismatch . Conventional likelihood-dominated decoding (e.g., beam search ) exhibits a myopic bias toward locally probable prefixes, which causes two critical failures: (1) insufficient exploration , where high-reward items in low-probability branches are prematurely pruned and rarely sampled, and (2) advantage compression , where trajectories sharing high-probability prefixes receive highly correlated rewards with low within-group variance, yielding a weak comparative signal for RL. To address these challenges, we propose V-STAR, a Value-guided Sampling and Tree-structured Advantage Reinforcement framework. V-STAR forms a self-evolving loop via two synergistic components. First, a Value-Guided Efficient Decoding (VED) is developed to identify decisive nodes and selectively deepen high-potential prefixes. This improves exploration efficiency without exhaustive tree search. Second, we propose Sibling-GRPO , which exploits the induced tree topology to compute sibling-relative advantages and concentrates learning signals on decisive branching decisions. Extensive experiments on both offline and online datasets demonstrate that V-STAR outperforms state-of-the-art baselines, delivering superior accuracy and candidate-set diversity under strict latency constraints.",
+  "summary_en": "V-STAR addresses limitations in generative recommendation by combining value-guided decoding and tree-structured advantage reinforcement to improve exploration and reward signal quality.",
+  "summary_zh": "V-STAR结合价值引导解码与树结构优势强化，解决生成式推荐的局限性，提升探索与奖励信号质量。",
+  "hf_url": "https://huggingface.co/papers/2602.10699",
+  "arxiv_url": "https://arxiv.org/abs/2602.10699",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10699",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:31:50.275377+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.10090",
+  "title": "Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning",
+  "authors": [
+    "Zhaoyang Wang",
+    "Canwen Xu",
+    "Boyi Liu",
+    "Yite Wang",
+    "Siwei Han",
+    "Zhewei Yao",
+    "Huaxiu Yao",
+    "Yuxiong He"
+  ],
+  "abstract": "Large language model agents trained in synthetic environments with code-driven simulations and database-backed state transitions demonstrate superior out-of-distribution generalization compared to traditional benchmark-specific approaches. Recent advances in large language model (LLM) have empowered autonomous agents to perform complex tasks that require multi-turn interactions with tools and environments. However, scaling such agent training is limited by the lack of diverse and reliable environments. In this paper, we propose Agent World Model (AWM), a fully synthetic environment generation pipeline. Using this pipeline, we scale to 1,000 environments covering everyday scenarios, in which agents can interact with rich toolsets (35 tools per environment on average) and obtain high-quality observations. Notably, these environments are code-driven and backed by databases, providing more reliable and consistent state transitions than environments simulated by LLMs. Moreover, they enable more efficient agent interaction compared with collecting trajectories from realistic environments. To demonstrate the effectiveness of this resource, we perform large-scale reinforcement learning for multi-turn tool-use agents . Thanks to the fully executable environments and accessible database states, we can also design reliable reward functions. Experiments on three benchmarks show that training exclusively in synthetic environments, rather than benchmark-specific ones, yields strong out-of-distribution generalization . The code is available at https://github.com/Snowflake-Labs/agent-world-model.",
+  "summary_en": "Large language model agents trained in synthetic environments with code-driven simulations and database-backed state transitions demonstrate superior out-of-distribution generalization compared to traditional benchmark-specific approaches.",
+  "summary_zh": "在合成环境中通过代码驱动模拟和数据库支持状态转换训练的大型语言模型智能体，相比传统的针对特定基准的方法，展现出更优的分布外泛化能力。",
+  "hf_url": "https://huggingface.co/papers/2602.10090",
+  "arxiv_url": "https://arxiv.org/abs/2602.10090",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10090",
+  "github_url": "https://github.com/Snowflake-Labs/agent-world-model",
+  "upvotes": 49,
+  "fetched_at": "2026-02-19T06:22:10.439986+00:00"
+}

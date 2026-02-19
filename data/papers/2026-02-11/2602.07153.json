@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.07153",
+  "title": "ANCHOR: Branch-Point Data Generation for GUI Agents",
+  "authors": [
+    "Jinbiao Wei",
+    "Yilun Zhao",
+    "Kangqi Ni",
+    "Arman Cohan"
+  ],
+  "abstract": "A trajectory expansion framework called Anchor bootstraps scalable desktop supervision from seed demonstrations by identifying branch points and generating new trajectories through state-grounded task variants. End-to-end GUI agents for real desktop environments require large amounts of high-quality interaction data, yet collecting human demonstrations is expensive and existing synthetic pipelines often suffer from limited task diversity or noisy, goal-drifting trajectories. We present a trajectory expansion framework Anchor that bootstraps scalable desktop supervision from a small set of verified seed demonstrations . Starting from each seed, we identify branch points that correspond to meaningful state changes and propose new, state-grounded task variants conditioned on the current GUI context. An executing agent then follows the proposed instructions to generate new trajectories, while a verifier enforces task completion via state-aware checks and trajectory-level consistency. To improve supervision quality, we further apply task-conditioned step-level filtering to remove ungrounded actions and denoise post-branch segments to maintain coherent intent. Experiments on standard desktop benchmarks, OSWorld and WindowsAgentArena, show that models fine-tuned on our expanded corpus achieve consistent improvements over zero-shot agents and representative synthesis baselines, and generalize across applications and operating systems.",
+  "summary_en": "A trajectory expansion framework called Anchor bootstraps scalable desktop supervision from seed demonstrations by identifying branch points and generating new trajectories through state-grounded task variants.",
+  "summary_zh": "名为Anchor的轨迹扩展框架通过识别分支点并生成基于状态的任务变体新轨迹，从种子演示中引导可扩展的桌面监督。",
+  "hf_url": "https://huggingface.co/papers/2602.07153",
+  "arxiv_url": "https://arxiv.org/abs/2602.07153",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07153",
+  "github_url": "",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T06:20:56.641233+00:00"
+}

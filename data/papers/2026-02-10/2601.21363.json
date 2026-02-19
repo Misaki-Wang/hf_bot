@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2601.21363",
+  "title": "Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Control",
+  "authors": [
+    "Weidong Huang",
+    "Zhehan Li",
+    "Hangxin Liu",
+    "Biao Hou",
+    "Yao Su",
+    "Jingwen Zhang"
+  ],
+  "abstract": "Off-policy Soft Actor-Critic with large-batch updates enables efficient humanoid locomotion policy pretraining, while model-based methods facilitate safe adaptation through deterministic data collection and stochastic exploration within physics-informed world models. Reinforcement learning (RL) is widely used for humanoid control, with on-policy methods such as Proximal Policy Optimization (PPO) enabling robust training via large-scale parallel simulation and, in some cases, zero-shot deployment to real robots. However, the low sample efficiency of on-policy algorithms limits safe adaptation to new environments. Although off-policy RL and model-based RL have shown improved sample efficiency , the gap between large-scale pretraining and efficient finetuning on humanoids still exists. In this paper, we find that off-policy Soft Actor-Critic (SAC), with large-batch update and a high Update-To-Data (UTD) ratio, reliably supports large-scale pretraining of humanoid locomotion policies, achieving zero-shot deployment on real robots. For adaptation, we demonstrate that these SAC-pretrained policies can be finetuned in new environments and out-of-distribution tasks using model-based methods. Data collection in the new environment executes a deterministic policy while stochastic exploration is instead confined to a physics-informed world model . This separation mitigates the risks of random exploration during adaptation while preserving exploratory coverage for improvement. Overall, the approach couples the wall-clock efficiency of large-scale simulation during pretraining with the sample efficiency of model-based learning during fine-tuning.",
+  "summary_en": "Off-policy Soft Actor-Critic with large-batch updates enables efficient humanoid locomotion policy pretraining, while model-based methods facilitate safe adaptation through deterministic data collection and stochastic exploration within physics-informed world models.",
+  "summary_zh": "离策略Soft Actor-Critic通过大批量更新实现高效的人形机器人运动策略预训练，而基于模型的方法则通过确定性数据收集与物理信息世界模型中的随机探索来促进安全适应。",
+  "hf_url": "https://huggingface.co/papers/2601.21363",
+  "arxiv_url": "https://arxiv.org/abs/2601.21363",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21363",
+  "github_url": "https://github.com/bigai-ai/LIFT-humanoid",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T06:01:44.620575+00:00"
+}

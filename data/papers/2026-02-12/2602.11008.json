@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.11008",
+  "title": "ROCKET: Rapid Optimization via Calibration-guided Knapsack Enhanced Truncation for Efficient Model Compression",
+  "authors": [
+    "Ammar Ali",
+    "Baher Mohammad",
+    "Denis Makhov",
+    "Dmitriy Shopkhoev",
+    "Magauiya Zhussip",
+    "Stamatios Lefkimmiatis"
+  ],
+  "abstract": "ROCKET is a training-free model compression method that formulates layer-wise compression as a multi-choice knapsack problem and uses sparse matrix factorization for efficient weight sparsification without iterative optimization. We present ROCKET, a training-free model compression method that achieves state-of-the-art performance in comparison with factorization, structured-sparsification and dynamic compression baselines. Operating under a global compression budget, ROCKET comprises two key innovations: First, it formulates layer-wise compression allocation as a multi-choice knapsack problem , selecting the optimal compression level for each layer to minimize total reconstruction error while adhering to a target model size. Second, it introduces a single-step sparse matrix factorization inspired by dictionary learning : using only a small calibration set, it sparsifies weight coefficients based on activation-weights sensitivity and then updates the dictionary in closed form via least squares bypassing iterative optimization, sparse coding, or backpropagation entirely. ROCKET consistently outperforms existing compression approaches across different model architectures at 20-50\\% compression rates. Notably, it retains over 90\\% of the original model's performance at 30\\% compression without any fine-tuning . Moreover, when applying a light fine-tuning phase, recovery is substantially enhanced: for instance, compressing Qwen3-14B to an 8B-parameter model and healing it with just 30 million tokens yields performance nearly on par with the original Qwen3-8B. The code for ROCKET is at github.com/mts-ai/ROCKET/tree/main.",
+  "summary_en": "ROCKET is a training-free model compression method that formulates layer-wise compression as a multi-choice knapsack problem and uses sparse matrix factorization for efficient weight sparsification without iterative optimization.",
+  "summary_zh": "ROCKET是一种无需训练的模型压缩方法，将逐层压缩形式化为多选择背包问题，并利用稀疏矩阵分解实现高效的权重稀疏化，无需迭代优化。",
+  "hf_url": "https://huggingface.co/papers/2602.11008",
+  "arxiv_url": "https://arxiv.org/abs/2602.11008",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11008",
+  "github_url": "https://github.com/mts-ai/ROCKET",
+  "upvotes": 17,
+  "fetched_at": "2026-02-19T06:32:04.285141+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.04683",
+  "title": "UniAudio 2.0: A Unified Audio Language Model with Text-Aligned Factorized Audio Tokenization",
+  "authors": [
+    "Dongchao Yang",
+    "Yuanyuan Wang",
+    "Dading Chong",
+    "Songxiang Liu",
+    "Xixin Wu",
+    "Helen Meng"
+  ],
+  "abstract": "Researchers developed a discrete audio codec called ReasoningCodec that separates audio into reasoning and reconstruction tokens for improved understanding and generation, and created UniAudio 2.0, a unified autoregressive model trained on large-scale text and audio data that shows strong performance across various audio tasks and generalizes well in few-shot and zero-shot scenarios. We study two foundational problems in audio language models: (1) how to design an audio tokenizer that can serve as an intermediate representation for both understanding and generation; and (2) how to build an audio foundation model that generalizes in few-shot and zero-shot settings, analogous to large language models. To this end, we make the following two contributions. First, we propose ReasoningCodec, a discrete audio codec that factorizes audio into (i) reasoning tokens , which encode text-aligned, high-level analysis and planning representations for audio understanding and hierarchical generation, and (ii) reconstruction tokens , which encode semantic-rich acoustic cues for high-fidelity waveform reconstruction. This design achieves understanding performance comparable to strong continuous representations while improving generation quality and reconstruction fidelity over prior discrete tokenizers. Second, we introduce a unified autoregressive architecture for text and audio, together with multi-stage training and multi-task data construction . Using this framework, we train UniAudio 2.0 on 100B text tokens and 60B audio tokens. Across a wide range of speech, sound, and music tasks, UniAudio 2.0 performs competitively on in-domain evaluations and demonstrates strong few-shot and zero-shot generalization to unseen tasks. Demo, code, and checkpoints will be available at https://dongchaoyang.top/UniAudio2Demo/{https://dongchaoyang.top/UniAudio2Demo/}.",
+  "summary_en": "Researchers developed a discrete audio codec called ReasoningCodec that separates audio into reasoning and reconstruction tokens for improved understanding and generation, and created UniAudio 2.0, a unified autoregressive model trained on large-scale text and audio data that shows strong performance across various audio tasks and generalizes well in few-shot and zero-shot scenarios.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nResearchers developed a discrete audio codec called ReasoningCodec that separates audio into reasoning and reconstruction tokens for improved understanding and generation, and created UniAudio 2.0, a unified autoregressive model trained on large-scale text and audio data that shows strong performance across various audio tasks and generalizes well in few-shot and zero-shot scenarios.",
+  "hf_url": "https://huggingface.co/papers/2602.04683",
+  "arxiv_url": "https://arxiv.org/abs/2602.04683",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04683",
+  "github_url": "https://github.com/yangdongchao/UniAudio2",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:42:49.385698+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2602.00158",
+  "title": "RAPTOR: Ridge-Adaptive Logistic Probes",
+  "authors": [
+    "Ziqi Gao",
+    "Yaotian Zhu",
+    "Qingcheng Zeng",
+    "Xu Zhao",
+    "Ziqing Wang",
+    "Feng Ruan",
+    "Kaize Ding"
+  ],
+  "abstract": "RACTOR, a ridge-adaptive logistic probe, achieves accurate and stable concept vector estimation for activation steering in frozen LLMs with reduced training costs, supported by theoretical analysis of ridge logistic regression in high-dimensional settings. Probing studies what information is encoded in a frozen LLM 's layer representations by training a lightweight predictor on top of them. Beyond analysis, probes are often used operationally in probe-then-steer pipelines: a learned concept vector is extracted from a probe and injected via additive activation steering by adding it to a layer representation during the forward pass. The effectiveness of this pipeline hinges on estimating concept vectors that are accurate, directionally stable under ablation, and inexpensive to obtain. Motivated by these desiderata, we propose RAPTOR (Ridge-Adaptive Logistic Probe), a simple L2-regularized logistic probe whose validation-tuned ridge strength yields concept vectors from normalized weights. Across extensive experiments on instruction-tuned LLM s and human-written concept datasets, RAPTOR matches or exceeds strong baselines in accuracy while achieving competitive directional stability and substantially lower training cost; these quantitative results are supported by qualitative downstream steering demonstrations. Finally, using the Convex Gaussian Min-max Theorem ( CGMT ), we provide a mechanistic characterization of ridge logistic regression in an idealized Gaussian teacher-student model in the high-dimensional few-shot regime, explaining how penalty strength mediates probe accuracy and concept-vector stability and yielding structural predictions that qualitatively align with trends observed on real LLM embeddings.",
+  "summary_en": "RACTOR, a ridge-adaptive logistic probe, achieves accurate and stable concept vector estimation for activation steering in frozen LLMs with reduced training costs, supported by theoretical analysis of ridge logistic regression in high-dimensional settings.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nRACTOR, a ridge-adaptive logistic probe, achieves accurate and stable concept vector estimation for activation steering in frozen LLMs with reduced training costs, supported by theoretical analysis of ridge logistic regression in high-dimensional settings.",
+  "hf_url": "https://huggingface.co/papers/2602.00158",
+  "arxiv_url": "https://arxiv.org/abs/2602.00158",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.00158",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T05:35:35.835950+00:00"
+}

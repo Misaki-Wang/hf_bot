@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2601.22027",
+  "title": "CAR-bench: Evaluating the Consistency and Limit-Awareness of LLM Agents under Real-World Uncertainty",
+  "authors": [
+    "Johannes Kirmayr",
+    "Lukas Stappen",
+    "Elisabeth André"
+  ],
+  "abstract": "Current LLM agent benchmarks fail to evaluate reliability in real-world scenarios with uncertain user inputs, prompting the creation of CAR-bench to test consistency, uncertainty management, and capability awareness in in-car assistant applications. Existing benchmarks for Large Language Model (LLM) agents focus on task completion under idealistic settings but overlook reliability in real-world, user-facing applications. In domains, such as in-car voice assistants, users often issue incomplete or ambiguous requests, creating intrinsic uncertainty that agents must manage through dialogue, tool use, and policy adherence . We introduce CAR-bench, a benchmark for evaluating consistency, uncertainty handling, and capability awareness in multi-turn, tool-using LLM agents in an in-car assistant domain. The environment features an LLM-simulated user, domain policies, and 58 interconnected tools spanning navigation, productivity, charging, and vehicle control. Beyond standard task completion, CAR-bench introduces Hallucination tasks that test agents' limit-awareness under missing tools or information, and Disambiguation tasks that require resolving uncertainty through clarification or internal information gathering. Baseline results reveal large gaps between occasional and consistent success on all task types. Even frontier reasoning LLMs achieve less than 50% consistent pass rate on Disambiguation tasks due to premature actions, and frequently violate policies or fabricate information to satisfy user requests in Hallucination tasks , underscoring the need for more reliable and self-aware LLM agents in real-world settings.",
+  "summary_en": "Current LLM agent benchmarks fail to evaluate reliability in real-world scenarios with uncertain user inputs, prompting the creation of CAR-bench to test consistency, uncertainty management, and capability awareness in in-car assistant applications.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nCurrent LLM agent benchmarks fail to evaluate reliability in real-world scenarios with uncertain user inputs, prompting the creation of CAR-bench to test consistency, uncertainty management, and capability awareness in in-car assistant applications.",
+  "hf_url": "https://huggingface.co/papers/2601.22027",
+  "arxiv_url": "https://arxiv.org/abs/2601.22027",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22027",
+  "github_url": "https://github.com/CAR-bench/car-bench",
+  "upvotes": 81,
+  "fetched_at": "2026-02-19T05:42:30.246901+00:00"
+}

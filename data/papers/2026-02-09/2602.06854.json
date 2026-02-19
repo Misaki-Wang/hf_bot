@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06854",
+  "title": "SEMA: Simple yet Effective Learning for Multi-Turn Jailbreak Attacks",
+  "authors": [
+    "Mingqian Feng",
+    "Xiaodong Liu",
+    "Weiwei Yang",
+    "Jialin Song",
+    "Xuekai Zhu",
+    "Chenliang Xu",
+    "Jianfeng Gao"
+  ],
+  "abstract": "A novel framework called SEMA is introduced that effectively trains multi-turn attackers for large language models without relying on existing strategies or external data, achieving state-of-the-art attack success rates while being compact, reproducible, and transferable across different models and datasets. Multi-turn jailbreaks capture the real threat model for safety-aligned chatbots, where single-turn attacks are merely a special case. Yet existing approaches break under exploration complexity and intent drift. We propose SEMA, a simple yet effective framework that trains a multi-turn attacker without relying on any existing strategies or external data. SEMA comprises two stages. Prefilling self-tuning enables usable rollouts by fine-tuning on non-refusal, well-structured, multi-turn adversarial prompts that are self-generated with a minimal prefix, thereby stabilizing subsequent learning. Reinforcement learning with intent-drift-aware reward trains the attacker to elicit valid multi-turn adversarial prompts while maintaining the same harmful objective. We anchor harmful intent in multi-turn jailbreaks via an intent-drift-aware reward that combines intent alignment, compliance risk, and level of detail. Our open-loop attack regime avoids dependence on victim feedback, unifies single- and multi-turn settings, and reduces exploration complexity. Across multiple datasets, victim models , and jailbreak judges , our method achieves state-of-the-art (SOTA) attack success rates (ASR), outperforming all single-turn baselines, manually scripted and template-driven multi-turn baselines, as well as our SFT ( Supervised Fine-Tuning ) and DPO ( Direct Preference Optimization ) variants. For instance, SEMA performs an average 80.1% ASR@1 across three closed-source and open-source victim models on AdvBench, 33.9% over SOTA. The approach is compact, reproducible, and transfers across targets, providing a stronger and more realistic stress test for large language model (LLM) safety and enabling automatic redteaming to expose and localize failure modes. Our code is available at: https://github.com/fmmarkmq/SEMA.",
+  "summary_en": "A novel framework called SEMA is introduced that effectively trains multi-turn attackers for large language models without relying on existing strategies or external data, achieving state-of-the-art attack success rates while being compact, reproducible, and transferable across different models and datasets.",
+  "summary_zh": "本文提出了一种名为 SEMA 的新框架，可在不依赖现有策略或外部数据的情况下有效训练面向大型语言模型的多轮攻击器，实现了最先进的攻击成功率，且具备紧凑、可复现、可跨不同模型和数据集迁移的特性。",
+  "hf_url": "https://huggingface.co/papers/2602.06854",
+  "arxiv_url": "https://arxiv.org/abs/2602.06854",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06854",
+  "github_url": "",
+  "upvotes": 6,
+  "fetched_at": "2026-02-19T05:58:20.732702+00:00"
+}

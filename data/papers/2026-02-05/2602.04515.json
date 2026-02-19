@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.04515",
+  "title": "EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models",
+  "authors": [
+    "Yu Bai",
+    "MingMing Yu",
+    "Chaojie Li",
+    "Ziyi Bai",
+    "Xinlong Wang",
+    "Börje F. Karlsson"
+  ],
+  "abstract": "EgoActor is a unified vision-language model that translates high-level instructions into precise humanoid robot actions through integrated perception and execution across simulated and real-world environments. Deploying humanoid robots in real-world settings is fundamentally challenging, as it demands tight integration of perception, locomotion, and manipulation under partial-information observations and dynamically changing environments. As well as transitioning robustly between sub-tasks of different types. Towards addressing these challenges, we propose a novel task - EgoActing, which requires directly grounding high-level instructions into various, precise, spatially aware humanoid actions. We further instantiate this task by introducing EgoActor, a unified and scalable vision-language model (VLM) that can predict locomotion primitives (e.g., walk, turn, move sideways, change height), head movements , manipulation commands , and human-robot interactions to coordinate perception and execution in real-time. We leverage broad supervision over egocentric RGB-only data from real-world demonstrations, spatial reasoning question-answering , and simulated environment demonstrations , enabling EgoActor to make robust, context-aware decisions and perform fluent action inference (under 1s) with both 8B and 4B parameter models. Extensive evaluations in both simulated and real-world environments demonstrate that EgoActor effectively bridges abstract task planning and concrete motor execution , while generalizing across diverse tasks and unseen environments.",
+  "summary_en": "EgoActor is a unified vision-language model that translates high-level instructions into precise humanoid robot actions through integrated perception and execution across simulated and real-world environments.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nEgoActor is a unified vision-language model that translates high-level instructions into precise humanoid robot actions through integrated perception and execution across simulated and real-world environments.",
+  "hf_url": "https://huggingface.co/papers/2602.04515",
+  "arxiv_url": "https://arxiv.org/abs/2602.04515",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04515",
+  "github_url": "",
+  "upvotes": 38,
+  "fetched_at": "2026-02-19T05:27:42.747666+00:00"
+}

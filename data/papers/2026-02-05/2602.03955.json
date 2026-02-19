@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.03955",
+  "title": "AgentArk: Distilling Multi-Agent Intelligence into a Single LLM Agent",
+  "authors": [
+    "Yinyi Luo",
+    "Yiqiao Jin",
+    "Weichen Yu",
+    "Mengqi Zhang",
+    "Srijan Kumar",
+    "Xiaoxiao Li",
+    "Weijie Xu",
+    "Xin Chen",
+    "Jindong Wang"
+  ],
+  "abstract": "AgentArk distills multi-agent reasoning dynamics into a single model through hierarchical distillation strategies, enabling efficient yet powerful reasoning capabilities. While large language model (LLM) multi-agent systems achieve superior reasoning performance through iterative debate, practical deployment is limited by their high computational cost and error propagation. This paper proposes AgentArk, a novel framework to distill multi-agent dynamics into the weights of a single model, effectively transforming explicit test-time interactions into implicit model capabilities. This equips a single agent with the intelligence of multi-agent systems while remaining computationally efficient. Specifically, we investigate three hierarchical distillation strategies across various models, tasks, scaling, and scenarios: reasoning-enhanced fine-tuning ; trajectory-based augmentation ; and process-aware distillation . By shifting the burden of computation from inference to training, the distilled models preserve the efficiency of one agent while exhibiting strong reasoning and self-correction performance of multiple agents. They further demonstrate enhanced robustness and generalization across diverse reasoning tasks. We hope this work can shed light on future research on efficient and robust multi-agent development. Our code is at https://github.com/AIFrontierLab/AgentArk.",
+  "summary_en": "AgentArk distills multi-agent reasoning dynamics into a single model through hierarchical distillation strategies, enabling efficient yet powerful reasoning capabilities.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nAgentArk distills multi-agent reasoning dynamics into a single model through hierarchical distillation strategies, enabling efficient yet powerful reasoning capabilities.",
+  "hf_url": "https://huggingface.co/papers/2602.03955",
+  "arxiv_url": "https://arxiv.org/abs/2602.03955",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03955",
+  "github_url": "https://github.com/AIFrontierLab/AgentArk",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T05:27:35.932498+00:00"
+}

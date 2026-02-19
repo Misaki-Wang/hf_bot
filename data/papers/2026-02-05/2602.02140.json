@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.02140",
+  "title": "Quantifying the Gap between Understanding and Generation within Unified Multimodal Models",
+  "authors": [
+    "Chenlong Wang",
+    "Yuhang Chen",
+    "Zhihan Hu",
+    "Dongping Chen",
+    "Wenhu Chen",
+    "Sarah Wiegreffe",
+    "Tianyi Zhou"
+  ],
+  "abstract": "Unified multimodal models exhibit a persistent gap between understanding and generation capabilities, indicating only surface-level integration rather than deep cognitive convergence. Recent advances in unified multimodal models (UMM) have demonstrated remarkable progress in both understanding and generation tasks. However, whether these two capabilities are genuinely aligned and integrated within a single model remains unclear. To investigate this question, we introduce GapEval, a bidirectional benchmark designed to quantify the gap between understanding and generation capabilities, and quantitatively measure the cognitive coherence of the two \"unified\" directions. Each question can be answered in both modalities (image and text), enabling a symmetric evaluation of a model's bidirectional inference capability and cross-modal consistency . Experiments reveal a persistent gap between the two directions across a wide range of UMMs with different architectures, suggesting that current models achieve only surface-level unification rather than deep cognitive convergence of the two. To further explore the underlying mechanism, we conduct an empirical study from the perspective of knowledge manipulation to illustrate the underlying limitations. Our findings indicate that knowledge within UMMs often remains disjoint. The capability emergence and knowledge across modalities are unsynchronized, paving the way for further exploration.",
+  "summary_en": "Unified multimodal models exhibit a persistent gap between understanding and generation capabilities, indicating only surface-level integration rather than deep cognitive convergence.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nUnified multimodal models exhibit a persistent gap between understanding and generation capabilities, indicating only surface-level integration rather than deep cognitive convergence.",
+  "hf_url": "https://huggingface.co/papers/2602.02140",
+  "arxiv_url": "https://arxiv.org/abs/2602.02140",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02140",
+  "github_url": "",
+  "upvotes": 12,
+  "fetched_at": "2026-02-19T05:27:19.394008+00:00"
+}

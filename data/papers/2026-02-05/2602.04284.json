@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.04284",
+  "title": "Agent-Omit: Training Efficient LLM Agents for Adaptive Thought and Observation Omission via Agentic Reinforcement Learning",
+  "authors": [
+    "Yansong Ning",
+    "Jun Fang",
+    "Naiqiang Tan",
+    "Hao Liu"
+  ],
+  "abstract": "Agent-Omit is a training framework that enables LLM agents to adaptively omit redundant thoughts and observations during multi-turn interactions, achieving superior effectiveness-efficiency trade-offs compared to existing methods. Managing agent thought and observation during multi-turn agent-environment interactions is an emerging strategy to improve agent efficiency. However, existing studies treat the entire interaction trajectories equally, overlooking the thought necessity and observation utility varies across turns. To this end, we first conduct quantitative investigations into how thought and observation affect agent effectiveness and efficiency. Based on our findings, we propose Agent-Omit, a unified training framework that empowers LLM agents to adaptively omit redundant thoughts and observations. Specifically, we first synthesize a small amount of cold-start data , including both single-turn and multi-turn omission scenarios, to fine-tune the agent for omission behaviors. Furthermore, we introduce an omit-aware agentic reinforcement learning approach, incorporating a dual sampling mechanism and a tailored omission reward to incentivize the agent's adaptive omission capability. Theoretically, we prove that the deviation of our omission policy is upper-bounded by KL-divergence . Experimental results on five agent benchmarks show that our constructed Agent-Omit-8B could obtain performance comparable to seven frontier LLM agent, and achieve the best effectiveness-efficiency trade-off than seven efficient LLM agents methods. Our code and data are available at https://github.com/usail-hkust/Agent-Omit.",
+  "summary_en": "Agent-Omit is a training framework that enables LLM agents to adaptively omit redundant thoughts and observations during multi-turn interactions, achieving superior effectiveness-efficiency trade-offs compared to existing methods.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nAgent-Omit is a training framework that enables LLM agents to adaptively omit redundant thoughts and observations during multi-turn interactions, achieving superior effectiveness-efficiency trade-offs compared to existing methods.",
+  "hf_url": "https://huggingface.co/papers/2602.04284",
+  "arxiv_url": "https://arxiv.org/abs/2602.04284",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04284",
+  "github_url": "https://github.com/usail-hkust/Agent-Omit",
+  "upvotes": 13,
+  "fetched_at": "2026-02-19T05:27:39.936607+00:00"
+}

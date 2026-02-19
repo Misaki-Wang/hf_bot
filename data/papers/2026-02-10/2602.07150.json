@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07150",
+  "title": "On Randomness in Agentic Evals",
+  "authors": [
+    "Bjarni Haukur Bjarnason",
+    "André Silva",
+    "Martin Monperrus"
+  ],
+  "abstract": "Analysis of agentic system evaluation reveals significant variance in single-run performance estimates, necessitating multiple runs and advanced metrics for reliable assessment.",
+  "summary_en": "Analysis of agentic system evaluation reveals significant variance in single-run performance estimates, necessitating multiple runs and advanced metrics for reliable assessment.",
+  "summary_zh": "对智能体系统评估的分析表明，单次运行的性能估计方差显著，需要进行多次运行并采用高级指标以实现可靠评估。",
+  "hf_url": "https://huggingface.co/papers/2602.07150",
+  "arxiv_url": "https://arxiv.org/abs/2602.07150",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07150",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:02:45.134118+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03709",
+  "title": "No Shortcuts to Culture: Indonesian Multi-hop Question Answering for Complex Cultural Understanding",
+  "authors": [
+    "Vynska Amalia Permadi",
+    "Xingwei Tan",
+    "Nafise Sadat Moosavi",
+    "Nikos Aletras"
+  ],
+  "abstract": "Multi-hop question answering dataset ID-MoCQA assesses cultural understanding in large language models through Indonesian traditions with diverse reasoning chains. Understanding culture requires reasoning across context, tradition, and implicit social knowledge, far beyond recalling isolated facts. Yet most culturally focused question answering (QA) benchmarks rely on single-hop questions, which may allow models to exploit shallow cues rather than demonstrate genuine cultural reasoning. In this work, we introduce ID-MoCQA, the first large-scale multi-hop QA dataset for assessing the cultural understanding of large language models (LLMs), grounded in Indonesian traditions and available in both English and Indonesian. We present a new framework that systematically transforms single-hop cultural questions into multi-hop reasoning chains spanning six clue types (e.g., commonsense, temporal, geographical). Our multi-stage validation pipeline , combining expert review and LLM-as-a-judge filtering , ensures high-quality question-answer pairs. Our evaluation across state-of-the-art models reveals substantial gaps in cultural reasoning, particularly in tasks requiring nuanced inference. ID-MoCQA provides a challenging and essential benchmark for advancing the cultural competency of LLMs.",
+  "summary_en": "Multi-hop question answering dataset ID-MoCQA assesses cultural understanding in large language models through Indonesian traditions with diverse reasoning chains.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMulti-hop question answering dataset ID-MoCQA assesses cultural understanding in large language models through Indonesian traditions with diverse reasoning chains.",
+  "hf_url": "https://huggingface.co/papers/2602.03709",
+  "arxiv_url": "https://arxiv.org/abs/2602.03709",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03709",
+  "github_url": "",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T05:40:44.724414+00:00"
+}

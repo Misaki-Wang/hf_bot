@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07090",
+  "title": "Concept-Aware Privacy Mechanisms for Defending Embedding Inversion Attacks",
+  "authors": [
+    "Yu-Che Tsai",
+    "Hsiang Hsiao",
+    "Kuan-Yu Chen",
+    "Shou-De Lin"
+  ],
+  "abstract": "SPARSE is a user-centric framework that protects text embeddings from privacy leaks by selectively perturbing sensitive dimensions using differentiable masking and Mahalanobis noise calibration. Text embeddings enable numerous NLP applications but face severe privacy risks from embedding inversion attacks , which can expose sensitive attributes or reconstruct raw text. Existing differential privacy defenses assume uniform sensitivity across embedding dimensions, leading to excessive noise and degraded utility. We propose SPARSE, a user-centric framework for concept-specific privacy protection in text embeddings . SPARSE combines (1) differentiable mask learning to identify privacy-sensitive dimensions for user-defined concepts, and (2) the Mahalanobis mechanism that applies elliptical noise calibrated by dimension sensitivity. Unlike traditional spherical noise injection, SPARSE selectively perturbs privacy-sensitive dimensions while preserving non-sensitive semantics. Evaluated across six datasets with three embedding models and attack scenarios, SPARSE consistently reduces privacy leakage while achieving superior downstream performance compared to state-of-the-art DP methods.",
+  "summary_en": "SPARSE is a user-centric framework that protects text embeddings from privacy leaks by selectively perturbing sensitive dimensions using differentiable masking and Mahalanobis noise calibration.",
+  "summary_zh": "SPARSE是一种以用户为中心的框架，通过可微掩码和马氏距离噪声校准选择性扰动敏感维度，从而保护文本嵌入免受隐私泄露。",
+  "hf_url": "https://huggingface.co/papers/2602.07090",
+  "arxiv_url": "https://arxiv.org/abs/2602.07090",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07090",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:02:39.204499+00:00"
+}

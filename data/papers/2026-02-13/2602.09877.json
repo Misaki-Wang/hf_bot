@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.09877",
+  "title": "The Devil Behind Moltbook: Anthropic Safety is Always Vanishing in Self-Evolving AI Societies",
+  "authors": [
+    "Chenxu Wang",
+    "Chaozhuo Li",
+    "Songyang Liu",
+    "Zejian Chen",
+    "Jinyu Hou",
+    "Ji Qi",
+    "Rui Li",
+    "Litian Zhang",
+    "Qiwei Ye",
+    "Zheng Liu",
+    "Xu Chen",
+    "Xi Zhang",
+    "Philip S. Yu"
+  ],
+  "abstract": "Multi-agent LLM systems face fundamental limitations in achieving continuous self-improvement while maintaining safety alignment due to inherent statistical blind spots in isolated evolution. The emergence of multi-agent systems built from large language models (LLMs) offers a promising paradigm for scalable collective intelligence and self-evolution . Ideally, such systems would achieve continuous self-improvement in a fully closed loop while maintaining robust safety alignment --a combination we term the self-evolution trilemma. However, we demonstrate both theoretically and empirically that an agent society satisfying continuous self-evolution , complete isolation, and safety invariance is impossible. Drawing on an information-theoretic framework , we formalize safety as the divergence degree from anthropic value distributions . We theoretically demonstrate that isolated self-evolution induces statistical blind spots , leading to the irreversible degradation of the system's safety alignment . Empirical and qualitative results from an open-ended agent community (Moltbook) and two closed self-evolving systems reveal phenomena that align with our theoretical prediction of inevitable safety erosion. We further propose several solution directions to alleviate the identified safety concern. Our work establishes a fundamental limit on the self-evolving AI societies and shifts the discourse from symptom-driven safety patches to a principled understanding of intrinsic dynamical risks, highlighting the need for external oversight or novel safety-preserving mechanisms .",
+  "summary_en": "Multi-agent LLM systems face fundamental limitations in achieving continuous self-improvement while maintaining safety alignment due to inherent statistical blind spots in isolated evolution.",
+  "summary_zh": "多智能体LLM系统因孤立进化中的固有统计盲区，在实现持续自我改进的同时保持安全对齐方面面临根本性局限。",
+  "hf_url": "https://huggingface.co/papers/2602.09877",
+  "arxiv_url": "https://arxiv.org/abs/2602.09877",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09877",
+  "github_url": "",
+  "upvotes": 187,
+  "fetched_at": "2026-02-19T06:37:55.568690+00:00"
+}

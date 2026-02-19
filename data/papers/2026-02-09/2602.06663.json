@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06663",
+  "title": "PlanViz: Evaluating Planning-Oriented Image Generation and Editing for Computer-Use Tasks",
+  "authors": [
+    "Junxian Li",
+    "Kai Liu",
+    "Leyang Chen",
+    "Weida Wang",
+    "Zhixin Wang",
+    "Jiaqi Xu",
+    "Fan Li",
+    "Renjing Pei",
+    "Linghe Kong",
+    "Yulun Zhang"
+  ],
+  "abstract": "PlanViz benchmark evaluates unified multimodal models' capabilities in computer-use planning tasks through route planning, work diagramming, and web&UI displaying sub-tasks with a task-adaptive scoring system.",
+  "summary_en": "PlanViz benchmark evaluates unified multimodal models' capabilities in computer-use planning tasks through route planning, work diagramming, and web&UI displaying sub-tasks with a task-adaptive scoring system.",
+  "summary_zh": "PlanViz基准测试通过路径规划、工作图表绘制和网页与UI展示子任务，采用任务自适应评分系统，评估统一多模态模型在计算机使用规划任务中的能力。",
+  "hf_url": "https://huggingface.co/papers/2602.06663",
+  "arxiv_url": "https://arxiv.org/abs/2602.06663",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06663",
+  "github_url": "https://github.com/lijunxian111/PlanViz",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:58:11.830421+00:00"
+}

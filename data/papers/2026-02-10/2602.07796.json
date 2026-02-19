@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07796",
+  "title": "Thinking Makes LLM Agents Introverted: How Mandatory Thinking Can Backfire in User-Engaged Agents",
+  "authors": [
+    "Jiatong Li",
+    "Changdae Oh",
+    "Hyeong Kyu Choi",
+    "Jindong Wang",
+    "Sharon Li"
+  ],
+  "abstract": "Explicit reasoning in LLM agents can degrade performance in user-engaged scenarios by reducing information disclosure and weakening agent-user communication, with transparency-aware prompting showing better results. Eliciting reasoning has emerged as a powerful technique for improving the performance of large language models (LLMs) on complex tasks by inducing thinking. However, their effectiveness in realistic user-engaged agent scenarios remains unclear. In this paper, we conduct a comprehensive study on the effect of explicit thinking in user-engaged LLM agents. Our experiments span across seven models, three benchmarks, and two thinking instantiations, and we evaluate them through both a quantitative response taxonomy analysis and qualitative failure propagation case studies. Contrary to expectations, we find that mandatory thinking often backfires on agents in user-engaged settings, causing anomalous performance degradation across various LLMs. Our key finding reveals that thinking makes agents more ``introverted'' by shortening responses and reducing information disclosure to users, which weakens agent-user information exchange and leads to downstream task failures. Furthermore, we demonstrate that explicitly prompting for information disclosure reliably improves performance across diverse model families, suggesting that proactive transparency is a vital lever for agent optimization. Overall, our study suggests that information transparency awareness is a crucial yet underexplored perspective for the future design of reasoning agents in real-world scenarios. Our code is available at https://github.com/deeplearning-wisc/Thinking-Agent.",
+  "summary_en": "Explicit reasoning in LLM agents can degrade performance in user-engaged scenarios by reducing information disclosure and weakening agent-user communication, with transparency-aware prompting showing better results.",
+  "summary_zh": "在用户参与场景中，LLM智能体的显式推理可能因减少信息披露并削弱智能体与用户的沟通而导致性能下降，而透明性感知提示则能取得更好效果。",
+  "hf_url": "https://huggingface.co/papers/2602.07796",
+  "arxiv_url": "https://arxiv.org/abs/2602.07796",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07796",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T06:02:54.402668+00:00"
+}

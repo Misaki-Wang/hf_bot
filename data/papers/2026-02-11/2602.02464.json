@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.02464",
+  "title": "From Directions to Regions: Decomposing Activations in Language Models via Local Geometry",
+  "authors": [
+    "Or Shafran",
+    "Shaked Ronen",
+    "Omri Fahn",
+    "Shauli Ravfogel",
+    "Atticus Geiger",
+    "Mor Geva"
+  ],
+  "abstract": "Mixture of Factor Analyzers (MFA) provides a scalable, unsupervised approach for discovering complex, nonlinear structures in language model activation spaces by modeling local geometric structures through Gaussian regions and their covariance properties. Activation decomposition methods in language models are tightly coupled to geometric assumptions on how concepts are realized in activation space . Existing approaches search for individual global directions, implicitly assuming linear separability, which overlooks concepts with nonlinear or multi-dimensional structure. In this work, we leverage Mixture of Factor Analyzers (MFA) as a scalable, unsupervised alternative that models the activation space as a collection of Gaussian regions with their local covariance structure . MFA decomposes activations into two compositional geometric objects: the region's centroid in activation space , and the local variation from the centroid. We train large-scale MFAs for Llama-3.1-8B and Gemma-2-2B, and show they capture complex, nonlinear structures in activation space . Moreover, evaluations on localization and steering benchmarks show that MFA outperforms unsupervised baselines, is competitive with supervised localization methods, and often achieves stronger steering performance than sparse autoencoders . Together, our findings position local geometry, expressed through subspaces, as a promising unit of analysis for scalable concept discovery and model control , accounting for complex structures that isolated directions fail to capture.",
+  "summary_en": "Mixture of Factor Analyzers (MFA) provides a scalable, unsupervised approach for discovering complex, nonlinear structures in language model activation spaces by modeling local geometric structures through Gaussian regions and their covariance properties.",
+  "summary_zh": "因子分析器混合模型（MFA）提供了一种可扩展的无监督方法，通过高斯区域及其协方差特性对局部几何结构进行建模，从而发现语言模型激活空间中的复杂非线性结构。",
+  "hf_url": "https://huggingface.co/papers/2602.02464",
+  "arxiv_url": "https://arxiv.org/abs/2602.02464",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02464",
+  "github_url": "https://github.com/ordavid-s/decomposing-activations-local-geometry",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:20:27.956194+00:00"
+}

@@ -1,6 +1,6 @@
 {
   "date": "2026-02-17",
-  "count": 28,
+  "count": 36,
   "papers": [
     {
       "date": "2026-02-17",
@@ -30,6 +30,28 @@
       "github_url": "https://github.com/RUC-NLPIR/DeepImageSearch",
       "upvotes": 24,
       "fetched_at": "2026-02-17T15:57:40.909289+00:00"
+    },
+    {
+      "date": "2026-02-17",
+      "paper_id": "2602.14265",
+      "title": "STATe-of-Thoughts: Structured Action Templates for Tree-of-Thoughts",
+      "authors": [
+        "Zachary Bamberger",
+        "Till R. Saenger",
+        "Gilad Morad",
+        "Ofra Amir",
+        "Brandon M. Stewart",
+        "Amir Feder"
+      ],
+      "abstract": "STATe presents an interpretable inference-time compute method that uses discrete textual interventions to generate diverse, high-quality, and explainable text by searching over reasoning patterns rather than relying on stochastic sampling.",
+      "summary_en": "STATe presents an interpretable inference-time compute method that uses discrete textual interventions to generate diverse, high-quality, and explainable text by searching over reasoning patterns rather than relying on stochastic sampling.",
+      "summary_zh": "STATe 提出了一种可解释的推理时计算方法，利用离散文本干预，通过对推理模式的搜索而非随机采样，生成多样化、高质量且可解释的文本。",
+      "hf_url": "https://huggingface.co/papers/2602.14265",
+      "arxiv_url": "https://arxiv.org/abs/2602.14265",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14265",
+      "github_url": "https://github.com/zbambergerNLP/state-of-thoughts",
+      "upvotes": 18,
+      "fetched_at": "2026-02-19T06:45:31.617066+00:00"
     },
     {
       "date": "2026-02-17",
@@ -80,6 +102,25 @@
       "github_url": "",
       "upvotes": 14,
       "fetched_at": "2026-02-17T15:57:50.538181+00:00"
+    },
+    {
+      "date": "2026-02-17",
+      "paper_id": "2602.11574",
+      "title": "Learning to Configure Agentic AI Systems",
+      "authors": [
+        "Aditya Taparia",
+        "Som Sagar",
+        "Ransalu Senanayake"
+      ],
+      "abstract": "Learning per-query agent configurations through reinforcement learning improves task accuracy while reducing computational costs compared to fixed templates and hand-tuned heuristics. Configuring LLM-based agent systems involves choosing workflows, tools, token budget s, and prompts from a large combinatorial design space, and is typically handled today by fixed large templates or hand-tuned heuristics. This leads to brittle behavior and unnecessary compute, since the same cumbersome configuration is often applied to both easy and hard input queries. We formulate agent configuration as a query-wise decision problem and introduce ARC (Agentic Resource & Configuration learner), which learns a light-weight hierarchical policy using reinforcement learning to dynamically tailor these configurations. Across multiple benchmarks spanning reasoning and tool-augmented question answering , the learned policy consistently outperforms strong hand-designed and other baselines, achieving up to 25% higher task accuracy while also reducing token and runtime costs. These results demonstrate that learning per-query agent configuration s is a powerful alternative to \"one size fits all\" designs.",
+      "summary_en": "Learning per-query agent configurations through reinforcement learning improves task accuracy while reducing computational costs compared to fixed templates and hand-tuned heuristics.",
+      "summary_zh": "通过强化学习习得逐查询智能体配置，相较于固定模板与手工调优启发式方法，可在提升任务准确率的同时降低计算成本。",
+      "hf_url": "https://huggingface.co/papers/2602.11574",
+      "arxiv_url": "https://arxiv.org/abs/2602.11574",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11574",
+      "github_url": "https://github.com/somsagar07/Context_Optimization",
+      "upvotes": 14,
+      "fetched_at": "2026-02-19T06:45:24.066984+00:00"
     },
     {
       "date": "2026-02-17",
@@ -165,6 +206,27 @@
       "github_url": "https://github.com/zjunlp/InnoEval",
       "upvotes": 12,
       "fetched_at": "2026-02-17T15:57:57.913951+00:00"
+    },
+    {
+      "date": "2026-02-17",
+      "paper_id": "2602.13294",
+      "title": "VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction",
+      "authors": [
+        "Jiarong Liang",
+        "Max Ku",
+        "Ka-Hei Hui",
+        "Ping Nie",
+        "Wenhu Chen"
+      ],
+      "abstract": "VisPhyWorld framework evaluates physical reasoning in MLLMs by requiring executable simulator code generation from visual observations, separating physical reasoning from rendering and enabling inspectable, falsifiable world representations. Evaluating whether Multimodal Large Language Models (MLLMs) genuinely reason about physical dynamics remains challenging. Most existing benchmarks rely on recognition-style protocols such as Visual Question Answering (VQA) and Violation of Expectation (VoE), which can often be answered without committing to an explicit, testable physical hypothesis. We propose VisPhyWorld, an execution-based framework that evaluates physical reasoning by requiring models to generate executable simulator code from visual observations. By producing runnable code, the inferred world representation is directly inspectable, editable, and falsifiable. This separates physical reasoning from rendering. Building on this framework, we introduce VisPhyBench, comprising 209 evaluation scenes derived from 108 physical templates and a systematic protocol that evaluates how well models reconstruct appearance and reproduce physically plausible motion. Our pipeline produces valid reconstructed videos in 97.7% on the benchmark. Experiments show that while state-of-the-art MLLMs achieve strong semantic scene understanding , they struggle to accurately infer physical parameters and to simulate consistent physical dynamics .",
+      "summary_en": "VisPhyWorld framework evaluates physical reasoning in MLLMs by requiring executable simulator code generation from visual observations, separating physical reasoning from rendering and enabling inspectable, falsifiable world representations.",
+      "summary_zh": "VisPhyWorld框架通过要求基于视觉观察生成可执行的模拟器代码来评估MLLM的物理推理能力，将物理推理与渲染分离，并实现可检查、可证伪的世界表征。",
+      "hf_url": "https://huggingface.co/papers/2602.13294",
+      "arxiv_url": "https://arxiv.org/abs/2602.13294",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13294",
+      "github_url": "https://github.com/TIGER-AI-Lab/VisPhyWorld",
+      "upvotes": 12,
+      "fetched_at": "2026-02-19T06:45:26.467001+00:00"
     },
     {
       "date": "2026-02-17",
@@ -507,6 +569,52 @@
     },
     {
       "date": "2026-02-17",
+      "paper_id": "2602.15031",
+      "title": "EditCtrl: Disentangled Local and Global Control for Real-Time Generative Video Editing",
+      "authors": [
+        "Yehonathan Litman",
+        "Shikun Liu",
+        "Dario Seyb",
+        "Nicholas Milef",
+        "Yang Zhou",
+        "Carl Marshall",
+        "Shubham Tulsiani",
+        "Caleb Leak"
+      ],
+      "abstract": "Efficient video inpainting framework that focuses computation on masked regions while maintaining global context consistency through a lightweight embedder. High-fidelity generative video editing has seen significant quality improvements by leveraging pre-trained video foundation models . However, their computational cost is a major bottleneck, as they are often designed to inefficiently process the full video context regardless of the inpainting mask's size, even for sparse, localized edits. In this paper, we introduce EditCtrl, an efficient video inpainting control framework that focuses computation only where it is needed. Our approach features a novel local video context module that operates solely on masked tokens , yielding a computational cost proportional to the edit size. This local-first generation is then guided by a lightweight temporal global context embedder that ensures video-wide context consistency with minimal overhead. Not only is EditCtrl 10 times more compute efficient than state-of-the-art generative editing methods, it even improves editing quality compared to methods designed with full-attention. Finally, we showcase how EditCtrl unlocks new capabilities, including multi-region editing with text prompts and autoregressive content propagation .",
+      "summary_en": "Efficient video inpainting framework that focuses computation on masked regions while maintaining global context consistency through a lightweight embedder.",
+      "summary_zh": "高效的视频修复框架，将计算聚焦于掩码区域，同时通过轻量级嵌入器保持全局上下文一致性。",
+      "hf_url": "https://huggingface.co/papers/2602.15031",
+      "arxiv_url": "https://arxiv.org/abs/2602.15031",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15031",
+      "github_url": "https://github.com/yehonathanlitman/EditCtrl",
+      "upvotes": 1,
+      "fetched_at": "2026-02-19T06:45:35.949403+00:00"
+    },
+    {
+      "date": "2026-02-17",
+      "paper_id": "2602.14941",
+      "title": "AnchorWeave: World-Consistent Video Generation with Retrieved Local Spatial Memories",
+      "authors": [
+        "Zun Wang",
+        "Han Lin",
+        "Jaehong Yoon",
+        "Jaemin Cho",
+        "Yue Zhang",
+        "Mohit Bansal"
+      ],
+      "abstract": "AnchorWeave addresses long-term video generation consistency by replacing global 3D scene reconstruction with multiple local geometric memories and a multi-anchor weaving controller to reconcile cross-view inconsistencies. Maintaining spatial world consistency over long horizons remains a central challenge for camera-controllable video generation . Existing memory-based approaches often condition generation on globally reconstructed 3D scenes by rendering anchor videos from the reconstructed geometry in the history. However, reconstructing a global 3D scene from multiple views inevitably introduces cross-view misalignment , as pose and depth estimation errors cause the same surfaces to be reconstructed at slightly different 3D locations across views. When fused, these inconsistencies accumulate into noisy geometry that contaminates the conditioning signals and degrades generation quality. We introduce AnchorWeave, a memory-augmented video generation framework that replaces a single misaligned global memory with multiple clean local geometric memories and learns to reconcile their cross-view inconsistencies. To this end, AnchorWeave performs coverage-driven local memory retrieval aligned with the target trajectory and integrates the selected local memories through a multi-anchor weaving controller during generation. Extensive experiments demonstrate that AnchorWeave significantly improves long-term scene consistency while maintaining strong visual quality, with ablation and analysis studies further validating the effectiveness of local geometric conditioning, multi-anchor control, and coverage-driven retrieval .",
+      "summary_en": "AnchorWeave addresses long-term video generation consistency by replacing global 3D scene reconstruction with multiple local geometric memories and a multi-anchor weaving controller to reconcile cross-view inconsistencies.",
+      "summary_zh": "AnchorWeave 通过以多个局部几何记忆替代全局三维场景重建，并借助多锚点编织控制器调和跨视图不一致性，解决长期视频生成的一致性问题。",
+      "hf_url": "https://huggingface.co/papers/2602.14941",
+      "arxiv_url": "https://arxiv.org/abs/2602.14941",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14941",
+      "github_url": "https://github.com/wz0919/AnchorWeave",
+      "upvotes": 1,
+      "fetched_at": "2026-02-19T06:45:33.753963+00:00"
+    },
+    {
+      "date": "2026-02-17",
       "paper_id": "2602.14689",
       "title": "Exposing the Systematic Vulnerability of Open-Weight Models to Prefill Attacks",
       "authors": [
@@ -523,6 +631,35 @@
       "github_url": "",
       "upvotes": 1,
       "fetched_at": "2026-02-17T15:58:01.257492+00:00"
+    },
+    {
+      "date": "2026-02-17",
+      "paper_id": "2602.13346",
+      "title": "CellMaster: Collaborative Cell Type Annotation in Single-Cell Analysis",
+      "authors": [
+        "Zhen Wang",
+        "Yiming Gao",
+        "Jieyuan Liu",
+        "Enze Ma",
+        "Jefferson Chen",
+        "Mark Antkowiak",
+        "Mengzhou Hu",
+        "JungHo Kong",
+        "Dexter Pratt",
+        "Zhiting Hu",
+        "Wei Wang",
+        "Trey Ideker",
+        "Eric P. Xing"
+      ],
+      "abstract": "CellMaster uses LLM-encoded knowledge for zero-shot cell-type annotation in single-cell RNA sequencing, improving accuracy over existing tools through interpretable rationales without pre-training. Single-cell RNA-seq (scRNA-seq) enables atlas-scale profiling of complex tissues, revealing rare lineages and transient states. Yet, assigning biologically valid cell identities remains a bottleneck because markers are tissue- and state-dependent, and novel states lack references. We present CellMaster, an AI agent that mimics expert practice for zero-shot cell-type annotation . Unlike existing automated tools, CellMaster leverages LLM-encoded knowledge (e.g., GPT-4o) to perform on-the-fly annotation with interpretable rationales , without pre-training or fixed marker databases. Across 9 datasets spanning 8 tissues, CellMaster improved accuracy by 7.1% over best-performing baselines (including CellTypist and scTab ) in automatic mode. With human-in-the-loop refinement, this advantage increased to 18.6%, with a 22.1% gain on subtype populations. The system demonstrates particular strength in rare and novel cell states where baselines often fail. Source code and the web application are available at https://github.com/AnonymousGym/CellMaster{https://github.com/AnonymousGym/CellMaster}.",
+      "summary_en": "CellMaster uses LLM-encoded knowledge for zero-shot cell-type annotation in single-cell RNA sequencing, improving accuracy over existing tools through interpretable rationales without pre-training.",
+      "summary_zh": "CellMaster利用LLM编码的知识实现单细胞RNA测序的零样本细胞类型注释，通过可解释的依据在不经过预训练的情况下取得了优于现有工具的准确性。",
+      "hf_url": "https://huggingface.co/papers/2602.13346",
+      "arxiv_url": "https://arxiv.org/abs/2602.13346",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13346",
+      "github_url": "",
+      "upvotes": 1,
+      "fetched_at": "2026-02-19T06:45:28.805594+00:00"
     },
     {
       "date": "2026-02-17",
@@ -636,6 +773,25 @@
     },
     {
       "date": "2026-02-17",
+      "paper_id": "2602.15259",
+      "title": "Knowing Isn't Understanding: Re-grounding Generative Proactivity with Epistemic and Behavioral Insight",
+      "authors": [
+        "Kirandeep Kaur",
+        "Xingda Lyu",
+        "Chirag Shah"
+      ],
+      "abstract": "Generative AI agents equate understanding with resolving explicit queries, an assumption that confines interaction to what users can articulate. This assumption breaks down when users themselves lack awareness of what is missing, risky, or worth considering. In such conditions, proactivity is not merely an efficiency enhancement, but an epistemic necessity. We refer to this condition as epistemic incompleteness: where progress depends on engaging with unknown unknowns for effective partnership. Existing approaches to proactivity remain narrowly anticipatory, extrapolating from past behavior and presuming that goals are already well defined, thereby failing to support users meaningfully. However, surfacing possibilities beyond a user's current awareness is not inherently beneficial. Unconstrained proactive interventions can misdirect attention, overwhelm users, or introduce harm. Proactive agents, therefore, require behavioral grounding: principled constraints on when, how, and to what extent an agent should intervene. We advance the position that generative proactivity must be grounded both epistemically and behaviorally. Drawing on the philosophy of ignorance and research on proactive behavior, we argue that these theories offer critical guidance for designing agents that can engage responsibly and foster meaningful partnerships.",
+      "summary_en": "Generative AI agents conventionally equate understanding with resolving explicit queries, an assumption that fails under epistemic incompleteness where users lack awareness of unknown unknowns required for progress. The authors argue that effective proactivity requires dual grounding: epistemically to surface possibilities beyond current user awareness, and behaviorally through principled constraints on when and how to intervene, drawing on philosophy of ignorance and proactive behavior research. Existing anticipatory approaches fail by assuming well-defined goals, while unconstrained proactivity risks misdirection or harm, but epistemically and behaviorally grounded agents can engage responsibly to foster meaningful partnerships.",
+      "summary_zh": "生成式AI智能体传统上将理解等同于解决显式查询，这一假设在认知不完备性情境下失效——用户缺乏对进步所需的\"未知的未知\"的意识。作者认为，有效的主动性需要双重基础：在认识论层面，揭示超出当前用户意识的可能性；在行为层面，通过原则性约束规范干预的时机与方式，其理论依据来自无知哲学与主动行为研究。现有的预测性方法因假设目标明确定义而失效，而无约束的主动性则存在误导或伤害的风险；唯有在认识论和行为层面均具备基础的智能体，才能负责任地参与互动，促成有意义的伙伴关系。",
+      "hf_url": "https://huggingface.co/papers/2602.15259",
+      "arxiv_url": "https://arxiv.org/abs/2602.15259",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15259",
+      "github_url": "",
+      "upvotes": 0,
+      "fetched_at": "2026-02-19T06:45:37.877481+00:00"
+    },
+    {
+      "date": "2026-02-17",
       "paper_id": "2602.14696",
       "title": "A Critical Look at Targeted Instruction Selection: Disentangling What Matters (and What Doesn't)",
       "authors": [
@@ -695,6 +851,31 @@
       "github_url": "https://github.com/jrohsc/SPILLage",
       "upvotes": 0,
       "fetched_at": "2026-02-17T15:57:48.870947+00:00"
+    },
+    {
+      "date": "2026-02-17",
+      "paper_id": "2602.10458",
+      "title": "Found-RL: foundation model-enhanced reinforcement learning for autonomous driving",
+      "authors": [
+        "Yansong Qu",
+        "Zihao Sheng",
+        "Zilin Huang",
+        "Jiancong Chen",
+        "Yuhao Luo",
+        "Tianyi Wang",
+        "Yiheng Feng",
+        "Samuel Labi",
+        "Sikai Chen"
+      ],
+      "abstract": "Found-RL integrates vision-language models with reinforcement learning for autonomous driving, addressing sample efficiency and latency issues through asynchronous inference and specialized supervision mechanisms.",
+      "summary_en": "Found-RL integrates vision-language models with reinforcement learning for autonomous driving, addressing sample efficiency and latency issues through asynchronous inference and specialized supervision mechanisms.",
+      "summary_zh": "Found-RL将视觉语言模型与强化学习相结合用于自动驾驶，通过异步推理和专门的监督机制解决样本效率与延迟问题。",
+      "hf_url": "https://huggingface.co/papers/2602.10458",
+      "arxiv_url": "https://arxiv.org/abs/2602.10458",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10458",
+      "github_url": "https://github.com/ys-qu/found-rl",
+      "upvotes": 0,
+      "fetched_at": "2026-02-19T06:45:22.148671+00:00"
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.21526",
+  "title": "KAPSO: A Knowledge-grounded framework for Autonomous Program Synthesis and Optimization",
+  "authors": [
+    "Alireza Nadaf",
+    "Alireza Mohammadshahi",
+    "Majid Yazdani"
+  ],
+  "abstract": "KAPSO is a modular framework for autonomous program synthesis that uses iterative optimization loops with experimentation tracking, knowledge integration, and cognitive memory to improve code generation over extended tasks.",
+  "summary_en": "KAPSO is a modular framework for autonomous program synthesis that uses iterative optimization loops with experimentation tracking, knowledge integration, and cognitive memory to improve code generation over extended tasks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nKAPSO is a modular framework for autonomous program synthesis that uses iterative optimization loops with experimentation tracking, knowledge integration, and cognitive memory to improve code generation over extended tasks.",
+  "hf_url": "https://huggingface.co/papers/2601.21526",
+  "arxiv_url": "https://arxiv.org/abs/2601.21526",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21526",
+  "github_url": "https://github.com/Leeroo-AI/kapso",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:34:38.640660+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.10585",
+  "title": "Neural Additive Experts: Context-Gated Experts for Controllable Model Additivity",
+  "authors": [
+    "Guangzhi Xiong",
+    "Sanchit Sinha",
+    "Aidong Zhang"
+  ],
+  "abstract": "Neural Additive Experts combines multiple specialized networks with a dynamic gating mechanism to balance predictive accuracy and feature interpretability in machine learning models. The trade-off between interpretability and accuracy remains a core challenge in machine learning. Standard Generalized Additive Models (GAMs) offer clear feature attributions but are often constrained by their strictly additive nature, which can limit predictive performance. Introducing feature interactions can boost accuracy yet may obscure individual feature contributions. To address these issues, we propose Neural Additive Experts (NAEs), a novel framework that seamlessly balances interpretability and accuracy. NAEs employ a mixture of experts framework , learning multiple specialized networks per feature, while a dynamic gating mechanism integrates information across features, thereby relaxing rigid additive constraints. Furthermore, we propose targeted regularization techniques to mitigate variance among expert predictions, facilitating a smooth transition from an exclusively additive model to one that captures intricate feature interactions while maintaining clarity in feature attributions . Our theoretical analysis and experiments on synthetic data illustrate the model's flexibility, and extensive evaluations on real-world datasets confirm that NAEs achieve an optimal balance between predictive accuracy and transparent, feature-level explanations. The code is available at https://github.com/Teddy-XiongGZ/NAE.",
+  "summary_en": "Neural Additive Experts combines multiple specialized networks with a dynamic gating mechanism to balance predictive accuracy and feature interpretability in machine learning models.",
+  "summary_zh": "神经可加专家结合多个专用网络与动态门控机制，以平衡机器学习模型中的预测准确性与特征可解释性。",
+  "hf_url": "https://huggingface.co/papers/2602.10585",
+  "arxiv_url": "https://arxiv.org/abs/2602.10585",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10585",
+  "github_url": "https://github.com/Teddy-XiongGZ/NAE",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:38:03.905932+00:00"
+}

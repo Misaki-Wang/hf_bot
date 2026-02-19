@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.08222",
+  "title": "Weak-Driven Learning: How Weak Agents make Strong Agents Stronger",
+  "authors": [
+    "Zehao Chen",
+    "Gongxun Li",
+    "Tianxiang Ai",
+    "Yifei Li",
+    "Zixuan Huang",
+    "Wang Zhou",
+    "Fuzhen Zhuang",
+    "Xianglong Liu",
+    "Jianxin Li",
+    "Deqing Wang",
+    "Yikun Ban"
+  ],
+  "abstract": "WMSS is a post-training paradigm that uses weak model checkpoints to identify and fill learning gaps, enabling continued improvement beyond conventional saturation points in large language models. As post-training optimization becomes central to improving large language models , we observe a persistent saturation bottleneck : once models grow highly confident, further training yields diminishing returns. While existing methods continue to reinforce target predictions, we find that informative supervision signals remain latent in models' own historical weak states. Motivated by this observation, we propose WMSS (Weak Agents Can Make Strong Agents Stronger), a post-training paradigm that leverages weak checkpoints to guide continued optimization. By identifying recoverable learning gaps via entropy dynamics and reinforcing them through compensatory learning , WMSS enables strong agents to improve beyond conventional post-training saturation. Experiments on mathematical reasoning and code generation datasets show that agents trained with our approach achieve effective performance improvements, while incurring zero additional inference cost.",
+  "summary_en": "WMSS is a post-training paradigm that uses weak model checkpoints to identify and fill learning gaps, enabling continued improvement beyond conventional saturation points in large language models.",
+  "summary_zh": "WMSS是一种后训练范式，利用弱模型检查点识别并填补学习缺口，使大语言模型能够在超越传统饱和点后仍持续改进。",
+  "hf_url": "https://huggingface.co/papers/2602.08222",
+  "arxiv_url": "https://arxiv.org/abs/2602.08222",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08222",
+  "github_url": "https://github.com/chenzehao82/Weak-Driven-Learning",
+  "upvotes": 256,
+  "fetched_at": "2026-02-19T06:03:14.229880+00:00"
+}

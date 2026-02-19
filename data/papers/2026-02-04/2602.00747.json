@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.00747",
+  "title": "Decouple Searching from Training: Scaling Data Mixing via Model Merging for Large Language Model Pre-training",
+  "authors": [
+    "Shengrui Li",
+    "Fei Zhao",
+    "Kaiyan Zhao",
+    "Jieying Ye",
+    "Haifeng Liu",
+    "Fangcheng Shi",
+    "Zheyong Xie",
+    "Yao Hu",
+    "Shaosheng Cao"
+  ],
+  "abstract": "DeMix is a framework that uses model merging to predict optimal data ratios for LLM pre-training, decoupling search from training costs to improve mixture discovery efficiency. Determining an effective data mixture is a key factor in Large Language Model (LLM) pre-training , where models must balance general competence with proficiency on hard tasks such as math and code. However, identifying an optimal mixture remains an open challenge, as existing approaches either rely on unreliable tiny-scale proxy experiments or require prohibitively expensive large-scale exploration. To address this, we propose Decouple Searching from Training Mix (DeMix), a novel framework that leverages model merging to predict optimal data ratios. Instead of training proxy models for every sampled mixture, DeMix trains component models on candidate datasets at scale and derives data mixture proxies via weighted model merging . This paradigm decouples search from training costs , enabling evaluation of unlimited sampled mixtures without extra training burden and thus facilitating better mixture discovery through more search trials . Extensive experiments demonstrate that DeMix breaks the trade-off between sufficiency, accuracy and efficiency, obtaining the optimal mixture with higher benchmark performance at lower search cost. Additionally, we release the DeMix Corpora, a comprehensive 22T-token dataset comprising high-quality pre-training data with validated mixtures to facilitate open research. Our code and DeMix Corpora is available at https://github.com/Lucius-lsr/DeMix.",
+  "summary_en": "DeMix is a framework that uses model merging to predict optimal data ratios for LLM pre-training, decoupling search from training costs to improve mixture discovery efficiency.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nDeMix is a framework that uses model merging to predict optimal data ratios for LLM pre-training, decoupling search from training costs to improve mixture discovery efficiency.",
+  "hf_url": "https://huggingface.co/papers/2602.00747",
+  "arxiv_url": "https://arxiv.org/abs/2602.00747",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.00747",
+  "github_url": "",
+  "upvotes": 9,
+  "fetched_at": "2026-02-19T05:38:42.210389+00:00"
+}

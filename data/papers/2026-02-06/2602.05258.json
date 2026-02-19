@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.05258",
+  "title": "CoPE: Clipped RoPE as A Scalable Free Lunch for Long Context LLMs",
+  "authors": [
+    "Haoran Li",
+    "Sucheng Ren",
+    "Alan Yuille",
+    "Feng Wang"
+  ],
+  "abstract": "CoPE introduces a soft clipping method for Rotary Positional Embedding that unifies out-of-distribution mitigation and semantic modeling while enabling effective long-context processing up to 256k length. Rotary Positional Embedding (RoPE) is a key component of context scaling in Large Language Models (LLMs). While various methods have been proposed to adapt RoPE to longer contexts, their guiding principles generally fall into two categories: (1) out-of-distribution (OOD) mitigation, which scales RoPE frequencies to accommodate unseen positions, and (2) Semantic Modeling , which posits that the attention scores computed with RoPE should always prioritize semantically similar tokens. In this work, we unify these seemingly distinct objectives through a minimalist intervention, namely CoPE: soft clipping lowfrequency components of RoPE. CoPE not only eliminates OOD outliers and refines semantic signals, but also prevents spectral leakage caused by hard clipping. Extensive experiments demonstrate that simply applying our soft clipping strategy to RoPE yields significant performance gains that scale up to 256k context length, validating our theoretical analysis and establishing CoPE as a new state-of-the-art for length generalization . Our code, data, and models are available at https://github.com/hrlics/CoPE.",
+  "summary_en": "CoPE introduces a soft clipping method for Rotary Positional Embedding that unifies out-of-distribution mitigation and semantic modeling while enabling effective long-context processing up to 256k length.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nCoPE introduces a soft clipping method for Rotary Positional Embedding that unifies out-of-distribution mitigation and semantic modeling while enabling effective long-context processing up to 256k length.",
+  "hf_url": "https://huggingface.co/papers/2602.05258",
+  "arxiv_url": "https://arxiv.org/abs/2602.05258",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05258",
+  "github_url": "https://github.com/hrlics/CoPE",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T05:43:02.367263+00:00"
+}

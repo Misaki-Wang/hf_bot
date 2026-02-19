@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02053",
+  "title": "WildGraphBench: Benchmarking GraphRAG with Wild-Source Corpora",
+  "authors": [
+    "Pengyu Wang",
+    "Benfeng Xu",
+    "Licheng Zhang",
+    "Shaohan Wang",
+    "Mingxuan Du",
+    "Chiwei Zhu",
+    "Zhendong Mao"
+  ],
+  "abstract": "WildGraphBench evaluates GraphRAG performance in realistic scenarios using Wikipedia's structured content to assess multi-fact aggregation and summarization capabilities across diverse document types. Graph-based Retrieval-Augmented Generation ( GraphRAG ) organizes external knowledge as a hierarchical graph , enabling efficient retrieval and aggregation of scattered evidence across multiple documents. However, many existing benchmarks for GraphRAG rely on short, curated passages as external knowledge , failing to adequately evaluate systems in realistic settings involving long contexts and large-scale heterogeneous documents . To bridge this gap, we introduce WildGraphBench, a benchmark designed to assess GraphRAG performance in the wild. We leverage Wikipedia 's unique structure, where cohesive narratives are grounded in long and heterogeneous external reference documents, to construct a benchmark reflecting real-word scenarios. Specifically, we sample articles across 12 top-level topics, using their external references as the retrieval corpus and citation-linked statements as ground truth, resulting in 1,100 questions spanning three levels of complexity: single-fact QA, multi-fact QA, and section-level summarization . Experiments across multiple baselines reveal that current GraphRAG pipelines help on multi-fact aggregation when evidence comes from a moderate number of sources, but this aggregation paradigm may overemphasize high-level statements at the expense of fine-grained details, leading to weaker performance on summarization tasks. Project page:https://github.com/BstWPY/WildGraphBench.",
+  "summary_en": "WildGraphBench evaluates GraphRAG performance in realistic scenarios using Wikipedia's structured content to assess multi-fact aggregation and summarization capabilities across diverse document types.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nWildGraphBench evaluates GraphRAG performance in realistic scenarios using Wikipedia's structured content to assess multi-fact aggregation and summarization capabilities across diverse document types.",
+  "hf_url": "https://huggingface.co/papers/2602.02053",
+  "arxiv_url": "https://arxiv.org/abs/2602.02053",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02053",
+  "github_url": "https://github.com/BstWPY/WildGraphBench",
+  "upvotes": 40,
+  "fetched_at": "2026-02-19T05:37:32.161403+00:00"
+}

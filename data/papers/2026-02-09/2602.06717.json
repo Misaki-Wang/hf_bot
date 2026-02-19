@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06717",
+  "title": "F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare",
+  "authors": [
+    "Daniil Plyusov",
+    "Alexey Gorbatovski",
+    "Boris Shaposhnikov",
+    "Viacheslav Sinii",
+    "Alexey Malakhov",
+    "Daniil Gavrilov"
+  ],
+  "abstract": "RLVR methods using group sampling suffer from bias toward likely trajectories and missed rare-correct ones; a difficulty-aware advantage scaling technique improves performance on benchmarks without increasing computational cost. Reinforcement Learning with Verifiable Rewards (RLVR) is commonly based on group sampling to estimate advantages and stabilize policy updates . In practice, large group sizes are not feasible due to computational limits, which biases learning toward trajectories that are already likely. Smaller groups often miss rare-correct trajectories while still containing mixed rewards, concentrating probability on common solutions. We derive the probability that updates miss rare-correct modes as a function of group size, showing non-monotonic behavior, and characterize how updates redistribute mass within the correct set, revealing that unsampled-correct mass can shrink even as total correct mass grows. Motivated by this analysis, we propose a difficulty-aware advantage scaling coefficient, inspired by Focal loss , that down-weights updates on high-success prompts. The lightweight modification can be directly integrated into any group-relative RLVR algorithm such as GRPO , DAPO , and CISPO . On Qwen2.5-7B across in-domain and out-of-domain benchmarks, our method improves pass@256 from 64.1 rightarrow 70.3 ( GRPO ), 69.3 rightarrow 72.5 ( DAPO ), and 73.2 rightarrow 76.8 ( CISPO ), while preserving or improving pass@1, without increasing group size or computational cost.",
+  "summary_en": "RLVR methods using group sampling suffer from bias toward likely trajectories and missed rare-correct ones; a difficulty-aware advantage scaling technique improves performance on benchmarks without increasing computational cost.",
+  "summary_zh": "使用组采样的RLVR方法存在偏向高概率轨迹而遗漏稀有正确轨迹的问题；难度感知优势缩放技术能够在不增加计算成本的前提下提升基准测试性能。",
+  "hf_url": "https://huggingface.co/papers/2602.06717",
+  "arxiv_url": "https://arxiv.org/abs/2602.06717",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06717",
+  "github_url": "",
+  "upvotes": 71,
+  "fetched_at": "2026-02-19T05:58:16.710161+00:00"
+}

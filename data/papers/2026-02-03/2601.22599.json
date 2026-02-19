@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2601.22599",
+  "title": "A Semantically Consistent Dataset for Data-Efficient Query-Based Universal Sound Separation",
+  "authors": [
+    "Kai Li",
+    "Jintao Cheng",
+    "Chang Zeng",
+    "Zijun Yan",
+    "Helin Wang",
+    "Zixiong Su",
+    "Bo Zheng",
+    "Xiaolin Hu"
+  ],
+  "abstract": "Automated pipeline for sound separation using high-purity single-event segments from in-the-wild datasets achieves competitive performance with significantly reduced data requirements. Query-based universal sound separation is fundamental to intelligent auditory systems, aiming to isolate specific sources from mixtures. Despite recent advances, existing methods continue to suffer from residual interference in complex acoustic scenes. This performance limitation stems largely from a data bottleneck: in-the-wild datasets contain weak labels and severe co-occurrence of events . These flaws induce models to learn spurious correlations between background noise and target categories instead of robust acoustic features. To address this, we propose an automated pipeline that eliminates co-occurrence of events by mining high-purity single-event segments from in-the-wild datasets via a semantically consistent synthesis protocol . Utilizing this pipeline, we constructed Hive, a high-quality synthetic dataset comprising 2.4k hours of raw audio. Experimental results demonstrate that, compared with the state-of-the-art model SAM-Audio which was trained on a huge dataset sim500 times larger than Hive, certain open-source models trained on Hive achieve competitive separation accuracy and perceptual quality. Moreover, these models exhibited remarkable zero-shot generalization on out-of-distribution evaluation benchmarks. These findings highlight that prioritizing purity of supervised signals enables significant data efficiency , offering a new paradigm for training robust auditory foundation models with reduced computational costs. Code and dataset are available at https://shandaai.github.io/Hive.",
+  "summary_en": "Automated pipeline for sound separation using high-purity single-event segments from in-the-wild datasets achieves competitive performance with significantly reduced data requirements.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nAutomated pipeline for sound separation using high-purity single-event segments from in-the-wild datasets achieves competitive performance with significantly reduced data requirements.",
+  "hf_url": "https://huggingface.co/papers/2601.22599",
+  "arxiv_url": "https://arxiv.org/abs/2601.22599",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22599",
+  "github_url": "https://github.com/ShandaAI/Hive",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:36:12.691886+00:00"
+}

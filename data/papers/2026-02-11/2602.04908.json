@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.04908",
+  "title": "Temporal Pair Consistency for Variance-Reduced Flow Matching",
+  "authors": [
+    "Chika Maduabuchi",
+    "Jindong Wang"
+  ],
+  "abstract": "Temporal Pair Consistency reduces variance in continuous-time generative models by coupling velocity predictions at paired timesteps, improving sample quality and efficiency without altering model architecture or training procedures. Continuous-time generative models , such as diffusion models , flow matching , and rectified flow , learn time-dependent vector fields but are typically trained with objectives that treat timesteps independently, leading to high estimator variance and inefficient sampling. Prior approaches mitigate this via explicit smoothness penalties, trajectory regularization, or modified probability paths and solvers. We introduce Temporal Pair Consistency (TPC), a lightweight variance-reduction principle that couples velocity predictions at paired timesteps along the same probability path, operating entirely at the estimator level without modifying the model architecture, probability path, or solver. We provide a theoretical analysis showing that TPC induces a quadratic, trajectory-coupled regularization that provably reduces gradient variance while preserving the underlying flow-matching objective . Instantiated within flow matching , TPC improves sample quality and efficiency across CIFAR-10 and ImageNet at multiple resolutions, achieving lower FID at identical or lower computational cost than prior methods, and extends seamlessly to modern SOTA-style pipelines with noise-augmented training, score-based denoising, and rectified flow .",
+  "summary_en": "Temporal Pair Consistency reduces variance in continuous-time generative models by coupling velocity predictions at paired timesteps, improving sample quality and efficiency without altering model architecture or training procedures.",
+  "summary_zh": "时序配对一致性通过在配对时间步耦合速度预测来降低连续时间生成模型的方差，在不改变模型架构或训练流程的情况下提升样本质量与效率。",
+  "hf_url": "https://huggingface.co/papers/2602.04908",
+  "arxiv_url": "https://arxiv.org/abs/2602.04908",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04908",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:20:36.725890+00:00"
+}

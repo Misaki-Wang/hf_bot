@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06079",
+  "title": "Canzona: A Unified, Asynchronous, and Load-Balanced Framework for Distributed Matrix-based Optimizers",
+  "authors": [
+    "Liangyu Wang",
+    "Siqi Zhang",
+    "Junjie Wang",
+    "Yiming Dong",
+    "Bo Zheng",
+    "Zihan Qiu",
+    "Shengkun Tang",
+    "Di Wang",
+    "Rui Men",
+    "Dayiheng Liu"
+  ],
+  "abstract": "Canzona presents a unified asynchronous framework that addresses the conflict between matrix-based optimizers and distributed tensor fragmentation in LLM training, improving efficiency and reducing latency.",
+  "summary_en": "Canzona presents a unified asynchronous framework that addresses the conflict between matrix-based optimizers and distributed tensor fragmentation in LLM training, improving efficiency and reducing latency.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nCanzona presents a unified asynchronous framework that addresses the conflict between matrix-based optimizers and distributed tensor fragmentation in LLM training, improving efficiency and reducing latency.",
+  "hf_url": "https://huggingface.co/papers/2602.06079",
+  "arxiv_url": "https://arxiv.org/abs/2602.06079",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06079",
+  "github_url": "",
+  "upvotes": 18,
+  "fetched_at": "2026-02-19T05:44:09.888939+00:00"
+}

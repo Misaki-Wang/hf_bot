@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.07035",
+  "title": "DLLM-Searcher: Adapting Diffusion Large Language Model for Search Agents",
+  "authors": [
+    "Jiahao Zhao",
+    "Shaoxuan Xu",
+    "Zhongxiang Sun",
+    "Fengqi Zhu",
+    "Jingyang Ou",
+    "Yuling Shi",
+    "Chongxuan Li",
+    "Xiao Zhang",
+    "Jun Xu"
+  ],
+  "abstract": "Diffusion Large Language Models are optimized for search agents through enhanced reasoning capabilities and reduced latency via a parallel reasoning paradigm. Recently, Diffusion Large Language Models (dLLMs) have demonstrated unique efficiency advantages, enabled by their inherently parallel decoding mechanism and flexible generation paradigm. Meanwhile, despite the rapid advancement of Search Agents, their practical deployment is constrained by a fundamental limitation, termed as 1) Latency Challenge : the serial execution of multi-round reasoning, tool calling, and tool response waiting under the ReAct agent paradigm induces severe end-to-end latency. Intuitively, dLLMs can leverage their distinctive strengths to optimize the operational efficiency of agents under the ReAct agent paradigm . Practically, existing dLLM backbones face the 2) Agent Ability Challenge. That is, existing dLLMs exhibit remarkably weak reasoning and tool-calling capabilities, preventing these advantages from being effectively realized in practice. In this paper, we propose DLLM-Searcher, an optimization framework for dLLM-based Search Agents. To solve the Agent Ability Challenge, we design a two-stage post-training pipeline encompassing Agentic Supervised Fine-Tuning (Agentic SFT) and Agentic Variance-Reduced Preference Optimization Agentic VRPO, which enhances the backbone dLLM's information seeking and reasoning capabilities. To mitigate the Latency Challenge , we leverage the flexible generation mechanism of dLLMs and propose a novel agent paradigm termed Parallel-Reasoning and Acting P-ReAct . P-ReAct guides the model to prioritize decoding tool_call instructions, thereby allowing the model to keep thinking while waiting for the tool's return. Experimental results demonstrate that DLLM-Searcher achieves performance comparable to mainstream LLM-based search agents and P-ReAct delivers approximately 15% inference acceleration. Our code is available at https://anonymous.4open.science/r/DLLM-Searcher-553C",
+  "summary_en": "Diffusion Large Language Models are optimized for search agents through enhanced reasoning capabilities and reduced latency via a parallel reasoning paradigm.",
+  "summary_zh": "扩散大语言模型针对搜索智能体优化，通过增强推理能力并借助并行推理范式降低延迟。",
+  "hf_url": "https://huggingface.co/papers/2602.07035",
+  "arxiv_url": "https://arxiv.org/abs/2602.07035",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07035",
+  "github_url": "https://github.com/bubble65/DLLM-Searcher",
+  "upvotes": 30,
+  "fetched_at": "2026-02-19T06:20:54.641223+00:00"
+}

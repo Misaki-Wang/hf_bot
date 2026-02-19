@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10999",
+  "title": "CLI-Gym: Scalable CLI Task Generation via Agentic Environment Inversion",
+  "authors": [
+    "Yusong Lin",
+    "Haiyang Wang",
+    "Shuzhe Wu",
+    "Lue Fan",
+    "Feiyang Pan",
+    "Sanyuan Zhao",
+    "Dandan Tu"
+  ],
+  "abstract": "CLI-Gym enables scalable derivation of environment-intensive tasks by simulating and exploring environment histories, while LiberCoder achieves significant performance improvements on Terminal-Bench through fine-tuning.",
+  "summary_en": "CLI-Gym enables scalable derivation of environment-intensive tasks by simulating and exploring environment histories, while LiberCoder achieves significant performance improvements on Terminal-Bench through fine-tuning.",
+  "summary_zh": "CLI-Gym通过模拟和探索环境历史，实现了环境密集型任务的可扩展推导；LiberCoder则通过在Terminal-Bench上进行微调，取得了显著的性能提升。",
+  "hf_url": "https://huggingface.co/papers/2602.10999",
+  "arxiv_url": "https://arxiv.org/abs/2602.10999",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10999",
+  "github_url": "https://github.com/LiberCoders/CLI-Gym",
+  "upvotes": 10,
+  "fetched_at": "2026-02-19T06:32:01.713328+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.01965",
+  "title": "Breaking the Static Graph: Context-Aware Traversal for Robust Retrieval-Augmented Generation",
+  "authors": [
+    "Kwun Hang Lau",
+    "Fangyuan Zhang",
+    "Boyu Ruan",
+    "Yingli Zhou",
+    "Qintian Guo",
+    "Ruiyuan Zhang",
+    "Xiaofang Zhou"
+  ],
+  "abstract": "CatRAG addresses limitations in retrieval-augmented generation by introducing a query-adaptive framework that improves multi-hop reasoning through symbolic anchoring, dynamic edge weighting, and key-fact passage enhancement.",
+  "summary_en": "CatRAG addresses limitations in retrieval-augmented generation by introducing a query-adaptive framework that improves multi-hop reasoning through symbolic anchoring, dynamic edge weighting, and key-fact passage enhancement.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nCatRAG addresses limitations in retrieval-augmented generation by introducing a query-adaptive framework that improves multi-hop reasoning through symbolic anchoring, dynamic edge weighting, and key-fact passage enhancement.",
+  "hf_url": "https://huggingface.co/papers/2602.01965",
+  "arxiv_url": "https://arxiv.org/abs/2602.01965",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01965",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T05:42:36.155604+00:00"
+}

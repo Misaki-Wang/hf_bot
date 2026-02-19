@@ -1,0 +1,17 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.07670",
+  "title": "Surprisal-Guided Selection: Compute-Optimal Test-Time Strategies for Execution-Grounded Code Generation",
+  "authors": [
+    "Jarrod Barnes"
+  ],
+  "abstract": "Test-time training fails in verification-grounded tasks due to over-sharpening, while surprisal-guided selection improves performance by favoring diverse, low-confidence samples.",
+  "summary_en": "Test-time training fails in verification-grounded tasks due to over-sharpening, while surprisal-guided selection improves performance by favoring diverse, low-confidence samples.",
+  "summary_zh": "测试时训练因过度锐化在基于验证的任务中失效，而惊奇值引导的选择通过偏好多样化低置信样本提升性能。",
+  "hf_url": "https://huggingface.co/papers/2602.07670",
+  "arxiv_url": "https://arxiv.org/abs/2602.07670",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07670",
+  "github_url": "https://github.com/jbarnes850/test-time-training",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:21:05.658756+00:00"
+}

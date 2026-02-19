@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.06422",
+  "title": "Alleviating Sparse Rewards by Modeling Step-Wise and Long-Term Sampling Effects in Flow-Based GRPO",
+  "authors": [
+    "Yunze Tong",
+    "Mushui Liu",
+    "Canyu Zhao",
+    "Wanggui He",
+    "Shiyi Zhang",
+    "Hongwei Zhang",
+    "Peng Zhang",
+    "Jinlong Liu",
+    "Ju Huang",
+    "Jiamang Wang",
+    "Hao Jiang",
+    "Pipei Huang"
+  ],
+  "abstract": "TP-GRPO addresses reward sparsity in flow matching models by introducing step-level incremental rewards and identifying turning points to capture long-term effects in denoising trajectories. Deploying GRPO on Flow Matching models has proven effective for text-to-image generation . However, existing paradigms typically propagate an outcome-based reward to all preceding denoising steps without distinguishing the local effect of each step. Moreover, current group-wise ranking mainly compares trajectories at matched timesteps and ignores within-trajectory dependencies, where certain early denoising actions can affect later states via delayed, implicit interactions. We propose TurningPoint- GRPO (TP- GRPO ), a GRPO framework that alleviates step-wise reward sparsity and explicitly models long-term effects within the denoising trajectory . TP- GRPO makes two key innovations: (i) it replaces outcome-based rewards with step-level incremental rewards , providing a dense, step-aware learning signal that better isolates each denoising action's \"pure\" effect, and (ii) it identifies turning points -steps that flip the local reward trend and make subsequent reward evolution consistent with the overall trajectory trend-and assigns these actions an aggregated long-term reward to capture their delayed impact . Turning points are detected solely via sign changes in incremental rewards , making TP- GRPO efficient and hyperparameter-free. Extensive experiments also demonstrate that TP- GRPO exploits reward signals more effectively and consistently improves generation. Demo code is available at https://github.com/YunzeTong/TurningPoint- GRPO .",
+  "summary_en": "TP-GRPO addresses reward sparsity in flow matching models by introducing step-level incremental rewards and identifying turning points to capture long-term effects in denoising trajectories.",
+  "summary_zh": "TP-GRPO通过引入步骤级增量奖励并识别转折点，解决流匹配模型中的奖励稀疏性问题，从而捕捉去噪轨迹中的长期效应。",
+  "hf_url": "https://huggingface.co/papers/2602.06422",
+  "arxiv_url": "https://arxiv.org/abs/2602.06422",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06422",
+  "github_url": "https://github.com/YunzeTong/TurningPoint-GRPO",
+  "upvotes": 42,
+  "fetched_at": "2026-02-19T06:02:05.419662+00:00"
+}

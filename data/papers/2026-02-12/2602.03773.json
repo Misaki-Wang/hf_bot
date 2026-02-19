@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.03773",
+  "title": "Reasoning Cache: Continual Improvement Over Long Horizons via Short-Horizon RL",
+  "authors": [
+    "Ian Wu",
+    "Yuxiao Qu",
+    "Amrith Setlur",
+    "Aviral Kumar"
+  ],
+  "abstract": "RC, an iterative decoding algorithm, enables large language models to extrapolate and continuously improve beyond training budgets by constructing reasoning chains that enhance across iterations, achieving superior performance on long-horizon tasks. Large Language Models (LLMs) that can continually improve beyond their training budgets are able to solve increasingly difficult problems by adapting at test time, a property we refer to as extrapolation . However, standard reinforcement learning (RL) operates over fixed problem distributions and training budgets, which limits extrapolation amidst distribution shift at test time. To address this, we introduce RC, an iterative decoding algorithm that replaces standard autoregressive decoding during both training and inference. RC exploits an asymmetry between the response generation and summarization capabilities of LLMs to construct reasoning chains that consistently improve across iterations. Models trained to use RC can extrapolate and continually improve over reasoning horizons more than an order of magnitude longer than those seen during training. Empirically, training a 4B model with RC using a 16k-token training budget improves performance on HMMT 2025 from 40% to nearly 70% with 0.5m tokens at test time, outperforming both comparably sized models and many larger reasoning LLMs. Finally, we also show that models trained with RC can more effectively leverage existing scaffolds to further scale test-time performance , due to the improved summary-conditioned generation abilities learned through training.",
+  "summary_en": "RC, an iterative decoding algorithm, enables large language models to extrapolate and continuously improve beyond training budgets by constructing reasoning chains that enhance across iterations, achieving superior performance on long-horizon tasks.",
+  "summary_zh": "RC是一种迭代解码算法，它通过构建跨迭代增强的推理链，使大型语言模型能够外推并在训练预算之外持续改进，从而在长程任务上取得更优性能。",
+  "hf_url": "https://huggingface.co/papers/2602.03773",
+  "arxiv_url": "https://arxiv.org/abs/2602.03773",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03773",
+  "github_url": "",
+  "upvotes": 9,
+  "fetched_at": "2026-02-19T06:30:40.554196+00:00"
+}

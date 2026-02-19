@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.04802",
+  "title": "VISTA-Bench: Do Vision-Language Models Really Understand Visualized Text as Well as Pure Text?",
+  "authors": [
+    "Qing'an Liu",
+    "Juntong Feng",
+    "Yuhao Wang",
+    "Xinzhe Han",
+    "Yujie Cheng",
+    "Yue Zhu",
+    "Haiwen Diao",
+    "Yunzhi Zhuge",
+    "Huchuan Lu"
+  ],
+  "abstract": "VISTA-Bench evaluates vision-language models' ability to understand visualized text versus pure-text queries, revealing significant performance gaps and sensitivity to rendering variations. Vision-Language Models (VLMs) have achieved impressive performance in cross-modal understanding across textual and visual inputs, yet existing benchmarks predominantly focus on pure-text queries . In real-world scenarios, language also frequently appears as visualized text embedded in images, raising the question of whether current VLMs handle such input requests comparably. We introduce VISTA-Bench, a systematic benchmark from multimodal perception , reasoning, to unimodal understanding domains. It evaluates visualized text understanding by contrasting pure-text and visualized-text questions under controlled rendering conditions. Extensive evaluation of over 20 representative VLMs reveals a pronounced modality gap : models that perform well on pure-text queries often degrade substantially when equivalent semantic content is presented as visualized text . This gap is further amplified by increased perceptual difficulty, highlighting sensitivity to rendering variations despite unchanged semantics. Overall, VISTA-Bench provides a principled evaluation framework to diagnose this limitation and to guide progress toward more unified language representations across tokenized text and pixels. The source dataset is available at https://github.com/QingAnLiu/VISTA-Bench.",
+  "summary_en": "VISTA-Bench evaluates vision-language models' ability to understand visualized text versus pure-text queries, revealing significant performance gaps and sensitivity to rendering variations.",
+  "summary_zh": "VISTA-Bench评估视觉语言模型理解可视化文本与纯文本查询的能力，揭示出显著的性能差距以及对渲染变化的敏感性。",
+  "hf_url": "https://huggingface.co/papers/2602.04802",
+  "arxiv_url": "https://arxiv.org/abs/2602.04802",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04802",
+  "github_url": "https://github.com/QingAnLiu/VISTA-Bench",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:20:34.778179+00:00"
+}

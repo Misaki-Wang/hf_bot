@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.09782",
+  "title": "Flexible Entropy Control in RLVR with Gradient-Preserving Perspective",
+  "authors": [
+    "Kun Chen",
+    "Peng Shi",
+    "Fanfan Liu",
+    "Haibo Qiu",
+    "Zhixiong Zeng",
+    "Siqi Yang",
+    "Wenji Mao"
+  ],
+  "abstract": "Reinforcement learning with verifiable rewards faces entropy collapse issues due to gradient-preserving clipping, which this paper addresses through dynamic entropy control mechanisms. Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a critical method for enhancing the reasoning capabilities of Large Language Models (LLMs). However, continuous training often leads to policy entropy collapse , characterized by a rapid decay in entropy that results in premature overconfidence, reduced output diversity, and vanishing gradient norms that inhibit learning. Gradient-Preserving Clipping is a primary factor influencing these dynamics, but existing mitigation strategies are largely static and lack a framework connecting clipping mechanisms to precise entropy control . This paper proposes reshaping entropy control in RL from the perspective of Gradient-Preserving Clipping . We first theoretically and empirically verify the contributions of specific importance sampling ratio regions to entropy growth and reduction. Leveraging these findings, we introduce a novel regulation mechanism using dynamic clipping threshold to precisely manage entropy. Furthermore, we design and evaluate dynamic entropy control strategies , including increase-then-decrease, decrease-increase-decrease, and oscillatory decay. Experimental results demonstrate that these strategies effectively mitigate entropy collapse, and achieve superior performance across multiple benchmarks.",
+  "summary_en": "Reinforcement learning with verifiable rewards faces entropy collapse issues due to gradient-preserving clipping, which this paper addresses through dynamic entropy control mechanisms.",
+  "summary_zh": "基于可验证奖励的强化学习因梯度保持裁剪而面临熵坍缩问题，本文通过动态熵控制机制解决该问题。",
+  "hf_url": "https://huggingface.co/papers/2602.09782",
+  "arxiv_url": "https://arxiv.org/abs/2602.09782",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09782",
+  "github_url": "https://github.com/Kwen-Chen/Flexible-Entropy-Control",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:03:52.308339+00:00"
+}

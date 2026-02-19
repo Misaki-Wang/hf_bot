@@ -1,0 +1,32 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.04649",
+  "title": "Outcome Accuracy is Not Enough: Aligning the Reasoning Process of Reward Models",
+  "authors": [
+    "Binghai Wang",
+    "Yantao Liu",
+    "Yuxuan Liu",
+    "Tianyi Tang",
+    "Shenzhi Wang",
+    "Chang Gao",
+    "Chujie Zheng",
+    "Yichang Zhang",
+    "Le Yu",
+    "Shixuan Liu",
+    "Tao Gui",
+    "Qi Zhang",
+    "Xuanjing Huang",
+    "Bowen Yu",
+    "Fei Huang",
+    "Junyang Lin"
+  ],
+  "abstract": "Generative Reward Models suffer from deceptive alignment due to outcome accuracy prioritization, but rationale consistency metrics and hybrid training signals improve performance and generalization in RLHF. Generative Reward Models (GenRMs) and LLM-as-a-Judge exhibit deceptive alignment by producing correct judgments for incorrect reasons, as they are trained and evaluated to prioritize Outcome Accuracy , which undermines their ability to generalize during RLHF . We introduce Rationale Consistency , a fine-grained metric that quantifies the alignment between the model's reasoning process and human judgment. Our evaluation of frontier models reveals that rationale consistency effectively discriminates among state-of-the-art models and detects deceptive alignment , while outcome accuracy falls short in both respects. To mitigate this gap, we introduce a hybrid signal that combines rationale consistency with outcome accuracy for GenRM training. Our training method achieves state-of-the-art performance on RM-Bench (87.1%) and JudgeBench (82%), surpassing outcome-only baselines by an average of 5%. Using RM during RLHF , our method effectively improves performance as demonstrated on Arena Hard v2, notably yielding a 7% improvement in creative writing tasks . Further analysis confirms that our method escapes the deceptive alignment trap, effectively reversing the decline in rationale consistency observed in outcome-only training.",
+  "summary_en": "Generative Reward Models suffer from deceptive alignment due to outcome accuracy prioritization, but rationale consistency metrics and hybrid training signals improve performance and generalization in RLHF.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nGenerative Reward Models suffer from deceptive alignment due to outcome accuracy prioritization, but rationale consistency metrics and hybrid training signals improve performance and generalization in RLHF.",
+  "hf_url": "https://huggingface.co/papers/2602.04649",
+  "arxiv_url": "https://arxiv.org/abs/2602.04649",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04649",
+  "github_url": "https://github.com/QwenLM/RationaleRM",
+  "upvotes": 12,
+  "fetched_at": "2026-02-19T05:43:54.074362+00:00"
+}

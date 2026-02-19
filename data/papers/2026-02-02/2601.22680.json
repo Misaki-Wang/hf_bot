@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.22680",
+  "title": "Visual Personalization Turing Test",
+  "authors": [
+    "Rameen Abdal",
+    "James Burgess",
+    "Sergey Tulyakov",
+    "Kuan-Chieh Jackson Wang"
+  ],
+  "abstract": "A new evaluation framework called VPTT assesses contextual visual personalization through perceptual indistinguishability from human-created content, utilizing a benchmark, retrieval-augmented generator, and calibrated text-based metric.",
+  "summary_en": "A new evaluation framework called VPTT assesses contextual visual personalization through perceptual indistinguishability from human-created content, utilizing a benchmark, retrieval-augmented generator, and calibrated text-based metric.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA new evaluation framework called VPTT assesses contextual visual personalization through perceptual indistinguishability from human-created content, utilizing a benchmark, retrieval-augmented generator, and calibrated text-based metric.",
+  "hf_url": "https://huggingface.co/papers/2601.22680",
+  "arxiv_url": "https://arxiv.org/abs/2601.22680",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22680",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:35:11.621863+00:00"
+}

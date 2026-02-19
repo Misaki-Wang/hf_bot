@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03238",
+  "title": "The Necessity of a Unified Framework for LLM-Based Agent Evaluation",
+  "authors": [
+    "Pengyu Zhu",
+    "Li Sun",
+    "Philip S. Yu",
+    "Sen Su"
+  ],
+  "abstract": "Large Language Models have advanced general-purpose agents, but current evaluation benchmarks suffer from confounding factors and lack of standardization, necessitating a unified framework for rigorous assessment. With the advent of Large Language Models (LLMs), general-purpose agents have seen fundamental advancements. However, evaluating these agents presents unique challenges that distinguish them from static QA benchmarks. We observe that current agent benchmarks are heavily confounded by extraneous factors, including system prompts , toolset configurations , and environmental dynamics . Existing evaluations often rely on fragmented, researcher-specific frameworks where the prompt engineering for reasoning and tool usage varies significantly, making it difficult to attribute performance gains to the model itself. Additionally, the lack of standardized environmental data leads to untraceable errors and non-reproducible results. This lack of standardization introduces substantial unfairness and opacity into the field. We propose that a unified evaluation framework is essential for the rigorous advancement of agent evaluation. To this end, we introduce a proposal aimed at standardizing agent evaluation.",
+  "summary_en": "Large Language Models have advanced general-purpose agents, but current evaluation benchmarks suffer from confounding factors and lack of standardization, necessitating a unified framework for rigorous assessment.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLarge Language Models have advanced general-purpose agents, but current evaluation benchmarks suffer from confounding factors and lack of standardization, necessitating a unified framework for rigorous assessment.",
+  "hf_url": "https://huggingface.co/papers/2602.03238",
+  "arxiv_url": "https://arxiv.org/abs/2602.03238",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03238",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:26:58.176754+00:00"
+}

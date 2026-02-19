@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10748",
+  "title": "Benchmarking Large Language Models for Knowledge Graph Validation",
+  "authors": [
+    "Farzad Shami",
+    "Stefano Marchesin",
+    "Gianmaria Silvello"
+  ],
+  "abstract": "Large language models show promise but lack stability and reliability for knowledge graph fact validation, with retrieval-augmented generation and multi-model consensus approaches yielding inconsistent improvements.",
+  "summary_en": "Large language models show promise but lack stability and reliability for knowledge graph fact validation, with retrieval-augmented generation and multi-model consensus approaches yielding inconsistent improvements.",
+  "summary_zh": "大语言模型在知识图谱事实验证方面展现出潜力，但缺乏稳定性和可靠性，且检索增强生成与多模型共识方法所带来的改进效果参差不齐。",
+  "hf_url": "https://huggingface.co/papers/2602.10748",
+  "arxiv_url": "https://arxiv.org/abs/2602.10748",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10748",
+  "github_url": "https://github.com/FactCheck-AI/FactCheck",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T06:31:52.445467+00:00"
+}

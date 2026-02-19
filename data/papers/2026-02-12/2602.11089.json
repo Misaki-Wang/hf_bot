@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.11089",
+  "title": "DataChef: Cooking Up Optimal Data Recipes for LLM Adaptation via Reinforcement Learning",
+  "authors": [
+    "Yicheng Chen",
+    "Zerun Ma",
+    "Xinchen Xie",
+    "Yining Li",
+    "Kai Chen"
+  ],
+  "abstract": "DataChef-32B automates data recipe generation for LLM adaptation through reinforcement learning with proxy rewards, achieving performance comparable to human-crafted recipes. In the current landscape of Large Language Models (LLMs), the curation of large-scale, high-quality training data is a primary driver of model performance. A key lever is the data recipe , which comprises a data processing pipeline to transform raw sources into training corpora. Despite the growing use of LLMs to automate individual data processing steps, such as data synthesis and filtering, the overall design of data recipe s remains largely manual and labor-intensive, requiring substantial human expertise and iteration. To bridge this gap, we formulate end-to-end data recipe generation for LLM adaptation. Given a target benchmark and a pool of available data sources, a model is required to output a complete data recipe that adapts a base LLM to the target task. We present DataChef-32B, which performs online reinforcement learning using a proxy reward that predicts downstream performance for candidate recipes. Across six held-out tasks, DataChef-32B produces practical recipes that reach comparable downstream performance to those curated by human experts. Notably, the recipe from DataChef-32B adapts Qwen3-1.7B-Base to the math domain, achieving 66.7 on AIME'25 and surpassing Qwen3-1.7B. This work sheds new light on automating LLM training and developing self-evolving AI systems.",
+  "summary_en": "DataChef-32B automates data recipe generation for LLM adaptation through reinforcement learning with proxy rewards, achieving performance comparable to human-crafted recipes.",
+  "summary_zh": "DataChef-32B通过基于代理奖励的强化学习自动化生成用于LLM适配的数据配方，取得了与人工设计配方相当的性能。",
+  "hf_url": "https://huggingface.co/papers/2602.11089",
+  "arxiv_url": "https://arxiv.org/abs/2602.11089",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11089",
+  "github_url": "https://github.com/yichengchen24/DataChef",
+  "upvotes": 18,
+  "fetched_at": "2026-02-19T06:32:06.192487+00:00"
+}

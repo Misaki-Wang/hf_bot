@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10622",
+  "title": "How Do Decoder-Only LLMs Perceive Users? Rethinking Attention Masking for User Representation Learning",
+  "authors": [
+    "Jiahao Yuan",
+    "Yike Xu",
+    "Jinyong Wen",
+    "Baokun Wang",
+    "Yang Chen",
+    "Xiaotong Lin",
+    "Wuliang Huang",
+    "Ziyi Gao",
+    "Xing Fu",
+    "Yu Cheng",
+    "Weiqiang Wang"
+  ],
+  "abstract": "Research investigates the impact of different attention masking strategies on user embedding quality in decoder-only language models, proposing a gradient-guided soft masking technique to improve training stability and representation quality for user behavior analysis. Decoder-only large language models are increasingly used as behavioral encoders for user representation learning , yet the impact of attention masking on the quality of user embeddings remains underexplored. In this work, we conduct a systematic study of causal, hybrid, and bidirectional attention masks within a unified contrastive learning framework trained on large-scale real-world Alipay data that integrates long-horizon heterogeneous user behaviors. To improve training dynamics when transitioning from causal to bidirectional attention , we propose Gradient-Guided Soft Masking , a gradient-based pre-warmup applied before a linear scheduler that gradually opens future attention during optimization. Evaluated on 9 industrial user cognition benchmarks covering prediction, preference, and marketing sensitivity tasks, our approach consistently yields more stable training and higher-quality bidirectional representations compared with causal, hybrid, and scheduler-only baselines, while remaining compatible with decoder pretraining. Overall, our findings highlight the importance of masking design and training transition in adapting decoder-only LLMs for effective user representation learning . Our code is available at https://github.com/JhCircle/Deepfind-GGSM.",
+  "summary_en": "Research investigates the impact of different attention masking strategies on user embedding quality in decoder-only language models, proposing a gradient-guided soft masking technique to improve training stability and representation quality for user behavior analysis.",
+  "summary_zh": "研究探讨了不同注意力掩码策略对仅解码器语言模型中用户嵌入质量的影响，并提出了一种梯度引导的软掩码技术，以提升用户行为分析中的训练稳定性与表征质量。",
+  "hf_url": "https://huggingface.co/papers/2602.10622",
+  "arxiv_url": "https://arxiv.org/abs/2602.10622",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10622",
+  "github_url": "https://github.com/JhCircle/Deepfind-GGSM",
+  "upvotes": 26,
+  "fetched_at": "2026-02-19T06:31:45.470281+00:00"
+}

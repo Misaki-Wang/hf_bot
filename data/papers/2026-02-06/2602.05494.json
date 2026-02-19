@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.05494",
+  "title": "A Unified Framework for Rethinking Policy Divergence Measures in GRPO",
+  "authors": [
+    "Qingyuan Wu",
+    "Yuhui Wang",
+    "Simon Sinong Zhan",
+    "Yanning Dai",
+    "Shilong Deng",
+    "Sarra Habchi",
+    "Qi Zhu",
+    "Matthias Gallé",
+    "Chao Huang"
+  ],
+  "abstract": "A unified framework for reinforcement learning with verified reward is presented, characterized by policy divergence measures including likelihood ratios and KL divergences, with empirical validation showing improved training stability and performance through the KL3 estimator. Reinforcement Learning with Verified Reward (RLVR) has emerged as a critical paradigm for advancing the reasoning capabilities of Large Language Models (LLMs). Most existing RLVR methods, such as GRPO and its variants, ensure stable updates by constraining policy divergence through clipping likelihood ratios . This paper introduces a unified clipping framework that characterizes existing methods via a general notion of policy divergence , encompassing both likelihood ratios and Kullback-Leibler (KL) divergences and extending to alternative measures. The framework provides a principled foundation for systematically analyzing how different policy divergence measures affect exploration and performance. We further identify the KL3 estimator , a variance-reduced Monte Carlo estimator of the KL divergence, as a key policy divergence constraint. We theoretically demonstrate that the KL3-based constraint is mathematically equivalent to an asymmetric ratio-based clipping that reallocates probability mass toward high-confidence actions, promoting stronger exploration while retaining the simplicity of GRPO -style methods. Empirical results on mathematical reasoning benchmarks demonstrate that incorporating the KL3 estimator into GRPO improves both training stability and final performance , highlighting the importance of principled policy divergence constraints in policy optimization .",
+  "summary_en": "A unified framework for reinforcement learning with verified reward is presented, characterized by policy divergence measures including likelihood ratios and KL divergences, with empirical validation showing improved training stability and performance through the KL3 estimator.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA unified framework for reinforcement learning with verified reward is presented, characterized by policy divergence measures including likelihood ratios and KL divergences, with empirical validation showing improved training stability and performance through the KL3 estimator.",
+  "hf_url": "https://huggingface.co/papers/2602.05494",
+  "arxiv_url": "https://arxiv.org/abs/2602.05494",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05494",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:43:10.746020+00:00"
+}

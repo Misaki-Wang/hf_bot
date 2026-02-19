@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.02341",
+  "title": "LongVPO: From Anchored Cues to Self-Reasoning for Long-Form Video Preference Optimization",
+  "authors": [
+    "Zhenpeng Huang",
+    "Jiaqi Li",
+    "Zihan Jia",
+    "Xinhao Li",
+    "Desen Meng",
+    "Lingxue Song",
+    "Xi Chen",
+    "Liang Li",
+    "Limin Wang"
+  ],
+  "abstract": "LongVPO is a two-stage Direct Preference Optimization framework that enables short-context vision-language models to understand ultra-long videos through synthetic preference triples and recursive captioning, achieving state-of-the-art performance with minimal human annotation. We present LongVPO, a novel two-stage Direct Preference Optimization framework that enables short-context vision-language models to robustly understand ultra-long videos without any long-video annotations. In Stage 1, we synthesize preference triples by anchoring questions to individual short clips, interleaving them with distractors, and applying visual-similarity and question-specificity filtering to mitigate positional bias and ensure unambiguous supervision. We also approximate the reference model's scoring over long contexts by evaluating only the anchor clip, reducing computational overhead. In Stage 2, we employ a recursive captioning pipeline on long videos to generate scene-level metadata , then use a large language model to craft multi-segment reasoning queries and dispreferred responses, aligning the model's preferences through multi-segment reasoning tasks. With only 16K synthetic examples and no costly human labels, LongVPO outperforms the state-of-the-art open-source models on multiple long-video benchmarks, while maintaining strong short-video performance (e.g., on MVBench), offering a scalable paradigm for efficient long-form video understanding.",
+  "summary_en": "LongVPO is a two-stage Direct Preference Optimization framework that enables short-context vision-language models to understand ultra-long videos through synthetic preference triples and recursive captioning, achieving state-of-the-art performance with minimal human annotation.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLongVPO is a two-stage Direct Preference Optimization framework that enables short-context vision-language models to understand ultra-long videos through synthetic preference triples and recursive captioning, achieving state-of-the-art performance with minimal human annotation.",
+  "hf_url": "https://huggingface.co/papers/2602.02341",
+  "arxiv_url": "https://arxiv.org/abs/2602.02341",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02341",
+  "github_url": "https://github.com/MCG-NJU/LongVPO",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:27:21.519265+00:00"
+}

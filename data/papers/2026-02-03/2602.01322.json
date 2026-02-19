@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01322",
+  "title": "PolySAE: Modeling Feature Interactions in Sparse Autoencoders via Polynomial Decoding",
+  "authors": [
+    "Panagiotis Koromilas",
+    "Andreas D. Demou",
+    "James Oldfield",
+    "Yannis Panagakis",
+    "Mihalis Nicolaou"
+  ],
+  "abstract": "PolySAE extends sparse autoencoders with polynomial decoding to capture feature interactions and compositional structure while maintaining linear encoders for interpretability. Sparse autoencoders (SAEs) have emerged as a promising method for interpreting neural network representations by decomposing activations into sparse combinations of dictionary atoms . However, SAEs assume that features combine additively through linear reconstruction, an assumption that cannot capture compositional structure: linear models cannot distinguish whether \"Starbucks\" arises from the composition of \"star\" and \"coffee\" features or merely their co-occurrence. This forces SAEs to allocate monolithic features for compound concepts rather than decomposing them into interpretable constituents. We introduce PolySAE, which extends the SAE decoder with higher-order terms to model feature interactions while preserving the linear encoder essential for interpretability. Through low-rank tensor factorization on a shared projection subspace, PolySAE captures pairwise and triple feature interactions with small parameter overhead (3% on GPT2). Across four language models and three SAE variants, PolySAE achieves an average improvement of approximately 8% in probing F1 while maintaining comparable reconstruction error, and produces 2-10times larger Wasserstein distances between class-conditional feature distributions. Critically, learned interaction weights exhibit negligible correlation with co-occurrence frequency (r = 0.06 vs. r = 0.82 for SAE feature covariance), suggesting that polynomial terms capture compositional structure, such as morphological binding and phrasal composition , largely independent of surface statistics.",
+  "summary_en": "PolySAE extends sparse autoencoders with polynomial decoding to capture feature interactions and compositional structure while maintaining linear encoders for interpretability.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nPolySAE extends sparse autoencoders with polynomial decoding to capture feature interactions and compositional structure while maintaining linear encoders for interpretability.",
+  "hf_url": "https://huggingface.co/papers/2602.01322",
+  "arxiv_url": "https://arxiv.org/abs/2602.01322",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01322",
+  "github_url": "",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T05:36:41.245119+00:00"
+}

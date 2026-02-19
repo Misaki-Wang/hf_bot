@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02214",
+  "title": "Causal Forcing: Autoregressive Diffusion Distillation Done Right for High-Quality Real-Time Interactive Video Generation",
+  "authors": [
+    "Hongzhou Zhu",
+    "Min Zhao",
+    "Guande He",
+    "Hang Su",
+    "Chongxuan Li",
+    "Jun Zhu"
+  ],
+  "abstract": "A novel Causal Forcing method addresses the architectural gap in distilling bidirectional video diffusion models into autoregressive models by using AR teachers for ODE initialization, significantly improving video generation performance. To achieve real-time interactive video generation, current methods distill pretrained bidirectional video diffusion models into few-step autoregressive (AR) models, facing an architectural gap when full attention is replaced by causal attention . However, existing approaches do not bridge this gap theoretically. They initialize the AR student via ODE distillation , which requires frame-level injectivity , where each noisy frame must map to a unique clean frame under the PF-ODE of an AR teacher. Distilling an AR student from a bidirectional teacher violates this condition, preventing recovery of the teacher's flow map and instead inducing a conditional-expectation solution , which degrades performance. To address this issue, we propose Causal Forcing that uses an AR teacher for ODE initialization, thereby bridging the architectural gap. Empirical results show that our method outperforms all baselines across all metrics, surpassing the SOTA Self Forcing by 19.3\\% in Dynamic Degree, 8.7\\% in VisionReward, and 16.7\\% in Instruction Following. Project page and the code: https://thu-ml.github.io/CausalForcing.github.io/{https://thu-ml.github.io/CausalForcing.github.io/}",
+  "summary_en": "A novel Causal Forcing method addresses the architectural gap in distilling bidirectional video diffusion models into autoregressive models by using AR teachers for ODE initialization, significantly improving video generation performance.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA novel Causal Forcing method addresses the architectural gap in distilling bidirectional video diffusion models into autoregressive models by using AR teachers for ODE initialization, significantly improving video generation performance.",
+  "hf_url": "https://huggingface.co/papers/2602.02214",
+  "arxiv_url": "https://arxiv.org/abs/2602.02214",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02214",
+  "github_url": "https://github.com/thu-ml/Causal-Forcing",
+  "upvotes": 24,
+  "fetched_at": "2026-02-19T05:37:44.312354+00:00"
+}

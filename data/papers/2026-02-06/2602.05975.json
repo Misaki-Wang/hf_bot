@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.05975",
+  "title": "SAGE: Benchmarking and Improving Retrieval for Deep Research Agents",
+  "authors": [
+    "Tiansheng Hu",
+    "Yilun Zhao",
+    "Canyu Zhang",
+    "Arman Cohan",
+    "Chen Zhao"
+  ],
+  "abstract": "LLM-based retrievers show limited effectiveness in deep research agent workflows, with traditional BM25 performing better, though corpus-level test-time scaling can improve retrieval performance. Deep research agents have emerged as powerful systems for addressing complex queries. Meanwhile, LLM-based retrievers have demonstrated strong capability in following instructions or reasoning. This raises a critical question: can LLM-based retrievers effectively contribute to deep research agent workflows? To investigate this, we introduce SAGE, a benchmark for scientific literature retrieval comprising 1,200 queries across four scientific domains, with a 200,000 paper retrieval corpus.We evaluate six deep research agents and find that all systems struggle with reasoning-intensive retrieval. Using DR Tulu as backbone, we further compare BM25 and LLM-based retrievers (i.e., ReasonIR and gte-Qwen2-7B-instruct ) as alternative search tools. Surprisingly, BM25 significantly outperforms LLM-based retrievers by approximately 30%, as existing agents generate keyword-oriented sub-queries. To improve performance, we propose a corpus-level test-time scaling framework that uses LLMs to augment documents with metadata and keywords, making retrieval easier for off-the-shelf retrievers. This yields 8% and 2% gains on short-form and open-ended questions, respectively.",
+  "summary_en": "LLM-based retrievers show limited effectiveness in deep research agent workflows, with traditional BM25 performing better, though corpus-level test-time scaling can improve retrieval performance.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLLM-based retrievers show limited effectiveness in deep research agent workflows, with traditional BM25 performing better, though corpus-level test-time scaling can improve retrieval performance.",
+  "hf_url": "https://huggingface.co/papers/2602.05975",
+  "arxiv_url": "https://arxiv.org/abs/2602.05975",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05975",
+  "github_url": "",
+  "upvotes": 12,
+  "fetched_at": "2026-02-19T05:43:22.868202+00:00"
+}

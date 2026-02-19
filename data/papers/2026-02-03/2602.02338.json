@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02338",
+  "title": "Rethinking Generative Recommender Tokenizer: Recsys-Native Encoding and Semantic Quantization Beyond LLMs",
+  "authors": [
+    "Yu Liang",
+    "Zhongjin Zhang",
+    "Yuxuan Zhu",
+    "Kerui Zhang",
+    "Zhiluohan Guo",
+    "Wenhang Zhou",
+    "Zonqi Yang",
+    "Kangle Wu",
+    "Yabo Ni",
+    "Anxiang Zeng",
+    "Cong Fu",
+    "Jianxin Wang",
+    "Jiazhi Xia"
+  ],
+  "abstract": "ReSID presents a novel recommendation-native framework that improves sequential recommendation by learning predictive item representations and optimizing quantization for information preservation and sequential predictability. Semantic ID (SID)-based recommendation is a promising paradigm for scaling sequential recommender systems , but existing methods largely follow a semantic-centric pipeline: item embeddings are learned from foundation models and discretized using generic quantization schemes. This design is misaligned with generative recommendation objectives: semantic embeddings are weakly coupled with collaborative prediction , and generic quantization is inefficient at reducing sequential uncertainty for autoregressive modeling . To address these, we propose ReSID, a recommendation-native, principled SID framework that rethinks representation learning and quantization from the perspective of information preservation and sequential predictability , without relying on LLMs. ReSID consists of two components: (i) Field-Aware Masked Auto-Encoding (FAMAE), which learns predictive-sufficient item representations from structured features, and (ii) Globally Aligned Orthogonal Quantization (GAOQ), which produces compact and predictable SID sequences by jointly reducing semantic ambiguity and prefix-conditional uncertainty. Theoretical analysis and extensive experiments across ten datasets show the effectiveness of ReSID. ReSID consistently outperforms strong sequential and SID-based generative baselines by an average of over 10%, while reducing tokenization cost by up to 122x. Code is available at https://github.com/FuCongResearchSquad/ReSID.",
+  "summary_en": "ReSID presents a novel recommendation-native framework that improves sequential recommendation by learning predictive item representations and optimizing quantization for information preservation and sequential predictability.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nReSID presents a novel recommendation-native framework that improves sequential recommendation by learning predictive item representations and optimizing quantization for information preservation and sequential predictability.",
+  "hf_url": "https://huggingface.co/papers/2602.02338",
+  "arxiv_url": "https://arxiv.org/abs/2602.02338",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02338",
+  "github_url": "https://github.com/FuCongResearchSquad/ReSID",
+  "upvotes": 40,
+  "fetched_at": "2026-02-19T05:37:51.565193+00:00"
+}

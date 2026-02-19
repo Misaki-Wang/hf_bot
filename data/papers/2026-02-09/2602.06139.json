@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06139",
+  "title": "EgoAVU: Egocentric Audio-Visual Understanding",
+  "authors": [
+    "Ashish Seth",
+    "Xinhao Mei",
+    "Changsheng Zhao",
+    "Varun Nagaraja",
+    "Ernie Chang",
+    "Gregory P. Meyer",
+    "Gael Le Lan",
+    "Yunyang Xiong",
+    "Vikas Chandra",
+    "Yangyang Shi",
+    "Dinesh Manocha",
+    "Zhipeng Cai"
+  ],
+  "abstract": "Multi-modal large language models struggle to jointly understand audio and visual signals in egocentric videos, but a new scalable data engine and dataset significantly improve their performance through targeted fine-tuning. Understanding egocentric videos plays a vital role for embodied intelligence. Recent multi-modal large language models (MLLMs) can accept both visual and audio inputs. However, due to the challenge of obtaining text labels with coherent joint-modality information, whether MLLMs can jointly understand both modalities in egocentric videos remains under-explored. To address this problem, we introduce EgoAVU, a scalable data engine to automatically generate egocentric audio-visual narrations , questions, and answers. EgoAVU enriches human narrations with multimodal context and generates audio-visual narrations through cross-modal correlation modeling . Token-based video filtering and modular, graph-based curation ensure both data diversity and quality. Leveraging EgoAVU, we construct EgoAVU-Instruct , a large-scale training dataset of 3M samples, and EgoAVU-Bench , a manually verified evaluation split covering diverse tasks. EgoAVU-Bench clearly reveals the limitations of existing MLLMs: they bias heavily toward visual signals, often neglecting audio cues or failing to correspond audio with the visual source. Finetuning MLLMs on EgoAVU-Instruct effectively addresses this issue, enabling up to 113% performance improvement on EgoAVU-Bench . Such benefits also transfer to other benchmarks such as EgoTempo and EgoIllusion , achieving up to 28% relative performance gain. Code will be released to the community.",
+  "summary_en": "Multi-modal large language models struggle to jointly understand audio and visual signals in egocentric videos, but a new scalable data engine and dataset significantly improve their performance through targeted fine-tuning.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMulti-modal large language models struggle to jointly understand audio and visual signals in egocentric videos, but a new scalable data engine and dataset significantly improve their performance through targeted fine-tuning.",
+  "hf_url": "https://huggingface.co/papers/2602.06139",
+  "arxiv_url": "https://arxiv.org/abs/2602.06139",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06139",
+  "github_url": "",
+  "upvotes": 12,
+  "fetched_at": "2026-02-19T05:44:14.728820+00:00"
+}

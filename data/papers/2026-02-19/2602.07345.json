@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.07345",
+  "title": "Optimizing Few-Step Generation with Adaptive Matching Distillation",
+  "authors": [
+    "Lichen Bai",
+    "Zikai Zhou",
+    "Shitong Shao",
+    "Wenliang Zhong",
+    "Shuo Yang",
+    "Shuo Chen",
+    "Bojun Chen",
+    "Zeke Xie"
+  ],
+  "abstract": "Adaptive Matching Distillation introduces a self-correcting mechanism to improve generative model training by detecting and escaping unstable regions in the optimization landscape. Distribution Matching Distillation (DMD) is a powerful acceleration paradigm, yet its stability is often compromised in Forbidden Zone , regions where the real teacher provides unreliable guidance while the fake teacher exerts insufficient repulsive force. In this work, we propose a unified optimization framework that reinterprets prior art as implicit strategies to avoid these corrupted regions. Based on this insight, we introduce Adaptive Matching Distillation (AMD), a self-correcting mechanism that utilizes reward proxies to explicitly detect and escape Forbidden Zone s. AMD dynamically prioritizes corrective gradients via structural signal decomposition and introduces Repulsive Landscape Sharpening to enforce steep energy barriers against failure mode collapse. Extensive experiments across image and video generation tasks (e.g., SDXL, Wan2.1) and rigorous benchmarks (e.g., VBench, GenEval) demonstrate that AMD significantly enhances sample fidelity and training robustness. For instance, AMD improves the HPSv2 score on SDXL from 30.64 to 31.25, outperforming state-of-the-art baselines. These findings validate that explicitly rectifying optimization trajectories within Forbidden Zone s is essential for pushing the performance ceiling of few-step generative models .",
+  "summary_en": "Adaptive Matching Distillation introduces a self-correcting mechanism to improve generative model training by detecting and escaping unstable regions in the optimization landscape.",
+  "summary_zh": "自适应匹配蒸馏引入自校正机制，通过检测并逃离优化景观中的不稳定区域来改进生成模型训练。",
+  "hf_url": "https://huggingface.co/papers/2602.07345",
+  "arxiv_url": "https://arxiv.org/abs/2602.07345",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07345",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:47:17.425548+00:00"
+}

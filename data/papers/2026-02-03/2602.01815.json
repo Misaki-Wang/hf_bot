@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01815",
+  "title": "INDIBATOR: Diverse and Fact-Grounded Individuality for Multi-Agent Debate in Molecular Discovery",
+  "authors": [
+    "Yunhui Jang",
+    "Seonghyun Park",
+    "Jaehyung Kim",
+    "Sungsoo Ahn"
+  ],
+  "abstract": "Multi-agent systems for molecular discovery that use individualized scientist profiles based on publication and molecular history outperform traditional role-based approaches. Multi-agent systems have emerged as a powerful paradigm for automating scientific discovery. To differentiate agent behavior in the multi-agent system, current frameworks typically assign generic role-based personas such as ''reviewer'' or ''writer'' or rely on coarse grained keyword-based personas. While functional, this approach oversimplifies how human scientists operate, whose contributions are shaped by their unique research trajectories. In response, we propose INDIBATOR, a framework for molecular discovery that grounds agents in individualized scientist profiles constructed from two modalities: publication history for literature-derived knowledge and molecular history for structural priors. These agents engage in multi-turn debate through proposal , critique , and voting phases . Our evaluation demonstrates that these fine-grained individuality-grounded agents consistently outperform systems relying on coarse-grained personas, achieving competitive or state-of-the-art performance. These results validate that capturing the ``scientific DNA'' of individual agents is essential for high-quality discovery.",
+  "summary_en": "Multi-agent systems for molecular discovery that use individualized scientist profiles based on publication and molecular history outperform traditional role-based approaches.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMulti-agent systems for molecular discovery that use individualized scientist profiles based on publication and molecular history outperform traditional role-based approaches.",
+  "hf_url": "https://huggingface.co/papers/2602.01815",
+  "arxiv_url": "https://arxiv.org/abs/2602.01815",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01815",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:37:14.394286+00:00"
+}

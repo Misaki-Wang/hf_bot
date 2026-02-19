@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.00521",
+  "title": "Diagnosing the Reliability of LLM-as-a-Judge via Item Response Theory",
+  "authors": [
+    "Junhyuk Choi",
+    "Sohhyung Park",
+    "Chanhee Cho",
+    "Hyeonchu Park",
+    "Bugeun Kim"
+  ],
+  "abstract": "A two-phase diagnostic framework based on Item Response Theory and Graded Response Model is introduced to assess the reliability of LLM-as-a-Judge by examining intrinsic consistency and human alignment. While LLM-as-a-Judge is widely used in automated evaluation, existing validation practices primarily operate at the level of observed outputs, offering limited insight into whether LLM judges themselves function as stable and reliable measurement instruments. To address this limitation, we introduce a two-phase diagnostic framework for assessing reliability of LLM-as-a-Judge , grounded in Item Response Theory (IRT). The framework adopts Graded Response Model (GRM) of IRT and formalizes reliability along two complementary dimensions: (1) intrinsic consistency , defined as the stability of measurement behavior under prompt variations, and (2) human alignment , capturing correspondence with human quality assessments. We empirically examine diverse LLM judges with this framework, and show that leveraging IRT-GRM yields interpretable signals for diagnosing judgments systematically. These signals provide practical guidance for verifying reliablity of LLM-as-a-Judge and identifying potential causes of un reliability .",
+  "summary_en": "A two-phase diagnostic framework based on Item Response Theory and Graded Response Model is introduced to assess the reliability of LLM-as-a-Judge by examining intrinsic consistency and human alignment.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA two-phase diagnostic framework based on Item Response Theory and Graded Response Model is introduced to assess the reliability of LLM-as-a-Judge by examining intrinsic consistency and human alignment.",
+  "hf_url": "https://huggingface.co/papers/2602.00521",
+  "arxiv_url": "https://arxiv.org/abs/2602.00521",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.00521",
+  "github_url": "",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T05:36:28.470769+00:00"
+}

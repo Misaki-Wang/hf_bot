@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.12203",
+  "title": "ExStrucTiny: A Benchmark for Schema-Variable Structured Information Extraction from Document Images",
+  "authors": [
+    "Mathieu Sibue",
+    "Andres Muñoz Garza",
+    "Samuel Mensah",
+    "Pranav Shetty",
+    "Zhiqiang Ma",
+    "Xiaomo Liu",
+    "Manuela Veloso"
+  ],
+  "abstract": "A new benchmark dataset called ExStrucTiny is introduced for structured information extraction from document images, addressing limitations of existing datasets and evaluating vision-language models on diverse document types and flexible schemas.",
+  "summary_en": "A new benchmark dataset called ExStrucTiny is introduced for structured information extraction from document images, addressing limitations of existing datasets and evaluating vision-language models on diverse document types and flexible schemas.",
+  "summary_zh": "研究提出名为ExStrucTiny的新基准数据集，用于文档图像结构化信息抽取，解决现有数据集局限，并在多样化文档类型与灵活schema上评估视觉-语言模型。",
+  "hf_url": "https://huggingface.co/papers/2602.12203",
+  "arxiv_url": "https://arxiv.org/abs/2602.12203",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12203",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:39:04.210274+00:00"
+}

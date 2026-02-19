@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.22664",
+  "title": "Real-Time Aligned Reward Model beyond Semantics",
+  "authors": [
+    "Zixuan Huang",
+    "Xin Xia",
+    "Yuxi Ren",
+    "Jianbin Zheng",
+    "Xuefeng Xiao",
+    "Hongyan Xie",
+    "Li Huaqiu",
+    "Songshi Liang",
+    "Zhongxiang Dai",
+    "Fuzhen Zhuang",
+    "Jianxin Li",
+    "Yikun Ban",
+    "Deqing Wang"
+  ],
+  "abstract": "RLHF suffers from reward overoptimization due to misalignment between reward models and policy models, which R2M addresses by incorporating real-time policy feedback to dynamically adapt reward modeling during training. Reinforcement Learning from Human Feedback (RLHF) is a pivotal technique for aligning large language models (LLMs) with human preferences, yet it is susceptible to reward overoptimization , in which policy models overfit to the reward model, exploit spurious reward patterns instead of faithfully capturing human intent. Prior mitigations primarily relies on surface semantic information and fails to efficiently address the misalignment between the reward model (RM) and the policy model caused by continuous policy distribution shifts . This inevitably leads to an increasing reward discrepancy, exacerbating reward overoptimization . To address these limitations, we introduce R2M (Real-Time Aligned Reward Model), a novel lightweight RLHF framework. R2M goes beyond vanilla reward models that solely depend on the semantic representations of a pretrained LLM. Instead, it leverages the evolving hidden states of the policy (namely policy feedback ) to align with the real-time distribution shift of the policy during the RL process. This work points to a promising new direction for improving the performance of reward models through real-time utilization of feedback from policy models .",
+  "summary_en": "RLHF suffers from reward overoptimization due to misalignment between reward models and policy models, which R2M addresses by incorporating real-time policy feedback to dynamically adapt reward modeling during training.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nRLHF suffers from reward overoptimization due to misalignment between reward models and policy models, which R2M addresses by incorporating real-time policy feedback to dynamically adapt reward modeling during training.",
+  "hf_url": "https://huggingface.co/papers/2601.22664",
+  "arxiv_url": "https://arxiv.org/abs/2601.22664",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22664",
+  "github_url": "",
+  "upvotes": 13,
+  "fetched_at": "2026-02-19T05:35:07.592237+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.09084",
+  "title": "Agent Banana: High-Fidelity Image Editing with Agentic Thinking and Tooling",
+  "authors": [
+    "Ruijie Ye",
+    "Jiayi Zhang",
+    "Zhuoxin Liu",
+    "Zihao Zhu",
+    "Siyuan Yang",
+    "Li Li",
+    "Tianfu Fu",
+    "Franck Dernoncourt",
+    "Yue Zhao",
+    "Jiacheng Zhu",
+    "Ryan Rossi",
+    "Wenhao Chai",
+    "Zhengzhong Tu"
+  ],
+  "abstract": "Agent Banana addresses challenges in instruction-based image editing through a hierarchical framework with context folding and image layer decomposition for high-fidelity, multi-turn editing at ultra-high resolution. We study instruction-based image editing under professional workflows and identify three persistent challenges: (i) editors often over-edit, modifying content beyond the user's intent; (ii) existing models are largely single-turn, while multi-turn edits can alter object faithfulness; and (iii) evaluation at around 1K resolution is misaligned with real workflows that often operate on ultra high-definition images (e.g., 4K). We propose Agent Banana, a hierarchical agentic planner-executor framework for high-fidelity, object-aware, deliberative editing . Agent Banana introduces two key mechanisms: (1) Context Folding , which compresses long interaction histories into structured memory for stable long-horizon control ; and (2) Image Layer Decomposition , which performs localized layer-based edits to preserve non-target regions while enabling native-resolution outputs . To support rigorous evaluation, we build HDD-Bench , a high-definition, dialogue-based benchmark featuring verifiable stepwise targets and native 4K images (11.8M pixels) for diagnosing long-horizon failures. On HDD-Bench , Agent Banana achieves the best multi-turn consistency and background fidelity (e.g., IC 0.871, SSIM-OM 0.84, LPIPS-OM 0.12) while remaining competitive on instruction following, and also attains strong performance on standard single-turn editing benchmarks. We hope this work advances reliable, professional-grade agentic image editing and its integration into real workflows.",
+  "summary_en": "Agent Banana addresses challenges in instruction-based image editing through a hierarchical framework with context folding and image layer decomposition for high-fidelity, multi-turn editing at ultra-high resolution.",
+  "summary_zh": "Agent Banana 通过具有上下文折叠和图像层分解的分层框架，解决了基于指令的图像编辑中的挑战，实现了超高分辨率下的高保真多轮编辑。",
+  "hf_url": "https://huggingface.co/papers/2602.09084",
+  "arxiv_url": "https://arxiv.org/abs/2602.09084",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09084",
+  "github_url": "https://github.com/taco-group/agent-banana",
+  "upvotes": 27,
+  "fetched_at": "2026-02-19T06:21:40.767811+00:00"
+}

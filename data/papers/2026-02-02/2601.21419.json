@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.21419",
+  "title": "Revisiting Diffusion Model Predictions Through Dimensionality",
+  "authors": [
+    "Qing Jin",
+    "Chaoyang Wang"
+  ],
+  "abstract": "Diffusion models using direct data prediction outperform traditional noise or velocity prediction in high-dimensional settings, with a proposed framework automatically learning optimal prediction parameters from data. Recent advances in diffusion and flow matching models have highlighted a shift in the preferred prediction target -- moving from noise (varepsilon) and velocity (v) to direct data (x) prediction -- particularly in high-dimensional settings. However, a formal explanation of why the optimal target depends on the specific properties of the data remains elusive. In this work, we provide a theoretical framework based on a generalized prediction formulation that accommodates arbitrary output targets, of which varepsilon-, v-, and x-prediction are special cases. We derive the analytical relationship between data's geometry and the optimal prediction target, offering a rigorous justification for why x-prediction becomes superior when the ambient dimension significantly exceeds the data's intrinsic dimension . Furthermore, while our theory identifies dimensionality as the governing factor for the optimal prediction target, the intrinsic dimension of manifold-bound data is typically intractable to estimate in practice. To bridge this gap, we propose k-Diff , a framework that employs a data-driven approach to learn the optimal prediction parameter k directly from data, bypassing the need for explicit dimension estimation. Extensive experiments in both latent-space and pixel-space image generation demonstrate that k-Diff consistently outperforms fixed-target baselines across varying architectures and data scales, providing a principled and automated approach to enhancing generative performance .",
+  "summary_en": "Diffusion models using direct data prediction outperform traditional noise or velocity prediction in high-dimensional settings, with a proposed framework automatically learning optimal prediction parameters from data.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nDiffusion models using direct data prediction outperform traditional noise or velocity prediction in high-dimensional settings, with a proposed framework automatically learning optimal prediction parameters from data.",
+  "hf_url": "https://huggingface.co/papers/2601.21419",
+  "arxiv_url": "https://arxiv.org/abs/2601.21419",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21419",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T05:34:32.043908+00:00"
+}

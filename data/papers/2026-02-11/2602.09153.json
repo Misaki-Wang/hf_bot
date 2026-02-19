@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.09153",
+  "title": "SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes",
+  "authors": [
+    "Nicholas Pfaff",
+    "Thomas Cohn",
+    "Sergey Zakharov",
+    "Rick Cory",
+    "Russ Tedrake"
+  ],
+  "abstract": "SceneSmith is a hierarchical agentic framework that generates simulation-ready indoor environments from natural language prompts through multiple stages involving VLM agents and integrated asset generation techniques. Simulation has become a key tool for training and evaluating home robots at scale, yet existing environments fail to capture the diversity and physical complexity of real indoor spaces. Current scene synthesis methods produce sparsely furnished rooms that lack the dense clutter, articulated furniture, and physical properties essential for robotic manipulation . We introduce SceneSmith , a hierarchical agentic framework that generates simulation-ready indoor environments from natural language prompts . SceneSmith constructs scenes through successive stagesx2013from architectural layout to furniture placement to small object populationx2013each implemented as an interaction among VLM agents : designer, critic, and orchestrator. The framework tightly integrates asset generation through text-to-3D synthesis for static objects, dataset retrieval for articulated objects, and physical property estimation . SceneSmith generates 3-6x more objects than prior methods, with <2% inter-object collisions and 96% of objects remaining stable under physics simulation. In a user study with 205 participants, it achieves 92% average realism and 91% average prompt faithfulness win rates against baselines. We further demonstrate that these environments can be used in an end-to-end pipeline for automatic robot policy evaluation.",
+  "summary_en": "SceneSmith is a hierarchical agentic framework that generates simulation-ready indoor environments from natural language prompts through multiple stages involving VLM agents and integrated asset generation techniques.",
+  "summary_zh": "SceneSmith是一种分层智能体框架，通过包含VLM智能体与集成资产生成技术的多阶段流程，基于自然语言提示生成可直接用于仿真的室内环境。",
+  "hf_url": "https://huggingface.co/papers/2602.09153",
+  "arxiv_url": "https://arxiv.org/abs/2602.09153",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09153",
+  "github_url": "https://github.com/nepfaff/scenesmith",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T06:21:43.069531+00:00"
+}

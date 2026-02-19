@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.08025",
+  "title": "MIND: Benchmarking Memory Consistency and Action Control in World Models",
+  "authors": [
+    "Yixuan Ye",
+    "Xuanyu Lu",
+    "Yuxin Jiang",
+    "Yuchao Gu",
+    "Rui Zhao",
+    "Qiwei Liang",
+    "Jiachun Pan",
+    "Fengda Zhang",
+    "Weijia Wu",
+    "Alex Jinpeng Wang"
+  ],
+  "abstract": "MIND is introduced as the first open-domain closed-loop benchmark for evaluating memory consistency and action control in world models, featuring high-quality videos and diverse action spaces to assess temporal stability and contextual coherence. World models aim to understand, remember, and predict dynamic visual environments, yet a unified benchmark for evaluating their fundamental abilities remains lacking. To address this gap, we introduce MIND, the first open-domain closed-loop revisited benchmark for evaluating Memory consIstency and action coNtrol in worlD models . MIND contains 250 high-quality videos at 1080p and 24 FPS, including 100 (first-person) + 100 (third-person) video clips under a shared action space and 25 + 25 clips across varied action spaces covering eight diverse scenes. We design an efficient evaluation framework to measure two core abilities: memory consistency and action control , capturing temporal stability and contextual coherence across viewpoints. Furthermore, we design various action spaces, including different character movement speeds and camera rotation angles, to evaluate the action generalization capability across different action spaces under shared scenes. To facilitate future performance benchmarking on MIND, we introduce MIND-World, a novel interactive Video-to-World baseline . Extensive experiments demonstrate the completeness of MIND and reveal key challenges in current world models , including the difficulty of maintaining long-term memory consistency and generalizing across action spaces. Project page: https://csu-jpg.github.io/MIND.github.io/",
+  "summary_en": "MIND is introduced as the first open-domain closed-loop benchmark for evaluating memory consistency and action control in world models, featuring high-quality videos and diverse action spaces to assess temporal stability and contextual coherence.",
+  "summary_zh": "MIND是首个用于评估世界模型记忆一致性与动作控制的开放域闭环基准，具有高质量视频与多样化动作空间，用于评估时间稳定性与上下文连贯性。",
+  "hf_url": "https://huggingface.co/papers/2602.08025",
+  "arxiv_url": "https://arxiv.org/abs/2602.08025",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08025",
+  "github_url": "https://github.com/CSU-JPG/MIND",
+  "upvotes": 9,
+  "fetched_at": "2026-02-19T06:21:14.828419+00:00"
+}

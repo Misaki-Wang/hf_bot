@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.05827",
+  "title": "Sparse Video Generation Propels Real-World Beyond-the-View Vision-Language Navigation",
+  "authors": [
+    "Hai Zhang",
+    "Siqi Liang",
+    "Li Chen",
+    "Yuxian Li",
+    "Yukuan Xu",
+    "Yichao Zhong",
+    "Fu Zhang",
+    "Hongyang Li"
+  ],
+  "abstract": "Vision-language navigation systems traditionally require detailed instructions but can be improved by incorporating video generation models with sparse future planning for faster, more efficient real-world deployment. Why must vision-language navigation be bound to detailed and verbose language instructions? While such details ease decision-making, they fundamentally contradict the goal for navigation in the real-world. Ideally, agents should possess the autonomy to navigate in unknown environments guided solely by simple and high-level intents. Realizing this ambition introduces a formidable challenge: Beyond-the-View Navigation (BVN), where agents must locate distant, unseen targets without dense and step-by-step guidance. Existing large language model (LLM)-based methods, though adept at following dense instructions, often suffer from short-sighted behaviors due to their reliance on short-horimzon supervision. Simply extending the supervision horizon, however, destabilizes LLM training. In this work, we identify that video generation models inherently benefit from long-horizon supervision to align with language instructions, rendering them uniquely suitable for BVN tasks. Capitalizing on this insight, we propose introducing the video generation model into this field for the first time. Yet, the prohibitive latency for generating videos spanning tens of seconds makes real-world deployment impractical. To bridge this gap, we propose SparseVideoNav, achieving sub-second trajectory inference guided by a generated sparse future spanning a 20-second horizon. This yields a remarkable 27x speed-up compared to the unoptimized counterpart. Extensive real-world zero-shot experiments demonstrate that SparseVideoNav achieves 2.5x the success rate of state-of-the-art LLM baselines on BVN tasks and marks the first realization of such capability in challenging night scenes.",
+  "summary_en": "Vision-language navigation systems traditionally require detailed instructions but can be improved by incorporating video generation models with sparse future planning for faster, more efficient real-world deployment.",
+  "summary_zh": "视觉语言导航系统传统上需要详细指令，但可以通过结合视频生成模型与稀疏未来规划来改进，以实现更快、更高效的真实世界部署。",
+  "hf_url": "https://huggingface.co/papers/2602.05827",
+  "arxiv_url": "https://arxiv.org/abs/2602.05827",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05827",
+  "github_url": "https://github.com/opendrivelab/sparsevideonav",
+  "upvotes": 18,
+  "fetched_at": "2026-02-19T06:37:42.338237+00:00"
+}

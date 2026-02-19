@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.06454",
+  "title": "RelayGen: Intra-Generation Model Switching for Efficient Reasoning",
+  "authors": [
+    "Jiwon Song",
+    "Yoongon Kim",
+    "Jae-Joon Kim"
+  ],
+  "abstract": "RelayGen is a training-free framework that dynamically switches between large and small reasoning models during inference based on segment-level difficulty estimation, achieving faster execution with minimal accuracy loss. Large reasoning models (LRMs) achieve strong performance on complex reasoning tasks by generating long, multi-step reasoning trajectories , but inference-time scaling incurs substantial deployment cost. A key challenge is that generation difficulty varies within a single output, whereas existing efficiency-oriented approaches either ignore this intra-generation variation or rely on supervised token-level routing with high system complexity. We present RelayGen, a training-free, segment-level runtime model switching framework that exploits difficulty variation in long-form reasoning. Through offline analysis of generation uncertainty using token probability margins , we show that coarse-grained segment-level control is sufficient to capture difficulty transitions within a reasoning trajectory. RelayGen identifies model-specific switch cues that signal transitions to lower-difficulty segments and dynamically delegates their continuation to a smaller model, while preserving high-difficulty reasoning on the large model. Across multiple reasoning benchmarks, RelayGen substantially reduces inference latency while preserving most of the accuracy of large models. When combined with speculative decoding , RelayGen achieves up to 2.2times end-to-end speedup with less than 2\\% accuracy degradation, without requiring additional training or learned routing components.",
+  "summary_en": "RelayGen is a training-free framework that dynamically switches between large and small reasoning models during inference based on segment-level difficulty estimation, achieving faster execution with minimal accuracy loss.",
+  "summary_zh": "RelayGen是一种免训练框架，它基于片段级难度估计在推理过程中动态切换大型与小型推理模型，以极小的精度损失实现更快的执行速度。",
+  "hf_url": "https://huggingface.co/papers/2602.06454",
+  "arxiv_url": "https://arxiv.org/abs/2602.06454",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06454",
+  "github_url": "https://github.com/jiwonsong-dev/RelayGen",
+  "upvotes": 11,
+  "fetched_at": "2026-02-19T06:02:10.509721+00:00"
+}

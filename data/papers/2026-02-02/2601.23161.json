@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.23161",
+  "title": "DIFFA-2: A Practical Diffusion Large Language Model for General Audio Understanding",
+  "authors": [
+    "Jiaming Zhou",
+    "Xuxin Cheng",
+    "Shiwan Zhao",
+    "Yuhang Jia",
+    "Cao Liu",
+    "Ke Zeng",
+    "Xunliang Cai",
+    "Yong Qin"
+  ],
+  "abstract": "DIFFA-2, a diffusion-based large audio language model, achieves competitive audio understanding performance with improved efficiency over autoregressive counterparts through enhanced encoding, dual adapters, and staged training. Autoregressive (AR) large audio language models (LALMs) such as Qwen-2.5-Omni have achieved strong performance on audio understanding and interaction, but scaling them remains costly in data and computation, and strictly sequential decoding limits inference efficiency. Diffusion large language models (dLLMs) have recently been shown to make effective use of limited training data, and prior work on DIFFA indicates that replacing an AR backbone with a diffusion counterpart can substantially improve audio understanding under matched settings, albeit at a proof-of-concept scale without large-scale instruction tuning, preference alignment, or practical decoding schemes. We introduce DIFFA-2, a practical diffusion-based LALM for general audio understanding. DIFFA-2 upgrades the speech encoder , employs dual semantic and acoustic adapters , and is trained with a four-stage curriculum that combines semantic and acoustic alignment , large-scale supervised fine-tuning , and variance-reduced preference optimization , using only fully open-source corpora. Experiments on MMSU, MMAU, and MMAR show that DIFFA-2 consistently improves over DIFFA and is competitive to strong AR LALMs under practical training budgets, supporting diffusion-based modeling is a viable backbone for large-scale audio understanding. Our code is available at https://github.com/NKU-HLT/DIFFA.git.",
+  "summary_en": "DIFFA-2, a diffusion-based large audio language model, achieves competitive audio understanding performance with improved efficiency over autoregressive counterparts through enhanced encoding, dual adapters, and staged training.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nDIFFA-2, a diffusion-based large audio language model, achieves competitive audio understanding performance with improved efficiency over autoregressive counterparts through enhanced encoding, dual adapters, and staged training.",
+  "hf_url": "https://huggingface.co/papers/2601.23161",
+  "arxiv_url": "https://arxiv.org/abs/2601.23161",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.23161",
+  "github_url": "https://github.com/NKU-HLT/DIFFA",
+  "upvotes": 10,
+  "fetched_at": "2026-02-19T05:35:24.778323+00:00"
+}

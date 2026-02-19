@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.15394",
+  "title": "Memorization Dynamics in Knowledge Distillation for Language Models",
+  "authors": [
+    "Jaydeep Borkar",
+    "Karan Chadha",
+    "Niloofar Mireshghallah",
+    "Yuchen Zhang",
+    "Irina-Elena Veliche",
+    "Archi Mitra",
+    "David A. Smith",
+    "Zheng Xu",
+    "Diego Garcia-Olano"
+  ],
+  "abstract": "Knowledge distillation reduces training data memorization compared to standard fine-tuning while maintaining performance, with distinct memorization patterns and predictability based on input characteristics. Knowledge Distillation (KD) is increasingly adopted to transfer capabilities from large language models to smaller ones, offering significant improvements in efficiency and utility while often surpassing standard fine-tuning. Beyond performance, KD is also explored as a privacy-preserving mechanism to mitigate the risk of training data leakage. While training data memorization has been extensively studied in standard pre-training and fine-tuning settings, its dynamics in a knowledge distillation setup remain poorly understood. In this work, we study memorization across the KD pipeline using three large language model (LLM) families (Pythia, OLMo-2, Qwen-3) and three datasets (FineWeb, Wikitext, Nemotron-CC-v2). We find: (1) distilled models memorize significantly less training data than standard fine-tuning (reducing memorization by more than 50%); (2) some examples are inherently easier to memorize and account for a large fraction of memorization during distillation (over ~95%); (3) student memorization is predictable prior to distillation using features based on zlib entropy , KL divergence , and perplexity ; and (4) while soft and hard distillation have similar overall memorization rates, hard distillation poses a greater risk: it inherits 2.7times more teacher-specific examples than soft distillation . Overall, we demonstrate that distillation can provide both improved generalization and reduced memorization risks compared to standard fine-tuning.",
+  "summary_en": "Knowledge distillation reduces training data memorization compared to standard fine-tuning while maintaining performance, with distinct memorization patterns and predictability based on input characteristics.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nKnowledge distillation reduces training data memorization compared to standard fine-tuning while maintaining performance, with distinct memorization patterns and predictability based on input characteristics.",
+  "hf_url": "https://huggingface.co/papers/2601.15394",
+  "arxiv_url": "https://arxiv.org/abs/2601.15394",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.15394",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:34:18.626843+00:00"
+}

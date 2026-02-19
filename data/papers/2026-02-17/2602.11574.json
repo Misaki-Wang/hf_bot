@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.11574",
+  "title": "Learning to Configure Agentic AI Systems",
+  "authors": [
+    "Aditya Taparia",
+    "Som Sagar",
+    "Ransalu Senanayake"
+  ],
+  "abstract": "Learning per-query agent configurations through reinforcement learning improves task accuracy while reducing computational costs compared to fixed templates and hand-tuned heuristics. Configuring LLM-based agent systems involves choosing workflows, tools, token budget s, and prompts from a large combinatorial design space, and is typically handled today by fixed large templates or hand-tuned heuristics. This leads to brittle behavior and unnecessary compute, since the same cumbersome configuration is often applied to both easy and hard input queries. We formulate agent configuration as a query-wise decision problem and introduce ARC (Agentic Resource & Configuration learner), which learns a light-weight hierarchical policy using reinforcement learning to dynamically tailor these configurations. Across multiple benchmarks spanning reasoning and tool-augmented question answering , the learned policy consistently outperforms strong hand-designed and other baselines, achieving up to 25% higher task accuracy while also reducing token and runtime costs. These results demonstrate that learning per-query agent configuration s is a powerful alternative to \"one size fits all\" designs.",
+  "summary_en": "Learning per-query agent configurations through reinforcement learning improves task accuracy while reducing computational costs compared to fixed templates and hand-tuned heuristics.",
+  "summary_zh": "通过强化学习习得逐查询智能体配置，相较于固定模板与手工调优启发式方法，可在提升任务准确率的同时降低计算成本。",
+  "hf_url": "https://huggingface.co/papers/2602.11574",
+  "arxiv_url": "https://arxiv.org/abs/2602.11574",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11574",
+  "github_url": "https://github.com/somsagar07/Context_Optimization",
+  "upvotes": 14,
+  "fetched_at": "2026-02-19T06:45:24.066984+00:00"
+}

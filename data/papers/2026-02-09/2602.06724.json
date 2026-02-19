@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06724",
+  "title": "Table-as-Search: Formulate Long-Horizon Agentic Information Seeking as Table Completion",
+  "authors": [
+    "Tian Lan",
+    "Felix Henry",
+    "Bin Zhu",
+    "Qianghuai Jia",
+    "Junyang Ren",
+    "Qihang Pu",
+    "Haijun Li",
+    "Longyue Wang",
+    "Zhao Xu",
+    "Weihua Luo"
+  ],
+  "abstract": "Table-as-Search framework reformulates information seeking tasks as table completion problems, improving long-horizon search robustness through structured state management. Current Information Seeking (InfoSeeking) agents struggle to maintain focus and coherence during long-horizon exploration, as tracking search states , including planning procedure and massive search results, within one plain-text context is inherently fragile. To address this, we introduce Table-as-Search (TaS), a structured planning framework that reformulates the InfoSeeking task as a Table Completion task. TaS maps each query into a structured table schema maintained in an external database, where rows represent search candidates and columns denote constraints or required information. This table precisely manages the search states : filled cells strictly record the history and search results, while empty cells serve as an explicit search plan. Crucially, TaS unifies three distinct InfoSeeking tasks: Deep Search , Wide Search , and the challenging DeepWide Search . Extensive experiments demonstrate that TaS significantly outperforms numerous state-of-the-art baselines across three kinds of benchmarks, including multi-agent framework and commercial systems. Furthermore, our analysis validates the TaS's superior robustness in long-horizon InfoSeeking, alongside its efficiency, scalability and flexibility. Code and datasets are publicly released at https://github.com/AIDC-AI/Marco-Search-Agent.",
+  "summary_en": "Table-as-Search framework reformulates information seeking tasks as table completion problems, improving long-horizon search robustness through structured state management.",
+  "summary_zh": "Table-as-Search框架将信息检索任务重新表述为表格补全问题，通过结构化状态管理提升长程搜索鲁棒性。",
+  "hf_url": "https://huggingface.co/papers/2602.06724",
+  "arxiv_url": "https://arxiv.org/abs/2602.06724",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06724",
+  "github_url": "https://github.com/AIDC-AI/Marco-DeepResearch",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:58:18.882352+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02453",
+  "title": "Thinking with Comics: Enhancing Multimodal Reasoning through Structured Visual Storytelling",
+  "authors": [
+    "Andong Chen",
+    "Wenxin Zhu",
+    "Qiuyu Ding",
+    "Yuchen Song",
+    "Muyun Yang",
+    "Tiejun Zhao"
+  ],
+  "abstract": "Thinking with Comics emerges as an effective visual reasoning approach that bridges images and videos by leveraging comic structures for improved multimodal reasoning efficiency and performance. Chain-of-Thought reasoning has driven large language models to extend from thinking with text to thinking with images and videos. However, different modalities still have clear limitations: static images struggle to represent temporal structure , while videos introduce substantial redundancy and computational cost. In this work, we propose Thinking with Comics, a visual reasoning paradigm that uses comics as a high information-density medium positioned between images and videos. Comics preserve temporal structure , embedded text, and narrative coherence while requiring significantly lower reasoning cost. We systematically study two reasoning paths based on comics and evaluate them on a range of reasoning tasks and long-context understanding tasks. Experimental results show that Thinking with Comics outperforms Thinking with Images on multi-step temporal and causal reasoning tasks, while remaining substantially more efficient than Thinking with Video. Further analysis indicates that different comic narrative structures and styles consistently affect performance across tasks, suggesting that comics serve as an effective intermediate visual representation for improving multimodal reasoning .",
+  "summary_en": "Thinking with Comics emerges as an effective visual reasoning approach that bridges images and videos by leveraging comic structures for improved multimodal reasoning efficiency and performance.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nThinking with Comics emerges as an effective visual reasoning approach that bridges images and videos by leveraging comic structures for improved multimodal reasoning efficiency and performance.",
+  "hf_url": "https://huggingface.co/papers/2602.02453",
+  "arxiv_url": "https://arxiv.org/abs/2602.02453",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02453",
+  "github_url": "https://github.com/andongBlue/Think-with-Comics",
+  "upvotes": 35,
+  "fetched_at": "2026-02-19T05:38:02.172058+00:00"
+}

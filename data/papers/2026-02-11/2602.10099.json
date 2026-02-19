@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.10099",
+  "title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+  "authors": [
+    "Amandeep Kumar",
+    "Vishal M. Patel"
+  ],
+  "abstract": "Geometric interference in standard diffusion transformers prevents convergence on representation encoders, which is resolved through Riemannian flow matching with jacobi regularization enabling effective training without width scaling. Leveraging representation encoders for generative modeling offers a path for efficient, high-fidelity synthesis. However, standard diffusion transformers fail to converge on these representations directly. While recent work attributes this to a capacity bottleneck proposing computationally expensive width scaling of diffusion transformers we demonstrate that the failure is fundamentally geometric. We identify Geometric Interference as the root cause: standard Euclidean flow matching forces probability paths through the low-density interior of the hyperspherical feature space of representation encoders , rather than following the manifold surface. To resolve this, we propose Riemannian Flow Matching with Jacobi Regularization (RJF). By constraining the generative process to the manifold geodesics and correcting for curvature-induced error propagation , RJF enables standard Diffusion Transformer architectures to converge without width scaling. Our method RJF enables the standard DiT-B architecture (131M parameters) to converge effectively, achieving an FID of 3.37 where prior methods fail to converge. Code: https://github.com/amandpkr/RJF",
+  "summary_en": "Geometric interference in standard diffusion transformers prevents convergence on representation encoders, which is resolved through Riemannian flow matching with jacobi regularization enabling effective training without width scaling.",
+  "summary_zh": "标准扩散Transformer中的几何干扰阻碍了表示编码器的收敛，通过结合Jacobi正则化的黎曼流匹配可解决该问题，从而在无需宽度缩放的情况下实现有效训练。",
+  "hf_url": "https://huggingface.co/papers/2602.10099",
+  "arxiv_url": "https://arxiv.org/abs/2602.10099",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10099",
+  "github_url": "https://github.com/amandpkr/RJF",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:22:15.296928+00:00"
+}

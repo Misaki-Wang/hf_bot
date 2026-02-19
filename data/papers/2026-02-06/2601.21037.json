@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2601.21037",
+  "title": "Thinking in Frames: How Visual Context and Test-Time Scaling Empower Video Reasoning",
+  "authors": [
+    "Chengzu Li",
+    "Zanyi Wang",
+    "Jiaang Li",
+    "Yi Xu",
+    "Han Zhou",
+    "Huanyu Zhang",
+    "Ruichuan An",
+    "Dengyang Jiang",
+    "Zhaochong An",
+    "Ivan Vulić",
+    "Serge Belongie",
+    "Anna Korhonen"
+  ],
+  "abstract": "Video generation models demonstrate robust zero-shot generalization for visual reasoning tasks through explicit visual context utilization and test-time scaling capabilities. Vision-Language Models have excelled at textual reasoning, but they often struggle with fine-grained spatial understanding and continuous action planning, failing to simulate the dynamics required for complex visual reasoning . In this work, we formulate visual reasoning by means of video generation models , positing that generated frames can act as intermediate reasoning steps between initial states and solutions. We evaluate their capacity in two distinct regimes: Maze Navigation for sequential discrete planning with low visual change and Tangram Puzzle for continuous manipulation with high visual change. Our experiments reveal three critical insights: (1) Robust Zero-Shot Generalization : In both tasks, the model demonstrates strong performance on unseen data distributions without specific finetuning. (2) Visual Context : The model effectively uses visual context as explicit control, such as agent icons and tangram shapes, enabling it to maintain high visual consistency and adapt its planning capability robustly to unseen patterns. (3) Visual Test-Time Scaling : We observe a test-time scaling law in sequential planning; increasing the generated video length (visual inference budget) empowers better zero-shot generalization to spatially and temporally complex paths. These findings suggest that video generation is not merely a media tool, but a scalable, generalizable paradigm for visual reasoning .",
+  "summary_en": "Video generation models demonstrate robust zero-shot generalization for visual reasoning tasks through explicit visual context utilization and test-time scaling capabilities.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nVideo generation models demonstrate robust zero-shot generalization for visual reasoning tasks through explicit visual context utilization and test-time scaling capabilities.",
+  "hf_url": "https://huggingface.co/papers/2601.21037",
+  "arxiv_url": "https://arxiv.org/abs/2601.21037",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21037",
+  "github_url": "",
+  "upvotes": 15,
+  "fetched_at": "2026-02-19T05:42:26.025965+00:00"
+}

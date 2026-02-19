@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.12036",
+  "title": "Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models",
+  "authors": [
+    "Xin Xu",
+    "Clive Bai",
+    "Kai Yang",
+    "Tianhao Chen",
+    "Yangkun Chen",
+    "Weijie Liu",
+    "Hao Chen",
+    "Yang Wang",
+    "Saiyong Yang",
+    "Can Yang"
+  ],
+  "abstract": "Composition-RL improves reasoning capabilities by automatically composing multiple problems into new verifiable questions for reinforcement learning training. Large-scale verifiable prompts underpin the success of Reinforcement Learning with Verifiable Rewards (RLVR), but they contain many uninformative examples and are costly to expand further. Recent studies focus on better exploiting limited training data by prioritizing hard prompts whose rollout pass rate is 0. However, easy prompts with a pass rate of 1 also become increasingly prevalent as training progresses, thereby reducing the effective data size. To mitigate this, we propose Composition-RL, a simple yet useful approach for better utilizing limited verifiable prompts targeting pass-rate-1 prompts. More specifically, Composition-RL automatically composes multiple problems into a new verifiable question and uses these compositional prompts for RL training. Extensive experiments across model sizes from 4B to 30B show that Composition-RL consistently improves reasoning capability over RL trained on the original dataset. Performance can be further boosted with a curriculum variant of Composition-RL that gradually increases compositional depth over training. Additionally, Composition-RL enables more effective cross-domain RL by composing prompts drawn from different domains. Codes, datasets, and models are available at https://github.com/XinXU-USTC/Composition-RL.",
+  "summary_en": "Composition-RL improves reasoning capabilities by automatically composing multiple problems into new verifiable questions for reinforcement learning training.",
+  "summary_zh": "Composition-RL 通过自动将多个问题组合为新的可验证问题以进行强化学习训练，从而提升推理能力。",
+  "hf_url": "https://huggingface.co/papers/2602.12036",
+  "arxiv_url": "https://arxiv.org/abs/2602.12036",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12036",
+  "github_url": "https://github.com/XinXU-USTC/Composition-RL",
+  "upvotes": 91,
+  "fetched_at": "2026-02-19T06:38:44.205524+00:00"
+}

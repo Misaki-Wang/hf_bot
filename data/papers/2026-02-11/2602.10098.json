@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.10098",
+  "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model",
+  "authors": [
+    "Jingwen Sun",
+    "Wenyao Zhang",
+    "Zekun Qi",
+    "Shaojie Ren",
+    "Zezhi Liu",
+    "Hanxin Zhu",
+    "Guangzhong Sun",
+    "Xin Jin",
+    "Zhibo Chen"
+  ],
+  "abstract": "VLA-JEPA is a JEPA-style pretraining framework that improves vision-language-action policy learning by using leakage-free state prediction in latent space, enhancing generalization and robustness in manipulation tasks. Pretraining Vision-Language-Action (VLA) policies on internet-scale video is appealing, yet current latent-action objectives often learn the wrong thing: they remain anchored to pixel variation rather than action-relevant state transitions , making them vulnerable to appearance bias , nuisance motion , and information leakage . We introduce VLA- JEPA , a JEPA -style pretraining framework that sidesteps these pitfalls by design. The key idea is leakage-free state prediction: a target encoder produces latent representations from future frames , while the student pathway sees only the current observation -- future information is used solely as supervision targets, never as input. By predicting in latent space rather than pixel space, VLA- JEPA learns dynamics abstractions that are robust to camera motion and irrelevant background changes . This yields a simple two-stage recipe -- JEPA pretraining followed by action-head fine-tuning -- without the multi-stage complexity of prior latent-action pipelines. Experiments on LIBERO, LIBERO-Plus, SimplerEnv and real-world manipulation tasks show that VLA- JEPA achieves consistent gains in generalization and robustness over existing methods.",
+  "summary_en": "VLA-JEPA is a JEPA-style pretraining framework that improves vision-language-action policy learning by using leakage-free state prediction in latent space, enhancing generalization and robustness in manipulation tasks.",
+  "summary_zh": "VLA-JEPA是一种JEPA风格的预训练框架，利用潜在空间中的无泄漏状态预测改进视觉-语言-动作策略学习，提升操作任务的泛化性和鲁棒性。",
+  "hf_url": "https://huggingface.co/papers/2602.10098",
+  "arxiv_url": "https://arxiv.org/abs/2602.10098",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10098",
+  "github_url": "https://github.com/ginwind/VLA-JEPA",
+  "upvotes": 17,
+  "fetched_at": "2026-02-19T06:22:12.746685+00:00"
+}

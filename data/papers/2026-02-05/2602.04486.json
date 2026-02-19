@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.04486",
+  "title": "Beyond Unimodal Shortcuts: MLLMs as Cross-Modal Reasoners for Grounded Named Entity Recognition",
+  "authors": [
+    "Jinlong Ma",
+    "Yu Zhang",
+    "Xuefeng Bai",
+    "Kehai Chen",
+    "Yuwei Wang",
+    "Zeming Liu",
+    "Jun Yu",
+    "Min Zhang"
+  ],
+  "abstract": "MLLMs suffer from modality bias in GMNER tasks, which is addressed through a proposed method that enforces cross-modal reasoning via multi-style reasoning schema injection and constraint-guided verifiable optimization. Grounded Multimodal Named Entity Recognition ( GMNER ) aims to extract text-based entities, assign them semantic categories, and ground them to corresponding visual regions. In this work, we explore the potential of Multimodal Large Language Models (MLLMs) to perform GMNER in an end-to-end manner, moving beyond their typical role as auxiliary tools within cascaded pipelines. Crucially, our investigation reveals a fundamental challenge: MLLMs exhibit modality bias , including visual bias and textual bias, which stems from their tendency to take unimodal shortcuts rather than rigorous cross-modal verification. To address this, we propose Modality-aware Consistency Reasoning (MCR), which enforces structured cross-modal reasoning through Multi-style Reasoning Schema Injection (MRSI) and Constraint-guided Verifiable Optimization (CVO). MRSI transforms abstract constraints into executable reasoning chains, while CVO empowers the model to dynamically align its reasoning trajectories with Group Relative Policy Optimization (GRPO). Experiments on GMNER and visual grounding tasks demonstrate that MCR effectively mitigates modality bias and achieves superior performance compared to existing baselines.",
+  "summary_en": "MLLMs suffer from modality bias in GMNER tasks, which is addressed through a proposed method that enforces cross-modal reasoning via multi-style reasoning schema injection and constraint-guided verifiable optimization.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMLLMs suffer from modality bias in GMNER tasks, which is addressed through a proposed method that enforces cross-modal reasoning via multi-style reasoning schema injection and constraint-guided verifiable optimization.",
+  "hf_url": "https://huggingface.co/papers/2602.04486",
+  "arxiv_url": "https://arxiv.org/abs/2602.04486",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04486",
+  "github_url": "",
+  "upvotes": 6,
+  "fetched_at": "2026-02-19T05:27:42.029664+00:00"
+}

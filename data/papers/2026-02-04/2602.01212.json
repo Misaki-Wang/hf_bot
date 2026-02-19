@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.01212",
+  "title": "SimpleGPT: Improving GPT via A Simple Normalization Strategy",
+  "authors": [
+    "Marco Chen",
+    "Xianbiao Qi",
+    "Yelin He",
+    "Jiaquan Ye",
+    "Rong Xiao"
+  ],
+  "abstract": "SimpleNorm normalization strategy stabilizes activation scales and enables larger stable learning rates in Transformer models by reducing Hessian spectral norm, leading to improved training performance. In this work, we revisit Transformer optimization through the lens of second-order geometry and establish a direct connection between architectural design, activation scale , the Hessian matrix , and the maximum tolerable learning rate . We introduce a simple normalization strategy, termed SimpleNorm , which stabilizes intermediate activation scale s by construction. Then, by analyzing the Hessian of the loss with respect to network activations, we theoretically show that SimpleNorm significantly reduces the spectral norm of the Hessian, thereby permitting larger stable learning rate s. We validate our theoretical findings through extensive experiments on large GPT models at parameter scales 1B, 1.4B, 7B and 8B. Empirically, SimpleGPT , our SimpleNorm -based network, tolerates learning rate s 3times-10times larger than standard convention, consistently demonstrates strong optimization stability, and achieves substantially better performance than well-established baselines. Specifically, when training 7B-scale models for 60K steps, SimpleGPT achieves a training loss that is 0.08 lower than that of LLaMA2 with QKNorm , reducing the loss from 2.290 to 2.208. Our source code will be released at https://github.com/Ocram7/ SimpleGPT .",
+  "summary_en": "SimpleNorm normalization strategy stabilizes activation scales and enables larger stable learning rates in Transformer models by reducing Hessian spectral norm, leading to improved training performance.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSimpleNorm normalization strategy stabilizes activation scales and enables larger stable learning rates in Transformer models by reducing Hessian spectral norm, leading to improved training performance.",
+  "hf_url": "https://huggingface.co/papers/2602.01212",
+  "arxiv_url": "https://arxiv.org/abs/2602.01212",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01212",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:38:45.997007+00:00"
+}

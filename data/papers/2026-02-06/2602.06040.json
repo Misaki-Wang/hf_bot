@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.06040",
+  "title": "SwimBird: Eliciting Switchable Reasoning Mode in Hybrid Autoregressive MLLMs",
+  "authors": [
+    "Jintao Tong",
+    "Shilin Yan",
+    "Hongwei Xue",
+    "Xiaojun Tang",
+    "Kunyu Shi",
+    "Guannan Zhang",
+    "Ruixuan Li",
+    "Yixiong Zou"
+  ],
+  "abstract": "SwimBird is a reasoning-switchable multimodal large language model that dynamically selects between text-only, vision-only, and interleaved vision-text reasoning modes based on input queries, achieving superior performance on both textual and visual tasks. Multimodal Large Language Models (MLLMs) have made remarkable progress in multimodal perception and reasoning by bridging vision and language. However, most existing MLLMs perform reasoning primarily with textual CoT, which limits their effectiveness on vision-intensive tasks. Recent approaches inject a fixed number of continuous hidden states as \" visual thoughts \" into the reasoning process and improve visual performance, but often at the cost of degraded text-based logical reasoning. We argue that the core limitation lies in a rigid, pre-defined reasoning pattern that cannot adaptively choose the most suitable thinking modality for different user queries. We introduce SwimBird, a reasoning-switchable MLLM that dynamically switches among three reasoning modes conditioned on the input: (1) text-only reasoning, (2) vision-only reasoning ( continuous hidden states as visual thoughts ), and (3) interleaved vision-text reasoning. To enable this capability, we adopt a hybrid autoregressive formulation that unifies next-token prediction for textual thoughts with next-embedding prediction for visual thoughts , and design a systematic reasoning-mode curation strategy to construct SwimBird-SFT-92K, a diverse supervised fine-tuning dataset covering all three reasoning patterns. By enabling flexible, query-adaptive mode selection , SwimBird preserves strong textual logic while substantially improving performance on vision-dense tasks . Experiments across diverse benchmarks covering textual reasoning and challenging visual understanding demonstrate that SwimBird achieves state-of-the-art results and robust gains over prior fixed-pattern multimodal reasoning methods.",
+  "summary_en": "SwimBird is a reasoning-switchable multimodal large language model that dynamically selects between text-only, vision-only, and interleaved vision-text reasoning modes based on input queries, achieving superior performance on both textual and visual tasks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSwimBird is a reasoning-switchable multimodal large language model that dynamically selects between text-only, vision-only, and interleaved vision-text reasoning modes based on input queries, achieving superior performance on both textual and visual tasks.",
+  "hf_url": "https://huggingface.co/papers/2602.06040",
+  "arxiv_url": "https://arxiv.org/abs/2602.06040",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06040",
+  "github_url": "https://github.com/Accio-Lab/SwimBird",
+  "upvotes": 10,
+  "fetched_at": "2026-02-19T05:43:33.074834+00:00"
+}

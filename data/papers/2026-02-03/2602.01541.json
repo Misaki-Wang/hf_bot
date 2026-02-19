@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.01541",
+  "title": "Toward Cognitive Supersensing in Multimodal Large Language Model",
+  "authors": [
+    "Boyi Li",
+    "Yifan Shen",
+    "Yuanzhe Liu",
+    "Yifan Xu",
+    "Jiateng Liu",
+    "Xinzhuo Li",
+    "Zhengyuan Li",
+    "Jingyuan Zhu",
+    "Yunhan Zhong",
+    "Fangzhou Lan",
+    "Jianguo Cao",
+    "James M. Rehg",
+    "Heng Ji",
+    "Ismini Lourentzou",
+    "Xu Cao"
+  ],
+  "abstract": "MLLMs equipped with Cognitive Supersensing and Latent Visual Imagery Prediction demonstrate enhanced cognitive reasoning capabilities through integrated visual and textual reasoning pathways.",
+  "summary_en": "MLLMs equipped with Cognitive Supersensing and Latent Visual Imagery Prediction demonstrate enhanced cognitive reasoning capabilities through integrated visual and textual reasoning pathways.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMLLMs equipped with Cognitive Supersensing and Latent Visual Imagery Prediction demonstrate enhanced cognitive reasoning capabilities through integrated visual and textual reasoning pathways.",
+  "hf_url": "https://huggingface.co/papers/2602.01541",
+  "arxiv_url": "https://arxiv.org/abs/2602.01541",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01541",
+  "github_url": "https://github.com/PediaMedAI/Cognition-MLLM",
+  "upvotes": 16,
+  "fetched_at": "2026-02-19T05:36:55.996785+00:00"
+}

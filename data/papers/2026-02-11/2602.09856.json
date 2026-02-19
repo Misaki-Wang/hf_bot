@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.09856",
+  "title": "Code2World: A GUI World Model via Renderable Code Generation",
+  "authors": [
+    "Yuhao Zheng",
+    "Li'an Zhong",
+    "Yi Wang",
+    "Rui Dai",
+    "Kaikui Liu",
+    "Xiangxiang Chu",
+    "Linyuan Lv",
+    "Philip Torr",
+    "Kevin Qinghong Lin"
+  ],
+  "abstract": "Code2World enables autonomous GUI agents to predict next visual states through renderable code generation, achieving high visual fidelity and structural controllability while improving navigation performance.",
+  "summary_en": "Code2World enables autonomous GUI agents to predict next visual states through renderable code generation, achieving high visual fidelity and structural controllability while improving navigation performance.",
+  "summary_zh": "Code2World通过可渲染代码生成使自主GUI智能体能够预测下一视觉状态，实现高视觉保真度与结构可控性，同时提升导航性能。",
+  "hf_url": "https://huggingface.co/papers/2602.09856",
+  "arxiv_url": "https://arxiv.org/abs/2602.09856",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09856",
+  "github_url": "https://github.com/AMAP-ML/Code2World",
+  "upvotes": 189,
+  "fetched_at": "2026-02-19T06:22:03.257257+00:00"
+}

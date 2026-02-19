@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03619",
+  "title": "Learning Query-Specific Rubrics from Human Preferences for DeepResearch Report Generation",
+  "authors": [
+    "Changze Lv",
+    "Jie Zhou",
+    "Wentao Zhao",
+    "Jingwen Xu",
+    "Zisu Huang",
+    "Muzhao Tian",
+    "Shihan Dou",
+    "Tao Gui",
+    "Le Tian",
+    "Xiao Zhou",
+    "Xiaoqing Zheng",
+    "Xuanjing Huang"
+  ],
+  "abstract": "",
+  "summary_en": "RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation (2026)",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nRubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation (2026)",
+  "hf_url": "https://huggingface.co/papers/2602.03619",
+  "arxiv_url": "https://arxiv.org/abs/2602.03619",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03619",
+  "github_url": "",
+  "upvotes": 26,
+  "fetched_at": "2026-02-19T05:40:39.288615+00:00"
+}

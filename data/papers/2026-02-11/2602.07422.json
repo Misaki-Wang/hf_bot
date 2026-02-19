@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.07422",
+  "title": "Secure Code Generation via Online Reinforcement Learning with Vulnerability Reward Model",
+  "authors": [
+    "Tianyi Wu",
+    "Mingzhe Du",
+    "Yue Liu",
+    "Chengran Yang",
+    "Terry Yue Zhuo",
+    "Jiaheng Zhang",
+    "See-Kiong Ng"
+  ],
+  "abstract": "SecCoderX uses online reinforcement learning to align large language models for secure code generation while preserving functionality, addressing the functionality-security trade-off through vulnerability detection integration and reward modeling. Large language models (LLMs) are increasingly used in software development, yet their tendency to generate insecure code remains a major barrier to real-world deployment. Existing secure code alignment methods often suffer from a functionality--security paradox, improving security at the cost of substantial utility degradation. We propose SecCoderX, an online reinforcement learning framework for functionality-preserving secure code generation . SecCoderX first bridges vulnerability detection and secure code generation by repurposing mature detection resources in two ways: (i) synthesizing diverse, reality-grounded vulnerability-inducing coding tasks for online RL rollouts, and (ii) training a reasoning-based vulnerability reward model that provides scalable and reliable security supervision . Together, these components are unified in an online RL loop to align code LLMs to generate secure and functional code. Extensive experiments demonstrate that SecCoderX achieves state-of-the-art performance, improving Effective Safety Rate (ESR) by approximately 10% over unaligned models, whereas prior methods often degrade ESR by 14-54%. We release our code, dataset and model checkpoints at https://github.com/AndrewWTY/SecCoderX.",
+  "summary_en": "SecCoderX uses online reinforcement learning to align large language models for secure code generation while preserving functionality, addressing the functionality-security trade-off through vulnerability detection integration and reward modeling.",
+  "summary_zh": "SecCoderX 利用在线强化学习对齐大语言模型，在保留功能性的同时实现安全代码生成，并通过集成漏洞检测与奖励建模解决功能与安全性的权衡问题。",
+  "hf_url": "https://huggingface.co/papers/2602.07422",
+  "arxiv_url": "https://arxiv.org/abs/2602.07422",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07422",
+  "github_url": "https://github.com/AndrewWTY/SecCoderX",
+  "upvotes": 21,
+  "fetched_at": "2026-02-19T06:21:03.217258+00:00"
+}

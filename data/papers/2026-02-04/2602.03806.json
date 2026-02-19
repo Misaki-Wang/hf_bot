@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03806",
+  "title": "Bridging Online and Offline RL: Contextual Bandit Learning for Multi-Turn Code Generation",
+  "authors": [
+    "Ziru Chen",
+    "Dongdong Chen",
+    "Ruinan Jin",
+    "Yingbin Liang",
+    "Yujia Xie",
+    "Huan Sun"
+  ],
+  "abstract": "Offline reinforcement learning method combines contextual bandit learning with partial trajectories to improve multi-turn code generation performance while reducing training costs.",
+  "summary_en": "Offline reinforcement learning method combines contextual bandit learning with partial trajectories to improve multi-turn code generation performance while reducing training costs.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nOffline reinforcement learning method combines contextual bandit learning with partial trajectories to improve multi-turn code generation performance while reducing training costs.",
+  "hf_url": "https://huggingface.co/papers/2602.03806",
+  "arxiv_url": "https://arxiv.org/abs/2602.03806",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03806",
+  "github_url": "https://github.com/OSU-NLP-Group/cobalt",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:27:08.954330+00:00"
+}

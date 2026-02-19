@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.04998",
+  "title": "Learning Rate Matters: Vanilla LoRA May Suffice for LLM Fine-tuning",
+  "authors": [
+    "Yu-Ang Lee",
+    "Ching-Yun Ko",
+    "Pin-Yu Chen",
+    "Mi-Yen Yeh"
+  ],
+  "abstract": "Systematic evaluation of LoRA variants reveals that proper hyperparameter tuning eliminates performance differences between methods, with vanilla LoRA remaining competitive. Low-Rank Adaptation (LoRA) is the prevailing approach for efficient large language model (LLM) fine-tuning . Building on this paradigm, recent studies have proposed alternative initialization strategies and architectural modifications, reporting substantial improvements over vanilla LoRA. However, these gains are often demonstrated under fixed or narrowly tuned hyperparameter settings, despite the known sensitivity of neural networks to training configurations. In this work, we systematically re-evaluate four representative LoRA variants alongside vanilla LoRA through extensive hyperparameter search es. Across mathematical and code generation tasks on diverse model scales, we find that different LoRA methods favor distinct learning rate ranges. Crucially, once learning rate s are properly tuned, all methods achieve similar peak performance (within 1-2%), with only subtle rank-dependent behaviors. These results suggest that vanilla LoRA remains a competitive baseline and that improvements reported under single training configuration may not reflect consistent methodological advantages. Finally, a second-order analysis attributes the differing optimal learning rate ranges to variations in the largest Hessian eigenvalue , aligning with classical learning theories.",
+  "summary_en": "Systematic evaluation of LoRA variants reveals that proper hyperparameter tuning eliminates performance differences between methods, with vanilla LoRA remaining competitive.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSystematic evaluation of LoRA variants reveals that proper hyperparameter tuning eliminates performance differences between methods, with vanilla LoRA remaining competitive.",
+  "hf_url": "https://huggingface.co/papers/2602.04998",
+  "arxiv_url": "https://arxiv.org/abs/2602.04998",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04998",
+  "github_url": "",
+  "upvotes": 6,
+  "fetched_at": "2026-02-19T05:42:55.360278+00:00"
+}

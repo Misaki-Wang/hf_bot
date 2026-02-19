@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.09070",
+  "title": "NarraScore: Bridging Visual Narrative and Musical Dynamics via Hierarchical Affective Control",
+  "authors": [
+    "Yufan Wen",
+    "Zhaocheng Liu",
+    "YeGuo Hua",
+    "Ziyi Guo",
+    "Lihua Zhang",
+    "Chun Yuan",
+    "Jian Wu"
+  ],
+  "abstract": "NarraScore presents a hierarchical framework that uses frozen Vision-Language Models as affective sensors to generate coherent soundtracks for long-form videos by combining global semantic anchors with token-level adaptive modulation. Synthesizing coherent soundtracks for long-form videos remains a formidable challenge, currently stalled by three critical impediments: computational scalability, temporal coherence, and, most critically, a pervasive semantic blindness to evolving narrative logic. To bridge these gaps, we propose NarraScore, a hierarchical framework predicated on the core insight that emotion serves as a high-density compression of narrative logic. Uniquely, we repurpose frozen Vision-Language Models (VLMs) as continuous affective sensors, distilling high-dimensional visual streams into dense, narrative-aware Valence-Arousal trajectories . Mechanistically, NarraScore employs a Dual-Branch Injection strategy to reconcile global structure with local dynamism: a Global Semantic Anchor ensures stylistic stability, while a surgical Token-Level Affective Adapter modulates local tension via direct element-wise residual injection . This minimalist design bypasses the bottlenecks of dense attention and architectural cloning, effectively mitigating the overfitting risks associated with data scarcity. Experiments demonstrate that NarraScore achieves state-of-the-art consistency and narrative alignment with negligible computational overhead, establishing a fully autonomous paradigm for long-video soundtrack generation.",
+  "summary_en": "NarraScore presents a hierarchical framework that uses frozen Vision-Language Models as affective sensors to generate coherent soundtracks for long-form videos by combining global semantic anchors with token-level adaptive modulation.",
+  "summary_zh": "NarraScore提出了一种层次化框架，利用冻结的视觉-语言模型作为情感传感器，结合全局语义锚点与token级自适应调制，为长视频生成连贯音轨。",
+  "hf_url": "https://huggingface.co/papers/2602.09070",
+  "arxiv_url": "https://arxiv.org/abs/2602.09070",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09070",
+  "github_url": "",
+  "upvotes": 43,
+  "fetched_at": "2026-02-19T06:37:53.440952+00:00"
+}

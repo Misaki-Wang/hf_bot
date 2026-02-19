@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.07954",
+  "title": "Bielik Guard: Efficient Polish Language Safety Classifiers for LLM Content Moderation",
+  "authors": [
+    "Krzysztof Wróbel",
+    "Jan Maria Kowalski",
+    "Jerzy Surma",
+    "Igor Ciuciura",
+    "Maciej Szymański"
+  ],
+  "abstract": "Bielik Guard is a compact Polish language safety classifier family with two variants that effectively categorize content across five safety domains while maintaining high efficiency and accuracy.",
+  "summary_en": "Bielik Guard is a compact Polish language safety classifier family with two variants that effectively categorize content across five safety domains while maintaining high efficiency and accuracy.",
+  "summary_zh": "Bielik Guard 是一个紧凑的波兰语安全分类器系列，包含两种变体，可有效对内容进行跨五个安全领域的分类，同时保持高效率和准确性。",
+  "hf_url": "https://huggingface.co/papers/2602.07954",
+  "arxiv_url": "https://arxiv.org/abs/2602.07954",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07954",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T06:30:54.403375+00:00"
+}

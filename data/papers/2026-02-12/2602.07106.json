@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.07106",
+  "title": "Ex-Omni: Enabling 3D Facial Animation Generation for Omni-modal Large Language Models",
+  "authors": [
+    "Haoyu Zhang",
+    "Zhipeng Li",
+    "Yiwen Guo",
+    "Tianshu Yu"
+  ],
+  "abstract": "Ex-Omni is an open-source framework that enhances omni-modal large language models with speech-accompanied 3D facial animation by decoupling semantic reasoning from temporal generation and using speech units as temporal scaffolding. Omni-modal large language models (OLLMs) aim to unify multimodal understanding and generation, yet incorporating speech with 3D facial animation remains largely unexplored despite its importance for natural interaction. A key challenge arises from the representation mismatch between discrete, token-level semantic reasoning in LLMs and the dense, fine-grained temporal dynamics required for 3D facial motion, which makes direct modeling difficult to optimize under limited data. We propose Expressive Omni (Ex-Omni), an open-source omni-modal framework that augments OLLMs with speech-accompanied 3D facial animation . Ex-Omni reduces learning difficulty by decoupling semantic reasoning from temporal generation , leveraging speech units as temporal scaffolding and a unified token-as-query gated fusion (TQGF) mechanism for controlled semantic injection. We further introduce InstructEx, a dataset aims to facilitate augment OLLMs with speech-accompanied 3D facial animation . Extensive experiments demonstrate that Ex-Omni performs competitively against existing open-source OLLMs while enabling stable aligned speech and facial animation generation.",
+  "summary_en": "Ex-Omni is an open-source framework that enhances omni-modal large language models with speech-accompanied 3D facial animation by decoupling semantic reasoning from temporal generation and using speech units as temporal scaffolding.",
+  "summary_zh": "Ex-Omni是一个开源框架，通过将语义推理与时序生成解耦，并使用语音单元作为时序支架，为全模态大语言模型增强伴随语音的3D面部动画能力。",
+  "hf_url": "https://huggingface.co/papers/2602.07106",
+  "arxiv_url": "https://arxiv.org/abs/2602.07106",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07106",
+  "github_url": "",
+  "upvotes": 11,
+  "fetched_at": "2026-02-19T06:30:49.746964+00:00"
+}

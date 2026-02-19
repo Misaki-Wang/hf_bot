@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.08961",
+  "title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+  "authors": [
+    "Ruijie Zhu",
+    "Jiahao Lu",
+    "Wenbo Hu",
+    "Xiaoguang Han",
+    "Jianfei Cai",
+    "Ying Shan",
+    "Chuanxia Zheng"
+  ],
+  "abstract": "MotionCrafter is a video diffusion framework that jointly reconstructs 4D geometry and estimates dense motion using a novel joint representation and 4D VAE architecture. We introduce MotionCrafter, a video diffusion -based framework that jointly reconstructs 4D geometry and estimates dense motion from a monocular video. The core of our method is a novel joint representation of dense 3D point maps and 3D scene flows in a shared coordinate system , and a novel 4D VAE to effectively learn this representation. Unlike prior work that forces the 3D value and latents to align strictly with RGB VAE latents -despite their fundamentally different distributions-we show that such alignment is unnecessary and leads to suboptimal performance. Instead, we introduce a new data normalization and VAE training strategy that better transfers diffusion priors and greatly improves reconstruction quality. Extensive experiments across multiple datasets demonstrate that MotionCrafter achieves state-of-the-art performance in both geometry reconstruction and dense scene flow estimation, delivering 38.64% and 25.0% improvements in geometry and motion reconstruction, respectively, all without any post-optimization. Project page: https://ruijiezhu94.github.io/MotionCrafter_Page",
+  "summary_en": "MotionCrafter is a video diffusion framework that jointly reconstructs 4D geometry and estimates dense motion using a novel joint representation and 4D VAE architecture.",
+  "summary_zh": "MotionCrafter是一种视频扩散框架，利用新颖的联合表示与4D VAE架构，联合重建4D几何并估计稠密运动。",
+  "hf_url": "https://huggingface.co/papers/2602.08961",
+  "arxiv_url": "https://arxiv.org/abs/2602.08961",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08961",
+  "github_url": "https://github.com/TencentARC/MotionCrafter",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:03:40.866859+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03796",
+  "title": "3D-Aware Implicit Motion Control for View-Adaptive Human Video Generation",
+  "authors": [
+    "Zhixue Fang",
+    "Xu He",
+    "Songlin Tang",
+    "Haoxian Zhang",
+    "Qingfeng Li",
+    "Xiaoqiang Liu",
+    "Pengfei Wan",
+    "Kun Gai"
+  ],
+  "abstract": "3DiMo enables view-agnostic human motion control in video generation by training a motion encoder alongside a pretrained video generator to distill driving frames into compact motion tokens that align with the generator's spatial priors. Existing methods for human motion control in video generation typically rely on either 2D poses or explicit 3D parametric models (e.g., SMPL ) as control signals. However, 2D poses rigidly bind motion to the driving viewpoint, precluding novel-view synthesis. Explicit 3D models, though structurally informative, suffer from inherent inaccuracies (e.g., depth ambiguity and inaccurate dynamics) which, when used as a strong constraint, override the powerful intrinsic 3D awareness of large-scale video generator s. In this work, we revisit motion control from a 3D-aware perspective, advocating for an implicit, view-agnostic motion representation that naturally aligns with the generator's spatial priors rather than depending on externally reconstructed constraints. We introduce 3DiMo, which jointly trains a motion encoder with a pretrained video generator to distill driving frames into compact, view-agnostic motion tokens , injected semantically via cross-attention . To foster 3D awareness, we train with view-rich supervision (i.e., single-view, multi-view, and moving-camera videos), forcing motion consistency across diverse viewpoints. Additionally, we use auxiliary geometric supervision that leverages SMPL only for early initialization and is annealed to zero, enabling the model to transition from external 3D guidance to learning genuine 3D spatial motion understanding from the data and the generator's priors. Experiments confirm that 3DiMo faithfully reproduces driving motions with flexible, text-driven camera control , significantly surpassing existing methods in both motion fidelity and visual quality .",
+  "summary_en": "3DiMo enables view-agnostic human motion control in video generation by training a motion encoder alongside a pretrained video generator to distill driving frames into compact motion tokens that align with the generator's spatial priors.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\n3DiMo enables view-agnostic human motion control in video generation by training a motion encoder alongside a pretrained video generator to distill driving frames into compact motion tokens that align with the generator's spatial priors.",
+  "hf_url": "https://huggingface.co/papers/2602.03796",
+  "arxiv_url": "https://arxiv.org/abs/2602.03796",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03796",
+  "github_url": "",
+  "upvotes": 57,
+  "fetched_at": "2026-02-19T05:27:07.523133+00:00"
+}

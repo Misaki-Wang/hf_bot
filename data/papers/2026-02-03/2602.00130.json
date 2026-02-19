@@ -1,0 +1,17 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.00130",
+  "title": "On the Relationship Between Representation Geometry and Generalization in Deep Neural Networks",
+  "authors": [
+    "Sumit Yadav"
+  ],
+  "abstract": "Effective dimension, an unsupervised geometric metric, strongly predicts neural network performance across different architectures and domains, showing bidirectional causality between representation geometry and accuracy. We investigate the relationship between representation geometry and neural network performance . Analyzing 52 pretrained ImageNet models across 13 architecture families , we show that effective dimension -- an unsupervised geometric metric -- strongly predicts accuracy. Output effective dimension achieves partial r=0.75 (p < 10^(-10)) after controlling for model capacity, while total compression achieves partial r=-0.72. These findings replicate across ImageNet and CIFAR-10, and generalize to NLP: effective dimension predicts performance for 8 encoder models on SST-2/MNLI and 15 decoder-only LLMs on AG News (r=0.69, p=0.004), while model size does not (r=0.07). We establish bidirectional causality: degrading geometry via noise causes accuracy loss (r=-0.94, p < 10^(-9)), while improving geometry via PCA maintains accuracy across architectures (-0.03pp at 95% variance). This relationship is noise-type agnostic -- Gaussian, Uniform, Dropout, and Salt-and-pepper noise all show |r| > 0.90. These results establish that effective dimension provides domain-agnostic predictive and causal information about neural network performance , computed entirely without labels.",
+  "summary_en": "Effective dimension, an unsupervised geometric metric, strongly predicts neural network performance across different architectures and domains, showing bidirectional causality between representation geometry and accuracy.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nEffective dimension, an unsupervised geometric metric, strongly predicts neural network performance across different architectures and domains, showing bidirectional causality between representation geometry and accuracy.",
+  "hf_url": "https://huggingface.co/papers/2602.00130",
+  "arxiv_url": "https://arxiv.org/abs/2602.00130",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.00130",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:36:20.243558+00:00"
+}

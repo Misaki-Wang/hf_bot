@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.09901",
+  "title": "QP-OneModel: A Unified Generative LLM for Multi-Task Query Understanding in Xiaohongshu Search",
+  "authors": [
+    "Jianzhao Huang",
+    "Xiaorui Huang",
+    "Fei Zhao",
+    "Yunpeng Liu",
+    "Hui Zhang",
+    "Fangcheng Shi",
+    "Congfeng Li",
+    "Zechen Sun",
+    "Yi Wu",
+    "Yao Hu",
+    "Yunhan Bai",
+    "Shaosheng Cao"
+  ],
+  "abstract": "A unified generative large language model approach for social network search query processing that improves semantic understanding through multi-task learning and reinforcement learning while enhancing downstream task performance. Query Processing (QP) bridges user intent and content supply in large-scale Social Network Service (SNS) search engines. Traditional QP systems rely on pipelines of isolated discriminative models (e.g., BERT), suffering from limited semantic understanding and high maintenance overhead. While Large Language Models (LLMs) offer a potential solution, existing approaches often optimize sub-tasks in isolation, neglecting intrinsic semantic synergy and necessitating independent iterations. Moreover, standard generative methods often lack grounding in SNS scenarios, failing to bridge the gap between open-domain corpora and informal SNS linguistic patterns, while struggling to adhere to rigorous business definitions. We present QP-OneModel, a Unified Generative LLM for Multi-Task Query Understanding in the SNS domain. We reformulate heterogeneous sub-tasks into a unified sequence generation paradigm, adopting a progressive three-stage alignment strategy culminating in multi-reward Reinforcement Learning . Furthermore, QP-OneModel generates intent descriptions as a novel high-fidelity semantic signal, effectively augmenting downstream tasks such as query rewriting and ranking . Offline evaluations show QP-OneModel achieves a 7.35% overall gain over discriminative baselines, with significant F1 boosts in NER (+9.01%) and Term Weighting (+9.31%). It also exhibits superior generalization, surpassing a 32B model by 7.60% accuracy on unseen tasks. Fully deployed at Xiaohongshu, online A/B tests confirm its industrial value, optimizing retrieval relevance (DCG) by 0.21% and lifting user retention by 0.044%.",
+  "summary_en": "A unified generative large language model approach for social network search query processing that improves semantic understanding through multi-task learning and reinforcement learning while enhancing downstream task performance.",
+  "summary_zh": "一种用于社交网络搜索查询处理的统一生成式大语言模型方法，通过多任务学习和强化学习提升语义理解，同时增强下游任务性能。",
+  "hf_url": "https://huggingface.co/papers/2602.09901",
+  "arxiv_url": "https://arxiv.org/abs/2602.09901",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09901",
+  "github_url": "",
+  "upvotes": 6,
+  "fetched_at": "2026-02-19T06:31:23.269499+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.12176",
+  "title": "Single-minus gluon tree amplitudes are nonzero",
+  "authors": [
+    "Alfredo Guevara",
+    "Alexandru Lupsasca",
+    "David Skinner",
+    "Andrew Strominger",
+    "Kevin Weil"
+  ],
+  "abstract": "Single-minus tree-level n-gluon scattering amplitudes are reconsidered. Often presumed to vanish, they are shown here to be nonvanishing for certain \"half-collinear\" configurations existing in Klein space or for complexified momenta. We derive a piecewise-constant closed-form expression for the decay of a single minus-helicity gluon into n-1 plus-helicity gluons as a function of their momenta. This formula nontrivially satisfies multiple consistency conditions including Weinberg's soft theorem.",
+  "summary_en": "Single-minus tree-level n-gluon scattering amplitudes, often presumed to vanish, are shown to be nonvanishing for \"half-collinear\" configurations in Klein space or for complexified momenta. The authors derive a piecewise-constant closed-form expression for the decay of a single minus-helicity gluon into n-1 plus-helicity gluons as a function of their momenta. This formula nontrivially satisfies multiple consistency conditions including Weinberg's soft theorem.",
+  "summary_zh": "通常被认为消失的单负号树图级n胶子散射振幅，在Klein空间的“半共线”构型或复化动量下被证明非零。作者推导出了单负螺旋度胶子衰变为n-1个正螺旋度胶子的分段常数闭式表达式，该式是这些胶子动量的函数。该公式非平凡地满足包括Weinberg软定理在内的多种一致性条件。",
+  "hf_url": "https://huggingface.co/papers/2602.12176",
+  "arxiv_url": "https://arxiv.org/abs/2602.12176",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12176",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T06:39:02.024004+00:00"
+}

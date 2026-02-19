@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.04210",
+  "title": "Steering LLMs via Scalable Interactive Oversight",
+  "authors": [
+    "Enyu Zhou",
+    "Zhiheng Xi",
+    "Long Ma",
+    "Zhihao Zhang",
+    "Shihan Dou",
+    "Zhikai Lei",
+    "Guoteng Wang",
+    "Rui Zheng",
+    "Hang Yan",
+    "Tao Gui",
+    "Qi Zhang",
+    "Xuanjing Huang"
+  ],
+  "abstract": "Scalable Interactive Oversight framework decomposes complex tasks into manageable decision trees to enhance human supervision and alignment in AI systems. As Large Language Models increasingly automate complex, long-horizon tasks such as vibe coding , a supervision gap has emerged. While models excel at execution, users often struggle to guide them effectively due to insufficient domain expertise, the difficulty of articulating precise intent, and the inability to reliably validate complex outputs. It presents a critical challenge in scalable oversight : enabling humans to responsibly steer AI systems on tasks that surpass their own ability to specify or verify. To tackle this, we propose Scalable Interactive Oversight , a framework that decomposes complex intent into a recursive tree of manageable decisions to amplify human supervision. Rather than relying on open-ended prompting, our system elicits low-burden feedback at each node and recursively aggregates these signals into precise global guidance. Validated in web development task, our framework enables non-experts to produce expert-level Product Requirement Documents, achieving a 54\\% improvement in alignment . Crucially, we demonstrate that this framework can be optimized via Reinforcement Learning using only online user feedback , offering a practical pathway for maintaining human control as AI scales.",
+  "summary_en": "Scalable Interactive Oversight framework decomposes complex tasks into manageable decision trees to enhance human supervision and alignment in AI systems.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nScalable Interactive Oversight framework decomposes complex tasks into manageable decision trees to enhance human supervision and alignment in AI systems.",
+  "hf_url": "https://huggingface.co/papers/2602.04210",
+  "arxiv_url": "https://arxiv.org/abs/2602.04210",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04210",
+  "github_url": "",
+  "upvotes": 18,
+  "fetched_at": "2026-02-19T05:42:46.572486+00:00"
+}

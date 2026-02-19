@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.08052",
+  "title": "Graph-Enhanced Deep Reinforcement Learning for Multi-Objective Unrelated Parallel Machine Scheduling",
+  "authors": [
+    "Bulent Soykan",
+    "Sean Mondesire",
+    "Ghaith Rabadi",
+    "Grace Bochenek"
+  ],
+  "abstract": "A Deep Reinforcement Learning framework combining Proximal Policy Optimization and Graph Neural Networks addresses multi-objective scheduling challenges by effectively balancing total weighted tardiness and total setup time. The Unrelated Parallel Machine Scheduling Problem (UPMSP) with release dates, setups, and eligibility constraints presents a significant multi-objective challenge. Traditional methods struggle to balance minimizing Total Weighted Tardiness (TWT) and Total Setup Time (TST). This paper proposes a Deep Reinforcement Learning framework using Proximal Policy Optimization (PPO) and a Graph Neural Network (GNN). The GNN effectively represents the complex state of jobs, machines, and setups, allowing the PPO agent to learn a direct scheduling policy. Guided by a multi-objective reward function, the agent simultaneously minimizes TWT and TST. Experimental results on benchmark instances demonstrate that our PPO-GNN agent significantly outperforms a standard dispatching rule and a metaheuristic, achieving a superior trade-off between both objectives. This provides a robust and scalable solution for complex manufacturing scheduling.",
+  "summary_en": "A Deep Reinforcement Learning framework combining Proximal Policy Optimization and Graph Neural Networks addresses multi-objective scheduling challenges by effectively balancing total weighted tardiness and total setup time.",
+  "summary_zh": "一种结合近端策略优化（PPO）与图神经网络（GNN）的深度强化学习框架，通过有效平衡总加权拖期与总准备时间，解决多目标调度挑战。",
+  "hf_url": "https://huggingface.co/papers/2602.08052",
+  "arxiv_url": "https://arxiv.org/abs/2602.08052",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08052",
+  "github_url": "https://github.com/bulentsoykan/GNN-DRL4UPMSP",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:30:59.288274+00:00"
+}

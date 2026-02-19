@@ -92,27 +92,27 @@ jobs:
           print(f"Target date: {target_date}")
           PY
 
-      - name: Fetch papers
-        run: python scripts/fetch_daily.py --date "${{ steps.resolve_date.outputs.date }}" --skip-existing-complete
-
-      - name: Translate summaries
-        env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
-          OPENROUTER_APP_NAME: hf-papers-archive
-          OPENROUTER_APP_URL: https://github.com/${{ github.repository }}
-          TRANSLATOR: ${{ github.event.inputs.translator || 'auto' }}
-          TRANSLATE_WORKERS: ${{ github.event.inputs.translate_workers || '6' }}
-        run: python scripts/translate.py --provider "$TRANSLATOR" --date "${{ steps.resolve_date.outputs.date }}" --workers "$TRANSLATE_WORKERS"
-
-      - name: Build JSON indexes
+      - name: Run day pipeline (fetch -> translate -> index)
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
           OPENROUTER_SUMMARY_MODEL: ${{ secrets.OPENROUTER_SUMMARY_MODEL }}
           OPENROUTER_APP_NAME: hf-papers-archive
           OPENROUTER_APP_URL: https://github.com/${{ github.repository }}
-        run: python scripts/build_index.py
+          ARCHIVE_TIMEZONE: Asia/Shanghai
+          ARCHIVE_RELEASE_HOUR: '8'
+          ARCHIVE_RELEASE_MINUTE: '0'
+          ARCHIVE_RELEASE_DELAY_DAYS: '1'
+          TRANSLATOR: ${{ github.event.inputs.translator || 'auto' }}
+          TRANSLATE_WORKERS: ${{ github.event.inputs.translate_workers || '6' }}
+        run: |
+          python scripts/backfill_range.py \
+            --start "${{ steps.resolve_date.outputs.date }}" \
+            --end "${{ steps.resolve_date.outputs.date }}" \
+            --provider "$TRANSLATOR" \
+            --workers "$TRANSLATE_WORKERS" \
+            --model "${OPENROUTER_MODEL:-}" \
+            --skip-existing-complete
 
       - name: Detect data changes
         id: data_changes

@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.07125",
+  "title": "Reasoning-Augmented Representations for Multimodal Retrieval",
+  "authors": [
+    "Jianrui Zhang",
+    "Anirudh Sundara Rajan",
+    "Brandon Han",
+    "Soochahn Lee",
+    "Sukanta Ganguly",
+    "Yong Jae Lee"
+  ],
+  "abstract": "UMR systems face challenges with latent reasoning tasks, which the proposed framework addresses by decoupling reasoning from retrieval through enhanced visual and textual representations. Universal Multimodal Retrieval (UMR) seeks any-to-any search across text and vision, yet modern embedding models remain brittle when queries require latent reasoning (e.g., resolving underspecified references or matching compositional constraints ). We argue this brittleness is often data-induced: when images carry \"silent\" evidence and queries leave key semantics implicit, a single embedding pass must both reason and compress, encouraging spurious feature matching. We propose a data-centric framework that decouples these roles by externalizing reasoning before retrieval. Using a strong Vision--Language Model, we make implicit semantics explicit by densely captioning visual evidence in corpus entries, resolving ambiguous multimodal references in queries, and rewriting verbose instructions into concise retrieval constraints . Inference-time enhancement alone is insufficient; the retriever must be trained on these semantically dense representations to avoid distribution shift and fully exploit the added signal. Across M-BEIR, our reasoning-augmented training method yields consistent gains over strong baselines, with ablations showing that corpus enhancement chiefly benefits knowledge-intensive queries while query enhancement is critical for compositional modification requests. We publicly release our code at https://github.com/AugmentedRetrieval/ReasoningAugmentedRetrieval.",
+  "summary_en": "UMR systems face challenges with latent reasoning tasks, which the proposed framework addresses by decoupling reasoning from retrieval through enhanced visual and textual representations.",
+  "summary_zh": "UMR系统在处理隐式推理任务时面临挑战，所提框架通过增强视觉与文本表征来解耦推理与检索，从而解决该问题。",
+  "hf_url": "https://huggingface.co/papers/2602.07125",
+  "arxiv_url": "https://arxiv.org/abs/2602.07125",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07125",
+  "github_url": "https://github.com/AugmentedRetrieval/ReasoningAugmentedRetrieval",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T06:02:42.950672+00:00"
+}

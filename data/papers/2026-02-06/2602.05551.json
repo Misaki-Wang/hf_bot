@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.05551",
+  "title": "FastVMT: Eliminating Redundancy in Video Motion Transfer",
+  "authors": [
+    "Yue Ma",
+    "Zhikai Wang",
+    "Tianhao Ren",
+    "Mingzhe Zheng",
+    "Hongyu Liu",
+    "Jiayi Guo",
+    "Mark Fong",
+    "Yuxuan Xue",
+    "Zixiang Zhao",
+    "Konrad Schindler",
+    "Qifeng Chen",
+    "Linfeng Zhang"
+  ],
+  "abstract": "FastVMT accelerates video motion transfer by addressing computational redundancies in Diffusion Transformer architecture through localized attention masking and gradient reuse optimization. Video motion transfer aims to synthesize videos by generating visual content according to a text prompt while transferring the motion pattern observed in a reference video. Recent methods predominantly use the Diffusion Transformer (DiT) architecture. To achieve satisfactory runtime, several methods attempt to accelerate the computations in the DiT, but fail to address structural sources of inefficiency. In this work, we identify and remove two types of computational redundancy in earlier work: motion redundancy arises because the generic DiT architecture does not reflect the fact that frame-to-frame motion is small and smooth; gradient redundancy occurs if one ignores that gradients change slowly along the diffusion trajectory . To mitigate motion redundancy, we mask the corresponding attention layers to a local neighborhood such that interaction weights are not computed unnecessarily distant image regions. To exploit gradient redundancy, we design an optimization scheme that reuses gradients from previous diffusion steps and skips unwarranted gradient computations. On average, FastVMT achieves a 3.43x speedup without degrading the visual fidelity or the temporal consistency of the generated videos.",
+  "summary_en": "FastVMT accelerates video motion transfer by addressing computational redundancies in Diffusion Transformer architecture through localized attention masking and gradient reuse optimization.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nFastVMT accelerates video motion transfer by addressing computational redundancies in Diffusion Transformer architecture through localized attention masking and gradient reuse optimization.",
+  "hf_url": "https://huggingface.co/papers/2602.05551",
+  "arxiv_url": "https://arxiv.org/abs/2602.05551",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05551",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:43:13.581813+00:00"
+}

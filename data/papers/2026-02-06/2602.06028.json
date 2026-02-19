@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.06028",
+  "title": "Context Forcing: Consistent Autoregressive Video Generation with Long Context",
+  "authors": [
+    "Shuo Chen",
+    "Cong Wei",
+    "Sun Sun",
+    "Ping Nie",
+    "Kai Zhou",
+    "Ge Zhang",
+    "Ming-Hsuan Yang",
+    "Wenhu Chen"
+  ],
+  "abstract": "Context Forcing addresses student-teacher mismatch in long video generation by using a long-context teacher to guide long-rollout students through a Slow-Fast Memory architecture that extends context length beyond 20 seconds.",
+  "summary_en": "Context Forcing addresses student-teacher mismatch in long video generation by using a long-context teacher to guide long-rollout students through a Slow-Fast Memory architecture that extends context length beyond 20 seconds.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nContext Forcing addresses student-teacher mismatch in long video generation by using a long-context teacher to guide long-rollout students through a Slow-Fast Memory architecture that extends context length beyond 20 seconds.",
+  "hf_url": "https://huggingface.co/papers/2602.06028",
+  "arxiv_url": "https://arxiv.org/abs/2602.06028",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06028",
+  "github_url": "https://github.com/TIGER-AI-Lab/Context-Forcing",
+  "upvotes": 35,
+  "fetched_at": "2026-02-19T05:43:25.964003+00:00"
+}

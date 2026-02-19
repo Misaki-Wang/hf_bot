@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06554",
+  "title": "SeeUPO: Sequence-Level Agentic-RL with Convergence Guarantees",
+  "authors": [
+    "Tianyi Hu",
+    "Qingxu Fu",
+    "Yanxi Chen",
+    "Zhaoyang Liu",
+    "Bolin Ding"
+  ],
+  "abstract": "SeeUPO is a critic-free reinforcement learning method that ensures convergence guarantees in multi-turn agent interactions by modeling sequential decision-making as multi-agent bandit problems and using backward induction for policy updates. Reinforcement learning (RL) has emerged as the predominant paradigm for training large language model (LLM)-based AI agents. However, existing backbone RL algorithms lack verified convergence guarantees in agentic scenarios, especially in multi-turn settings, which can lead to training instability and failure to converge to optimal policies. In this paper, we systematically analyze how different combinations of policy update mechanisms and advantage estimation methods affect convergence properties in single/ multi-turn scenarios . We find that REINFORCE with Group Relative Advantage Estimation (GRAE) can converge to the globally optimal under undiscounted conditions, but the combination of PPO & GRAE breaks PPO 's original monotonic improvement property. Furthermore, we demonstrate that mainstream backbone RL algorithms cannot simultaneously achieve both critic-free and convergence guarantees in multi-turn scenarios . To address this, we propose SeeUPO (Sequence-level Sequential Update Policy Optimization), a critic-free approach with convergence guarantees for multi-turn interactions. SeeUPO models multi-turn interaction as sequentially executed multi-agent bandit problems . Through turn-by-turn sequential policy updates in reverse execution order, it ensures monotonic improvement and convergence to global optimal solution via backward induction . Experiments on AppWorld and BFCL v4 demonstrate SeeUPO's substantial improvements over existing backbone algorithms: relative gains of 43.3%-54.6% on Qwen3-14B and 24.1%-41.9% on Qwen2.5-14B (averaged across benchmarks), along with superior training stability.",
+  "summary_en": "SeeUPO is a critic-free reinforcement learning method that ensures convergence guarantees in multi-turn agent interactions by modeling sequential decision-making as multi-agent bandit problems and using backward induction for policy updates.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSeeUPO is a critic-free reinforcement learning method that ensures convergence guarantees in multi-turn agent interactions by modeling sequential decision-making as multi-agent bandit problems and using backward induction for policy updates.",
+  "hf_url": "https://huggingface.co/papers/2602.06554",
+  "arxiv_url": "https://arxiv.org/abs/2602.06554",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06554",
+  "github_url": "",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:44:22.936836+00:00"
+}

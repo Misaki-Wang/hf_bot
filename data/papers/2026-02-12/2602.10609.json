@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.10609",
+  "title": "Online Causal Kalman Filtering for Stable and Effective Policy Optimization",
+  "authors": [
+    "Shuo He",
+    "Lang Feng",
+    "Xin Cheng",
+    "Lei Feng",
+    "Bo An"
+  ],
+  "abstract": "Online Causal Kalman Filtering addresses high-variance token-level importance sampling in reinforcement learning for large language models by modeling IS ratios as evolving latent states and using Kalman filtering for stable policy optimization. Reinforcement learning for large language models suffers from high-variance token-level importance sampling (IS) ratios, which would destabilize policy optimization at scale. To improve stability, recent methods typically use a fixed sequence-level IS ratio for all tokens in a sequence or adjust each token's IS ratio separately, thereby neglecting temporal off-policy derivation across tokens in a sequence. In this paper, we first empirically identify that local off-policy deviation is structurally inconsistent at the token level, which may distort policy-gradient updates across adjacent tokens and lead to training collapse . To address the issue, we propose Online Causal Kalman Filter ing for stable and effective Policy Optimization (KPO). Concretely, we model the desired IS ratio as a latent state that evolves across tokens and apply a Kalman filter to update this state online and autoregressively based on the states of past tokens, regardless of future tokens. The resulting filtered IS ratios preserve token-wise local structure-aware variation while strongly smoothing noise spikes, yielding more stable and effective policy updates. Experimentally, KPO achieves superior results on challenging math reasoning datasets compared with state-of-the-art counterparts.",
+  "summary_en": "Online Causal Kalman Filtering addresses high-variance token-level importance sampling in reinforcement learning for large language models by modeling IS ratios as evolving latent states and using Kalman filtering for stable policy optimization.",
+  "summary_zh": "在线因果卡尔曼滤波通过将重要性采样比率建模为演化的隐状态，并利用卡尔曼滤波实现稳定的策略优化，解决了大语言模型强化学习中词元级重要性采样的高方差问题。",
+  "hf_url": "https://huggingface.co/papers/2602.10609",
+  "arxiv_url": "https://arxiv.org/abs/2602.10609",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10609",
+  "github_url": "",
+  "upvotes": 16,
+  "fetched_at": "2026-02-19T06:31:42.927832+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06391",
+  "title": "POINTS-GUI-G: GUI-Grounding Journey",
+  "authors": [
+    "Zhongyin Zhao",
+    "Yuan Liu",
+    "Yikun Liu",
+    "Haicheng Wang",
+    "Le Tian",
+    "Xiao Zhou",
+    "Yangxiu You",
+    "Zilin Yu",
+    "Yang Yu",
+    "Jie Zhou"
+  ],
+  "abstract": "GUI agents for automated digital tasks rely on vision-language models with enhanced grounding capabilities, achieved through refined data engineering, improved training strategies, and reinforcement learning with verifiable rewards.",
+  "summary_en": "GUI agents for automated digital tasks rely on vision-language models with enhanced grounding capabilities, achieved through refined data engineering, improved training strategies, and reinforcement learning with verifiable rewards.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nGUI agents for automated digital tasks rely on vision-language models with enhanced grounding capabilities, achieved through refined data engineering, improved training strategies, and reinforcement learning with verifiable rewards.",
+  "hf_url": "https://huggingface.co/papers/2602.06391",
+  "arxiv_url": "https://arxiv.org/abs/2602.06391",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06391",
+  "github_url": "https://github.com/Tencent/POINTS-GUI",
+  "upvotes": 16,
+  "fetched_at": "2026-02-19T05:44:20.305138+00:00"
+}

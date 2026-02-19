@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.03216",
+  "title": "Token Sparse Attention: Efficient Long-Context Inference with Interleaved Token Selection",
+  "authors": [
+    "Dongwon Jo",
+    "Beomseok Kang",
+    "Jiwon Song",
+    "Jae-Joon Kim"
+  ],
+  "abstract": "Token Sparse Attention enables efficient long-context inference by dynamically compressing and decompressing attention tensors at the token level, achieving significant speedup with minimal accuracy loss. The quadratic complexity of attention remains the central bottleneck in long-context inference for large language models. Prior acceleration methods either sparsify the attention map with structured patterns or permanently evict tokens at specific layers, which can retain irrelevant tokens or rely on irreversible early decisions despite the layer-/head-wise dynamics of token importance. In this paper, we propose Token Sparse Attention , a lightweight and dynamic token-level sparsification mechanism that compresses per-head Q, K, V to a reduced token set during attention and then decompresses the output back to the original sequence, enabling token information to be reconsidered in subsequent layers. Furthermore, Token Sparse Attention exposes a new design point at the intersection of token selection and sparse attention . Our approach is fully compatible with dense attention implementations, including Flash Attention , and can be seamlessly composed with existing sparse attention kernels. Experimental results show that Token Sparse Attention consistently improves accuracy-latency trade-off, achieving up to times3.23 attention speedup at 128K context with less than 1% accuracy degradation. These results demonstrate that dynamic and interleaved token-level sparsification is a complementary and effective strategy for scalable long-context inference .",
+  "summary_en": "Token Sparse Attention enables efficient long-context inference by dynamically compressing and decompressing attention tensors at the token level, achieving significant speedup with minimal accuracy loss.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nToken Sparse Attention enables efficient long-context inference by dynamically compressing and decompressing attention tensors at the token level, achieving significant speedup with minimal accuracy loss.",
+  "hf_url": "https://huggingface.co/papers/2602.03216",
+  "arxiv_url": "https://arxiv.org/abs/2602.03216",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03216",
+  "github_url": "https://github.com/dongwonjo/Token-Sparse-Attention",
+  "upvotes": 12,
+  "fetched_at": "2026-02-19T05:26:57.281053+00:00"
+}

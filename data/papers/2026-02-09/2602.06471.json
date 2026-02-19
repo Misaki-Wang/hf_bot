@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06471",
+  "title": "Revisiting the Shape Convention of Transformer Language Models",
+  "authors": [
+    "Feng-Ting Liao",
+    "Meng-Hsi Chen",
+    "Guan-Ting Yi",
+    "Da-shan Shiu"
+  ],
+  "abstract": "Replacing conventional feed-forward networks with hourglass-shaped MLPs in Transformers improves model efficiency and performance by enabling better parameter utilization and competitive scaling. Dense Transformer language models have largely adhered to one consistent architectural shape: each layer consists of an attention module followed by a feed-forward network (FFN) with a narrow-wide-narrow MLP , allocating most parameters to the MLP at expansion ratios between 2 and 4. Motivated by recent results that residual wide-narrow-wide (hourglass) MLP s offer superior function approximation capabilities, we revisit the long-standing MLP shape convention in Transformer , challenging the necessity of the narrow-wide-narrow design. To study this, we develop a Transformer variant that replaces the conventional FFN with a deeper hourglass-shaped FFN, comprising a stack of hourglass sub- MLP s connected by residual pathways . We posit that a deeper but lighter hourglass FFN can serve as a competitive alternative to the conventional FFN, and that parameters saved by using a lighter hourglass FFN can be more effectively utilized, such as by enlarging model hidden dimensions under fixed budgets. We confirm these through empirical validations across model scales: hourglass FFNs outperform conventional FFNs up to 400M and achieve comparable performance at larger scales to 1B parameters; hourglass FFN variants with reduced FFN and increased attention parameters show consistent improvements over conventional configurations at matched budgets. Together, these findings shed new light on recent work and prompt a rethinking of the narrow-wide-narrow MLP convention and the balance between attention and FFN towards efficient and expressive modern language models.",
+  "summary_en": "Replacing conventional feed-forward networks with hourglass-shaped MLPs in Transformers improves model efficiency and performance by enabling better parameter utilization and competitive scaling.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nReplacing conventional feed-forward networks with hourglass-shaped MLPs in Transformers improves model efficiency and performance by enabling better parameter utilization and competitive scaling.",
+  "hf_url": "https://huggingface.co/papers/2602.06471",
+  "arxiv_url": "https://arxiv.org/abs/2602.06471",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06471",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T05:44:21.655739+00:00"
+}

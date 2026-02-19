@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.12164",
+  "title": "Sci-CoE: Co-evolving Scientific Reasoning LLMs via Geometric Consensus with Sparse Supervision",
+  "authors": [
+    "Xiaohan He",
+    "Shiyang Feng",
+    "Songtao Huang",
+    "Lei Bai",
+    "Bin Wang",
+    "Bo Zhang"
+  ],
+  "abstract": "Sci-CoE is a two-stage scientific co-evolving framework that enables large language models to self-evolve as both solver and verifier through sparse-to-unsupervised learning transitions, improving scientific reasoning capabilities and evaluation system robustness. Large language models (LLMs) have demonstrated exceptional reasoning capabilities, and co-evolving paradigms have shown promising results in domains such as code and math. However, in scientific reasoning tasks, these models remain fragile due to unreliable solution evaluation and limited diversity in verification strategies. In this work, we propose Sci-CoE, a two-stage scientific co-evolving framework that enables models to self-evolve as both solver and verifier through a transition from sparse supervision to unsupervised learning . In the first stage, the model uses a small set of annotated data to establish fundamental correctness judgment anchors for the Verifier . In the second stage, we introduce a geometric reward mechanism that jointly considers consensus , reliability , and diversity , driving large-scale self-iteration on unlabeled data. Experiments on several general scientific benchmarks demonstrate that Sci-CoE enhances complex reasoning capabilities and exhibits strong scalability , facilitating the construction of more robust and diverse evaluation systems. Codes are available at https://github.com/InternScience/Sci-CoE.",
+  "summary_en": "Sci-CoE is a two-stage scientific co-evolving framework that enables large language models to self-evolve as both solver and verifier through sparse-to-unsupervised learning transitions, improving scientific reasoning capabilities and evaluation system robustness.",
+  "summary_zh": "Sci-CoE是一种两阶段科学协同进化框架，通过从稀疏到无监督学习的过渡，使大型语言模型能够同时作为求解器和验证器进行自我进化，从而提升科学推理能力和评估系统的鲁棒性。",
+  "hf_url": "https://huggingface.co/papers/2602.12164",
+  "arxiv_url": "https://arxiv.org/abs/2602.12164",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12164",
+  "github_url": "https://github.com/InternScience/Sci-CoE",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T06:38:59.575812+00:00"
+}

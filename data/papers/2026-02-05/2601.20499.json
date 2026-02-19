@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2601.20499",
+  "title": "Efficient Autoregressive Video Diffusion with Dummy Head",
+  "authors": [
+    "Hang Guo",
+    "Zhaoyang Jia",
+    "Jiahao Li",
+    "Bin Li",
+    "Yuanhao Cai",
+    "Jiangshan Wang",
+    "Yawei Li",
+    "Yan Lu"
+  ],
+  "abstract": "Autoregressive video diffusion models suffer from inefficient attention mechanisms that underutilize historical frames, but a new method called Dummy Forcing improves efficiency through heterogeneous memory allocation and dynamic head programming while maintaining quality. The autoregressive video diffusion model has recently gained considerable research interest due to its causal modeling and iterative denoising . In this work, we identify that the multi-head self-attention in these models under-utilizes historical frames: approximately 25% heads attend almost exclusively to the current frame, and discarding their KV caches incurs only minor performance degradation. Building upon this, we propose Dummy Forcing, a simple yet effective method to control context accessibility across different heads. Specifically, the proposed heterogeneous memory allocation reduces head-wise context redundancy, accompanied by dynamic head programming to adaptively classify head types. Moreover, we develop a context packing technique to achieve more aggressive cache compression . Without additional training, our Dummy Forcing delivers up to 2.0x speedup over the baseline, supporting video generation at 24.3 FPS with less than 0.5% quality drop. Project page is available at https://csguoh.github.io/project/DummyForcing/.",
+  "summary_en": "Autoregressive video diffusion models suffer from inefficient attention mechanisms that underutilize historical frames, but a new method called Dummy Forcing improves efficiency through heterogeneous memory allocation and dynamic head programming while maintaining quality.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nAutoregressive video diffusion models suffer from inefficient attention mechanisms that underutilize historical frames, but a new method called Dummy Forcing improves efficiency through heterogeneous memory allocation and dynamic head programming while maintaining quality.",
+  "hf_url": "https://huggingface.co/papers/2601.20499",
+  "arxiv_url": "https://arxiv.org/abs/2601.20499",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.20499",
+  "github_url": "https://github.com/csguoh/DummyForcing",
+  "upvotes": 8,
+  "fetched_at": "2026-02-19T05:27:14.384525+00:00"
+}

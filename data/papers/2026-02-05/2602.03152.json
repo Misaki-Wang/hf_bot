@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.03152",
+  "title": "FASA: Frequency-aware Sparse Attention",
+  "authors": [
+    "Yifei Wang",
+    "Yueqi Wang",
+    "Zhenrui Yue",
+    "Huimin Zeng",
+    "Yong Wang",
+    "Ismini Lourentzou",
+    "Zhengzhong Tu",
+    "Xiangxiang Chu",
+    "Julian McAuley"
+  ],
+  "abstract": "FASA is a novel framework that uses query-aware token eviction and functional sparsity in RoPE to reduce KV cache memory usage while maintaining high performance in long-context LLM tasks. The deployment of Large Language Models (LLMs) faces a critical bottleneck when handling lengthy inputs: the prohibitive memory footprint of the Key Value (KV) cache. To address this bottleneck, the token pruning paradigm leverages attention sparsity to selectively retain a small, critical subset of tokens. However, existing approaches fall short, with static methods risking irreversible information loss and dynamic strategies employing heuristics that insufficiently capture the query-dependent nature of token importance. We propose FASA, a novel framework that achieves query-aware token eviction by dynamically predicting token importance. FASA stems from a novel insight into RoPE : the discovery of functional sparsity at the frequency-chunk (FC) level. Our key finding is that a small, identifiable subset of \"dominant\" FCs consistently exhibits high contextual agreement with the full attention head. This provides a robust and computationally free proxy for identifying salient tokens. %making them a powerful and efficient proxy for token importance. Building on this insight, FASA first identifies a critical set of tokens using dominant FCs, and then performs focused attention computation solely on this pruned subset. % Since accessing only a small fraction of the KV cache, FASA drastically lowers memory bandwidth requirements and computational cost . Across a spectrum of long-context tasks , from sequence modeling to complex CoT reasoning , FASA consistently outperforms all token-eviction baselines and achieves near-oracle accuracy, demonstrating remarkable robustness even under constraint budgets. Notably, on LongBench-V1 , FASA reaches nearly 100\\% of full-KV performance when only keeping 256 tokens, and achieves 2.56times speedup using just 18.9\\% of the cache on AIME24 .",
+  "summary_en": "FASA is a novel framework that uses query-aware token eviction and functional sparsity in RoPE to reduce KV cache memory usage while maintaining high performance in long-context LLM tasks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nFASA is a novel framework that uses query-aware token eviction and functional sparsity in RoPE to reduce KV cache memory usage while maintaining high performance in long-context LLM tasks.",
+  "hf_url": "https://huggingface.co/papers/2602.03152",
+  "arxiv_url": "https://arxiv.org/abs/2602.03152",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03152",
+  "github_url": "",
+  "upvotes": 146,
+  "fetched_at": "2026-02-19T05:27:28.879926+00:00"
+}

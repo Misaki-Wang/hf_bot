@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.11509",
+  "title": "Multimodal Fact-Level Attribution for Verifiable Reasoning",
+  "authors": [
+    "David Wan",
+    "Han Wang",
+    "Ziyang Wang",
+    "Elias Stengel-Eskin",
+    "Hyunji Lee",
+    "Mohit Bansal"
+  ],
+  "abstract": "MuRGAt is a benchmark for evaluating fact-level multimodal attribution in complex reasoning tasks, requiring models to provide precise citations for their answers across video, audio, and other modalities. Multimodal large language models (MLLMs) are increasingly used for real-world tasks involving multi-step reasoning and long-form generation, where reliability requires grounding model outputs in heterogeneous input sources and verifying individual factual claims. However, existing multimodal grounding benchmarks and evaluation methods focus on simplified, observation-based scenarios or limited modalities and fail to assess attribution in complex multimodal reasoning . We introduce MuRGAt ( Multimodal Reasoning with Grounded Attribution), a benchmark for evaluating fact-level multimodal attribution in settings that require reasoning beyond direct observation. Given inputs spanning video, audio, and other modalities, MuRGAt requires models to generate answers with explicit reasoning and precise citations, where each citation specifies both modality and temporal segments. To enable reliable assessment, we introduce an automatic evaluation framework that strongly correlates with human judgments. Benchmarking with human and automated scores reveals that even strong MLLMs frequently hallucinate citations despite correct reasoning. Moreover, we observe a key trade-off: increasing reasoning depth or enforcing structured grounding often degrades accuracy, highlighting a significant gap between internal reasoning and verifiable attribution.",
+  "summary_en": "MuRGAt is a benchmark for evaluating fact-level multimodal attribution in complex reasoning tasks, requiring models to provide precise citations for their answers across video, audio, and other modalities.",
+  "summary_zh": "MuRGAt是一个用于评估复杂推理任务中事实级多模态归因的基准，要求模型在视频、音频及其他模态中为答案提供精确引用。",
+  "hf_url": "https://huggingface.co/papers/2602.11509",
+  "arxiv_url": "https://arxiv.org/abs/2602.11509",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11509",
+  "github_url": "https://github.com/meetdavidwan/murgat",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T06:38:16.087727+00:00"
+}

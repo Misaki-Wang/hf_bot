@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2601.21968",
+  "title": "OVD: On-policy Verbal Distillation",
+  "authors": [
+    "Jing Xiong",
+    "Hui Shen",
+    "Shansan Gong",
+    "Yuxin Cheng",
+    "Jianghan Shen",
+    "Chaofan Tao",
+    "Haochen Tan",
+    "Haoli Bai",
+    "Lifeng Shang",
+    "Ngai Wong"
+  ],
+  "abstract": "On-policy Verbal Distillation (OVD) enables efficient knowledge transfer from teacher to student models by replacing token-level probability matching with trajectory matching using discrete verbal scores, reducing memory consumption and enabling free exploration without token alignment constraints. Knowledge distillation offers a promising path to transfer reasoning capabilities from large teacher models to efficient student models ; however, existing token-level on-policy distillation methods require token-level alignment between the student and teacher models , which restricts the student model's exploration ability, prevent effective use of interactive environment feedback, and suffer from severe memory bottlenecks in reinforcement learning . We introduce On-policy Verbal Distillation (OVD), a memory-efficient framework that replaces token-level probability matching with trajectory matching using discrete verbal scores (0--9) from teacher models . OVD dramatically reduces memory consumption while enabling on-policy distillation from teacher models with verbal feedback, and avoids token-level alignment , allowing the student model to freely explore the output space. Extensive experiments on Web question answering and mathematical reasoning tasks show that OVD substantially outperforms existing methods, delivering up to +12.9% absolute improvement in average EM on Web Q&A tasks and a up to +25.7% gain on math benchmarks (when trained with only one random samples), while also exhibiting superior training efficiency. Our project page is available at https://OVD.github.io",
+  "summary_en": "On-policy Verbal Distillation (OVD) enables efficient knowledge transfer from teacher to student models by replacing token-level probability matching with trajectory matching using discrete verbal scores, reducing memory consumption and enabling free exploration without token alignment constraints.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nOn-policy Verbal Distillation (OVD) enables efficient knowledge transfer from teacher to student models by replacing token-level probability matching with trajectory matching using discrete verbal scores, reducing memory consumption and enabling free exploration without token alignment constraints.",
+  "hf_url": "https://huggingface.co/papers/2601.21968",
+  "arxiv_url": "https://arxiv.org/abs/2601.21968",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21968",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:36:04.617166+00:00"
+}

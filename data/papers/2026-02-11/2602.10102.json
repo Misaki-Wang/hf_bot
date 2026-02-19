@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.10102",
+  "title": "VideoWorld 2: Learning Transferable Knowledge from Real-world Videos",
+  "authors": [
+    "Zhongwei Ren",
+    "Yunchao Wei",
+    "Xiao Yu",
+    "Guixun Luo",
+    "Yao Zhao",
+    "Bingyi Kang",
+    "Jiashi Feng",
+    "Xiaojie Jin"
+  ],
+  "abstract": "VideoWorld 2 enables transferable knowledge learning from raw videos through a dynamic-enhanced Latent Dynamics Model that decouples action dynamics from visual appearance, achieving improved task performance and long-horizon reasoning in real-world applications. Learning transferable knowledge from unlabeled video data and applying it in new environments is a fundamental capability of intelligent agents. This work presents VideoWorld 2, which extends VideoWorld and offers the first investigation into learning transferable knowledge directly from raw real-world videos. At its core, VideoWorld 2 introduces a dynamic-enhanced Latent Dynamics Model (dLDM) that decouples action dynamics from visual appearance : a pretrained video diffusion model handles visual appearance modeling, enabling the dLDM to learn latent codes that focus on compact and meaningful task-related dynamics. These latent codes are then modeled autoregressively to learn task policies and support long-horizon reasoning . We evaluate VideoWorld 2 on challenging real-world handcraft making tasks, where prior video generation and latent-dynamics models struggle to operate reliably. Remarkably, VideoWorld 2 achieves up to 70% improvement in task success rate and produces coherent long execution videos. In robotics, we show that VideoWorld 2 can acquire effective manipulation knowledge from the Open-X dataset , which substantially improves task performance on CALVIN . This study reveals the potential of learning transferable world knowledge directly from raw videos, with all code, data, and models to be open-sourced for further research.",
+  "summary_en": "VideoWorld 2 enables transferable knowledge learning from raw videos through a dynamic-enhanced Latent Dynamics Model that decouples action dynamics from visual appearance, achieving improved task performance and long-horizon reasoning in real-world applications.",
+  "summary_zh": "VideoWorld 2 通过动态增强的潜在动力学模型，将动作动态与视觉外观解耦，实现了从原始视频中进行可迁移知识学习，并在真实世界应用中提升了任务性能与长程推理能力。",
+  "hf_url": "https://huggingface.co/papers/2602.10102",
+  "arxiv_url": "https://arxiv.org/abs/2602.10102",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10102",
+  "github_url": "https://github.com/ByteDance-Seed/VideoWorld",
+  "upvotes": 14,
+  "fetched_at": "2026-02-19T06:22:17.746149+00:00"
+}

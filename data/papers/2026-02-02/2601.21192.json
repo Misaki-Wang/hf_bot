@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.21192",
+  "title": "Do Reasoning Models Enhance Embedding Models?",
+  "authors": [
+    "Wun Yu Chan",
+    "Shaojin Chen",
+    "Huihao Jing",
+    "Kwun Hang Lau",
+    "Elton Chun-Chai Li",
+    "Zihao Wang",
+    "Haoran Li",
+    "Yangqiu Song"
+  ],
+  "abstract": "Embedding models initialized from RLVR-tuned reasoning models show no performance advantage over base models, with HRSA revealing preserved global geometry and linear readout despite local geometric reorganization. State-of-the-art embedding models are increasingly derived from decoder-only Large Language Model (LLM) backbones adapted via contrastive learning . Given the emergence of reasoning models trained via Reinforcement Learning with Verifiable Rewards (RLVR), a natural question arises: do enhanced reasoning translate to superior semantic representations when these models serve as embedding initializations? Contrary to expectation, our evaluation on MTEB and BRIGHT reveals a **null effect**: embedding models initialized from RLVR-tuned backbones yield no consistent performance advantage over their base counterparts when subjected to identical training recipes. To unpack this paradox, we introduce **H**ierarchical **R**epresentation **S**imilarity **A**nalysis (HRSA), a framework that decomposes similarity across representation, geometry, and function levels. HRSA reveals that while RLVR induces irreversible latent manifold 's local geometry reorganization and reversible coordinate basis drift , it preserves the global manifold geometry and linear readout. Consequently, subsequent contrastive learning drives strong alignment between base- and reasoning-initialized models, a phenomenon we term ** Manifold Realignment **. Empirically, our findings suggest that unlike Supervised Fine-Tuning (SFT), RLVR optimizes trajectories within an existing semantic landscape rather than fundamentally restructuring the landscape itself.",
+  "summary_en": "Embedding models initialized from RLVR-tuned reasoning models show no performance advantage over base models, with HRSA revealing preserved global geometry and linear readout despite local geometric reorganization.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nEmbedding models initialized from RLVR-tuned reasoning models show no performance advantage over base models, with HRSA revealing preserved global geometry and linear readout despite local geometric reorganization.",
+  "hf_url": "https://huggingface.co/papers/2601.21192",
+  "arxiv_url": "https://arxiv.org/abs/2601.21192",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21192",
+  "github_url": "https://github.com/HKUST-KnowComp/Reasoning-Embedding",
+  "upvotes": 25,
+  "fetched_at": "2026-02-19T05:34:27.984586+00:00"
+}

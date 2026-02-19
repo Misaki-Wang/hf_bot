@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.11543",
+  "title": "Pretraining A Large Language Model using Distributed GPUs: A Memory-Efficient Decentralized Paradigm",
+  "authors": [
+    "Jinrui Zhang",
+    "Chaodong Xiao",
+    "Aoqi Wu",
+    "Xindong Zhang",
+    "Lei Zhang"
+  ],
+  "abstract": "A memory-efficient decentralized framework for training mixture-of-experts language models using sparse expert synchronization and expert-merging warm-up strategies. Pretraining large language models (LLMs) typically requires centralized clusters with thousands of high-memory GPUs (e.g., H100/A100). Recent decentralized training methods reduce communication overhead by employing federated optimization ; however, they still need to train the entire model on each node, remaining constrained by GPU memory limitations. In this work, we propose SParse Expert Synchronization (SPES), a memory-efficient decentralized framework for pretraining mixture-of-experts (MoE) LLMs. SPES trains only a subset of experts per node, substantially lowering the memory footprint. Each node updates its local experts and periodically synchronizes with other nodes, eliminating full-parameter transmission while ensuring efficient knowledge sharing. To accelerate convergence, we introduce an expert-merging warm-up strategy, where experts exchange knowledge early in training, to rapidly establish foundational capabilities. With SPES, we train a 2B-parameter MoE LLM using 16 standalone 48GB GPUs over internet connections, which achieves competitive performance with centrally trained LLMs under similar computational budgets. We further demonstrate scalability by training a 7B model from scratch and a 9B model upcycled from a dense checkpoint, both of which match prior centralized baselines. Our code is available at https://github.com/zjr2000/SPES.",
+  "summary_en": "A memory-efficient decentralized framework for training mixture-of-experts language models using sparse expert synchronization and expert-merging warm-up strategies.",
+  "summary_zh": "一种基于稀疏专家同步和专家合并预热策略的内存高效去中心化框架，用于训练混合专家语言模型。",
+  "hf_url": "https://huggingface.co/papers/2602.11543",
+  "arxiv_url": "https://arxiv.org/abs/2602.11543",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11543",
+  "github_url": "https://github.com/zjr2000/SPES",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T06:38:20.731998+00:00"
+}

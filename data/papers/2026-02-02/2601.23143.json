@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.23143",
+  "title": "THINKSAFE: Self-Generated Safety Alignment for Reasoning Models",
+  "authors": [
+    "Seanie Lee",
+    "Sangwoo Park",
+    "Yumin Choi",
+    "Gyeongman Kim",
+    "Minki Kang",
+    "Jihun Yun",
+    "Dongmin Park",
+    "Jongho Park",
+    "Sung Ju Hwang"
+  ],
+  "abstract": "ThinkSafe is a self-aligned framework that enhances safety in large reasoning models through lightweight refusal steering and fine-tuning on self-generated responses, maintaining reasoning performance while reducing computational costs. Large reasoning models (LRMs) achieve remarkable performance by leveraging reinforcement learning (RL) on reasoning tasks to generate long chain-of-thought (CoT) reasoning. However, this over-optimization often prioritizes compliance, making models vulnerable to harmful prompts. To mitigate this safety degradation, recent approaches rely on external teacher distillation , yet this introduces a distributional discrepancy that degrades native reasoning. We propose ThinkSafe, a self-generated alignment framework that restores safety alignment without external teachers. Our key insight is that while compliance suppresses safety mechanisms, models often retain latent knowledge to identify harm. ThinkSafe unlocks this via lightweight refusal steering , guiding the model to generate in-distribution safety reasoning traces. Fine-tuning on these self-generated responses effectively realigns the model while minimizing distribution shift. Experiments on DeepSeek-R1-Distill and Qwen3 show ThinkSafe significantly improves safety while preserving reasoning proficiency . Notably, it achieves superior safety and comparable reasoning to GRPO, with significantly reduced computational cost . Code, models, and datasets are available at https://github.com/seanie12/ThinkSafe.git.",
+  "summary_en": "ThinkSafe is a self-aligned framework that enhances safety in large reasoning models through lightweight refusal steering and fine-tuning on self-generated responses, maintaining reasoning performance while reducing computational costs.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nThinkSafe is a self-aligned framework that enhances safety in large reasoning models through lightweight refusal steering and fine-tuning on self-generated responses, maintaining reasoning performance while reducing computational costs.",
+  "hf_url": "https://huggingface.co/papers/2601.23143",
+  "arxiv_url": "https://arxiv.org/abs/2601.23143",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.23143",
+  "github_url": "https://github.com/seanie12/ThinkSafe",
+  "upvotes": 38,
+  "fetched_at": "2026-02-19T05:35:22.984332+00:00"
+}

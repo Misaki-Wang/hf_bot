@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.02914",
+  "title": "FaceLinkGen: Rethinking Identity Leakage in Privacy-Preserving Face Recognition with Identity Extraction",
+  "authors": [
+    "Wenqi Guo",
+    "Shan Du"
+  ],
+  "abstract": "FaceLinkGen attack demonstrates that current privacy-preserving face recognition methods fail to protect identity information despite pixel-level distortion metrics suggesting adequate protection. Transformation-based privacy-preserving face recognition (PPFR) aims to verify identities while hiding facial data from attackers and malicious service providers. Existing evaluations mostly treat privacy as resistance to pixel-level reconstruction , measured by PSNR and SSIM . We show that this reconstruction-centric view fails. We present FaceLinkGen, an identity extraction attack that performs linkage/matching and face regeneration directly from protected templates without recovering original pixels. On three recent PPFR systems, FaceLinkGen reaches over 98.5\\% matching accuracy and above 96\\% regeneration success, and still exceeds 92\\% matching and 94\\% regeneration in a near zero knowledge setting. These results expose a structural gap between pixel distortion metrics, which are widely used in PPFR evaluation, and real privacy. We show that visual obfuscation leaves identity information broadly exposed to both external intruders and untrusted service providers.",
+  "summary_en": "FaceLinkGen attack demonstrates that current privacy-preserving face recognition methods fail to protect identity information despite pixel-level distortion metrics suggesting adequate protection.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nFaceLinkGen attack demonstrates that current privacy-preserving face recognition methods fail to protect identity information despite pixel-level distortion metrics suggesting adequate protection.",
+  "hf_url": "https://huggingface.co/papers/2602.02914",
+  "arxiv_url": "https://arxiv.org/abs/2602.02914",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02914",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T05:26:53.283796+00:00"
+}

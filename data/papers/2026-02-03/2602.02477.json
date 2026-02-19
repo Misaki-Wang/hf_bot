@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02477",
+  "title": "Training LLMs for Divide-and-Conquer Reasoning Elevates Test-Time Scalability",
+  "authors": [
+    "Xiao Liang",
+    "Zhong-Zhi Li",
+    "Zhenghao Lin",
+    "Eric Hancheng Jiang",
+    "Hengyuan Zhang",
+    "Yelong Shen",
+    "Kai-Wei Chang",
+    "Ying Nian Wu",
+    "Yeyun Gong",
+    "Weizhu Chen"
+  ],
+  "abstract": "An end-to-end reinforcement learning framework enhances large language models' reasoning capabilities by implementing divide-and-conquer strategies that outperform traditional chain-of-thought reasoning on challenging benchmarks. Large language models (LLMs) have demonstrated strong reasoning capabilities through step-by-step chain-of-thought (CoT) reasoning. Nevertheless, at the limits of model capability, CoT often proves insufficient, and its strictly sequential nature constrains test-time scalability . A potential alternative is divide-and-conquer (DAC) reasoning, which decomposes a complex problem into subproblems to facilitate more effective exploration of the solution. Although promising, our analysis reveals a fundamental misalignment between general-purpose post-training and DAC-style inference, which limits the model's capacity to fully leverage this potential. To bridge this gap and fully unlock LLMs' reasoning capabilities on the most challenging tasks, we propose an end-to-end reinforcement learning (RL) framework to enhance their DAC-style reasoning capacity. At each step, the policy decomposes a problem into a group of subproblems, solves them sequentially, and addresses the original one conditioned on the subproblem solutions, with both decomposition and solution integrated into RL training. Under comparable training, our DAC-style framework endows the model with a higher performance ceiling and stronger test-time scalability , surpassing CoT by 8.6% in Pass@1 and 6.3% in Pass@32 on competition-level benchmarks.",
+  "summary_en": "An end-to-end reinforcement learning framework enhances large language models' reasoning capabilities by implementing divide-and-conquer strategies that outperform traditional chain-of-thought reasoning on challenging benchmarks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nAn end-to-end reinforcement learning framework enhances large language models' reasoning capabilities by implementing divide-and-conquer strategies that outperform traditional chain-of-thought reasoning on challenging benchmarks.",
+  "hf_url": "https://huggingface.co/papers/2602.02477",
+  "arxiv_url": "https://arxiv.org/abs/2602.02477",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02477",
+  "github_url": "https://github.com/MasterVito/DAC-RL",
+  "upvotes": 10,
+  "fetched_at": "2026-02-19T05:38:05.830960+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.16666",
+  "title": "Towards a Science of AI Agent Reliability",
+  "authors": [
+    "Stephan Rabanser",
+    "Sayash Kapoor",
+    "Peter Kirgis",
+    "Kangheng Liu",
+    "Saiteja Utpala",
+    "Arvind Narayanan"
+  ],
+  "abstract": "Traditional benchmark evaluations of AI agents fail to capture critical reliability issues, prompting the development of comprehensive metrics that assess consistency, robustness, predictability, and safety across multiple dimensions. AI agents are increasingly deployed to execute important tasks. While rising accuracy scores on standard benchmarks suggest rapid progress, many agents still continue to fail in practice. This discrepancy highlights a fundamental limitation of current evaluations: compressing agent behavior into a single success metric obscures critical operational flaws. Notably, it ignores whether agents behave consistently across runs, withstand perturbations, fail predictably, or have bounded error severity. Grounded in safety -critical engineering, we provide a holistic performance profile by proposing twelve concrete metrics that decompose agent reliability along four key dimensions: consistency , robustness , predictability , and safety . Evaluating 14 agentic models across two complementary benchmarks, we find that recent capability gains have only yielded small improvements in reliability . By exposing these persistent limitations, our metrics complement traditional evaluations while offering tools for reasoning about how agents perform, degrade, and fail.",
+  "summary_en": "Traditional benchmark evaluations of AI agents fail to capture critical reliability issues, prompting the development of comprehensive metrics that assess consistency, robustness, predictability, and safety across multiple dimensions.",
+  "summary_zh": "对AI智能体的传统基准评估未能捕捉关键的可靠性问题，从而推动了综合指标的开发，以在多维度上评估一致性、鲁棒性、可预测性和安全性。",
+  "hf_url": "https://huggingface.co/papers/2602.16666",
+  "arxiv_url": "https://arxiv.org/abs/2602.16666",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16666",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:47:37.106379+00:00"
+}

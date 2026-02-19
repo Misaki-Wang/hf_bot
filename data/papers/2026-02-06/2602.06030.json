@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.06030",
+  "title": "PhysicsAgentABM: Physics-Guided Generative Agent-Based Modeling",
+  "authors": [
+    "Kavana Venkatesh",
+    "Yinhan He",
+    "Jundong Li",
+    "Jiaming Cui"
+  ],
+  "abstract": "PhysicsAgentABM introduces a neuro-symbolic framework that combines mechanistic agents with neural models to improve scalable and calibrated simulation across multiple domains. Large language model (LLM)-based multi-agent systems enable expressive agent reasoning but are expensive to scale and poorly calibrated for timestep-aligned state-transition simulation, while classical agent-based models (ABMs) offer interpretability but struggle to integrate rich individual-level signals and non-stationary behaviors. We propose PhysicsAgentABM, which shifts inference to behaviorally coherent agent clusters: state-specialized symbolic agents encode mechanistic transition priors, a multimodal neural transition model captures temporal and interaction dynamics, and uncertainty-aware epistemic fusion yields calibrated cluster-level transition distributions. Individual agents then stochastically realize transitions under local constraints, decoupling population inference from entity-level variability. We further introduce ANCHOR, an LLM agent-driven clustering strategy based on cross-contextual behavioral responses and a novel contrastive loss , reducing LLM calls by up to 6-8 times. Experiments across public health, finance, and social sciences show consistent gains in event-time accuracy and calibration over mechanistic, neural, and LLM baselines. By re-architecting generative ABM around population-level inference with uncertainty-aware neuro-symbolic fusion , PhysicsAgentABM establishes a new paradigm for scalable and calibrated simulation with LLMs.",
+  "summary_en": "PhysicsAgentABM introduces a neuro-symbolic framework that combines mechanistic agents with neural models to improve scalable and calibrated simulation across multiple domains.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nPhysicsAgentABM introduces a neuro-symbolic framework that combines mechanistic agents with neural models to improve scalable and calibrated simulation across multiple domains.",
+  "hf_url": "https://huggingface.co/papers/2602.06030",
+  "arxiv_url": "https://arxiv.org/abs/2602.06030",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06030",
+  "github_url": "",
+  "upvotes": 0,
+  "fetched_at": "2026-02-19T05:43:27.257445+00:00"
+}

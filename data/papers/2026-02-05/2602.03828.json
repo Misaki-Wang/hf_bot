@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.03828",
+  "title": "AutoFigure: Generating and Refining Publication-Ready Scientific Illustrations",
+  "authors": [
+    "Minjun Zhu",
+    "Zhen Lin",
+    "Yixuan Weng",
+    "Panzhong Lu",
+    "Qiujie Xie",
+    "Yifan Wei",
+    "Sifan Liu",
+    "Qiyao Sun",
+    "Yue Zhang"
+  ],
+  "abstract": "FigureBench presents the first large-scale benchmark for generating scientific illustrations from long-form scientific texts, while AutoFigure introduces an agentic framework that produces publication-ready illustrations through extensive thinking, recombination, and validation processes. High-quality scientific illustrations are crucial for effectively communicating complex scientific and technical concepts, yet their manual creation remains a well-recognized bottleneck in both academia and industry. We present FigureBench , the first large-scale benchmark for generating scientific illustrations from long-form scientific text s. It contains 3,300 high-quality scientific text-figure pairs, covering diverse text-to-illustration tasks from scientific papers , surveys , blogs, and textbooks . Moreover, we propose AutoFigure , the first agentic framework that automatically generates high-quality scientific illustrations based on long-form scientific text . Specifically, before rendering the final result, AutoFigure engages in extensive thinking, recombination, and validation to produce a layout that is both structurally sound and aesthetically refined, outputting a scientific illustration that achieves both structural completeness and aesthetic appeal . Leveraging the high-quality data from FigureBench , we conduct extensive experiments to test the performance of AutoFigure against various baseline methods. The results demonstrate that AutoFigure consistently surpasses all baseline methods, producing publication-ready scientific illustrations . The code, dataset and huggingface space are released in https://github.com/ResearAI/ AutoFigure .",
+  "summary_en": "FigureBench presents the first large-scale benchmark for generating scientific illustrations from long-form scientific texts, while AutoFigure introduces an agentic framework that produces publication-ready illustrations through extensive thinking, recombination, and validation processes.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nFigureBench presents the first large-scale benchmark for generating scientific illustrations from long-form scientific texts, while AutoFigure introduces an agentic framework that produces publication-ready illustrations through extensive thinking, recombination, and validation processes.",
+  "hf_url": "https://huggingface.co/papers/2602.03828",
+  "arxiv_url": "https://arxiv.org/abs/2602.03828",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03828",
+  "github_url": "https://github.com/ResearAI/AutoFigure-Edit",
+  "upvotes": 20,
+  "fetched_at": "2026-02-19T05:27:33.433786+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02039",
+  "title": "Hunt Instead of Wait: Evaluating Deep Data Research on Large Language Models",
+  "authors": [
+    "Wei Liu",
+    "Peijie Yu",
+    "Michele Orini",
+    "Yali Du",
+    "Yulan He"
+  ],
+  "abstract": "Agentic large language models require investigatory intelligence for autonomous data analysis, demonstrated through the Deep Data Research benchmark that evaluates their ability to extract insights from databases without explicit queries. The agency expected of Agentic Large Language Models goes beyond answering correctly, requiring autonomy to set goals and decide what to explore. We term this investigatory intelligence , distinguishing it from executional intelligence , which merely completes assigned tasks. Data Science provides a natural testbed, as real-world analysis starts from raw data rather than explicit queries, yet few benchmarks focus on it. To address this, we introduce Deep Data Research (DDR), an open-ended task where LLMs autonomously extract key insights from databases, and DDR-Bench, a large-scale, checklist-based benchmark that enables verifiable evaluation. Results show that while frontier models display emerging agency, long-horizon exploration remains challenging. Our analysis highlights that effective investigatory intelligence depends not only on agent scaffolding or merely scaling, but also on intrinsic strategies of agentic models.",
+  "summary_en": "Agentic large language models require investigatory intelligence for autonomous data analysis, demonstrated through the Deep Data Research benchmark that evaluates their ability to extract insights from databases without explicit queries.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nAgentic large language models require investigatory intelligence for autonomous data analysis, demonstrated through the Deep Data Research benchmark that evaluates their ability to extract insights from databases without explicit queries.",
+  "hf_url": "https://huggingface.co/papers/2602.02039",
+  "arxiv_url": "https://arxiv.org/abs/2602.02039",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02039",
+  "github_url": "https://github.com/thinkwee/DDR_Bench",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T05:37:30.291928+00:00"
+}

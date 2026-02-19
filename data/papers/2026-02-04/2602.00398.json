@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-04",
+  "paper_id": "2602.00398",
+  "title": "MemoryLLM: Plug-n-Play Interpretable Feed-Forward Memory for Transformers",
+  "authors": [
+    "Ajay Jaiswal",
+    "Lauren Hannah",
+    "Han-Byul Kim",
+    "Duc Hoang",
+    "Arnav Kundu",
+    "Mehrdad Farajtabar",
+    "Minsik Cho"
+  ],
+  "abstract": "MemoryLLM decouples feed-forward networks from self-attention in transformers, enabling context-free token-wise neural retrieval memory that improves inference efficiency through pre-computed lookups. Understanding how transformer components operate in LLMs is important, as it is at the core of recent technological advances in artificial intelligence. In this work, we revisit the challenges associated with interpretability of feed-forward modules (FFNs) and propose MemoryLLM , which aims to decouple FFNs from self-attention and enables us to study the decoupled FFNs as context-free token-wise neural retrieval memory . In detail, we investigate how input tokens access memory locations within FFN parameters and the importance of FFN memory across different downstream tasks. MemoryLLM achieves context-free FFNs by training them in isolation from self-attention directly using the token embeddings . This approach allows FFNs to be pre-computed as token-wise lookups (ToLs), enabling on-demand transfer between VRAM and storage, additionally enhancing inference efficiency. We also introduce Flex-MemoryLLM , positioning it between a conventional transformer design and MemoryLLM . This architecture bridges the performance gap caused by training FFNs with context-free token-wise embeddings.",
+  "summary_en": "MemoryLLM decouples feed-forward networks from self-attention in transformers, enabling context-free token-wise neural retrieval memory that improves inference efficiency through pre-computed lookups.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMemoryLLM decouples feed-forward networks from self-attention in transformers, enabling context-free token-wise neural retrieval memory that improves inference efficiency through pre-computed lookups.",
+  "hf_url": "https://huggingface.co/papers/2602.00398",
+  "arxiv_url": "https://arxiv.org/abs/2602.00398",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.00398",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T05:38:38.134589+00:00"
+}

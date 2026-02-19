@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.04521",
+  "title": "C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal",
+  "authors": [
+    "Aditya Kasliwal",
+    "Pratinav Seth",
+    "Vinay Kumar Sankarapu"
+  ],
+  "abstract": "Offline selective refusal in large language models is achieved through circuit-restricted weight updates that eliminate runtime intervention costs while maintaining performance. Modern deployments require LLMs to enforce safety policies at scale, yet many controls rely on inference-time interventions that add recurring compute cost and serving complexity. Activation steering is widely used, but it requires runtime hooks and scales cost with the number of generations; conditional variants improve selectivity by gating when steering is applied but still retain an inference-time control path. We ask whether selective refusal can be moved entirely offline: can a mechanistic understanding of category-specific refusal be distilled into a circuit-restricted weight update that deploys as a standard checkpoint? We propose C-Δθ: Circuit Restricted Weight Arithmetic, which (i) localizes refusal-causal computation as a sparse circuit using EAP-IG and (ii) computes a constrained weight update ΔθC supported only on that circuit (typically <5% of parameters). Applying ΔθC yields a drop-in edited checkpoint with no inference-time hooks , shifting cost from per-request intervention to a one-time offline update. We evaluate category-targeted selectivity and capability retention on refusal and utility benchmarks.",
+  "summary_en": "Offline selective refusal in large language models is achieved through circuit-restricted weight updates that eliminate runtime intervention costs while maintaining performance.",
+  "summary_zh": "大语言模型的离线选择性拒绝通过电路受限权重更新实现，在消除运行时干预成本的同时保持性能。",
+  "hf_url": "https://huggingface.co/papers/2602.04521",
+  "arxiv_url": "https://arxiv.org/abs/2602.04521",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04521",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:20:32.675564+00:00"
+}

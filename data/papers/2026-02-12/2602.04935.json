@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-12",
+  "paper_id": "2602.04935",
+  "title": "ASA: Training-Free Representation Engineering for Tool-Calling Agents",
+  "authors": [
+    "Youjin Wang",
+    "Run Zhou",
+    "Rong Fu",
+    "Shuaishuai Cao",
+    "Hongwei Zeng",
+    "Jiaxuan Lu",
+    "Sicheng Fan",
+    "Jiaqiao Zhao",
+    "Liangming Pan"
+  ],
+  "abstract": "A training-free method called Activation Steering Adapter corrects tool calling behavior in language models by using mid-layer activation interventions guided by a probe and router-conditioned steering vectors. Adapting LLM agents to domain-specific tool calling remains notably brittle under evolving interfaces. Prompt and schema engineering is easy to deploy but often fragile under distribution shift and strict parsers , while continual parameter-efficient fine-tuning improves reliability at the cost of training, maintenance, and potential forgetting. We identify a critical Lazy Agent failure mode where tool necessity is nearly perfectly decodable from mid-layer activations , yet the model remains conservative in entering tool mode, revealing a representation-behavior gap . We propose Activation Steering Adapter (ASA), a training-free, inference-time controller that performs a single-shot mid-layer intervention and targets tool domains via a router-conditioned mixture of steering vectors with a probe-guided signed gate to amplify true intent while suppressing spurious triggers. On MTU-Bench with Qwen2.5-1.5B , ASA improves strict tool-use F1 from 0.18 to 0.50 while reducing the false positive rate from 0.15 to 0.05, using only about 20KB of portable assets and no weight updates.",
+  "summary_en": "A training-free method called Activation Steering Adapter corrects tool calling behavior in language models by using mid-layer activation interventions guided by a probe and router-conditioned steering vectors.",
+  "summary_zh": "一种称为激活引导适配器的免训练方法，通过探针与路由条件引导向量对中间层激活进行干预，纠正语言模型的工具调用行为。",
+  "hf_url": "https://huggingface.co/papers/2602.04935",
+  "arxiv_url": "https://arxiv.org/abs/2602.04935",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04935",
+  "github_url": "",
+  "upvotes": 39,
+  "fetched_at": "2026-02-19T06:30:42.396521+00:00"
+}

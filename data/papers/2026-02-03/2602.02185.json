@@ -1,0 +1,32 @@
+{
+  "date": "2026-02-03",
+  "paper_id": "2602.02185",
+  "title": "Vision-DeepResearch Benchmark: Rethinking Visual and Textual Search for Multimodal Large Language Models",
+  "authors": [
+    "Yu Zeng",
+    "Wenxuan Huang",
+    "Zhen Fang",
+    "Shuang Chen",
+    "Yufan Shen",
+    "Yishuo Cai",
+    "Xiaoman Wang",
+    "Zhenfei Yin",
+    "Lin Chen",
+    "Zehui Chen",
+    "Shiting Huang",
+    "Yiming Zhao",
+    "Yao Hu",
+    "Philip Torr",
+    "Wanli Ouyang",
+    "Shaosheng Cao"
+  ],
+  "abstract": "Vision-DeepResearch benchmark addresses limitations in evaluating visual-textual search capabilities of multimodal models by introducing realistic evaluation conditions and improving visual retrieval through multi-round cropped-search workflow. Multimodal Large Language Models (MLLMs) have advanced VQA and now support Vision-DeepResearch systems that use search engines for complex visual-textual fact-finding . However, evaluating these visual and textual search abilities is still difficult, and existing benchmarks have two major limitations. First, existing benchmarks are not visual search-centric: answers that should require visual search are often leaked through cross-textual cues in the text questions or can be inferred from the prior world knowledge in current MLLMs. Second, overly idealized evaluation scenario: On the image-search side, the required information can often be obtained via near-exact matching against the full image, while the text-search side is overly direct and insufficiently challenging. To address these issues, we construct the Vision-DeepResearch benchmark (VDR-Bench) comprising 2,000 VQA instances. All questions are created via a careful, multi-stage curation pipeline and rigorous expert review, designed to assess the behavior of Vision-DeepResearch systems under realistic real-world conditions. Moreover, to address the insufficient visual retrieval capabilities of current MLLMs, we propose a simple multi-round cropped-search workflow. This strategy is shown to effectively improve model performance in realistic visual retrieval scenarios. Overall, our results provide practical guidance for the design of future multimodal deep-research systems . The code will be released in https://github.com/Osilly/ Vision-DeepResearch .",
+  "summary_en": "Vision-DeepResearch benchmark addresses limitations in evaluating visual-textual search capabilities of multimodal models by introducing realistic evaluation conditions and improving visual retrieval through multi-round cropped-search workflow.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nVision-DeepResearch benchmark addresses limitations in evaluating visual-textual search capabilities of multimodal models by introducing realistic evaluation conditions and improving visual retrieval through multi-round cropped-search workflow.",
+  "hf_url": "https://huggingface.co/papers/2602.02185",
+  "arxiv_url": "https://arxiv.org/abs/2602.02185",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02185",
+  "github_url": "",
+  "upvotes": 125,
+  "fetched_at": "2026-02-19T05:37:42.232250+00:00"
+}

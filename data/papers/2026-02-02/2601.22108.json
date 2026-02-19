@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.22108",
+  "title": "Value-Based Pre-Training with Downstream Feedback",
+  "authors": [
+    "Shuqi Ke",
+    "Giulia Fanti"
+  ],
+  "abstract": "V-Pretraining uses downstream task gradients to reshape pretraining objectives, improving model capabilities with minimal labeled data and reduced computational costs. Can a small amount of verified goal information steer the expensive self-supervised pretraining of foundation models? Standard pretraining optimizes a fixed proxy objective (e.g., next-token prediction ), which can misallocate compute away from downstream capabilities of interest. We introduce V- Pretraining : a value-based, modality-agnostic method for controlled continued pretraining in which a lightweight task designer reshapes the pretraining task to maximize the value of each gradient step. For example, consider self-supervised learning (SSL) with sample augmentation . The V- Pretraining task designer selects pretraining tasks (e.g., augmentations) for which the pretraining loss gradient is aligned with a gradient computed over a downstream task (e.g., image segmentation). This helps steer pretraining towards relevant downstream capabilities. Notably, the pretrained model is never updated on downstream task labels; they are used only to shape the pretraining task. Under matched learner update budgets, V- Pretraining of 0.5B--7B language models improves reasoning ( GSM8K test Pass@1) by up to 18% relative over standard next-token prediction using only 12% of GSM8K training examples as feedback. In vision SSL, we improve the state-of-the-art results on ADE20K by up to 1.07 mIoU and reduce NYUv2 RMSE while improving ImageNet linear accuracy, and we provide pilot evidence of improved token efficiency in continued pretraining .",
+  "summary_en": "V-Pretraining uses downstream task gradients to reshape pretraining objectives, improving model capabilities with minimal labeled data and reduced computational costs.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nV-Pretraining uses downstream task gradients to reshape pretraining objectives, improving model capabilities with minimal labeled data and reduced computational costs.",
+  "hf_url": "https://huggingface.co/papers/2601.22108",
+  "arxiv_url": "https://arxiv.org/abs/2601.22108",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22108",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:34:55.441961+00:00"
+}

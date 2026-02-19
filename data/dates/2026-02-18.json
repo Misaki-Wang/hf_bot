@@ -4,6 +4,28 @@
   "papers": [
     {
       "date": "2026-02-18",
+      "paper_id": "2602.14111",
+      "title": "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?",
+      "authors": [
+        "Anton Korznikov",
+        "Andrey Galichin",
+        "Alexey Dontsov",
+        "Oleg Rogov",
+        "Ivan Oseledets",
+        "Elena Tutubalina"
+      ],
+      "abstract": "Sparse Autoencoders fail to reliably decompose neural network internals despite strong reconstruction performance, as demonstrated through synthetic and real activation evaluations. Sparse Autoencoders (SAEs) have emerged as a promising tool for interpreting neural networks by decomposing their activations into sparse sets of human-interpretable features. Recent work has introduced multiple SAE variants and successfully scaled them to frontier models. Despite much excitement, a growing number of negative results in downstream tasks casts doubt on whether SAEs recover meaningful features. To directly investigate this, we perform two complementary evaluations. On a synthetic setup with known ground-truth features, we demonstrate that SAEs recover only 9% of true features despite achieving 71% explained variance , showing that they fail at their core task even when reconstruction is strong. To evaluate SAEs on real activations , we introduce three baselines that constrain SAE feature directions or their activation patterns to random values. Through extensive experiments across multiple SAE architectures, we show that our baselines match fully-trained SAEs in interpretability (0.87 vs 0.90), sparse probing (0.69 vs 0.72), and causal editing (0.73 vs 0.72). Together, these results suggest that SAEs in their current state do not reliably decompose models' internal mechanisms.",
+      "summary_en": "Sparse Autoencoders fail to reliably decompose neural network internals despite strong reconstruction performance, as demonstrated through synthetic and real activation evaluations.",
+      "summary_zh": "稀疏自编码器尽管具有较强的重建性能，却无法可靠地分解神经网络内部结构，这一点在合成与真实激活评估中得到了证实。",
+      "hf_url": "https://huggingface.co/papers/2602.14111",
+      "arxiv_url": "https://arxiv.org/abs/2602.14111",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14111",
+      "github_url": "",
+      "upvotes": 51,
+      "fetched_at": "2026-02-19T01:55:38.241233+00:00"
+    },
+    {
+      "date": "2026-02-18",
       "paper_id": "2602.12670",
       "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
       "authors": [
@@ -37,8 +59,8 @@
       "arxiv_url": "https://arxiv.org/abs/2602.12670",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12670",
       "github_url": "https://github.com/benchflow-ai/skillsbench",
-      "upvotes": 26,
-      "fetched_at": "2026-02-18T14:10:21.303859+00:00"
+      "upvotes": 38,
+      "fetched_at": "2026-02-19T01:55:35.285668+00:00"
     },
     {
       "date": "2026-02-18",
@@ -75,30 +97,8 @@
       "arxiv_url": "https://arxiv.org/abs/2602.15763",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15763",
       "github_url": "https://github.com/zai-org/GLM-5",
-      "upvotes": 25,
-      "fetched_at": "2026-02-18T14:10:37.169842+00:00"
-    },
-    {
-      "date": "2026-02-18",
-      "paper_id": "2602.14111",
-      "title": "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?",
-      "authors": [
-        "Anton Korznikov",
-        "Andrey Galichin",
-        "Alexey Dontsov",
-        "Oleg Rogov",
-        "Ivan Oseledets",
-        "Elena Tutubalina"
-      ],
-      "abstract": "Sparse Autoencoders fail to reliably decompose neural network internals despite strong reconstruction performance, as demonstrated through synthetic and real activation evaluations. Sparse Autoencoders (SAEs) have emerged as a promising tool for interpreting neural networks by decomposing their activations into sparse sets of human-interpretable features. Recent work has introduced multiple SAE variants and successfully scaled them to frontier models. Despite much excitement, a growing number of negative results in downstream tasks casts doubt on whether SAEs recover meaningful features. To directly investigate this, we perform two complementary evaluations. On a synthetic setup with known ground-truth features, we demonstrate that SAEs recover only 9% of true features despite achieving 71% explained variance , showing that they fail at their core task even when reconstruction is strong. To evaluate SAEs on real activations , we introduce three baselines that constrain SAE feature directions or their activation patterns to random values. Through extensive experiments across multiple SAE architectures, we show that our baselines match fully-trained SAEs in interpretability (0.87 vs 0.90), sparse probing (0.69 vs 0.72), and causal editing (0.73 vs 0.72). Together, these results suggest that SAEs in their current state do not reliably decompose models' internal mechanisms.",
-      "summary_en": "Sparse Autoencoders fail to reliably decompose neural network internals despite strong reconstruction performance, as demonstrated through synthetic and real activation evaluations.",
-      "summary_zh": "稀疏自编码器尽管具有较强的重建性能，却无法可靠地分解神经网络内部结构，这一点在合成与真实激活评估中得到了证实。",
-      "hf_url": "https://huggingface.co/papers/2602.14111",
-      "arxiv_url": "https://arxiv.org/abs/2602.14111",
-      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14111",
-      "github_url": "",
-      "upvotes": 22,
-      "fetched_at": "2026-02-18T14:10:23.623049+00:00"
+      "upvotes": 31,
+      "fetched_at": "2026-02-19T01:55:54.127746+00:00"
     },
     {
       "date": "2026-02-18",
@@ -116,27 +116,8 @@
       "arxiv_url": "https://arxiv.org/abs/2602.14299",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14299",
       "github_url": "https://github.com/MingLiiii/Moltbook_Socialization",
-      "upvotes": 17,
-      "fetched_at": "2026-02-18T14:10:24.916655+00:00"
-    },
-    {
-      "date": "2026-02-18",
-      "paper_id": "2602.15112",
-      "title": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
-      "authors": [
-        "Aniketh Garikaparthi",
-        "Manasi Patwardhan",
-        "Arman Cohan"
-      ],
-      "abstract": "ResearchGym presents a benchmark environment for evaluating AI agents on end-to-end research tasks, revealing significant capability-reliability gaps in current autonomous agents despite occasional state-of-the-art performance. We introduce ResearchGym , a benchmark and execution environment for evaluating AI agents on end-to-end research . To instantiate this, we repurpose five oral and spotlight papers from ICML , ICLR , and ACL . From each paper's repository, we preserve the datasets , evaluation harness , and baseline implementations but withhold the paper's proposed method. This results in five containerized task environments comprising 39 sub-tasks in total. Within each environment, agents must propose novel hypotheses, run experiments, and attempt to surpass strong human baselines on the paper's metrics. In a controlled evaluation of an agent powered by GPT-5 , we observe a sharp capability--reliability gap. The agent improves over the provided baselines from the repository in just 1 of 15 evaluations (6.7%) by 11.5%, and completes only 26.5% of sub-tasks on average. We identify recurring long-horizon failure modes, including impatience, poor time and resource management, overconfidence in weak hypotheses, difficulty coordinating parallel experiments, and hard limits from context length . Yet in a single run, the agent surpasses the solution of an ICML 2025 Spotlight task, indicating that frontier agents can occasionally reach state-of-the-art performance, but do so unreliably. We additionally evaluate proprietary agent scaffolds including Claude Code (Opus-4.5) and Codex ( GPT-5 .2) which display a similar gap. ResearchGym provides infrastructure for systematic evaluation and analysis of autonomous agents on closed-loop research.",
-      "summary_en": "ResearchGym presents a benchmark environment for evaluating AI agents on end-to-end research tasks, revealing significant capability-reliability gaps in current autonomous agents despite occasional state-of-the-art performance.",
-      "summary_zh": "ResearchGym提出了一个用于评估AI智能体端到端研究任务的基准环境，揭示了当前自主智能体存在显著的能力-可靠性差距，尽管其偶尔能达到最先进性能。",
-      "hf_url": "https://huggingface.co/papers/2602.15112",
-      "arxiv_url": "https://arxiv.org/abs/2602.15112",
-      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15112",
-      "github_url": "https://github.com/Anikethh/ResearchGym",
-      "upvotes": 11,
-      "fetched_at": "2026-02-18T14:10:27.726332+00:00"
+      "upvotes": 21,
+      "fetched_at": "2026-02-19T01:55:39.715212+00:00"
     },
     {
       "date": "2026-02-18",
@@ -160,13 +141,117 @@
       ],
       "abstract": "UniT framework enables unified multimodal models to perform iterative reasoning and refinement through chain-of-thought test-time scaling, improving both generation and understanding capabilities. Unified models can handle both multimodal understanding and generation within a single architecture, yet they typically operate in a single pass without iteratively refining their outputs. Many multimodal tasks, especially those involving complex spatial compositions, multiple interacting objects, or evolving instructions, require decomposing instructions, verifying intermediate results, and making iterative corrections. While test-time scaling (TTS) has demonstrated that allocating additional inference compute for iterative reasoning substantially improves language model performance, extending this paradigm to unified multimodal models remains an open challenge. We introduce UniT, a framework for multimodal chain-of-thought test-time scaling that enables a single unified model to reason, verify, and refine across multiple rounds. UniT combines agentic data synthesis , unified model training , and flexible test-time inference to elicit cognitive behaviors including verification, subgoal decomposition, and content memory. Our key findings are: (1) unified models trained on short reasoning trajectories generalize to longer inference chains at test time; (2) sequential chain-of-thought reasoning provides a more scalable and compute-efficient TTS strategy than parallel sampling; (3) training on generation and editing trajectories improves out-of-distribution visual reasoning . These results establish multimodal test-time scaling as an effective paradigm for advancing both generation and understanding in unified models .",
       "summary_en": "UniT framework enables unified multimodal models to perform iterative reasoning and refinement through chain-of-thought test-time scaling, improving both generation and understanding capabilities.",
-      "summary_zh": "UniT框架使统一的多模态模型能够通过思维链测试时缩放进行迭代推理与优化，提升生成与理解能力。",
+      "summary_zh": "UniT框架使统一多模态模型能够通过思维链测试时缩放进行迭代推理与优化，从而提升生成与理解能力。",
       "hf_url": "https://huggingface.co/papers/2602.12279",
       "arxiv_url": "https://arxiv.org/abs/2602.12279",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12279",
       "github_url": "",
+      "upvotes": 16,
+      "fetched_at": "2026-02-19T01:55:33.664750+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.15112",
+      "title": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
+      "authors": [
+        "Aniketh Garikaparthi",
+        "Manasi Patwardhan",
+        "Arman Cohan"
+      ],
+      "abstract": "ResearchGym presents a benchmark environment for evaluating AI agents on end-to-end research tasks, revealing significant capability-reliability gaps in current autonomous agents despite occasional state-of-the-art performance. We introduce ResearchGym , a benchmark and execution environment for evaluating AI agents on end-to-end research . To instantiate this, we repurpose five oral and spotlight papers from ICML , ICLR , and ACL . From each paper's repository, we preserve the datasets , evaluation harness , and baseline implementations but withhold the paper's proposed method. This results in five containerized task environments comprising 39 sub-tasks in total. Within each environment, agents must propose novel hypotheses, run experiments, and attempt to surpass strong human baselines on the paper's metrics. In a controlled evaluation of an agent powered by GPT-5 , we observe a sharp capability--reliability gap. The agent improves over the provided baselines from the repository in just 1 of 15 evaluations (6.7%) by 11.5%, and completes only 26.5% of sub-tasks on average. We identify recurring long-horizon failure modes, including impatience, poor time and resource management, overconfidence in weak hypotheses, difficulty coordinating parallel experiments, and hard limits from context length . Yet in a single run, the agent surpasses the solution of an ICML 2025 Spotlight task, indicating that frontier agents can occasionally reach state-of-the-art performance, but do so unreliably. We additionally evaluate proprietary agent scaffolds including Claude Code (Opus-4.5) and Codex ( GPT-5 .2) which display a similar gap. ResearchGym provides infrastructure for systematic evaluation and analysis of autonomous agents on closed-loop research.",
+      "summary_en": "ResearchGym presents a benchmark environment for evaluating AI agents on end-to-end research tasks, revealing significant capability-reliability gaps in current autonomous agents despite occasional state-of-the-art performance.",
+      "summary_zh": "ResearchGym提出了一个用于评估AI智能体端到端研究任务的基准环境，揭示了当前自主智能体尽管偶尔能取得最优性能，但仍存在显著的能力-可靠性差距。",
+      "hf_url": "https://huggingface.co/papers/2602.15112",
+      "arxiv_url": "https://arxiv.org/abs/2602.15112",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15112",
+      "github_url": "https://github.com/Anikethh/ResearchGym",
+      "upvotes": 14,
+      "fetched_at": "2026-02-19T01:55:43.087568+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.15547",
+      "title": "jina-embeddings-v5-text: Task-Targeted Embedding Distillation",
+      "authors": [
+        "Mohammad Kalim Akram",
+        "Saba Sturua",
+        "Nastia Havriushenko",
+        "Quentin Herreros",
+        "Michael Günther",
+        "Maximilian Werk",
+        "Han Xiao"
+      ],
+      "abstract": "Compact text embedding models are developed through a combined training approach using distillation and contrastive loss, achieving state-of-the-art performance while supporting long-context sequences and efficient quantization. Text embedding models are widely used for semantic similarity tasks, including information retrieval , clustering , and classification . General-purpose models are typically trained with single- or multi-stage processes using contrastive loss functions. We introduce a novel training regimen that combines model distillation techniques with task-specific contrastive loss to produce compact, high-performance embedding models . Our findings suggest that this approach is more effective for training small models than purely contrastive or distillation-based training paradigms alone. Benchmark scores for the resulting models, jina-embeddings-v5-text-small and jina-embeddings-v5-text-nano, exceed or match the state-of-the-art for models of similar size. jina-embeddings-v5-text models additionally support long texts (up to 32k tokens) in many languages, and generate embeddings that remain robust under truncation and binary quantization . Model weights are publicly available, hopefully inspiring further advances in embedding model development.",
+      "summary_en": "Compact text embedding models are developed through a combined training approach using distillation and contrastive loss, achieving state-of-the-art performance while supporting long-context sequences and efficient quantization.",
+      "summary_zh": "紧凑型文本嵌入模型通过蒸馏与对比损失相结合的联合训练方法开发，在实现最先进性能的同时支持长上下文序列和高效量化。",
+      "hf_url": "https://huggingface.co/papers/2602.15547",
+      "arxiv_url": "https://arxiv.org/abs/2602.15547",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15547",
+      "github_url": "",
+      "upvotes": 9,
+      "fetched_at": "2026-02-19T01:55:51.191144+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.14486",
+      "title": "Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
+      "authors": [
+        "Fabian Gröger",
+        "Shuo Wen",
+        "Maria Brbić"
+      ],
+      "abstract": "Network representations converge toward shared local neighborhood relationships rather than global statistical models, as revealed by calibrated similarity metrics. The Platonic Representation Hypothesis suggests that representations from neural networks are converging to a common statistical model of reality. We show that the existing metrics used to measure representational similarity are confounded by network scale: increasing model depth or width can systematically inflate representational similarity scores. To correct these effects, we introduce a permutation-based null-calibration framework that transforms any representational similarity metric into a calibrated score with statistical guarantees. We revisit the Platonic Representation Hypothesis with our calibration framework, which reveals a nuanced picture: the apparent convergence reported by global spectral measures largely disappears after calibration, while local neighborhood similarity , but not local distances, retains significant agreement across different modalities. Based on these findings, we propose the Aristotelian Representation Hypothesis : representations in neural networks are converging to shared local neighborhood relationships.",
+      "summary_en": "Network representations converge toward shared local neighborhood relationships rather than global statistical models, as revealed by calibrated similarity metrics.",
+      "summary_zh": "经校准的相似性度量显示，网络表征收敛于共享的局部邻域关系，而非全局统计模型。",
+      "hf_url": "https://huggingface.co/papers/2602.14486",
+      "arxiv_url": "https://arxiv.org/abs/2602.14486",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14486",
+      "github_url": "https://github.com/mlbio-epfl/aristotelian",
       "upvotes": 7,
-      "fetched_at": "2026-02-18T14:10:19.898742+00:00"
+      "fetched_at": "2026-02-19T01:55:42.035681+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.15772",
+      "title": "Understanding vs. Generation: Navigating Optimization Dilemma in Multimodal Models",
+      "authors": [
+        "Sen Ye",
+        "Mengde Xu",
+        "Shuyang Gu",
+        "Di He",
+        "Liwei Wang",
+        "Han Hu"
+      ],
+      "abstract": "The Reason-Reflect-Refine framework addresses the trade-off between generation and understanding in multimodal models by reformulating single-step generation into a multi-step process that explicitly incorporates understanding during generation. Current research in multimodal models faces a key challenge where enhancing generative capabilities often comes at the expense of understanding, and vice versa. We analyzed this trade-off and identify the primary cause might be the potential conflict between generation and understanding, which creates a competitive dynamic within the model. To address this, we propose the Reason-Reflect-Refine (R3) framework. This innovative algorithm re-frames the single-step generation task into a multi-step process of \"generate-understand-regenerate\". By explicitly leveraging the model's understanding capability during generation, we successfully mitigate the optimization dilemma , achieved stronger generation results and improved understanding ability which are related to the generation process. This offers valuable insights for designing next-generation unified multimodal models . Code is available at https://github.com/sen-ye/R3.",
+      "summary_en": "The Reason-Reflect-Refine framework addresses the trade-off between generation and understanding in multimodal models by reformulating single-step generation into a multi-step process that explicitly incorporates understanding during generation.",
+      "summary_zh": "推理-反思-精炼框架通过将单步生成重新表述为在生成过程中显式融入理解的多步过程，解决了多模态模型中生成与理解之间的权衡问题。",
+      "hf_url": "https://huggingface.co/papers/2602.15772",
+      "arxiv_url": "https://arxiv.org/abs/2602.15772",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15772",
+      "github_url": "https://github.com/sen-ye/R3",
+      "upvotes": 5,
+      "fetched_at": "2026-02-19T01:55:55.413014+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.15322",
+      "title": "On Surprising Effectiveness of Masking Updates in Adaptive Optimizers",
+      "authors": [
+        "Taejong Joo",
+        "Wenhan Xia",
+        "Cheolmin Kim",
+        "Ming Zhang",
+        "Eugene Ie"
+      ],
+      "abstract": "Random parameter update masking achieves superior optimization for large language models by inducing curvature-dependent regularization, with a momentum-aligned variant delivering significant performance improvements over state-of-the-art adaptive optimizers. Training large language models (LLMs) relies almost exclusively on dense adaptive optimizers with increasingly sophisticated preconditioners . We challenge this by showing that randomly masking parameter updates can be highly effective, with a masked variant of RMSProp consistently outperforming recent state-of-the-art optimizers. Our analysis reveals that the random masking induces a curvature-dependent geometric regularization that smooths the optimization trajectory. Motivated by this finding, we introduce Momentum-aligned gradient masking (Magma), which modulates the masked updates using momentum-gradient alignment . Extensive LLM pre-training experiments show that Magma is a simple drop-in replacement for adaptive optimizers with consistent gains and negligible computational overhead. Notably, for the 1B model size, Magma reduces perplexity by over 19\\% and 9\\% compared to Adam and Muon, respectively.",
+      "summary_en": "Random parameter update masking achieves superior optimization for large language models by inducing curvature-dependent regularization, with a momentum-aligned variant delivering significant performance improvements over state-of-the-art adaptive optimizers.",
+      "summary_zh": "随机参数更新掩码通过诱导曲率相关正则化，在大语言模型上实现了更优的优化，其动量对齐变体相较于当前最先进的自适应优化器带来了显著的性能提升。",
+      "hf_url": "https://huggingface.co/papers/2602.15322",
+      "arxiv_url": "https://arxiv.org/abs/2602.15322",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15322",
+      "github_url": "",
+      "upvotes": 5,
+      "fetched_at": "2026-02-19T01:55:46.990692+00:00"
     },
     {
       "date": "2026-02-18",
@@ -182,13 +267,13 @@
       ],
       "abstract": "COMPOT is a training-free compression framework for Transformer models that uses sparse dictionary learning with orthogonal dictionaries and closed-form updates to achieve better quality-compression trade-offs than traditional low-rank methods. Post-training compression of Transformer models commonly relies on truncated singular value decomposition (SVD). However, enforcing a single shared subspace can degrade accuracy even at moderate compression. Sparse dictionary learning provides a more flexible union-of-subspaces representation, but existing approaches often suffer from iterative dictionary and coefficient updates. We propose COMPOT (Calibration-Optimized Matrix Procrustes Orthogonalization for Transformers), a training-free compression framework that uses a small calibration dataset to estimate a sparse weight factorization . COMPOT employs orthogonal dictionaries that enable closed-form Procrustes updates for the dictionary and analytical single-step sparse coding for the coefficients, eliminating iterative optimization. To handle heterogeneous layer sensitivity under a global compression budget, COMPOT further introduces a one-shot dynamic allocation strategy that adaptively redistributes layer-wise compression rates. Extensive experiments across diverse architectures and tasks show that COMPOT consistently delivers a superior quality-compression trade-off over strong low-rank and sparse baselines, while remaining fully compatible with post-training quantization for extreme compression. Code is available https://github.com/mts-ai/COMPOT{here}.",
       "summary_en": "COMPOT is a training-free compression framework for Transformer models that uses sparse dictionary learning with orthogonal dictionaries and closed-form updates to achieve better quality-compression trade-offs than traditional low-rank methods.",
-      "summary_zh": "COMPOT是一种面向Transformer模型的免训练压缩框架，利用基于正交字典与闭式更新的稀疏字典学习，实现了优于传统低秩方法的质量-压缩权衡。",
+      "summary_zh": "COMPOT 是一种面向 Transformer 模型的免训练压缩框架，利用基于正交字典与闭式更新的稀疏字典学习，实现了优于传统低秩方法的质量-压缩权衡。",
       "hf_url": "https://huggingface.co/papers/2602.15200",
       "arxiv_url": "https://arxiv.org/abs/2602.15200",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15200",
       "github_url": "",
       "upvotes": 5,
-      "fetched_at": "2026-02-18T14:10:28.955015+00:00"
+      "fetched_at": "2026-02-19T01:55:44.392487+00:00"
     },
     {
       "date": "2026-02-18",
@@ -213,88 +298,26 @@
     },
     {
       "date": "2026-02-18",
-      "paper_id": "2602.14486",
-      "title": "Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
+      "paper_id": "2602.15449",
+      "title": "TAROT: Test-driven and Capability-adaptive Curriculum Reinforcement Fine-tuning for Code Generation with Large Language Models",
       "authors": [
-        "Fabian Gröger",
-        "Shuo Wen",
-        "Maria Brbić"
+        "Chansung Park",
+        "Juyong Jiang",
+        "Fan Wang",
+        "Sayak Paul",
+        "Jiasi Shen",
+        "Jing Tang",
+        "Jianguo Li"
       ],
-      "abstract": "Network representations converge toward shared local neighborhood relationships rather than global statistical models, as revealed by calibrated similarity metrics. The Platonic Representation Hypothesis suggests that representations from neural networks are converging to a common statistical model of reality. We show that the existing metrics used to measure representational similarity are confounded by network scale: increasing model depth or width can systematically inflate representational similarity scores. To correct these effects, we introduce a permutation-based null-calibration framework that transforms any representational similarity metric into a calibrated score with statistical guarantees. We revisit the Platonic Representation Hypothesis with our calibration framework, which reveals a nuanced picture: the apparent convergence reported by global spectral measures largely disappears after calibration, while local neighborhood similarity , but not local distances, retains significant agreement across different modalities. Based on these findings, we propose the Aristotelian Representation Hypothesis : representations in neural networks are converging to shared local neighborhood relationships.",
-      "summary_en": "Network representations converge toward shared local neighborhood relationships rather than global statistical models, as revealed by calibrated similarity metrics.",
-      "summary_zh": "经校准的相似性度量揭示，网络表征收敛于共享的局部邻域关系，而非全局统计模型。",
-      "hf_url": "https://huggingface.co/papers/2602.14486",
-      "arxiv_url": "https://arxiv.org/abs/2602.14486",
-      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14486",
-      "github_url": "https://github.com/mlbio-epfl/aristotelian",
-      "upvotes": 5,
-      "fetched_at": "2026-02-18T14:10:26.042097+00:00"
-    },
-    {
-      "date": "2026-02-18",
-      "paper_id": "2602.15547",
-      "title": "jina-embeddings-v5-text: Task-Targeted Embedding Distillation",
-      "authors": [
-        "Mohammad Kalim Akram",
-        "Saba Sturua",
-        "Nastia Havriushenko",
-        "Quentin Herreros",
-        "Michael Günther",
-        "Maximilian Werk",
-        "Han Xiao"
-      ],
-      "abstract": "Compact text embedding models are developed through a combined training approach using distillation and contrastive loss, achieving state-of-the-art performance while supporting long-context sequences and efficient quantization. Text embedding models are widely used for semantic similarity tasks, including information retrieval , clustering , and classification . General-purpose models are typically trained with single- or multi-stage processes using contrastive loss functions. We introduce a novel training regimen that combines model distillation techniques with task-specific contrastive loss to produce compact, high-performance embedding models . Our findings suggest that this approach is more effective for training small models than purely contrastive or distillation-based training paradigms alone. Benchmark scores for the resulting models, jina-embeddings-v5-text-small and jina-embeddings-v5-text-nano, exceed or match the state-of-the-art for models of similar size. jina-embeddings-v5-text models additionally support long texts (up to 32k tokens) in many languages, and generate embeddings that remain robust under truncation and binary quantization . Model weights are publicly available, hopefully inspiring further advances in embedding model development.",
-      "summary_en": "Compact text embedding models are developed through a combined training approach using distillation and contrastive loss, achieving state-of-the-art performance while supporting long-context sequences and efficient quantization.",
-      "summary_zh": "紧凑型文本嵌入模型通过蒸馏与对比损失相结合的联合训练方法开发，在实现最先进性能的同时支持长上下文序列和高效量化。",
-      "hf_url": "https://huggingface.co/papers/2602.15547",
-      "arxiv_url": "https://arxiv.org/abs/2602.15547",
-      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15547",
-      "github_url": "",
+      "abstract": "Reinforcement fine-tuning approach for code generation that adapts curriculum design based on model capability through a four-tier test suite structure. Large Language Models (LLMs) are changing the coding paradigm, known as vibe coding, yet synthesizing algorithmically sophisticated and robust code still remains a critical challenge. Incentivizing the deep reasoning capabilities of LLMs is essential to overcoming this hurdle. Reinforcement Fine-Tuning (RFT) has emerged as a promising strategy to address this need. However, most existing approaches overlook the heterogeneous difficulty and granularity inherent in test cases, leading to an imbalanced distribution of reward signals and consequently biased gradient updates during training. To address this, we propose Test-driven and cApability-adaptive cuRriculum reinfOrcement fine-Tuning (TAROT). TAROT systematically constructs, for each problem, a four-tier test suite (basic, intermediate, complex, edge), providing a controlled difficulty landscape for curriculum design and evaluation. Crucially, TAROT decouples curriculum progression from raw reward scores, enabling capability-conditioned evaluation and principled selection from a portfolio of curriculum policies rather than incidental test-case difficulty composition. This design fosters stable optimization and more efficient competency acquisition. Extensive experimental results reveal that the optimal curriculum for RFT in code generation is closely tied to a model's inherent capability, with less capable models achieving greater gains with an easy-to-hard progression, whereas more competent models excel under a hard-first curriculum. TAROT provides a reproducible method that adaptively tailors curriculum design to a model's capability, thereby consistently improving the functional correctness and robustness of the generated code. All code and data are released to foster reproducibility and advance community research at https://github.com/deep-diver/TAROT.",
+      "summary_en": "Reinforcement fine-tuning approach for code generation that adapts curriculum design based on model capability through a four-tier test suite structure.",
+      "summary_zh": "面向代码生成的强化微调方法，通过四层测试套件结构基于模型能力进行自适应课程设计。",
+      "hf_url": "https://huggingface.co/papers/2602.15449",
+      "arxiv_url": "https://arxiv.org/abs/2602.15449",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15449",
+      "github_url": "https://github.com/deep-diver/TAROT",
       "upvotes": 4,
-      "fetched_at": "2026-02-18T14:10:35.239756+00:00"
-    },
-    {
-      "date": "2026-02-18",
-      "paper_id": "2602.15772",
-      "title": "Understanding vs. Generation: Navigating Optimization Dilemma in Multimodal Models",
-      "authors": [
-        "Sen Ye",
-        "Mengde Xu",
-        "Shuyang Gu",
-        "Di He",
-        "Liwei Wang",
-        "Han Hu"
-      ],
-      "abstract": "The Reason-Reflect-Refine framework addresses the trade-off between generation and understanding in multimodal models by reformulating single-step generation into a multi-step process that explicitly incorporates understanding during generation. Current research in multimodal models faces a key challenge where enhancing generative capabilities often comes at the expense of understanding, and vice versa. We analyzed this trade-off and identify the primary cause might be the potential conflict between generation and understanding, which creates a competitive dynamic within the model. To address this, we propose the Reason-Reflect-Refine (R3) framework. This innovative algorithm re-frames the single-step generation task into a multi-step process of \"generate-understand-regenerate\". By explicitly leveraging the model's understanding capability during generation, we successfully mitigate the optimization dilemma , achieved stronger generation results and improved understanding ability which are related to the generation process. This offers valuable insights for designing next-generation unified multimodal models . Code is available at https://github.com/sen-ye/R3.",
-      "summary_en": "The Reason-Reflect-Refine framework addresses the trade-off between generation and understanding in multimodal models by reformulating single-step generation into a multi-step process that explicitly incorporates understanding during generation.",
-      "summary_zh": "推理-反思-精炼框架通过将单步生成重构为在生成过程中显式融入理解的多步过程，解决了多模态模型中生成与理解之间的权衡问题。",
-      "hf_url": "https://huggingface.co/papers/2602.15772",
-      "arxiv_url": "https://arxiv.org/abs/2602.15772",
-      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15772",
-      "github_url": "https://github.com/sen-ye/R3",
-      "upvotes": 3,
-      "fetched_at": "2026-02-18T14:10:37.829876+00:00"
-    },
-    {
-      "date": "2026-02-18",
-      "paper_id": "2602.15322",
-      "title": "On Surprising Effectiveness of Masking Updates in Adaptive Optimizers",
-      "authors": [
-        "Taejong Joo",
-        "Wenhan Xia",
-        "Cheolmin Kim",
-        "Ming Zhang",
-        "Eugene Ie"
-      ],
-      "abstract": "Random parameter update masking achieves superior optimization for large language models by inducing curvature-dependent regularization, with a momentum-aligned variant delivering significant performance improvements over state-of-the-art adaptive optimizers. Training large language models (LLMs) relies almost exclusively on dense adaptive optimizers with increasingly sophisticated preconditioners . We challenge this by showing that randomly masking parameter updates can be highly effective, with a masked variant of RMSProp consistently outperforming recent state-of-the-art optimizers. Our analysis reveals that the random masking induces a curvature-dependent geometric regularization that smooths the optimization trajectory. Motivated by this finding, we introduce Momentum-aligned gradient masking (Magma), which modulates the masked updates using momentum-gradient alignment . Extensive LLM pre-training experiments show that Magma is a simple drop-in replacement for adaptive optimizers with consistent gains and negligible computational overhead. Notably, for the 1B model size, Magma reduces perplexity by over 19\\% and 9\\% compared to Adam and Muon, respectively.",
-      "summary_en": "Random parameter update masking achieves superior optimization for large language models by inducing curvature-dependent regularization, with a momentum-aligned variant delivering significant performance improvements over state-of-the-art adaptive optimizers.",
-      "summary_zh": "随机参数更新掩码通过诱导曲率相关正则化，在大语言模型上实现了更优的优化，其动量对齐变体相较于当前最先进的自适应优化器带来了显著的性能提升。",
-      "hf_url": "https://huggingface.co/papers/2602.15322",
-      "arxiv_url": "https://arxiv.org/abs/2602.15322",
-      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15322",
-      "github_url": "",
-      "upvotes": 3,
-      "fetched_at": "2026-02-18T14:10:31.823721+00:00"
+      "fetched_at": "2026-02-19T01:55:50.538737+00:00"
     },
     {
       "date": "2026-02-18",
@@ -317,13 +340,33 @@
       ],
       "abstract": "Research identifies spurious tokens as the cause of training instability in reinforcement learning fine-tuning of large language models and proposes a solution that selectively masks problematic gradient updates to improve reasoning performance. Reinforcement Learning (RL) has significantly improved large language model reasoning, but existing RL fine-tuning methods rely heavily on heuristic techniques such as entropy regularization and reweighting to maintain stability. In practice, they often experience late-stage performance collapse, leading to degraded reasoning quality and unstable training. We derive that the magnitude of token-wise policy gradients in RL is negatively correlated with token probability and local policy entropy . Building on this result, we prove that training instability is driven by a tiny fraction of tokens, approximately 0.01\\%, which we term spurious tokens . When such tokens appear in correct responses, they contribute little to the reasoning outcome but inherit the full sequence-level reward, leading to abnormally amplified gradient updates . Motivated by this observation, we propose Spurious-Token-Aware Policy Optimization (STAPO) for large-scale model refining, which selectively masks such updates and renormalizes the loss over valid tokens. Across six mathematical reasoning benchmarks using Qwen 1.7B, 8B, and 14B base models, STAPO consistently demonstrates superior entropy stability and achieves an average performance improvement of 7.13\\% over GRPO , 20- Entropy and JustRL .",
       "summary_en": "Research identifies spurious tokens as the cause of training instability in reinforcement learning fine-tuning of large language models and proposes a solution that selectively masks problematic gradient updates to improve reasoning performance.",
-      "summary_zh": "研究发现虚假token是大语言模型强化学习微调中训练不稳定的原因，并提出选择性掩码问题梯度更新的解决方案以提升推理性能。",
+      "summary_zh": "研究发现，大语言模型强化学习微调中的训练不稳定性源于虚假 token，并提出通过选择性掩码问题梯度更新以提升推理性能的解决方案。",
       "hf_url": "https://huggingface.co/papers/2602.15620",
       "arxiv_url": "https://arxiv.org/abs/2602.15620",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15620",
       "github_url": "",
-      "upvotes": 2,
-      "fetched_at": "2026-02-18T14:10:36.166252+00:00"
+      "upvotes": 3,
+      "fetched_at": "2026-02-19T01:55:52.727674+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.15278",
+      "title": "Visual Persuasion: What Influences Decisions of Vision-Language Models?",
+      "authors": [
+        "Manuel Cherep",
+        "Pranav M R",
+        "Pattie Maes",
+        "Nikhil Singh"
+      ],
+      "abstract": "Visual-language models' decision-making preferences are studied through controlled image choice tasks with systematic input perturbations, revealing visual vulnerabilities and safety concerns. The web is littered with images, once created for human consumption and now increasingly interpreted by agents using vision-language models (VLMs). These agents make visual decisions at scale, deciding what to click, recommend, or buy. Yet, we know little about the structure of their visual preferences. We introduce a framework for studying this by placing VLMs in controlled image-based choice tasks and systematically perturbing their inputs. Our key idea is to treat the agent's decision function as a latent visual utility that can be inferred through revealed preference : choices between systematically edited images. Starting from common images, such as product photos, we propose methods for visual prompt optimization , adapting text optimization methods to iteratively propose and apply visually plausible modifications using an image generation model (such as in composition, lighting, or background). We then evaluate which edits increase selection probability. Through large-scale experiments on frontier VLMs, we demonstrate that optimized edits significantly shift choice probabilities in head-to-head comparisons. We develop an automatic interpretability pipeline to explain these preferences, identifying consistent visual themes that drive selection. We argue that this approach offers a practical and efficient way to surface visual vulnerabilities , safety concerns that might otherwise be discovered implicitly in the wild, supporting more proactive auditing and governance of image-based AI agents.",
+      "summary_en": "Visual-language models' decision-making preferences are studied through controlled image choice tasks with systematic input perturbations, revealing visual vulnerabilities and safety concerns.",
+      "summary_zh": "通过受控的图像选择任务与系统性输入扰动，研究视觉-语言模型的决策偏好，揭示其视觉漏洞与安全问题。",
+      "hf_url": "https://huggingface.co/papers/2602.15278",
+      "arxiv_url": "https://arxiv.org/abs/2602.15278",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15278",
+      "github_url": "",
+      "upvotes": 3,
+      "fetched_at": "2026-02-19T01:55:45.581697+00:00"
     },
     {
       "date": "2026-02-18",
@@ -343,7 +386,7 @@
       ],
       "abstract": "A Vision Wormhole framework enables efficient, model-agnostic communication in multi-agent systems by using visual-language models to transfer reasoning states through a shared latent space, reducing computational overhead while maintaining reasoning accuracy. Multi-Agent Systems (MAS) powered by Large Language Models have unlocked advanced collaborative reasoning, yet they remain shackled by the inefficiency of discrete text communication, which imposes significant runtime overhead and information quantization loss. While latent state transfer offers a high-bandwidth alternative, existing approaches either assume homogeneous sender-receiver architectures or rely on pair-specific learned translators, limiting scalability and modularity across diverse model families with disjoint manifolds. In this work, we propose the Vision Wormhole, a novel framework that repurposes the visual interface of Vision-Language Models (VLMs) to enable model-agnostic, text-free communication. By introducing a Universal Visual Codec , we map heterogeneous reasoning traces into a shared continuous latent space and inject them directly into the receiver's visual pathway , effectively treating the vision encoder as a universal port for inter-agent telepathy. Our framework adopts a hub-and-spoke topology to reduce pairwise alignment complexity from O(N^2) to O(N) and leverages a label-free, teacher-student distillation objective to align the high-speed visual channel with the robust reasoning patterns of the text pathway. Extensive experiments across heterogeneous model families (e.g., Qwen-VL, Gemma) demonstrate that the Vision Wormhole reduces end-to-end wall-clock time in controlled comparisons while maintaining reasoning fidelity comparable to standard text-based MAS. Code is available at https://github.com/xz-liu/heterogeneous-latent-mas",
       "summary_en": "A Vision Wormhole framework enables efficient, model-agnostic communication in multi-agent systems by using visual-language models to transfer reasoning states through a shared latent space, reducing computational overhead while maintaining reasoning accuracy.",
-      "summary_zh": "视觉虫洞框架利用视觉-语言模型，通过共享潜在空间传递推理状态，从而在多智能体系统中实现高效、模型无关的通信，在降低计算开销的同时保持推理准确性。",
+      "summary_zh": "Vision Wormhole框架通过视觉语言模型在共享隐空间中传递推理状态，实现了多智能体系统中高效且与模型无关的通信，在降低计算开销的同时保持推理准确性。",
       "hf_url": "https://huggingface.co/papers/2602.15382",
       "arxiv_url": "https://arxiv.org/abs/2602.15382",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15382",
@@ -353,23 +396,23 @@
     },
     {
       "date": "2026-02-18",
-      "paper_id": "2602.15278",
-      "title": "Visual Persuasion: What Influences Decisions of Vision-Language Models?",
+      "paper_id": "2602.15327",
+      "title": "Prescriptive Scaling Reveals the Evolution of Language Model Capabilities",
       "authors": [
-        "Manuel Cherep",
-        "Pranav M R",
-        "Pattie Maes",
-        "Nikhil Singh"
+        "Hanlin Zhang",
+        "Jikai Jin",
+        "Vasilis Syrgkanis",
+        "Sham Kakade"
       ],
-      "abstract": "Visual-language models' decision-making preferences are studied through controlled image choice tasks with systematic input perturbations, revealing visual vulnerabilities and safety concerns. The web is littered with images, once created for human consumption and now increasingly interpreted by agents using vision-language models (VLMs). These agents make visual decisions at scale, deciding what to click, recommend, or buy. Yet, we know little about the structure of their visual preferences. We introduce a framework for studying this by placing VLMs in controlled image-based choice tasks and systematically perturbing their inputs. Our key idea is to treat the agent's decision function as a latent visual utility that can be inferred through revealed preference : choices between systematically edited images. Starting from common images, such as product photos, we propose methods for visual prompt optimization , adapting text optimization methods to iteratively propose and apply visually plausible modifications using an image generation model (such as in composition, lighting, or background). We then evaluate which edits increase selection probability. Through large-scale experiments on frontier VLMs, we demonstrate that optimized edits significantly shift choice probabilities in head-to-head comparisons. We develop an automatic interpretability pipeline to explain these preferences, identifying consistent visual themes that drive selection. We argue that this approach offers a practical and efficient way to surface visual vulnerabilities , safety concerns that might otherwise be discovered implicitly in the wild, supporting more proactive auditing and governance of image-based AI agents.",
-      "summary_en": "Visual-language models' decision-making preferences are studied through controlled image choice tasks with systematic input perturbations, revealing visual vulnerabilities and safety concerns.",
-      "summary_zh": "通过受控的图像选择任务与系统性输入扰动，研究视觉-语言模型的决策偏好，揭示其视觉漏洞与安全问题。",
-      "hf_url": "https://huggingface.co/papers/2602.15278",
-      "arxiv_url": "https://arxiv.org/abs/2602.15278",
-      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15278",
+      "abstract": "Large-scale observational analysis estimates capability boundaries and performance predictions for foundation models using quantile regression and evaluates temporal stability across tasks. For deploying foundation models, practitioners increasingly need prescriptive scaling laws : given a pre training compute budget , what downstream accuracy is attainable with contemporary post training practice, and how stable is that mapping as the field evolves? Using large scale observational evaluations with 5k observational and 2k newly sampled data on model performance , we estimate capability boundaries , high conditional quantiles of benchmark scores as a function of log pre training FLOPs, via smoothed quantile regression with a monotone, saturating sigmoid parameterization . We validate the temporal reliability by fitting on earlier model generations and evaluating on later releases. Across various tasks, the estimated boundaries are mostly stable, with the exception of math reasoning that exhibits a consistently advancing boundary over time. We then extend our approach to analyze task dependent saturation and to probe contamination related shifts on math reasoning tasks. Finally, we introduce an efficient algorithm that recovers near full data frontiers using roughly 20% of evaluation budget. Together, our work releases the Proteus 2k, the latest model performance evaluation dataset, and introduces a practical methodology for translating compute budget s into reliable performance expectations and for monitoring when capability boundaries shift across time.",
+      "summary_en": "Large-scale observational analysis estimates capability boundaries and performance predictions for foundation models using quantile regression and evaluates temporal stability across tasks.",
+      "summary_zh": "大规模观察性分析使用分位数回归估计基础模型的能力边界和性能预测，并评估跨任务的时间稳定性。",
+      "hf_url": "https://huggingface.co/papers/2602.15327",
+      "arxiv_url": "https://arxiv.org/abs/2602.15327",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15327",
       "github_url": "",
       "upvotes": 2,
-      "fetched_at": "2026-02-18T14:10:30.443374+00:00"
+      "fetched_at": "2026-02-19T01:55:47.959989+00:00"
     },
     {
       "date": "2026-02-18",
@@ -429,13 +472,34 @@
       ],
       "abstract": "Legato improves action-chunked Vision Language Action models by using training-time continuation methods that ensure smooth trajectories and reduce multimodal switching during real-time execution. Action chunking enables Vision Language Action (VLA) models to run in real time, but naive chunked execution often exhibits discontinuities at chunk boundaries. Real-Time Chunking (RTC) alleviates this issue but is external to the policy, leading to spurious multimodal switching and trajectories that are not intrinsically smooth. We propose Legato, a training-time continuation method for action-chunked flow-based VLA policies. Specifically, Legato initializes denoising from a schedule-shaped mixture of known actions and noise, exposing the model to partial action information. Moreover, Legato reshapes the learned flow dynamics to ensure that the denoising process remains consistent between training and inference under per-step guidance. Legato further uses randomized schedule condition during training to support varying inference delays and achieve controllable smoothness. Empirically, Legato produces smoother trajectories and reduces spurious multimodal switching during execution, leading to less hesitation and shorter task completion time . Extensive real-world experiments show that Legato consistently outperforms RTC across five manipulation tasks, achieving approximately 10% improvements in both trajectory smoothness and task completion time .",
       "summary_en": "Legato improves action-chunked Vision Language Action models by using training-time continuation methods that ensure smooth trajectories and reduce multimodal switching during real-time execution.",
-      "summary_zh": "Legato 通过训练时延续方法改进动作分块的视觉语言动作模型，确保轨迹平滑并减少实时执行中的多模态切换。",
+      "summary_zh": "Legato 利用训练时延续方法改进动作分块的视觉-语言-动作模型，确保轨迹平滑并减少实时执行中的多模态切换。",
       "hf_url": "https://huggingface.co/papers/2602.12978",
       "arxiv_url": "https://arxiv.org/abs/2602.12978",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12978",
       "github_url": "",
       "upvotes": 2,
-      "fetched_at": "2026-02-18T14:10:22.813129+00:00"
+      "fetched_at": "2026-02-19T01:55:36.092392+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.11389",
+      "title": "Causal-JEPA: Learning World Models through Object-Level Latent Interventions",
+      "authors": [
+        "Heejeong Nam",
+        "Quentin Le Lidec",
+        "Lucas Maes",
+        "Yann LeCun",
+        "Randall Balestriero"
+      ],
+      "abstract": "C-JEPA extends masked joint embedding prediction to object-centric representations, enabling robust relational understanding through object-level masking that induces causal inductive biases and improves reasoning and control tasks.",
+      "summary_en": "C-JEPA extends masked joint embedding prediction to object-centric representations, enabling robust relational understanding through object-level masking that induces causal inductive biases and improves reasoning and control tasks.",
+      "summary_zh": "C-JEPA将掩码联合嵌入预测扩展至以对象为中心的表征，通过引入因果归纳偏置的对象级掩码实现稳健的关系理解，并提升推理与控制任务的表现。",
+      "hf_url": "https://huggingface.co/papers/2602.11389",
+      "arxiv_url": "https://arxiv.org/abs/2602.11389",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11389",
+      "github_url": "https://github.com/galilai-group/cjepa",
+      "upvotes": 2,
+      "fetched_at": "2026-02-19T01:55:32.256322+00:00"
     },
     {
       "date": "2026-02-18",
@@ -454,13 +518,13 @@
       ],
       "abstract": "A two-stage framework addresses alignment of large language models with clinician preferences through physician-verified examples and distilled clinical principles for improved medical reasoning. Although large language models (LLMs) demonstrate expert-level medical knowledge, aligning their open-ended outputs with fine-grained clinician preferences remains challenging. Existing methods often rely on coarse objectives or unreliable automated judges that are weakly grounded in professional guidelines. We propose a two-stage framework to address this gap. First, we introduce HealthRubrics , a dataset of 7,034 physician-verified preference examples in which clinicians refine LLM-drafted rubrics to meet rigorous medical standards. Second, we distill these rubrics into HealthPrinciples : 119 broadly reusable, clinically grounded principles organized by clinical dimensions, enabling scalable supervision beyond manual annotation. We use HealthPrinciples for (1) offline alignment by synthesizing rubrics for unlabeled queries and (2) an inference-time tool for guided self-revision . A 30B parameter model that activates only 3B parameters at inference trained with our framework achieves 33.4% on HealthBench-Hard , outperforming much larger models including Deepseek-R1 and o3, establishing a resource-efficient baseline for clinical alignment.",
       "summary_en": "A two-stage framework addresses alignment of large language models with clinician preferences through physician-verified examples and distilled clinical principles for improved medical reasoning.",
-      "summary_zh": "一种两阶段框架通过医生验证的示例和蒸馏的临床原则，实现大语言模型与临床医生偏好的对齐，以改进医学推理。",
+      "summary_zh": "一种两阶段框架通过医生验证的示例和蒸馏得到的临床原则，实现大语言模型与临床医生偏好的对齐，以改进医学推理。",
       "hf_url": "https://huggingface.co/papers/2602.09653",
       "arxiv_url": "https://arxiv.org/abs/2602.09653",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.09653",
       "github_url": "https://github.com/AQ-MedAI/ClinAlign",
       "upvotes": 2,
-      "fetched_at": "2026-02-18T14:10:17.323608+00:00"
+      "fetched_at": "2026-02-19T01:55:30.816675+00:00"
     },
     {
       "date": "2026-02-18",
@@ -480,56 +544,13 @@
       ],
       "abstract": "ViewRope, a geometry-aware encoding method, enhances long-term consistency in predictive world models by injecting camera-ray directions into video transformer attention layers, addressing spatial persistence issues through relative ray geometry parameterization. Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings , which conflict with the projective geometry required for 3D consistency. We introduce ViewRope, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers . By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose Geometry-Aware Frame-Sparse Attention , which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present ViewBench, a diagnostic suite measuring loop-closure fidelity and geometric drift . Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
       "summary_en": "ViewRope, a geometry-aware encoding method, enhances long-term consistency in predictive world models by injecting camera-ray directions into video transformer attention layers, addressing spatial persistence issues through relative ray geometry parameterization.",
-      "summary_zh": "ViewRope是一种几何感知编码方法，通过向视频Transformer注意力层注入相机射线方向来增强预测性世界模型的长期一致性，并利用相对射线几何参数化解决空间持久性问题。",
+      "summary_zh": "ViewRope是一种几何感知编码方法，通过将相机射线方向注入视频Transformer的注意力层来增强预测性世界模型的长期一致性，并利用相对射线几何参数化解决空间持久性问题。",
       "hf_url": "https://huggingface.co/papers/2602.07854",
       "arxiv_url": "https://arxiv.org/abs/2602.07854",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07854",
       "github_url": "",
       "upvotes": 2,
-      "fetched_at": "2026-02-18T14:10:16.127210+00:00"
-    },
-    {
-      "date": "2026-02-18",
-      "paper_id": "2602.15449",
-      "title": "TAROT: Test-driven and Capability-adaptive Curriculum Reinforcement Fine-tuning for Code Generation with Large Language Models",
-      "authors": [
-        "Chansung Park",
-        "Juyong Jiang",
-        "Fan Wang",
-        "Sayak Paul",
-        "Jiasi Shen",
-        "Jing Tang",
-        "Jianguo Li"
-      ],
-      "abstract": "Reinforcement fine-tuning approach for code generation that adapts curriculum design based on model capability through a four-tier test suite structure. Large Language Models (LLMs) are changing the coding paradigm, known as vibe coding, yet synthesizing algorithmically sophisticated and robust code still remains a critical challenge. Incentivizing the deep reasoning capabilities of LLMs is essential to overcoming this hurdle. Reinforcement Fine-Tuning (RFT) has emerged as a promising strategy to address this need. However, most existing approaches overlook the heterogeneous difficulty and granularity inherent in test cases, leading to an imbalanced distribution of reward signals and consequently biased gradient updates during training. To address this, we propose Test-driven and cApability-adaptive cuRriculum reinfOrcement fine-Tuning (TAROT). TAROT systematically constructs, for each problem, a four-tier test suite (basic, intermediate, complex, edge), providing a controlled difficulty landscape for curriculum design and evaluation. Crucially, TAROT decouples curriculum progression from raw reward scores, enabling capability-conditioned evaluation and principled selection from a portfolio of curriculum policies rather than incidental test-case difficulty composition. This design fosters stable optimization and more efficient competency acquisition. Extensive experimental results reveal that the optimal curriculum for RFT in code generation is closely tied to a model's inherent capability, with less capable models achieving greater gains with an easy-to-hard progression, whereas more competent models excel under a hard-first curriculum. TAROT provides a reproducible method that adaptively tailors curriculum design to a model's capability, thereby consistently improving the functional correctness and robustness of the generated code. All code and data are released to foster reproducibility and advance community research at https://github.com/deep-diver/TAROT.",
-      "summary_en": "Reinforcement fine-tuning approach for code generation that adapts curriculum design based on model capability through a four-tier test suite structure.",
-      "summary_zh": "面向代码生成的强化微调方法，通过四层测试套件结构基于模型能力自适应调整课程设计。",
-      "hf_url": "https://huggingface.co/papers/2602.15449",
-      "arxiv_url": "https://arxiv.org/abs/2602.15449",
-      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15449",
-      "github_url": "https://github.com/deep-diver/TAROT",
-      "upvotes": 1,
-      "fetched_at": "2026-02-18T14:10:34.370167+00:00"
-    },
-    {
-      "date": "2026-02-18",
-      "paper_id": "2602.15327",
-      "title": "Prescriptive Scaling Reveals the Evolution of Language Model Capabilities",
-      "authors": [
-        "Hanlin Zhang",
-        "Jikai Jin",
-        "Vasilis Syrgkanis",
-        "Sham Kakade"
-      ],
-      "abstract": "Large-scale observational analysis estimates capability boundaries and performance predictions for foundation models using quantile regression and evaluates temporal stability across tasks. For deploying foundation models, practitioners increasingly need prescriptive scaling laws : given a pre training compute budget , what downstream accuracy is attainable with contemporary post training practice, and how stable is that mapping as the field evolves? Using large scale observational evaluations with 5k observational and 2k newly sampled data on model performance , we estimate capability boundaries , high conditional quantiles of benchmark scores as a function of log pre training FLOPs, via smoothed quantile regression with a monotone, saturating sigmoid parameterization . We validate the temporal reliability by fitting on earlier model generations and evaluating on later releases. Across various tasks, the estimated boundaries are mostly stable, with the exception of math reasoning that exhibits a consistently advancing boundary over time. We then extend our approach to analyze task dependent saturation and to probe contamination related shifts on math reasoning tasks. Finally, we introduce an efficient algorithm that recovers near full data frontiers using roughly 20% of evaluation budget. Together, our work releases the Proteus 2k, the latest model performance evaluation dataset, and introduces a practical methodology for translating compute budget s into reliable performance expectations and for monitoring when capability boundaries shift across time.",
-      "summary_en": "Large-scale observational analysis estimates capability boundaries and performance predictions for foundation models using quantile regression and evaluates temporal stability across tasks.",
-      "summary_zh": "大规模观察性分析使用分位数回归估计基础模型的能力边界和性能预测，并评估跨任务的时间稳定性。",
-      "hf_url": "https://huggingface.co/papers/2602.15327",
-      "arxiv_url": "https://arxiv.org/abs/2602.15327",
-      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15327",
-      "github_url": "",
-      "upvotes": 1,
-      "fetched_at": "2026-02-18T14:10:32.947339+00:00"
+      "fetched_at": "2026-02-19T01:55:29.881857+00:00"
     },
     {
       "date": "2026-02-18",
@@ -544,13 +565,13 @@
       ],
       "abstract": "Clawdbot, a self-hosted AI agent with diverse tool capabilities, exhibits varying safety performance across different risk dimensions, particularly struggling with ambiguous or adversarial inputs despite consistent reliability in specified tasks. Clawdbot is a self-hosted, tool-using personal AI agent with a broad action space spanning local execution and web-mediated workflows, which raises heightened safety and security concerns under ambiguity and adversarial steering. We present a trajectory-centric evaluation of Clawdbot across six risk dimensions. Our test suite samples and lightly adapts scenarios from prior agent-safety benchmarks (including ATBench and LPS-Bench ) and supplements them with hand-designed cases tailored to Clawdbot's tool surface. We log complete interaction trajectories (messages, actions, tool-call arguments/outputs) and assess safety using both an automated trajectory judge ( AgentDoG-Qwen3-4B ) and human review. Across 34 canonical cases, we find a non-uniform safety profile: performance is generally consistent on reliability-focused tasks, while most failures arise under underspecified intent, open-ended goals, or benign-seeming jailbreak prompts, where minor misinterpretations can escalate into higher-impact tool actions. We supplemented the overall results with representative case studies and summarized the commonalities of these cases, analyzing the security vulnerabilities and typical failure modes that Clawdbot is prone to trigger in practice.",
       "summary_en": "Clawdbot, a self-hosted AI agent with diverse tool capabilities, exhibits varying safety performance across different risk dimensions, particularly struggling with ambiguous or adversarial inputs despite consistent reliability in specified tasks.",
-      "summary_zh": "Clawdbot是一个具备多样化工具能力的自托管AI智能体，在不同风险维度上呈现出差异化的安全性能，尽管在特定任务中保持稳定可靠，但在处理模糊或对抗性输入时表现不佳。",
+      "summary_zh": "Clawdbot是一款具备多样化工具能力的自托管AI智能体，其在不同风险维度上的安全性能表现各异，尤其在处理模糊或对抗性输入时存在困难，尽管在指定任务中保持一致的可靠性。",
       "hf_url": "https://huggingface.co/papers/2602.14364",
       "arxiv_url": "https://arxiv.org/abs/2602.14364",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14364",
       "github_url": "https://github.com/tychenn/clawdbot_report",
       "upvotes": 1,
-      "fetched_at": "2026-02-18T15:48:04.320976+00:00"
+      "fetched_at": "2026-02-19T01:55:40.666586+00:00"
     },
     {
       "date": "2026-02-18",
@@ -571,7 +592,7 @@
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12235",
       "github_url": "",
       "upvotes": 1,
-      "fetched_at": "2026-02-18T15:19:42.403592+00:00"
+      "fetched_at": "2026-02-19T01:55:32.934470+00:00"
     },
     {
       "date": "2026-02-18",
@@ -595,27 +616,6 @@
       "github_url": "https://github.com/junhongmit/HybridRAG-Bench",
       "upvotes": 1,
       "fetched_at": "2026-02-19T02:57:15.482763+00:00"
-    },
-    {
-      "date": "2026-02-18",
-      "paper_id": "2602.11389",
-      "title": "Causal-JEPA: Learning World Models through Object-Level Latent Interventions",
-      "authors": [
-        "Heejeong Nam",
-        "Quentin Le Lidec",
-        "Lucas Maes",
-        "Yann LeCun",
-        "Randall Balestriero"
-      ],
-      "abstract": "C-JEPA extends masked joint embedding prediction to object-centric representations, enabling robust relational understanding through object-level masking that induces causal inductive biases and improves reasoning and control tasks.",
-      "summary_en": "C-JEPA extends masked joint embedding prediction to object-centric representations, enabling robust relational understanding through object-level masking that induces causal inductive biases and improves reasoning and control tasks.",
-      "summary_zh": "C-JEPA将掩码联合嵌入预测扩展至以对象为中心的表征，通过对象级掩码引入因果归纳偏置，实现稳健的关系理解，并改进推理和控制任务。",
-      "hf_url": "https://huggingface.co/papers/2602.11389",
-      "arxiv_url": "https://arxiv.org/abs/2602.11389",
-      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11389",
-      "github_url": "https://github.com/galilai-group/cjepa",
-      "upvotes": 0,
-      "fetched_at": "2026-02-18T14:10:18.399338+00:00"
     }
   ]
 }

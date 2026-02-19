@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-11",
+  "paper_id": "2602.06820",
+  "title": "ScaleEnv: Scaling Environment Synthesis from Scratch for Generalist Interactive Tool-Use Agent Training",
+  "authors": [
+    "Dunwei Tu",
+    "Hongyan Hao",
+    "Hansi Yang",
+    "Yihao Chen",
+    "Yi-Kai Zhang",
+    "Zhikang Xia",
+    "Yu Yang",
+    "Yueqing Sun",
+    "Xingchen Liu",
+    "Furao Shen",
+    "Qi Gu",
+    "Hui Su",
+    "Xunliang Cai"
+  ],
+  "abstract": "ScaleEnv framework generates interactive environments from scratch to improve agent generalization through diverse domain scaling and verified task completion. Training generalist agents capable of adapting to diverse scenarios requires interactive environments for self-exploration . However, interactive environments remain critically scarce, and existing synthesis methods suffer from significant limitations regarding environmental diversity and scalability. To address these challenges, we introduce ScaleEnv, a framework that constructs fully interactive environments and verifiable tasks entirely from scratch. Specifically, ScaleEnv ensures environment reliability through procedural testing , and guarantees task completeness and solvability via tool dependency graph expansion and executable action verification . By enabling agents to learn through exploration within ScaleEnv, we demonstrate significant performance improvements on unseen, multi-turn tool-use benchmarks such as τ^2-Bench and VitaBench , highlighting strong generalization capabilities. Furthermore, we investigate the relationship between increasing number of domains and model generalization performance, providing empirical evidence that scaling environmental diversity is critical for robust agent learning.",
+  "summary_en": "ScaleEnv framework generates interactive environments from scratch to improve agent generalization through diverse domain scaling and verified task completion.",
+  "summary_zh": "ScaleEnv框架从零开始生成交互式环境，通过多样化域缩放与验证任务完成来提升智能体泛化能力。",
+  "hf_url": "https://huggingface.co/papers/2602.06820",
+  "arxiv_url": "https://arxiv.org/abs/2602.06820",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06820",
+  "github_url": "",
+  "upvotes": 13,
+  "fetched_at": "2026-02-19T06:20:50.291355+00:00"
+}

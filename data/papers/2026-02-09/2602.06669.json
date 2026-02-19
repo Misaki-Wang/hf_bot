@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-09",
+  "paper_id": "2602.06669",
+  "title": "compar:IA: The French Government's LLM arena to collect French-language human prompts and preference data",
+  "authors": [
+    "Lucie Termignon",
+    "Simonas Zilinskas",
+    "Hadrien Pélissier",
+    "Aurélien Barrot",
+    "Nicolas Chesnais",
+    "Elie Gavoty"
+  ],
+  "abstract": "Compar:IA is an open-source platform that collects large-scale human preference data for multilingual language model training and evaluation, featuring a blind pairwise comparison interface and releasing three datasets under open licenses.",
+  "summary_en": "Compar:IA is an open-source platform that collects large-scale human preference data for multilingual language model training and evaluation, featuring a blind pairwise comparison interface and releasing three datasets under open licenses.",
+  "summary_zh": "Compar:IA 是一个开源平台，收集用于多语言语言模型训练与评估的大规模人类偏好数据，具备盲测成对比较界面，并以开放许可发布三个数据集。",
+  "hf_url": "https://huggingface.co/papers/2602.06669",
+  "arxiv_url": "https://arxiv.org/abs/2602.06669",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06669",
+  "github_url": "https://github.com/betagouv/ComparIA",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T05:58:14.493864+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.01031",
+  "title": "HalluHard: A Hard Multi-Turn Hallucination Benchmark",
+  "authors": [
+    "Dongyang Fan",
+    "Sebastien Delsad",
+    "Nicolas Flammarion",
+    "Maksym Andriushchenko"
+  ],
+  "abstract": "Large language models continue to generate plausible but ungrounded factual claims in multi-turn dialogue, with hallucinations remaining significant even when utilizing web search for verification across high-stakes domains. Large language models (LLMs) still produce plausible-sounding but ungrounded factual claims, a problem that worsens in multi-turn dialogue as context grows and early errors cascade. We introduce HalluHard, a challenging multi-turn hallucination benchmark with 950 seed questions spanning four high-stakes domains: legal cases, research questions, medical guidelines, and coding. We operationalize groundedness by requiring inline citations for factual assertions . To support reliable evaluation in open-ended settings , we propose a judging pipeline that iteratively retrieves evidence via web search . It can fetch, filter, and parse full-text sources (including PDFs) to assess whether cited material actually supports the generated content. Across a diverse set of frontier proprietary and open-weight models, hallucination s remain substantial even with web search (approx 30% for the strongest configuration, Opus-4.5 with web search ), with content-grounding errors persisting at high rates. Finally, we show that hallucination behavior is shaped by model capacity , turn position , effective reasoning , and the type of knowledge required.",
+  "summary_en": "Large language models continue to generate plausible but ungrounded factual claims in multi-turn dialogue, with hallucinations remaining significant even when utilizing web search for verification across high-stakes domains.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLarge language models continue to generate plausible but ungrounded factual claims in multi-turn dialogue, with hallucinations remaining significant even when utilizing web search for verification across high-stakes domains.",
+  "hf_url": "https://huggingface.co/papers/2602.01031",
+  "arxiv_url": "https://arxiv.org/abs/2602.01031",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01031",
+  "github_url": "https://github.com/epfml/halluhard",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T05:27:17.223875+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-10",
+  "paper_id": "2602.08004",
+  "title": "Agent Skills: A Data-Driven Analysis of Claude Skills for Extending Large Language Model Functionality",
+  "authors": [
+    "George Ling",
+    "Shanshan Zhong",
+    "Richard Huang"
+  ],
+  "abstract": "",
+  "summary_en": "",
+  "summary_zh": "",
+  "hf_url": "https://huggingface.co/papers/2602.08004",
+  "arxiv_url": "https://arxiv.org/abs/2602.08004",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08004",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-19T06:03:09.896374+00:00"
+}

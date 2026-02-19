@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2602.04735",
+  "title": "From Data to Behavior: Predicting Unintended Model Behaviors Before Training",
+  "authors": [
+    "Mengru Wang",
+    "Zhenqian Xu",
+    "Junfeng Fang",
+    "Yunzhi Yao",
+    "Shumin Deng",
+    "Huajun Chen",
+    "Ningyu Zhang"
+  ],
+  "abstract": "Data2Behavior predicts unintended model behaviors before training using MDF, a lightweight method that analyzes data features to reveal potential biases without parameter updates. Large Language Models (LLMs) can acquire unintended biases from seemingly benign training data even without explicit cues or malicious content. Existing methods struggle to detect such risks before fine-tuning, making post hoc evaluation costly and inefficient. To address this challenge, we introduce Data2Behavior , a new task for predicting unintended model behaviors prior to training. We also propose Manipulating Data Features (MDF), a lightweight approach that summarizes candidate data through their mean representations and injects them into the forward pass of a base model, allowing latent statistical signals in the data to shape model activations and reveal potential biases and safety risks without updating any parameters. MDF achieves reliable prediction while consuming only about 20% of the GPU resources required for fine-tuning. Experiments on Qwen3-14B, Qwen2.5-32B-Instruct, and Gemma-3-12b-it confirm that MDF can anticipate unintended behaviors and provide insight into pre-training vulnerabilities .",
+  "summary_en": "Data2Behavior predicts unintended model behaviors before training using MDF, a lightweight method that analyzes data features to reveal potential biases without parameter updates.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nData2Behavior predicts unintended model behaviors before training using MDF, a lightweight method that analyzes data features to reveal potential biases without parameter updates.",
+  "hf_url": "https://huggingface.co/papers/2602.04735",
+  "arxiv_url": "https://arxiv.org/abs/2602.04735",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04735",
+  "github_url": "https://github.com/zjunlp/Data2Behavior",
+  "upvotes": 15,
+  "fetched_at": "2026-02-19T05:42:11.168927+00:00"
+}

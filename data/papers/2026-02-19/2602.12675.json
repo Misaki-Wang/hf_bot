@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.12675",
+  "title": "SLA2: Sparse-Linear Attention with Learnable Routing and QAT",
+  "authors": [
+    "Jintao Zhang",
+    "Haoxu Wang",
+    "Kai Jiang",
+    "Kaiwen Zheng",
+    "Youhe Jiang",
+    "Ion Stoica",
+    "Jianfei Chen",
+    "Jun Zhu",
+    "Joseph E. Gonzalez"
+  ],
+  "abstract": "SLA2 improves sparse-linear attention in diffusion models by introducing a learnable router, direct attention formulation, and quantization-aware fine-tuning for enhanced efficiency and quality. Sparse-Linear Attention (SLA) combines sparse and linear attention to accelerate diffusion models and has shown strong performance in video generation. However, (i) SLA relies on a heuristic split that assigns computations to the sparse or linear branch based on attention-weight magnitude, which can be suboptimal. Additionally, (ii) after formally analyzing the attention error in SLA, we identify a mismatch between SLA and a direct decomposition into sparse and linear attention. We propose SLA2, which introduces (I) a learnable router that dynamically selects whether each attention computation should use sparse or linear attention, (II) a more faithful and direct sparse-linear attention formulation that uses a learnable ratio to combine the sparse and linear attention branches, and (III) a sparse + low-bit attention design, where low-bit attention is introduced via quantization-aware fine-tuning to reduce quantization error. Experiments show that on video diffusion models , SLA2 can achieve 97% attention sparsity and deliver an 18.6x attention speedup while preserving generation quality.",
+  "summary_en": "SLA2 improves sparse-linear attention in diffusion models by introducing a learnable router, direct attention formulation, and quantization-aware fine-tuning for enhanced efficiency and quality.",
+  "summary_zh": "SLA2 通过引入可学习路由、直接注意力形式及量化感知微调，改进了扩散模型中的稀疏线性注意力，从而在效率与质量上实现提升。",
+  "hf_url": "https://huggingface.co/papers/2602.12675",
+  "arxiv_url": "https://arxiv.org/abs/2602.12675",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12675",
+  "github_url": "https://github.com/thu-ml/SLA",
+  "upvotes": 25,
+  "fetched_at": "2026-02-19T06:47:22.414393+00:00"
+}

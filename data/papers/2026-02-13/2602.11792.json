@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-13",
+  "paper_id": "2602.11792",
+  "title": "Detecting RLVR Training Data via Structural Convergence of Reasoning",
+  "authors": [
+    "Hongbo Zhang",
+    "Yue Yang",
+    "Jianhao Yan",
+    "Guangsheng Bao",
+    "Yue Zhang"
+  ],
+  "abstract": "Reinforcement learning with verifiable rewards induces behavioral signatures that can be detected using a black-box method based on prompt generation diversity, outperforming existing contamination detection approaches. Reinforcement learning with verifiable rewards (RLVR) is central to training modern reasoning models, but the undisclosed training data raises concerns about benchmark contamination. Unlike pretraining methods, which optimize models using token-level probabilities, RLVR fine-tunes models based on reward feedback from self-generated reasoning trajectories , making conventional likelihood-based detection methods less effective. We show that RLVR induces a distinctive behavioral signature : prompts encountered during RLVR training result in more rigid and similar generations, while unseen prompts retain greater diversity. We introduce Min-kNN Distance , a simple black-box detector that quantifies this collapse by sampling multiple completions for a given prompt and computing the average of the k smallest nearest-neighbor edit distances. Min-kNN Distance requires no access to the reference model or token probabilities. Experiments across multiple RLVR-trained reasoning models show that Min-kNN Distance reliably distinguishes RL-seen examples from unseen ones and outperforms existing membership inference and RL contamination detection baselines.",
+  "summary_en": "Reinforcement learning with verifiable rewards induces behavioral signatures that can be detected using a black-box method based on prompt generation diversity, outperforming existing contamination detection approaches.",
+  "summary_zh": "基于可验证奖励的强化学习诱导出的行为特征可通过基于提示生成多样性的黑盒方法检测，性能优于现有的污染检测方法。",
+  "hf_url": "https://huggingface.co/papers/2602.11792",
+  "arxiv_url": "https://arxiv.org/abs/2602.11792",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11792",
+  "github_url": "https://github.com/StevenZHB/Detect_RLVR_Data",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T06:38:39.520626+00:00"
+}

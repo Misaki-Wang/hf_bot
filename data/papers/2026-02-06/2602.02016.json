@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-06",
+  "paper_id": "2602.02016",
+  "title": "DASH: Faster Shampoo via Batched Block Preconditioning and Efficient Inverse-Root Solvers",
+  "authors": [
+    "Ionut-Vlad Modoranu",
+    "Philip Zmushko",
+    "Erik Schultheis",
+    "Mher Safaryan",
+    "Dan Alistarh"
+  ],
+  "abstract": "Distributed Accelerated SHampoo (DASH) improves upon Shampoo optimization through efficient 3D tensor operations and faster inverse matrix root computations, achieving faster convergence and better performance. Shampoo is one of the leading approximate second-order optimizers : a variant of it has won the MLCommons AlgoPerf competition, and it has been shown to produce models with lower activation outliers that are easier to compress. Yet, applying Shampoo currently comes at the cost of significant computational slowdown, due to its expensive internal operations. In this paper, we take a significant step to address this shortcoming by proposing \\method (for Distributed Accelerated SHampoo ), a faster implementation of Distributed Shampoo based on two main new techniques: First, we show that preconditioner blocks can be stacked into 3D tensors to significantly improve GPU utilization ; second, we introduce the Newton-DB iteration and the Chebyshev polynomial approximations as novel and faster approaches for computing the inverse matrix roots required by Shampoo . Along with these algorithmic contributions, we provide a first in-depth analysis of how matrix scaling critically affects Shampoo convergence. On the practical side, our GPU-aware implementation achieves up to 4.83times faster optimizer steps compared to the well-optimized Distributed Shampoo , while Newton-DB attains the lowest validation perplexity per iteration among all tested methods. Our code is available at https://github.com/IST-DASLab/DASH.",
+  "summary_en": "Distributed Accelerated SHampoo (DASH) improves upon Shampoo optimization through efficient 3D tensor operations and faster inverse matrix root computations, achieving faster convergence and better performance.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nDistributed Accelerated SHampoo (DASH) improves upon Shampoo optimization through efficient 3D tensor operations and faster inverse matrix root computations, achieving faster convergence and better performance.",
+  "hf_url": "https://huggingface.co/papers/2602.02016",
+  "arxiv_url": "https://arxiv.org/abs/2602.02016",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02016",
+  "github_url": "https://github.com/IST-DASLab/DASH",
+  "upvotes": 12,
+  "fetched_at": "2026-02-19T05:42:37.572468+00:00"
+}

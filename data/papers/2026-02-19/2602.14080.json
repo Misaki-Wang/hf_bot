@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.14080",
+  "title": "Empty Shelves or Lost Keys? Recall Is the Bottleneck for Parametric Factuality",
+  "authors": [
+    "Nitay Calderon",
+    "Eyal Ben-David",
+    "Zorik Gekhman",
+    "Eran Ofek",
+    "Gal Yona"
+  ],
+  "abstract": "LLMs demonstrate near-complete factual encoding but struggle with retrieval accessibility, where errors stem from access limitations rather than knowledge gaps, with reasoning improving recall of encoded information. Standard factuality evaluations of LLMs treat all errors alike, obscuring whether failures arise from missing knowledge (empty shelves) or from limited access to encoded facts (lost keys). We propose a behavioral framework that profiles factual knowledge at the level of facts rather than questions, characterizing each fact by whether it is encoded, and then by how accessible it is: cannot be recalled, can be directly recalled, or can only be recalled with inference-time computation ( thinking ). To support such profiling, we introduce WikiProfile, a new benchmark constructed via an automated pipeline with a prompted LLM grounded in web search. Across 4 million responses from 13 LLMs , we find that encoding is nearly saturated in frontier models on our benchmark, with GPT-5 and Gemini-3 encoding 95--98% of facts. However, recall remains a major bottleneck: many errors previously attributed to missing knowledge instead stem from failures to access it. These failures are systematic and disproportionately affect long-tail facts and reverse questions . Finally, we show that thinking improves recall and can recover a substantial fraction of failures, indicating that future gains may rely less on scaling and more on methods that improve how models utilize what they already encode.",
+  "summary_en": "LLMs demonstrate near-complete factual encoding but struggle with retrieval accessibility, where errors stem from access limitations rather than knowledge gaps, with reasoning improving recall of encoded information.",
+  "summary_zh": "大语言模型几乎完整编码了事实，但在检索可及性上存在困难；其错误源于访问限制而非知识缺口，推理可提升对已编码信息的召回。",
+  "hf_url": "https://huggingface.co/papers/2602.14080",
+  "arxiv_url": "https://arxiv.org/abs/2602.14080",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14080",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T06:47:24.459955+00:00"
+}

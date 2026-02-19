@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-02",
+  "paper_id": "2601.23184",
+  "title": "ReGuLaR: Variational Latent Reasoning Guided by Rendered Chain-of-Thought",
+  "authors": [
+    "Fanmeng Wang",
+    "Haotian Liu",
+    "Guojiang Zhao",
+    "Hongteng Xu",
+    "Zhifeng Gao"
+  ],
+  "abstract": "ReGuLaR introduces a variational auto-encoding framework that compresses reasoning processes into latent space while maintaining performance through image-rendered explicit reasoning chains for guidance. While Chain-of-Thought (CoT) significantly enhances the performance of Large Language Models (LLMs), explicit reasoning chains introduce substantial computational redundancy. Recent latent reasoning methods attempt to mitigate this by compressing reasoning processes into latent space, but often suffer from severe performance degradation due to the lack of appropriate compression guidance. In this study, we propose Rendered CoT-Guided variational Latent Reasoning (ReGuLaR), a simple yet novel latent learning paradigm resolving this issue. Fundamentally, we formulate latent reasoning within the Variational Auto-Encoding (VAE) framework, sampling the current latent reasoning state from the posterior distribution conditioned on previous ones. Specifically, when learning this variational latent reasoning model, we render explicit reasoning chains as images, from which we extract dense visual-semantic representations to regularize the posterior distribution , thereby achieving efficient compression with minimal information loss. Extensive experiments demonstrate that ReGuLaR significantly outperforms existing latent reasoning methods across both computational efficiency and reasoning effectiveness, and even surpasses CoT through multi-modal reasoning , providing a new and insightful solution to latent reasoning . Code: https://github.com/FanmengWang/ReGuLaR.",
+  "summary_en": "ReGuLaR introduces a variational auto-encoding framework that compresses reasoning processes into latent space while maintaining performance through image-rendered explicit reasoning chains for guidance.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nReGuLaR introduces a variational auto-encoding framework that compresses reasoning processes into latent space while maintaining performance through image-rendered explicit reasoning chains for guidance.",
+  "hf_url": "https://huggingface.co/papers/2601.23184",
+  "arxiv_url": "https://arxiv.org/abs/2601.23184",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.23184",
+  "github_url": "https://github.com/FanmengWang/ReGuLaR",
+  "upvotes": 36,
+  "fetched_at": "2026-02-19T05:35:28.464803+00:00"
+}

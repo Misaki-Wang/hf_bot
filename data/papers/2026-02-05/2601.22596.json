@@ -1,0 +1,17 @@
+{
+  "date": "2026-02-05",
+  "paper_id": "2601.22596",
+  "title": "FOTBCD: A Large-Scale Building Change Detection Benchmark from French Orthophotos and Topographic Data",
+  "authors": [
+    "Abdelrrahman Moubane"
+  ],
+  "abstract": "A large-scale building change detection dataset named FOTBCD is introduced, covering 28 French departments with high-resolution imagery and comprehensive annotations for both binary and instance-level change detection tasks. We introduce FOTBCD, a large-scale building change detection dataset derived from authoritative French orthophotos and topographic building data provided by IGN France. Unlike existing benchmarks that are geographically constrained to single cities or limited regions, FOTBCD spans 28 departments across mainland France, with 25 used for training and three geographically disjoint departments held out for evaluation. The dataset covers diverse urban, suburban, and rural environments at 0.2m/pixel resolution. We publicly release FOTBCD-Binary, a dataset comprising approximately 28,000 before/after image pairs with pixel-wise binary building change masks, each associated with patch-level spatial metadata. The dataset is designed for large-scale benchmarking and evaluation under geographic domain shift , with validation and test samples drawn from held-out departments and manually verified to ensure label quality. In addition, we publicly release FOTBCD-Instances, a publicly available instance-level annotated subset comprising several thousand image pairs, which illustrates the complete annotation schema used in the full instance-level version of FOTBCD. Using a fixed reference baseline, we benchmark FOTBCD-Binary against LEVIR-CD+ and WHU-CD, providing strong empirical evidence that geographic diversity at the dataset level is associated with improved cross-domain generalization in building change detection .",
+  "summary_en": "A large-scale building change detection dataset named FOTBCD is introduced, covering 28 French departments with high-resolution imagery and comprehensive annotations for both binary and instance-level change detection tasks.",
+  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA large-scale building change detection dataset named FOTBCD is introduced, covering 28 French departments with high-resolution imagery and comprehensive annotations for both binary and instance-level change detection tasks.",
+  "hf_url": "https://huggingface.co/papers/2601.22596",
+  "arxiv_url": "https://arxiv.org/abs/2601.22596",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22596",
+  "github_url": "https://github.com/abdelpy/FOTBCD-datasets",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T05:27:15.161340+00:00"
+}

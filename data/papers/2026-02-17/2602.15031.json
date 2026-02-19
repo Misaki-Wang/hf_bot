@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-17",
+  "paper_id": "2602.15031",
+  "title": "EditCtrl: Disentangled Local and Global Control for Real-Time Generative Video Editing",
+  "authors": [
+    "Yehonathan Litman",
+    "Shikun Liu",
+    "Dario Seyb",
+    "Nicholas Milef",
+    "Yang Zhou",
+    "Carl Marshall",
+    "Shubham Tulsiani",
+    "Caleb Leak"
+  ],
+  "abstract": "Efficient video inpainting framework that focuses computation on masked regions while maintaining global context consistency through a lightweight embedder. High-fidelity generative video editing has seen significant quality improvements by leveraging pre-trained video foundation models . However, their computational cost is a major bottleneck, as they are often designed to inefficiently process the full video context regardless of the inpainting mask's size, even for sparse, localized edits. In this paper, we introduce EditCtrl, an efficient video inpainting control framework that focuses computation only where it is needed. Our approach features a novel local video context module that operates solely on masked tokens , yielding a computational cost proportional to the edit size. This local-first generation is then guided by a lightweight temporal global context embedder that ensures video-wide context consistency with minimal overhead. Not only is EditCtrl 10 times more compute efficient than state-of-the-art generative editing methods, it even improves editing quality compared to methods designed with full-attention. Finally, we showcase how EditCtrl unlocks new capabilities, including multi-region editing with text prompts and autoregressive content propagation .",
+  "summary_en": "Efficient video inpainting framework that focuses computation on masked regions while maintaining global context consistency through a lightweight embedder.",
+  "summary_zh": "高效的视频修复框架，将计算聚焦于掩码区域，同时通过轻量级嵌入器保持全局上下文一致性。",
+  "hf_url": "https://huggingface.co/papers/2602.15031",
+  "arxiv_url": "https://arxiv.org/abs/2602.15031",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15031",
+  "github_url": "https://github.com/yehonathanlitman/EditCtrl",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T06:45:35.949403+00:00"
+}
