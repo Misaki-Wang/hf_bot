@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.15547",
+  "title": "jina-embeddings-v5-text: Task-Targeted Embedding Distillation",
+  "authors": [
+    "Mohammad Kalim Akram",
+    "Saba Sturua",
+    "Nastia Havriushenko",
+    "Quentin Herreros",
+    "Michael Günther",
+    "Maximilian Werk",
+    "Han Xiao"
+  ],
+  "abstract": "Compact text embedding models are developed through a combined training approach using distillation and contrastive loss, achieving state-of-the-art performance while supporting long-context sequences and efficient quantization. Text embedding models are widely used for semantic similarity tasks, including information retrieval , clustering , and classification . General-purpose models are typically trained with single- or multi-stage processes using contrastive loss functions. We introduce a novel training regimen that combines model distillation techniques with task-specific contrastive loss to produce compact, high-performance embedding models . Our findings suggest that this approach is more effective for training small models than purely contrastive or distillation-based training paradigms alone. Benchmark scores for the resulting models, jina-embeddings-v5-text-small and jina-embeddings-v5-text-nano, exceed or match the state-of-the-art for models of similar size. jina-embeddings-v5-text models additionally support long texts (up to 32k tokens) in many languages, and generate embeddings that remain robust under truncation and binary quantization . Model weights are publicly available, hopefully inspiring further advances in embedding model development.",
+  "summary_en": "Compact text embedding models are developed through a combined training approach using distillation and contrastive loss, achieving state-of-the-art performance while supporting long-context sequences and efficient quantization.",
+  "summary_zh": "紧凑型文本嵌入模型通过蒸馏与对比损失相结合的训练方法开发，在实现最先进性能的同时支持长上下文序列和高效量化。",
+  "hf_url": "https://huggingface.co/papers/2602.15547",
+  "arxiv_url": "https://arxiv.org/abs/2602.15547",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15547",
+  "github_url": "",
+  "upvotes": 9,
+  "fetched_at": "2026-02-19T01:55:51.191144+00:00"
+}

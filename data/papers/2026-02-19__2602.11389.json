@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.11389",
+  "title": "Causal-JEPA: Learning World Models through Object-Level Latent Interventions",
+  "authors": [
+    "Heejeong Nam",
+    "Quentin Le Lidec",
+    "Lucas Maes",
+    "Yann LeCun",
+    "Randall Balestriero"
+  ],
+  "abstract": "C-JEPA extends masked joint embedding prediction to object-centric representations, enabling robust relational understanding through object-level masking that induces causal inductive biases and improves reasoning and control tasks.",
+  "summary_en": "C-JEPA extends masked joint embedding prediction to object-centric representations, enabling robust relational understanding through object-level masking that induces causal inductive biases and improves reasoning and control tasks.",
+  "summary_zh": "C-JEPA将掩码联合嵌入预测扩展至以对象为中心的表征，通过引入因果归纳偏置的对象级掩码实现稳健的关系理解，并提升推理与控制任务的表现。",
+  "hf_url": "https://huggingface.co/papers/2602.11389",
+  "arxiv_url": "https://arxiv.org/abs/2602.11389",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.11389",
+  "github_url": "https://github.com/galilai-group/cjepa",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T01:55:32.256322+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.15112",
+  "title": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
+  "authors": [
+    "Aniketh Garikaparthi",
+    "Manasi Patwardhan",
+    "Arman Cohan"
+  ],
+  "abstract": "ResearchGym presents a benchmark environment for evaluating AI agents on end-to-end research tasks, revealing significant capability-reliability gaps in current autonomous agents despite occasional state-of-the-art performance. We introduce ResearchGym , a benchmark and execution environment for evaluating AI agents on end-to-end research . To instantiate this, we repurpose five oral and spotlight papers from ICML , ICLR , and ACL . From each paper's repository, we preserve the datasets , evaluation harness , and baseline implementations but withhold the paper's proposed method. This results in five containerized task environments comprising 39 sub-tasks in total. Within each environment, agents must propose novel hypotheses, run experiments, and attempt to surpass strong human baselines on the paper's metrics. In a controlled evaluation of an agent powered by GPT-5 , we observe a sharp capability--reliability gap. The agent improves over the provided baselines from the repository in just 1 of 15 evaluations (6.7%) by 11.5%, and completes only 26.5% of sub-tasks on average. We identify recurring long-horizon failure modes, including impatience, poor time and resource management, overconfidence in weak hypotheses, difficulty coordinating parallel experiments, and hard limits from context length . Yet in a single run, the agent surpasses the solution of an ICML 2025 Spotlight task, indicating that frontier agents can occasionally reach state-of-the-art performance, but do so unreliably. We additionally evaluate proprietary agent scaffolds including Claude Code (Opus-4.5) and Codex ( GPT-5 .2) which display a similar gap. ResearchGym provides infrastructure for systematic evaluation and analysis of autonomous agents on closed-loop research.",
+  "summary_en": "ResearchGym presents a benchmark environment for evaluating AI agents on end-to-end research tasks, revealing significant capability-reliability gaps in current autonomous agents despite occasional state-of-the-art performance.",
+  "summary_zh": "ResearchGym提出了一个用于评估AI智能体端到端研究任务的基准环境，揭示了当前自主智能体尽管偶尔能取得最优性能，但仍存在显著的能力-可靠性差距。",
+  "hf_url": "https://huggingface.co/papers/2602.15112",
+  "arxiv_url": "https://arxiv.org/abs/2602.15112",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15112",
+  "github_url": "https://github.com/Anikethh/ResearchGym",
+  "upvotes": 14,
+  "fetched_at": "2026-02-19T01:55:43.087568+00:00"
+}

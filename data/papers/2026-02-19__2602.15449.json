@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.15449",
+  "title": "TAROT: Test-driven and Capability-adaptive Curriculum Reinforcement Fine-tuning for Code Generation with Large Language Models",
+  "authors": [
+    "Chansung Park",
+    "Juyong Jiang",
+    "Fan Wang",
+    "Sayak Paul",
+    "Jiasi Shen",
+    "Jing Tang",
+    "Jianguo Li"
+  ],
+  "abstract": "Reinforcement fine-tuning approach for code generation that adapts curriculum design based on model capability through a four-tier test suite structure. Large Language Models (LLMs) are changing the coding paradigm, known as vibe coding, yet synthesizing algorithmically sophisticated and robust code still remains a critical challenge. Incentivizing the deep reasoning capabilities of LLMs is essential to overcoming this hurdle. Reinforcement Fine-Tuning (RFT) has emerged as a promising strategy to address this need. However, most existing approaches overlook the heterogeneous difficulty and granularity inherent in test cases, leading to an imbalanced distribution of reward signals and consequently biased gradient updates during training. To address this, we propose Test-driven and cApability-adaptive cuRriculum reinfOrcement fine-Tuning (TAROT). TAROT systematically constructs, for each problem, a four-tier test suite (basic, intermediate, complex, edge), providing a controlled difficulty landscape for curriculum design and evaluation. Crucially, TAROT decouples curriculum progression from raw reward scores, enabling capability-conditioned evaluation and principled selection from a portfolio of curriculum policies rather than incidental test-case difficulty composition. This design fosters stable optimization and more efficient competency acquisition. Extensive experimental results reveal that the optimal curriculum for RFT in code generation is closely tied to a model's inherent capability, with less capable models achieving greater gains with an easy-to-hard progression, whereas more competent models excel under a hard-first curriculum. TAROT provides a reproducible method that adaptively tailors curriculum design to a model's capability, thereby consistently improving the functional correctness and robustness of the generated code. All code and data are released to foster reproducibility and advance community research at https://github.com/deep-diver/TAROT.",
+  "summary_en": "Reinforcement fine-tuning approach for code generation that adapts curriculum design based on model capability through a four-tier test suite structure.",
+  "summary_zh": "面向代码生成的强化微调方法，通过四层测试套件结构基于模型能力进行自适应课程设计。",
+  "hf_url": "https://huggingface.co/papers/2602.15449",
+  "arxiv_url": "https://arxiv.org/abs/2602.15449",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15449",
+  "github_url": "https://github.com/deep-diver/TAROT",
+  "upvotes": 4,
+  "fetched_at": "2026-02-19T01:55:50.538737+00:00"
+}

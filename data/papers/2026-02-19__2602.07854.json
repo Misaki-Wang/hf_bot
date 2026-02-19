@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.07854",
+  "title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+  "authors": [
+    "Chendong Xiang",
+    "Jiajun Liu",
+    "Jintao Zhang",
+    "Xiao Yang",
+    "Zhengwei Fang",
+    "Shizun Wang",
+    "Zijun Wang",
+    "Yingtian Zou",
+    "Hang Su",
+    "Jun Zhu"
+  ],
+  "abstract": "ViewRope, a geometry-aware encoding method, enhances long-term consistency in predictive world models by injecting camera-ray directions into video transformer attention layers, addressing spatial persistence issues through relative ray geometry parameterization. Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings , which conflict with the projective geometry required for 3D consistency. We introduce ViewRope, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers . By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose Geometry-Aware Frame-Sparse Attention , which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present ViewBench, a diagnostic suite measuring loop-closure fidelity and geometric drift . Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
+  "summary_en": "ViewRope, a geometry-aware encoding method, enhances long-term consistency in predictive world models by injecting camera-ray directions into video transformer attention layers, addressing spatial persistence issues through relative ray geometry parameterization.",
+  "summary_zh": "ViewRope是一种几何感知编码方法，通过将相机射线方向注入视频Transformer的注意力层来增强预测性世界模型的长期一致性，并利用相对射线几何参数化解决空间持久性问题。",
+  "hf_url": "https://huggingface.co/papers/2602.07854",
+  "arxiv_url": "https://arxiv.org/abs/2602.07854",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.07854",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T01:55:29.881857+00:00"
+}

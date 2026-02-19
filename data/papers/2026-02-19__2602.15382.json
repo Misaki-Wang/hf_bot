@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.15382",
+  "title": "The Vision Wormhole: Latent-Space Communication in Heterogeneous Multi-Agent Systems",
+  "authors": [
+    "Xiaoze Liu",
+    "Ruowang Zhang",
+    "Weichen Yu",
+    "Siheng Xiong",
+    "Liu He",
+    "Feijie Wu",
+    "Hoin Jung",
+    "Matt Fredrikson",
+    "Xiaoqian Wang",
+    "Jing Gao"
+  ],
+  "abstract": "A Vision Wormhole framework enables efficient, model-agnostic communication in multi-agent systems by using visual-language models to transfer reasoning states through a shared latent space, reducing computational overhead while maintaining reasoning accuracy. Multi-Agent Systems (MAS) powered by Large Language Models have unlocked advanced collaborative reasoning, yet they remain shackled by the inefficiency of discrete text communication, which imposes significant runtime overhead and information quantization loss. While latent state transfer offers a high-bandwidth alternative, existing approaches either assume homogeneous sender-receiver architectures or rely on pair-specific learned translators, limiting scalability and modularity across diverse model families with disjoint manifolds. In this work, we propose the Vision Wormhole, a novel framework that repurposes the visual interface of Vision-Language Models (VLMs) to enable model-agnostic, text-free communication. By introducing a Universal Visual Codec , we map heterogeneous reasoning traces into a shared continuous latent space and inject them directly into the receiver's visual pathway , effectively treating the vision encoder as a universal port for inter-agent telepathy. Our framework adopts a hub-and-spoke topology to reduce pairwise alignment complexity from O(N^2) to O(N) and leverages a label-free, teacher-student distillation objective to align the high-speed visual channel with the robust reasoning patterns of the text pathway. Extensive experiments across heterogeneous model families (e.g., Qwen-VL, Gemma) demonstrate that the Vision Wormhole reduces end-to-end wall-clock time in controlled comparisons while maintaining reasoning fidelity comparable to standard text-based MAS. Code is available at https://github.com/xz-liu/heterogeneous-latent-mas",
+  "summary_en": "A Vision Wormhole framework enables efficient, model-agnostic communication in multi-agent systems by using visual-language models to transfer reasoning states through a shared latent space, reducing computational overhead while maintaining reasoning accuracy.",
+  "summary_zh": "Vision Wormhole框架通过视觉语言模型在共享隐空间中传递推理状态，实现了多智能体系统中高效且与模型无关的通信，在降低计算开销的同时保持推理准确性。",
+  "hf_url": "https://huggingface.co/papers/2602.15382",
+  "arxiv_url": "https://arxiv.org/abs/2602.15382",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15382",
+  "github_url": "https://github.com/xz-liu/heterogeneous-latent-mas",
+  "upvotes": 2,
+  "fetched_at": "2026-02-19T01:55:49.347712+00:00"
+}

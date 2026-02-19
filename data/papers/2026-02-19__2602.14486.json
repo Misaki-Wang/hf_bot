@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.14486",
+  "title": "Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
+  "authors": [
+    "Fabian Gröger",
+    "Shuo Wen",
+    "Maria Brbić"
+  ],
+  "abstract": "Network representations converge toward shared local neighborhood relationships rather than global statistical models, as revealed by calibrated similarity metrics. The Platonic Representation Hypothesis suggests that representations from neural networks are converging to a common statistical model of reality. We show that the existing metrics used to measure representational similarity are confounded by network scale: increasing model depth or width can systematically inflate representational similarity scores. To correct these effects, we introduce a permutation-based null-calibration framework that transforms any representational similarity metric into a calibrated score with statistical guarantees. We revisit the Platonic Representation Hypothesis with our calibration framework, which reveals a nuanced picture: the apparent convergence reported by global spectral measures largely disappears after calibration, while local neighborhood similarity , but not local distances, retains significant agreement across different modalities. Based on these findings, we propose the Aristotelian Representation Hypothesis : representations in neural networks are converging to shared local neighborhood relationships.",
+  "summary_en": "Network representations converge toward shared local neighborhood relationships rather than global statistical models, as revealed by calibrated similarity metrics.",
+  "summary_zh": "经校准的相似性度量显示，网络表征收敛于共享的局部邻域关系，而非全局统计模型。",
+  "hf_url": "https://huggingface.co/papers/2602.14486",
+  "arxiv_url": "https://arxiv.org/abs/2602.14486",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14486",
+  "github_url": "https://github.com/mlbio-epfl/aristotelian",
+  "upvotes": 7,
+  "fetched_at": "2026-02-19T01:55:42.035681+00:00"
+}
