@@ -19,7 +19,7 @@
   ],
   "abstract": "BABE is a biology-focused benchmark designed to evaluate AI systems' ability to perform experimental reasoning and causal inference similar to practicing scientists.",
   "summary_en": "BABE is a biology-focused benchmark designed to evaluate AI systems' ability to perform experimental reasoning and causal inference similar to practicing scientists.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nBABE is a biology-focused benchmark designed to evaluate AI systems' ability to perform experimental reasoning and causal inference similar to practicing scientists.",
+  "summary_zh": "BABE是一个聚焦生物学的基准测试，旨在评估AI系统执行实验推理和因果推断的能力，类似于实践科学家。",
   "hf_url": "https://huggingface.co/papers/2602.05857",
   "arxiv_url": "https://arxiv.org/abs/2602.05857",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05857",

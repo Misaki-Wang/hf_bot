@@ -18,7 +18,7 @@
   ],
   "abstract": "ProAct enhances LLM agents' long-horizon planning by combining supervised fine-tuning with search-derived trajectories and a Monte-Carlo critic for improved policy optimization.",
   "summary_en": "ProAct enhances LLM agents' long-horizon planning by combining supervised fine-tuning with search-derived trajectories and a Monte-Carlo critic for improved policy optimization.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nProAct enhances LLM agents' long-horizon planning by combining supervised fine-tuning with search-derived trajectories and a Monte-Carlo critic for improved policy optimization.",
+  "summary_zh": "ProAct结合监督微调与搜索派生轨迹，并利用蒙特卡洛critic改进策略优化，从而增强LLM智能体的长程规划能力。",
   "hf_url": "https://huggingface.co/papers/2602.05327",
   "arxiv_url": "https://arxiv.org/abs/2602.05327",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05327",

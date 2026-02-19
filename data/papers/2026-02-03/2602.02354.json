@@ -9,7 +9,7 @@
   ],
   "abstract": "Implicit neural representations operate continuously over UV coordinate space, demonstrating good image quality while balancing memory usage and rendering time, with applications in real-time rendering and downstream tasks. Implicit neural representation (INR) has proven to be accurate and efficient in various domains. In this work, we explore how different neural networks can be designed as a new texture INR, which operates in a continuous manner rather than a discrete one over the input UV coordinate space . Through thorough experiments, we demonstrate that these INRs perform well in terms of image quality , with considerable memory usage and rendering inference time . We analyze the balance between these objectives. In addition, we investigate various related applications in real-time rendering and down-stream tasks, e.g. mipmap fitting and INR-space generation .",
   "summary_en": "Implicit neural representations operate continuously over UV coordinate space, demonstrating good image quality while balancing memory usage and rendering time, with applications in real-time rendering and downstream tasks.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nImplicit neural representations operate continuously over UV coordinate space, demonstrating good image quality while balancing memory usage and rendering time, with applications in real-time rendering and downstream tasks.",
+  "summary_zh": "隐式神经表示在UV坐标空间上连续运算，在平衡内存使用与渲染时间的同时展现出良好的图像质量，可应用于实时渲染和下游任务。",
   "hf_url": "https://huggingface.co/papers/2602.02354",
   "arxiv_url": "https://arxiv.org/abs/2602.02354",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02354",

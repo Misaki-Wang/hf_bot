@@ -835,7 +835,7 @@
       ],
       "abstract": "Foundation models including LLMs, MLLMs, and generative models require reliable and responsible development addressing bias, security, explainability, and other critical issues for trustworthy deployment across multiple domains.",
       "summary_en": "Foundation models including LLMs, MLLMs, and generative models require reliable and responsible development addressing bias, security, explainability, and other critical issues for trustworthy deployment across multiple domains.",
-      "summary_zh": "",
+      "summary_zh": "包括LLMs、MLLMs和生成模型在内的基础模型需要可靠且负责任的开发，解决偏见、安全性、可解释性及其他关键问题，以实现跨多个领域的可信部署。",
       "hf_url": "https://huggingface.co/papers/2602.08145",
       "arxiv_url": "https://arxiv.org/abs/2602.08145",
       "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08145",

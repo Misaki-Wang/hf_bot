@@ -13,7 +13,7 @@
   ],
   "abstract": "LycheeDecode improves long-context LLM decoding efficiency through a fine-grained hybrid-head attention mechanism that dynamically identifies crucial tokens while maintaining attention head diversity.",
   "summary_en": "LycheeDecode improves long-context LLM decoding efficiency through a fine-grained hybrid-head attention mechanism that dynamically identifies crucial tokens while maintaining attention head diversity.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLycheeDecode improves long-context LLM decoding efficiency through a fine-grained hybrid-head attention mechanism that dynamically identifies crucial tokens while maintaining attention head diversity.",
+  "summary_zh": "LycheeDecode通过细粒度混合头注意力机制提升长上下文LLM的解码效率，动态识别关键token并保持注意力头的多样性。",
   "hf_url": "https://huggingface.co/papers/2602.04541",
   "arxiv_url": "https://arxiv.org/abs/2602.04541",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04541",

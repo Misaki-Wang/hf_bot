@@ -21,7 +21,7 @@
   ],
   "abstract": "SpatiaLab presents a comprehensive benchmark for evaluating vision-language models' spatial reasoning capabilities across realistic, diverse scenarios, revealing significant gaps compared to human performance.",
   "summary_en": "SpatiaLab presents a comprehensive benchmark for evaluating vision-language models' spatial reasoning capabilities across realistic, diverse scenarios, revealing significant gaps compared to human performance.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSpatiaLab presents a comprehensive benchmark for evaluating vision-language models' spatial reasoning capabilities across realistic, diverse scenarios, revealing significant gaps compared to human performance.",
+  "summary_zh": "SpatiaLab构建了一个综合性基准，评估视觉-语言模型在真实多样场景中的空间推理能力，揭示了其相较于人类表现的显著差距。",
   "hf_url": "https://huggingface.co/papers/2602.03916",
   "arxiv_url": "https://arxiv.org/abs/2602.03916",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03916",

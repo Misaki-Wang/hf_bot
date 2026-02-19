@@ -15,7 +15,7 @@
   ],
   "abstract": "LatentMorph integrates implicit latent reasoning into text-to-image generation through four lightweight components that enable adaptive self-refinement and improve both efficiency and cognitive alignment.",
   "summary_en": "LatentMorph integrates implicit latent reasoning into text-to-image generation through four lightweight components that enable adaptive self-refinement and improve both efficiency and cognitive alignment.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLatentMorph integrates implicit latent reasoning into text-to-image generation through four lightweight components that enable adaptive self-refinement and improve both efficiency and cognitive alignment.",
+  "summary_zh": "LatentMorph通过四个轻量级组件将隐式潜在推理整合至文本到图像生成中，实现自适应自我优化，并提升效率与认知对齐度。",
   "hf_url": "https://huggingface.co/papers/2602.02227",
   "arxiv_url": "https://arxiv.org/abs/2602.02227",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02227",

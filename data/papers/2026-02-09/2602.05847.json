@@ -19,7 +19,7 @@
   ],
   "abstract": "OmniVideo-R1 enhances audio-visual understanding through reinforced frameworks that integrate self-supervised and contrastive learning for multimodal reasoning. While humans perceive the world through diverse modalities that operate synergistically to support a holistic understanding of their surroundings, existing omnivideo models still face substantial challenges on audio-visual understanding tasks. In this paper, we propose OmniVideo-R1, a novel reinforced framework that improves mixed-modality reasoning . OmniVideo-R1 empowers models to \"think with omnimodal cues\" by two key strategies: (1) query-intensive grounding based on self-supervised learning paradigms; and (2) modality-attentive fusion built upon contrastive learning paradigms. Extensive experiments on multiple benchmarks demonstrate that OmniVideo-R1 consistently outperforms strong baselines, highlighting its effectiveness and robust generalization capabilities.",
   "summary_en": "OmniVideo-R1 enhances audio-visual understanding through reinforced frameworks that integrate self-supervised and contrastive learning for multimodal reasoning.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nOmniVideo-R1 enhances audio-visual understanding through reinforced frameworks that integrate self-supervised and contrastive learning for multimodal reasoning.",
+  "summary_zh": "OmniVideo-R1通过融合自监督与对比学习的强化框架，增强音视频理解以实现多模态推理。",
   "hf_url": "https://huggingface.co/papers/2602.05847",
   "arxiv_url": "https://arxiv.org/abs/2602.05847",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.05847",

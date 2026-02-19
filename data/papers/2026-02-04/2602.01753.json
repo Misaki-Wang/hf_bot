@@ -12,7 +12,7 @@
   ],
   "abstract": "ObjEmbed is a novel multimodal language-model embedding approach that decomposes images into regional embeddings for improved object-level visual understanding and retrieval tasks.",
   "summary_en": "ObjEmbed is a novel multimodal language-model embedding approach that decomposes images into regional embeddings for improved object-level visual understanding and retrieval tasks.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nObjEmbed is a novel multimodal language-model embedding approach that decomposes images into regional embeddings for improved object-level visual understanding and retrieval tasks.",
+  "summary_zh": "ObjEmbed是一种新颖的多模态语言模型嵌入方法，通过将图像分解为区域嵌入，提升物体级视觉理解与检索任务的效果。",
   "hf_url": "https://huggingface.co/papers/2602.01753",
   "arxiv_url": "https://arxiv.org/abs/2602.01753",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01753",

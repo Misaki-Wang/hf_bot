@@ -13,7 +13,7 @@
   ],
   "abstract": "A file-system-based dual-agent framework enables large language model agents to perform extended research tasks beyond context window limitations by using persistent storage as external memory.",
   "summary_en": "A file-system-based dual-agent framework enables large language model agents to perform extended research tasks beyond context window limitations by using persistent storage as external memory.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA file-system-based dual-agent framework enables large language model agents to perform extended research tasks beyond context window limitations by using persistent storage as external memory.",
+  "summary_zh": "基于文件系统的双智能体框架通过将持久化存储作为外部记忆，使大型语言模型智能体能够突破上下文窗口限制，执行扩展研究任务。",
   "hf_url": "https://huggingface.co/papers/2602.01566",
   "arxiv_url": "https://arxiv.org/abs/2602.01566",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01566",

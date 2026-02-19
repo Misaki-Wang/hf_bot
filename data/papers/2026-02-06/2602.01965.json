@@ -13,7 +13,7 @@
   ],
   "abstract": "CatRAG addresses limitations in retrieval-augmented generation by introducing a query-adaptive framework that improves multi-hop reasoning through symbolic anchoring, dynamic edge weighting, and key-fact passage enhancement.",
   "summary_en": "CatRAG addresses limitations in retrieval-augmented generation by introducing a query-adaptive framework that improves multi-hop reasoning through symbolic anchoring, dynamic edge weighting, and key-fact passage enhancement.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nCatRAG addresses limitations in retrieval-augmented generation by introducing a query-adaptive framework that improves multi-hop reasoning through symbolic anchoring, dynamic edge weighting, and key-fact passage enhancement.",
+  "summary_zh": "CatRAG通过引入查询自适应框架解决了检索增强生成的局限性，该框架通过符号锚定、动态边权重和关键事实段落增强提升了多跳推理能力。",
   "hf_url": "https://huggingface.co/papers/2602.01965",
   "arxiv_url": "https://arxiv.org/abs/2602.01965",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01965",

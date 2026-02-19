@@ -21,7 +21,7 @@
   ],
   "abstract": "MLLMs equipped with Cognitive Supersensing and Latent Visual Imagery Prediction demonstrate enhanced cognitive reasoning capabilities through integrated visual and textual reasoning pathways.",
   "summary_en": "MLLMs equipped with Cognitive Supersensing and Latent Visual Imagery Prediction demonstrate enhanced cognitive reasoning capabilities through integrated visual and textual reasoning pathways.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMLLMs equipped with Cognitive Supersensing and Latent Visual Imagery Prediction demonstrate enhanced cognitive reasoning capabilities through integrated visual and textual reasoning pathways.",
+  "summary_zh": "配备认知超感知与潜在视觉意象预测的MLLMs通过集成的视觉和文本推理路径展现出增强的认知推理能力。",
   "hf_url": "https://huggingface.co/papers/2602.01541",
   "arxiv_url": "https://arxiv.org/abs/2602.01541",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01541",

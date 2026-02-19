@@ -14,7 +14,7 @@
   ],
   "abstract": "Deep Research Agents demonstrate capabilities in autonomous information retrieval but show significant gaps when evaluated against expert-level Wikipedia articles using a new live benchmark and comprehensive evaluation framework.",
   "summary_en": "Deep Research Agents demonstrate capabilities in autonomous information retrieval but show significant gaps when evaluated against expert-level Wikipedia articles using a new live benchmark and comprehensive evaluation framework.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nDeep Research Agents demonstrate capabilities in autonomous information retrieval but show significant gaps when evaluated against expert-level Wikipedia articles using a new live benchmark and comprehensive evaluation framework.",
+  "summary_zh": "Deep Research Agents展现了自主信息检索的能力，但在使用新的实时基准测试和综合评估框架对照专家级Wikipedia文章进行评估时，显示出显著差距。",
   "hf_url": "https://huggingface.co/papers/2602.01590",
   "arxiv_url": "https://arxiv.org/abs/2602.01590",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01590",

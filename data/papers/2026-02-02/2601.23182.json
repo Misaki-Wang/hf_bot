@@ -17,7 +17,7 @@
   ],
   "abstract": "Frequency-domain analysis of diffusion language models reveals that low-frequency components encode global structure while high-frequency components capture local details, enabling improved generation through FourierSampler's dynamic frequency-domain sliding window mechanism.",
   "summary_en": "Frequency-domain analysis of diffusion language models reveals that low-frequency components encode global structure while high-frequency components capture local details, enabling improved generation through FourierSampler's dynamic frequency-domain sliding window mechanism.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nFrequency-domain analysis of diffusion language models reveals that low-frequency components encode global structure while high-frequency components capture local details, enabling improved generation through FourierSampler's dynamic frequency-domain sliding window mechanism.",
+  "summary_zh": "扩散语言模型的频域分析表明，低频成分编码全局结构，高频成分捕捉局部细节，通过FourierSampler的动态频域滑动窗口机制可提升生成质量。",
   "hf_url": "https://huggingface.co/papers/2601.23182",
   "arxiv_url": "https://arxiv.org/abs/2601.23182",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2601.23182",

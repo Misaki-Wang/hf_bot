@@ -18,7 +18,7 @@
   ],
   "abstract": "",
   "summary_en": "RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation (2026)",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nRubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation (2026)",
+  "summary_zh": "RubricHub：通过自动化粗到精生成构建的全面且高区分度Rubric数据集（2026）",
   "hf_url": "https://huggingface.co/papers/2602.03619",
   "arxiv_url": "https://arxiv.org/abs/2602.03619",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03619",

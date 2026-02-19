@@ -14,7 +14,7 @@
   ],
   "abstract": "Search agents trained on scientific paper corpora demonstrate advanced reasoning capabilities for technical question-answering tasks, outperforming traditional retrieval methods through reinforcement learning with verifiable rewards.",
   "summary_en": "Search agents trained on scientific paper corpora demonstrate advanced reasoning capabilities for technical question-answering tasks, outperforming traditional retrieval methods through reinforcement learning with verifiable rewards.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSearch agents trained on scientific paper corpora demonstrate advanced reasoning capabilities for technical question-answering tasks, outperforming traditional retrieval methods through reinforcement learning with verifiable rewards.",
+  "summary_zh": "基于科学论文语料库训练的搜索智能体在技术问答任务中展现出先进的推理能力，通过可验证奖励的强化学习超越传统检索方法。",
   "hf_url": "https://huggingface.co/papers/2601.18207",
   "arxiv_url": "https://arxiv.org/abs/2601.18207",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2601.18207",

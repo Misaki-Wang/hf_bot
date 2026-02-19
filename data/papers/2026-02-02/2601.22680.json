@@ -10,7 +10,7 @@
   ],
   "abstract": "A new evaluation framework called VPTT assesses contextual visual personalization through perceptual indistinguishability from human-created content, utilizing a benchmark, retrieval-augmented generator, and calibrated text-based metric.",
   "summary_en": "A new evaluation framework called VPTT assesses contextual visual personalization through perceptual indistinguishability from human-created content, utilizing a benchmark, retrieval-augmented generator, and calibrated text-based metric.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA new evaluation framework called VPTT assesses contextual visual personalization through perceptual indistinguishability from human-created content, utilizing a benchmark, retrieval-augmented generator, and calibrated text-based metric.",
+  "summary_zh": "一个名为VPTT的新型评估框架利用基准测试、检索增强生成器和经过校准的基于文本的指标，通过与人类创作内容的感知不可区分性来评估上下文视觉个性化。",
   "hf_url": "https://huggingface.co/papers/2601.22680",
   "arxiv_url": "https://arxiv.org/abs/2601.22680",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2601.22680",

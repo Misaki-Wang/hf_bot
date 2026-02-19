@@ -28,7 +28,7 @@
   ],
   "abstract": "ERNIE 5.0 is a production-scale trillion-parameter autoregressive model that unifies multimodal understanding and generation through sparse MoE architecture and elastic training.",
   "summary_en": "ERNIE 5.0 is a production-scale trillion-parameter autoregressive model that unifies multimodal understanding and generation through sparse MoE architecture and elastic training.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nERNIE 5.0 is a production-scale trillion-parameter autoregressive model that unifies multimodal understanding and generation through sparse MoE architecture and elastic training.",
+  "summary_zh": "ERNIE 5.0是一个生产级规模的万亿参数自回归模型，通过稀疏MoE架构和弹性训练统一了多模态理解与生成。",
   "hf_url": "https://huggingface.co/papers/2602.04705",
   "arxiv_url": "https://arxiv.org/abs/2602.04705",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04705",

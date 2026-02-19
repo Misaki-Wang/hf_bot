@@ -14,7 +14,7 @@
   ],
   "abstract": "Context Forcing addresses student-teacher mismatch in long video generation by using a long-context teacher to guide long-rollout students through a Slow-Fast Memory architecture that extends context length beyond 20 seconds.",
   "summary_en": "Context Forcing addresses student-teacher mismatch in long video generation by using a long-context teacher to guide long-rollout students through a Slow-Fast Memory architecture that extends context length beyond 20 seconds.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nContext Forcing addresses student-teacher mismatch in long video generation by using a long-context teacher to guide long-rollout students through a Slow-Fast Memory architecture that extends context length beyond 20 seconds.",
+  "summary_zh": "Context Forcing 通过使用长上下文教师指导长 rollout 学生，并采用 Slow-Fast Memory 架构将上下文长度扩展至20秒以上，解决长视频生成中的师生不匹配问题。",
   "hf_url": "https://huggingface.co/papers/2602.06028",
   "arxiv_url": "https://arxiv.org/abs/2602.06028",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06028",

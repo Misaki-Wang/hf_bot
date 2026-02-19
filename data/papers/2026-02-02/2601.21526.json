@@ -9,7 +9,7 @@
   ],
   "abstract": "KAPSO is a modular framework for autonomous program synthesis that uses iterative optimization loops with experimentation tracking, knowledge integration, and cognitive memory to improve code generation over extended tasks.",
   "summary_en": "KAPSO is a modular framework for autonomous program synthesis that uses iterative optimization loops with experimentation tracking, knowledge integration, and cognitive memory to improve code generation over extended tasks.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nKAPSO is a modular framework for autonomous program synthesis that uses iterative optimization loops with experimentation tracking, knowledge integration, and cognitive memory to improve code generation over extended tasks.",
+  "summary_zh": "KAPSO 是一个用于自主程序合成的模块化框架，采用包含实验追踪、知识整合和认知记忆的迭代优化循环，以改进扩展任务中的代码生成。",
   "hf_url": "https://huggingface.co/papers/2601.21526",
   "arxiv_url": "https://arxiv.org/abs/2601.21526",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21526",

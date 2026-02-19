@@ -16,7 +16,7 @@
   ],
   "abstract": "CoBA-RL adapts rollout budget allocation for LLM training by evaluating sample training value and optimizing resource distribution through a capability-oriented value function and greedy strategy.",
   "summary_en": "CoBA-RL adapts rollout budget allocation for LLM training by evaluating sample training value and optimizing resource distribution through a capability-oriented value function and greedy strategy.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nCoBA-RL adapts rollout budget allocation for LLM training by evaluating sample training value and optimizing resource distribution through a capability-oriented value function and greedy strategy.",
+  "summary_zh": "CoBA-RL 通过评估样本训练价值，并借助面向能力的价值函数与贪心策略优化资源分配，自适应调整 LLM 训练的 rollout 预算分配。",
   "hf_url": "https://huggingface.co/papers/2602.03048",
   "arxiv_url": "https://arxiv.org/abs/2602.03048",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03048",

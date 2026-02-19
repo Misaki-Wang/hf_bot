@@ -16,7 +16,7 @@
   ],
   "abstract": "Canzona presents a unified asynchronous framework that addresses the conflict between matrix-based optimizers and distributed tensor fragmentation in LLM training, improving efficiency and reducing latency.",
   "summary_en": "Canzona presents a unified asynchronous framework that addresses the conflict between matrix-based optimizers and distributed tensor fragmentation in LLM training, improving efficiency and reducing latency.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nCanzona presents a unified asynchronous framework that addresses the conflict between matrix-based optimizers and distributed tensor fragmentation in LLM training, improving efficiency and reducing latency.",
+  "summary_zh": "Canzona提出了一种统一的异步框架，解决了基于矩阵的优化器与分布式张量碎片化在LLM训练中的冲突，提升了效率并降低了延迟。",
   "hf_url": "https://huggingface.co/papers/2602.06079",
   "arxiv_url": "https://arxiv.org/abs/2602.06079",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06079",

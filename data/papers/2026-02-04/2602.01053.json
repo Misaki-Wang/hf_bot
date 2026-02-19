@@ -9,7 +9,7 @@
   ],
   "abstract": "LRAgent is a KV cache sharing framework for multi-LoRA agents that decomposes cache into shared and adapter-dependent components, reducing memory and compute overhead while maintaining accuracy.",
   "summary_en": "LRAgent is a KV cache sharing framework for multi-LoRA agents that decomposes cache into shared and adapter-dependent components, reducing memory and compute overhead while maintaining accuracy.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nLRAgent is a KV cache sharing framework for multi-LoRA agents that decomposes cache into shared and adapter-dependent components, reducing memory and compute overhead while maintaining accuracy.",
+  "summary_zh": "LRAgent是一种面向多LoRA智能体的KV缓存共享框架，通过将缓存分解为共享组件和适配器相关组件，在保持准确性的同时降低内存与计算开销。",
   "hf_url": "https://huggingface.co/papers/2602.01053",
   "arxiv_url": "https://arxiv.org/abs/2602.01053",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01053",

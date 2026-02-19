@@ -16,7 +16,7 @@
   ],
   "abstract": "GUI agents for automated digital tasks rely on vision-language models with enhanced grounding capabilities, achieved through refined data engineering, improved training strategies, and reinforcement learning with verifiable rewards.",
   "summary_en": "GUI agents for automated digital tasks rely on vision-language models with enhanced grounding capabilities, achieved through refined data engineering, improved training strategies, and reinforcement learning with verifiable rewards.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nGUI agents for automated digital tasks rely on vision-language models with enhanced grounding capabilities, achieved through refined data engineering, improved training strategies, and reinforcement learning with verifiable rewards.",
+  "summary_zh": "用于自动化数字任务的GUI智能体依赖具备增强grounding能力的视觉语言模型，这些能力通过精细化的数据工程、改进的训练策略以及可验证奖励的强化学习来实现。",
   "hf_url": "https://huggingface.co/papers/2602.06391",
   "arxiv_url": "https://arxiv.org/abs/2602.06391",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.06391",

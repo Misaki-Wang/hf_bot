@@ -20,7 +20,7 @@
   ],
   "abstract": "A dual-stream framework called InteractAvatar is presented for generating talking avatars that can interact with objects in their environment, addressing challenges in grounded human-object interaction through decoupled perception and planning modules.",
   "summary_en": "A dual-stream framework called InteractAvatar is presented for generating talking avatars that can interact with objects in their environment, addressing challenges in grounded human-object interaction through decoupled perception and planning modules.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA dual-stream framework called InteractAvatar is presented for generating talking avatars that can interact with objects in their environment, addressing challenges in grounded human-object interaction through decoupled perception and planning modules.",
+  "summary_zh": "提出了一种名为 InteractAvatar 的双流框架，用于生成能够与环境物体交互的说话头像，通过解耦的感知与规划模块，解决了真实场景人物交互中的挑战。",
   "hf_url": "https://huggingface.co/papers/2602.01538",
   "arxiv_url": "https://arxiv.org/abs/2602.01538",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01538",

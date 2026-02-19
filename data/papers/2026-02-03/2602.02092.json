@@ -26,7 +26,7 @@
   ],
   "abstract": "FSVideo is a fast transformer-based image-to-video diffusion framework that uses a compressed video autoencoder, diffusion transformer architecture with enhanced layer memory, and multi-resolution generation strategy to achieve high performance with significantly reduced computation time.",
   "summary_en": "FSVideo is a fast transformer-based image-to-video diffusion framework that uses a compressed video autoencoder, diffusion transformer architecture with enhanced layer memory, and multi-resolution generation strategy to achieve high performance with significantly reduced computation time.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nFSVideo is a fast transformer-based image-to-video diffusion framework that uses a compressed video autoencoder, diffusion transformer architecture with enhanced layer memory, and multi-resolution generation strategy to achieve high performance with significantly reduced computation time.",
+  "summary_zh": "FSVideo是一种基于transformer的快速图像到视频扩散框架，采用压缩视频自编码器、具备增强层记忆的扩散transformer架构和多分辨率生成策略，在显著减少计算时间的同时实现高性能。",
   "hf_url": "https://huggingface.co/papers/2602.02092",
   "arxiv_url": "https://arxiv.org/abs/2602.02092",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02092",

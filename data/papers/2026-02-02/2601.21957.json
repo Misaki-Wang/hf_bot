@@ -21,7 +21,7 @@
   ],
   "abstract": "A compact vision-language model achieves state-of-the-art accuracy on document understanding tasks while maintaining efficiency through specialized benchmarking and extended functionality. We introduce PaddleOCR-VL-1.5, an upgraded model achieving a new state-of-the-art (SOTA) accuracy of 94.5% on OmniDocBench v1.5. To rigorously evaluate robustness against real-world physical distortions, including scanning, skew, warping, screen-photography, and illumination, we propose the Real5-OmniDocBench benchmark. Experimental results demonstrate that this enhanced model attains SOTA performance on the newly curated benchmark. Furthermore, we extend the model's capabilities by incorporating seal recognition and text spotting tasks, while remaining a 0.9B ultra-compact VLM with high efficiency. Code: https://github.com/PaddlePaddle/PaddleOCR",
   "summary_en": "A compact vision-language model achieves state-of-the-art accuracy on document understanding tasks while maintaining efficiency through specialized benchmarking and extended functionality.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA compact vision-language model achieves state-of-the-art accuracy on document understanding tasks while maintaining efficiency through specialized benchmarking and extended functionality.",
+  "summary_zh": "一种紧凑型视觉语言模型通过专门的基准测试和扩展功能，在文档理解任务上实现了最先进的准确率，同时保持效率。",
   "hf_url": "https://huggingface.co/papers/2601.21957",
   "arxiv_url": "https://arxiv.org/abs/2601.21957",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2601.21957",

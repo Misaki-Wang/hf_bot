@@ -8,7 +8,7 @@
   ],
   "abstract": "A Bayesian Optimization approach using Gaussian Processes automates scheduling configuration optimization on heterogeneous multi-core systems while approximating the Pareto Frontier for energy-time trade-offs. In the post-Dennard era, optimizing embedded systems requires navigating complex trade-offs between energy efficiency and latency. Traditional heuristic tuning is often inefficient in such high-dimensional, non-smooth landscapes. In this work, we propose a Bayesian Optimization framework using Gaussian Processes to automate the search for optimal scheduling configurations on heterogeneous multi-core architectures. We explicitly address the multi-objective nature of the problem by approximating the Pareto Frontier between energy and time. Furthermore, by incorporating Sensitivity Analysis ( fANOVA ) and comparing different covariance kernels (e.g., Matérn vs. RBF ), we provide physical interpretability to the black-box model, revealing the dominant hardware parameters driving system performance.",
   "summary_en": "A Bayesian Optimization approach using Gaussian Processes automates scheduling configuration optimization on heterogeneous multi-core systems while approximating the Pareto Frontier for energy-time trade-offs.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nA Bayesian Optimization approach using Gaussian Processes automates scheduling configuration optimization on heterogeneous multi-core systems while approximating the Pareto Frontier for energy-time trade-offs.",
+  "summary_zh": "利用高斯过程的贝叶斯优化方法可在异构多核系统上自动优化调度配置，并逼近能耗-时间权衡的帕累托前沿。",
   "hf_url": "https://huggingface.co/papers/2601.23134",
   "arxiv_url": "https://arxiv.org/abs/2601.23134",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2601.23134",

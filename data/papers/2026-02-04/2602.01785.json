@@ -16,7 +16,7 @@
   ],
   "abstract": "Multimodal large language models can effectively understand source code when represented as compressed images, achieving significant token reduction while maintaining or improving performance on code comprehension tasks.",
   "summary_en": "Multimodal large language models can effectively understand source code when represented as compressed images, achieving significant token reduction while maintaining or improving performance on code comprehension tasks.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMultimodal large language models can effectively understand source code when represented as compressed images, achieving significant token reduction while maintaining or improving performance on code comprehension tasks.",
+  "summary_zh": "多模态大语言模型能够有效理解以压缩图像形式表示的源代码，在实现显著 token 缩减的同时，于代码理解任务上保持或提升性能。",
   "hf_url": "https://huggingface.co/papers/2602.01785",
   "arxiv_url": "https://arxiv.org/abs/2602.01785",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.01785",

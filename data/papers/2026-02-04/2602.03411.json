@@ -19,7 +19,7 @@
   ],
   "abstract": "SWE-Master presents a reproducible framework for developing software engineering agents through systematic optimization across multiple stages of agent development, achieving superior performance on software task resolution benchmarks.",
   "summary_en": "SWE-Master presents a reproducible framework for developing software engineering agents through systematic optimization across multiple stages of agent development, achieving superior performance on software task resolution benchmarks.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nSWE-Master presents a reproducible framework for developing software engineering agents through systematic optimization across multiple stages of agent development, achieving superior performance on software task resolution benchmarks.",
+  "summary_zh": "SWE-Master提出了一种可复现的框架，通过在智能体开发多阶段进行系统化优化来开发软件工程智能体，在软件任务解决基准测试中取得了优异性能。",
   "hf_url": "https://huggingface.co/papers/2602.03411",
   "arxiv_url": "https://arxiv.org/abs/2602.03411",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03411",

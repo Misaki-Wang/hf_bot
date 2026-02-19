@@ -7,7 +7,7 @@
   ],
   "abstract": "Machine translation experiments for Turkic languages using nllb-200, LoRA fine-tuning, and prompt-based approaches achieved varying chrF++ scores across language pairs. We explore machine translation for five Turkic language pairs: Russian-Bashkir, Russian-Kazakh, Russian-Kyrgyz, English-Tatar, English-Chuvash. Fine-tuning nllb-200 -distilled-600M with LoRA on synthetic data achieved chrF++ 49.71 for Kazakh and 46.94 for Bashkir. Prompting DeepSeek-V3.2 with retrieved similar examples achieved chrF++ 39.47 for Chuvash. For Tatar, zero-shot or retrieval-based approaches achieved chrF++ 41.6, while for Kyrgyz the zero-shot approach reached 45.6. We release the dataset and the obtained weights.",
   "summary_en": "Machine translation experiments for Turkic languages using nllb-200, LoRA fine-tuning, and prompt-based approaches achieved varying chrF++ scores across language pairs.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMachine translation experiments for Turkic languages using nllb-200, LoRA fine-tuning, and prompt-based approaches achieved varying chrF++ scores across language pairs.",
+  "summary_zh": "使用 nllb-200、LoRA 微调和基于提示的方法开展的突厥语族语言机器翻译实验在不同语言对上取得了不同的 chrF++ 分数。",
   "hf_url": "https://huggingface.co/papers/2602.04442",
   "arxiv_url": "https://arxiv.org/abs/2602.04442",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.04442",

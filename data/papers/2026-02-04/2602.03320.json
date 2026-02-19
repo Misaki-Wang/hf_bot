@@ -15,7 +15,7 @@
   ],
   "abstract": "MedSAM-Agent reformulates medical image segmentation as a multi-step decision-making process using hybrid prompting and a two-stage training pipeline with process rewards to improve autonomous reasoning and optimization.",
   "summary_en": "MedSAM-Agent reformulates medical image segmentation as a multi-step decision-making process using hybrid prompting and a two-stage training pipeline with process rewards to improve autonomous reasoning and optimization.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nMedSAM-Agent reformulates medical image segmentation as a multi-step decision-making process using hybrid prompting and a two-stage training pipeline with process rewards to improve autonomous reasoning and optimization.",
+  "summary_zh": "MedSAM-Agent 利用混合提示和引入过程奖励的两阶段训练流程，将医学图像分割重新定义为多步决策过程，以提升自主推理与优化能力。",
   "hf_url": "https://huggingface.co/papers/2602.03320",
   "arxiv_url": "https://arxiv.org/abs/2602.03320",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.03320",

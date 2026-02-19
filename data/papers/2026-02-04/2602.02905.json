@@ -18,7 +18,7 @@
   ],
   "abstract": "Researchers developed FIRE-Bench, a comprehensive evaluation framework that challenges autonomous agents to rediscover established scientific findings through complete research cycles involving hypothesis generation, experimentation, coding, and evidence-based conclusion drawing.",
   "summary_en": "Researchers developed FIRE-Bench, a comprehensive evaluation framework that challenges autonomous agents to rediscover established scientific findings through complete research cycles involving hypothesis generation, experimentation, coding, and evidence-based conclusion drawing.",
-  "summary_zh": "[DUMMY-TRANSLATION] 未配置真实翻译服务，以下保留英文原文。\nResearchers developed FIRE-Bench, a comprehensive evaluation framework that challenges autonomous agents to rediscover established scientific findings through complete research cycles involving hypothesis generation, experimentation, coding, and evidence-based conclusion drawing.",
+  "summary_zh": "研究人员开发了FIRE-Bench，这是一个全面的评估框架，用于挑战自主智能体通过包含假设生成、实验、编程和基于证据得出结论的完整研究周期，重新发现既定科学发现。",
   "hf_url": "https://huggingface.co/papers/2602.02905",
   "arxiv_url": "https://arxiv.org/abs/2602.02905",
   "arxiv_pdf_url": "https://arxiv.org/pdf/2602.02905",
