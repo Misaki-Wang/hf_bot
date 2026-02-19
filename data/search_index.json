@@ -320,6 +320,16 @@
     "upvotes": 5
   },
   {
+    "id": "2602.15156",
+    "date": "2026-02-18",
+    "title": "Panini: Continual Learning in Token Space via Structured Memory",
+    "authors": "Shreyas Rajesh Pavan Holur Mehmet Yigit Turali Chenda Duan Vwani Roychowdhury",
+    "abstract": "Panini enables efficient and accurate language model reasoning through a non-parametric continual learning framework that uses generative semantic workspaces to store and retrieve knowledge, achieving superior performance with reduced computational overhead.",
+    "summary_en": "Panini enables efficient and accurate language model reasoning through a non-parametric continual learning framework that uses generative semantic workspaces to store and retrieve knowledge, achieving superior performance with reduced computational overhead.",
+    "summary_zh": "Panini通过非参数化持续学习框架实现高效准确的语言模型推理，该框架利用生成式语义工作空间存储和检索知识，在降低计算开销的同时取得卓越性能。",
+    "upvotes": 5
+  },
+  {
     "id": "2602.14486",
     "date": "2026-02-18",
     "title": "Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
@@ -370,6 +380,16 @@
     "upvotes": 2
   },
   {
+    "id": "2602.15382",
+    "date": "2026-02-18",
+    "title": "The Vision Wormhole: Latent-Space Communication in Heterogeneous Multi-Agent Systems",
+    "authors": "Xiaoze Liu Ruowang Zhang Weichen Yu Siheng Xiong Liu He Feijie Wu Hoin Jung Matt Fredrikson Xiaoqian Wang Jing Gao",
+    "abstract": "A Vision Wormhole framework enables efficient, model-agnostic communication in multi-agent systems by using visual-language models to transfer reasoning states through a shared latent space, reducing computational overhead while maintaining reasoning accuracy. Multi-Agent Systems (MAS) powered by Large Language Models have unlocked advanced collaborative reasoning, yet they remain shackled by the inefficiency of discrete text communication, which imposes significant runtime overhead and information quantization loss. While latent state transfer offers a high-bandwidth alternative, existing approaches either assume homogeneous sender-receiver architectures or rely on pair-specific learned translators, limiting scalability and modularity across diverse model families with disjoint manifolds. In this work, we propose the Vision Wormhole, a novel framework that repurposes the visual interface of Vision-Language Models (VLMs) to enable model-agnostic, text-free communication. By introducing a Universal Visual Codec , we map heterogeneous reasoning traces into a shared continuous latent space and inject them directly into the receiver's visual pathway , effectively treating the vision encoder as a universal port for inter-agent telepathy. Our framework adopts a hub-and-spoke topology to reduce pairwise alignment complexity from O(N^2) to O(N) and leverages a label-free, teacher-student distillation objective to align the high-speed visual channel with the robust reasoning patterns of the text pathway. Extensive experiments across heterogeneous model families (e.g., Qwen-VL, Gemma) demonstrate that the Vision Wormhole reduces end-to-end wall-clock time in controlled comparisons while maintaining reasoning fidelity comparable to standard text-based MAS. Code is available at https://github.com/xz-liu/heterogeneous-latent-mas",
+    "summary_en": "A Vision Wormhole framework enables efficient, model-agnostic communication in multi-agent systems by using visual-language models to transfer reasoning states through a shared latent space, reducing computational overhead while maintaining reasoning accuracy.",
+    "summary_zh": "视觉虫洞框架利用视觉-语言模型，通过共享潜在空间传递推理状态，从而在多智能体系统中实现高效、模型无关的通信，在降低计算开销的同时保持推理准确性。",
+    "upvotes": 2
+  },
+  {
     "id": "2602.15278",
     "date": "2026-02-18",
     "title": "Visual Persuasion: What Influences Decisions of Vision-Language Models?",
@@ -377,6 +397,16 @@
     "abstract": "Visual-language models' decision-making preferences are studied through controlled image choice tasks with systematic input perturbations, revealing visual vulnerabilities and safety concerns. The web is littered with images, once created for human consumption and now increasingly interpreted by agents using vision-language models (VLMs). These agents make visual decisions at scale, deciding what to click, recommend, or buy. Yet, we know little about the structure of their visual preferences. We introduce a framework for studying this by placing VLMs in controlled image-based choice tasks and systematically perturbing their inputs. Our key idea is to treat the agent's decision function as a latent visual utility that can be inferred through revealed preference : choices between systematically edited images. Starting from common images, such as product photos, we propose methods for visual prompt optimization , adapting text optimization methods to iteratively propose and apply visually plausible modifications using an image generation model (such as in composition, lighting, or background). We then evaluate which edits increase selection probability. Through large-scale experiments on frontier VLMs, we demonstrate that optimized edits significantly shift choice probabilities in head-to-head comparisons. We develop an automatic interpretability pipeline to explain these preferences, identifying consistent visual themes that drive selection. We argue that this approach offers a practical and efficient way to surface visual vulnerabilities , safety concerns that might otherwise be discovered implicitly in the wild, supporting more proactive auditing and governance of image-based AI agents.",
     "summary_en": "Visual-language models' decision-making preferences are studied through controlled image choice tasks with systematic input perturbations, revealing visual vulnerabilities and safety concerns.",
     "summary_zh": "通过受控的图像选择任务与系统性输入扰动，研究视觉-语言模型的决策偏好，揭示其视觉漏洞与安全问题。",
+    "upvotes": 2
+  },
+  {
+    "id": "2602.13964",
+    "date": "2026-02-18",
+    "title": "HLE-Verified: A Systematic Verification and Structured Revision of Humanity's Last Exam",
+    "authors": "Weiqi Zhai Zhihai Wang Jinghang Wang Boyu Yang Xiaogang Li Xiang Xu Bohan Wang Peng Wang Xingzhe Wu Anfeng Li Qiyuan Feng Yuhao Zhou Shoulin Han Wenjie Luo Yiyuan Li Yaxuan Wang Ruixian Luo Guojie Lin Peiyao Xiao Chengliang Xu Ben Wang Zeyu Wang",
+    "abstract": "HLE-Verified presents a validated and revised version of the HLE benchmark with improved reliability through expert review and model-based checks, demonstrating significant accuracy improvements in language model evaluations. Humanity's Last Exam (HLE) has become a widely used benchmark for evaluating frontier large language models on challenging, multi-domain questions. However, community-led analyses have raised concerns that HLE contains a non-trivial number of noisy items, which can bias evaluation results and distort cross-model comparisons. To address this challenge, we introduce HLE-Verified, a verified and revised version of HLE with a transparent verification protocol and fine-grained error taxonomy . Our construction follows a two-stage validation -and-repair workflow resulting in a certified benchmark . In Stage I, each item undergoes binary validation of the problem and final answer through domain-expert review and model-based cross-checks , yielding 641 verified items. In Stage II, flawed but fixable items are revised under strict constraints preserving the original evaluation intent, through dual independent expert repairs , model-assisted auditing , and final adjudication , resulting in 1,170 revised-and-certified items. The remaining 689 items are released as a documented uncertain set with explicit uncertainty sources and expertise tags for future refinement. We evaluate seven state-of-the-art language models on HLE and HLE-Verified, observing an average absolute accuracy gain of 7--10 percentage points on HLE-Verified. The improvement is particularly pronounced on items where the original problem statement and/or reference answer is erroneous, with gains of 30--40 percentage points. Our analyses further reveal a strong association between model confidence and the presence of errors in the problem statement or reference answer, supporting the effectiveness of our revisions. Overall, HLE-Verified improves HLE-style evaluations by reducing annotation noise and enabling more faithful measurement of model capabilities. Data is available at: https://github.com/SKYLENAGE-AI/HLE-Verified",
+    "summary_en": "HLE-Verified presents a validated and revised version of the HLE benchmark with improved reliability through expert review and model-based checks, demonstrating significant accuracy improvements in language model evaluations.",
+    "summary_zh": "HLE-Verified提出了HLE基准测试的验证与修订版本，通过专家审核和基于模型的检查提升了可靠性，在语言模型评估中展现出显著的准确率提升。",
     "upvotes": 2
   },
   {
@@ -447,6 +477,16 @@
     "abstract": "Soft compression architectures for long-context LLMs use query-aware probing classifiers to detect token overflow and mitigate compression-induced errors. Efficient long-context processing remains a crucial challenge for contemporary large language models (LLMs), especially in resource-constrained environments. Soft compression architectures promise to extend effective context length by replacing long token sequences with smaller sets of learned compressed tokens . Yet, the limits of compressibility -- and when compression begins to erase task-relevant content -- remain underexplored. In this paper, we define token overflow as a regime in which compressed representations no longer contain sufficient information to answer a given query, and propose a methodology to characterize and detect it. In the xRAG soft-compression setting, we find that query-agnostic saturation statistics reliably separate compressed from uncompressed token representations, providing a practical tool for identifying compressed tokens but showing limited overflow detection capability. Lightweight probing classifiers over both query and context xRAG representations detect overflow with 0.72 AUC-ROC on average on HotpotQA , SQuADv2 , and TriviaQA datasets, demonstrating that incorporating query information improves detection performance. These results advance from query-independent diagnostics to query-aware detectors, enabling low-cost pre-LLM gating to mitigate compression-induced errors.",
     "summary_en": "Soft compression architectures for long-context LLMs use query-aware probing classifiers to detect token overflow and mitigate compression-induced errors.",
     "summary_zh": "面向长上下文LLM的软压缩架构使用查询感知探测分类器检测token溢出并缓解压缩引起的错误。",
+    "upvotes": 1
+  },
+  {
+    "id": "2602.10210",
+    "date": "2026-02-18",
+    "title": "How Much Reasoning Do Retrieval-Augmented Models Add beyond LLMs? A Benchmarking Framework for Multi-Hop Inference over Hybrid Knowledge",
+    "authors": "Junhong Lin Bing Zhang Song Wang Ziyan Liu Dan Gutfreund Julian Shun Yada Zhu",
+    "abstract": "HybridRAG-Bench evaluates retrieval-intensive multi-hop reasoning in large language models by combining unstructured text and structured knowledge graphs from recent scientific literature, providing a contamination-aware benchmark that distinguishes genuine retrieval and reasoning from parametric recall. Large language models (LLMs) continue to struggle with knowledge-intensive questions that require up-to-date information and multi-hop reasoning . Augmenting LLMs with hybrid external knowledge , such as unstructured text and structured knowledge graphs , offers a promising alternative to costly continual pretraining. As such, reliable evaluation of their retrieval and reasoning capabilities becomes critical. However, many existing benchmarks increasingly overlap with LLM pretraining data, which means answers or supporting knowledge may already be encoded in model parameters, making it difficult to distinguish genuine retrieval and reasoning from parametric recall . We introduce HybridRAG-Bench, a framework for constructing benchmarks to evaluate retrieval-intensive, multi-hop reasoning over hybrid knowledge. HybridRAG-Bench automatically couples unstructured text and structured knowledge graph representations derived from recent scientific literature on arXiv, and generates knowledge-intensive question-answer pairs grounded in explicit reasoning paths. The framework supports flexible domain and time-frame selection, enabling contamination-aware and customizable evaluation as models and knowledge evolve. Experiments across three domains (artificial intelligence, governance and policy, and bioinformatics) demonstrate that HybridRAG-Bench rewards genuine retrieval and reasoning rather than parametric recall , offering a principled testbed for evaluating hybrid knowledge-augmented reasoning systems. We release our code and data at github.com/junhongmit/HybridRAG-Bench.",
+    "summary_en": "HybridRAG-Bench evaluates retrieval-intensive multi-hop reasoning in large language models by combining unstructured text and structured knowledge graphs from recent scientific literature, providing a contamination-aware benchmark that distinguishes genuine retrieval and reasoning from parametric recall.",
+    "summary_zh": "HybridRAG-Bench通过结合最新科学文献中的非结构化文本和结构化知识图谱，评估大语言模型的检索密集型多跳推理能力，提供了一个污染感知基准，用于区分真正的检索与推理和参数化记忆。",
     "upvotes": 1
   },
   {

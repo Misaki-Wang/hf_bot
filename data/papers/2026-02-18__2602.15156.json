@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-18",
+  "paper_id": "2602.15156",
+  "title": "Panini: Continual Learning in Token Space via Structured Memory",
+  "authors": [
+    "Shreyas Rajesh",
+    "Pavan Holur",
+    "Mehmet Yigit Turali",
+    "Chenda Duan",
+    "Vwani Roychowdhury"
+  ],
+  "abstract": "Panini enables efficient and accurate language model reasoning through a non-parametric continual learning framework that uses generative semantic workspaces to store and retrieve knowledge, achieving superior performance with reduced computational overhead.",
+  "summary_en": "Panini enables efficient and accurate language model reasoning through a non-parametric continual learning framework that uses generative semantic workspaces to store and retrieve knowledge, achieving superior performance with reduced computational overhead.",
+  "summary_zh": "Panini通过非参数化持续学习框架实现高效准确的语言模型推理，该框架利用生成式语义工作空间存储和检索知识，在降低计算开销的同时取得卓越性能。",
+  "hf_url": "https://huggingface.co/papers/2602.15156",
+  "arxiv_url": "https://arxiv.org/abs/2602.15156",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15156",
+  "github_url": "https://github.com/roychowdhuryresearch/gsw-memory",
+  "upvotes": 5,
+  "fetched_at": "2026-02-19T02:57:18.247922+00:00"
+}

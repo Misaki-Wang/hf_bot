@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-19T02:00:33.889843+00:00",
-  "count": 106,
+  "generated_at": "2026-02-19T02:58:42.964133+00:00",
+  "count": 110,
   "dates": [
     "2026-02-19",
     "2026-02-18",
@@ -9,7 +9,7 @@
   ],
   "daily_summary": {
     "date": "2026-02-19",
-    "content": "Overview\n- Date: 2026-02-19\n- Total Papers: 25\n- Total Upvotes: 234\n- Papers with GitHub: 13\n- Papers with AI Summary: 25\n\nKey Takeaways\n1. Sparse Autoencoders (SAEs) 的可解释性有效性遭受系统性质疑，研究表明高重建性能并不等同于可靠的神经网络内部特征分解能力。\n2. Agent能力评估向多维度扩展，从技能跨任务泛化到真实研究环境均揭示当前模型显著的能力-可靠性差距。\n3. 多模态统一架构与Test-time Scaling技术深度融合，通过Chain-of-Thought机制实现迭代推理与复杂场景下的性能优化。\n4. 基础模型工程化进展显著，GLM-5通过DSA架构与异步RLHF实现成本降低和对齐性能提升，推动Agent工程实践能力发展。\n\nNotable Papers\n- [2602.14111] Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines? (👍51): 尽管重建性能强劲，Sparse Autoencoders在合成与真实场景中均无法可靠地分解神经网络内部机制。\n- [2602.12670] SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks (👍38): 跨86项任务评估表明精选Agent技能虽显著提升性能但一致性不足，自生成技能效果有限。\n- [2602.15763] GLM-5: from Vibe Coding to Agentic Engineering (👍31): 采用DSA架构降低成本并结合异步RLHF增强对齐，提升编码与Agent工程能力。\n- [2602.14299] Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook (👍21): 网络环境中的LLM Agent维持个体多样性并展现动态稳定性，但未形成真正的社会趋同。\n- [2602.12279] UniT: Unified Multimodal Chain-of-Thought Test-time Scaling (👍16): 统一多模态模型通过Chain-of-Thought Test-time Scaling实现迭代推理与优化，提升生成与理解能力。",
+    "content": "Overview\n- Date: 2026-02-19\n- Total Papers: 25\n- Total Upvotes: 234\n- Papers with GitHub: 13\n\nKey Takeaways\n1. Sparse Autoencoders (SAEs) 的可解释性有效性遭受系统性质疑，研究表明高重建性能并不等同于可靠的神经网络内部特征分解能力。\n2. Agent能力评估向多维度扩展，从技能跨任务泛化到真实研究环境均揭示当前模型显著的能力-可靠性差距。\n3. 多模态统一架构与Test-time Scaling技术深度融合，通过Chain-of-Thought机制实现迭代推理与复杂场景下的性能优化。\n4. 基础模型工程化进展显著，GLM-5通过DSA架构与异步RLHF实现成本降低和对齐性能提升，推动Agent工程实践能力发展。\n\nNotable Papers\n- [2602.14111] Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines? (👍51): 尽管重建性能强劲，Sparse Autoencoders在合成与真实场景中均无法可靠地分解神经网络内部机制。\n- [2602.12670] SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks (👍38): 跨86项任务评估表明精选Agent技能虽显著提升性能但一致性不足，自生成技能效果有限。\n- [2602.15763] GLM-5: from Vibe Coding to Agentic Engineering (👍31): 采用DSA架构降低成本并结合异步RLHF增强对齐，提升编码与Agent工程能力。\n- [2602.14299] Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook (👍21): 网络环境中的LLM Agent维持个体多样性并展现动态稳定性，但未形成真正的社会趋同。\n- [2602.12279] UniT: Unified Multimodal Chain-of-Thought Test-time Scaling (👍16): 统一多模态模型通过Chain-of-Thought Test-time Scaling实现迭代推理与优化，提升生成与理解能力。",
     "source": "openrouter",
     "model": "moonshotai/kimi-k2.5",
     "generated_at": "2026-02-19T01:58:17.300320+00:00"
@@ -17,28 +17,28 @@
   "daily_summaries": {
     "2026-02-19": {
       "date": "2026-02-19",
-      "content": "Overview\n- Date: 2026-02-19\n- Total Papers: 25\n- Total Upvotes: 234\n- Papers with GitHub: 13\n- Papers with AI Summary: 25\n\nKey Takeaways\n1. Sparse Autoencoders (SAEs) 的可解释性有效性遭受系统性质疑，研究表明高重建性能并不等同于可靠的神经网络内部特征分解能力。\n2. Agent能力评估向多维度扩展，从技能跨任务泛化到真实研究环境均揭示当前模型显著的能力-可靠性差距。\n3. 多模态统一架构与Test-time Scaling技术深度融合，通过Chain-of-Thought机制实现迭代推理与复杂场景下的性能优化。\n4. 基础模型工程化进展显著，GLM-5通过DSA架构与异步RLHF实现成本降低和对齐性能提升，推动Agent工程实践能力发展。\n\nNotable Papers\n- [2602.14111] Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines? (👍51): 尽管重建性能强劲，Sparse Autoencoders在合成与真实场景中均无法可靠地分解神经网络内部机制。\n- [2602.12670] SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks (👍38): 跨86项任务评估表明精选Agent技能虽显著提升性能但一致性不足，自生成技能效果有限。\n- [2602.15763] GLM-5: from Vibe Coding to Agentic Engineering (👍31): 采用DSA架构降低成本并结合异步RLHF增强对齐，提升编码与Agent工程能力。\n- [2602.14299] Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook (👍21): 网络环境中的LLM Agent维持个体多样性并展现动态稳定性，但未形成真正的社会趋同。\n- [2602.12279] UniT: Unified Multimodal Chain-of-Thought Test-time Scaling (👍16): 统一多模态模型通过Chain-of-Thought Test-time Scaling实现迭代推理与优化，提升生成与理解能力。",
+      "content": "Overview\n- Date: 2026-02-19\n- Total Papers: 25\n- Total Upvotes: 234\n- Papers with GitHub: 13\n\nKey Takeaways\n1. Sparse Autoencoders (SAEs) 的可解释性有效性遭受系统性质疑，研究表明高重建性能并不等同于可靠的神经网络内部特征分解能力。\n2. Agent能力评估向多维度扩展，从技能跨任务泛化到真实研究环境均揭示当前模型显著的能力-可靠性差距。\n3. 多模态统一架构与Test-time Scaling技术深度融合，通过Chain-of-Thought机制实现迭代推理与复杂场景下的性能优化。\n4. 基础模型工程化进展显著，GLM-5通过DSA架构与异步RLHF实现成本降低和对齐性能提升，推动Agent工程实践能力发展。\n\nNotable Papers\n- [2602.14111] Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines? (👍51): 尽管重建性能强劲，Sparse Autoencoders在合成与真实场景中均无法可靠地分解神经网络内部机制。\n- [2602.12670] SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks (👍38): 跨86项任务评估表明精选Agent技能虽显著提升性能但一致性不足，自生成技能效果有限。\n- [2602.15763] GLM-5: from Vibe Coding to Agentic Engineering (👍31): 采用DSA架构降低成本并结合异步RLHF增强对齐，提升编码与Agent工程能力。\n- [2602.14299] Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook (👍21): 网络环境中的LLM Agent维持个体多样性并展现动态稳定性，但未形成真正的社会趋同。\n- [2602.12279] UniT: Unified Multimodal Chain-of-Thought Test-time Scaling (👍16): 统一多模态模型通过Chain-of-Thought Test-time Scaling实现迭代推理与优化，提升生成与理解能力。",
       "source": "openrouter",
       "model": "moonshotai/kimi-k2.5",
       "generated_at": "2026-02-19T01:58:17.300320+00:00"
     },
     "2026-02-18": {
       "date": "2026-02-18",
-      "content": "Overview\n- Date: 2026-02-18\n- Total Papers: 19\n- Total Upvotes: 140\n- Papers with GitHub: 9\n- Papers with AI Summary: 19\n\nKey Takeaways\n1. Agent能力评估成为焦点，多项研究揭示当前AI代理在复杂任务中的性能与可靠性差距。\n2. 基础模型训练方法持续演进，GLM-5通过异步强化学习与DSA架构优化实现工程化突破。\n3. 神经网络可解释性面临挑战，Sparse Autoencoders在分解网络内部表示方面未显著优于随机基线。\n4. 多模态与表示学习研究深入，涵盖Test-time Scaling、嵌入蒸馏及Platonic Representation Hypothesis的重新审视。\n\nNotable Papers\n- [2602.12670] SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks (👍26): 针对86项任务评估Agent技能，发现人工 curated skills 虽显著提升性能但表现不一致，而自动生成技能可靠性不足。\n- [2602.15763] GLM-5: from Vibe Coding to Agentic Engineering (👍25): 通过DSA架构降低推理成本，结合异步强化学习提升对齐效果，并增强代码生成能力，推动基础模型向工程化智能体演进。\n- [2602.14111] Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines? (👍22): 系统性验证表明Sparse Autoencoders尽管重建性能优异，但在分解神经网络内部结构方面未能稳定超越随机基线。\n- [2602.14299] Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook (👍17): 网络环境中的大语言模型智能体呈现动态稳定性而非真正的社会收敛，保持个体多样性但缺乏集体规范形成。\n- [2602.15112] ResearchGym: Evaluating Language Model Agents on Real-World AI Research (👍11): 构建端到端AI研究任务基准环境，揭示当前语言模型智能体在复杂科研流程中的能力-可靠性鸿沟。",
+      "content": "Overview\n- Date: 2026-02-18\n- Total Papers: 19\n- Total Upvotes: 140\n- Papers with GitHub: 9\n\nKey Takeaways\n1. Agent能力评估成为焦点，多项研究揭示当前AI代理在复杂任务中的性能与可靠性差距。\n2. 基础模型训练方法持续演进，GLM-5通过异步强化学习与DSA架构优化实现工程化突破。\n3. 神经网络可解释性面临挑战，Sparse Autoencoders在分解网络内部表示方面未显著优于随机基线。\n4. 多模态与表示学习研究深入，涵盖Test-time Scaling、嵌入蒸馏及Platonic Representation Hypothesis的重新审视。\n\nNotable Papers\n- [2602.12670] SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks (👍26): 针对86项任务评估Agent技能，发现人工 curated skills 虽显著提升性能但表现不一致，而自动生成技能可靠性不足。\n- [2602.15763] GLM-5: from Vibe Coding to Agentic Engineering (👍25): 通过DSA架构降低推理成本，结合异步强化学习提升对齐效果，并增强代码生成能力，推动基础模型向工程化智能体演进。\n- [2602.14111] Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines? (👍22): 系统性验证表明Sparse Autoencoders尽管重建性能优异，但在分解神经网络内部结构方面未能稳定超越随机基线。\n- [2602.14299] Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook (👍17): 网络环境中的大语言模型智能体呈现动态稳定性而非真正的社会收敛，保持个体多样性但缺乏集体规范形成。\n- [2602.15112] ResearchGym: Evaluating Language Model Agents on Real-World AI Research (👍11): 构建端到端AI研究任务基准环境，揭示当前语言模型智能体在复杂科研流程中的能力-可靠性鸿沟。",
       "source": "openrouter",
       "model": "moonshotai/kimi-k2.5",
       "generated_at": "2026-02-18T14:13:05.287620+00:00"
     },
     "2026-02-17": {
       "date": "2026-02-17",
-      "content": "Overview\n- Date: 2026-02-17\n- Total Papers: 28\n- Total Upvotes: 156\n- Papers with GitHub: 17\n- Papers with AI Summary: 28\n\nKey Takeaways\n1. 多模态Agent与视觉检索系统成为研究热点，强调上下文感知与长程推理能力。\n2. 强化学习范式持续演进，从经验反思到推理驱动的表征学习，提升稀疏奖励场景下的学习效率。\n3. 模型效率与架构创新并重，二进制Token表示（Binary Tokens）和小规模高性能模型（3B参数）受到关注。\n4. 跨领域应用拓展显著，涵盖量子数据库（Quantum-Native Database）、科研数据评估与自动化搜索框架。\n\nNotable Papers\n- [2602.10809] DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories (👍24): 提出模块化Agent框架，通过多步推理解决传统语义匹配在视觉历史检索中的局限性。\n- [2602.14492] Query as Anchor: Scenario-Adaptive User Representation via Large Language Model (👍14): 将用户建模从静态编码转变为基于LLM的动态查询感知合成，实现场景自适应表示。\n- [2602.13949] Experiential Reinforcement Learning (👍14): 引入显式经验-反思-巩固循环机制，显著提升稀疏奖励环境下的学习效率和性能。\n- [2602.14699] Qute: Towards Quantum-Native Database (👍13): 首个将量子计算作为一等执行选项的数据库系统，支持扩展SQL到门级量子电路的高效编译与混合优化。\n- [2602.14234] REDSearcher: A Scalable and Cost-Efficient Framework for Long-Horizon Search Agents (👍13): 通过任务合成、工具增强查询和模拟环境优化，构建可扩展的长程搜索Agent框架。",
+      "content": "Overview\n- Date: 2026-02-17\n- Total Papers: 28\n- Total Upvotes: 156\n- Papers with GitHub: 17\n\nKey Takeaways\n1. 多模态Agent与视觉检索系统成为研究热点，强调上下文感知与长程推理能力。\n2. 强化学习范式持续演进，从经验反思到推理驱动的表征学习，提升稀疏奖励场景下的学习效率。\n3. 模型效率与架构创新并重，二进制Token表示（Binary Tokens）和小规模高性能模型（3B参数）受到关注。\n4. 跨领域应用拓展显著，涵盖量子数据库（Quantum-Native Database）、科研数据评估与自动化搜索框架。\n\nNotable Papers\n- [2602.10809] DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories (👍24): 提出模块化Agent框架，通过多步推理解决传统语义匹配在视觉历史检索中的局限性。\n- [2602.14492] Query as Anchor: Scenario-Adaptive User Representation via Large Language Model (👍14): 将用户建模从静态编码转变为基于LLM的动态查询感知合成，实现场景自适应表示。\n- [2602.13949] Experiential Reinforcement Learning (👍14): 引入显式经验-反思-巩固循环机制，显著提升稀疏奖励环境下的学习效率和性能。\n- [2602.14699] Qute: Towards Quantum-Native Database (👍13): 首个将量子计算作为一等执行选项的数据库系统，支持扩展SQL到门级量子电路的高效编译与混合优化。\n- [2602.14234] REDSearcher: A Scalable and Cost-Efficient Framework for Long-Horizon Search Agents (👍13): 通过任务合成、工具增强查询和模拟环境优化，构建可扩展的长程搜索Agent框架。",
       "source": "openrouter",
       "model": "moonshotai/kimi-k2.5",
       "generated_at": "2026-02-17T16:24:46.833682+00:00"
     },
     "2026-02-16": {
       "date": "2026-02-16",
-      "content": "Overview\n- Date: 2026-02-16\n- Total Papers: 32\n- Total Upvotes: 639\n- Papers with GitHub: 20\n- Papers with AI Summary: 32\n\nKey Takeaways\n1. 多模态大模型（MLLM）持续向垂直领域深化，医疗诊断与细粒度视觉感知成为重点突破方向。\n2. 强化学习（RL）与视觉-语言-动作（VLA）模型结合紧密，在机器人操控和视觉推理中探索能力边界。\n3. 数据效率研究受关注，特征空间数据合成与编解码器对齐的稀疏性方法提升训练与推理效率。\n4. 鲁棒性评估基准建设加速，针对语音检索和地理定位等场景的系统化测试框架相继提出。\n\nNotable Papers\n- [2602.10388] Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs (👍203): 提出Feature Activation Coverage指标，在LLM可解释特征空间合成多样化数据，无需增加数据量即可提升下游任务性能。\n- [2602.12783] SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise (👍134): 构建包含37,317个独特查询的跨语言鲁棒性基准，系统评估语音查询检索在声学噪声下的性能表现。\n- [2602.12705] MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs (👍56): 通过实体感知持续预训练、RLHF和工具增强智能体训练，构建面向可靠医疗诊断的视觉语言基础模型。\n- [2602.11858] Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception (👍52): 提出Region-to-Image Distillation方法，使MLLM在推理时内部执行迭代缩放，无需重复工具调用即可实现细粒度视觉感知。\n- [2602.08683] OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence (👍40): 基于视频压缩的信息论原理，利用Codec对齐的稀疏性驱动编码，在效率与准确性上超越传统视觉编码方法。",
+      "content": "Overview\n- Date: 2026-02-16\n- Total Papers: 32\n- Total Upvotes: 639\n- Papers with GitHub: 20\n\nKey Takeaways\n1. 多模态大模型（MLLM）持续向垂直领域深化，医疗诊断与细粒度视觉感知成为重点突破方向。\n2. 强化学习（RL）与视觉-语言-动作（VLA）模型结合紧密，在机器人操控和视觉推理中探索能力边界。\n3. 数据效率研究受关注，特征空间数据合成与编解码器对齐的稀疏性方法提升训练与推理效率。\n4. 鲁棒性评估基准建设加速，针对语音检索和地理定位等场景的系统化测试框架相继提出。\n\nNotable Papers\n- [2602.10388] Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs (👍203): 提出Feature Activation Coverage指标，在LLM可解释特征空间合成多样化数据，无需增加数据量即可提升下游任务性能。\n- [2602.12783] SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise (👍134): 构建包含37,317个独特查询的跨语言鲁棒性基准，系统评估语音查询检索在声学噪声下的性能表现。\n- [2602.12705] MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs (👍56): 通过实体感知持续预训练、RLHF和工具增强智能体训练，构建面向可靠医疗诊断的视觉语言基础模型。\n- [2602.11858] Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception (👍52): 提出Region-to-Image Distillation方法，使MLLM在推理时内部执行迭代缩放，无需重复工具调用即可实现细粒度视觉感知。\n- [2602.08683] OneVision-Encoder: Codec-Aligned Sparsity as a Foundational Principle for Multimodal Intelligence (👍40): 基于视频压缩的信息论原理，利用Codec对齐的稀疏性驱动编码，在效率与准确性上超越传统视觉编码方法。",
       "source": "openrouter",
       "model": "moonshotai/kimi-k2.5",
       "generated_at": "2026-02-18T11:40:58.973200+00:00"
@@ -850,6 +850,27 @@
     },
     {
       "date": "2026-02-18",
+      "paper_id": "2602.15156",
+      "title": "Panini: Continual Learning in Token Space via Structured Memory",
+      "authors": [
+        "Shreyas Rajesh",
+        "Pavan Holur",
+        "Mehmet Yigit Turali",
+        "Chenda Duan",
+        "Vwani Roychowdhury"
+      ],
+      "abstract": "Panini enables efficient and accurate language model reasoning through a non-parametric continual learning framework that uses generative semantic workspaces to store and retrieve knowledge, achieving superior performance with reduced computational overhead.",
+      "summary_en": "Panini enables efficient and accurate language model reasoning through a non-parametric continual learning framework that uses generative semantic workspaces to store and retrieve knowledge, achieving superior performance with reduced computational overhead.",
+      "summary_zh": "Panini通过非参数化持续学习框架实现高效准确的语言模型推理，该框架利用生成式语义工作空间存储和检索知识，在降低计算开销的同时取得卓越性能。",
+      "hf_url": "https://huggingface.co/papers/2602.15156",
+      "arxiv_url": "https://arxiv.org/abs/2602.15156",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15156",
+      "github_url": "https://github.com/roychowdhuryresearch/gsw-memory",
+      "upvotes": 5,
+      "fetched_at": "2026-02-19T02:57:18.247922+00:00"
+    },
+    {
+      "date": "2026-02-18",
       "paper_id": "2602.14486",
       "title": "Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
       "authors": [
@@ -964,6 +985,32 @@
     },
     {
       "date": "2026-02-18",
+      "paper_id": "2602.15382",
+      "title": "The Vision Wormhole: Latent-Space Communication in Heterogeneous Multi-Agent Systems",
+      "authors": [
+        "Xiaoze Liu",
+        "Ruowang Zhang",
+        "Weichen Yu",
+        "Siheng Xiong",
+        "Liu He",
+        "Feijie Wu",
+        "Hoin Jung",
+        "Matt Fredrikson",
+        "Xiaoqian Wang",
+        "Jing Gao"
+      ],
+      "abstract": "A Vision Wormhole framework enables efficient, model-agnostic communication in multi-agent systems by using visual-language models to transfer reasoning states through a shared latent space, reducing computational overhead while maintaining reasoning accuracy. Multi-Agent Systems (MAS) powered by Large Language Models have unlocked advanced collaborative reasoning, yet they remain shackled by the inefficiency of discrete text communication, which imposes significant runtime overhead and information quantization loss. While latent state transfer offers a high-bandwidth alternative, existing approaches either assume homogeneous sender-receiver architectures or rely on pair-specific learned translators, limiting scalability and modularity across diverse model families with disjoint manifolds. In this work, we propose the Vision Wormhole, a novel framework that repurposes the visual interface of Vision-Language Models (VLMs) to enable model-agnostic, text-free communication. By introducing a Universal Visual Codec , we map heterogeneous reasoning traces into a shared continuous latent space and inject them directly into the receiver's visual pathway , effectively treating the vision encoder as a universal port for inter-agent telepathy. Our framework adopts a hub-and-spoke topology to reduce pairwise alignment complexity from O(N^2) to O(N) and leverages a label-free, teacher-student distillation objective to align the high-speed visual channel with the robust reasoning patterns of the text pathway. Extensive experiments across heterogeneous model families (e.g., Qwen-VL, Gemma) demonstrate that the Vision Wormhole reduces end-to-end wall-clock time in controlled comparisons while maintaining reasoning fidelity comparable to standard text-based MAS. Code is available at https://github.com/xz-liu/heterogeneous-latent-mas",
+      "summary_en": "A Vision Wormhole framework enables efficient, model-agnostic communication in multi-agent systems by using visual-language models to transfer reasoning states through a shared latent space, reducing computational overhead while maintaining reasoning accuracy.",
+      "summary_zh": "视觉虫洞框架利用视觉-语言模型，通过共享潜在空间传递推理状态，从而在多智能体系统中实现高效、模型无关的通信，在降低计算开销的同时保持推理准确性。",
+      "hf_url": "https://huggingface.co/papers/2602.15382",
+      "arxiv_url": "https://arxiv.org/abs/2602.15382",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15382",
+      "github_url": "https://github.com/xz-liu/heterogeneous-latent-mas",
+      "upvotes": 2,
+      "fetched_at": "2026-02-19T02:57:19.262455+00:00"
+    },
+    {
+      "date": "2026-02-18",
       "paper_id": "2602.15278",
       "title": "Visual Persuasion: What Influences Decisions of Vision-Language Models?",
       "authors": [
@@ -981,6 +1028,44 @@
       "github_url": "",
       "upvotes": 2,
       "fetched_at": "2026-02-18T14:10:30.443374+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.13964",
+      "title": "HLE-Verified: A Systematic Verification and Structured Revision of Humanity's Last Exam",
+      "authors": [
+        "Weiqi Zhai",
+        "Zhihai Wang",
+        "Jinghang Wang",
+        "Boyu Yang",
+        "Xiaogang Li",
+        "Xiang Xu",
+        "Bohan Wang",
+        "Peng Wang",
+        "Xingzhe Wu",
+        "Anfeng Li",
+        "Qiyuan Feng",
+        "Yuhao Zhou",
+        "Shoulin Han",
+        "Wenjie Luo",
+        "Yiyuan Li",
+        "Yaxuan Wang",
+        "Ruixian Luo",
+        "Guojie Lin",
+        "Peiyao Xiao",
+        "Chengliang Xu",
+        "Ben Wang",
+        "Zeyu Wang"
+      ],
+      "abstract": "HLE-Verified presents a validated and revised version of the HLE benchmark with improved reliability through expert review and model-based checks, demonstrating significant accuracy improvements in language model evaluations. Humanity's Last Exam (HLE) has become a widely used benchmark for evaluating frontier large language models on challenging, multi-domain questions. However, community-led analyses have raised concerns that HLE contains a non-trivial number of noisy items, which can bias evaluation results and distort cross-model comparisons. To address this challenge, we introduce HLE-Verified, a verified and revised version of HLE with a transparent verification protocol and fine-grained error taxonomy . Our construction follows a two-stage validation -and-repair workflow resulting in a certified benchmark . In Stage I, each item undergoes binary validation of the problem and final answer through domain-expert review and model-based cross-checks , yielding 641 verified items. In Stage II, flawed but fixable items are revised under strict constraints preserving the original evaluation intent, through dual independent expert repairs , model-assisted auditing , and final adjudication , resulting in 1,170 revised-and-certified items. The remaining 689 items are released as a documented uncertain set with explicit uncertainty sources and expertise tags for future refinement. We evaluate seven state-of-the-art language models on HLE and HLE-Verified, observing an average absolute accuracy gain of 7--10 percentage points on HLE-Verified. The improvement is particularly pronounced on items where the original problem statement and/or reference answer is erroneous, with gains of 30--40 percentage points. Our analyses further reveal a strong association between model confidence and the presence of errors in the problem statement or reference answer, supporting the effectiveness of our revisions. Overall, HLE-Verified improves HLE-style evaluations by reducing annotation noise and enabling more faithful measurement of model capabilities. Data is available at: https://github.com/SKYLENAGE-AI/HLE-Verified",
+      "summary_en": "HLE-Verified presents a validated and revised version of the HLE benchmark with improved reliability through expert review and model-based checks, demonstrating significant accuracy improvements in language model evaluations.",
+      "summary_zh": "HLE-Verified提出了HLE基准测试的验证与修订版本，通过专家审核和基于模型的检查提升了可靠性，在语言模型评估中展现出显著的准确率提升。",
+      "hf_url": "https://huggingface.co/papers/2602.13964",
+      "arxiv_url": "https://arxiv.org/abs/2602.13964",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13964",
+      "github_url": "",
+      "upvotes": 2,
+      "fetched_at": "2026-02-19T02:57:17.057340+00:00"
     },
     {
       "date": "2026-02-18",
@@ -1145,6 +1230,29 @@
       "github_url": "",
       "upvotes": 1,
       "fetched_at": "2026-02-18T15:19:42.403592+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "paper_id": "2602.10210",
+      "title": "How Much Reasoning Do Retrieval-Augmented Models Add beyond LLMs? A Benchmarking Framework for Multi-Hop Inference over Hybrid Knowledge",
+      "authors": [
+        "Junhong Lin",
+        "Bing Zhang",
+        "Song Wang",
+        "Ziyan Liu",
+        "Dan Gutfreund",
+        "Julian Shun",
+        "Yada Zhu"
+      ],
+      "abstract": "HybridRAG-Bench evaluates retrieval-intensive multi-hop reasoning in large language models by combining unstructured text and structured knowledge graphs from recent scientific literature, providing a contamination-aware benchmark that distinguishes genuine retrieval and reasoning from parametric recall. Large language models (LLMs) continue to struggle with knowledge-intensive questions that require up-to-date information and multi-hop reasoning . Augmenting LLMs with hybrid external knowledge , such as unstructured text and structured knowledge graphs , offers a promising alternative to costly continual pretraining. As such, reliable evaluation of their retrieval and reasoning capabilities becomes critical. However, many existing benchmarks increasingly overlap with LLM pretraining data, which means answers or supporting knowledge may already be encoded in model parameters, making it difficult to distinguish genuine retrieval and reasoning from parametric recall . We introduce HybridRAG-Bench, a framework for constructing benchmarks to evaluate retrieval-intensive, multi-hop reasoning over hybrid knowledge. HybridRAG-Bench automatically couples unstructured text and structured knowledge graph representations derived from recent scientific literature on arXiv, and generates knowledge-intensive question-answer pairs grounded in explicit reasoning paths. The framework supports flexible domain and time-frame selection, enabling contamination-aware and customizable evaluation as models and knowledge evolve. Experiments across three domains (artificial intelligence, governance and policy, and bioinformatics) demonstrate that HybridRAG-Bench rewards genuine retrieval and reasoning rather than parametric recall , offering a principled testbed for evaluating hybrid knowledge-augmented reasoning systems. We release our code and data at github.com/junhongmit/HybridRAG-Bench.",
+      "summary_en": "HybridRAG-Bench evaluates retrieval-intensive multi-hop reasoning in large language models by combining unstructured text and structured knowledge graphs from recent scientific literature, providing a contamination-aware benchmark that distinguishes genuine retrieval and reasoning from parametric recall.",
+      "summary_zh": "HybridRAG-Bench通过结合最新科学文献中的非结构化文本和结构化知识图谱，评估大语言模型的检索密集型多跳推理能力，提供了一个污染感知基准，用于区分真正的检索与推理和参数化记忆。",
+      "hf_url": "https://huggingface.co/papers/2602.10210",
+      "arxiv_url": "https://arxiv.org/abs/2602.10210",
+      "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10210",
+      "github_url": "https://github.com/junhongmit/HybridRAG-Bench",
+      "upvotes": 1,
+      "fetched_at": "2026-02-19T02:57:15.482763+00:00"
     },
     {
       "date": "2026-02-18",

@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-18",
+  "paper_id": "2602.10210",
+  "title": "How Much Reasoning Do Retrieval-Augmented Models Add beyond LLMs? A Benchmarking Framework for Multi-Hop Inference over Hybrid Knowledge",
+  "authors": [
+    "Junhong Lin",
+    "Bing Zhang",
+    "Song Wang",
+    "Ziyan Liu",
+    "Dan Gutfreund",
+    "Julian Shun",
+    "Yada Zhu"
+  ],
+  "abstract": "HybridRAG-Bench evaluates retrieval-intensive multi-hop reasoning in large language models by combining unstructured text and structured knowledge graphs from recent scientific literature, providing a contamination-aware benchmark that distinguishes genuine retrieval and reasoning from parametric recall. Large language models (LLMs) continue to struggle with knowledge-intensive questions that require up-to-date information and multi-hop reasoning . Augmenting LLMs with hybrid external knowledge , such as unstructured text and structured knowledge graphs , offers a promising alternative to costly continual pretraining. As such, reliable evaluation of their retrieval and reasoning capabilities becomes critical. However, many existing benchmarks increasingly overlap with LLM pretraining data, which means answers or supporting knowledge may already be encoded in model parameters, making it difficult to distinguish genuine retrieval and reasoning from parametric recall . We introduce HybridRAG-Bench, a framework for constructing benchmarks to evaluate retrieval-intensive, multi-hop reasoning over hybrid knowledge. HybridRAG-Bench automatically couples unstructured text and structured knowledge graph representations derived from recent scientific literature on arXiv, and generates knowledge-intensive question-answer pairs grounded in explicit reasoning paths. The framework supports flexible domain and time-frame selection, enabling contamination-aware and customizable evaluation as models and knowledge evolve. Experiments across three domains (artificial intelligence, governance and policy, and bioinformatics) demonstrate that HybridRAG-Bench rewards genuine retrieval and reasoning rather than parametric recall , offering a principled testbed for evaluating hybrid knowledge-augmented reasoning systems. We release our code and data at github.com/junhongmit/HybridRAG-Bench.",
+  "summary_en": "HybridRAG-Bench evaluates retrieval-intensive multi-hop reasoning in large language models by combining unstructured text and structured knowledge graphs from recent scientific literature, providing a contamination-aware benchmark that distinguishes genuine retrieval and reasoning from parametric recall.",
+  "summary_zh": "HybridRAG-Bench通过结合最新科学文献中的非结构化文本和结构化知识图谱，评估大语言模型的检索密集型多跳推理能力，提供了一个污染感知基准，用于区分真正的检索与推理和参数化记忆。",
+  "hf_url": "https://huggingface.co/papers/2602.10210",
+  "arxiv_url": "https://arxiv.org/abs/2602.10210",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10210",
+  "github_url": "https://github.com/junhongmit/HybridRAG-Bench",
+  "upvotes": 1,
+  "fetched_at": "2026-02-19T02:57:15.482763+00:00"
+}
