@@ -4,6 +4,12 @@ interface PaperLinksProps {
   paper: Pick<PaperRecord, 'hf_url' | 'arxiv_url' | 'arxiv_pdf_url' | 'github_url'>;
 }
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+function iconSrc(filename: string): string {
+  return `${BASE_PATH}/icons/${filename}`.replace(/\/{2,}/g, '/');
+}
+
 function GithubIcon() {
   return (
     <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
@@ -19,7 +25,7 @@ export default function PaperLinks({ paper }: PaperLinksProps) {
   return (
     <div className="link-icon-row" aria-label="Paper links">
       <a className="link-icon link-icon--hf" href={paper.hf_url} target="_blank" rel="noreferrer" title="Hugging Face">
-        <img src="/icons/huggingface.svg" width="15" height="15" alt="" aria-hidden="true" className="brand-icon-svg" />
+        <img src={iconSrc('huggingface.svg')} width="15" height="15" alt="" aria-hidden="true" className="brand-icon-svg" />
         <span>HF</span>
       </a>
 
@@ -31,7 +37,7 @@ export default function PaperLinks({ paper }: PaperLinksProps) {
           rel="noreferrer"
           title="arXiv abstract"
         >
-          <img src="/icons/arxiv.svg" width="15" height="15" alt="" aria-hidden="true" className="brand-icon-svg" />
+          <img src={iconSrc('arxiv.svg')} width="15" height="15" alt="" aria-hidden="true" className="brand-icon-svg" />
           <span>arXiv</span>
         </a>
       ) : null}
@@ -44,7 +50,7 @@ export default function PaperLinks({ paper }: PaperLinksProps) {
           rel="noreferrer"
           title="arXiv PDF"
         >
-          <img src="/icons/pdf.svg" width="15" height="15" alt="" aria-hidden="true" className="brand-icon-svg" />
+          <img src={iconSrc('pdf.svg')} width="15" height="15" alt="" aria-hidden="true" className="brand-icon-svg" />
           <span>PDF</span>
         </a>
       ) : null}
