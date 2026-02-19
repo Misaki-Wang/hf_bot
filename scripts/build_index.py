@@ -16,9 +16,11 @@ import re
 import requests
 
 ARXIV_ID_RE = re.compile(r"\b(\d{4}\.\d{4,5}(?:v\d+)?)\b", re.IGNORECASE)
+DATE_PREFIX_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})__")
 DAILY_OVERVIEW_SYSTEM_PROMPT = (
     "你是严谨的 AI 研究日报编辑。你必须严格遵循输出格式，禁止编造信息。"
 )
+AI_SUMMARY_LINE_RE = re.compile(r"(?im)^\s*-\s*Papers with AI Summary:\s*[^\n]*$")
 
 
 def load_paper(path: Path) -> dict[str, Any] | None:
@@ -62,7 +64,27 @@ def build_arxiv_pdf_url(arxiv_url: str) -> str:
     return f"https://arxiv.org/pdf/{arxiv_id}"
 
 
-def normalize_paper_record(raw: dict[str, Any]) -> dict[str, Any]:
+def extract_date_from_filename(path: Path | None) -> str:
+    if path is None:
+        return ""
+    match = DATE_PREFIX_RE.match(path.stem)
+    if not match:
+        return ""
+    return match.group(1)
+
+
+def normalize_paper_record(raw: dict[str, Any], source_path: Path | None = None) -> dict[str, Any]:
+    raw_date = str(raw.get("date", "")).strip()
+    filename_date = extract_date_from_filename(source_path)
+    record_date = filename_date or raw_date
+    if filename_date and raw_date and filename_date != raw_date:
+        logging.warning(
+            "Date mismatch in %s: json=%s filename=%s; use filename date for display",
+            source_path.name if source_path else "<unknown>",
+            raw_date,
+            filename_date,
+        )
+
     arxiv_url = str(raw.get("arxiv_url", "")).strip()
     arxiv_pdf_url = str(raw.get("arxiv_pdf_url", "")).strip() or build_arxiv_pdf_url(arxiv_url)
     upvotes = raw.get("upvotes", 0)
@@ -73,7 +95,7 @@ def normalize_paper_record(raw: dict[str, Any]) -> dict[str, Any]:
     except (TypeError, ValueError):
         upvotes_value = 0
     return {
-        "date": str(raw.get("date", "")).strip(),
+        "date": record_date,
         "paper_id": str(raw.get("paper_id", "")).strip(),
         "title": str(raw.get("title", "")).strip(),
         "authors": normalize_str_list(raw.get("authors")),
@@ -96,26 +118,33 @@ def trim_text(value: str, limit: int) -> str:
     return text[: limit - 1].rstrip() + "…"
 
 
+def strip_ai_summary_metric(content: str) -> str:
+    text = str(content or "")
+    text = AI_SUMMARY_LINE_RE.sub("", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
 def build_daily_summary_fallback(date: str, papers: list[dict[str, Any]]) -> str:
     if not papers:
-        return (
+        return strip_ai_summary_metric(
+            (
             "Overview\n"
             f"- Date: {date}\n"
             "- Total Papers: 0\n"
             "- Total Upvotes: 0\n"
             "- Papers with GitHub: 0\n"
-            "- Papers with AI Summary: 0\n\n"
+            "\n"
             "Key Takeaways\n"
             "1. No papers were fetched for this date.\n\n"
             "Notable Papers\n"
             "- N/A"
+            )
         )
 
     total = len(papers)
     total_upvotes = sum(int(item.get("upvotes", 0)) for item in papers)
     with_code = sum(1 for item in papers if str(item.get("github_url", "")).strip())
-    with_ai_summary = sum(1 for item in papers if str(item.get("summary_en", "")).strip())
-
     top = sorted(
         papers,
         key=lambda x: (int(x.get("upvotes", 0)), str(x.get("paper_id", ""))),
@@ -128,19 +157,21 @@ def build_daily_summary_fallback(date: str, papers: list[dict[str, Any]]) -> str
         upvotes = int(item.get("upvotes", 0))
         top_lines.append(f"- [{paper_id}] {title} (👍{upvotes})")
 
-    return (
+    return strip_ai_summary_metric(
+        (
         "Overview\n"
         f"- Date: {date}\n"
         f"- Total Papers: {total}\n"
         f"- Total Upvotes: {total_upvotes}\n"
         f"- Papers with GitHub: {with_code}\n"
-        f"- Papers with AI Summary: {with_ai_summary}\n\n"
+        "\n"
         "Key Takeaways\n"
         f"1. {date} has {total} papers with broad coverage across multiple AI subfields.\n"
         f"2. Community attention is concentrated on a few papers (total 👍 {total_upvotes}).\n"
         f"3. {with_code} papers provide GitHub links, indicating practical reproducibility focus.\n\n"
         "Notable Papers\n"
         + "\n".join(top_lines)
+        )
     )
 
 
@@ -148,8 +179,6 @@ def build_daily_summary_prompt(date: str, papers: list[dict[str, Any]]) -> str:
     total = len(papers)
     total_upvotes = sum(int(item.get("upvotes", 0)) for item in papers)
     with_code = sum(1 for item in papers if str(item.get("github_url", "")).strip())
-    with_ai_summary = sum(1 for item in papers if str(item.get("summary_en", "")).strip())
-
     ranked = sorted(
         papers,
         key=lambda x: (int(x.get("upvotes", 0)), str(x.get("paper_id", ""))),
@@ -175,7 +204,7 @@ def build_daily_summary_prompt(date: str, papers: list[dict[str, Any]]) -> str:
         "- Total Papers: <number>\n"
         "- Total Upvotes: <number>\n"
         "- Papers with GitHub: <number>\n"
-        "- Papers with AI Summary: <number>\n\n"
+        "\n"
         "Key Takeaways\n"
         "1. <一句话，总体趋势>\n"
         "2. <一句话，总体趋势>\n"
@@ -199,7 +228,7 @@ def build_daily_summary_prompt(date: str, papers: list[dict[str, Any]]) -> str:
         f"- Total Papers: {total}\n"
         f"- Total Upvotes: {total_upvotes}\n"
         f"- Papers with GitHub: {with_code}\n"
-        f"- Papers with AI Summary: {with_ai_summary}\n\n"
+        "\n"
         f"论文条目:\n{context}\n"
     )
 
@@ -260,7 +289,7 @@ def generate_daily_summary_openrouter(date: str, papers: list[dict[str, Any]]) -
 
     if not summary:
         raise RuntimeError("OpenRouter summary content is empty")
-    return summary, model
+    return strip_ai_summary_metric(summary), model
 
 
 def generate_daily_summary(date: str, papers: list[dict[str, Any]]) -> dict[str, Any]:
@@ -298,7 +327,7 @@ def build_fallback_daily_summary(date: str, papers: list[dict[str, Any]]) -> dic
 def normalize_existing_daily_summary(date: str, raw: Any) -> dict[str, Any] | None:
     if not isinstance(raw, dict):
         return None
-    content = str(raw.get("content", "")).strip()
+    content = strip_ai_summary_metric(str(raw.get("content", "")))
     if not content:
         return None
     return {
@@ -356,7 +385,7 @@ def run(papers_dir: Path, out_dir: Path) -> None:
         if not paper:
             continue
 
-        papers.append(normalize_paper_record(paper))
+        papers.append(normalize_paper_record(paper, source_path=file))
 
     papers.sort(
         key=lambda x: (

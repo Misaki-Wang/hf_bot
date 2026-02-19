@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: 'Date to fetch (YYYY-MM-DD), leave empty for current date in timezone'
+        description: 'Date to fetch (YYYY-MM-DD), leave empty for previous date in timezone'
         required: false
         type: string
       timezone:
-        description: 'Date timezone when date input is empty'
+        description: 'Date timezone when date input is empty (fetch previous day)'
         required: false
         type: choice
         default: CST
@@ -31,8 +31,8 @@ on:
         type: string
         default: '6'
   schedule:
-    # 23:00 GMT+8 = 15:00 UTC (Mon-Fri only, skip Sat/Sun)
-    - cron: '0 15 * * 1-5'
+    # 08:00 GMT+8 = 00:00 UTC (daily), fetch previous day
+    - cron: '0 0 * * *'
 
 permissions:
   contents: write
@@ -69,7 +69,7 @@ jobs:
           INPUT_TIMEZONE: ${{ github.event.inputs.timezone || 'CST' }}
         run: |
           python - <<'PY'
-          from datetime import datetime, timezone
+          from datetime import datetime, timedelta, timezone
           from zoneinfo import ZoneInfo
           import os
 
@@ -85,7 +85,7 @@ jobs:
               tz = ZoneInfo("Asia/Tokyo")
             else:
               tz = ZoneInfo("Asia/Shanghai")
-            target_date = datetime.now(tz).strftime("%Y-%m-%d")
+            target_date = (datetime.now(tz) - timedelta(days=1)).strftime("%Y-%m-%d")
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
             fh.write(f"date={target_date}\n")

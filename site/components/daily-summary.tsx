@@ -13,10 +13,20 @@ interface SummaryBlock {
   items: string[];
 }
 
+function shouldHideLine(line: string): boolean {
+  return /^-?\s*Papers with AI Summary:/i.test((line || '').trim());
+}
+
 function parseSummaryBlocks(content: string): SummaryBlock[] {
   const chunks = content
     .split(/\n\s*\n/g)
-    .map((chunk) => chunk.split('\n').map((line) => line.trim()).filter(Boolean))
+    .map((chunk) =>
+      chunk
+        .split('\n')
+        .map((line) => line.trim())
+        .filter(Boolean)
+        .filter((line) => !shouldHideLine(line))
+    )
     .filter((lines) => lines.length > 0);
 
   const blocks: SummaryBlock[] = [];

@@ -211,14 +211,14 @@ python3 scripts/fetch_daily.py --date 2026-02-16 \
 
 触发方式：
 
-- 定时：每周一到周五 GMT+8 23:00（即 UTC 15:00）
+- 定时：每天 GMT+8 08:00（即 UTC 00:00），默认抓取前一天日期
 - 手动：`workflow_dispatch`
 
 流程：
 
 1. Checkout
 2. 安装 Python 依赖
-3. 计算目标日期（可选 CST / UTC / JST）
+3. 计算目标日期（可选 CST / UTC / JST；当未填写 `date` 时默认取“前一天”）
 4. `fetch_daily.py`
 5. `translate.py`
 6. `build_index.py`
