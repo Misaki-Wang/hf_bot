@@ -38,6 +38,12 @@ def iter_dates(start: datetime, end: datetime) -> list[str]:
 
 def main() -> None:
     default_workers_raw = os.getenv("TRANSLATE_WORKERS", "6").strip() or "6"
+    default_prompt_lang = (
+        os.getenv("TRANSLATE_PROMPT_LANG", os.getenv("OPENROUTER_PROMPT_LANG", "auto")).strip().lower()
+        or "auto"
+    )
+    if default_prompt_lang not in ("auto", "zh", "en"):
+        default_prompt_lang = "auto"
     try:
         default_workers = max(1, int(default_workers_raw))
     except ValueError:
@@ -66,6 +72,12 @@ def main() -> None:
     )
     parser.add_argument("--provider", choices=["auto", "dummy", "openrouter"], default="auto")
     parser.add_argument("--model", default="", help="Override translation model")
+    parser.add_argument(
+        "--prompt-lang",
+        choices=["auto", "zh", "en"],
+        default=default_prompt_lang,
+        help="Prompt language mode for translation/summarization",
+    )
     parser.add_argument("--workers", type=int, default=default_workers, help="Translation workers")
     parser.add_argument("--force-translate", action="store_true", help="Re-translate existing summary_zh")
     parser.add_argument("--build-index-each-day", action="store_true", help="Rebuild index after each day")
@@ -103,6 +115,7 @@ def main() -> None:
             provider=args.provider,
             force=args.force_translate,
             model=args.model,
+            prompt_lang=args.prompt_lang,
             date=date,
             workers=args.workers,
         )
