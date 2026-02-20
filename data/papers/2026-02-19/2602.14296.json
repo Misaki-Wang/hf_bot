@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.14296",
+  "title": "AutoWebWorld: Synthesizing Infinite Verifiable Web Environments via Finite State Machines",
+  "authors": [
+    "Yifan Wu",
+    "Yiran Peng",
+    "Yiyu Chen",
+    "Jianhao Ruan",
+    "Zijie Zhuang",
+    "Cheng Yang",
+    "Jiayi Zhang",
+    "Man Chen",
+    "Yenchi Tseng",
+    "Zhaoyang Yu",
+    "Liang Chen",
+    "Yuyao Zhai",
+    "Bang Liu",
+    "Chenglin Wu",
+    "Yuyu Luo"
+  ],
+  "abstract": "AutoWebWorld synthesizes verifiable web environments using finite state machines and coding agents, enabling efficient training of autonomous Web GUI agents through automated trajectory generation and verification. The performance of autonomous Web GUI agents heavily relies on the quality and quantity of their training data. However, a fundamental bottleneck persists: collecting interaction trajectories from real-world websites is expensive and difficult to verify. The underlying state transitions are hidden, leading to reliance on inconsistent and costly external verifiers to evaluate step-level correctness. To address this, we propose AutoWebWorld, a novel framework for synthesizing controllable and verifiable web environments by modeling them as Finite State Machines (FSMs) and use coding agents to translate FSMs into interactive websites. Unlike real websites, where state transitions are implicit, AutoWebWorld explicitly defines all states, actions, and transition rules. This enables programmatic verification: action correctness is checked against predefined rules, and task success is confirmed by reaching a goal state in the FSM graph. AutoWebWorld enables a fully automated search-and-verify pipeline , generating over 11,663 verified trajectories from 29 diverse web environments at only $0.04 per trajectory. Training on this synthetic data significantly boosts real-world performance. Our 7B Web GUI agent outperforms all baselines within 15 steps on WebVoyager. Furthermore, we observe a clear scaling law: as the synthetic data volume increases, performance on WebVoyager and Online-Mind2Web consistently improves.",
+  "summary_en": "AutoWebWorld synthesizes verifiable web environments using finite state machines and coding agents, enabling efficient training of autonomous Web GUI agents through automated trajectory generation and verification.",
+  "summary_zh": "AutoWebWorld 使用有限状态机和编码智能体合成可验证的网页环境，通过自动化轨迹生成与验证实现自主 Web GUI 智能体的高效训练。",
+  "hf_url": "https://huggingface.co/papers/2602.14296",
+  "arxiv_url": "https://arxiv.org/abs/2602.14296",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14296",
+  "github_url": "",
+  "upvotes": 33,
+  "fetched_at": "2026-02-20T05:30:40.900245+00:00"
+}

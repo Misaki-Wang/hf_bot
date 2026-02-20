@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.14602",
+  "title": "OPBench: A Graph Benchmark to Combat the Opioid Crisis",
+  "authors": [
+    "Tianyi Ma",
+    "Yiyang Li",
+    "Yiyue Qian",
+    "Zheyuan Zhang",
+    "Zehong Wang",
+    "Chuxu Zhang",
+    "Yanfang Ye"
+  ],
+  "abstract": "The opioid epidemic continues to ravage communities worldwide, straining healthcare systems, disrupting families, and demanding urgent computational solutions. To combat this lethal opioid crisis, graph learning methods have emerged as a promising paradigm for modeling complex drug-related phenomena. However, a significant gap remains: there is no comprehensive benchmark for systematically evaluating these methods across real-world opioid crisis scenarios. To bridge this gap, we introduce OPBench, the first comprehensive opioid benchmark comprising five datasets across three critical application domains: opioid overdose detection from healthcare claims, illicit drug trafficking detection from digital platforms, and drug misuse prediction from dietary patterns. Specifically, OPBench incorporates diverse graph structures, including heterogeneous graphs and hypergraphs, to preserve the rich and complex relational information among drug-related data. To address data scarcity, we collaborate with domain experts and authoritative institutions to curate and annotate datasets while adhering to privacy and ethical guidelines. Furthermore, we establish a unified evaluation framework with standardized protocols, predefined data splits, and reproducible baselines to facilitate fair and systematic comparison among graph learning methods. Through extensive experiments, we analyze the strengths and limitations of existing graph learning methods, thereby providing actionable insights for future research in combating the opioid crisis. Our source code and datasets are available at https://github.com/Tianyi-Billy-Ma/OPBench.",
+  "summary_en": "Despite the potential of graph learning methods for addressing the opioid epidemic, no comprehensive benchmark exists for evaluating these methods across real-world opioid crisis scenarios. This work introduces OPBench, the first comprehensive opioid benchmark featuring five datasets across three domains—opioid overdose detection from healthcare claims, illicit drug trafficking detection from digital platforms, and drug misuse prediction from dietary patterns—incorporating heterogeneous graphs and hypergraphs alongside a unified evaluation framework with standardized protocols, predefined data splits, and reproducible baselines. Extensive experiments using OPBench analyze the strengths and limitations of existing graph learning methods, providing actionable insights for future research in combating the opioid crisis.",
+  "summary_zh": "尽管图学习方法在应对阿片类药物流行方面具有潜力，但目前尚缺乏用于在真实世界阿片类药物危机场景下评估这些方法的全面基准。本工作提出了OPBench，首个全面的阿片类药物基准，涵盖三个领域的五个数据集——基于医疗索赔的阿片类药物过量检测、基于数字平台的非法药物贩运检测，以及基于饮食模式的药物滥用预测——包含异构图和超图，以及具有标准化协议、预定义数据划分和可复现基线的统一评估框架。使用OPBench进行的广泛实验分析了现有图学习方法的优势与局限，为应对阿片类药物危机的未来研究提供了可操作的见解。",
+  "hf_url": "https://huggingface.co/papers/2602.14602",
+  "arxiv_url": "https://arxiv.org/abs/2602.14602",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14602",
+  "github_url": "https://github.com/Tianyi-Billy-Ma/OPBench",
+  "upvotes": 0,
+  "fetched_at": "2026-02-20T05:30:43.764889+00:00"
+}

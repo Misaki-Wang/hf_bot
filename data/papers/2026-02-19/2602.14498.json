@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.14498",
+  "title": "Uncertainty-Aware Vision-Language Segmentation for Medical Imaging",
+  "authors": [
+    "Aryan Das",
+    "Tanishq Rachamalla",
+    "Koushik Biswas",
+    "Swalpa Kumar Roy",
+    "Vinay Kumar Verma"
+  ],
+  "abstract": "A novel uncertainty-aware multimodal segmentation framework uses radiological images and clinical text with Modality Decoding Attention Blocks and Spectral-Entropic Uncertainty Loss for improved medical diagnosis accuracy. We introduce a novel uncertainty-aware multimodal segmentation framework that leverages both radiological images and associated clinical text for precise medical diagnosis. We propose a Modality Decoding Attention Block (MoDAB) with a lightweight State Space Mixer (SSMix) to enable efficient cross-modal fusion and long-range dependency modelling . To guide learning under ambiguity, we propose the Spectral-Entropic Uncertainty (SEU) Loss, which jointly captures spatial overlap, spectral consistency, and predictive uncertainty in a unified objective. In complex clinical circumstances with poor image quality, this formulation improves model reliability. Extensive experiments on various publicly available medical datasets, QATA-COVID19, MosMed++, and Kvasir-SEG, demonstrate that our method achieves superior segmentation performance while being significantly more computationally efficient than existing State-of-the-Art (SoTA) approaches. Our results highlight the importance of incorporating uncertainty modelling and structured modality alignment in vision-language medical segmentation tasks. Code: https://github.com/arya-domain/UA-VLS",
+  "summary_en": "A novel uncertainty-aware multimodal segmentation framework uses radiological images and clinical text with Modality Decoding Attention Blocks and Spectral-Entropic Uncertainty Loss for improved medical diagnosis accuracy.",
+  "summary_zh": "一种新型的不确定性感知多模态分割框架，利用放射学影像与临床文本，结合 Modality Decoding Attention Blocks 和 Spectral-Entropic Uncertainty Loss，以提升医学诊断准确性。",
+  "hf_url": "https://huggingface.co/papers/2602.14498",
+  "arxiv_url": "https://arxiv.org/abs/2602.14498",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14498",
+  "github_url": "https://github.com/arya-domain/UA-VLS",
+  "upvotes": 3,
+  "fetched_at": "2026-02-20T05:30:41.568113+00:00"
+}

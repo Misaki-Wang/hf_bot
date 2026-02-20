@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.14514",
+  "title": "Efficient Text-Guided Convolutional Adapter for the Diffusion Model",
+  "authors": [
+    "Aryan Das",
+    "Koushik Biswas",
+    "Swalpa Kumar Roy",
+    "Badri Narayana Patro",
+    "Vinay Kumar Verma"
+  ],
+  "abstract": "Nexus Adapters are efficient text-guided adapters for diffusion models that preserve structure while enhancing prompt understanding through cross-attention mechanisms, achieving state-of-the-art results with significantly fewer parameters. We introduce the Nexus Adapters, novel text-guided efficient adapters to the diffusion-based framework for the Structure Preserving Conditional Generation (SPCG). Recently, structure-preserving methods have achieved promising results in conditional image generation by using a base model for prompt conditioning and an adapter for structure input, such as sketches or depth maps. These approaches are highly inefficient and sometimes require equal parameters in the adapter compared to the base architecture. It is not always possible to train the model since the diffusion model is itself costly, and doubling the parameter is highly inefficient. In these approaches, the adapter is not aware of the input prompt; therefore, it is optimal only for the structural input but not for the input prompt. To overcome the above challenges, we proposed two efficient adapters, Nexus Prime and Slim, which are guided by prompts and structural inputs. Each Nexus Block incorporates cross-attention mechanisms to enable rich multimodal conditioning . Therefore, the proposed adapter has a better understanding of the input prompt while preserving the structure. We conducted extensive experiments on the proposed models and demonstrated that the Nexus Prime adapter significantly enhances performance, requiring only 8M additional parameters compared to the baseline, T2I-Adapter . Furthermore, we also introduced a lightweight Nexus Slim adapter with 18M fewer parameters than the T2I-Adapter , which still achieved state-of-the-art results. Code: https://github.com/arya-domain/Nexus-Adapters",
+  "summary_en": "Nexus Adapters are efficient text-guided adapters for diffusion models that preserve structure while enhancing prompt understanding through cross-attention mechanisms, achieving state-of-the-art results with significantly fewer parameters.",
+  "summary_zh": "Nexus Adapters 是用于扩散模型的高效文本引导适配器，通过交叉注意力机制在保留结构的同时增强提示理解，以显著更少的参数实现了最先进的结果。",
+  "hf_url": "https://huggingface.co/papers/2602.14514",
+  "arxiv_url": "https://arxiv.org/abs/2602.14514",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14514",
+  "github_url": "https://github.com/arya-domain/Nexus-Adapters",
+  "upvotes": 2,
+  "fetched_at": "2026-02-20T05:30:42.340429+00:00"
+}

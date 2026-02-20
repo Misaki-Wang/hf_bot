@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-19",
+  "paper_id": "2602.16317",
+  "title": "CADEvolve: Creating Realistic CAD via Program Evolution",
+  "authors": [
+    "Maksim Elistratov",
+    "Marina Barannikov",
+    "Gregory Ivanov",
+    "Valentin Khrulkov",
+    "Anton Konushin",
+    "Andrey Kuznetsov",
+    "Dmitrii Zhemchuzhnikov"
+  ],
+  "abstract": "CADEvolve presents an evolution-based approach using VLM-guided edits to generate complex CAD programs from simple primitives, creating a large dataset for improved Image2CAD performance. Computer-Aided Design ( CAD ) delivers rapid, editable modeling for engineering and manufacturing. Recent AI progress now makes full automation feasible for various CAD tasks. However, progress is bottlenecked by data: public corpora mostly contain sketch-extrude sequences, lack complex operations, multi-operation composition and design intent, and thus hinder effective fine-tuning. Attempts to bypass this with frozen VLM s often yield simple or invalid programs due to limited 3D grounding in current foundation models. We present CAD Evolve, an evolution-based pipeline and dataset that starts from simple primitives and, via VLM -guided edits and validations, incrementally grows CAD programs toward industrial-grade complexity. The result is 8k complex parts expressed as executable CadQuery parametric generators . After multi-stage post-processing and augmentation, we obtain a unified dataset of 1.3m scripts paired with rendered geometry and exercising the full CadQuery operation set. A VLM fine-tuned on CAD Evolve achieves state-of-the-art results on the Image2CAD task across the DeepCAD , Fusion 360 , and MCB benchmarks.",
+  "summary_en": "CADEvolve presents an evolution-based approach using VLM-guided edits to generate complex CAD programs from simple primitives, creating a large dataset for improved Image2CAD performance.",
+  "summary_zh": "CADEvolve提出了一种基于进化的方法，利用VLM引导的编辑从简单基元生成复杂CAD程序，并构建了一个大型数据集以提升Image2CAD性能。",
+  "hf_url": "https://huggingface.co/papers/2602.16317",
+  "arxiv_url": "https://arxiv.org/abs/2602.16317",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16317",
+  "github_url": "https://github.com/zhemdi/CADEvolve",
+  "upvotes": 19,
+  "fetched_at": "2026-02-20T05:30:48.449501+00:00"
+}
