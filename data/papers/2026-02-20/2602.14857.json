@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-20",
+  "paper_id": "2602.14857",
+  "title": "World Models for Policy Refinement in StarCraft II",
+  "authors": [
+    "Yixin Zhang",
+    "Ziyi Wang",
+    "Yiming Rong",
+    "Haoxi Wang",
+    "Jinling Jiang",
+    "Shuang Xu",
+    "Haoran Wu",
+    "Shiyu Zhou",
+    "Bo Xu"
+  ],
+  "abstract": "StarWM, a world model for StarCraft II, predicts future observations under partial observability using a structured textual representation and achieves significant performance improvements in win rate and decision-making stability. Large Language Models (LLMs) have recently shown strong reasoning and generalization capabilities, motivating their use as decision-making policies in complex environments. StarCraft II (SC2), with its massive state-action space and partial observability , is a challenging testbed. However, existing LLM-based SC2 agents primarily focus on improving the policy itself and overlook integrating a learnable, action-conditioned transition model into the decision loop. To bridge this gap, we propose StarWM, the first world model for SC2 that predicts future observations under partial observability . To facilitate learning SC2's hybrid dynamics, we introduce a structured textual representation that factorizes observations into five semantic modules, and construct SC2-Dynamics-50k , the first instruction-tuning dataset for SC2 dynamics prediction. We further develop a multi-dimensional offline evaluation framework for predicted structured observations. Offline results show StarWM's substantial gains over zero-shot baselines, including nearly 60% improvements in resource prediction accuracy and self-side macro-situation consistency. Finally, we propose StarWM-Agent, a world-model-augmented decision system that integrates StarWM into a Generate--Simulate--Refine decision loop for foresight-driven policy refinement . Online evaluation against SC2's built-in AI demonstrates consistent improvements, yielding win-rate gains of 30%, 15%, and 30% against Hard (LV5), Harder (LV6), and VeryHard (LV7), respectively, alongside improved macro-management stability and tactical risk assessment.",
+  "summary_en": "StarWM, a world model for StarCraft II, predicts future observations under partial observability using a structured textual representation and achieves significant performance improvements in win rate and decision-making stability.",
+  "summary_zh": "StarWM 是面向 StarCraft II 的世界模型，利用结构化文本表示在部分可观测条件下预测未来观测，并在胜率和决策稳定性方面实现了显著的性能提升。",
+  "hf_url": "https://huggingface.co/papers/2602.14857",
+  "arxiv_url": "https://arxiv.org/abs/2602.14857",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14857",
+  "github_url": "https://github.com/yxzzhang/StarWM",
+  "upvotes": 1,
+  "fetched_at": "2026-02-21T01:52:49.150379+00:00"
+}

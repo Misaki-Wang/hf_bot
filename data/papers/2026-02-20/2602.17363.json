@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-20",
+  "paper_id": "2602.17363",
+  "title": "2Mamba2Furious: Linear in Complexity, Competitive in Accuracy",
+  "authors": [
+    "Gabriel Mongaras",
+    "Eric C. Larson"
+  ],
+  "abstract": "Researchers enhance linear attention by simplifying Mamba-2 and improving its architectural components to achieve near-softmax accuracy while maintaining memory efficiency for long sequences. Linear attention transformers have become a strong alternative to softmax attention due to their efficiency. However, linear attention tends to be less expressive and results in reduced accuracy compared to softmax attention . To bridge the accuracy gap between softmax attention and linear attention , we manipulate Mamba-2 , a very strong linear attention variant. We first simplify Mamba-2 down to its most fundamental and important components, evaluating which specific choices make it most accurate. From this simplified Mamba variant ( Mamba-2 S), we improve the A-mask and increase the order of the hidden state , resulting in a method, which we call 2Mamba , that is nearly as accurate as softmax attention , yet much more memory efficient for long context lengths. We also investigate elements to Mamba-2 that help surpass softmax attention accuracy. Code is provided for all our experiments",
+  "summary_en": "Researchers enhance linear attention by simplifying Mamba-2 and improving its architectural components to achieve near-softmax accuracy while maintaining memory efficiency for long sequences.",
+  "summary_zh": "研究人员通过简化 Mamba-2 并改进其架构组件来增强线性注意力，在保持长序列内存效率的同时实现了接近 softmax 的精度。",
+  "hf_url": "https://huggingface.co/papers/2602.17363",
+  "arxiv_url": "https://arxiv.org/abs/2602.17363",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.17363",
+  "github_url": "https://github.com/gmongaras/2Mamba2Furious",
+  "upvotes": 2,
+  "fetched_at": "2026-02-21T01:53:06.090207+00:00"
+}

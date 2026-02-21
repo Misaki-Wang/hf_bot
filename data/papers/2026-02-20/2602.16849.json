@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-20",
+  "paper_id": "2602.16849",
+  "title": "On the Mechanism and Dynamics of Modular Addition: Fourier Features, Lottery Ticket, and Grokking",
+  "authors": [
+    "Jianliang He",
+    "Leda Wang",
+    "Siyu Chen",
+    "Zhuoran Yang"
+  ],
+  "abstract": "Two-layer neural networks solve modular addition by learning Fourier features through phase symmetry and frequency diversification, enabling robust computation via majority voting despite individual neuron noise. We present a comprehensive analysis of how two-layer neural networks learn features to solve the modular addition task. Our work provides a full mechanistic interpretation of the learned model and a theoretical explanation of its training dynamics. While prior work has identified that individual neurons learn single-frequency Fourier features and phase alignment, it does not fully explain how these features combine into a global solution. We bridge this gap by formalizing a diversification condition that emerges during training when overparametrized , consisting of two parts: phase symmetry and frequency diversification . We prove that these properties allow the network to collectively approximate a flawed indicator function on the correct logic for the modular addition task. While individual neurons produce noisy signals, the phase symmetry enables a majority-voting scheme that cancels out noise, allowing the network to robustly identify the correct sum. Furthermore, we explain the emergence of these features under random initialization via a lottery ticket mechanism . Our gradient flow analysis proves that frequencies compete within each neuron, with the \"winner\" determined by its initial spectral magnitude and phase alignment. From a technical standpoint, we provide a rigorous characterization of the layer-wise phase coupling dynamics and formalize the competitive landscape using the ODE comparison lemma . Finally, we use these insights to demystify grokking , characterizing it as a three-stage process involving memorization followed by two generalization phases , driven by the competition between loss minimization and weight decay .",
+  "summary_en": "Two-layer neural networks solve modular addition by learning Fourier features through phase symmetry and frequency diversification, enabling robust computation via majority voting despite individual neuron noise.",
+  "summary_zh": "两层神经网络通过相位对称和频率多样化学习傅里叶特征来解决模加法，并通过多数投票在单个神经元噪声存在的情况下实现稳健计算。",
+  "hf_url": "https://huggingface.co/papers/2602.16849",
+  "arxiv_url": "https://arxiv.org/abs/2602.16849",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16849",
+  "github_url": "https://github.com/Y-Agent/modular-addition-feature-learning",
+  "upvotes": 3,
+  "fetched_at": "2026-02-21T01:52:55.865295+00:00"
+}

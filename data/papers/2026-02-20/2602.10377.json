@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-20",
+  "paper_id": "2602.10377",
+  "title": "Hardware Co-Design Scaling Laws via Roofline Modelling for On-Device LLMs",
+  "authors": [
+    "Luoyang Sun",
+    "Jiwen Jiang",
+    "Yifeng Ding",
+    "Fengfa Li",
+    "Yan Song",
+    "Haifeng Zhang",
+    "Jian Ying",
+    "Lei Ren",
+    "Kun Zhan",
+    "Wei Chen",
+    "Yan Xie",
+    "Cheng Deng"
+  ],
+  "abstract": "A hardware-software co-design framework for on-device large language model deployment that establishes accuracy-latency relationships through training loss modeling and roofline analysis, enabling rapid architecture selection and improved performance. Vision-Language-Action Models (VLAs) have emerged as a key paradigm of Physical AI and are increasingly deployed in autonomous vehicles, robots, and smart spaces. In these resource-constrained on-device settings, selecting an appropriate large language model (LLM) backbone is a critical challenge: models must balance accuracy with strict inference latency and hardware efficiency constraints. This makes hardware-software co-design a game-changing requirement for on-device LLM deployment, where each hardware platform demands a tailored architectural solution. We propose a hardware co-design law that jointly captures model accuracy and inference performance. Specifically, we model training loss as an explicit function of architectural hyperparameters and characterise inference latency via roofline modelling . We empirically evaluate 1,942 candidate architectures on NVIDIA Jetson Orin, training 170 selected models for 10B tokens each to fit a scaling law relating architecture to training loss. By coupling this scaling law with latency modelling, we establish a direct accuracy-latency correspondence and identify the Pareto frontier for hardware co-designed LLMs. We further formulate architecture search as a joint optimisation over precision and performance, deriving feasible design regions under industrial hardware and application budgets. Our approach reduces architecture selection from months to days. At the same latency as Qwen2.5-0.5B on the target hardware, our co-designed architecture achieves 19.42% lower perplexity on WikiText-2. To our knowledge, this is the first principled and operational framework for hardware co-design scaling laws in on-device LLM deployment. We will make the code and related checkpoints publicly available.",
+  "summary_en": "A hardware-software co-design framework for on-device large language model deployment that establishes accuracy-latency relationships through training loss modeling and roofline analysis, enabling rapid architecture selection and improved performance.",
+  "summary_zh": "一种用于端侧大型语言模型部署的硬件-软件协同设计框架，通过训练损失建模和屋顶线分析建立准确率-延迟关系，实现快速架构选择与性能提升。",
+  "hf_url": "https://huggingface.co/papers/2602.10377",
+  "arxiv_url": "https://arxiv.org/abs/2602.10377",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10377",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-21T01:52:44.812399+00:00"
+}

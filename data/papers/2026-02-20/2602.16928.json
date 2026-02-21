@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-20",
+  "paper_id": "2602.16928",
+  "title": "Discovering Multiagent Learning Algorithms with Large Language Models",
+  "authors": [
+    "Zun Li",
+    "John Schultz",
+    "Daniel Hennes",
+    "Marc Lanctot"
+  ],
+  "abstract": "AlphaEvolve, an evolutionary coding agent using large language models, automatically discovers new multiagent learning algorithms for imperfect-information games by evolving regret minimization and population-based training variants.",
+  "summary_en": "AlphaEvolve, an evolutionary coding agent using large language models, automatically discovers new multiagent learning algorithms for imperfect-information games by evolving regret minimization and population-based training variants.",
+  "summary_zh": "AlphaEvolve 是一种使用大语言模型的进化式编码智能体，通过演化遗憾最小化与基于种群训练的变体，自动发现面向不完全信息博弈的新型多智能体学习算法。",
+  "hf_url": "https://huggingface.co/papers/2602.16928",
+  "arxiv_url": "https://arxiv.org/abs/2602.16928",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16928",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-21T01:52:58.910993+00:00"
+}

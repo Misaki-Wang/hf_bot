@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-20",
+  "paper_id": "2602.16915",
+  "title": "StereoAdapter-2: Globally Structure-Consistent Underwater Stereo Depth Estimation",
+  "authors": [
+    "Zeyu Ren",
+    "Xiang Li",
+    "Yiran Wang",
+    "Zeyu Zhang",
+    "Hao Tang"
+  ],
+  "abstract": "StereoAdapter-2 improves underwater stereo depth estimation by replacing ConvGRU with a selective state space ConvSS2D operator for efficient long-range propagation and introduces a large-scale synthetic underwater dataset. Stereo depth estimation is fundamental to underwater robotic perception , yet suffers from severe domain shift s caused by wavelength-dependent light attenuation , scattering , and refraction . Recent approaches leverage monocular foundation models with GRU-based iterative refinement for underwater adaptation; however, the sequential gating and local convolutional kernels in GRUs necessitate multiple iterations for long-range disparity propagation , limiting performance in large-disparity and textureless underwater regions. In this paper, we propose StereoAdapter-2, which replaces the conventional ConvGRU updater with a novel ConvSS2D operator based on selective state space models . The proposed operator employs a four-directional scanning strategy that naturally aligns with epipolar geometry while capturing vertical structural consistency, enabling efficient long-range spatial propagation within a single update step at linear computational complexity. Furthermore, we construct UW-StereoDepth-80K, a large-scale synthetic underwater stereo dataset featuring diverse baselines, attenuation coefficients, and scattering parameters through a two-stage generative pipeline combining semantic-aware style transfer and geometry-consistent novel view synthesis. Combined with dynamic LoRA adaptation inherited from StereoAdapter, our framework achieves state-of-the-art zero-shot performance on underwater benchmarks with 17% improvement on TartanAir-UW and 7.2% improvment on SQUID , with real-world validation on the BlueROV2 platform demonstrates the robustness of our approach. Code: https://github.com/AIGeeksGroup/StereoAdapter-2. Website: https://aigeeksgroup.github.io/StereoAdapter-2.",
+  "summary_en": "StereoAdapter-2 improves underwater stereo depth estimation by replacing ConvGRU with a selective state space ConvSS2D operator for efficient long-range propagation and introduces a large-scale synthetic underwater dataset.",
+  "summary_zh": "StereoAdapter-2 通过以选择性状态空间 ConvSS2D 算子替换 ConvGRU 实现高效长距离传播，并引入大规模合成水下数据集，改进了水下立体深度估计。",
+  "hf_url": "https://huggingface.co/papers/2602.16915",
+  "arxiv_url": "https://arxiv.org/abs/2602.16915",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16915",
+  "github_url": "https://github.com/AIGeeksGroup/StereoAdapter-2",
+  "upvotes": 0,
+  "fetched_at": "2026-02-21T01:52:57.701265+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-20",
+  "paper_id": "2602.15569",
+  "title": "\"What Are You Doing?\": Effects of Intermediate Feedback from Agentic LLM In-Car Assistants During Multi-Step Processing",
+  "authors": [
+    "Johannes Kirmayr",
+    "Raphael Wennmacher",
+    "Khanh Huynh",
+    "Lukas Stappen",
+    "Elisabeth André",
+    "Florian Alt"
+  ],
+  "abstract": "Users prefer adaptive feedback mechanisms in in-car AI assistants, starting with high transparency to build trust and then reducing verbosity as reliability increases, particularly in attention-critical driving scenarios. Agentic AI assistants that autonomously perform multi-step tasks raise open questions for user experience : how should such systems communicate progress and reasoning during extended operations, especially in attention-critical contexts such as driving? We investigate feedback timing and verbosity from agentic LLM-based in-car assistants through a controlled, mixed-methods study (N=45) comparing planned steps and intermediate results feedback against silent operation with final-only response. Using a dual-task paradigm with an in-car voice assistant , we found that intermediate feedback significantly improved perceived speed, trust, and user experience while reducing task load - effects that held across varying task complexities and interaction contexts . Interviews further revealed user preferences for an adaptive approach : high initial transparency to establish trust, followed by progressively reducing verbosity as systems prove reliable, with adjustments based on task stakes and situational context. We translate our empirical findings into design implications for feedback timing and verbosity in agentic assistants, balancing transparency and efficiency .",
+  "summary_en": "Users prefer adaptive feedback mechanisms in in-car AI assistants, starting with high transparency to build trust and then reducing verbosity as reliability increases, particularly in attention-critical driving scenarios.",
+  "summary_zh": "用户偏好在车载AI助手中采用自适应反馈机制，即初期通过高透明度建立信任，随后随可靠性提升而降低反馈详细程度，尤其在注意力关键型驾驶场景中。",
+  "hf_url": "https://huggingface.co/papers/2602.15569",
+  "arxiv_url": "https://arxiv.org/abs/2602.15569",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15569",
+  "github_url": "https://github.com/johanneskirmayr/agentic_llm_feedback",
+  "upvotes": 12,
+  "fetched_at": "2026-02-21T01:52:50.074003+00:00"
+}

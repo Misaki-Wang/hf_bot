@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-20",
+  "paper_id": "2602.16968",
+  "title": "DDiT: Dynamic Patch Scheduling for Efficient Diffusion Transformers",
+  "authors": [
+    "Dahye Kim",
+    "Deepti Ghadiyaram",
+    "Raghudeep Gadde"
+  ],
+  "abstract": "Dynamic tokenization improves diffusion transformer efficiency by adjusting patch sizes based on content complexity and denoising timestep, achieving significant speedup without quality loss. Diffusion Transformers (DiTs) have achieved state-of-the-art performance in image and video generation, but their success comes at the cost of heavy computation. This inefficiency is largely due to the fixed tokenization process, which uses constant-sized patches throughout the entire denoising phase , regardless of the content's complexity. We propose dynamic tokenization , an efficient test-time strategy that varies patch sizes based on content complexity and the denoising timestep . Our key insight is that early timesteps only require coarser patches to model global structure, while later iterations demand finer (smaller-sized) patches to refine local details. During inference , our method dynamically reallocates patch sizes across denoising steps for image and video generation and substantially reduces cost while preserving perceptual generation quality. Extensive experiments demonstrate the effectiveness of our approach: it achieves up to 3.52times and 3.2times speedup on FLUX-1.Dev and Wan 2.1, respectively, without compromising the generation quality and prompt adherence.",
+  "summary_en": "Dynamic tokenization improves diffusion transformer efficiency by adjusting patch sizes based on content complexity and denoising timestep, achieving significant speedup without quality loss.",
+  "summary_zh": "动态token化通过基于内容复杂度和去噪时间步调整patch尺寸来提升扩散Transformer的效率，实现了无损质量下的显著加速。",
+  "hf_url": "https://huggingface.co/papers/2602.16968",
+  "arxiv_url": "https://arxiv.org/abs/2602.16968",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16968",
+  "github_url": "",
+  "upvotes": 9,
+  "fetched_at": "2026-02-21T01:52:59.961025+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-20",
+  "paper_id": "2602.16756",
+  "title": "NESSiE: The Necessary Safety Benchmark -- Identifying Errors that should not Exist",
+  "authors": [
+    "Johannes Bertram",
+    "Jonas Geiping"
+  ],
+  "abstract": "NESSiE benchmark reveals safety vulnerabilities in large language models through simple security tests, demonstrating that even state-of-the-art models fail basic safety requirements without adversarial attacks. We introduce NESSiE, the NEceSsary SafEty benchmark for large language models (LLMs). With minimal test cases of information and access security , NESSiE reveals safety-relevant failures that should not exist, given the low complexity of the tasks. NESSiE is intended as a lightweight, easy-to-use sanity check for language model safety and, as such, is not sufficient for guaranteeing safety in general -- but we argue that passing this test is necessary for any deployment. However, even state-of-the-art LLMs do not reach 100% on NESSiE and thus fail our necessary condition of language model safety , even in the absence of adversarial attacks. Our Safe & Helpful (SH) metric allows for direct comparison of the two requirements, showing models are biased toward being helpful rather than safe. We further find that disabled reasoning for some models, but especially a benign distraction context degrade model performance. Overall, our results underscore the critical risks of deploying such models as autonomous agents in the wild. We make the dataset, package and plotting code publicly available.",
+  "summary_en": "NESSiE benchmark reveals safety vulnerabilities in large language models through simple security tests, demonstrating that even state-of-the-art models fail basic safety requirements without adversarial attacks.",
+  "summary_zh": "NESSiE 基准测试通过简单安全测试揭示了大语言模型的安全漏洞，表明即使最先进的模型在无需对抗性攻击的情况下也无法满足基本安全要求。",
+  "hf_url": "https://huggingface.co/papers/2602.16756",
+  "arxiv_url": "https://arxiv.org/abs/2602.16756",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16756",
+  "github_url": "https://github.com/JohannesBertram/NESSiE",
+  "upvotes": 1,
+  "fetched_at": "2026-02-21T01:52:52.787014+00:00"
+}

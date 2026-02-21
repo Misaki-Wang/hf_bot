@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-20",
+  "paper_id": "2602.13579",
+  "title": "TactAlign: Human-to-Robot Policy Transfer via Tactile Alignment",
+  "authors": [
+    "Youngsun Wi",
+    "Jessica Yin",
+    "Elvis Xiang",
+    "Akash Sharma",
+    "Jitendra Malik",
+    "Mustafa Mukadam",
+    "Nima Fazeli",
+    "Tess Hellebrekers"
+  ],
+  "abstract": "TactAlign enables transfer of human tactile demonstrations to robots with different embodiments through cross-embodiment tactile alignment without requiring paired data or manual labels. Human demonstrations collected by wearable devices (e.g., tactile gloves) provide fast and dexterous supervision for policy learning, and are guided by rich, natural tactile feedback. However, a key challenge is how to transfer human-collected tactile signals to robots despite the differences in sensing modalities and embodiment. Existing human-to-robot (H2R) approaches that incorporate touch often assume identical tactile sensors, require paired data, and involve little to no embodiment gap between human demonstrator and the robots, limiting scalability and generality. We propose TactAlign, a cross-embodiment tactile alignment method that transfers human-collected tactile signals to a robot with different embodiment. TactAlign transforms human and robot tactile observations into a shared latent representation using a rectified flow , without paired datasets, manual labels, or privileged information. Our method enables low-cost latent transport guided by hand-object interaction-derived pseudo-pairs . We demonstrate that TactAlign improves H2R policy transfer across multiple contact-rich tasks (pivoting, insertion, lid closing), generalizes to unseen objects and tasks with human data (less than 5 minutes), and enables zero-shot H2R transfer on a highly dexterous tasks (light bulb screwing).",
+  "summary_en": "TactAlign enables transfer of human tactile demonstrations to robots with different embodiments through cross-embodiment tactile alignment without requiring paired data or manual labels.",
+  "summary_zh": "TactAlign 通过跨具身触觉对齐，实现了人类触觉演示向不同具身机器人的迁移，无需配对数据或人工标注。",
+  "hf_url": "https://huggingface.co/papers/2602.13579",
+  "arxiv_url": "https://arxiv.org/abs/2602.13579",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13579",
+  "github_url": "",
+  "upvotes": 10,
+  "fetched_at": "2026-02-21T01:52:47.098792+00:00"
+}
