@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.18312",
+  "title": "Learning Smooth Time-Varying Linear Policies with an Action Jacobian Penalty",
+  "authors": [
+    "Zhaoming Xie",
+    "Kevin Karol",
+    "Jessica Hodgins"
+  ],
+  "abstract": "Reinforcement learning policies are improved by using action Jacobian penalty to eliminate unrealistic high-frequency signals, with a new Linear Policy Net architecture reducing computational overhead while enabling faster convergence and efficient inference for motion imitation tasks. Reinforcement learning provides a framework for learning control policies that can reproduce diverse motions for simulated characters. However, such policies often exploit unnatural high-frequency signals that are unachievable by humans or physical robots, making them poor representations of real-world behaviors. Existing work addresses this issue by adding a reward term that penalizes a large change in actions over time. This term often requires substantial tuning efforts. We propose to use the action Jacobian penalty , which penalizes changes in action with respect to the changes in simulated state directly through auto differentiation . This effectively eliminates unrealistic high-frequency control signals without task specific tuning. While effective, the action Jacobian penalty introduces significant computational overhead when used with traditional fully connected neural network architectures. To mitigate this, we introduce a new architecture called a Linear Policy Net (LPN) that significantly reduces the computational burden for calculating the action Jacobian penalty during training. In addition, a LPN requires no parameter tuning, exhibits faster learning convergence compared to baseline methods, and can be more efficiently queried during inference time compared to a fully connected neural network . We demonstrate that a Linear Policy Net , combined with the action Jacobian penalty , is able to learn policies that generate smooth signals while solving a number of motion imitation tasks with different characteristics, including dynamic motions such as a backflip and various challenging parkour skills. Finally, we apply this approach to create policies for dynamic motions on a physical quadrupedal robot equipped with an arm.",
+  "summary_en": "Reinforcement learning policies are improved by using action Jacobian penalty to eliminate unrealistic high-frequency signals, with a new Linear Policy Net architecture reducing computational overhead while enabling faster convergence and efficient inference for motion imitation tasks.",
+  "summary_zh": "通过使用动作雅可比惩罚消除不切实际的高频信号来改进强化学习策略，同时新的 Linear Policy Net 架构降低了计算开销，并在动作模仿任务中实现了更快的收敛与高效推理。",
+  "hf_url": "https://huggingface.co/papers/2602.18312",
+  "arxiv_url": "https://arxiv.org/abs/2602.18312",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18312",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-24T01:59:10.703956+00:00"
+}

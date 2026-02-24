@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.17186",
+  "title": "Selective Training for Large Vision Language Models via Visual Information Gain",
+  "authors": [
+    "Seulbi Lee",
+    "Sangheum Hwang"
+  ],
+  "abstract": "Visual Information Gain metric quantifies the contribution of visual input to prediction uncertainty, enabling selective training that improves visual grounding and reduces language bias in vision-language models. Large Vision Language Models (LVLMs) have achieved remarkable progress, yet they often suffer from language bias , producing answers without relying on visual evidence. While prior work attempts to mitigate this issue through decoding strategies, architectural modifications, or curated instruction data, they typically lack a quantitative measure of how much individual training samples or tokens actually benefit from the image. In this work, we introduce Visual Information Gain (VIG), a perplexity-based metric that measures the reduction in prediction uncertainty provided by visual input. VIG enables fine-grained analysis at both sample and token levels, effectively highlighting visually grounded elements such as colors, spatial relations, and attributes. Leveraging this, we propose a VIG-guided selective training scheme that prioritizes high-VIG samples and tokens. This approach improves visual grounding and mitigates language bias , achieving superior performance with significantly reduced supervision by focusing exclusively on visually informative samples and tokens.",
+  "summary_en": "Visual Information Gain metric quantifies the contribution of visual input to prediction uncertainty, enabling selective training that improves visual grounding and reduces language bias in vision-language models.",
+  "summary_zh": "Visual Information Gain 指标量化了视觉输入对预测不确定性的贡献，从而实现选择性训练，提升视觉-语言模型中的视觉定位并减少语言偏见。",
+  "hf_url": "https://huggingface.co/papers/2602.17186",
+  "arxiv_url": "https://arxiv.org/abs/2602.17186",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.17186",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-24T01:59:05.822376+00:00"
+}

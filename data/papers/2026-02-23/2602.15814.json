@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.15814",
+  "title": "Avey-B",
+  "authors": [
+    "Devang Acharya",
+    "Mohammad Hammoud"
+  ],
+  "abstract": "Compact pretrained bidirectional encoders based on Avey architecture outperform Transformer-based models on token classification and information retrieval tasks while scaling more efficiently to long contexts. Compact pretrained bidirectional encoders remain the backbone of industrial NLP under tight compute and memory budgets. Their effectiveness stems from self-attention 's ability to deliver high-quality bidirectional contextualization with sequence-level parallelism, as popularized by BERT-style architectures . Recently, Avey was introduced as an autoregressive, attention-free alternative that naturally admits an encoder-only adaptation . In this paper, we reformulate Avey for the encoder-only paradigm and propose several innovations to its architecture, including decoupled static and dynamic parameterizations, stability-oriented normalization , and neural compression . Results show that this reformulated architecture compares favorably to four widely used Transformer-based encoders , consistently outperforming them on standard token-classification and information-retrieval benchmarks while scaling more efficiently to long contexts.",
+  "summary_en": "Compact pretrained bidirectional encoders based on Avey architecture outperform Transformer-based models on token classification and information retrieval tasks while scaling more efficiently to long contexts.",
+  "summary_zh": "基于 Avey 架构的紧凑预训练双向编码器在 token 分类和信息检索任务上表现优于基于 Transformer 的模型，同时能更高效地扩展到长上下文。",
+  "hf_url": "https://huggingface.co/papers/2602.15814",
+  "arxiv_url": "https://arxiv.org/abs/2602.15814",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15814",
+  "github_url": "https://github.com/rimads/avey-b",
+  "upvotes": 2,
+  "fetched_at": "2026-02-24T01:59:01.509288+00:00"
+}

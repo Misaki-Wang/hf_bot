@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.17022",
+  "title": "ReIn: Conversational Error Recovery with Reasoning Inception",
+  "authors": [
+    "Takyoung Kim",
+    "Jinseok Nam",
+    "Chandrayee Basu",
+    "Xing Fan",
+    "Chengyuan Ma",
+    "Heng Ji",
+    "Gokhan Tur",
+    "Dilek Hakkani-Tür"
+  ],
+  "abstract": "Conversational agents with tool integration face challenges from user-induced errors, but a test-time intervention method called Reasoning Inception (ReIn) enables error recovery by injecting external reasoning into the agent's decision-making process without modifying model parameters or prompts. Conversational agents powered by large language models (LLMs) with tool integration achieve strong performance on fixed task-oriented dialogue datasets but remain vulnerable to unanticipated, user-induced errors. Rather than focusing on error prevention, this work focuses on error recovery , which necessitates the accurate diagnosis of erroneous dialogue context s and execution of proper recovery plans . Under realistic constraints precluding model fine-tuning or prompt modification due to significant cost and time requirements, we explore whether agents can recover from contextually flawed interactions and how their behavior can be adapted without altering model parameters and prompts. To this end, we propose Reasoning Inception (ReIn), a test-time intervention method that plants an initial reasoning into the agent's decision-making process. Specifically, an external inception module identifies predefined errors within the dialogue context and generates recovery plans , which are subsequently integrated into the agent's internal reasoning process to guide corrective actions, without modifying its parameters or system prompts. We evaluate ReIn by systematically simulating conversational failure scenarios that directly hinder successful completion of user goals: user's ambiguous and unsupported requests. Across diverse combinations of agent models and inception module s, ReIn substantially improves task success and generalizes to unseen error types. Moreover, it consistently outperforms explicit prompt-modification approaches, underscoring its utility as an efficient, on-the-fly method. In-depth analysis of its operational mechanism, particularly in relation to instruction hierarchy, indicates that jointly defining recovery tools with ReIn can serve as a safe and effective strategy for improving the resilience of conversational agents without modifying the backbone models or system prompts.",
+  "summary_en": "Conversational agents with tool integration face challenges from user-induced errors, but a test-time intervention method called Reasoning Inception (ReIn) enables error recovery by injecting external reasoning into the agent's decision-making process without modifying model parameters or prompts.",
+  "summary_zh": "集成工具的对话智能体面临用户引发错误的挑战，但一种名为 Reasoning Inception (ReIn) 的测试时干预方法通过将外部推理注入智能体的决策过程，在不修改模型参数或提示词的情况下实现错误恢复。",
+  "hf_url": "https://huggingface.co/papers/2602.17022",
+  "arxiv_url": "https://arxiv.org/abs/2602.17022",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.17022",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-24T01:59:03.784671+00:00"
+}

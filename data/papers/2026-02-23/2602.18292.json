@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.18292",
+  "title": "Decoding as Optimisation on the Probability Simplex: From Top-K to Top-P (Nucleus) to Best-of-K Samplers",
+  "authors": [
+    "Xiaotong Ji",
+    "Rasul Tutunov",
+    "Matthieu Zimmer",
+    "Haitham Bou-Ammar"
+  ],
+  "abstract": "Decoding sits between a language model and everything we do with it, yet it is still treated as a heuristic knob-tuning exercise. We argue decoding should be understood as a principled optimisation layer: at each token, we solve a regularised problem over the probability simplex that trades off model score against structural preferences and constraints . This single template recovers greedy decoding , Softmax sampling , Top-K , Top-P , and Sparsemax -style sparsity as special cases, and explains their common structure through optimality conditions . More importantly, the framework makes it easy to invent new decoders without folklore. We demonstrate this by designing Best-of-K (BoK), a KL-anchored coverage objective aimed at multi-sample pipelines ( self-consistency , reranking , verifier selection ). BoK targets the probability of covering good alternatives within a fixed K-sample budget and improves empirical performance. We show that such samples can improve accuracy by, for example, +18.6% for Qwen2.5-Math-7B on MATH500 at high sampling temperatures.",
+  "summary_en": "Decoding sits between a language model and everything we do with it, yet it is still treated as a heuristic knob-tuning exercise. We argue decoding should be understood as a principled optimisation layer: at each token, we solve a regularised problem over the probability simplex that trades off model score against structural preferences and constraints . This single template recovers greedy decoding , Softmax sampling , Top-K , Top-P , and Sparsemax -style sparsity as special cases, and explains their common structure through optimality conditions . More importantly, the framework makes it easy to invent new decoders without folklore. We demonstrate this by designing Best-of-K (BoK), a KL-anchored coverage objective aimed at multi-sample pipelines ( self-consistency , reranking , verifier selection ). BoK targets the probability of covering good alternatives within a fixed K-sample budget and improves empirical performance. We show that such samples can improve accuracy by, for example, +18.6% for Qwen2.5-Math-7B on MATH500 at high sampling temperatures.",
+  "summary_zh": "解码位于语言模型与我们对其的所有应用之间，然而它仍被视为一种启发式的调参操作。我们认为解码应被理解为一个基于原理的优化层：在每个词元处，我们求解一个定义在概率单纯形上的正则化问题，该问题在模型得分与结构偏好及约束之间进行权衡。这一统一框架将贪心解码、Softmax采样、Top-K、Top-P以及Sparsemax风格稀疏性作为特例涵盖，并通过最优性条件解释它们的共同结构。更重要的是，该框架使得无需依赖经验法则即可轻松设计新的解码器。我们通过设计Best-of-K（BoK）来展示这一点，这是一种以KL散度为锚点的覆盖目标，面向多样本流程（自一致性、重排序、验证器选择）。BoK旨在在固定的K样本预算内最大化覆盖优质替代方案的概率，并提升经验性能。我们表明，此类样本能够提升准确率，例如，在高采样温度下，Qwen2.5-Math-7B在MATH500数据集上的准确率提升了+18.6%。",
+  "hf_url": "https://huggingface.co/papers/2602.18292",
+  "arxiv_url": "https://arxiv.org/abs/2602.18292",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18292",
+  "github_url": "",
+  "upvotes": 8,
+  "fetched_at": "2026-02-24T01:59:09.530537+00:00"
+}

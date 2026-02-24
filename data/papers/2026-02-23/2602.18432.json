@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.18432",
+  "title": "SARAH: Spatially Aware Real-time Agentic Humans",
+  "authors": [
+    "Evonne Ng",
+    "Siwei Zhang",
+    "Zhang Chen",
+    "Michael Zollhoefer",
+    "Alexander Richard"
+  ],
+  "abstract": "A causal transformer-based variational autoencoder combined with flow matching enables real-time, spatially-aware conversational motion for embodied agents in virtual reality applications. As embodied agents become central to VR, telepresence, and digital human applications, their motion must go beyond speech-aligned gestures: agents should turn toward users, respond to their movement, and maintain natural gaze. Current methods lack this spatial awareness . We close this gap with the first real-time, fully causal method for spatially-aware conversational motion , deployable on a streaming VR headset. Given a user's position and dyadic audio, our approach produces full-body motion that aligns gestures with speech while orienting the agent according to the user. Our architecture combines a causal transformer -based VAE with interleaved latent tokens for streaming inference and a flow matching model conditioned on user trajectory and audio. To support varying gaze preferences, we introduce a gaze scoring mechanism with classifier-free guidance to decouple learning from control: the model captures natural spatial alignment from data, while users can adjust eye contact intensity at inference time. On the Embody 3D dataset, our method achieves state-of-the-art motion quality at over 300 FPS -- 3x faster than non-causal baselines -- while capturing the subtle spatial dynamics of natural conversation. We validate our approach on a live VR system, bringing spatially-aware conversational agents to real-time deployment. Please see https://evonneng.github.io/sarah/ for details.",
+  "summary_en": "A causal transformer-based variational autoencoder combined with flow matching enables real-time, spatially-aware conversational motion for embodied agents in virtual reality applications.",
+  "summary_zh": "基于因果Transformer的变分自编码器结合流匹配，实现了虚拟现实应用中具身智能体的实时空间感知对话动作。",
+  "hf_url": "https://huggingface.co/papers/2602.18432",
+  "arxiv_url": "https://arxiv.org/abs/2602.18432",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18432",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-24T01:59:13.319712+00:00"
+}

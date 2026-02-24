@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.18422",
+  "title": "Generated Reality: Human-centric World Simulation using Interactive Video Generation with Hand and Camera Control",
+  "authors": [
+    "Linxi Xie",
+    "Lisong C. Sun",
+    "Ashley Neall",
+    "Tong Wu",
+    "Shengqu Cai",
+    "Gordon Wetzstein"
+  ],
+  "abstract": "A human-centric video world model conditioned on tracked head and hand poses is introduced, enabling dexterous interactions through a bidirectional video diffusion model trained for egocentric virtual environment generation. Extended reality (XR) demands generative models that respond to users' tracked real-world motion, yet current video world models accept only coarse control signals such as text or keyboard input, limiting their utility for embodied interaction. We introduce a human-centric video world model that is conditioned on both tracked head pose and joint-level hand poses . For this purpose, we evaluate existing diffusion transformer conditioning strategies and propose an effective mechanism for 3D head and hand control, enabling dexterous hand--object interactions. We train a bidirectional video diffusion model teacher using this strategy and distill it into a causal, interactive system that generates egocentric virtual environments . We evaluate this generated reality system with human subjects and demonstrate improved task performance as well as a significantly higher level of perceived amount of control over the performed actions compared with relevant baselines.",
+  "summary_en": "A human-centric video world model conditioned on tracked head and hand poses is introduced, enabling dexterous interactions through a bidirectional video diffusion model trained for egocentric virtual environment generation.",
+  "summary_zh": "提出了一种以追踪的头手姿态为条件的人中心视频世界模型，通过经自我中心虚拟环境生成训练的双向视频扩散模型实现灵巧交互。",
+  "hf_url": "https://huggingface.co/papers/2602.18422",
+  "arxiv_url": "https://arxiv.org/abs/2602.18422",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18422",
+  "github_url": "",
+  "upvotes": 18,
+  "fetched_at": "2026-02-24T01:59:11.864253+00:00"
+}

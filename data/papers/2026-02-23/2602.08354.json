@@ -1,0 +1,30 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.08354",
+  "title": "Does Your Reasoning Model Implicitly Know When to Stop Thinking?",
+  "authors": [
+    "Zixuan Huang",
+    "Xin Xia",
+    "Yuxi Ren",
+    "Jianbin Zheng",
+    "Xuanda Wang",
+    "Zhixia Zhang",
+    "Hongyan Xie",
+    "Songshi Liang",
+    "Zehao Chen",
+    "Xuefeng Xiao",
+    "Fuzhen Zhuang",
+    "Jianxin Li",
+    "Yikun Ban",
+    "Deqing Wang"
+  ],
+  "abstract": "Large reasoning models can implicitly determine optimal stopping points for thinking, which SAGE-RL enhances by incorporating efficient reasoning patterns into pass@1 inference for improved accuracy and efficiency. Recent advancements in large reasoning models (LRMs) have greatly improved their capabilities on complex reasoning tasks through Long Chains of Thought (CoTs). However, this approach often results in substantial redundancy, impairing computational efficiency and causing significant delays in real-time applications. Recent studies show that longer reasoning chains are frequently uncorrelated with correctness and can even be detrimental to accuracy. In a further in-depth analysis of this phenomenon, we surprisingly uncover and empirically verify that LRMs implicitly know the appropriate time to stop thinking, while this capability is obscured by current sampling paradigms . Motivated by this, we introduce SAGE ( Self-Aware Guided Efficient Reasoning ), a novel sampling paradigm that unleashes this efficient reasoning potential. Furthermore, integrating SAGE as mixed sampling into group-based reinforcement learning (SAGE-RL) enables SAGE-RL to effectively incorporate SAGE-discovered efficient reasoning patterns into standard pass@1 inference , markedly enhancing both the reasoning accuracy and efficiency of LRMs across multiple challenging mathematical benchmarks .",
+  "summary_en": "Large reasoning models can implicitly determine optimal stopping points for thinking, which SAGE-RL enhances by incorporating efficient reasoning patterns into pass@1 inference for improved accuracy and efficiency.",
+  "summary_zh": "大型推理模型能够隐式确定思考的最优停止点，SAGE-RL 通过将高效推理模式融入 pass@1 推理以提升准确性和效率，从而增强了这一能力。",
+  "hf_url": "https://huggingface.co/papers/2602.08354",
+  "arxiv_url": "https://arxiv.org/abs/2602.08354",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.08354",
+  "github_url": "",
+  "upvotes": 95,
+  "fetched_at": "2026-02-24T01:58:53.305839+00:00"
+}

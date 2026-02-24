@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.10094",
+  "title": "4RC: 4D Reconstruction via Conditional Querying Anytime and Anywhere",
+  "authors": [
+    "Yihang Luo",
+    "Shangchen Zhou",
+    "Yushi Lan",
+    "Xingang Pan",
+    "Chen Change Loy"
+  ],
+  "abstract": "4RC presents a unified feed-forward framework for 4D reconstruction from monocular videos that learns holistic scene geometry and motion dynamics through a transformer-based encoder-decoder architecture with conditional querying capabilities. We present 4RC, a unified feed-forward framework for 4D reconstruction from monocular videos . Unlike existing approaches that typically decouple motion from geometry or produce limited 4D attributes such as sparse trajectories or two-view scene flow, 4RC learns a holistic 4D representation that jointly captures dense scene geometry and motion dynamics . At its core, 4RC introduces a novel encode-once, query-anywhere and anytime paradigm: a transformer backbone encodes the entire video into a compact spatio-temporal latent space , from which a conditional decoder can efficiently query 3D geometry and motion for any query frame at any target timestamp. To facilitate learning, we represent per-view 4D attributes in a minimally factorized form by decomposing them into base geometry and time-dependent relative motion. Extensive experiments demonstrate that 4RC outperforms prior and concurrent methods across a wide range of 4D reconstruction tasks.",
+  "summary_en": "4RC presents a unified feed-forward framework for 4D reconstruction from monocular videos that learns holistic scene geometry and motion dynamics through a transformer-based encoder-decoder architecture with conditional querying capabilities.",
+  "summary_zh": "4RC提出了一种统一的前馈框架，用于从单目视频进行4D重建，该框架通过基于Transformer的编码器-解码器架构与条件查询能力学习整体场景几何和运动动态。",
+  "hf_url": "https://huggingface.co/papers/2602.10094",
+  "arxiv_url": "https://arxiv.org/abs/2602.10094",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10094",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-24T01:58:54.757401+00:00"
+}

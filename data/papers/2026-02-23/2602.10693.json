@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.10693",
+  "title": "VESPO: Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training",
+  "authors": [
+    "Guobin Shen",
+    "Chenxiao Zhao",
+    "Xiang Cheng",
+    "Lei Huang",
+    "Xing Yu"
+  ],
+  "abstract": "VESPO addresses training instability in LLM reinforcement learning by using variational formulation with variance reduction to correct policy divergence without length normalization. Training stability remains a central challenge in reinforcement learning (RL) for large language models (LLMs). Policy staleness , asynchronous training , and mismatches between training and inference engines all cause the behavior policy to diverge from the current policy, risking training collapse. Importance sampling provides a principled correction for this distribution shift but suffers from high variance; existing remedies such as token-level clipping and sequence-level normalization lack a unified theoretical foundation. We propose Variational sEquence-level Soft Policy Optimization (VESPO). By incorporating variance reduction into a variational formulation over proposal distributions , VESPO derives a closed-form reshaping kernel that operates directly on sequence-level importance weights without length normalization. Experiments on mathematical reasoning benchmarks show that VESPO maintains stable training under staleness ratios up to 64x and fully asynchronous execution, and delivers consistent gains across both dense and Mixture-of-Experts models . Code is available at https://github.com/FloyedShen/VESPO",
+  "summary_en": "VESPO addresses training instability in LLM reinforcement learning by using variational formulation with variance reduction to correct policy divergence without length normalization.",
+  "summary_zh": "VESPO 通过采用带方差缩减的变分形式来纠正策略发散，无需长度归一化即可解决 LLM 强化学习中的训练不稳定性。",
+  "hf_url": "https://huggingface.co/papers/2602.10693",
+  "arxiv_url": "https://arxiv.org/abs/2602.10693",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.10693",
+  "github_url": "https://github.com/FloyedShen/VESPO",
+  "upvotes": 158,
+  "fetched_at": "2026-02-24T01:58:56.244252+00:00"
+}

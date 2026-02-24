@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.13576",
+  "title": "Rubrics as an Attack Surface: Stealthy Preference Drift in LLM Judges",
+  "authors": [
+    "Ruomeng Ding",
+    "Yifei Pang",
+    "He Sun",
+    "Yizhong Wang",
+    "Zhiwei Steven Wu",
+    "Zhun Deng"
+  ],
+  "abstract": "LLM-based judges using natural-language rubrics for evaluation can exhibit systematic preference drift from minor rubric modifications, which can be exploited to manipulate alignment pipelines and degrade model performance. Evaluation and alignment pipelines for large language models increasingly rely on LLM-based judges , whose behavior is guided by natural-language rubrics and validated on benchmarks. We identify a previously under-recognized vulnerability in this workflow, which we term Rubric-Induced Preference Drift (RIPD). Even when rubric edits pass benchmark validation , they can still produce systematic and directional shifts in a judge's preferences on target domains. Because rubrics serve as a high-level decision interface, such drift can emerge from seemingly natural, criterion-preserving edits and remain difficult to detect through aggregate benchmark metrics or limited spot-checking. We further show this vulnerability can be exploited through rubric-based preference attacks , in which benchmark-compliant rubric edits steer judgments away from a fixed human or trusted reference on target domains, systematically inducing RIPD and reducing target-domain accuracy up to 9.5% (helpfulness) and 27.9% (harmlessness). When these judgments are used to generate preference labels for downstream post-training , the induced bias propagates through alignment pipelines and becomes internalized in trained policies. This leads to persistent and systematic drift in model behavior . Overall, our findings highlight evaluation rubrics as a sensitive and manipulable control interface, revealing a system-level alignment risk that extends beyond evaluator reliability alone. The code is available at: https://github.com/ZDCSlab/Rubrics-as-an-Attack-Surface. Warning: Certain sections may contain potentially harmful content that may not be appropriate for all readers.",
+  "summary_en": "LLM-based judges using natural-language rubrics for evaluation can exhibit systematic preference drift from minor rubric modifications, which can be exploited to manipulate alignment pipelines and degrade model performance.",
+  "summary_zh": "基于LLM的评判器在使用自然语言评分标准进行评估时，可能因评分标准的细微修改而表现出系统性偏好漂移，这一现象可被利用以操纵对齐流程并降低模型性能。",
+  "hf_url": "https://huggingface.co/papers/2602.13576",
+  "arxiv_url": "https://arxiv.org/abs/2602.13576",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.13576",
+  "github_url": "https://github.com/ZDCSlab/Rubrics-as-an-Attack-Surface",
+  "upvotes": 1,
+  "fetched_at": "2026-02-24T01:58:57.593163+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.15727",
+  "title": "Spanning the Visual Analogy Space with a Weight Basis of LoRAs",
+  "authors": [
+    "Hila Manor",
+    "Rinon Gal",
+    "Haggai Maron",
+    "Tomer Michaeli",
+    "Gal Chechik"
+  ],
+  "abstract": "Visual analogy learning via dynamic composition of learned LoRA transformation primitives enables flexible image manipulation with improved generalization over fixed adaptation modules. Visual analogy learning enables image manipulation through demonstration rather than textual description, allowing users to specify complex transformations difficult to articulate in words. Given a triplet {a, a', b}, the goal is to generate b' such that a : a' :: b : b'. Recent methods adapt text-to-image models to this task using a single Low-Rank Adaptation ( LoRA ) module, but they face a fundamental limitation: attempting to capture the diverse space of visual transformations within a fixed adaptation module constrains generalization capabilities. Inspired by recent work showing that LoRA s in constrained domains span meaningful, interpolatable semantic spaces , we propose LoRWeB, a novel approach that specializes the model for each analogy task at inference time through dynamic composition of learned transformation primitives , informally, choosing a point in a \"space of LoRA s\". We introduce two key components: (1) a learnable basis of LoRA modules, to span the space of different visual transformations, and (2) a lightweight encoder that dynamically selects and weighs these basis LoRA s based on the input analogy pair. Comprehensive evaluations demonstrate our approach achieves state-of-the-art performance and significantly improves generalization to unseen visual transformations. Our findings suggest that LoRA basis decompositions are a promising direction for flexible visual manipulation. Code and data are in https://research.nvidia.com/labs/par/lorweb",
+  "summary_en": "Visual analogy learning via dynamic composition of learned LoRA transformation primitives enables flexible image manipulation with improved generalization over fixed adaptation modules.",
+  "summary_zh": "通过动态组合学习得到的 LoRA 变换基元进行视觉类比学习，可实现灵活的图像操控，且相比固定适配模块具有更优的泛化性能。",
+  "hf_url": "https://huggingface.co/papers/2602.15727",
+  "arxiv_url": "https://arxiv.org/abs/2602.15727",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15727",
+  "github_url": "https://github.com/NVlabs/LoRWeB",
+  "upvotes": 9,
+  "fetched_at": "2026-02-24T01:58:59.834550+00:00"
+}

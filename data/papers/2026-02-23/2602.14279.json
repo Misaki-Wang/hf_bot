@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.14279",
+  "title": "Whom to Query for What: Adaptive Group Elicitation via Multi-Turn LLM Interactions",
+  "authors": [
+    "Ruomeng Ding",
+    "Tianwei Gao",
+    "Thomas P. Zollo",
+    "Eitan Bachmat",
+    "Richard Zemel",
+    "Zhun Deng"
+  ],
+  "abstract": "Adaptive group elicitation framework combines LLM-based information gain scoring with graph neural networks to improve population-level predictions under budget constraints. Eliciting information to reduce uncertainty about latent group-level properties from surveys and other collective assessments requires allocating limited questioning effort under real costs and missing data. Although large language models enable adaptive, multi-turn interactions in natural language, most existing elicitation methods optimize what to ask with a fixed respondent pool, and do not adapt respondent selection or leverage population structure when responses are partial or incomplete. To address this gap, we study adaptive group elicitation, a multi-round setting where an agent adaptively selects both questions and respondents under explicit query and participation budgets. We propose a theoretically grounded framework that combines (i) an LLM-based expected information gain objective for scoring candidate questions with (ii) heterogeneous graph neural network propagation that aggregates observed responses and participant attributes to impute missing responses and guide per-round respondent selection . This closed-loop procedure queries a small, informative subset of individuals while inferring population-level responses via structured similarity . Across three real-world opinion datasets, our method consistently improves population-level response prediction under constrained budgets, including a >12% relative gain on CES at a 10% respondent budget.",
+  "summary_en": "Adaptive group elicitation framework combines LLM-based information gain scoring with graph neural networks to improve population-level predictions under budget constraints.",
+  "summary_zh": "自适应群体启发框架结合基于LLM的信息增益评分与图神经网络，以改进预算约束下的群体层面预测。",
+  "hf_url": "https://huggingface.co/papers/2602.14279",
+  "arxiv_url": "https://arxiv.org/abs/2602.14279",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14279",
+  "github_url": "https://github.com/ZDCSlab/Group-Adaptive-Elicitation",
+  "upvotes": 1,
+  "fetched_at": "2026-02-24T01:58:58.324660+00:00"
+}

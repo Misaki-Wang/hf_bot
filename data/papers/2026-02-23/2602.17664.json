@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.17664",
+  "title": "Sink-Aware Pruning for Diffusion Language Models",
+  "authors": [
+    "Aidar Myrzakhan",
+    "Tianyi Li",
+    "Bowei Guo",
+    "Shengkun Tang",
+    "Zhiqiang Shen"
+  ],
+  "abstract": "Diffusion Language Models suffer from high inference costs due to iterative denoising, prompting the development of Sink-Aware Pruning that identifies and removes unstable attention sinks, improving efficiency without retraining. Diffusion Language Models (DLMs) incur high inference cost due to iterative denoising , motivating efficient pruning . Existing pruning heuristics largely inherited from autoregressive (AR) LLMs, typically preserve attention sink tokens because AR sinks serve as stable global anchors. We show that this assumption does not hold for DLMs: the attention-sink position exhibits substantially higher variance over the full generation trajectory (measured by how the dominant sink locations shift across timesteps), indicating that sinks are often transient and less structurally essential than in AR models. Based on this observation, we propose {bf Sink-Aware Pruning }, which automatically identifies and prunes unstable sinks in DLMs (prior studies usually keep sinks for AR LLMs). Without retraining, our method achieves a better quality-efficiency trade-off and outperforms strong prior pruning baselines under matched compute. Our code is available at https://github.com/VILA-Lab/Sink-Aware- Pruning .",
+  "summary_en": "Diffusion Language Models suffer from high inference costs due to iterative denoising, prompting the development of Sink-Aware Pruning that identifies and removes unstable attention sinks, improving efficiency without retraining.",
+  "summary_zh": "扩散语言模型因迭代去噪导致推理成本高昂，推动了Sink-Aware剪枝的发展，该方法识别并移除不稳定的注意力汇聚点，在不重新训练的情况下提升效率。",
+  "hf_url": "https://huggingface.co/papers/2602.17664",
+  "arxiv_url": "https://arxiv.org/abs/2602.17664",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.17664",
+  "github_url": "https://github.com/VILA-Lab/Sink-Aware-Pruning",
+  "upvotes": 1,
+  "fetched_at": "2026-02-24T01:59:06.469822+00:00"
+}

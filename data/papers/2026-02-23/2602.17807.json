@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.17807",
+  "title": "VidEoMT: Your ViT is Secretly Also a Video Segmentation Model",
+  "authors": [
+    "Narges Norouzi",
+    "Idil Esen Zulfikar",
+    "Niccol`o Cavagnero",
+    "Tommie Kerssies",
+    "Bastian Leibe",
+    "Gijs Dubbelman",
+    "Daan de Geus"
+  ],
+  "abstract": "A video segmentation model eliminates specialized tracking modules by using a Vision Transformer encoder with query propagation and fusion mechanisms for efficient, high-speed processing. Existing online video segmentation models typically combine a per-frame segmenter with complex specialized tracking modules. While effective, these modules introduce significant architectural complexity and computational overhead. Recent studies suggest that plain Vision Transformer (ViT) encoders, when scaled with sufficient capacity and large-scale pre-training, can conduct accurate image segmentation without requiring specialized modules. Motivated by this observation, we propose the Video Encoder-only Mask Transformer (VidEoMT), a simple encoder-only video segmentation model that eliminates the need for dedicated tracking modules. To enable temporal modeling in an encoder-only ViT, VidEoMT introduces a lightweight query propagation mechanism that carries information across frames by reusing queries from the previous frame. To balance this with adaptability to new content, it employs a query fusion strategy that combines the propagated queries with a set of temporally-agnostic learned queries. As a result, VidEoMT attains the benefits of a tracker without added complexity, achieving competitive accuracy while being 5x--10x faster, running at up to 160 FPS with a ViT-L backbone. Code: https://www.tue-mps.org/videomt/",
+  "summary_en": "A video segmentation model eliminates specialized tracking modules by using a Vision Transformer encoder with query propagation and fusion mechanisms for efficient, high-speed processing.",
+  "summary_zh": "该视频分割模型通过使用配备查询传播与融合机制的 Vision Transformer 编码器，消除了专门的跟踪模块，从而实现高效高速处理。",
+  "hf_url": "https://huggingface.co/papers/2602.17807",
+  "arxiv_url": "https://arxiv.org/abs/2602.17807",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.17807",
+  "github_url": "https://github.com/tue-mps/videomt",
+  "upvotes": 2,
+  "fetched_at": "2026-02-24T01:59:07.230075+00:00"
+}

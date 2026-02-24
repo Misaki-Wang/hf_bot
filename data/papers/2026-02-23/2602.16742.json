@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-23",
+  "paper_id": "2602.16742",
+  "title": "DeepVision-103K: A Visually Diverse, Broad-Coverage, and Verifiable Mathematical Dataset for Multimodal Reasoning",
+  "authors": [
+    "Haoxiang Sun",
+    "Lizhen Xu",
+    "Bing Zhao",
+    "Wotao Yin",
+    "Wei Wang",
+    "Boyu Yang",
+    "Rui Wang",
+    "Hu Wei"
+  ],
+  "abstract": "DeepVision-103K dataset enhances multimodal reasoning capabilities of large models through diverse mathematical content and visual elements. Reinforcement Learning with Verifiable Rewards (RLVR) has been shown effective in enhancing the visual reflection and reasoning capabilities of Large Multimodal Models (LMMs). However, existing datasets are predominantly derived from either small-scale manual construction or recombination of prior resources, which limits data diversity and coverage, thereby constraining further gains in model performance. To this end, we introduce DeepVision-103K, a comprehensive dataset for RLVR training that covers diverse K12 mathematical topics, extensive knowledge points, and rich visual elements. Models trained on DeepVision achieve strong performance on multimodal mathematical benchmarks , and generalize effectively to general multimodal reasoning tasks . Further analysis reveals enhanced visual perception , reflection and reasoning capabilities in trained models, validating DeepVision's effectiveness for advancing multimodal reasoning. Data: https://huggingface.co/datasets/skylenage/DeepVision-103K{this url}.",
+  "summary_en": "DeepVision-103K dataset enhances multimodal reasoning capabilities of large models through diverse mathematical content and visual elements.",
+  "summary_zh": "DeepVision-103K数据集通过多样化的数学内容和视觉元素，增强了大模型的多模态推理能力。",
+  "hf_url": "https://huggingface.co/papers/2602.16742",
+  "arxiv_url": "https://arxiv.org/abs/2602.16742",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16742",
+  "github_url": "https://github.com/SKYLENAGE-AI/DeepVision-103K",
+  "upvotes": 2,
+  "fetched_at": "2026-02-24T01:59:02.486127+00:00"
+}
