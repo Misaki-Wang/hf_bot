@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.12100",
+  "title": "AssetFormer: Modular 3D Assets Generation with Autoregressive Transformer",
+  "authors": [
+    "Lingting Zhu",
+    "Shengju Qian",
+    "Haidi Fan",
+    "Jiayu Dong",
+    "Zhenchao Jin",
+    "Siwei Zhou",
+    "Gen Dong",
+    "Xin Wang",
+    "Lequan Yu"
+  ],
+  "abstract": "AssetFormer is an autoregressive Transformer-based model that generates modular 3D assets from textual descriptions by adapting language model techniques to handle design constraints. The digital industry demands high-quality, diverse modular 3D assets , especially for user-generated content~(UGC). In this work, we introduce AssetFormer, an autoregressive Transformer-based model designed to generate modular 3D assets from textual descriptions . Our pilot study leverages real-world modular assets collected from online platforms. AssetFormer tackles the challenge of creating assets composed of primitives that adhere to constrained design parameters for various applications. By innovatively adapting module sequencing and decoding techniques inspired by language models, our approach enhances asset generation quality through autoregressive modeling . Initial results indicate the effectiveness of AssetFormer in streamlining asset creation for professional development and UGC scenarios. This work presents a flexible framework extendable to various types of modular 3D assets , contributing to the broader field of 3D content generation. The code is available at https://github.com/Advocate99/AssetFormer.",
+  "summary_en": "AssetFormer is an autoregressive Transformer-based model that generates modular 3D assets from textual descriptions by adapting language model techniques to handle design constraints.",
+  "summary_zh": "AssetFormer 是一种基于 Transformer 的自回归模型，通过采用语言模型技术处理设计约束，从文本描述生成模块化 3D 资产。",
+  "hf_url": "https://huggingface.co/papers/2602.12100",
+  "arxiv_url": "https://arxiv.org/abs/2602.12100",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12100",
+  "github_url": "https://github.com/Advocate99/AssetFormer",
+  "upvotes": 1,
+  "fetched_at": "2026-02-25T02:01:14.763975+00:00"
+}

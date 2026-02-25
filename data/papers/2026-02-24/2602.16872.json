@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.16872",
+  "title": "DODO: Discrete OCR Diffusion Models",
+  "authors": [
+    "Sean Man",
+    "Roy Ganz",
+    "Roi Ronen",
+    "Shahar Tsiper",
+    "Shai Mazor",
+    "Niv Nayman"
+  ],
+  "abstract": "Diffusion models are adapted for optical character recognition by using block discrete diffusion to enable faster, parallel processing while maintaining high accuracy.",
+  "summary_en": "Diffusion models are adapted for optical character recognition by using block discrete diffusion to enable faster, parallel processing while maintaining high accuracy.",
+  "summary_zh": "扩散模型通过采用块离散扩散被适配用于光学字符识别，在保持高准确率的同时实现更快的并行处理。",
+  "hf_url": "https://huggingface.co/papers/2602.16872",
+  "arxiv_url": "https://arxiv.org/abs/2602.16872",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16872",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-25T02:01:17.155148+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.17393",
+  "title": "Contact-Anchored Proprioceptive Odometry for Quadruped Robots",
+  "authors": [
+    "Minxing Sun",
+    "Yao Mao"
+  ],
+  "abstract": "A proprioceptive state estimation method for legged robots uses IMU and motor measurements to jointly estimate body pose and velocity, leveraging contact-based constraints and geometric consistency to reduce drift without external sensors. Reliable odometry for legged robots without cameras or LiDAR remains challenging due to IMU drift and noisy joint velocity sensing. This paper presents a purely proprioceptive state estimator that uses only IMU and motor measurements to jointly estimate body pose and velocity, with a unified formulation applicable to biped, quadruped, and wheel-legged robots. The key idea is to treat each contacting leg as a kinematic anchor : joint-torque--based foot wrench estimation selects reliable contacts, and the corresponding footfall positions provide intermittent world-frame constraints that suppress long-term drift. To prevent elevation drift during extended traversal, we introduce a lightweight height clustering and time-decay correction that snaps newly recorded footfall heights to previously observed support planes. To improve foot velocity observations under encoder quantization, we apply an inverse-kinematics cubature Kalman filter that directly filters foot-end velocities from joint angles and velocities. The implementation further mitigates yaw drift through multi-contact geometric consistency and degrades gracefully to a kinematics-derived heading reference when IMU yaw constraints are unavailable or unreliable. We evaluate the method on four quadruped platforms (three Astrall robots and a Unitree Go2 EDU) using closed-loop trajectories. On Astrall point-foot robot~A, a sim200\\,m horizontal loop and a sim15\\,m vertical loop return with 0.1638\\,m and 0.219\\,m error, respectively; on wheel-legged robot~B, the corresponding errors are 0.2264\\,m and 0.199\\,m. On wheel-legged robot~C, a sim700\\,m horizontal loop yields 7.68\\,m error and a sim20\\,m vertical loop yields 0.540\\,m error. Unitree Go2 EDU closes a sim120\\,m horizontal loop with 2.2138\\,m error and a sim8\\,m vertical loop with less than 0.1\\,m vertical error. github.com/ShineMinxing/Ros2Go2Estimator.git",
+  "summary_en": "A proprioceptive state estimation method for legged robots uses IMU and motor measurements to jointly estimate body pose and velocity, leveraging contact-based constraints and geometric consistency to reduce drift without external sensors.",
+  "summary_zh": "一种用于足式机器人的本体感知状态估计方法，利用IMU和电机测量数据联合估计机体位姿和速度，通过基于接触的约束和几何一致性在没有外部传感器的情况下减少漂移。",
+  "hf_url": "https://huggingface.co/papers/2602.17393",
+  "arxiv_url": "https://arxiv.org/abs/2602.17393",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.17393",
+  "github_url": "https://github.com/ShineMinxing/Ros2Go2Estimator",
+  "upvotes": 1,
+  "fetched_at": "2026-02-25T02:01:17.809698+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.20160",
+  "title": "tttLRM: Test-Time Training for Long Context and Autoregressive 3D Reconstruction",
+  "authors": [
+    "Chen Wang",
+    "Hao Tan",
+    "Wang Yifan",
+    "Zhiqin Chen",
+    "Yuheng Liu",
+    "Kalyan Sunkavalli",
+    "Sai Bi",
+    "Lingjie Liu",
+    "Yiwei Hu"
+  ],
+  "abstract": "A novel 3D reconstruction model called tttLRM uses a Test-Time Training layer to enable efficient, scalable autoregressive reconstruction with linear complexity, achieving better results than existing methods. We propose tttLRM, a novel large 3D reconstruction model that leverages a Test-Time Training (TTT) layer to enable long-context, autoregressive 3D reconstruction with linear computational complexity, further scaling the model's capability. Our framework efficiently compresses multiple image observations into the fast weights of the TTT layer, forming an implicit 3D representation in the latent space that can be decoded into various explicit formats, such as Gaussian Splats (GS) for downstream applications. The online learning variant of our model supports progressive 3D reconstruction and refinement from streaming observations. We demonstrate that pretraining on novel view synthesis tasks effectively transfers to explicit 3D modeling , resulting in improved reconstruction quality and faster convergence. Extensive experiments show that our method achieves superior performance in feedforward 3D Gaussian reconstruction compared to state-of-the-art approaches on both objects and scenes.",
+  "summary_en": "A novel 3D reconstruction model called tttLRM uses a Test-Time Training layer to enable efficient, scalable autoregressive reconstruction with linear complexity, achieving better results than existing methods.",
+  "summary_zh": "一种名为tttLRM的新型3D重建模型使用Test-Time Training层，实现具有线性复杂度的高效可扩展自回归重建，效果优于现有方法。",
+  "hf_url": "https://huggingface.co/papers/2602.20160",
+  "arxiv_url": "https://arxiv.org/abs/2602.20160",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20160",
+  "github_url": "https://github.com/cwchenwang/tttLRM",
+  "upvotes": 1,
+  "fetched_at": "2026-02-25T02:01:39.498212+00:00"
+}

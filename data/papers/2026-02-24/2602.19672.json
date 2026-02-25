@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.19672",
+  "title": "SkillOrchestra: Learning to Route Agents via Skill Transfer",
+  "authors": [
+    "Jiayu Wang",
+    "Yifei Ming",
+    "Zixuan Ke",
+    "Shafiq Joty",
+    "Aws Albarghouthi",
+    "Frederic Sala"
+  ],
+  "abstract": "SkillOrchestra presents a skill-aware orchestration framework that improves compound AI system performance through fine-grained skill modeling and efficient agent selection, achieving superior results with significantly reduced learning costs compared to reinforcement learning-based methods. Compound AI systems promise capabilities beyond those of individual models, yet their success depends critically on effective orchestration . Existing routing approaches face two limitations: (1) input-level routers make coarse query-level decisions that ignore evolving task requirements; (2) RL-trained orchestrators are expensive to adapt and often suffer from routing collapse , repeatedly invoking one strong but costly option in multi-turn scenarios . We introduce SkillOrchestra, a framework for skill-aware orchestration . Instead of directly learning a routing policy end-to-end, SkillOrchestra learns fine-grained skills from execution experience and models agent-specific competence and cost under those skills. At deployment, the orchestrator infers the skill demands of the current interaction and selects agents that best satisfy them under an explicit performance-cost trade-off . Extensive experiments across ten benchmarks demonstrate that SkillOrchestra outperforms SoTA RL-based orchestrators by up to 22.5% with 700x and 300x learning cost reduction compared to Router-R1 and ToolOrchestra, respectively. These results show that explicit skill modeling enables scalable, interpretable, and sample-efficient orchestration , offering a principled alternative to data-intensive RL-based approaches. The code is available at: https://github.com/jiayuww/SkillOrchestra.",
+  "summary_en": "SkillOrchestra presents a skill-aware orchestration framework that improves compound AI system performance through fine-grained skill modeling and efficient agent selection, achieving superior results with significantly reduced learning costs compared to reinforcement learning-based methods.",
+  "summary_zh": "SkillOrchestra 提出了一种技能感知编排框架，通过细粒度技能建模与高效智能体选择提升复合 AI 系统性能，相较于基于强化学习的方法，在显著降低学习成本的同时取得了更优结果。",
+  "hf_url": "https://huggingface.co/papers/2602.19672",
+  "arxiv_url": "https://arxiv.org/abs/2602.19672",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.19672",
+  "github_url": "",
+  "upvotes": 31,
+  "fetched_at": "2026-02-25T02:01:33.827916+00:00"
+}

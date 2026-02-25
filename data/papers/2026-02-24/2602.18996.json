@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.18996",
+  "title": "Learning Cross-View Object Correspondence via Cycle-Consistent Mask Prediction",
+  "authors": [
+    "Shannan Yan",
+    "Leqi Zheng",
+    "Keyu Lv",
+    "Jingchen Ni",
+    "Hongyang Wei",
+    "Jiajun Zhang",
+    "Guangting Wang",
+    "Jing Lyu",
+    "Chun Yuan",
+    "Fengyun Rao"
+  ],
+  "abstract": "A conditional binary segmentation framework with cycle-consistency training enables robust object correspondence across egocentric and exocentric viewpoints without ground-truth annotations. We study the task of establishing object-level visual correspondence across different viewpoints in videos, focusing on the challenging egocentric-to-exocentric and exocentric-to-egocentric scenarios. We propose a simple yet effective framework based on conditional binary segmentation , where an object query mask is encoded into a latent representation to guide the localization of the corresponding object in a target video. To encourage robust, view-invariant representations , we introduce a cycle-consistency training objective: the predicted mask in the target view is projected back to the source view to reconstruct the original query mask. This bidirectional constraint provides a strong self-supervisory signal without requiring ground-truth annotations and enables test-time training (TTT) at inference. Experiments on the Ego-Exo4D and HANDAL-X benchmarks demonstrate the effectiveness of our optimization objective and TTT strategy, achieving state-of-the-art performance. The code is available at https://github.com/shannany0606/CCMP.",
+  "summary_en": "A conditional binary segmentation framework with cycle-consistency training enables robust object correspondence across egocentric and exocentric viewpoints without ground-truth annotations.",
+  "summary_zh": "一种基于循环一致性训练的条件二值分割框架，无需真值标注即可实现跨自我中心与外中心视角的鲁棒物体对应。",
+  "hf_url": "https://huggingface.co/papers/2602.18996",
+  "arxiv_url": "https://arxiv.org/abs/2602.18996",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18996",
+  "github_url": "https://github.com/shannany0606/CCMP",
+  "upvotes": 13,
+  "fetched_at": "2026-02-25T02:01:26.629132+00:00"
+}

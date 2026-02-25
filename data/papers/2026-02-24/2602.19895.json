@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.19895",
+  "title": "DSDR: Dual-Scale Diversity Regularization for Exploration in LLM Reasoning",
+  "authors": [
+    "Zhongwei Wan",
+    "Yun Shen",
+    "Zhihao Dou",
+    "Donghao Zhou",
+    "Yu Zhang",
+    "Xin Wang",
+    "Hui Shen",
+    "Jing Xiong",
+    "Chaofan Tao",
+    "Zixuan Zhong",
+    "Peizhou Huang",
+    "Mi Zhang"
+  ],
+  "abstract": "DSDR is a reinforcement learning framework that enhances large language model reasoning by promoting diversity at both global and local levels through dual-scale regularization techniques. Reinforcement learning with verifiers (RLVR) is a central paradigm for improving large language model (LLM) reasoning , yet existing methods often suffer from limited exploration. Policies tend to collapse onto a few reasoning patterns and prematurely stop deep exploration, while conventional entropy regularization introduces only local stochasticity and fails to induce meaningful path-level diversity, leading to weak and unstable learning signals in group-based policy optimization . We propose DSDR, a Dual-Scale Diversity Regularization reinforcement learning framework that decomposes diversity in LLM reasoning into global and coupling components. Globally, DSDR promotes diversity among correct reasoning trajectories to explore distinct solution modes. Locally, it applies a length-invariant, token-level entropy regularization restricted to correct trajectories, preventing entropy collapse within each mode while preserving correctness. The two scales are coupled through a global-to-local allocation mechanism that emphasizes local regularization for more distinctive correct trajectories. We provide theoretical support showing that DSDR preserves optimal correctness under bounded regularization, sustains informative learning signals in group-based optimization , and yields a principled global-to-local coupling rule. Experiments on multiple reasoning benchmarks demonstrate consistent improvements in accuracy and pass@k , highlighting the importance of dual-scale diversity for deep exploration in RLVR. Code is available at https://github.com/SUSTechBruce/DSDR.",
+  "summary_en": "DSDR is a reinforcement learning framework that enhances large language model reasoning by promoting diversity at both global and local levels through dual-scale regularization techniques.",
+  "summary_zh": "DSDR 是一种强化学习框架，通过双尺度正则化技术在全局和局部层面促进多样性，以增强大语言模型的推理能力。",
+  "hf_url": "https://huggingface.co/papers/2602.19895",
+  "arxiv_url": "https://arxiv.org/abs/2602.19895",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.19895",
+  "github_url": "",
+  "upvotes": 10,
+  "fetched_at": "2026-02-25T02:01:34.480098+00:00"
+}

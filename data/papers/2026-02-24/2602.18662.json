@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.18662",
+  "title": "Large Causal Models for Temporal Causal Discovery",
+  "authors": [
+    "Nikolaos Kougioulis",
+    "Nikolaos Gkorgkolis",
+    "MingXue Wang",
+    "Bora Caglayan",
+    "Dario Simionato",
+    "Andrea Tonon",
+    "Ioannis Tsamardinos"
+  ],
+  "abstract": "Large causal models combine synthetic and real time-series data to enable scalable temporal causal discovery with improved generalization and fast inference. Causal discovery for both cross-sectional and temporal data has traditionally followed a dataset-specific paradigm, where a new model is fitted for each individual dataset. Such an approach limits the potential of multi-dataset pretraining . The concept of large causal models (LCMs) envisions a class of pre-trained neural architectures specifically designed for temporal causal discovery . Prior approaches are constrained to small variable counts, degrade with larger inputs, and rely heavily on synthetic data, limiting generalization. We propose a principled framework for LCMs, combining diverse synthetic generators with realistic time-series datasets , allowing learning at scale. Extensive experiments on synthetic, semi-synthetic and realistic benchmarks show that LCMs scale effectively to higher variable counts and deeper architectures while maintaining strong performance. Trained models achieve competitive or superior accuracy compared to classical and neural baselines, particularly in out-of-distribution settings , while enabling fast, single-pass inference . Results demonstrate LCMs as a promising foundation-model paradigm for temporal causal discovery . Experiments and model weights are available at https://github.com/kougioulis/LCM-paper/.",
+  "summary_en": "Large causal models combine synthetic and real time-series data to enable scalable temporal causal discovery with improved generalization and fast inference.",
+  "summary_zh": "大型因果模型结合合成与真实时序数据，实现可扩展的时间因果发现，提升泛化能力并加速推理。",
+  "hf_url": "https://huggingface.co/papers/2602.18662",
+  "arxiv_url": "https://arxiv.org/abs/2602.18662",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18662",
+  "github_url": "",
+  "upvotes": 0,
+  "fetched_at": "2026-02-25T02:01:23.767204+00:00"
+}

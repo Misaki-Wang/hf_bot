@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.18333",
+  "title": "On the \"Induction Bias\" in Sequence Models",
+  "authors": [
+    "M. Reza Ebrahimi",
+    "Michaël Defferrard",
+    "Sunny Panchal",
+    "Roland Memisevic"
+  ],
+  "abstract": "Despite the remarkable practical success of transformer-based language models , recent work has raised concerns about their ability to perform state tracking . In particular, a growing body of literature has shown this limitation primarily through failures in out-of-distribution (OOD) generalization, such as length extrapolation. In this work, we shift attention to the in-distribution implications of these limitations. We conduct a large-scale experimental study of the data efficiency of transformers and recurrent neural networks (RNNs) across multiple supervision regimes . We find that the amount of training data required by transformers grows much more rapidly with state-space size and sequence length than for RNNs. Furthermore, we analyze the extent to which learned state-tracking mechanisms are shared across different sequence length s. We show that transformers exhibit negligible or even detrimental weight sharing across lengths, indicating that they learn length-specific solutions in isolation. In contrast, recurrent models exhibit effective amortized learning by sharing weights across lengths, allowing data from one sequence length to improve performance on others. Together, these results demonstrate that state tracking remains a fundamental challenge for transformers, even when training and evaluation distributions match.",
+  "summary_en": "Despite the remarkable practical success of transformer-based language models , recent work has raised concerns about their ability to perform state tracking . In particular, a growing body of literature has shown this limitation primarily through failures in out-of-distribution (OOD) generalization, such as length extrapolation. In this work, we shift attention to the in-distribution implications of these limitations. We conduct a large-scale experimental study of the data efficiency of transformers and recurrent neural networks (RNNs) across multiple supervision regimes . We find that the amount of training data required by transformers grows much more rapidly with state-space size and sequence length than for RNNs. Furthermore, we analyze the extent to which learned state-tracking mechanisms are shared across different sequence length s. We show that transformers exhibit negligible or even detrimental weight sharing across lengths, indicating that they learn length-specific solutions in isolation. In contrast, recurrent models exhibit effective amortized learning by sharing weights across lengths, allowing data from one sequence length to improve performance on others. Together, these results demonstrate that state tracking remains a fundamental challenge for transformers, even when training and evaluation distributions match.",
+  "summary_zh": "尽管基于 Transformer 的语言模型在实际应用中取得了显著成功，但近期研究对其执行状态追踪的能力提出了担忧。特别是，越来越多的文献主要通过分布外 (OOD) 泛化（如长度外推）的失败来展示这一局限性。在本研究中，我们将注意力转向这些局限性在分布内影响。我们在多种监督机制下，对 Transformer 和循环神经网络 (RNN) 的数据效率进行了大规模实验研究。我们发现，Transformer 所需的训练数据量随状态空间大小和序列长度的增长速度快于 RNN。此外，我们分析了所学得的状态追踪机制在不同序列长度间的共享程度。我们发现 Transformer 在不同长度间表现出可忽略甚至有害的权重共享，表明其独立地学习针对特定长度的解决方案。相比之下，循环模型通过跨长度共享权重展现出有效的摊销学习，使得来自某一序列长度的数据能够提升在其他长度上的性能。综上所述，这些结果表明，即使训练分布与评估分布一致，状态追踪对 Transformer 而言仍是一项根本性挑战。",
+  "hf_url": "https://huggingface.co/papers/2602.18333",
+  "arxiv_url": "https://arxiv.org/abs/2602.18333",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18333",
+  "github_url": "",
+  "upvotes": 0,
+  "fetched_at": "2026-02-25T02:01:20.297876+00:00"
+}

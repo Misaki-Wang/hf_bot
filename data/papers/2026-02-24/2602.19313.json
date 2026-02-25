@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.19313",
+  "title": "TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics",
+  "authors": [
+    "Shirui Chen",
+    "Cole Harrison",
+    "Ying-Chun Lee",
+    "Angela Jin Yang",
+    "Zhongzheng Ren",
+    "Lillian J. Ratliff",
+    "Jiafei Duan",
+    "Dieter Fox",
+    "Ranjay Krishna"
+  ],
+  "abstract": "TOPReward is a probabilistically grounded temporal value function that uses pretrained video Vision-Language Models to estimate robotic task progress through internal token logits, achieving superior performance in zero-shot evaluations across diverse real-world tasks. While Vision-Language-Action (VLA) models have seen rapid progress in pretraining, their advancement in Reinforcement Learning (RL) remains hampered by low sample efficiency and sparse rewards in real-world settings. Developing generalizable process reward models is essential for providing the fine-grained feedback necessary to bridge this gap, yet existing temporal value functions often fail to generalize beyond their training domains. We introduce TOPReward, a novel, probabilistically grounded temporal value function that leverages the latent world knowledge of pretrained video Vision-Language Models (VLMs) to estimate robotic task progress. Unlike prior methods that prompt VLMs to directly output progress values, which are prone to numerical misrepresentation, TOPReward extracts task progress directly from the VLM's internal token logits . In zero-shot evaluations across 130+ distinct real-world tasks and multiple robot platforms (e.g., Franka, YAM, SO-100/101), TOPReward achieves 0.947 mean Value-Order Correlation (VOC) on Qwen3-VL, dramatically outperforming the state-of-the-art GVL baseline which achieves near-zero correlation on the same open-source model. We further demonstrate that TOPReward serves as a versatile tool for downstream applications, including success detection and reward-aligned behavior cloning .",
+  "summary_en": "TOPReward is a probabilistically grounded temporal value function that uses pretrained video Vision-Language Models to estimate robotic task progress through internal token logits, achieving superior performance in zero-shot evaluations across diverse real-world tasks.",
+  "summary_zh": "TOPReward是一种基于概率的时序价值函数，使用预训练的视频视觉-语言模型通过内部token logits估计机器人任务进度，在多样真实世界任务的零样本评估中表现较优。",
+  "hf_url": "https://huggingface.co/papers/2602.19313",
+  "arxiv_url": "https://arxiv.org/abs/2602.19313",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.19313",
+  "github_url": "https://github.com/TOPReward/TOPReward",
+  "upvotes": 21,
+  "fetched_at": "2026-02-25T02:01:30.436085+00:00"
+}

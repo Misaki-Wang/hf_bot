@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.20093",
+  "title": "ManCAR: Manifold-Constrained Latent Reasoning with Adaptive Test-Time Computation for Sequential Recommendation",
+  "authors": [
+    "Kun Yang",
+    "Yuxuan Zhu",
+    "Yazhe Chen",
+    "Siyao Zheng",
+    "Bangyang Hong",
+    "Kangle Wu",
+    "Yabo Ni",
+    "Anxiang Zeng",
+    "Cong Fu",
+    "Hui Li"
+  ],
+  "abstract": "ManCAR is a recommendation framework that constrains latent reasoning within a collaborative manifold to prevent implausible trajectories and improve accuracy. Sequential recommendation increasingly employs latent multi-step reasoning to enhance test-time computation . Despite empirical gains, existing approaches largely drive intermediate reasoning states via target-dominant objectives without imposing explicit feasibility constraints. This results in latent drift , where reasoning trajectories deviate into implausible regions. We argue that effective recommendation reasoning should instead be viewed as navigation on a collaborative manifold rather than free-form latent refinement. To this end, we propose ManCAR (Manifold-Constrained Adaptive Reasoning ), a principled framework that grounds reasoning within the topology of a global interaction graph . ManCAR constructs a local intent prior from the collaborative neighborhood of a user's recent actions, represented as a distribution over the item simplex . During training, the model progressively aligns its latent predictive distribution with this prior, forcing the reasoning trajectory to remain within the valid manifold. At test time, reasoning proceeds adaptively until the predictive distribution stabilizes, avoiding over-refinement. We provide a variational interpretation of ManCAR to theoretically validate its drift-prevention and adaptive test-time stopping mechanisms. Experiments on seven benchmarks demonstrate that ManCAR consistently outperforms state-of-the-art baselines, achieving up to a 46.88% relative improvement w.r.t. NDCG@10 . Our code is available at https://github.com/FuCongResearchSquad/ManCAR.",
+  "summary_en": "ManCAR is a recommendation framework that constrains latent reasoning within a collaborative manifold to prevent implausible trajectories and improve accuracy.",
+  "summary_zh": "ManCAR 是一种推荐框架，它将潜在推理约束在协作流形内，以防止不合理的轨迹并提高准确性。",
+  "hf_url": "https://huggingface.co/papers/2602.20093",
+  "arxiv_url": "https://arxiv.org/abs/2602.20093",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20093",
+  "github_url": "https://github.com/FuCongResearchSquad/ManCAR",
+  "upvotes": 20,
+  "fetched_at": "2026-02-25T02:01:36.770793+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.19320",
+  "title": "Anatomy of Agentic Memory: Taxonomy and Empirical Analysis of Evaluation and System Limitations",
+  "authors": [
+    "Dongming Jiang",
+    "Yi Li",
+    "Songtao Wei",
+    "Jinxin Yang",
+    "Ayushi Kishore",
+    "Alysa Zhao",
+    "Dingyi Kang",
+    "Xu Hu",
+    "Feng Chen",
+    "Qiannan Li",
+    "Bingzhe Li"
+  ],
+  "abstract": "Agentic memory systems for LLM agents face empirical challenges including inadequate benchmarks, misaligned metrics, and performance variability that limit their practical effectiveness. Agentic memory systems enable large language model (LLM) agents to maintain state across long interactions, supporting long-horizon reasoning and personalization beyond fixed context windows . Despite rapid architectural development , the empirical foundations of these systems remain fragile: existing benchmarks are often underscaled, evaluation metrics are misaligned with semantic utility , performance varies significantly across backbone models, and system-level costs are frequently overlooked. This survey presents a structured analysis of agentic memory from both architectural and system perspectives. We first introduce a concise taxonomy of MAG systems based on four memory structures . Then, we analyze key pain points limiting current systems, including benchmark saturation effects , metric validity and judge sensitivity , backbone-dependent accuracy , and the latency and throughput overhead introduced by memory maintenance. By connecting the memory structure to empirical limitations, this survey clarifies why current agentic memory systems often underperform their theoretical promise and outlines directions for more reliable evaluation and scalable system design .",
+  "summary_en": "Agentic memory systems for LLM agents face empirical challenges including inadequate benchmarks, misaligned metrics, and performance variability that limit their practical effectiveness.",
+  "summary_zh": "面向LLM智能体的Agentic记忆系统面临实证挑战，包括基准测试不足、指标错位和性能波动，限制了其实际效用。",
+  "hf_url": "https://huggingface.co/papers/2602.19320",
+  "arxiv_url": "https://arxiv.org/abs/2602.19320",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.19320",
+  "github_url": "https://github.com/FredJiang0324/Anatomy-of-Agentic-Memory",
+  "upvotes": 5,
+  "fetched_at": "2026-02-25T02:01:31.347114+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.18224",
+  "title": "SimVLA: A Simple VLA Baseline for Robotic Manipulation",
+  "authors": [
+    "Yuankai Luo",
+    "Woping Chen",
+    "Tong Liang",
+    "Baiqiao Wang",
+    "Zhenguo Li"
+  ],
+  "abstract": "SimVLA presents a simplified baseline for Vision-Language-Action models that achieves state-of-the-art performance with fewer parameters while enabling clearer evaluation of architectural improvements. Vision-Language-Action (VLA) models have emerged as a promising paradigm for general-purpose robotic manipulation, leveraging large-scale pre-training to achieve strong performance. The field has rapidly evolved with additional spatial priors and diverse architectural innovations. However, these advancements are often accompanied by varying training recipes and implementation details, which can make it challenging to disentangle the precise source of empirical gains. In this work, we introduce SimVLA, a streamlined baseline designed to establish a transparent reference point for VLA research. By strictly decoupling perception from control , using a standard vision-language backbone and a lightweight action head , and standardizing critical training dynamics , we demonstrate that a minimal design can achieve state-of-the-art performance. Despite having only 0.5B parameters, SimVLA outperforms multi-billion-parameter models on standard simulation benchmarks without robot pretraining. SimVLA also reaches on-par real-robot performance compared to pi0.5. Our results establish SimVLA as a robust, reproducible baseline that enables clear attribution of empirical gains to future architectural innovations. Website: https://frontierrobo.github.io/SimVLA",
+  "summary_en": "SimVLA presents a simplified baseline for Vision-Language-Action models that achieves state-of-the-art performance with fewer parameters while enabling clearer evaluation of architectural improvements.",
+  "summary_zh": "SimVLA 为 Vision-Language-Action 模型提出了一个简化的基线，以更少的参数实现了最先进的性能，同时能够对架构改进进行更清晰的评估。",
+  "hf_url": "https://huggingface.co/papers/2602.18224",
+  "arxiv_url": "https://arxiv.org/abs/2602.18224",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18224",
+  "github_url": "https://github.com/LUOyk1999/SimVLA",
+  "upvotes": 2,
+  "fetched_at": "2026-02-25T02:01:19.072743+00:00"
+}

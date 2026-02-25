@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.16863",
+  "title": "SimToolReal: An Object-Centric Policy for Zero-Shot Dexterous Tool Manipulation",
+  "authors": [
+    "Kushal Kedia",
+    "Tyler Ga Wei Lum",
+    "Jeannette Bohg",
+    "C. Karen Liu"
+  ],
+  "abstract": "SimToolReal enables generalizable robot manipulation of diverse tools through procedural simulation and universal reinforcement learning policies without task-specific training.",
+  "summary_en": "SimToolReal enables generalizable robot manipulation of diverse tools through procedural simulation and universal reinforcement learning policies without task-specific training.",
+  "summary_zh": "SimToolReal 通过程序化仿真和通用强化学习策略，实现了对多样化工具的可泛化机器人操作，无需任务特定训练。",
+  "hf_url": "https://huggingface.co/papers/2602.16863",
+  "arxiv_url": "https://arxiv.org/abs/2602.16863",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16863",
+  "github_url": "https://github.com/tylerlum/simtoolreal",
+  "upvotes": 11,
+  "fetched_at": "2026-02-25T02:01:15.935753+00:00"
+}

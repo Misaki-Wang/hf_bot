@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.18915",
+  "title": "AAVGen: Precision Engineering of Adeno-associated Viral Capsids for Renal Selective Targeting",
+  "authors": [
+    "Mohammadreza Ghaffarzadeh-Esfahani",
+    "Yousof Gheisari"
+  ],
+  "abstract": "AAVGen is a generative AI framework that designs AAV capsids with improved traits through protein language models, supervised fine-tuning, and reinforcement learning techniques. Adeno-associated viruses (AAVs) are promising vectors for gene therapy, but their native serotypes face limitations in tissue tropism, immune evasion, and production efficiency. Engineering capsids to overcome these hurdles is challenging due to the vast sequence space and the difficulty of simultaneously optimizing multiple functional properties. The complexity also adds when it comes to the kidney, which presents unique anatomical barriers and cellular targets that require precise and efficient vector engineering. Here, we present AAVGen, a generative artificial intelligence framework for de novo design of AAV capsids with enhanced multi-trait profiles. AAVGen integrates a protein language model (PLM) with supervised fine-tuning (SFT) and a reinforcement learning technique termed Group Sequence Policy Optimization (GSPO). The model is guided by a composite reward signal derived from three ESM-2-based regression predictors , each trained to predict a key property: production fitness, kidney tropism, and thermostability. Our results demonstrate that AAVGen produces a diverse library of novel VP1 protein sequences. In silico validations revealed that the majority of the generated variants have superior performance across all three employed indices, indicating successful multi-objective optimization . Furthermore, structural analysis via AlphaFold3 confirms that the generated sequences preserve the canonical capsid folding despite sequence diversification. AAVGen establishes a foundation for data-driven viral vector engineering, accelerating the development of next-generation AAV vectors with tailored functional characteristics.",
+  "summary_en": "AAVGen is a generative AI framework that designs AAV capsids with improved traits through protein language models, supervised fine-tuning, and reinforcement learning techniques.",
+  "summary_zh": "AAVGen是一个生成式AI框架，通过蛋白质语言模型、监督微调和强化学习技术设计具有改进性状的AAV衣壳。",
+  "hf_url": "https://huggingface.co/papers/2602.18915",
+  "arxiv_url": "https://arxiv.org/abs/2602.18915",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18915",
+  "github_url": "https://github.com/mohammad-gh009/AAVGen",
+  "upvotes": 1,
+  "fetched_at": "2026-02-25T02:01:25.091473+00:00"
+}

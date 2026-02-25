@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-24",
+  "paper_id": "2602.18640",
+  "title": "Decoding ML Decision: An Agentic Reasoning Framework for Large-Scale Ranking System",
+  "authors": [
+    "Longfei Yun",
+    "Yihan Wu",
+    "Haoran Liu",
+    "Xiaoxuan Liu",
+    "Ziyun Xu",
+    "Yi Wang",
+    "Yang Xia",
+    "Pengfei Wang",
+    "Mingze Gao",
+    "Yunxiang Wang",
+    "Changfan Chen",
+    "Junfeng Pan"
+  ],
+  "abstract": "GEARS presents a framework that reframes ranking optimization as an autonomous discovery process using specialized agent skills and validation hooks to balance algorithmic signals with ranking context while ensuring production reliability. Modern large-scale ranking systems operate within a sophisticated landscape of competing objectives, operational constraints, and evolving product requirements. Progress in this domain is increasingly bottlenecked by the engineering context constraint: the arduous process of translating ambiguous product intent into reasonable, executable, verifiable hypotheses, rather than by modeling techniques alone. We present GEARS ( Generative Engine for Agentic Ranking Systems ), a framework that reframes ranking optimization as an autonomous discovery process within a programmable experimentation environment. Rather than treating optimization as static model selection, GEARS leverages Specialized Agent Skills to encapsulate ranking expert knowledge into reusable reasoning capabilities, enabling operators to steer systems via high-level intent vibe personalization. Furthermore, to ensure production reliability, the framework incorporates validation hooks to enforce statistical robustness and filter out brittle policies that overfit short-term signals. Experimental validation across diverse product surfaces demonstrates that GEARS consistently identifies superior, near- Pareto-efficient policies by synergizing algorithmic signals with deep ranking context while maintaining rigorous deployment stability .",
+  "summary_en": "GEARS presents a framework that reframes ranking optimization as an autonomous discovery process using specialized agent skills and validation hooks to balance algorithmic signals with ranking context while ensuring production reliability.",
+  "summary_zh": "GEARS提出了一个框架，将排序优化重新定义为利用专门智能体技能和验证钩子的自主发现过程，以平衡算法信号与排序上下文，同时确保生产可靠性。",
+  "hf_url": "https://huggingface.co/papers/2602.18640",
+  "arxiv_url": "https://arxiv.org/abs/2602.18640",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18640",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-25T02:01:22.391560+00:00"
+}
