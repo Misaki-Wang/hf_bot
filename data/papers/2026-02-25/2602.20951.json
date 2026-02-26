@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.20951",
+  "title": "See and Fix the Flaws: Enabling VLMs and Diffusion Models to Comprehend Visual Artifacts via Agentic Data Synthesis",
+  "authors": [
+    "Jaehyun Park",
+    "Minyoung Ahn",
+    "Minkyu Kim",
+    "Jonghyun Lee",
+    "Jae-Gil Lee",
+    "Dongmin Park"
+  ],
+  "abstract": "ArtiAgent automates the creation of real-artifact image pairs using three agents for perception, synthesis, and curation in diffusion transformers. Despite recent advances in diffusion models, AI generated images still often contain visual artifacts that compromise realism. Although more thorough pre-training and bigger models might reduce artifacts, there is no assurance that they can be completely eliminated, which makes artifact mitigation a highly crucial area of study. Previous artifact-aware methodologies depend on human-labeled artifact datasets, which are costly and difficult to scale, underscoring the need for an automated approach to reliably acquire artifact-annotated datasets . In this paper, we propose ArtiAgent, which efficiently creates pairs of real and artifact-injected images. It comprises three agents: a perception agent that recognizes and grounds entities and subentities from real images, a synthesis agent that introduces artifacts via artifact injection tools through novel patch-wise embedding manipulation within a diffusion transformer , and a curation agent that filters the synthesized artifacts and generates both local and global explanations for each instance. Using ArtiAgent, we synthesize 100K images with rich artifact annotations and demonstrate both efficacy and versatility across diverse applications. Code is available at link.",
+  "summary_en": "ArtiAgent automates the creation of real-artifact image pairs using three agents for perception, synthesis, and curation in diffusion transformers.",
+  "summary_zh": "ArtiAgent通过感知、合成与筛选三个智能体，在扩散Transformer中自动化创建真实-伪影图像对。",
+  "hf_url": "https://huggingface.co/papers/2602.20951",
+  "arxiv_url": "https://arxiv.org/abs/2602.20951",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20951",
+  "github_url": "https://github.com/krafton-ai/ArtiAgent",
+  "upvotes": 12,
+  "fetched_at": "2026-02-26T01:57:16.081329+00:00"
+}

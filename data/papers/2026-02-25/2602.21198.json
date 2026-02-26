@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.21198",
+  "title": "Learning from Trials and Errors: Reflective Test-Time Planning for Embodied LLMs",
+  "authors": [
+    "Yining Hong",
+    "Huang Huang",
+    "Manling Li",
+    "Li Fei-Fei",
+    "Jiajun Wu",
+    "Yejin Choi"
+  ],
+  "abstract": "Reflective Test-Time Planning enhances robot decision-making by integrating multiple reflection mechanisms that enable learning from experience and improving long-horizon task performance. Embodied LLMs endow robots with high-level task reasoning, but they cannot reflect on what went wrong or why, turning deployment into a sequence of independent trials where mistakes repeat rather than accumulate into experience. Drawing upon human reflective practitioners, we introduce Reflective Test-Time Planning , which integrates two modes of reflection: reflection-in-action , where the agent uses test-time scaling to generate and score multiple candidate actions using internal reflections before execution; and reflection-on-action , which uses test-time training to update both its internal reflection model and its action policy based on external reflections after execution. We also include retrospective reflection , allowing the agent to re-evaluate earlier decisions and perform model updates with hindsight for proper long-horizon credit assignment. Experiments on our newly-designed Long-Horizon Household benchmark and MuJoCo Cupboard Fitting benchmark show significant gains over baseline models, with ablative studies validating the complementary roles of reflection-in-action and reflection-on-action . Qualitative analyses, including real-robot trials, highlight behavioral correction through reflection.",
+  "summary_en": "Reflective Test-Time Planning enhances robot decision-making by integrating multiple reflection mechanisms that enable learning from experience and improving long-horizon task performance.",
+  "summary_zh": "Reflective Test-Time Planning 通过整合多种反思机制来增强机器人决策，这些机制支持从经验中学习并提升长程任务性能。",
+  "hf_url": "https://huggingface.co/papers/2602.21198",
+  "arxiv_url": "https://arxiv.org/abs/2602.21198",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21198",
+  "github_url": "https://github.com/Reflective-Test-Time-Planning/Reflective-Test-Time-Planning",
+  "upvotes": 4,
+  "fetched_at": "2026-02-26T01:57:24.371612+00:00"
+}

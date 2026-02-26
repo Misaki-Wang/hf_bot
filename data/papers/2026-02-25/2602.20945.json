@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.20945",
+  "title": "The Art of Efficient Reasoning: Data, Reward, and Optimization",
+  "authors": [
+    "Taiqiang Wu",
+    "Zenan Zu",
+    "Bo Zhou",
+    "Ngai Wong"
+  ],
+  "abstract": "Large language models benefit from scaled chain-of-thought reasoning through efficient training methods that balance trajectory length and accuracy using reinforcement learning with reward shaping. Large Language Models (LLMs) consistently benefit from scaled Chain-of-Thought (CoT) reasoning, but also suffer from heavy computational overhead. To address this issue, efficient reasoning aims to incentivize short yet accurate thinking trajectories, typically through reward shaping with Reinforcement Learning (RL). In this paper, we systematically investigate the mechanics of efficient reasoning for LLMs. For comprehensive evaluation, we advocate for more fine-grained metrics, including length distribution conditioned on correctness and performance across a wide spectrum of token budget s ranging from 2k to 32k. First, we reveal that the training process follows a two-stage paradigm: length adaptation and reasoning refinement . After that, we conduct extensive experiments (about 0.2 million GPU hours) in a unified protocol, deconstructing training prompts and rollouts, reward shaping , and optimization strategies. In particular, a key finding is to train on relatively easier prompts, ensuring the density of positive reward signals and thus avoiding the length collapse . Meanwhile, the learned length bias can be generalized across domains. We distill all findings into valuable insights and practical guidelines, and further validate them across the Qwen3 series, ranging from 0.6B to 30B, demonstrating the robustness and generalization .",
+  "summary_en": "Large language models benefit from scaled chain-of-thought reasoning through efficient training methods that balance trajectory length and accuracy using reinforcement learning with reward shaping.",
+  "summary_zh": "大语言模型通过高效的训练方法从规模化思维链推理中获益，这些方法利用带奖励塑造的强化学习来平衡轨迹长度和准确性。",
+  "hf_url": "https://huggingface.co/papers/2602.20945",
+  "arxiv_url": "https://arxiv.org/abs/2602.20945",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20945",
+  "github_url": "",
+  "upvotes": 4,
+  "fetched_at": "2026-02-26T01:57:15.203855+00:00"
+}

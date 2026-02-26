@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.21202",
+  "title": "Multi-Vector Index Compression in Any Modality",
+  "authors": [
+    "Hanxiang Qin",
+    "Alexander Martin",
+    "Rohan Jha",
+    "Chunsheng Zuo",
+    "Reno Kriz",
+    "Benjamin Van Durme"
+  ],
+  "abstract": "Attention-guided clustering method for compressing multi-vector document representations in late interaction retrieval tasks shows superior performance compared to other compression techniques across text, visual-document, and video modalities. We study efficient multi-vector retrieval for late interaction in any modality. Late interaction has emerged as a dominant paradigm for information retrieval in text, images, visual documents, and videos, but its computation and storage costs grow linearly with document length, making it costly for image-, video-, and audio-rich corpora. To address this limitation, we explore query-agnostic methods for compressing multi-vector document representations under a constant vector budget. We introduce four approaches for index compression : sequence resizing , memory tokens , hierarchical pooling , and a novel attention-guided clustering (AGC). AGC uses an attention-guided mechanism to identify the most semantically salient regions of a document as cluster centroids and to weight token aggregation. Evaluating these methods on retrieval tasks spanning text (BEIR), visual-document (ViDoRe), and video (MSR-VTT, MultiVENT 2.0), we show that attention-guided clustering consistently outperforms other parameterized compression methods ( sequence resizing and memory tokens ), provides greater flexibility in index size than non-parametric hierarchical clustering, and achieves competitive or improved performance compared to a full, uncompressed index. The source code is available at: github.com/hanxiangqin/omni-col-press.",
+  "summary_en": "Attention-guided clustering method for compressing multi-vector document representations in late interaction retrieval tasks shows superior performance compared to other compression techniques across text, visual-document, and video modalities.",
+  "summary_zh": "用于后期交互检索任务中多向量文档表示压缩的注意力引导聚类方法，在文本、视觉文档和视频模态上相比其他压缩技术表现出更优性能。",
+  "hf_url": "https://huggingface.co/papers/2602.21202",
+  "arxiv_url": "https://arxiv.org/abs/2602.21202",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21202",
+  "github_url": "https://github.com/hanxiangqin/omni-col-press",
+  "upvotes": 18,
+  "fetched_at": "2026-02-26T01:57:27.371290+00:00"
+}

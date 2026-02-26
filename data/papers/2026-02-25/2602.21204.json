@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.21204",
+  "title": "Test-Time Training with KV Binding Is Secretly Linear Attention",
+  "authors": [
+    "Junchen Liu",
+    "Sven Elflein",
+    "Or Litany",
+    "Zan Gojcic",
+    "Ruilong Li"
+  ],
+  "abstract": "Test-time training is reinterpreted as learned linear attention rather than memorization, offering architectural simplifications and improved efficiency. Test-time training (TTT) with KV binding as sequence modeling layer is commonly interpreted as a form of online meta-learning that memorizes a key-value mapping at test time. However, our analysis reveals multiple phenomena that contradict this memorization-based interpretation. Motivated by these findings, we revisit the formulation of TTT and show that a broad class of TTT architectures can be expressed as a form of learned linear attention operator. Beyond explaining previously puzzling model behaviors, this perspective yields multiple practical benefits: it enables principled architectural simplifications , admits fully parallel formulations that preserve performance while improving efficiency, and provides a systematic reduction of diverse TTT variants to a standard linear attention form. Overall, our results reframe TTT not as test-time memorization, but as learned linear attention with enhanced representational capacity .",
+  "summary_en": "Test-time training is reinterpreted as learned linear attention rather than memorization, offering architectural simplifications and improved efficiency.",
+  "summary_zh": "测试时训练被重新诠释为学习到的线性注意力而非记忆，带来了架构简化和效率提升。",
+  "hf_url": "https://huggingface.co/papers/2602.21204",
+  "arxiv_url": "https://arxiv.org/abs/2602.21204",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21204",
+  "github_url": "",
+  "upvotes": 21,
+  "fetched_at": "2026-02-26T01:57:28.371504+00:00"
+}

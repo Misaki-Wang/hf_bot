@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.20540",
+  "title": "Generative AI and Machine Learning Collaboration for Container Dwell Time Prediction via Data Standardization",
+  "authors": [
+    "Minseop Kim",
+    "Takhyeong Kim",
+    "Taekhyun Park",
+    "Hanbyeol Park",
+    "Hyerim Bae"
+  ],
+  "abstract": "A collaborative framework integrating generative artificial intelligence with machine learning improves container dwell time prediction by standardizing unstructured text data, leading to reduced rehandling operations in container terminals. Import container dwell time (ICDT) prediction is a key task for improving productivity in container terminals, as accurate predictions enable the reduction of container re-handling operations by yard cranes. Achieving this objective requires accurately predicting the dwell time of individual containers. However, the primary determinants of dwell time-owner information and cargo information-are recorded as unstructured text , which limits their effective use in machine learning models. This study addresses this limitation by proposing a collaborative framework that integrates generative artificial intelligence (Gen AI) with machine learning . The proposed framework employs Gen AI to standardize unstructured information into standard international codes, with dynamic re-prediction triggered by electronic data interchange state updates, enabling the machine learning model to predict ICDT accurately. Extensive experiments conducted on real container terminal data demonstrate that the proposed methodology achieves a 13.88% improvement in mean absolute error compared to conventional models that do not utilize standardized information. Furthermore, applying the improved predictions to container stacking strategies achieves up to 14.68% reduction in the number of relocations, thereby empirically validating the potential of Gen AI to enhance productivity in container terminal operations. Overall, this study provides both technical and methodological insights into the adoption of Gen AI in port logistics and its effectiveness.",
+  "summary_en": "A collaborative framework integrating generative artificial intelligence with machine learning improves container dwell time prediction by standardizing unstructured text data, leading to reduced rehandling operations in container terminals.",
+  "summary_zh": "一种整合生成式人工智能与机器学习的协作框架，通过标准化非结构化文本数据改进了集装箱滞留时间预测，进而减少了集装箱码头的倒箱作业。",
+  "hf_url": "https://huggingface.co/papers/2602.20540",
+  "arxiv_url": "https://arxiv.org/abs/2602.20540",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20540",
+  "github_url": "",
+  "upvotes": 0,
+  "fetched_at": "2026-02-26T01:57:09.150844+00:00"
+}

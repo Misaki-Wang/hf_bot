@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.16932",
+  "title": "RankEvolve: Automating the Discovery of Retrieval Algorithms via LLM-Driven Evolution",
+  "authors": [
+    "Jinming Nian",
+    "Fangchen Li",
+    "Dae Hoon Park",
+    "Yi Fang"
+  ],
+  "abstract": "Large language models guided by evaluators and evolutionary search can automatically discover improved lexical retrieval algorithms through program evolution techniques.",
+  "summary_en": "Large language models guided by evaluators and evolutionary search can automatically discover improved lexical retrieval algorithms through program evolution techniques.",
+  "summary_zh": "由评估器与进化搜索引导的大型语言模型可通过程序进化技术自动发现改进的词汇检索算法。",
+  "hf_url": "https://huggingface.co/papers/2602.16932",
+  "arxiv_url": "https://arxiv.org/abs/2602.16932",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16932",
+  "github_url": "https://github.com/fangchenli/ranking-evolved",
+  "upvotes": 3,
+  "fetched_at": "2026-02-26T01:56:58.385878+00:00"
+}

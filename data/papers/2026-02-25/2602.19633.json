@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.19633",
+  "title": "TAPE: Tool-Guided Adaptive Planning and Constrained Execution in Language Model Agents",
+  "authors": [
+    "Jongwon Jeong",
+    "Jungtaek Kim",
+    "Kangwook Lee"
+  ],
+  "abstract": "TAPE framework improves language model agent performance in complex environments through enhanced planning and constrained execution strategies. Language Model (LM) agents have demonstrated remarkable capabilities in solving tasks that require multiple interactions with the environment. However, they remain vulnerable in environments where a single error often leads to irrecoverable failure, particularly under strict feasibility constraints. We systematically analyze existing agent frameworks , identifying imperfect planning and stochastic execution as the primary causes. To address these challenges, we propose Tool-guided Adaptive Planning with constrained Execution (TAPE). TAPE enhances planning capability by aggregating multiple plans into a graph and employing an external solver to identify a feasible path . During execution, TAPE employs constrained decoding to reduce sampling noise, while adaptively re- planning whenever environmental feedback deviates from the intended state. Experiments across Sokoban, ALFWorld, MuSiQue, and GSM8K-Hard demonstrate that TAPE consistently outperforms existing frameworks, with particularly large gains on hard settings, improving success rates by 21.0 percentage points on hard settings on average, and by 20.0 percentage points for weaker base models on average. Code and data available at here.",
+  "summary_en": "TAPE framework improves language model agent performance in complex environments through enhanced planning and constrained execution strategies.",
+  "summary_zh": "TAPE框架通过增强的规划与受约束的执行策略，提升语言模型智能体在复杂环境中的性能。",
+  "hf_url": "https://huggingface.co/papers/2602.19633",
+  "arxiv_url": "https://arxiv.org/abs/2602.19633",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.19633",
+  "github_url": "https://github.com/UW-Madison-Lee-Lab/TAPE",
+  "upvotes": 4,
+  "fetched_at": "2026-02-26T01:57:04.854243+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.12192",
+  "title": "Query-focused and Memory-aware Reranker for Long Context Processing",
+  "authors": [
+    "Yuqing Li",
+    "Jiangnan Li",
+    "Mo Yu",
+    "Guoxuan Ding",
+    "Zheng Lin",
+    "Weiping Wang",
+    "Jie Zhou"
+  ],
+  "abstract": "A lightweight reranking framework uses attention scores from selected heads to estimate passage-query relevance, achieving strong performance across multiple domains and benchmarks. Built upon the existing analysis of retrieval heads in large language models, we propose an alternative reranking framework that trains models to estimate passage-query relevance using the attention scores of selected heads. This approach provides a listwise solution that leverages holistic information within the entire candidate shortlist during ranking. At the same time, it naturally produces continuous relevance scores , enabling training on arbitrary retrieval datasets without requiring Likert-scale supervision . Our framework is lightweight and effective, requiring only small-scale models (e.g., 4B parameters) to achieve strong performance. Extensive experiments demonstrate that our method outperforms existing state-of-the-art pointwise and listwise rerankers across multiple domains, including Wikipedia and long narrative datasets. It further establishes a new state-of-the-art on the LoCoMo benchmark that assesses the capabilities of dialogue understanding and memory usage . We further demonstrate that our framework supports flexible extensions. For example, augmenting candidate passages with contextual information further improves ranking accuracy, while training attention heads from middle layers enhances efficiency without sacrificing performance.",
+  "summary_en": "A lightweight reranking framework uses attention scores from selected heads to estimate passage-query relevance, achieving strong performance across multiple domains and benchmarks.",
+  "summary_zh": "轻量级重排序框架使用选定头的注意力分数估计段落-查询相关性，在多个领域和基准测试上取得了良好性能。",
+  "hf_url": "https://huggingface.co/papers/2602.12192",
+  "arxiv_url": "https://arxiv.org/abs/2602.12192",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12192",
+  "github_url": "",
+  "upvotes": 35,
+  "fetched_at": "2026-02-26T01:56:52.921629+00:00"
+}

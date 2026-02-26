@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.20309",
+  "title": "QuantVLA: Scale-Calibrated Post-Training Quantization for Vision-Language-Action Models",
+  "authors": [
+    "Jingxuan Zhang",
+    "Yunta Hsieh",
+    "Zhongwei Wang",
+    "Haokun Lin",
+    "Xin Wang",
+    "Ziqi Wang",
+    "Yingtie Lei",
+    "Mi Zhang"
+  ],
+  "abstract": "QuantVLA is a post-training quantization framework for vision-language-action models that enables efficient deployment through selective quantization, attention temperature matching, and output head balancing while maintaining performance and reducing memory and latency. Vision-language-action (VLA) models unify perception, language, and control for embodied agents but face significant challenges in practical deployment due to rapidly increasing compute and memory demands, especially as models scale to longer horizons and larger backbones. To address these bottlenecks, we introduce QuantVLA, a training-free post-training quantization (PTQ) framework that, to our knowledge, is the first PTQ approach for VLA systems and the first to successfully quantize a diffusion transformer (DiT) action head. QuantVLA incorporates three scale-calibrated components: (1) a selective quantization layout that integerizes all linear layers in both the language backbone and the DiT while keeping attention projections in floating point to preserve the original operator schedule; (2) attention temperature matching , a lightweight per-head scaling mechanism that stabilizes attention logits and is folded into the dequantization scales at inference; and (3) output head balancing , a per-layer residual interface calibration that mitigates post-projection energy drift. The framework requires no additional training, uses only a small unlabeled calibration buffer , and supports integer kernels for low-bit weights and activations while leaving the architecture unchanged. Across representative VLA models on LIBERO, QuantVLA exceeds the task success rates of full-precision baselines, achieves about 70% relative memory savings on the quantized components, and delivers a 1.22x speedup in end-to-end inference latency , providing a practical pathway toward scalable low-bit embodied intelligence under strict compute, memory, and power constraints.",
+  "summary_en": "QuantVLA is a post-training quantization framework for vision-language-action models that enables efficient deployment through selective quantization, attention temperature matching, and output head balancing while maintaining performance and reducing memory and latency.",
+  "summary_zh": "QuantVLA是一种面向视觉-语言-动作模型的训练后量化框架，通过选择性量化、注意力温度匹配和输出头平衡，在保持性能的同时减少内存占用和延迟，实现高效部署。",
+  "hf_url": "https://huggingface.co/papers/2602.20309",
+  "arxiv_url": "https://arxiv.org/abs/2602.20309",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20309",
+  "github_url": "",
+  "upvotes": 8,
+  "fetched_at": "2026-02-26T01:57:06.317546+00:00"
+}

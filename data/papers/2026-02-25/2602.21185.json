@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.21185",
+  "title": "The Diffusion Duality, Chapter II: Ψ-Samplers and Efficient Curriculum",
+  "authors": [
+    "Justin Deschenaux",
+    "Caglar Gulcehre",
+    "Subham Sekhar Sahoo"
+  ],
+  "abstract": "Discrete diffusion models with predictor-corrector samplers surpass traditional methods in generation quality and efficiency, challenging assumptions about masked diffusion's necessity in language modeling. Uniform-state discrete diffusion models excel at few-step generation and guidance due to their ability to self-correct, making them preferred over autoregressive or Masked diffusion models in these settings. However, their sampling quality plateaus with ancestral samplers as the number of steps increases. We introduce a family of Predictor-Corrector (PC) samplers for discrete diffusion that generalize prior methods and apply to arbitrary noise processes. When paired with uniform-state diffusion, our samplers outperform ancestral sampling on both language and image modeling, achieving lower generative perplexity at matched unigram entropy on OpenWebText and better FID / IS scores on CIFAR10. Crucially, unlike conventional samplers, our PC methods continue to improve with more sampling steps. Taken together, these findings call into question the assumption that Masked diffusion is the inevitable future of diffusion-based language modeling. Beyond sampling, we develop a memory-efficient curriculum for the Gaussian relaxation training phase, reducing training time by 25% and memory by 33% compared to Duo while maintaining comparable perplexity on OpenWebText and LM1B and strong downstream performance. We release code, checkpoints, and a video-tutorial on: https://s-sahoo.com/duo-ch2",
+  "summary_en": "Discrete diffusion models with predictor-corrector samplers surpass traditional methods in generation quality and efficiency, challenging assumptions about masked diffusion's necessity in language modeling.",
+  "summary_zh": "采用预测-校正采样器的离散扩散模型在生成质量和效率方面超越传统方法，对语言建模中掩码扩散必要性的假设提出挑战。",
+  "hf_url": "https://huggingface.co/papers/2602.21185",
+  "arxiv_url": "https://arxiv.org/abs/2602.21185",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21185",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-26T01:57:20.566629+00:00"
+}

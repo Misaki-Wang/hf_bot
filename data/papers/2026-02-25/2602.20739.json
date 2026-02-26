@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.20739",
+  "title": "PyVision-RL: Forging Open Agentic Vision Models via RL",
+  "authors": [
+    "Shitian Zhao",
+    "Shaoheng Lin",
+    "Ming Li",
+    "Haoquan Zhang",
+    "Wenshuo Peng",
+    "Kaipeng Zhang",
+    "Chen Wei"
+  ],
+  "abstract": "PyVision-RL framework addresses interaction collapse in multimodal models through enhanced reinforcement learning techniques and efficient video processing strategies. Reinforcement learning for agentic multimodal models often suffers from interaction collapse , where models learn to reduce tool usage and multi-turn reasoning, limiting the benefits of agentic behavior. We introduce PyVision-RL, a reinforcement learning framework for open-weight multimodal models that stabilizes training and sustains interaction. Our approach combines an oversampling-filtering-ranking rollout strategy with an accumulative tool reward to prevent collapse and encourage multi-turn tool use. Using a unified training pipeline , we develop PyVision-Image and PyVision-Video for image and video understanding. For video reasoning, PyVision-Video employs on-demand context construction , selectively sampling task-relevant frames during reasoning to significantly reduce visual token usage . Experiments show strong performance and improved efficiency, demonstrating that sustained interaction and on-demand visual processing are critical for scalable multimodal agents.",
+  "summary_en": "PyVision-RL framework addresses interaction collapse in multimodal models through enhanced reinforcement learning techniques and efficient video processing strategies.",
+  "summary_zh": "PyVision-RL框架通过增强的强化学习技术和高效的视频处理策略，解决了多模态模型中的交互崩溃问题。",
+  "hf_url": "https://huggingface.co/papers/2602.20739",
+  "arxiv_url": "https://arxiv.org/abs/2602.20739",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20739",
+  "github_url": "https://github.com/agents-x-project/PyVision-RL",
+  "upvotes": 22,
+  "fetched_at": "2026-02-26T01:57:11.212872+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.20743",
+  "title": "Adaptive Text Anonymization: Learning Privacy-Utility Trade-offs via Prompt Optimization",
+  "authors": [
+    "Gabriel Loiseau",
+    "Damien Sileo",
+    "Damien Riquet",
+    "Maxime Meyer",
+    "Marc Tommasi"
+  ],
+  "abstract": "Adaptive text anonymization framework automatically adjusts anonymization strategies based on privacy-utility requirements using prompt optimization for language models across diverse domains and constraints. Anonymizing textual documents is a highly context-sensitive problem: the appropriate balance between privacy protection and utility preservation varies with the data domain, privacy objectives, and downstream application. However, existing anonymization methods rely on static, manually designed strategies that lack the flexibility to adjust to diverse requirements and often fail to generalize across domains. We introduce adaptive text anonymization , a new task formulation in which anonymization strategies are automatically adapted to specific privacy-utility requirements. We propose a framework for task-specific prompt optimization that automatically constructs anonymization instructions for language models , enabling adaptation to different privacy goals, domains, and downstream usage patterns. To evaluate our approach, we present a benchmark spanning five datasets with diverse domains, privacy constraints, and utility objectives. Across all evaluated settings, our framework consistently achieves a better privacy-utility trade-off than existing baselines, while remaining computationally efficient and effective on open-source language models , with performance comparable to larger closed-source models. Additionally, we show that our method can discover novel anonymization strategies that explore different points along the privacy-utility trade-off frontier.",
+  "summary_en": "Adaptive text anonymization framework automatically adjusts anonymization strategies based on privacy-utility requirements using prompt optimization for language models across diverse domains and constraints.",
+  "summary_zh": "自适应文本匿名化框架基于隐私-效用需求，利用提示优化针对语言模型，跨不同领域和约束自动调整匿名化策略。",
+  "hf_url": "https://huggingface.co/papers/2602.20743",
+  "arxiv_url": "https://arxiv.org/abs/2602.20743",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20743",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-26T01:57:12.096564+00:00"
+}

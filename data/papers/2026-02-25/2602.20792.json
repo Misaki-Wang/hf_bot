@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.20792",
+  "title": "SIMSPINE: A Biomechanics-Aware Simulation Framework for 3D Spine Motion Annotation and Benchmarking",
+  "authors": [
+    "Muhammad Saif Ullah Khan",
+    "Didier Stricker"
+  ],
+  "abstract": "A biomechanics-aware keypoint simulation framework and the first open dataset, SIMSPINE, provide anatomically consistent 3D spinal annotations for natural full-body motions, enabling data-driven learning of vertebral kinematics and improving spine motion estimation accuracy. Modeling spinal motion is fundamental to understanding human biomechanics, yet remains underexplored in computer vision due to the spine's complex multi-joint kinematics and the lack of large-scale 3D annotations. We present a biomechanics-aware keypoint simulation framework that augments existing human pose datasets with anatomically consistent 3D spinal keypoints derived from musculoskeletal modeling . Using this framework, we create the first open dataset, named SIMSPINE, which provides sparse vertebra-level 3D spinal annotations for natural full-body motions in indoor multi-camera capture without external restraints. With 2.14 million frames, this enables data-driven learning of vertebral kinematics from subtle posture variations and bridges the gap between musculoskeletal simulation and computer vision. In addition, we release pretrained baselines covering fine-tuned 2D detectors , monocular 3D pose lifting models , and multi-view reconstruction pipelines , establishing a unified benchmark for biomechanically valid spine motion estimation. Specifically, our 2D spine baselines improve the state-of-the-art from 0.63 to 0.80 AUC in controlled environments, and from 0.91 to 0.93 AP for in-the-wild spine tracking. Together, the simulation framework and SIMSPINE dataset advance research in vision-based biomechanics, motion analysis, and digital human modeling by enabling reproducible, anatomically grounded 3D spine estimation under natural conditions.",
+  "summary_en": "A biomechanics-aware keypoint simulation framework and the first open dataset, SIMSPINE, provide anatomically consistent 3D spinal annotations for natural full-body motions, enabling data-driven learning of vertebral kinematics and improving spine motion estimation accuracy.",
+  "summary_zh": "一种生物力学感知的关键点模拟框架及首个开放数据集SIMSPINE，为自然全身运动提供了解剖学一致的三维脊柱标注，实现了椎体运动学的数据驱动学习，并提升了脊柱运动估计精度。",
+  "hf_url": "https://huggingface.co/papers/2602.20792",
+  "arxiv_url": "https://arxiv.org/abs/2602.20792",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20792",
+  "github_url": "https://github.com/dfki-av/simspine",
+  "upvotes": 2,
+  "fetched_at": "2026-02-26T01:57:12.873560+00:00"
+}

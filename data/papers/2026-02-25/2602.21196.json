@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.21196",
+  "title": "Untied Ulysses: Memory-Efficient Context Parallelism via Headwise Chunking",
+  "authors": [
+    "Ravi Ghadia",
+    "Maksim Abraham",
+    "Sergei Vorobyov",
+    "Max Ryabinin"
+  ],
+  "abstract": "UPipe enables efficient processing of long sequences in Transformer models through fine-grained chunking at the attention head level, significantly reducing activation memory usage while maintaining training speed. Efficiently processing long sequences with Transformer models usually requires splitting the computations across accelerators via context parallelism . The dominant approaches in this family of methods, such as Ring Attention or DeepSpeed Ulysses , enable scaling over the context dimension but do not focus on memory efficiency, which limits the sequence lengths they can support. More advanced techniques, such as Fully Pipelined Distributed Transformer or activation offloading , can further extend the possible context length at the cost of training throughput. In this paper, we present UPipe, a simple yet effective context parallelism technique that performs fine-grained chunking at the attention head level. This technique significantly reduces the activation memory usage of self-attention , breaking the activation memory barrier and unlocking much longer context lengths. Our approach reduces intermediate tensor memory usage in the attention layer by as much as 87.5% for 32B Transformers, while matching previous context parallelism techniques in terms of training speed. UPipe can support the context length of 5M tokens when training Llama3-8B on a single 8timesH100 node, improving upon prior methods by over 25%.",
+  "summary_en": "UPipe enables efficient processing of long sequences in Transformer models through fine-grained chunking at the attention head level, significantly reducing activation memory usage while maintaining training speed.",
+  "summary_zh": "UPipe 通过在注意力头级别进行细粒度分块，实现了 Transformer 模型中长序列的高效处理，在显著降低激活内存占用的同时保持了训练速度。",
+  "hf_url": "https://huggingface.co/papers/2602.21196",
+  "arxiv_url": "https://arxiv.org/abs/2602.21196",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21196",
+  "github_url": "https://github.com/togethercomputer/Untied-Ulysses",
+  "upvotes": 3,
+  "fetched_at": "2026-02-26T01:57:23.083392+00:00"
+}

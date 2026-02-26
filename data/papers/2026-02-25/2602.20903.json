@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.20903",
+  "title": "TextPecker: Rewarding Structural Anomaly Quantification for Enhancing Visual Text Rendering",
+  "authors": [
+    "Hanshen Zhu",
+    "Yuliang Liu",
+    "Xuecheng Wu",
+    "An-Lan Wang",
+    "Hao Feng",
+    "Dingkang Yang",
+    "Chao Feng",
+    "Can Huang",
+    "Jingqun Tang",
+    "Xiang Bai"
+  ],
+  "abstract": "TextPecker enhances visual text rendering by addressing structural anomalies through a reinforcement learning approach that improves text-to-image generation quality and fidelity. Visual Text Rendering (VTR) remains a critical challenge in text-to-image generation , where even advanced models frequently produce text with structural anomalies such as distortion, blurriness, and misalignment. However, we find that leading MLLMs and specialist OCR models largely fail to perceive these structural anomalies , creating a critical bottleneck for both VTR evaluation and RL-based optimization. As a result, even state-of-the-art generators (e.g., SeedDream4.0, Qwen-Image) still struggle to render structurally faithful text. To address this, we propose TextPecker , a plug-and-play structural anomaly perceptive RL strategy that mitigates noisy reward signals and works with any textto-image generator. To enable this capability, we construct a recognition dataset with character-level structural-anomaly annotations and develop a stroke-editing synthesis engine to expand structural-error coverage. Experiments show that TextPecker consistently improves diverse text-to-image models; even on the well-optimized Qwen-Image, it significantly yields average gains of 4% in structural fidelity and 8.7% in semantic alignment for Chinese text rendering, establishing a new state-of-the-art in high-fidelity VTR. Our work fills a gap in VTR optimization, providing a foundational step towards reliable and structural faithful visual text generation.",
+  "summary_en": "TextPecker enhances visual text rendering by addressing structural anomalies through a reinforcement learning approach that improves text-to-image generation quality and fidelity.",
+  "summary_zh": "TextPecker 通过强化学习方法解决结构异常，从而增强视觉文本渲染，提升文本到图像生成的质量与保真度。",
+  "hf_url": "https://huggingface.co/papers/2602.20903",
+  "arxiv_url": "https://arxiv.org/abs/2602.20903",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20903",
+  "github_url": "https://github.com/CIawevy/TextPecker",
+  "upvotes": 0,
+  "fetched_at": "2026-02-26T01:57:14.187928+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.20424",
+  "title": "Implicit Intelligence -- Evaluating Agents on What Users Don't Say",
+  "authors": [
+    "Ved Sirdeshmukh",
+    "Marc Wetter"
+  ],
+  "abstract": "AI agents struggle to interpret implicitly specified real-world requests that require contextual reasoning beyond explicit instructions, as demonstrated by an evaluation framework using interactive YAML-defined worlds.",
+  "summary_en": "AI agents struggle to interpret implicitly specified real-world requests that require contextual reasoning beyond explicit instructions, as demonstrated by an evaluation framework using interactive YAML-defined worlds.",
+  "summary_zh": "AI 智能体难以解读需要超出显式指令的上下文推理的隐式指定现实世界请求，正如使用交互式 YAML 定义世界的评估框架所展示的那样。",
+  "hf_url": "https://huggingface.co/papers/2602.20424",
+  "arxiv_url": "https://arxiv.org/abs/2602.20424",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20424",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-26T01:57:07.700262+00:00"
+}

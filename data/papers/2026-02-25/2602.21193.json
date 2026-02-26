@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.21193",
+  "title": "On Data Engineering for Scaling LLM Terminal Capabilities",
+  "authors": [
+    "Renjie Pi",
+    "Grace Lam",
+    "Mohammad Shoeybi",
+    "Pooya Jannaty",
+    "Bryan Catanzaro",
+    "Wei Ping"
+  ],
+  "abstract": "Researchers developed a synthetic task generation pipeline and analyzed data strategies to improve terminal agent performance, creating a large-scale dataset and models that outperform larger counterparts on benchmark tests. Despite rapid recent progress in the terminal capabilities of large language models , the training data strategies behind state-of-the-art terminal agents remain largely undisclosed. We address this gap through a systematic study of data engineering practices for terminal agents , making two key contributions: (1) Terminal-Task-Gen , a lightweight synthetic task generation pipeline that supports seed-based and skill-based task construction, and (2) a comprehensive analysis of data and training strategies, including filtering, curriculum learning , long context training , and scaling behavior . Our pipeline yields Terminal-Corpus , a large-scale open-source dataset for terminal tasks. Using this dataset, we train Nemotron-Terminal , a family of models initialized from Qwen3(8B, 14B, 32B) that achieve substantial gains on Terminal-Bench 2.0 : Nemotron-Terminal -8B improves from 2.5% to 13.0% Nemotron-Terminal -14B improves from 4.0% to 20.2%, and Nemotron-Terminal -32B improves from 3.4% to 27.4%, matching the performance of significantly larger models. To accelerate research in this domain, we open-source our model checkpoints and most of our synthetic datasets at https://huggingface.co/collections/nvidia/ nemotron-terminal .",
+  "summary_en": "Researchers developed a synthetic task generation pipeline and analyzed data strategies to improve terminal agent performance, creating a large-scale dataset and models that outperform larger counterparts on benchmark tests.",
+  "summary_zh": "研究人员开发了合成任务生成流程，并分析数据策略以提升终端 agent 性能，构建了大规模数据集与模型，在基准测试中超越了规模更大的同类模型。",
+  "hf_url": "https://huggingface.co/papers/2602.21193",
+  "arxiv_url": "https://arxiv.org/abs/2602.21193",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21193",
+  "github_url": "",
+  "upvotes": 64,
+  "fetched_at": "2026-02-26T01:57:21.980776+00:00"
+}

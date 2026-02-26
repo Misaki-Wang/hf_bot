@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.19020",
+  "title": "Learning to Detect Language Model Training Data via Active Reconstruction",
+  "authors": [
+    "Junjie Oscar Yin",
+    "John X. Morris",
+    "Vitaly Shmatikov",
+    "Sewon Min",
+    "Hannaneh Hajishirzi"
+  ],
+  "abstract": "Active Data Reconstruction Attack uses reinforcement learning to identify training data by measuring the reconstructibility of text from model behavior, outperforming existing membership inference attacks. Detecting LLM training data is generally framed as a membership inference attack (MIA) problem. However, conventional MIAs operate passively on fixed model weights, using log-likelihoods or text generations. In this work, we introduce Active Data Reconstruction Attack (ADRA), a family of MIA that actively induces a model to reconstruct a given text through training. We hypothesize that training data are more reconstructible than non-members, and the difference in their reconstructibility can be exploited for membership inference. Motivated by findings that reinforcement learning (RL) sharpens behaviors already encoded in weights, we leverage on-policy RL to actively elicit data reconstruction by finetuning a policy initialized from the target model. To effectively use RL for MIA, we design reconstruction metrics and contrastive rewards . The resulting algorithms, ADRA and its adaptive variant ADRA+, improve both reconstruction and detection given a pool of candidate data. Experiments show that our methods consistently outperform existing MIAs in detecting pre-training , post-training , and distillation data , with an average improvement of 10.7\\% over the previous runner-up. In particular, \\MethodPlus~improves over Min-K\\%++ by 18.8\\% on BookMIA for pre-training detection and by 7.6\\% on AIME for post-training detection.",
+  "summary_en": "Active Data Reconstruction Attack uses reinforcement learning to identify training data by measuring the reconstructibility of text from model behavior, outperforming existing membership inference attacks.",
+  "summary_zh": "主动数据重建攻击利用强化学习，通过度量文本从模型行为中的可重建性来识别训练数据，性能优于现有的成员推理攻击。",
+  "hf_url": "https://huggingface.co/papers/2602.19020",
+  "arxiv_url": "https://arxiv.org/abs/2602.19020",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.19020",
+  "github_url": "https://github.com/oseyosey/MIA-RL",
+  "upvotes": 1,
+  "fetched_at": "2026-02-26T01:57:03.596155+00:00"
+}

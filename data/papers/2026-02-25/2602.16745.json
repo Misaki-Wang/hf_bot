@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.16745",
+  "title": "PETS: A Principled Framework Towards Optimal Trajectory Allocation for Efficient Test-Time Self-Consistency",
+  "authors": [
+    "Zhangyi Liu",
+    "Huaizhi Qu",
+    "Xiaowei Yin",
+    "He Sun",
+    "Yanjun Han",
+    "Tianlong Chen",
+    "Zhun Deng"
+  ],
+  "abstract": "Principled and efficient test-time self-consistency method improves model performance by optimizing trajectory allocation through an optimization framework that reduces sampling requirements while maintaining accuracy. Test-time scaling can improve model performance by aggregating stochastic reasoning trajectories . However, achieving sample-efficient test-time self-consistency under a limited budget remains an open challenge. We introduce PETS (Principled and Efficient Test-TimeSelf-Consistency), which initiates a principled study of trajectory allocation through an optimization framework. Central to our approach is the self-consistency rate , a new measure defined as agreement with the infinite-budget majority vote. This formulation makes sample-efficient test-time allocation theoretically grounded and amenable to rigorous analysis. We study both offline and online settings. In the offline regime , where all questions are known in advance, we connect trajectory allocation to crowdsourcing , a classic and well-developed area, by modeling reasoning traces as workers. This perspective allows us to leverage rich existing theory, yielding theoretical guarantees and an efficient majority-voting-based allocation algorithm. In the online streaming regime , where questions arrive sequentially and allocations must be made on the fly, we propose a novel method inspired by the offline framework. Our approach adapts budgets to question difficulty while preserving strong theoretical guarantees and computational efficiency. Experiments show that PETS consistently outperforms uniform allocation. On GPQA, PETS achieves perfect self-consistency in both settings while reducing the sampling budget by up to 75% (offline) and 55% (online) relative to uniform allocation. Code is available at https://github.com/ZDCSlab/PETS.",
+  "summary_en": "Principled and efficient test-time self-consistency method improves model performance by optimizing trajectory allocation through an optimization framework that reduces sampling requirements while maintaining accuracy.",
+  "summary_zh": "原则性且高效的测试时自一致性方法通过优化框架优化轨迹分配，在减少采样需求的同时保持准确性，从而提升模型性能。",
+  "hf_url": "https://huggingface.co/papers/2602.16745",
+  "arxiv_url": "https://arxiv.org/abs/2602.16745",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16745",
+  "github_url": "https://github.com/ZDCSlab/PETS",
+  "upvotes": 5,
+  "fetched_at": "2026-02-26T01:56:55.900762+00:00"
+}

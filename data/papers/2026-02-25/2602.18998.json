@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.18998",
+  "title": "Benchmark Test-Time Scaling of General LLM Agents",
+  "authors": [
+    "Xiaochuan Li",
+    "Ryan Ming",
+    "Pranav Setlur",
+    "Abhijay Paladugu",
+    "Andy Tang",
+    "Hao Kang",
+    "Shuai Shao",
+    "Rong Jin",
+    "Chenyan Xiong"
+  ],
+  "abstract": "General AgentBench evaluates large language model agents across multiple domains and scaling methods, revealing performance degradation and fundamental limitations in sequential and parallel scaling approaches. LLM agents are increasingly expected to function as general-purpose systems capable of resolving open-ended user requests. While existing benchmarks focus on domain-aware environments for developing specialized agents, evaluating general-purpose agents requires more realistic settings that challenge them to operate across multiple skills and tools within a unified environment . We introduce General AgentBench, a benchmark that provides such a unified framework for evaluating general LLM agents across search, coding, reasoning, and tool-use domains. Using General AgentBench, we systematically study test-time scaling behaviors under sequential scaling (iterative interaction) and parallel scaling (sampling multiple trajectories). Evaluation of ten leading LLM agents reveals a substantial performance degradation when moving from domain-specific evaluations to this general-agent setting. Moreover, we find that neither scaling methodology yields effective performance improvements in practice, due to two fundamental limitations: context ceiling in sequential scaling and verification gap in parallel scaling . Code is publicly available at https://github.com/cxcscmu/General-AgentBench.",
+  "summary_en": "General AgentBench evaluates large language model agents across multiple domains and scaling methods, revealing performance degradation and fundamental limitations in sequential and parallel scaling approaches.",
+  "summary_zh": "General AgentBench 在多个领域和扩展方法下对大型语言模型智能体进行了评估，揭示了顺序和并行扩展方法中的性能下降与根本性局限。",
+  "hf_url": "https://huggingface.co/papers/2602.18998",
+  "arxiv_url": "https://arxiv.org/abs/2602.18998",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18998",
+  "github_url": "https://github.com/cxcscmu/General-AgentBench",
+  "upvotes": 3,
+  "fetched_at": "2026-02-26T01:57:02.704916+00:00"
+}

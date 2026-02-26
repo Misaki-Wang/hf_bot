@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-25",
+  "paper_id": "2602.21042",
+  "title": "OmniOCR: Generalist OCR for Ethnic Minority Languages",
+  "authors": [
+    "Bonan Liu",
+    "Zeyu Zhang",
+    "Bingbing Meng",
+    "Han Wang",
+    "Hanshuo Zhang",
+    "Chengping Wang",
+    "Daji Ergu",
+    "Ying Cai"
+  ],
+  "abstract": "OmniOCR presents a universal framework for ethnic minority scripts using Dynamic LoRA and sparsity regularization to achieve state-of-the-art accuracy with improved parameter efficiency in low-resource settings. Optical character recognition (OCR) has advanced rapidly with deep learning and multimodal models, yet most methods focus on well-resourced scripts such as Latin and Chinese. Ethnic minority languages remain underexplored due to complex writing systems, scarce annotations, and diverse historical and modern forms, making generalization in low-resource or zero-shot settings challenging. To address these challenges, we present OmniOCR, a universal framework for ethnic minority scripts. OmniOCR introduces Dynamic Low-Rank Adaptation ( Dynamic LoRA ) to allocate model capacity across layers and scripts, enabling effective adaptation while preserving knowledge.A sparsity regularization prunes redundant updates, ensuring compact and efficient adaptation without extra inference cost. Evaluations on TibetanMNIST, Shui, ancient Yi, and Dongba show that OmniOCR outperforms zero-shot foundation models and standard post training , achieving state-of-the-art accuracy with superior parameter efficiency , and compared with the state-of-the-art baseline models, it improves accuracy by 39%-66% on these four datasets. Code: https://github.com/AIGeeksGroup/OmniOCR.",
+  "summary_en": "OmniOCR presents a universal framework for ethnic minority scripts using Dynamic LoRA and sparsity regularization to achieve state-of-the-art accuracy with improved parameter efficiency in low-resource settings.",
+  "summary_zh": "OmniOCR 提出了一种面向少数民族文字的通用框架，利用 Dynamic LoRA 和稀疏正则化，在低资源场景下实现了最先进的准确率，并提升了参数效率。",
+  "hf_url": "https://huggingface.co/papers/2602.21042",
+  "arxiv_url": "https://arxiv.org/abs/2602.21042",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21042",
+  "github_url": "https://github.com/AIGeeksGroup/OmniOCR",
+  "upvotes": 1,
+  "fetched_at": "2026-02-26T01:57:18.225293+00:00"
+}
