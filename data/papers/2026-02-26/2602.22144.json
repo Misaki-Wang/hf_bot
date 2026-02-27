@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.22144",
+  "title": "NoLan: Mitigating Object Hallucinations in Large Vision-Language Models via Dynamic Suppression of Language Priors",
+  "authors": [
+    "Lingfeng Ren",
+    "Weihao Yu",
+    "Runpeng Yu",
+    "Xinchao Wang"
+  ],
+  "abstract": "Object hallucinations in LVLMs are primarily caused by language decoder priors, leading to the development of a training-free framework that suppresses these priors to reduce hallucinations. Object hallucination is a critical issue in Large Vision-Language Models (LVLMs), where outputs include objects that do not appear in the input image. A natural question arises from this phenomenon: Which component of the LVLM pipeline primarily contributes to object hallucination s? The vision encoder to perceive visual information, or the language decoder to generate text responses? In this work, we strive to answer this question through designing a systematic experiment to analyze the roles of the vision encoder and the language decoder in hallucination generation. Our observations reveal that object hallucination s are predominantly associated with the strong priors from the language decoder . Based on this finding, we propose a simple and training-free framework, No-Language-Hallucination Decoding, NoLan , which refines the output distribution by dynamically suppressing language priors, modulated based on the output distribution difference between multimodal and text-only inputs . Experimental results demonstrate that NoLan effectively reduces object hallucination s across various LVLMs on different tasks. For instance, NoLan achieves substantial improvements on POPE, enhancing the accuracy of LLaVA-1.5 7B and Qwen-VL 7B by up to 6.45 and 7.21, respectively. The code is publicly available at: https://github.com/lingfengren/ NoLan .",
+  "summary_en": "Object hallucinations in LVLMs are primarily caused by language decoder priors, leading to the development of a training-free framework that suppresses these priors to reduce hallucinations.",
+  "summary_zh": "LVLMs中的物体幻觉主要由语言解码器先验引起，为此开发了一种无需训练的框架以抑制这些先验，从而减少幻觉。",
+  "hf_url": "https://huggingface.co/papers/2602.22144",
+  "arxiv_url": "https://arxiv.org/abs/2602.22144",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22144",
+  "github_url": "https://github.com/lingfengren/NoLan",
+  "upvotes": 1,
+  "fetched_at": "2026-02-27T01:56:27.434938+00:00"
+}

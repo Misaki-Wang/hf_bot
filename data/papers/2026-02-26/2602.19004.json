@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.19004",
+  "title": "MoBind: Motion Binding for Fine-Grained IMU-Video Pose Alignment",
+  "authors": [
+    "Duc Duy Nguyen",
+    "Tat-Jun Chin",
+    "Minh Hoai"
+  ],
+  "abstract": "MoBind learns joint representations between IMU signals and 2D pose sequences through hierarchical contrastive learning to achieve cross-modal retrieval, temporal synchronization, and action recognition with fine-grained alignment. We aim to learn a joint representation between inertial measurement unit (IMU) signals and 2D pose sequences extracted from video, enabling accurate cross-modal retrieval , temporal synchronization , subject and body-part localization , and action recognition . To this end, we introduce MoBind, a hierarchical contrastive learning framework designed to address three challenges: (1) filtering out irrelevant visual background, (2) modeling structured multi-sensor IMU configurations, and (3) achieving fine-grained, sub-second temporal alignment. To isolate motion-relevant cues, MoBind aligns IMU signals with skeletal motion sequences rather than raw pixels. We further decompose full-body motion into local body-part trajectories , pairing each with its corresponding IMU to enable semantically grounded multi-sensor alignment. To capture detailed temporal correspondence, MoBind employs a hierarchical contrastive strategy that first aligns token-level temporal segments , then fuses local (body-part) alignment with global (body-wide) motion aggregation. Evaluated on mRi, TotalCapture, and EgoHumans, MoBind consistently outperforms strong baselines across all four tasks, demonstrating robust fine-grained temporal alignment while preserving coarse semantic consistency across modalities. Code is available at https://github.com/bbvisual/ MoBind.",
+  "summary_en": "MoBind learns joint representations between IMU signals and 2D pose sequences through hierarchical contrastive learning to achieve cross-modal retrieval, temporal synchronization, and action recognition with fine-grained alignment.",
+  "summary_zh": "MoBind通过分层对比学习在IMU信号与2D姿态序列之间学习联合表示，实现具备细粒度对齐的跨模态检索、时间同步及动作识别。",
+  "hf_url": "https://huggingface.co/papers/2602.19004",
+  "arxiv_url": "https://arxiv.org/abs/2602.19004",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.19004",
+  "github_url": "https://github.com/bbvisual/MoBind",
+  "upvotes": 1,
+  "fetched_at": "2026-02-27T01:56:07.244065+00:00"
+}

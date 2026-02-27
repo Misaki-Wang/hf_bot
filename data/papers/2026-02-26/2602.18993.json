@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.18993",
+  "title": "SeaCache: Spectral-Evolution-Aware Cache for Accelerating Diffusion Models",
+  "authors": [
+    "Jiwoo Chung",
+    "Sangeek Hyun",
+    "MinKyu Lee",
+    "Byeongju Han",
+    "Geonho Cha",
+    "Dongyoon Wee",
+    "Youngjun Hong",
+    "Jae-Pil Heo"
+  ],
+  "abstract": "Spectral-Evolution-Aware Cache (SeaCache) improves diffusion model inference speed by using spectrally aligned representations to optimize intermediate output reuse, achieving better latency-quality trade-offs than previous methods. Diffusion models are a strong backbone for visual generation, but their inherently sequential denoising process leads to slow inference. Previous methods accelerate sampling by caching and reusing intermediate outputs based on feature distances between adjacent timesteps. However, existing caching strategies typically rely on raw feature differences that entangle content and noise. This design overlooks spectral evolution , where low-frequency structure appears early and high-frequency detail is refined later. We introduce Spectral-Evolution-Aware Cache (SeaCache), a training-free cache schedule that bases reuse decisions on a spectrally aligned representation . Through theoretical and empirical analysis, we derive a Spectral-Evolution-Aware (SEA) filter that preserves content-relevant components while suppressing noise. Employing SEA-filtered input features to estimate redundancy leads to dynamic schedules that adapt to content while respecting the spectral priors underlying the diffusion model. Extensive experiments on diverse visual generative models and the baselines show that SeaCache achieves state-of-the-art latency-quality trade-offs .",
+  "summary_en": "Spectral-Evolution-Aware Cache (SeaCache) improves diffusion model inference speed by using spectrally aligned representations to optimize intermediate output reuse, achieving better latency-quality trade-offs than previous methods.",
+  "summary_zh": "Spectral-Evolution-Aware Cache (SeaCache) 利用频谱对齐的表示优化中间输出复用，提升扩散模型推理速度，在延迟-质量权衡方面优于先前方法。",
+  "hf_url": "https://huggingface.co/papers/2602.18993",
+  "arxiv_url": "https://arxiv.org/abs/2602.18993",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18993",
+  "github_url": "https://github.com/jiwoogit/SeaCache",
+  "upvotes": 3,
+  "fetched_at": "2026-02-27T01:56:06.391101+00:00"
+}

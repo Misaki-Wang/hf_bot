@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.14878",
+  "title": "Model Context Protocol (MCP) Tool Descriptions Are Smelly! Towards Improving AI Agent Efficiency with Augmented MCP Tool Descriptions",
+  "authors": [
+    "Mohammed Mehedi Hasan",
+    "Hao Li",
+    "Gopi Krishnan Rajbahadur",
+    "Bram Adams",
+    "Ahmed E. Hassan"
+  ],
+  "abstract": "Foundation model agents rely on natural language tool descriptions for effective interaction with external systems, but poor description quality significantly impacts performance and efficiency. The Model Context Protocol (MCP) introduces a standard specification that defines how Foundation Model (FM)-based agents should interact with external systems by invoking tools. However, to understand a tool's purpose and features, FMs rely on natural-language tool descriptions , making these descriptions a critical component in guiding FMs to select the optimal tool for a given (sub)task and to pass the right arguments to the tool. While defects or smells in these descriptions can misguide FM-based agents, their prevalence and consequences in the MCP ecosystem remain unclear. Hence, we examine 856 tools spread across 103 MCP servers empirically, assess their description quality , and their impact on agent performance . We identify six components of tool descriptions from the literature, develop a scoring rubric utilizing these components, and then formalize tool description smells based on this rubric. By operationalizing this rubric through an FM-based scanner, we find that 97.1% of the analyzed tool descriptions contain at least one smell, with 56% failing to state their purpose clearly. While augmenting these descriptions for all components improves task success rates by a median of 5.85 percentage points and improves partial goal completion by 15.12%, it also increases the number of execution steps by 67.46% and regresses performance in 16.67% of cases. These results indicate that achieving performance gains is not straightforward; while execution cost can act as a trade-off, execution context can also impact. Furthermore, component ablations show that compact variants of different component combinations often preserve behavioral reliability while reducing unnecessary token overhead , enabling more efficient use of the FM context window and lower execution cost s.",
+  "summary_en": "Foundation model agents rely on natural language tool descriptions for effective interaction with external systems, but poor description quality significantly impacts performance and efficiency.",
+  "summary_zh": "基础模型智能体依赖自然语言工具描述来与外部系统进行有效交互，但描述质量不佳会显著影响其性能和效率。",
+  "hf_url": "https://huggingface.co/papers/2602.14878",
+  "arxiv_url": "https://arxiv.org/abs/2602.14878",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.14878",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-27T01:55:58.153743+00:00"
+}

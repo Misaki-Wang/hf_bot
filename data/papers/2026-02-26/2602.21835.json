@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.21835",
+  "title": "UniVBench: Towards Unified Evaluation for Video Foundation Models",
+  "authors": [
+    "Jianhui Wei",
+    "Xiaotian Zhang",
+    "Yichen Li",
+    "Yuan Wang",
+    "Yan Zhang",
+    "Ziyi Chen",
+    "Zhihang Tang",
+    "Wei Xu",
+    "Zuozhu Liu"
+  ],
+  "abstract": "UniVBench introduces a comprehensive benchmark for evaluating video foundation models across multiple capabilities including understanding, generation, editing, and reconstruction using high-quality, diverse video content and a unified evaluation system. Video foundation models aim to integrate video understanding , generation, editing, and instruction following within a single framework, making them a central direction for next-generation multimodal systems . However, existing evaluation benchmarks remain fragmented and limited in scope, as they each target a single task, rely on task-specific metrics, and typically use short or simple video clips. As a result, they do not capture the unified capabilities that these models are designed to deliver. To address this gap, we introduce UniVBench , a benchmark purpose-built for evaluating video foundation models across four core abilities: video understanding , video generation , video editing , and a newly proposed task, video reconstruction , which assesses how faithfully a model can reproduce video content it has encountered. Our benchmark substantially expands the complexity of evaluation by incorporating 200 high-quality, diverse and multi-shot videos, each paired with detailed captions, multi-format editing instructions, and reference images. All videos are human-created and carefully validated, offering richer cinematic information than prior benchmarks. In addition, we develop a unified agentic evaluation system ( UniV-Eval ) that standardizes prompting, instruction parsing, and scoring across all tasks, enabling fair, scalable, and reproducible comparisons of unified video models. By grounding evaluation in instruction-based multi-shot video tasks, UniVBench provides the first framework for measuring the integrated capabilities that video foundation models aim to achieve. Extensive human annotations ensure our evaluation aligns with human judgment, enabling rigorous assessment and accelerating progress toward robust video intelligence.",
+  "summary_en": "UniVBench introduces a comprehensive benchmark for evaluating video foundation models across multiple capabilities including understanding, generation, editing, and reconstruction using high-quality, diverse video content and a unified evaluation system.",
+  "summary_zh": "UniVBench 引入了一个综合性基准，用于评估视频基础模型在理解、生成、编辑和重建等多种能力上的表现，采用高质量、多样化的视频内容和统一的评估系统。",
+  "hf_url": "https://huggingface.co/papers/2602.21835",
+  "arxiv_url": "https://arxiv.org/abs/2602.21835",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21835",
+  "github_url": "https://github.com/JianhuiWei7/UniVBench",
+  "upvotes": 1,
+  "fetched_at": "2026-02-27T01:56:24.589713+00:00"
+}

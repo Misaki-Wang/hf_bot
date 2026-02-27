@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.17602",
+  "title": "MolHIT: Advancing Molecular-Graph Generation with Hierarchical Discrete Diffusion Models",
+  "authors": [
+    "Hojung Jung",
+    "Rodrigo Hormazabal",
+    "Jaehyeong Jo",
+    "Youngrok Park",
+    "Kyunggeun Roh",
+    "Se-Young Yun",
+    "Sehui Han",
+    "Dae-Woong Jeong"
+  ],
+  "abstract": "MolHIT presents a hierarchical discrete diffusion model for molecular graph generation that achieves superior chemical validity and property-guided synthesis compared to existing 1D and graph-based approaches. Molecular generation with diffusion models has emerged as a promising direction for AI-driven drug discovery and materials science. While graph diffusion models have been widely adopted due to the discrete nature of 2D molecular graphs, existing models suffer from low chemical validity and struggle to meet the desired properties compared to 1D modeling. In this work, we introduce MolHIT, a powerful molecular graph generation framework that overcomes long-standing performance limitations in existing methods. MolHIT is based on the Hierarchical Discrete Diffusion Model , which generalizes discrete diffusion to additional categories that encode chemical priors , and decoupled atom encoding that splits the atom types according to their chemical roles. Overall, MolHIT achieves new state-of-the-art performance on the MOSES dataset with near-perfect validity for the first time in graph diffusion, surpassing strong 1D baselines across multiple metrics. We further demonstrate strong performance in downstream tasks, including multi-property guided generation and scaffold extension .",
+  "summary_en": "MolHIT presents a hierarchical discrete diffusion model for molecular graph generation that achieves superior chemical validity and property-guided synthesis compared to existing 1D and graph-based approaches.",
+  "summary_zh": "MolHIT提出了一种用于分子图生成的层次化离散扩散模型，与现有的1D和基于图的方法相比，实现了更优的化学有效性和性质引导合成。",
+  "hf_url": "https://huggingface.co/papers/2602.17602",
+  "arxiv_url": "https://arxiv.org/abs/2602.17602",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.17602",
+  "github_url": "",
+  "upvotes": 43,
+  "fetched_at": "2026-02-27T01:56:01.351441+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.21778",
+  "title": "From Statics to Dynamics: Physics-Aware Image Editing with Latent Transition Priors",
+  "authors": [
+    "Liangbing Zhao",
+    "Le Zhuo",
+    "Sayak Paul",
+    "Hongsheng Li",
+    "Mohamed Elhoseiny"
+  ],
+  "abstract": "PhysicEdit enhances image editing by incorporating physical state transitions through a dual-thinking mechanism combining frozen vision-language models with learnable transition queries in a diffusion framework. Instruction-based image editing has achieved remarkable success in semantic alignment, yet state-of-the-art models frequently fail to render physically plausible results when editing involves complex causal dynamics , such as refraction or material deformation . We attribute this limitation to the dominant paradigm that treats editing as a discrete mapping between image pairs, which provides only boundary conditions and leaves transition dynamics underspecified. To address this, we reformulate physics-aware editing as predictive physical state transitions and introduce PhysicTran38K , a large-scale video-based dataset comprising 38K transition trajectories across five physical domains, constructed via a two-stage filtering and constraint-aware annotation pipeline. Building on this supervision, we propose PhysicEdit , an end-to-end framework equipped with a textual-visual dual-thinking mechanism . It combines a frozen Qwen2.5-VL for physically grounded reasoning with learnable transition queries that provide timestep-adaptive visual guidance to a diffusion backbone. Experiments show that PhysicEdit improves over Qwen-Image-Edit by 5.9% in physical realism and 10.1% in knowledge-grounded editing, setting a new state-of-the-art for open-source methods, while remaining competitive with leading proprietary models.",
+  "summary_en": "PhysicEdit enhances image editing by incorporating physical state transitions through a dual-thinking mechanism combining frozen vision-language models with learnable transition queries in a diffusion framework.",
+  "summary_zh": "PhysicEdit 通过双重思维机制增强图像编辑，该机制在扩散框架中结合冻结的视觉-语言模型与可学习的转换查询，引入物理状态转换。",
+  "hf_url": "https://huggingface.co/papers/2602.21778",
+  "arxiv_url": "https://arxiv.org/abs/2602.21778",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21778",
+  "github_url": "https://github.com/liangbingzhao/PhysicEdit",
+  "upvotes": 6,
+  "fetched_at": "2026-02-27T01:56:22.428740+00:00"
+}

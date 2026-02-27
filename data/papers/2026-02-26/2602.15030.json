@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.15030",
+  "title": "Image Generation with a Sphere Encoder",
+  "authors": [
+    "Kaiyu Yue",
+    "Menglin Jia",
+    "Ji Hou",
+    "Tom Goldstein"
+  ],
+  "abstract": "We introduce the Sphere Encoder , an efficient generative framework capable of producing images in a single forward pass and competing with many-step diffusion models using fewer than five steps. Our approach works by learning an encoder that maps natural images uniformly onto a spherical latent space , and a decoder that maps random latent vectors back to the image space. Trained solely through image reconstruction losses , the model generates an image by simply decoding a random point on the sphere. Our architecture naturally supports conditional generation , and looping the encoder/decoder a few times can further enhance image quality. Across several datasets, the sphere encoder approach yields performance competitive with state of the art diffusions, but with a small fraction of the inference cost . Project page is available at https://sphere-encoder.github.io .",
+  "summary_en": "We introduce the Sphere Encoder , an efficient generative framework capable of producing images in a single forward pass and competing with many-step diffusion models using fewer than five steps. Our approach works by learning an encoder that maps natural images uniformly onto a spherical latent space , and a decoder that maps random latent vectors back to the image space. Trained solely through image reconstruction losses , the model generates an image by simply decoding a random point on the sphere. Our architecture naturally supports conditional generation , and looping the encoder/decoder a few times can further enhance image quality. Across several datasets, the sphere encoder approach yields performance competitive with state of the art diffusions, but with a small fraction of the inference cost . Project page is available at https://sphere-encoder.github.io .",
+  "summary_zh": "我们提出 Sphere Encoder，一种高效的生成框架，能够在单前向传播中生成图像，并以少于五步的代价匹敌多步扩散模型。我们的方法通过学习一个将自然图像均匀映射到球面潜空间的编码器，以及一个将随机潜向量映射回图像空间的解码器来实现。该模型仅通过图像重建损失训练，通过简单解码球面上的随机点即可生成图像。我们的架构天然支持条件生成，循环编码器/解码器数次可进一步提升图像质量。在多个数据集上，sphere encoder 方法的性能与最先进扩散模型相当，但推理成本仅为后者的一小部分。项目页面见 https://sphere-encoder.github.io。",
+  "hf_url": "https://huggingface.co/papers/2602.15030",
+  "arxiv_url": "https://arxiv.org/abs/2602.15030",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.15030",
+  "github_url": "https://github.com/facebookresearch/sphere-encoder",
+  "upvotes": 9,
+  "fetched_at": "2026-02-27T01:55:59.592726+00:00"
+}

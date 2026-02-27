@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.18964",
+  "title": "Yor-Sarc: A gold-standard dataset for sarcasm detection in a low-resource African language",
+  "authors": [
+    "Toheeb Aduramomi Jimoh",
+    "Tabea De Wille",
+    "Nikola S. Nikolov"
+  ],
+  "abstract": "A new gold-standard dataset for sarcasm detection in Yorùbá is introduced with high inter-annotator agreement and soft labels for uncertainty-aware modeling. Sarcasm detection poses a fundamental challenge in computational semantics, requiring models to resolve disparities between literal and intended meaning. The challenge is amplified in low-resource languages where annotated datasets are scarce or nonexistent. We present Yor-Sarc, the first gold-standard dataset for sarcasm detection in Yorùbá , a tonal Niger-Congo language spoken by over 50 million people. The dataset comprises 436 instances annotated by three native speakers from diverse dialectal backgrounds using an annotation protocol specifically designed for Yorùbá sarcasm by taking culture into account. This protocol incorporates context-sensitive interpretation and community-informed guidelines and is accompanied by a comprehensive analysis of inter-annotator agreement to support replication in other African languages. Substantial to almost perfect agreement was achieved (Fleiss' κ= 0.7660; pairwise Cohen's κ= 0.6732--0.8743), with 83.3% unanimous consensus. One annotator pair achieved almost perfect agreement (κ= 0.8743; 93.8% raw agreement), exceeding a number of reported benchmarks for English sarcasm research works. The remaining 16.7% majority-agreement cases are preserved as soft labels for uncertainty-aware modelling. Yor-Sarchttps://github.com/toheebadura/yor-sarc is expected to facilitate research on semantic interpretation and culturally informed NLP for low-resource African languages.",
+  "summary_en": "A new gold-standard dataset for sarcasm detection in Yorùbá is introduced with high inter-annotator agreement and soft labels for uncertainty-aware modeling.",
+  "summary_zh": "提出了一个新的约鲁巴语讽刺检测金标准数据集，具有高标注者间一致性，并包含用于不确定性感知建模的软标签。",
+  "hf_url": "https://huggingface.co/papers/2602.18964",
+  "arxiv_url": "https://arxiv.org/abs/2602.18964",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18964",
+  "github_url": "https://github.com/toheebadura/yor-sarc",
+  "upvotes": 0,
+  "fetched_at": "2026-02-27T01:56:05.541319+00:00"
+}

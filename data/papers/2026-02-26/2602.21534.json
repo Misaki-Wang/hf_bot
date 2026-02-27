@@ -1,0 +1,30 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.21534",
+  "title": "ARLArena: A Unified Framework for Stable Agentic Reinforcement Learning",
+  "authors": [
+    "Xiaoxuan Wang",
+    "Han Zhang",
+    "Haixin Wang",
+    "Yidan Shi",
+    "Ruoyan Li",
+    "Kaiqiao Han",
+    "Chenyi Tong",
+    "Haoran Deng",
+    "Renliang Sun",
+    "Alexander Taylor",
+    "Yanqiao Zhu",
+    "Jason Cong",
+    "Yizhou Sun",
+    "Wei Wang"
+  ],
+  "abstract": "ARLArena framework analyzes training stability in agentic reinforcement learning and proposes SAMPO method for stable policy optimization across diverse tasks. Agentic reinforcement learning (ARL) has rapidly gained attention as a promising paradigm for training agents to solve complex, multi-step interactive tasks. Despite encouraging early results, ARL remains highly unstable, often leading to training collapse. This instability limits scalability to larger environments and longer interaction horizons, and constrains systematic exploration of algorithmic design choices. In this paper, we first propose ARLArena , a stable training recipe and systematic analysis framework that examines training stability in a controlled and reproducible setting. ARLArena first constructs a clean and standardized testbed. Then, we decompose policy gradient into four core design dimensions and assess the performance and stability of each dimension. Through this fine-grained analysis, we distill a unified perspective on ARL and propose SAMPO , a stable agentic policy optimization method designed to mitigate the dominant sources of instability in ARL. Empirically, SAMPO achieves consistently stable training and strong performance across diverse agentic tasks. Overall, this study provides a unifying policy gradient perspective for ARL and offers practical guidance for building stable and reproducible LLM-based agent training pipelines.",
+  "summary_en": "ARLArena framework analyzes training stability in agentic reinforcement learning and proposes SAMPO method for stable policy optimization across diverse tasks.",
+  "summary_zh": "ARLArena框架分析agentic强化学习中的训练稳定性，并提出SAMPO方法用于跨多样化任务的稳定策略优化。",
+  "hf_url": "https://huggingface.co/papers/2602.21534",
+  "arxiv_url": "https://arxiv.org/abs/2602.21534",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21534",
+  "github_url": "https://github.com/WillDreamer/ARL-Arena",
+  "upvotes": 17,
+  "fetched_at": "2026-02-27T01:56:19.898794+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.22208",
+  "title": "Solaris: Building a Multiplayer Video World Model in Minecraft",
+  "authors": [
+    "Georgy Savva",
+    "Oscar Michel",
+    "Daohan Lu",
+    "Suppakit Waiwitlikhit",
+    "Timothy Meehan",
+    "Dhairya Mishra",
+    "Srivats Poddar",
+    "Jack Lu",
+    "Saining Xie"
+  ],
+  "abstract": "Solaris is a multiplayer video world model that simulates consistent multi-view observations through a novel data collection system and staged training approach. Existing action-conditioned video generation models ( video world models ) are limited to single-agent perspectives, failing to capture the multi-agent interactions of real-world environments. We introduce Solaris, a multiplayer video world model that simulates consistent multi-view observations. To enable this, we develop a multiplayer data system designed for robust, continuous, and automated data collection on video games such as Minecraft. Unlike prior platforms built for single-player settings, our system supports coordinated multi-agent interaction and synchronized videos + actions capture. Using this system, we collect 12.64 million multiplayer frames and propose an evaluation framework for multiplayer movement, memory, grounding, building, and view consistency. We train Solaris using a staged pipeline that progressively transitions from single-player to multiplayer modeling, combining bidirectional , causal , and Self Forcing training. In the final stage, we introduce Checkpointed Self Forcing , a memory-efficient Self Forcing variant that enables a longer-horizon teacher. Results show our architecture and training design outperform existing baselines. Through open-sourcing our system and models, we hope to lay the groundwork for a new generation of multi-agent world models.",
+  "summary_en": "Solaris is a multiplayer video world model that simulates consistent multi-view observations through a novel data collection system and staged training approach.",
+  "summary_zh": "Solaris 是一种多人视频世界模型，通过新颖的数据采集系统和分阶段训练方法模拟一致的多视角观测。",
+  "hf_url": "https://huggingface.co/papers/2602.22208",
+  "arxiv_url": "https://arxiv.org/abs/2602.22208",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22208",
+  "github_url": "https://github.com/solaris-wm/solaris",
+  "upvotes": 11,
+  "fetched_at": "2026-02-27T01:56:30.005744+00:00"
+}

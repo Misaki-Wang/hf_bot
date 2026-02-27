@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.21456",
+  "title": "Revisiting Text Ranking in Deep Research",
+  "authors": [
+    "Chuan Meng",
+    "Litu Ou",
+    "Sean MacAvaney",
+    "Jeff Dalton"
+  ],
+  "abstract": "Research on deep research tasks reveals that web search APIs' opacity hinders understanding of text ranking methods, which are evaluated across retrieval units, pipeline configurations, and query characteristics using a fixed-corpus dataset with multiple agents, retrievers, and re-rankers. Deep research has emerged as an important task that aims to address hard queries through extensive open-web exploration. To tackle it, most prior work equips large language model (LLM)-based agents with opaque web search APIs , enabling agents to iteratively issue search queries, retrieve external evidence , and reason over it. Despite search's essential role in deep research, black-box web search APIs hinder systematic analysis of search components, leaving the behaviour of established text ranking methods in deep research largely unclear. To fill this gap, we reproduce a selection of key findings and best practices for IR text ranking methods in the deep research setting. In particular, we examine their effectiveness from three perspectives: (i) retrieval units (documents vs. passages), (ii) pipeline configurations (different retrievers , re-rankers , and re-ranking depths), and (iii) query characteristics (the mismatch between agent-issued queries and the training queries of text rankers). We perform experiments on BrowseComp-Plus , a deep research dataset with a fixed corpus, evaluating 2 open-source agents, 5 retrievers , and 3 re-rankers across diverse setups. We find that agent-issued queries typically follow web-search-style syntax (e.g., quoted exact matches), favouring lexical, learned sparse, and multi-vector retrievers ; passage-level units are more efficient under limited context windows, and avoid the difficulties of document length normalisation in lexical retrieval ; re-ranking is highly effective; translating agent-issued queries into natural-language questions significantly bridges the query mismatch.",
+  "summary_en": "Research on deep research tasks reveals that web search APIs' opacity hinders understanding of text ranking methods, which are evaluated across retrieval units, pipeline configurations, and query characteristics using a fixed-corpus dataset with multiple agents, retrievers, and re-rankers.",
+  "summary_zh": "关于深度研究任务的研究揭示，网络搜索API的不透明性阻碍了对文本排序方法的理解，这些方法通过使用包含多个智能体、检索器和重排序器的固定语料库数据集，在检索单元、流水线配置和查询特征方面进行了评估。",
+  "hf_url": "https://huggingface.co/papers/2602.21456",
+  "arxiv_url": "https://arxiv.org/abs/2602.21456",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21456",
+  "github_url": "https://github.com/ChuanMeng/text-ranking-in-deep-research",
+  "upvotes": 2,
+  "fetched_at": "2026-02-27T01:56:16.236163+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.18283",
+  "title": "HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation",
+  "authors": [
+    "Lei Xin",
+    "Yuhao Zheng",
+    "Ke Cheng",
+    "Changjiang Jiang",
+    "Zifan Zhang",
+    "Fanhu Zeng"
+  ],
+  "abstract": "HyTRec addresses the challenge of modeling long user behavior sequences by combining linear and softmax attention mechanisms with a temporal-aware delta network to balance efficiency and retrieval precision. Modeling long sequences of user behaviors has emerged as a critical frontier in generative recommendation. However, existing solutions face a dilemma: linear attention mechanisms achieve efficiency at the cost of retrieval precision due to limited state capacity, while softmax attention suffers from prohibitive computational overhead. To address this challenge, we propose HyTRec, a model featuring a Hybrid Attention architecture that explicitly decouples long-term stable preferences from short-term intent spikes . By assigning massive historical sequences to a linear attention branch and reserving a specialized softmax attention branch for recent interactions, our approach restores precise retrieval capabilities within industrial-scale contexts involving ten thousand interactions. To mitigate the lag in capturing rapid interest drifts within the linear layers, we furthermore design Temporal-Aware Delta Network ( TADN ) to dynamically upweight fresh behavioral signals while effectively suppressing historical noise. Empirical results on industrial-scale datasets confirm the superiority that our model maintains linear inference speed and outperforms strong baselines, notably delivering over 8% improvement in Hit Rate for users with ultra-long sequences with great efficiency.",
+  "summary_en": "HyTRec addresses the challenge of modeling long user behavior sequences by combining linear and softmax attention mechanisms with a temporal-aware delta network to balance efficiency and retrieval precision.",
+  "summary_zh": "HyTRec 结合线性注意力与softmax注意力机制以及时间感知delta网络，解决长用户行为序列建模的挑战，在效率与检索精度之间取得平衡。",
+  "hf_url": "https://huggingface.co/papers/2602.18283",
+  "arxiv_url": "https://arxiv.org/abs/2602.18283",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18283",
+  "github_url": "",
+  "upvotes": 47,
+  "fetched_at": "2026-02-27T01:56:02.273822+00:00"
+}

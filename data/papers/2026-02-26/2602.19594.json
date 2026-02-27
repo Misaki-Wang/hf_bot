@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.19594",
+  "title": "ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?",
+  "authors": [
+    "Ayush Nangia",
+    "Shikhar Mishra",
+    "Aman Gokrani",
+    "Paras Chopra"
+  ],
+  "abstract": "ISO-Bench evaluates coding agents on real-world LLM inference optimization tasks from popular serving frameworks, using combined execution and LLM-based metrics to assess performance. We introduce ISO-Bench, a benchmark for coding agents to test their capabilities on real-world inference optimization tasks. These tasks were taken from vLLM and SGLang , two of the most popular LLM serving frameworks . Each task provides an agent with a codebase and bottleneck description, whereby the agent must produce an optimization patch evaluated against expert human solutions. We curated 54 tasks from merged pull requests with measurable performance improvements. While existing benchmark s heavily use runtime-based metrics , such approaches can be gamed to pass tests without capturing the actual intent of the code changes. Therefore, we combine both hard (execution-based) and soft (LLM-based) metrics to show that both are necessary for complete evaluation. While evaluating both closed and open-source coding agents , we find no single agent dominates across codebase s. Surprisingly, agents often identify correct bottlenecks but fail to execute working solutions. We also show that agents with identical underlying models differ substantially, suggesting scaffolding is as important as the model.",
+  "summary_en": "ISO-Bench evaluates coding agents on real-world LLM inference optimization tasks from popular serving frameworks, using combined execution and LLM-based metrics to assess performance.",
+  "summary_zh": "ISO-Bench 采用组合执行与基于LLM的指标，评估编码智能体在流行服务框架的真实世界LLM推理优化任务上的表现。",
+  "hf_url": "https://huggingface.co/papers/2602.19594",
+  "arxiv_url": "https://arxiv.org/abs/2602.19594",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.19594",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-27T01:56:11.032707+00:00"
+}

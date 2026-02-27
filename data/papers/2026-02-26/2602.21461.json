@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.21461",
+  "title": "VecGlypher: Unified Vector Glyph Generation with Language Models",
+  "authors": [
+    "Xiaoke Huang",
+    "Bhavul Gauri",
+    "Kam Woh Ng",
+    "Tony Ng",
+    "Mengmeng Xu",
+    "Zhiheng Liu",
+    "Weiming Ren",
+    "Zhaochong An",
+    "Zijian Zhou",
+    "Haonan Qiu",
+    "Yuyin Zhou",
+    "Sen He",
+    "Ziheng Wang",
+    "Tao Xiang",
+    "Xiao Han"
+  ],
+  "abstract": "VecGlypher is a multimodal language model that generates high-fidelity vector glyphs directly from text or image inputs, bypassing traditional raster-to-vector processes and enabling direct SVG path generation. Vector glyphs are the atomic units of digital typography, yet most learning-based pipelines still depend on carefully curated exemplar sheets and raster-to-vector postprocessing, which limits accessibility and editability. We introduce VecGlypher, a single multimodal language model that generates high-fidelity vector glyphs directly from text descriptions or image exemplars. Given a style prompt, optional reference glyph images, and a target character, VecGlypher autoregressively emits SVG path tokens , avoiding raster intermediates and producing editable, watertight outlines in one pass. A typography-aware data and training recipe makes this possible: (i) a large-scale continuation stage on 39K noisy Envato fonts to master SVG syntax and long-horizon geometry, followed by (ii) post-training on 2.5K expert-annotated Google Fonts with descriptive tags and exemplars to align language and imagery with geometry; preprocessing normalizes coordinate frames, canonicalizes paths, de-duplicates families, and quantizes coordinates for stable long-sequence decoding. On cross-family OOD evaluation, VecGlypher substantially outperforms both general-purpose LLMs and specialized vector-font baselines for text-only generation, while image-referenced generation reaches a state-of-the-art performance, with marked gains over DeepVecFont-v2 and DualVector. Ablations show that model scale and the two-stage recipe are critical and that absolute-coordinate serialization yields the best geometry. VecGlypher lowers the barrier to font creation by letting users design with words or exemplars, and provides a scalable foundation for future multimodal design tools.",
+  "summary_en": "VecGlypher is a multimodal language model that generates high-fidelity vector glyphs directly from text or image inputs, bypassing traditional raster-to-vector processes and enabling direct SVG path generation.",
+  "summary_zh": "VecGlypher 是一个多模态语言模型，可直接从文本或图像输入生成高保真矢量字形，绕过传统的栅格到矢量转换流程，实现直接的 SVG 路径生成。",
+  "hf_url": "https://huggingface.co/papers/2602.21461",
+  "arxiv_url": "https://arxiv.org/abs/2602.21461",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21461",
+  "github_url": "https://github.com/xk-huang/VecGlypher",
+  "upvotes": 9,
+  "fetched_at": "2026-02-27T01:56:17.491133+00:00"
+}

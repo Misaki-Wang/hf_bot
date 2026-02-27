@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.18589",
+  "title": "DM4CT: Benchmarking Diffusion Models for Computed Tomography Reconstruction",
+  "authors": [
+    "Jiayang Shi",
+    "Daniel M. Pelt",
+    "K. Joost Batenburg"
+  ],
+  "abstract": "",
+  "summary_en": "Benchmarking Uncertainty Quantification of Plug-and-Play Diffusion Priors for Inverse Problems Solving (2026)",
+  "summary_zh": "逆问题求解中即插即用扩散先验的不确定性量化基准测试（2026）",
+  "hf_url": "https://huggingface.co/papers/2602.18589",
+  "arxiv_url": "https://arxiv.org/abs/2602.18589",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18589",
+  "github_url": "https://github.com/DM4CT/DM4CT",
+  "upvotes": 1,
+  "fetched_at": "2026-02-27T01:56:04.578538+00:00"
+}

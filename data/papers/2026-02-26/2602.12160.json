@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.12160",
+  "title": "DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation",
+  "authors": [
+    "Xu Guo",
+    "Fulong Ye",
+    "Qichao Sun",
+    "Liyang Chen",
+    "Bingchuan Li",
+    "Pengze Zhang",
+    "Jiawei Liu",
+    "Songtao Zhao",
+    "Qian He",
+    "Xiangwang Hou"
+  ],
+  "abstract": "DreamID-Omni is a unified framework for controllable human-centric audio-video generation that uses a symmetric conditional diffusion transformer with dual-level disentanglement and multi-task progressive training to achieve state-of-the-art performance. Recent advancements in foundation models have revolutionized joint audio-video generation . However, existing approaches typically treat human-centric tasks including reference-based audio-video generation (R2AV), video editing (RV2AV) and audio-driven video animation (RA2V) as isolated objectives. Furthermore, achieving precise, disentangled control over multiple character identities and voice timbres within a single framework remains an open challenge. In this paper, we propose DreamID-Omni, a unified framework for controllable human-centric audio-video generation . Specifically, we design a Symmetric Conditional Diffusion Transformer that integrates heterogeneous conditioning signals via a symmetric conditional injection scheme . To resolve the pervasive identity-timbre binding failures and speaker confusion in multi-person scenarios, we introduce a Dual-Level Disentanglement strategy: Synchronized RoPE at the signal level to ensure rigid attention-space binding, and Structured Captions at the semantic level to establish explicit attribute-subject mappings. Furthermore, we devise a Multi-Task Progressive Training scheme that leverages weakly-constrained generative priors to regularize strongly-constrained tasks, preventing overfitting and harmonizing disparate objectives. Extensive experiments demonstrate that DreamID-Omni achieves comprehensive state-of-the-art performance across video, audio, and audio-visual consistency, even outperforming leading proprietary commercial models. We will release our code to bridge the gap between academic research and commercial-grade applications.",
+  "summary_en": "DreamID-Omni is a unified framework for controllable human-centric audio-video generation that uses a symmetric conditional diffusion transformer with dual-level disentanglement and multi-task progressive training to achieve state-of-the-art performance.",
+  "summary_zh": "DreamID-Omni是一个用于可控的以人为中心的音视频生成的统一框架，采用具有双级解耦的对称条件扩散Transformer与多任务渐进训练，实现了最先进的性能。",
+  "hf_url": "https://huggingface.co/papers/2602.12160",
+  "arxiv_url": "https://arxiv.org/abs/2602.12160",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.12160",
+  "github_url": "https://github.com/Guoxu1233/DreamID-Omni",
+  "upvotes": 30,
+  "fetched_at": "2026-02-27T01:55:56.949841+00:00"
+}

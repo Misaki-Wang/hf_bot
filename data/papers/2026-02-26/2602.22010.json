@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.22010",
+  "title": "World Guidance: World Modeling in Condition Space for Action Generation",
+  "authors": [
+    "Yue Su",
+    "Sijin Chen",
+    "Haixin Shi",
+    "Mingyu Liu",
+    "Zhengshen Zhang",
+    "Ningyuan Huang",
+    "Weiheng Zhong",
+    "Zhengbang Zhu",
+    "Yuxiao Liu",
+    "Xihui Liu"
+  ],
+  "abstract": "World Guidance framework enhances Vision-Language-Action models by mapping future observations into compact conditions for improved action generation and generalization. Leveraging future observation modeling to facilitate action generation presents a promising avenue for enhancing the capabilities of Vision-Language-Action (VLA) models. However, existing approaches struggle to strike a balance between maintaining efficient, predictable future representations and preserving sufficient fine-grained information to guide precise action generation . To address this limitation, we propose WoG (World Guidance), a framework that maps future observations into compact conditions by injecting them into the action inference pipeline. The VLA is then trained to simultaneously predict these compressed conditions alongside future actions, thereby achieving effective world modeling within the condition space for action inference. We demonstrate that modeling and predicting this condition space not only facilitates fine-grained action generation but also exhibits superior generalization capabilities. Moreover, it learns effectively from substantial human manipulation videos . Extensive experiments across both simulation and real-world environments validate that our method significantly outperforms existing methods based on future prediction . Project page is available at: https://selen-suyue.github.io/WoGNet/",
+  "summary_en": "World Guidance framework enhances Vision-Language-Action models by mapping future observations into compact conditions for improved action generation and generalization.",
+  "summary_zh": "World Guidance 框架通过将未来观测映射为紧凑条件来增强 Vision-Language-Action 模型，改进动作生成和泛化。",
+  "hf_url": "https://huggingface.co/papers/2602.22010",
+  "arxiv_url": "https://arxiv.org/abs/2602.22010",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22010",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-27T01:56:25.867914+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.16729",
+  "title": "Intent Laundering: AI Safety Datasets Are Not What They Seem",
+  "authors": [
+    "Shahriar Golchin",
+    "Marc Wetter"
+  ],
+  "abstract": "AI safety datasets rely heavily on triggering cues that do not accurately represent real-world adversarial behavior, making models appear safe when they are actually vulnerable once these cues are removed. We systematically evaluate the quality of widely used AI safety datasets from two perspectives: in isolation and in practice. In isolation, we examine how well these datasets reflect real-world adversarial attacks based on three key properties: being driven by ulterior intent, well-crafted, and out-of-distribution. We find that these datasets overrely on \" triggering cues \": words or phrases with overt negative/sensitive connotations that are intended to trigger safety mechanisms explicitly, which is unrealistic compared to real-world attacks. In practice, we evaluate whether these datasets genuinely measure safety risks or merely provoke refusals through triggering cues . To explore this, we introduce \" intent laundering \": a procedure that abstracts away triggering cues from adversarial attacks (data points) while strictly preserving their malicious intent and all relevant details. Our results indicate that current AI safety datasets fail to faithfully represent real-world adversarial behavior due to their overreliance on triggering cues . Once these cues are removed, all previously evaluated \"reasonably safe\" models become unsafe, including Gemini 3 Pro and Claude Sonnet 3.7. Moreover, when intent laundering is adapted as a jailbreaking technique, it consistently achieves high attack success rates, ranging from 90% to over 98%, under fully black-box access . Overall, our findings expose a significant disconnect between how model safety is evaluated by existing datasets and how real-world adversaries behave.",
+  "summary_en": "AI safety datasets rely heavily on triggering cues that do not accurately represent real-world adversarial behavior, making models appear safe when they are actually vulnerable once these cues are removed.",
+  "summary_zh": "AI 安全数据集严重依赖无法准确反映现实世界对抗行为的触发线索，导致一旦移除这些线索，实际上存在漏洞的模型反而会显得安全。",
+  "hf_url": "https://huggingface.co/papers/2602.16729",
+  "arxiv_url": "https://arxiv.org/abs/2602.16729",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.16729",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-27T01:56:00.396092+00:00"
+}

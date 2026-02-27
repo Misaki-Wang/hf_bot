@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.20273",
+  "title": "The Truthfulness Spectrum Hypothesis",
+  "authors": [
+    "Zhuofan Josh Ying",
+    "Shauli Ravfogel",
+    "Nikolaus Kriegeskorte",
+    "Peter Hase"
+  ],
+  "abstract": "Large language models contain truth directions ranging from domain-general to domain-specific in their representational space, with linear probes showing varying generalization capabilities and causal interventions revealing differential effectiveness of these directions. Large language models (LLMs) have been reported to linearly encode truthfulness, yet recent work questions this finding's generality. We reconcile these views with the truthfulness spectrum hypothesis : the representational space contains directions ranging from broadly domain-general to narrowly domain-specific . To test this hypothesis, we systematically evaluate probe generalization across five truth types (definitional, empirical, logical, fictional, and ethical), sycophantic and expectation-inverted lying, and existing honesty benchmarks. Linear probes generalize well across most domains but fail on sycophantic and expectation-inverted lying. Yet training on all domains jointly recovers strong performance, confirming that domain-general directions exist despite poor pairwise transfer. The geometry of probe directions explains these patterns: Mahalanobis cosine similarity between probes near-perfectly predicts cross-domain generalization (R^2=0.98). Concept-erasure methods further isolate truth directions that are (1) domain-general , (2) domain-specific , or (3) shared only across particular domain subsets. Causal interventions reveal that domain-specific directions steer more effectively than domain-general ones. Finally, post-training reshapes truth geometry, pushing sycophantic lying further from other truth types, suggesting a representational basis for chat models' sycophantic tendencies. Together, our results support the truthfulness spectrum hypothesis : truth directions of varying generality coexist in representational space , with post-training reshaping their geometry. Code for all experiments is provided in https://github.com/zfying/truth_spec.",
+  "summary_en": "Large language models contain truth directions ranging from domain-general to domain-specific in their representational space, with linear probes showing varying generalization capabilities and causal interventions revealing differential effectiveness of these directions.",
+  "summary_zh": "大语言模型在其表征空间中包含从领域通用到领域特定的真实性方向，线性探针显示出不同的泛化能力，因果干预则揭示了这些方向的有效性差异。",
+  "hf_url": "https://huggingface.co/papers/2602.20273",
+  "arxiv_url": "https://arxiv.org/abs/2602.20273",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20273",
+  "github_url": "https://github.com/zfying/truth_spec",
+  "upvotes": 1,
+  "fetched_at": "2026-02-27T01:56:12.777225+00:00"
+}

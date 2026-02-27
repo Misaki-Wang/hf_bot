@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-26",
+  "paper_id": "2602.18527",
+  "title": "JAEGER: Joint 3D Audio-Visual Grounding and Reasoning in Simulated Physical Environments",
+  "authors": [
+    "Zhan Liu",
+    "Changli Tang",
+    "Yuxin Wang",
+    "Zhiyuan Zhu",
+    "Youjun Chen",
+    "Yiwen Shao",
+    "Tianzi Wang",
+    "Lei Ke",
+    "Zengrui Jin",
+    "Chao Zhang"
+  ],
+  "abstract": "JAEGER extends audio-visual large language models to 3D space by integrating RGB-D observations and multi-channel audio to improve spatial reasoning and source localization. Current audio-visual large language models (AV-LLMs) are predominantly restricted to 2D perception, relying on RGB video and monaural audio. This design choice introduces a fundamental dimensionality mismatch that precludes reliable source localization and spatial reasoning in complex 3D environments. We address this limitation by presenting JAEGER, a framework that extends AV-LLMs to 3D space , to enable joint spatial grounding and reasoning through the integration of RGB-D observations and multi-channel first-order ambisonics . A core contribution of our work is the neural intensity vector (Neural IV), a learned spatial audio representation that encodes robust directional cues to enhance direction-of-arrival estimation , even in adverse acoustic scenarios with overlapping sources. To facilitate large-scale training and systematic evaluation, we propose SpatialSceneQA , a benchmark of 61k instruction-tuning samples curated from simulated physical environments. Extensive experiments demonstrate that our approach consistently surpasses 2D-centric baselines across diverse spatial perception and reasoning tasks, underscoring the necessity of explicit 3D modelling for advancing AI in physical environments. Our source code, pre-trained model checkpoints and datasets will be released upon acceptance.",
+  "summary_en": "JAEGER extends audio-visual large language models to 3D space by integrating RGB-D observations and multi-channel audio to improve spatial reasoning and source localization.",
+  "summary_zh": "JAEGER整合RGB-D观测与多通道音频，将视听大型语言模型扩展至3D空间，以改进空间推理与声源定位。",
+  "hf_url": "https://huggingface.co/papers/2602.18527",
+  "arxiv_url": "https://arxiv.org/abs/2602.18527",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18527",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-27T01:56:03.136466+00:00"
+}
