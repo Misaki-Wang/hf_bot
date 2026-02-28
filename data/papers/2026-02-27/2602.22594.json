@@ -1,0 +1,19 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.22594",
+  "title": "Causal Motion Diffusion Models for Autoregressive Motion Generation",
+  "authors": [
+    "Qing Yu",
+    "Akihisa Watanabe",
+    "Kent Fujiwara"
+  ],
+  "abstract": "Causal Motion Diffusion Models introduce a unified framework for autoregressive motion generation using a causal diffusion transformer in a semantically aligned latent space, enabling fast, high-quality text-to-motion synthesis with improved temporal smoothness. Recent advances in motion diffusion models have substantially improved the realism of human motion synthesis. However, existing approaches either rely on full-sequence diffusion models with bidirectional generation, which limits temporal causality and real-time applicability, or autoregressive models that suffer from instability and cumulative errors. In this work, we present Causal Motion Diffusion Models (CMDM), a unified framework for autoregressive motion generation based on a causal diffusion transformer that operates in a semantically aligned latent space . CMDM builds upon a Motion-Language-Aligned Causal VAE (MAC-VAE), which encodes motion sequences into temporally causal latent representations. On top of this latent representation, an autoregressive diffusion transformer is trained using causal diffusion forcing to perform temporally ordered denoising across motion frames. To achieve fast inference, we introduce a frame-wise sampling schedule with causal uncertainty , where each subsequent frame is predicted from partially denoised previous frames. The resulting framework supports high-quality text-to-motion generation , streaming synthesis , and long-horizon motion generation at interactive rates. Experiments on HumanML3D and SnapMoGen demonstrate that CMDM outperforms existing diffusion and autoregressive models in both semantic fidelity and temporal smoothness, while substantially reducing inference latency.",
+  "summary_en": "Causal Motion Diffusion Models introduce a unified framework for autoregressive motion generation using a causal diffusion transformer in a semantically aligned latent space, enabling fast, high-quality text-to-motion synthesis with improved temporal smoothness.",
+  "summary_zh": "Causal Motion Diffusion Models 提出了一种统一框架，在语义对齐的潜空间中使用因果扩散Transformer进行自回归运动生成，实现了快速、高质量的文本到运动合成，并提升了时间平滑性。",
+  "hf_url": "https://huggingface.co/papers/2602.22594",
+  "arxiv_url": "https://arxiv.org/abs/2602.22594",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22594",
+  "github_url": "",
+  "upvotes": 5,
+  "fetched_at": "2026-02-28T01:46:45.392648+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.23165",
+  "title": "DyaDiT: A Multi-Modal Diffusion Transformer for Socially Favorable Dyadic Gesture Generation",
+  "authors": [
+    "Yichen Peng",
+    "Jyun-Ting Song",
+    "Siyeol Jung",
+    "Ruofan Liu",
+    "Haiyang Liu",
+    "Xuangeng Chu",
+    "Ruicong Liu",
+    "Erwin Wu",
+    "Hideki Koike",
+    "Kris Kitani"
+  ],
+  "abstract": "DyaDiT is a multi-modal diffusion transformer that generates contextually appropriate human motion from dyadic audio signals by capturing interaction dynamics between two speakers. Generating realistic conversational gestures are essential for achieving natural, socially engaging interactions with digital humans. However, existing methods typically map a single audio stream to a single speaker's motion, without considering social context or modeling the mutual dynamics between two people engaging in conversation. We present DyaDiT, a multi-modal diffusion transformer that generates contextually appropriate human motion from dyadic audio signals . Trained on Seamless Interaction Dataset , DyaDiT takes dyadic audio with optional social-context tokens to produce context-appropriate motion. It fuses information from both speakers to capture interaction dynamics, uses a motion dictionary to encode motion priors, and can optionally utilize the conversational partner's gestures to produce more responsive motion. We evaluate DyaDiT on standard motion generation metrics and conduct quantitative user studies, demonstrating that it not only surpasses existing methods on objective metrics but is also strongly preferred by users, highlighting its robustness and socially favorable motion generation . Code and models will be released upon acceptance.",
+  "summary_en": "DyaDiT is a multi-modal diffusion transformer that generates contextually appropriate human motion from dyadic audio signals by capturing interaction dynamics between two speakers.",
+  "summary_zh": "DyaDiT是一种多模态扩散Transformer，通过捕捉两位说话者之间的交互动态，从双人音频信号生成与上下文相符的人体动作。",
+  "hf_url": "https://huggingface.co/papers/2602.23165",
+  "arxiv_url": "https://arxiv.org/abs/2602.23165",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.23165",
+  "github_url": "",
+  "upvotes": 1,
+  "fetched_at": "2026-02-28T01:46:54.710651+00:00"
+}

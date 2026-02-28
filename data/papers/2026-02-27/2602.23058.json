@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.23058",
+  "title": "GeoWorld: Geometric World Models",
+  "authors": [
+    "Zeyu Zhang",
+    "Danning Li",
+    "Ian Reid",
+    "Richard Hartley"
+  ],
+  "abstract": "GeoWorld addresses limitations in energy-based predictive world models by utilizing hyperbolic geometry to preserve latent state structures and improve long-horizon prediction performance. Energy-based predictive world models provide a powerful approach for multi-step visual planning by reasoning over latent energy landscapes rather than generating pixels. However, existing approaches face two major challenges: (i) their latent representations are typically learned in Euclidean space , neglecting the underlying geometric and hierarchical structure among states, and (ii) they struggle with long-horizon prediction , which leads to rapid degradation across extended rollouts. To address these challenges, we introduce GeoWorld, a geometric world model that preserves geometric structure and hierarchical relations through a Hyperbolic JEPA , which maps latent representations from Euclidean space onto hyperbolic manifolds . We further introduce Geometric Reinforcement Learning for energy-based optimization, enabling stable multi-step planning in hyperbolic latent space. Extensive experiments on CrossTask and COIN demonstrate around 3% SR improvement in 3-step planning and 2% SR improvement in 4-step planning compared to the state-of-the-art V-JEPA 2. Project website: https://steve-zeyu-zhang.github.io/GeoWorld.",
+  "summary_en": "GeoWorld addresses limitations in energy-based predictive world models by utilizing hyperbolic geometry to preserve latent state structures and improve long-horizon prediction performance.",
+  "summary_zh": "GeoWorld 通过利用双曲几何保留潜在状态结构并改进长程预测性能，解决了基于能量的预测世界模型的局限性。",
+  "hf_url": "https://huggingface.co/papers/2602.23058",
+  "arxiv_url": "https://arxiv.org/abs/2602.23058",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.23058",
+  "github_url": "",
+  "upvotes": 3,
+  "fetched_at": "2026-02-28T01:46:53.148556+00:00"
+}

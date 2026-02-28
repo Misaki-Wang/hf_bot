@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.22766",
+  "title": "Imagination Helps Visual Reasoning, But Not Yet in Latent Space",
+  "authors": [
+    "You Li",
+    "Chi Chen",
+    "Yanghao Li",
+    "Fanhu Zeng",
+    "Kaiyu Huang",
+    "Jinan Xu",
+    "Maosong Sun"
+  ],
+  "abstract": "Research reveals that latent visual reasoning in multimodal models suffers from input-latent and latent-answer disconnects, leading to the proposal of CapImagine, a text-based approach that outperforms complex latent-space methods. Latent visual reasoning aims to mimic human's imagination process by meditating through hidden states of Multimodal Large Language Models . While recognized as a promising paradigm for visual reasoning , the underlying mechanisms driving its effectiveness remain unclear. Motivated to demystify the true source of its efficacy, we investigate the validity of latent reasoning using Causal Mediation Analysis . We model the process as a causal chain: the input as the treatment, the latent tokens as the mediator, and the final answer as the outcome. Our findings uncover two critical disconnections: (a) Input-Latent Disconnect : dramatic perturbations on the input result in negligible changes to the latent tokens , suggesting that latent tokens do not effectively attend to the input sequence. (b) Latent-Answer Disconnect : perturbations on the latent tokens yield minimal impact on the final answer, indicating the limited causal effect latent tokens imposing on the outcome. Furthermore, extensive probing analysis reveals that latent tokens encode limited visual information and exhibit high similarity. Consequently, we challenge the necessity of latent reasoning and propose a straightforward alternative named CapImagine , which teaches the model to explicitly imagine using text. Experiments on vision-centric benchmarks show that CapImagine significantly outperforms complex latent-space baselines, highlighting the superior potential of visual reasoning through explicit imagination.",
+  "summary_en": "Research reveals that latent visual reasoning in multimodal models suffers from input-latent and latent-answer disconnects, leading to the proposal of CapImagine, a text-based approach that outperforms complex latent-space methods.",
+  "summary_zh": "研究表明多模态模型中的潜在视觉推理存在输入-潜在空间与潜在空间-答案的脱节问题，进而提出了CapImagine这一基于文本的方法，其性能优于复杂的潜在空间方法。",
+  "hf_url": "https://huggingface.co/papers/2602.22766",
+  "arxiv_url": "https://arxiv.org/abs/2602.22766",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22766",
+  "github_url": "https://github.com/AI9Stars/CapImagine",
+  "upvotes": 32,
+  "fetched_at": "2026-02-28T01:46:48.584684+00:00"
+}

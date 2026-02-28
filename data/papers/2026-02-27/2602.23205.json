@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.23205",
+  "title": "EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents",
+  "authors": [
+    "Wenjia Wang",
+    "Liang Pan",
+    "Huaijin Pi",
+    "Yuke Lou",
+    "Xuqian Ren",
+    "Yifan Wu",
+    "Zhouyingcheng Liao",
+    "Lei Yang",
+    "Rishabh Dabral",
+    "Christian Theobalt",
+    "Taku Komura"
+  ],
+  "abstract": "A portable dual-iPhone system enables metric-scale human-scene reconstruction and supports embodied AI tasks including physics-based animation and robot motion control. Human behaviors in the real world naturally encode rich, long-term contextual information that can be leveraged to train embodied agents for perception, understanding, and acting. However, existing capture systems typically rely on costly studio setups and wearable devices, limiting the large-scale collection of scene-conditioned human motion data in the wild. To address this, we propose EmbodMocap, a portable and affordable data collection pipeline using two moving iPhones. Our key idea is to jointly calibrate dual RGB-D sequences to reconstruct both humans and scenes within a unified metric world coordinate frame . The proposed method allows metric-scale and scene-consistent capture in everyday environments without static cameras or markers, bridging human motion and scene geometry seamlessly. Compared with optical capture ground truth, we demonstrate that the dual-view setting exhibits a remarkable ability to mitigate depth ambiguity, achieving superior alignment and reconstruction performance over single iphone or monocular models. Based on the collected data, we empower three embodied AI tasks: monocular human-scene-reconstruction , where we fine-tune on feedforward models that output metric-scale, world-space aligned humans and scenes; physics-based character animation , where we prove our data could be used to scale human-object interaction skills and scene-aware motion tracking; and robot motion control, where we train a humanoid robot via sim-to-real RL to replicate human motions depicted in videos. Experimental results validate the effectiveness of our pipeline and its contributions towards advancing embodied AI research.",
+  "summary_en": "A portable dual-iPhone system enables metric-scale human-scene reconstruction and supports embodied AI tasks including physics-based animation and robot motion control.",
+  "summary_zh": "便携式双iPhone系统可实现度量尺度的人-场景重建，并支持具身智能任务，包括基于物理的动画与机器人运动控制。",
+  "hf_url": "https://huggingface.co/papers/2602.23205",
+  "arxiv_url": "https://arxiv.org/abs/2602.23205",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.23205",
+  "github_url": "https://github.com/WenjiaWang0312/EmbodMocap",
+  "upvotes": 9,
+  "fetched_at": "2026-02-28T01:46:55.976377+00:00"
+}

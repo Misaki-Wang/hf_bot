@@ -1,0 +1,27 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.22897",
+  "title": "OmniGAIA: Towards Native Omni-Modal AI Agents",
+  "authors": [
+    "Xiaoxi Li",
+    "Wenxiang Jiao",
+    "Jiarui Jin",
+    "Shijian Wang",
+    "Guanting Dong",
+    "Jiajie Jin",
+    "Hao Wang",
+    "Yinuo Wang",
+    "Ji-Rong Wen",
+    "Yuan Lu",
+    "Zhicheng Dou"
+  ],
+  "abstract": "OmniGAIA benchmark evaluates multi-modal agents on complex reasoning tasks across video, audio, and image modalities, while OmniAtlas agent improves tool-use capabilities through hindsight-guided tree exploration and OmniDPO fine-tuning. Human intelligence naturally intertwines omni-modal perception -- spanning vision, audio, and language -- with complex reasoning and tool usage to interact with the world. However, current multi-modal LLMs are primarily confined to bi-modal interactions (e.g., vision-language), lacking the unified cognitive capabilities required for general AI assistants. To bridge this gap, we introduce OmniGAIA, a comprehensive benchmark designed to evaluate omni-modal agents on tasks necessitating deep reasoning and multi-turn tool execution across video, audio, and image modalities. Constructed via a novel omni-modal event graph approach, OmniGAIA synthesizes complex, multi-hop queries derived from real-world data that require cross-modal reasoning and external tool integration. Furthermore, we propose OmniAtlas, a native omni-modal foundation agent under tool-integrated reasoning paradigm with active omni-modal perception . Trained on trajectories synthesized via a hindsight-guided tree exploration strategy and OmniDPO for fine-grained error correction, OmniAtlas effectively enhances the tool-use capabilities of existing open-source models. This work marks a step towards next-generation native omni-modal AI assistants for real-world scenarios.",
+  "summary_en": "OmniGAIA benchmark evaluates multi-modal agents on complex reasoning tasks across video, audio, and image modalities, while OmniAtlas agent improves tool-use capabilities through hindsight-guided tree exploration and OmniDPO fine-tuning.",
+  "summary_zh": "OmniGAIA 基准评估多模态智能体在视频、音频和图像模态上的复杂推理任务，OmniAtlas 智能体则通过事后引导的树探索和 OmniDPO 微调提升工具使用能力。",
+  "hf_url": "https://huggingface.co/papers/2602.22897",
+  "arxiv_url": "https://arxiv.org/abs/2602.22897",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22897",
+  "github_url": "https://github.com/RUC-NLPIR/OmniGAIA",
+  "upvotes": 46,
+  "fetched_at": "2026-02-28T01:46:50.858408+00:00"
+}

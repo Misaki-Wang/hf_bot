@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.21760",
+  "title": "Accelerating Diffusion via Hybrid Data-Pipeline Parallelism Based on Conditional Guidance Scheduling",
+  "authors": [
+    "Euisoo Jung",
+    "Byunghyun Kim",
+    "Hyunjin Kim",
+    "Seonghye Cho",
+    "Jae-Gil Lee"
+  ],
+  "abstract": "A hybrid parallelism framework for diffusion models that combines condition-based partitioning and adaptive pipeline scheduling to reduce inference latency while maintaining image quality across different architectures. Diffusion models have achieved remarkable progress in high-fidelity image, video, and audio generation, yet inference remains computationally expensive. Nevertheless, current diffusion acceleration methods based on distributed parallelism suffer from noticeable generation artifacts and fail to achieve substantial acceleration proportional to the number of GPUs. Therefore, we propose a hybrid parallelism framework that combines a novel data parallel strategy , condition-based partitioning , with an optimal pipeline scheduling method, adaptive parallelism switching , to reduce generation latency and achieve high generation quality in conditional diffusion models . The key ideas are to (i) leverage the conditional and unconditional denoising paths as a new data-partitioning perspective and (ii) adaptively enable optimal pipeline parallelism according to the denoising discrepancy between these two paths. Our framework achieves 2.31times and 2.07times latency reductions on SDXL and SD3, respectively, using two NVIDIA RTX~3090 GPUs, while preserving image quality . This result confirms the generality of our approach across U-Net-based diffusion models and DiT-based flow-matching architectures . Our approach also outperforms existing methods in acceleration under high-resolution synthesis settings. Code is available at https://github.com/kaist-dmlab/Hybridiff.",
+  "summary_en": "A hybrid parallelism framework for diffusion models that combines condition-based partitioning and adaptive pipeline scheduling to reduce inference latency while maintaining image quality across different architectures.",
+  "summary_zh": "一种面向扩散模型的混合并行框架，结合基于条件的划分与自适应流水线调度，在降低推理延迟的同时保持跨不同架构的图像质量。",
+  "hf_url": "https://huggingface.co/papers/2602.21760",
+  "arxiv_url": "https://arxiv.org/abs/2602.21760",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.21760",
+  "github_url": "https://github.com/kaist-dmlab/Hybridiff",
+  "upvotes": 10,
+  "fetched_at": "2026-02-28T01:46:41.480039+00:00"
+}

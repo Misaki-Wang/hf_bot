@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.20300",
+  "title": "What Makes a Good Query? Measuring the Impact of Human-Confusing Linguistic Features on LLM Performance",
+  "authors": [
+    "William Watson",
+    "Nicole Cho",
+    "Sumitra Ganesh",
+    "Manuela Veloso"
+  ],
+  "abstract": "Analysis of 369,837 real-world queries reveals that specific linguistic features correlate with hallucination likelihood in large language models, identifying a risk landscape for query design. Large Language Model (LLM) hallucination s are usually treated as defects of the model or its decoding strategy. Drawing on classical linguistics, we argue that a query's form can also shape a listener's (and model's) response. We operationalize this insight by constructing a 22-dimension query feature vector covering clause complexity , lexical rarity , and anaphora , negation , answerability , and intention grounding , all known to affect human comprehension. Using 369,837 real-world queries, we ask: Are there certain types of queries that make hallucination more likely? A large-scale analysis reveals a consistent \"risk landscape\": certain features such as deep clause nesting and underspecification align with higher hallucination propensity. In contrast, clear intention grounding and answerability align with lower hallucination rates. Others, including domain specificity, show mixed, dataset- and model-dependent effects. Thus, these findings establish an empirically observable query-feature representation correlated with hallucination risk, paving the way for guided query rewriting and future intervention studies.",
+  "summary_en": "Analysis of 369,837 real-world queries reveals that specific linguistic features correlate with hallucination likelihood in large language models, identifying a risk landscape for query design.",
+  "summary_zh": "对369,837个真实查询的分析表明，特定语言特征与大语言模型的幻觉可能性相关，识别出查询设计的风险图景。",
+  "hf_url": "https://huggingface.co/papers/2602.20300",
+  "arxiv_url": "https://arxiv.org/abs/2602.20300",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20300",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-28T01:46:36.383333+00:00"
+}

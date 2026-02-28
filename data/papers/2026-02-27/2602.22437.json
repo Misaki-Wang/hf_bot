@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.22437",
+  "title": "veScale-FSDP: Flexible and High-Performance FSDP at Scale",
+  "authors": [
+    "Zezhou Wang",
+    "Youjie Li",
+    "Zhiqi Lin",
+    "Jiacheng Yang",
+    "Cong Xie",
+    "Guanyu Feng",
+    "Zheng Zhong",
+    "Ziyue Huang",
+    "Hongyu Zhu",
+    "Zhi Zhang",
+    "Yanghua Peng",
+    "Xin Liu"
+  ],
+  "abstract": "veScale-FSDP introduces a redesigned fully sharded data parallel system with flexible sharding and structure-aware planning to improve scalability and efficiency for large-scale model training. Fully Sharded Data Parallel (FSDP), also known as ZeRO , is widely used for training large-scale models, featuring its flexibility and minimal intrusion on model code. However, current FSDP systems struggle with structure-aware training methods (e.g., block-wise quantized training ) and with non-element-wise optimizers (e.g., Shampoo and Muon ) used in cutting-edge models (e.g., Gemini, Kimi K2). FSDP's fixed element- or row-wise sharding formats conflict with the block-structured computations. In addition, today's implementations fall short in communication and memory efficiency , limiting scaling to tens of thousands of GPUs. We introduce veScale-FSDP, a redesigned FSDP system that couples a flexible sharding format, RaggedShard , with a structure-aware planning algorithm to deliver both flexibility and performance at scale. veScale-FSDP natively supports efficient data placement required by FSDP, empowering block-wise quantization and non-element-wise optimizers . As a result, veScale-FSDP achieves 5~66% higher throughput and 16~30% lower memory usage than existing FSDP systems, while scaling efficiently to tens of thousands of GPUs.",
+  "summary_en": "veScale-FSDP introduces a redesigned fully sharded data parallel system with flexible sharding and structure-aware planning to improve scalability and efficiency for large-scale model training.",
+  "summary_zh": "veScale-FSDP 提出了一种重新设计的完全分片数据并行系统，采用灵活分片和结构感知规划，以提升大规模模型训练的可扩展性和效率。",
+  "hf_url": "https://huggingface.co/papers/2602.22437",
+  "arxiv_url": "https://arxiv.org/abs/2602.22437",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22437",
+  "github_url": "https://github.com/volcengine/veScale",
+  "upvotes": 3,
+  "fetched_at": "2026-02-28T01:46:43.034557+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.22638",
+  "title": "MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios",
+  "authors": [
+    "Zhiheng Song",
+    "Jingshuai Zhang",
+    "Chuan Qin",
+    "Chao Wang",
+    "Chao Chen",
+    "Longfei Xu",
+    "Kaikui Liu",
+    "Xiangxiang Chu",
+    "Hengshu Zhu"
+  ],
+  "abstract": "MobileBench is a scalable benchmark for evaluating LLM-based route-planning agents in real-world scenarios, featuring anonymized user queries and a deterministic sandbox for reproducible testing. Route-planning agents powered by large language models (LLMs) have emerged as a promising paradigm for supporting everyday human mobility through natural language interaction and tool-mediated decision making. However, systematic evaluation in real-world mobility settings is hindered by diverse routing demands, non-deterministic mapping services, and limited reproducibility. In this study, we introduce MobilityBench , a scalable benchmark for evaluating LLM-based route-planning agents in real-world mobility scenarios . MobilityBench is constructed from large-scale, anonymized real user queries collected from Amap and covers a broad spectrum of route- planning intents across multiple cities worldwide. To enable reproducible, end-to-end evaluation, we design a deterministic API-replay sandbox that eliminates environmental variance from live services. We further propose a multi-dimensional evaluation protocol centered on outcome validity , complemented by assessments of instruction understanding , planning , tool use , and efficiency . Using MobilityBench , we evaluate multiple LLM-based route-planning agents across diverse real-world mobility scenarios and provide an in-depth analysis of their behaviors and performance. Our findings reveal that current models perform competently on Basic information retrieval and Route Planning tasks, yet struggle considerably with Preference-Constrained Route Planning , underscoring significant room for improvement in personalized mobility applications. We publicly release the benchmark data, evaluation toolkit, and documentation at https://github.com/AMAP-ML/ MobilityBench .",
+  "summary_en": "MobileBench is a scalable benchmark for evaluating LLM-based route-planning agents in real-world scenarios, featuring anonymized user queries and a deterministic sandbox for reproducible testing.",
+  "summary_zh": "MobileBench 是一个可扩展的基准测试，用于在真实场景中评估基于LLM的路径规划智能体，具有匿名化用户查询和用于可复现测试的确定性沙盒。",
+  "hf_url": "https://huggingface.co/papers/2602.22638",
+  "arxiv_url": "https://arxiv.org/abs/2602.22638",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22638",
+  "github_url": "https://github.com/AMAP-ML/MobilityBench",
+  "upvotes": 87,
+  "fetched_at": "2026-02-28T01:46:46.787471+00:00"
+}

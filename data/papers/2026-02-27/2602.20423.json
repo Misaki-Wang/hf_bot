@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.20423",
+  "title": "MedCLIPSeg: Probabilistic Vision-Language Adaptation for Data-Efficient and Generalizable Medical Image Segmentation",
+  "authors": [
+    "Taha Koleilat",
+    "Hojat Asgariandehkordi",
+    "Omid Nejati Manzari",
+    "Berardino Barile",
+    "Yiming Xiao",
+    "Hassan Rivaz"
+  ],
+  "abstract": "MedCLIPSeg adapts CLIP for medical image segmentation by leveraging patch-level embeddings and probabilistic attention to achieve data-efficient, uncertain-aware segmentation with interpretability. Medical image segmentation remains challenging due to limited annotations for training, ambiguous anatomical features, and domain shifts. While vision-language models such as CLIP offer strong cross-modal representations, their potential for dense, text-guided medical image segmentation remains underexplored. We present Med CLIP Seg, a novel framework that adapts CLIP for robust, data-efficient, and uncertainty-aware medical image segmentation . Our approach leverages patch-level CLIP embeddings through probabilistic cross-modal attention , enabling bidirectional interaction between image and text tokens and explicit modeling of predictive uncertainty. Together with a soft patch-level contrastive loss that encourages more nuanced semantic learning across diverse textual prompts, Med CLIP Seg effectively improves data efficiency and domain generalizability . Extensive experiments across 16 datasets spanning five imaging modalities and six organs demonstrate that Med CLIP Seg outperforms prior methods in accuracy, efficiency, and robustness, while providing interpretable uncertainty maps that highlight local reliability of segmentation results. This work demonstrates the potential of probabilistic vision-language modeling for text-driven medical image segmentation .",
+  "summary_en": "MedCLIPSeg adapts CLIP for medical image segmentation by leveraging patch-level embeddings and probabilistic attention to achieve data-efficient, uncertain-aware segmentation with interpretability.",
+  "summary_zh": "MedCLIPSeg 利用 patch 级嵌入和概率注意力将 CLIP 适配于医学图像分割，实现了数据高效、不确定性感知且具备可解释性的分割。",
+  "hf_url": "https://huggingface.co/papers/2602.20423",
+  "arxiv_url": "https://arxiv.org/abs/2602.20423",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20423",
+  "github_url": "https://github.com/HealthX-Lab/MedCLIPSeg",
+  "upvotes": 2,
+  "fetched_at": "2026-02-28T01:46:38.376518+00:00"
+}

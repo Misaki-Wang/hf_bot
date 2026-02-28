@@ -1,0 +1,17 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.22479",
+  "title": "Efficient Continual Learning in Language Models via Thalamically Routed Cortical Columns",
+  "authors": [
+    "Afshin Khadangi"
+  ],
+  "abstract": "TRC² addresses continual learning challenges in language models through a sparse, chunk-parallel architectural design that enables rapid adaptation without catastrophic forgetting. Continual learning is a core requirement for deployed language models, yet standard training and fine-tuning pipelines remain brittle under non-stationary data. Online updates often induce catastrophic forgetting , while methods that improve stability frequently increase latency, memory footprint, or dense computation in ways that do not scale well to long contexts. We introduce TRC^{2} (Thalamically Routed Cortical Columns ), a decoder-only backbone that addresses continual learning at the architectural level. TRC^{2} combines sparse thalamic routing over cortical columns with mechanisms for modulation , prediction , memory , and feedback , together with a fast corrective pathway that supports rapid adaptation without destabilizing slower parameters. The resulting block is sparse and chunk-parallel , enabling efficient training and inference while preserving clean ablations of each subsystem. We instantiate a reproducible training and evaluation stack and a continual-learning harness that measures proxy forgetting under streaming domain shifts. Across language modeling and continual learning benchmarks , TRC^{2} improves the stability-plasticity tradeoff at comparable compute, enabling rapid on-stream adaptation while preserving previously acquired behavior.",
+  "summary_en": "TRC² addresses continual learning challenges in language models through a sparse, chunk-parallel architectural design that enables rapid adaptation without catastrophic forgetting.",
+  "summary_zh": "TRC² 通过稀疏的块并行架构设计应对语言模型中的持续学习挑战，实现快速适应且避免灾难性遗忘。",
+  "hf_url": "https://huggingface.co/papers/2602.22479",
+  "arxiv_url": "https://arxiv.org/abs/2602.22479",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22479",
+  "github_url": "",
+  "upvotes": 0,
+  "fetched_at": "2026-02-28T01:46:44.013446+00:00"
+}

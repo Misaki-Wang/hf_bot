@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.20332",
+  "title": "No One Size Fits All: QueryBandits for Hallucination Mitigation",
+  "authors": [
+    "Nicole Cho",
+    "William Watson",
+    "Alec Koppel",
+    "Sumitra Ganesh",
+    "Manuela Veloso"
+  ],
+  "abstract": "A contextual bandit framework named QueryBandits is introduced to adaptively select optimal query-rewrite strategies for reducing hallucinations in large language models, demonstrating superior performance over static policies and enabling deployment with closed-source models. Advanced reasoning capabilities in Large Language Models (LLMs) have led to more frequent hallucinations ; yet most mitigation work focuses on open-source models for post-hoc detection and parameter editing. The dearth of studies focusing on hallucinations in closed-source models is especially concerning, as they constitute the vast majority of models in institutional deployments. We introduce QueryBandits, a model-agnostic contextual bandit framework that adaptively learns online to select the optimal query-rewrite strategy by leveraging an empirically validated and calibrated reward function . Across 16 QA scenarios, our top QueryBandit ( Thompson Sampling ) achieves an 87.5% win rate over a No-Rewrite baseline and outperforms zero-shot static policies (e.g., Paraphrase or Expand) by 42.6% and 60.3%, respectively. Moreover, all contextual bandit s outperform vanilla bandits across all datasets, with higher feature variance coinciding with greater variance in arm selection. This substantiates our finding that there is no single rewrite policy optimal for all queries. We also discover that certain static policies incur higher cumulative regret than No-Rewrite, indicating that an inflexible query-rewriting policy can worsen hallucinations . Thus, learning an online policy over semantic features with QueryBandits can shift model behavior purely through forward-pass mechanisms , enabling its use with closed-source models and bypassing the need for retraining or gradient-based adaptation.",
+  "summary_en": "A contextual bandit framework named QueryBandits is introduced to adaptively select optimal query-rewrite strategies for reducing hallucinations in large language models, demonstrating superior performance over static policies and enabling deployment with closed-source models.",
+  "summary_zh": "引入了一种名为 QueryBandits 的上下文赌博机框架，用于自适应选择最优查询重写策略以减少大语言模型中的幻觉，其性能优于静态策略，并可与闭源模型协同部署。",
+  "hf_url": "https://huggingface.co/papers/2602.20332",
+  "arxiv_url": "https://arxiv.org/abs/2602.20332",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.20332",
+  "github_url": "",
+  "upvotes": 2,
+  "fetched_at": "2026-02-28T01:46:37.360003+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.22859",
+  "title": "From Blind Spots to Gains: Diagnostic-Driven Iterative Training for Large Multimodal Models",
+  "authors": [
+    "Hongrui Jia",
+    "Chaoya Jiang",
+    "Shikun Zhang",
+    "Wei Ye"
+  ],
+  "abstract": "Diagnostic-driven Progressive Evolution enables continuous improvement of large multimodal models through iterative diagnosis and targeted data generation guided by identified weaknesses. As Large Multimodal Models (LMMs) scale up and reinforcement learning (RL) methods mature, LMMs have made notable progress in complex reasoning and decision making. Yet training still relies on static data and fixed recipes, making it difficult to diagnose capability blind spots or provide dynamic, targeted reinforcement . Motivated by findings that test driven error exposure and feedback based correction outperform repetitive practice, we propose Diagnostic-driven Progressive Evolution (DPE), a spiral loop where diagnosis steers data generation and reinforcement, and each iteration re-diagnoses the updated model to drive the next round of targeted improvement. DPE has two key components. First, multiple agents annotate and quality control massive unlabeled multimodal data , using tools such as web search and image editing to produce diverse, realistic samples. Second, DPE attributes failures to specific weaknesses, dynamically adjusts the data mixture, and guides agents to generate weakness focused data for targeted reinforcement . Experiments on Qwen3-VL-8B-Instruct and Qwen2.5-VL-7B-Instruct show stable, continual gains across eleven benchmarks, indicating DPE as a scalable paradigm for continual LMM training under open task distributions. Our code, models, and data are publicly available at https://github.com/hongruijia/DPE.",
+  "summary_en": "Diagnostic-driven Progressive Evolution enables continuous improvement of large multimodal models through iterative diagnosis and targeted data generation guided by identified weaknesses.",
+  "summary_zh": "Diagnostic-driven Progressive Evolution 通过迭代诊断与基于已识别弱点的针对性数据生成，实现大型多模态模型的持续改进。",
+  "hf_url": "https://huggingface.co/papers/2602.22859",
+  "arxiv_url": "https://arxiv.org/abs/2602.22859",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22859",
+  "github_url": "https://github.com/hongruijia/DPE",
+  "upvotes": 142,
+  "fetched_at": "2026-02-28T01:46:49.427855+00:00"
+}

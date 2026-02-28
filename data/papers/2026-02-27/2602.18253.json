@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.18253",
+  "title": "MEG-to-MEG Transfer Learning and Cross-Task Speech/Silence Detection with Limited Data",
+  "authors": [
+    "Xabier de Zuazo",
+    "Vincenzo Verbeni",
+    "Eva Navas",
+    "Ibon Saratxaga",
+    "Mathieu Bourguignon",
+    "Nicola Molinaro"
+  ],
+  "abstract": "Transfer learning enables efficient MEG-based speech decoding from perception to production tasks using a Conformer model with minimal fine-tuning data. Data-efficient neural decoding is a central challenge for speech brain-computer interfaces. We present the first demonstration of transfer learning and cross-task decoding for MEG-based speech models spanning perception and production. We pre-train a Conformer-based model on 50 hours of single-subject listening data and fine-tune on just 5 minutes per subject across 18 participants. Transfer learning yields consistent improvements, with in-task accuracy gains of 1-4% and larger cross-task gains of up to 5-6%. Not only does pre-training improve performance within each task, but it also enables reliable cross-task decoding between perception and production. Critically, models trained on speech production decode passive listening above chance, confirming that learned representations reflect shared neural processes rather than task-specific motor activity.",
+  "summary_en": "Transfer learning enables efficient MEG-based speech decoding from perception to production tasks using a Conformer model with minimal fine-tuning data.",
+  "summary_zh": "迁移学习使用Conformer模型，借助极少微调数据，实现了基于MEG的语音解码从感知任务到生成任务的高效迁移。",
+  "hf_url": "https://huggingface.co/papers/2602.18253",
+  "arxiv_url": "https://arxiv.org/abs/2602.18253",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.18253",
+  "github_url": "https://github.com/hitz-zentroa/meg-phone-decoding",
+  "upvotes": 1,
+  "fetched_at": "2026-02-28T01:46:35.481629+00:00"
+}

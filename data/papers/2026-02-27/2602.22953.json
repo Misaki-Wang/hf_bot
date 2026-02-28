@@ -1,0 +1,31 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.22953",
+  "title": "General Agent Evaluation",
+  "authors": [
+    "Elron Bandel",
+    "Asaf Yehudai",
+    "Lilach Eden",
+    "Yehoshua Sagron",
+    "Yotam Perlitz",
+    "Elad Venezian",
+    "Natalia Razinkov",
+    "Natan Ergas",
+    "Shlomit Shachor Ifergan",
+    "Segev Shlomov",
+    "Michal Jacovi",
+    "Leshem Choshen",
+    "Liat Ein-Dor",
+    "Yoav Katz",
+    "Michal Shmueli-Scheuer"
+  ],
+  "abstract": "General-purpose agents remain underdeveloped despite promising implementations, necessitating systematic evaluation frameworks and benchmarks to assess their true versatility across diverse environments.",
+  "summary_en": "General-purpose agents remain underdeveloped despite promising implementations, necessitating systematic evaluation frameworks and benchmarks to assess their true versatility across diverse environments.",
+  "summary_zh": "尽管已有一些有前景的实现，通用智能体仍然发展不足，需要系统化的评估框架和基准来评估其在多样化环境中的真正通用性。",
+  "hf_url": "https://huggingface.co/papers/2602.22953",
+  "arxiv_url": "https://arxiv.org/abs/2602.22953",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.22953",
+  "github_url": "https://github.com/Exgentic/exgentic",
+  "upvotes": 3,
+  "fetched_at": "2026-02-28T01:46:51.556240+00:00"
+}

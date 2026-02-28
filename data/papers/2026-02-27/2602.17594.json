@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.17594",
+  "title": "AI Gamestore: Scalable, Open-Ended Evaluation of Machine General Intelligence with Human Games",
+  "authors": [
+    "Lance Ying",
+    "Ryan Truong",
+    "Prafull Sharma",
+    "Kaiya Ivy Zhao",
+    "Nathan Cloos",
+    "Kelsey R. Allen",
+    "Thomas L. Griffiths",
+    "Katherine M. Collins",
+    "José Hernández-Orallo",
+    "Phillip Isola",
+    "Samuel J. Gershman",
+    "Joshua B. Tenenbaum"
+  ],
+  "abstract": "AI systems were evaluated across a diverse set of human-designed games to assess general intelligence, revealing significant gaps in performance compared to human players, particularly in complex cognitive tasks.",
+  "summary_en": "AI systems were evaluated across a diverse set of human-designed games to assess general intelligence, revealing significant gaps in performance compared to human players, particularly in complex cognitive tasks.",
+  "summary_zh": "AI系统在各类人工设计游戏中接受评估以衡量通用智能，结果显示相较于人类玩家，其性能存在显著差距，特别是在复杂认知任务中。",
+  "hf_url": "https://huggingface.co/papers/2602.17594",
+  "arxiv_url": "https://arxiv.org/abs/2602.17594",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.17594",
+  "github_url": "",
+  "upvotes": 7,
+  "fetched_at": "2026-02-28T01:46:34.364808+00:00"
+}

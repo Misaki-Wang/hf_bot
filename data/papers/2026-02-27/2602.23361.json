@@ -1,0 +1,23 @@
+{
+  "date": "2026-02-27",
+  "paper_id": "2602.23361",
+  "title": "VGG-T^3: Offline Feed-Forward 3D Reconstruction at Scale",
+  "authors": [
+    "Sven Elflein",
+    "Ruilong Li",
+    "Sérgio Agostinho",
+    "Zan Gojcic",
+    "Laura Leal-Taixé",
+    "Qunjie Zhou",
+    "Aljosa Osep"
+  ],
+  "abstract": "VGG-T³ addresses scalability issues in 3D reconstruction by transforming variable-length key-value representations into fixed-size MLPs through test-time training, enabling linear scaling with input views and achieving significant speedup over traditional softmax attention methods. We present a scalable 3D reconstruction model that addresses a critical limitation in offline feed-forward methods : their computational and memory requirements grow quadratically w.r.t. the number of input images. Our approach is built on the key insight that this bottleneck stems from the varying-length Key-Value (KV) space representation of scene geometry , which we distill into a fixed-size Multi-Layer Perceptron (MLP) via test-time training . VGG-T^3 ( Visual Geometry Grounded Test Time Training ) scales linearly w.r.t. the number of input views, similar to online models, and reconstructs a 1k image collection in just 54 seconds, achieving a 11.6times speed-up over baselines that rely on softmax attention . Since our method retains global scene aggregation capability, our point map reconstruction error outperforming other linear-time methods by large margins. Finally, we demonstrate visual localization capabilities of our model by querying the scene representation with unseen images.",
+  "summary_en": "VGG-T³ addresses scalability issues in 3D reconstruction by transforming variable-length key-value representations into fixed-size MLPs through test-time training, enabling linear scaling with input views and achieving significant speedup over traditional softmax attention methods.",
+  "summary_zh": "VGG-T³通过测试时训练将可变长度键值表示转换为固定尺寸MLP，解决了三维重建中的可扩展性问题，实现了随输入视图数量的线性扩展，并相比传统softmax注意力方法获得显著加速。",
+  "hf_url": "https://huggingface.co/papers/2602.23361",
+  "arxiv_url": "https://arxiv.org/abs/2602.23361",
+  "arxiv_pdf_url": "https://arxiv.org/pdf/2602.23361",
+  "github_url": "",
+  "upvotes": 11,
+  "fetched_at": "2026-02-28T01:46:59.746455+00:00"
+}
