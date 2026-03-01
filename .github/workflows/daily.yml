@@ -30,9 +30,6 @@ on:
         required: false
         type: string
         default: '6'
-  schedule:
-    # 08:00 GMT+8 = 00:00 UTC (daily), fetch previous day
-    - cron: '0 0 * * *'
 
 permissions:
   contents: write
